@@ -135,7 +135,7 @@ Now that you understand the three types, here's the complete catalog:
 | **[discovery-interview-prep](skills/discovery-interview-prep/SKILL.md)** | Plans customer interviews (Mom Test style) based on your research goals |
 | **[prioritization-advisor](skills/prioritization-advisor/SKILL.md)** | Recommends the right prioritization framework (RICE, ICE, Kano, etc.) for your situation |
 | **[tam-sam-som-calculator](skills/tam-sam-som-calculator/SKILL.md)** | Projects market size (TAM/SAM/SOM) with real-world data and citations |
-| **[epic-breakdown-advisor](skills/epic-breakdown-advisor-v2/SKILL.md)** | Splits epics into user stories using Richard Lawrence's 9 patterns |
+| **[epic-breakdown-advisor](skills/epic-breakdown-advisor/SKILL.md)** | Splits epics into user stories using Richard Lawrence's 9 patterns |
 | **[opportunity-solution-tree](skills/opportunity-solution-tree/SKILL.md)** | Generates opportunities and solutions, recommends best proof-of-concept to test |
 | **[user-story-mapping-workshop](skills/user-story-mapping-workshop/SKILL.md)** | Walks you through creating story maps with backbone and release slices |
 | **[customer-journey-mapping-workshop](skills/customer-journey-mapping-workshop/SKILL.md)** | Guides journey mapping with pain point identification |
@@ -203,7 +203,7 @@ claude "Using the PRD Development workflow, create a PRD for our mobile feature"
 → **Interactive:** [`prioritization-advisor`](skills/prioritization-advisor/SKILL.md) (asks questions, recommends RICE/ICE/Kano)
 
 ### "I need to split a large epic"
-→ **Interactive:** [`epic-breakdown-advisor`](skills/epic-breakdown-advisor-v2/SKILL.md) (Richard Lawrence's 9 patterns)
+→ **Interactive:** [`epic-breakdown-advisor`](skills/epic-breakdown-advisor/SKILL.md) (Richard Lawrence's 9 patterns)
 
 ### "I need to write a user story"
 → **Component:** [`user-story`](skills/user-story/SKILL.md) (template + examples)
