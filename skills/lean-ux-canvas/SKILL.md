@@ -1,89 +1,136 @@
 ---
 name: lean-ux-canvas
-description: Guide product managers through creating a Lean UX Canvas (Jeff Gothelf, v2) by asking adaptive questions to frame work as a business problem (not a solution to implement), dissect core assumptions, de
+description: Guide product managers through creating Jeff Gothelf's Lean UX Canvas (v2)—a one-page facilitation tool that frames work around a business problem (not a solution), exposes assumptions, and acts as an "insurance policy" that learning happens every sprint.
 type: interactive
 ---
 
-
 ## Purpose
-Guide product managers through creating a Lean UX Canvas (Jeff Gothelf, v2) by asking adaptive questions to frame work as a business problem (not a solution to implement), dissect core assumptions, develop testable hypotheses, and design experiments that drive measurable learning. Use this to align cross-functional teams on business outcomes, user benefits, and the riskiest assumptions to test—avoiding feature-factory syndrome and ensuring teams build the right thing, not just build things right.
 
-This is not a roadmap—it's a hypothesis-driven planning tool that turns assumptions into experiments before committing to full development.
+Guide product managers through creating **Jeff Gothelf's Lean UX Canvas (v2)**—a one-page facilitation tool that frames work around a **business problem to solve**, not a **solution to implement**. Use this to align cross-functional teams around core assumptions, craft testable hypotheses, and ensure learning happens every sprint by exposing gaps in understanding (problem, users, value, and why the solution should work).
+
+This is not a roadmap or feature list—it's an **"insurance policy"** that turns assumptions into experiments before committing to full development. The canvas shifts conversations from **outputs** to **outcomes** and ensures teams build the right thing, not just build things right.
 
 ## Key Concepts
 
 ### What is the Lean UX Canvas?
 
-The Lean UX Canvas (Jeff Gothelf, v2) is a facilitation tool for cross-functional teams that structures customer-centric conversations about product initiatives. It dissects the business problem into its core assumptions, which you then test through experiments—learning fast and adjusting course before building the wrong thing.
+The **Lean UX Canvas (v2)** is a structured, one-page template designed to help teams frame their work around a business problem, not a solution. It aligns cross-functional teams on:
+- What problem exists (and why it matters now)
+- What measurable outcomes indicate success
+- Who we're solving for
+- What assumptions we're making
+- What we need to learn first
+- What experiments will test those assumptions
 
-### Canvas Structure (8 Sections)
+**Origin:** Created by Jeff Gothelf, author of *Lean UX* (O'Reilly, 2013). Version 2 was released to improve clarity around business vs. user outcomes.
+
+**Key Insight:** The canvas acts like an **insurance policy**—it exposes gaps in understanding before you build, ensuring you don't waste sprints on the wrong thing.
+
+---
+
+### Canvas Structure (8 Boxes)
 
 **Layout (3 columns × 3 rows):**
 
 ```
 ┌─────────────────────┬──────────────┬───────────────────────┐
-│ 1. Business Problem │  5. Solutions│ 2. Business Outcomes  │
-│                     │   (tall box  │                       │
-├─────────────────────┤   spanning   ├───────────────────────┤
-│ 3. Users            │   full       │ 4. User Outcomes      │
-│                     │   height)    │    & Benefits         │
-├─────────────────────┼──────────────┼───────────────────────┤
-│ 6. Hypotheses       │ 7. What's    │ 8. What's the least   │
-│                     │    most      │    work to learn      │
-│                     │    important │    next?              │
-│                     │    to learn? │                       │
+│ 1. Business Problem │              │ 2. Business Outcomes  │
+│                     │              │                       │
+├─────────────────────┤ 5. Solutions ├───────────────────────┤
+│ 3. Users            │  (tall box   │ 4. User Outcomes      │
+│                     │   spanning   │    & Benefits         │
+├─────────────────────┤   rows 1-2)  ├───────────────────────┤
+│ 6. Hypotheses       │──────────────┤ 8. Least Work /       │
+│                     │ 7. Learn     │    Experiments        │
+│                     │    First     │                       │
 └─────────────────────┴──────────────┴───────────────────────┘
 ```
 
-**8 Sections:**
-1. **Business Problem** — What challenge is the organization facing?
-2. **Business Outcomes** — What measurable organizational goals must be achieved?
-3. **Users** — Who are the target customer segments?
-4. **User Outcomes & Benefits** — What actions/behaviors indicate success for users?
-5. **Solutions** — What ideas might address the problem? (Center tall box)
-6. **Hypotheses** — What assumptions are we making? (If/then/because format)
-7. **What's the most important thing we need to learn first?** — Riskiest assumption to test
-8. **What's the least amount of work we need to do to learn the next most important thing?** — Minimal experiment design
+**The 8 Boxes (fill in this order):**
+
+1. **Business Problem** — What changed in the world that created a problem worth solving?
+2. **Business Outcomes** — What measurable behavior change indicates success?
+3. **Users** — Which persona(s) should you focus on first?
+4. **User Outcomes & Benefits** — Why would users seek this? What benefit do they gain?
+5. **Solutions** — What features/initiatives might solve the problem and meet user needs?
+6. **Hypotheses** — Testable assumptions combining boxes 2-5 (If/Then format)
+7. **What's Most Important to Learn First?** — The single riskiest assumption right now
+8. **What's the Least Work to Learn Next?** — Smallest experiment to validate/invalidate that assumption
+
+---
 
 ### Why This Works
-- **Problem-first, not solution-first:** Starts with business problem, not "we should build X"
-- **Assumption-driven:** Makes hypotheses explicit before building
-- **Experiment-focused:** Tests assumptions before committing resources
-- **Cross-functional alignment:** Shared canvas creates common language
+
+**Problem-First, Not Solution-First:**
+Starts with "what changed in the world?" not "we should build X." This prevents solution-driven thinking.
+
+**Assumption-Driven:**
+Makes hypotheses explicit before building. Every discipline surfaces their risks (technical feasibility, user value, business viability).
+
+**Experiment-Focused:**
+Tests assumptions before committing resources. Small experiments beat big bets.
+
+**Cross-Functional Alignment:**
+Shared canvas creates common language. Everyone sees the same gaps in understanding.
+
+---
+
+### Key Distinctions (Avoid Confusion)
+
+**Box 2 (Business Outcomes) vs. Box 4 (User Outcomes):**
+- **Box 2:** Measurable **behavior change** (retention rate, time on site, average order value)
+- **Box 4:** **Goals, benefits, emotions, empathy** (save money, get promoted, spend time with family)
+
+Box 2 is metrics. Box 4 is human.
+
+**Solutions (Box 5) Are Hypotheses, Not Commitments:**
+List candidate solutions (features, policies, even business model shifts). You're not committing to build all of them—you're exploring the solution space.
+
+**Hypotheses (Box 6) Are Testable:**
+Use the template: "We believe [business outcome] will be achieved if [user] attains [benefit] with [solution]." Each hypothesis focuses on **one** solution.
+
+---
 
 ### Anti-Patterns (What This Is NOT)
-- **Not a feature list:** Solutions (box 5) are hypotheses, not commitments
+
+- **Not a feature list:** Solutions are ideas to test, not a backlog
 - **Not a project plan:** Canvas frames learning, not delivery timelines
 - **Not a replacement for strategy:** Canvas executes strategy; it doesn't create it
+- **Not a one-time exercise:** Re-visit as you learn; update assumptions
+
+---
 
 ### When to Use This
+
+✅ **Use this when:**
 - Starting a new product initiative or feature
-- Reframing an existing project (suspect you're building wrong thing)
+- Reframing an existing project (suspect you're building the wrong thing)
 - Aligning cross-functional teams on assumptions and experiments
 - Planning discovery sprints or MVPs
+- Stakeholders are solution-driven ("we need to build X") and you need to expose assumptions
 
-### When NOT to Use This
-- When problem and solution are already validated (move to execution)
-- For tactical bug fixes or technical debt (no learning needed)
-- When stakeholders have already committed to a solution (address alignment first)
+❌ **Don't use this when:**
+- Problem and solution are already validated (move to execution)
+- Tactical bug fixes or technical debt (no learning needed)
+- Stakeholders have committed to a solution regardless of evidence (address alignment first)
 
 ---
 
 ## Application
 
-This interactive skill asks **up to 8 adaptive questions** (one per canvas section), offering **3-4 enumerated options** at each step.
+This interactive skill walks through **8 adaptive questions** (one per canvas box) in sequence. At each step, the agent offers guidance, examples, and options to help you fill the box correctly.
 
 ---
 
-### Step 0: Gather Context (Before Questions)
+### Step 0: Gather Context
 
-**Agent suggests:**
+**Agent asks:**
 
-Before we fill out the Lean UX Canvas, let's gather context:
+Before we fill out the Lean UX Canvas, let's gather context. Please share:
 
 **Business Context:**
 - Stakeholder request, product brief, or initiative description
-- Business metrics (revenue, churn, growth targets)
+- Business metrics (revenue, churn, growth targets, KPIs)
 - Strategic goals (OKRs, roadmap priorities)
 
 **User Context:**
@@ -91,439 +138,475 @@ Before we fill out the Lean UX Canvas, let's gather context:
 - User feedback, support tickets, churn reasons
 - Competitor analysis, market trends
 
-**You can paste this content directly, or describe the initiative briefly.**
+**You can paste:**
+- PRD or product brief
+- Stakeholder memo
+- User research summary
+- Just describe the initiative briefly
 
 ---
 
-### Question 1: Business Problem
+### Question 1: Business Problem (Box 1)
 
 **Agent asks:**
-"What business problem are you trying to solve? (What challenge is the organization facing?)"
 
-**Offer 4 enumerated options:**
+**What problem does the business have that you are trying to solve?**
 
-1. **Revenue problem** — "We're not generating enough revenue or growth is stagnating" (e.g., "ARR growth dropped to 5% YoY")
-2. **Retention problem** — "Customers are churning or not engaging" (e.g., "Churn rate increased 15% last quarter")
-3. **Acquisition problem** — "Not enough customers discovering/signing up" (e.g., "Trial conversion rate below industry average")
-4. **Efficiency problem** — "Internal costs too high or operations inefficient" (e.g., "Support tickets increasing 30%/month")
+Describe:
+- **Current state:** How does the business deliver value today?
+- **What changed:** Market shift, competitive threat, customer behavior change, new delivery channel
+- **Why it matters:** Why isn't the current situation meeting expectations?
 
-**Or describe your specific business problem.**
+**Good examples:**
+- "Our checkout conversion rate dropped 15% after mobile traffic surpassed desktop. Our checkout flow wasn't designed for mobile, and competitors have one-tap checkout."
+- "Enterprise customers are churning after 6 months because our onboarding process requires 3+ weeks of manual configuration. Competitors offer self-service onboarding."
 
-**User response:** [Selection or custom]
+**Bad examples (too vague):**
+- "We need to increase revenue" (no context on what changed)
+- "Users want more features" (no business problem stated)
 
-**Agent captures:**
-- **Business Problem:** [Description]
+**Agent offers 3 options:**
+
+1. **I'll describe the business problem** — [Paste or write your description]
+2. **Help me identify the business problem** — [Agent asks follow-up questions: What changed? What metrics are affected? What are competitors doing?]
+3. **I'm not sure what the business problem is** — [Agent suggests starting with `problem-statement.md` or `problem-framing-canvas.md` first]
+
+**User response:** [Selection or description]
+
+**Agent validates:** Does this describe what **changed** and why it creates a problem? If not, ask clarifying questions.
 
 ---
 
-### Question 2: Business Outcomes
+### Question 2: Business Outcomes (Box 2)
 
 **Agent asks:**
-"What measurable business outcomes will indicate success? (How will you know the problem is solved?)"
 
-**Offer 4 enumerated options:**
+**How will you know you solved the business problem? What will you measure?**
 
-1. **Revenue outcome** — "Increase ARR, ARPU, or revenue per customer" (e.g., "Increase ARR from $5M to $8M in 12 months")
-2. **Retention outcome** — "Reduce churn, increase engagement/activation" (e.g., "Reduce churn from 15% to 8%")
-3. **Acquisition outcome** — "Increase signups, trial conversions, or new customers" (e.g., "Increase trial-to-paid conversion from 10% to 20%")
-4. **Efficiency outcome** — "Reduce costs, support burden, or operational overhead" (e.g., "Reduce support tickets by 40%")
+Focus on **measurable behavior change** (leading indicators welcome). Ask yourself: "What will people be doing differently if the solution works?"
 
-**Or describe your specific business outcome (must be measurable).**
+**Examples of business outcomes:**
+- Increase mobile checkout conversion rate from 45% to 60%
+- Reduce enterprise onboarding time from 3 weeks to 3 days
+- Increase average order value from $50 to $75
+- Reduce customer support tickets by 30%
+- Increase free-to-paid conversion rate from 5% to 10%
 
-**User response:** [Selection or custom]
+**Important:** This is **Box 2 (behavior change)**, not Box 4 (user benefits/empathy). Metrics go here. Emotions go in Box 4.
 
-**Agent captures:**
-- **Business Outcomes:** [Measurable goals]
+**Agent offers 3 options:**
+
+1. **I have specific metrics in mind** — [State your business outcomes]
+2. **Help me define measurable outcomes** — [Agent suggests metrics based on the business problem]
+3. **I only have lagging indicators (revenue, profit)** — [Agent helps identify leading indicators that predict those outcomes]
+
+**User response:** [Selection or description]
+
+**Agent validates:** Are these measurable? Observable? Do they indicate behavior change (not just "increase revenue")?
 
 ---
 
-### Question 3: Users (Customer Segments)
+### Question 3: Users (Box 3)
 
 **Agent asks:**
-"Who are the target users or customer segments for this initiative?"
 
-**Offer 4 enumerated options:**
+**What types (i.e., personas) of users and customers should you focus on first?**
 
-1. **Primary persona** — "Main target customer (e.g., 'small business owners')" (Most common)
-2. **Multiple personas** — "Several user segments with different needs (e.g., 'buyers' vs. 'sellers')" (Common for marketplaces)
-3. **High-value segment** — "Subset of users driving most revenue/engagement (e.g., 'enterprise accounts')" (Good for expansion)
-4. **Underserved segment** — "Users with unmet needs or high churn (e.g., 'mobile-first users')" (Good for retention)
+Consider:
+- Who **buys** it?
+- Who **uses** it?
+- Who **configures** it?
+- Who **administers** it?
 
-**Or describe your specific user segments.**
+**Why this matters:** Teams tend to shortcut here ("everyone"). The canvas wants a **shared vision** of the user—and it's not always "the customer."
 
-**Adaptation:** Use personas from context (proto-personas, JTBD, customer research)
+**Examples:**
+- "SMB owners (1-10 employees) in professional services (consultants, accountants, lawyers)"
+- "Enterprise IT admins who configure SSO for 500+ employees"
+- "Mobile-first millennials (25-35) who order takeout 3+ times per week"
 
-**User response:** [Selection or custom]
+**Agent offers 3 options:**
 
-**Agent captures:**
-- **Users:** [Target segments]
+1. **I have personas already** — [Reference `proto-persona.md` or paste persona]
+2. **Help me identify target users** — [Agent asks: Who experiences the business problem most? Who's most likely to adopt? Who's easiest to reach?]
+3. **I need to create personas first** — [Agent suggests using `proto-persona.md` component skill]
+
+**User response:** [Selection or description]
+
+**Agent validates:** Is this specific enough to imagine a real person? Or is it too broad ("all users")?
 
 ---
 
-### Question 4: User Outcomes & Benefits
+### Question 4: User Outcomes & Benefits (Box 4)
 
 **Agent asks:**
-"What user outcomes or benefits will indicate success? (What actions/behaviors show users are getting value?)"
 
-**Offer 4 enumerated options:**
+**Why would your users seek out your product or service? What benefit would they gain? What behavior change can we observe that tells us they've achieved their goal?**
 
-1. **Activation outcome** — "Users complete onboarding, reach 'aha moment'" (e.g., "Users complete first project within 24 hours")
-2. **Engagement outcome** — "Users return regularly, increase usage" (e.g., "Users log in 3x/week, up from 1x/week")
-3. **Satisfaction outcome** — "Users report higher satisfaction/NPS" (e.g., "NPS increases from 30 to 50")
-4. **Expansion outcome** — "Users invite teammates, upgrade plans, or expand usage" (e.g., "Users invite 3+ teammates")
+Focus on **goals, benefits, emotions, empathy**—not metrics (those go in Box 2).
 
-**Or describe your specific user outcomes (observable behaviors, not assumptions).**
+**Examples of user outcomes & benefits:**
+- Save 10 hours per week on manual data entry (spend more time with family)
+- Get promoted by delivering projects faster
+- Avoid embarrassment of failed checkout in front of friends
+- Feel confident configuring enterprise software without calling support
 
-**User response:** [Selection or custom]
+**Why this matters:** This is the **empathy box**. It's about human motivation, not just behavior change.
 
-**Agent captures:**
-- **User Outcomes & Benefits:** [Observable behaviors]
+**Agent offers 3 options:**
+
+1. **I know what users want to achieve** — [Describe user benefits]
+2. **Help me identify user benefits** — [Agent prompts: What job are they hiring this product to do? What pain are they avoiding? What gain are they seeking?]
+3. **I need to research this first** — [Agent suggests `jobs-to-be-done.md` or `discovery-interview-prep.md`]
+
+**User response:** [Selection or description]
+
+**Agent validates:** Does this explain **why** the user cares (not just what they'll do)?
 
 ---
 
-### Question 5: Solutions (Initial Ideas)
+### Question 5: Solutions (Box 5)
 
 **Agent asks:**
-"What solution ideas might address the business problem? (These are hypotheses, not commitments.)"
 
-**Agent generates 3-5 solution ideas** based on business problem (Q1) and user outcomes (Q4).
+**What can we make that will solve our business problem and meet the needs of our customers at the same time?**
 
-**Example (if Business Problem = Retention, User Outcome = Activation):**
+List **features, initiatives, policies, systems, or even business model shifts** that might work. Encourage a wide solution space: big/small, innovative, "weird," and non-technical solutions.
+
+**Examples:**
+- One-tap mobile checkout (Apple Pay, Google Pay)
+- Self-service onboarding wizard (no human configuration)
+- AI-powered recommendation engine
+- Concierge onboarding (high-touch, manual—test before automating)
+- Change pricing model (usage-based instead of flat rate)
+
+**Important:** These are **hypotheses**, not commitments. You're exploring options, not committing to build everything.
+
+**Agent offers 3 options:**
+
+1. **I have solution ideas** — [List your candidate solutions]
+2. **Help me brainstorm solutions** — [Agent suggests solutions based on problem, outcomes, and users]
+3. **I only have one solution in mind** — [Agent challenges: "What else could solve this? What if that solution doesn't work?"]
+
+**User response:** [Selection or description]
+
+**Agent validates:** Do you have at least 3 candidate solutions? (More options = better hypotheses later)
+
+---
+
+### Question 6: Hypotheses (Box 6)
+
+**Agent asks:**
+
+Now let's create testable hypotheses by combining assumptions from Boxes 2-5.
+
+**Use this template:**
+
+> **We believe that** [business outcome from Box 2] **will be achieved if** [user from Box 3] **attains** [benefit from Box 4] **with** [solution from Box 5].
+
+**Rules:**
+- Each hypothesis focuses on **one** solution (from Box 5)
+- Combines assumptions from Boxes 2, 3, 4, and 5
+- Must be testable (you can design an experiment to validate/invalidate it)
+
+**Example:**
+
+> **We believe that** increasing mobile checkout conversion rate from 45% to 60% **will be achieved if** mobile-first millennials (25-35) **attain** faster, friction-free checkout **with** one-tap Apple Pay integration.
+
+**Agent offers:**
+
+Based on your inputs, here are suggested hypotheses (one per solution from Box 5):
+
+1. [Generated hypothesis 1]
+2. [Generated hypothesis 2]
+3. [Generated hypothesis 3]
+
+**Options:**
+- **Accept these hypotheses** — [Agent records them]
+- **Edit a hypothesis** — [Modify wording]
+- **Write my own hypotheses** — [Use the template]
+
+**User response:** [Selection or description]
+
+**Agent validates:** Does each hypothesis clearly state what you believe will happen if the solution works?
+
+---
+
+### Question 7: What's the Most Important Thing We Need to Learn First? (Box 7)
+
+**Agent asks:**
+
+For each hypothesis from Box 6, identify its **riskiest assumptions**. Then determine the **riskiest one right now**.
+
+**Types of risk:**
+- **Value risk:** Will users actually use this? Do they care?
+- **Usability risk:** Can users figure out how to use it?
+- **Feasibility risk:** Can we technically build this?
+- **Viability risk:** Will this achieve the business outcome?
+
+**Hint:** Early on, focus risk on **value** more than feasibility (most of the time). Don't build something users don't want, even if it's technically feasible.
+
+**Agent offers:**
+
+Based on your hypotheses, here are the riskiest assumptions:
+
+1. **[Hypothesis 1 risk]** — e.g., "Users will trust one-tap checkout without seeing itemized charges"
+2. **[Hypothesis 2 risk]** — e.g., "Self-service onboarding will reduce setup time to <3 days"
+3. **[Hypothesis 3 risk]** — e.g., "AI recommendations will increase average order value by 50%"
+
+**Which is the riskiest right now?**
+
+**Options:**
+1. **Risk 1** — [Select and explain why]
+2. **Risk 2** — [Select and explain why]
+3. **Risk 3** — [Select and explain why]
+4. **I'm not sure which is riskiest** — [Agent helps prioritize: Which assumption, if wrong, would kill the initiative?]
+
+**User response:** [Selection]
+
+**Agent records:** This is the assumption we'll test first.
+
+---
+
+### Question 8: What's the Least Amount of Work We Need to Do to Learn the Next Most Important Thing? (Box 8)
+
+**Agent asks:**
+
+Design an experiment to validate or invalidate the riskiest assumption (from Box 7) **as fast as you can**.
+
+**Examples of experiment types:**
+- **Customer interviews** — 5-10 interviews to test value hypothesis
+- **Landing page** — Fake door test to measure interest
+- **Concierge / manual prototype** — High-touch, manual version before automating
+- **Wizard-of-Oz** — Pretend the feature exists (humans behind the scenes)
+- **Smoke test** — Announce the feature, measure signups
+
+**Reminder:** Experiment design is an art. The canvas nudges you to do it—expect to iterate on the experiment design separately.
+
+**Agent offers:**
+
+Based on your riskiest assumption, here are experiment options:
+
+1. **Customer Interviews** — Talk to 10 users, ask if they'd use [solution], observe their current workaround
+2. **Landing Page Test** — Create a landing page describing [solution], measure signup rate
+3. **Concierge Test** — Manually deliver [benefit] to 5 users, observe if they achieve [outcome]
+4. **Wizard-of-Oz Prototype** — Fake [solution] with humans behind the scenes, see if users complete the workflow
+5. **Design a custom experiment** — [Describe your experiment]
+
+**Which experiment will you run?**
+
+**User response:** [Select one or describe custom experiment]
+
+**Agent validates:** Is this the **smallest test** that can validate/invalidate the assumption? (If it takes >2 weeks, it's too big—break it down.)
+
+---
+
+### Step 9: Review and Export Canvas
+
+**Agent summarizes:**
+
+Here's your completed Lean UX Canvas (v2):
 
 ```
-Solution Ideas:
+┌─────────────────────────────────────────────────────────────┐
+│ Lean UX Canvas (v2)                                         │
+│ Initiative: [Title]                                         │
+│ Date: [Today's date]                                        │
+│ Iteration: 1                                                │
+└─────────────────────────────────────────────────────────────┘
 
-1. Guided onboarding checklist — Interactive checklist walks users through core workflows step-by-step
-2. In-app tooltips — Contextual help appears when users encounter new features
-3. Email drip campaign — Automated emails nudge users to complete activation steps
-4. Human-assisted onboarding — 15-min onboarding call with CSM for high-value users
-5. Empty state prompts — When users see empty dashboard, suggest "Create your first project"
+┌─────────────────────┬──────────────┬───────────────────────┐
+│ 1. Business Problem │              │ 2. Business Outcomes  │
+│ [Your input]        │              │ [Your input]          │
+│                     │              │                       │
+├─────────────────────┤ 5. Solutions ├───────────────────────┤
+│ 3. Users            │              │ 4. User Outcomes      │
+│ [Your input]        │ [Your input] │    & Benefits         │
+│                     │              │ [Your input]          │
+├─────────────────────┤──────────────┼───────────────────────┤
+│ 6. Hypotheses       │ 7. Learn     │ 8. Experiments        │
+│ [Your input]        │    First     │ [Your input]          │
+│                     │ [Your input] │                       │
+└─────────────────────┴──────────────┴───────────────────────┘
 ```
+
+**Next steps:**
+1. **Run the experiment (Box 8)** — Set a timeline (e.g., 2 weeks)
+2. **Document learnings** — What did you learn? Was the assumption validated or invalidated?
+3. **Update the canvas** — Revise hypotheses based on learnings, choose next riskiest assumption
+4. **Iterate** — Repeat Box 7 → Box 8 until confidence is high enough to build
 
 **Agent asks:**
-"Which solution ideas should we prioritize for testing?"
 
-**User response:** [Selection or custom]
-
-**Agent captures:**
-- **Solutions:** [List of ideas to test]
-
----
-
-### Question 6: Hypotheses (Assumptions)
-
-**Agent asks:**
-"What assumptions are you making? Let's turn them into testable hypotheses."
-
-**Agent generates 3-5 hypotheses** using **"If/Then/Because"** format:
-
-**Template:** "If [we do X], then [user outcome Y will happen], because [assumption Z]."
-
-**Example (for Solution 1: Guided onboarding checklist):**
-
-```
-Hypothesis 1:
-If we add a guided onboarding checklist, then activation rate will increase from 40% to 60%, because users are dropping off due to lack of guidance (not lack of features).
-
-Hypothesis 2:
-If we show step-by-step prompts, then users will complete onboarding faster (reduce time-to-value from 3 days to 1 day), because current onboarding is overwhelming and unclear.
-
-Hypothesis 3:
-If we prioritize onboarding over new features, then churn will decrease by 10%, because most churn happens in the first 30 days due to poor activation.
-```
-
-**Agent asks:**
-"Do these hypotheses capture your key assumptions? Should we add or refine any?"
-
-**User response:** [Approve or modify]
-
-**Agent captures:**
-- **Hypotheses:** [If/then/because statements]
-
----
-
-### Question 7: What's the Most Important Thing to Learn First?
-
-**Agent asks:**
-"Which assumption is the riskiest? (What's the most important thing to validate before building?)"
-
-**Agent ranks hypotheses from Q6 by risk:**
-
-**Risk factors:**
-- **High uncertainty:** Do we have data/evidence, or is this a guess?
-- **High impact:** If this assumption is wrong, does the entire solution fail?
-- **High cost:** Would building based on this assumption waste significant resources?
-
-**Example ranking:**
-
-```
-Ranked Hypotheses (highest risk first):
-
-1. **Hypothesis 1 (RISKIEST):** "Users drop off due to lack of guidance, not lack of features"
-   - High uncertainty: We don't have data confirming this root cause
-   - High impact: If wrong, onboarding checklist won't move activation
-   - HIGH RISK — Test this first
-
-2. **Hypothesis 2 (MEDIUM RISK):** "Users will complete onboarding faster with step-by-step prompts"
-   - Medium uncertainty: Some qualitative feedback supports this
-   - Medium impact: Time-to-value matters, but not as critical as activation rate
-   - MEDIUM RISK — Test after Hypothesis 1
-
-3. **Hypothesis 3 (LOWER RISK):** "Most churn happens in first 30 days"
-   - Low uncertainty: We have churn data confirming this
-   - Low impact: Already validated; no need to test
-   - LOW RISK — Assume true
-```
-
-**Agent asks:**
-"Do you agree with this ranking? Which hypothesis should we test first?"
-
-**User response:** [Selection or custom]
-
-**Agent captures:**
-- **Most Important to Learn First:** [Riskiest hypothesis]
-
----
-
-### Question 8: What's the Least Work to Learn Next?
-
-**Agent asks:**
-"What's the smallest experiment we can run to test the riskiest hypothesis?"
-
-**Agent generates 3 experiment options** (ordered by effort: low → high):
-
-**Example (for Hypothesis 1: "Users drop off due to lack of guidance"):**
-
-```
-Experiment Options (least work → most work):
-
-1. **Concierge test (manual)** — Manually walk 10 users through onboarding via Zoom, observe where they get stuck
-   - Effort: 1 day (10 x 30-min sessions)
-   - Learning: Qualitative validation of root cause
-   - Risk: Small sample, not scalable
-
-2. **Prototype test (clickable mockup)** — Create Figma prototype of onboarding checklist, watch 10 users attempt it
-   - Effort: 3 days (design + testing)
-   - Learning: Validates if checklist concept resonates
-   - Risk: Not real product, users may behave differently
-
-3. **A/B test (live product)** — Build minimal onboarding checklist, show to 50% of new users for 2 weeks
-   - Effort: 2 weeks (build + monitor)
-   - Learning: Quantitative validation of activation lift
-   - Risk: Higher effort if hypothesis is wrong
-```
-
-**Agent asks:**
-"Which experiment should we run first?"
-
-**User response:** [Selection or custom]
-
-**Agent captures:**
-- **Least Work to Learn Next:** [Minimal experiment design]
-
----
-
-### Output: Lean UX Canvas + Experiment Plan
-
-After completing the flow, the agent outputs:
-
-```markdown
-# Lean UX Canvas: [Initiative Name]
-
-**Date:** [Today's date]
-**Iteration:** 1
-
----
-
-## 1. Business Problem
-[From Q1]
-
-## 2. Business Outcomes
-[From Q2 - measurable goals]
-
-## 3. Users (Customer Segments)
-[From Q3 - target personas/segments]
-
-## 4. User Outcomes & Benefits
-[From Q4 - observable behaviors]
-
-## 5. Solutions (Hypotheses to Test)
-- [Solution 1 from Q5]
-- [Solution 2]
-- [Solution 3]
-- [Solution 4]
-
-## 6. Hypotheses (If/Then/Because)
-
-### Hypothesis 1:
-If [action], then [outcome], because [assumption].
-
-### Hypothesis 2:
-If [action], then [outcome], because [assumption].
-
-### Hypothesis 3:
-If [action], then [outcome], because [assumption].
-
----
-
-## 7. What's the Most Important Thing to Learn First?
-
-**Riskiest Hypothesis:** [From Q7]
-
-**Why this is riskiest:**
-- High uncertainty: [Explanation]
-- High impact: [Consequence if wrong]
-
----
-
-## 8. What's the Least Amount of Work to Learn the Next Most Important Thing?
-
-**Experiment:** [From Q8]
-
-**Effort:** [Time estimate]
-**Success criteria:** [What validates/invalidates hypothesis]
-**Timeline:** [Duration]
-
----
-
-## Next Steps
-
-1. **Run experiment:** [Specific action, e.g., "Recruit 10 users for concierge onboarding test"]
-2. **Measure results:** [Metric to track, e.g., "Activation rate: control vs. test group"]
-3. **Decide:**
-   - If hypothesis validated → Build solution, iterate canvas
-   - If hypothesis invalidated → Pivot, test next hypothesis
-4. **Update canvas:** Iterate after each experiment (mark as "Iteration 2," etc.)
-
----
-
-**Ready to run the experiment? Let me know if you'd like to refine hypotheses or design the test.**
-```
+Would you like me to:
+1. **Export this canvas** as a Markdown file?
+2. **Suggest related skills** to use next (e.g., `discovery-interview-prep.md` for customer interviews)?
+3. **Refine a specific box** (if something feels incomplete)?
 
 ---
 
 ## Examples
 
-### Example 1: Good Lean UX Canvas (SaaS Onboarding)
+### ✅ Good: Mobile Checkout Optimization
 
-**Q1 Response:** "Retention problem — Churn rate increased 15% last quarter"
+**Context:** E-commerce company sees mobile traffic surpass desktop, but mobile conversion rate is 15% lower.
 
-**Q2 Response:** "Reduce churn from 15% to 8% within 6 months"
+**Box 1 (Business Problem):**
+"Mobile traffic now represents 60% of site visits, but mobile checkout conversion rate (45%) is 15% lower than desktop (60%). Our checkout flow wasn't designed for mobile—6 form fields, manual address entry, and 3-step payment. Competitors (Amazon, Shopify) offer one-tap checkout. We're losing revenue."
 
-**Q3 Response:** "Primary persona — Small business owners (non-technical)"
+**Box 2 (Business Outcomes):**
+- Increase mobile checkout conversion rate from 45% to 60% within 3 months
 
-**Q4 Response:** "Activation outcome — Users complete first project within 24 hours"
+**Box 3 (Users):**
+- Mobile-first millennials (25-35) who order 3+ times per week
 
-**Q5 - Solutions Generated:**
-1. Guided onboarding checklist
-2. In-app tooltips
-3. Email drip campaign
-4. Human-assisted onboarding
+**Box 4 (User Outcomes & Benefits):**
+- Complete checkout in <30 seconds without typing (avoid frustration of fat-finger errors on mobile keyboard)
 
-**Q6 - Hypotheses Generated:**
-- **H1:** If we add guided checklist, then activation increases to 60%, because users drop off due to lack of guidance
-- **H2:** If we show step-by-step prompts, then time-to-value decreases to 1 day, because current onboarding is overwhelming
+**Box 5 (Solutions):**
+1. One-tap checkout (Apple Pay, Google Pay)
+2. Auto-fill address from device location
+3. Save payment method for returning customers
 
-**Q7 - Riskiest Hypothesis:** H1 (lack of guidance vs. lack of features)
+**Box 6 (Hypotheses):**
+- "We believe increasing mobile checkout conversion rate from 45% to 60% will be achieved if mobile-first millennials (25-35) attain faster, friction-free checkout with one-tap Apple Pay integration."
 
-**Q8 - Minimal Experiment:** Concierge test—manually walk 10 users through onboarding, observe pain points
+**Box 7 (Riskiest Assumption):**
+- Users will trust one-tap checkout without seeing itemized charges before confirming purchase
 
-**Why this works:**
-- Clear business problem → measurable outcome
-- Riskiest assumption identified before building
-- Minimal experiment (1 day) before committing to full build
+**Box 8 (Experiment):**
+- Wizard-of-Oz test: Show one-tap checkout UI, but secretly process payment with existing flow. Measure: Do users click "Pay with Apple Pay"? Do they abandon after seeing the Apple Pay modal?
+
+**Why This Works:**
+- Clear business problem (mobile conversion gap)
+- Measurable outcome (45% → 60%)
+- Specific user segment
+- Testable hypothesis
+- Smallest experiment (Wizard-of-Oz, not full build)
 
 ---
 
-### Example 2: Bad Lean UX Canvas (Solution-First)
+### ❌ Bad: Feature-First Canvas (Solution-Driven)
 
-**Q1 Response:** "We need a mobile app"
+**Box 1 (Business Problem):**
+"We need to build a recommendation engine."
 
-**Why this fails:**
-- Solution disguised as business problem
-- No measurable business outcome
-- No hypotheses to test
+**Why This Fails:** This is a solution, not a problem. What changed? Why does a recommendation engine matter?
 
-**Fix with canvas:**
-- **Q1:** "Acquisition problem — Trial conversion rate below industry average (10% vs. 20%)"
-- **Q2:** "Increase trial-to-paid conversion from 10% to 20%"
-- **Q3:** "Mobile-first users (freelancers, field workers)"
-- **Q4:** "Users complete core workflow on mobile device"
-- **Q5:** Solutions = Mobile app, responsive web, PWA, SMS notifications
-- **Q6:** Hypothesis = "If we enable mobile access, then trial conversion increases, because mobile-first users currently can't complete workflows on the go"
-- **Q7:** Riskiest = "Mobile-first users abandon trials because they can't access product on mobile" (need to validate root cause)
-- **Q8:** Experiment = Survey 50 churned trial users—ask if mobile access was a blocker
+**Box 2 (Business Outcomes):**
+"Increase revenue."
 
-**Now canvas reveals:** Mobile app is one solution, but might not be the riskiest assumption to test first.
+**Why This Fails:** Too vague. How will you measure? What behavior change indicates success?
+
+**Box 5 (Solutions):**
+"Recommendation engine."
+
+**Why This Fails:** Only one solution (the one someone already decided on). No exploration of alternatives.
+
+**Box 6 (Hypotheses):**
+"We believe users will like recommendations."
+
+**Why This Fails:** Not testable. Doesn't use the hypothesis template. Doesn't connect business outcome to user benefit.
+
+**What Should Have Been Done:**
+- Start with **what changed** in Box 1 (e.g., "Average order value dropped 20% after we removed upsell banners")
+- Define **measurable outcome** in Box 2 (e.g., "Increase average order value from $50 to $75")
+- List **multiple solutions** in Box 5 (e.g., manual upsell banners, AI recommendations, bundle discounts)
+- Test each solution with a hypothesis
+
+---
+
+### ✅ Good: Enterprise Onboarding Friction
+
+**Box 1 (Business Problem):**
+"Enterprise customers churn after 6 months because onboarding requires 3+ weeks of manual configuration (SSO, permissions, user imports). Competitors offer self-service onboarding. Our CS team spends 40 hours per customer on setup, limiting our ability to scale."
+
+**Box 7 (Riskiest Assumption):**
+"Enterprise IT admins can configure SSO without human support."
+
+**Box 8 (Experiment):**
+"Concierge test: Manually guide 5 enterprise customers through a self-service onboarding wizard prototype (Figma mockup + Loom walkthrough). Measure: Can they complete setup in <3 days without calling support?"
+
+**Why This Works:**
+- Clear problem (manual onboarding blocks scale)
+- Falsifiable assumption (admins can self-serve)
+- Minimal experiment (concierge test before building automation)
 
 ---
 
 ## Common Pitfalls
 
-### Pitfall 1: Business Problem Is Actually a Solution
-**Symptom:** "Business problem: We need better reporting"
+### 1. **Starting with Solutions, Not Problems**
+**Failure Mode:** Box 1 says "We need to build X" instead of describing what changed.
 
-**Consequence:** Jumped to solution before understanding root problem
+**Consequence:** You build the solution someone already decided on, without validating the problem exists.
 
-**Fix:** Ask "why?"—"What business outcome is blocked by lack of reporting?"
-
----
-
-### Pitfall 2: Business Outcomes Aren't Measurable
-**Symptom:** "Improve user experience" or "Increase customer satisfaction"
-
-**Consequence:** Can't validate if initiative succeeded
-
-**Fix:** Make outcomes specific: "Increase NPS from 30 to 50" or "Reduce churn from 15% to 8%"
+**Fix:** Ask: "What changed in the world? Why is this a problem now (vs. 6 months ago)?"
 
 ---
 
-### Pitfall 3: Hypotheses Aren't Testable
-**Symptom:** "We believe users want dark mode"
+### 2. **Vague Business Outcomes**
+**Failure Mode:** Box 2 says "Increase revenue" or "Make users happy."
 
-**Consequence:** Can't design an experiment to validate
+**Consequence:** No way to measure success; can't tell if experiments worked.
 
-**Fix:** Use If/Then/Because format: "If we add dark mode, then engagement increases by 10%, because users abandon due to eye strain at night"
-
----
-
-### Pitfall 4: Testing Too Many Hypotheses at Once
-**Symptom:** Trying to validate 10 assumptions simultaneously
-
-**Consequence:** Can't isolate what worked or didn't
-
-**Fix:** Test one hypothesis at a time, starting with riskiest
+**Fix:** Define measurable behavior change. "Increase average order value from $50 to $75" or "Reduce support tickets by 30%."
 
 ---
 
-### Pitfall 5: Experiment Is Too Big
-**Symptom:** "Let's build the full feature and A/B test it"
+### 3. **Too-Broad User Segments**
+**Failure Mode:** Box 3 says "All users" or "Everyone."
 
-**Consequence:** Waste resources if hypothesis is wrong
+**Consequence:** Can't design targeted experiments; waste time on personas who won't adopt.
 
-**Fix:** Start with smallest experiment (concierge, prototype, landing page test)
+**Fix:** Pick one persona to start. You can expand later.
+
+---
+
+### 4. **Confusing Box 2 and Box 4**
+**Failure Mode:** Putting emotions in Box 2 and metrics in Box 4 (or vice versa).
+
+**Consequence:** Misaligned hypotheses; unclear success criteria.
+
+**Fix:** **Box 2 = Behavior change (metrics).** **Box 4 = Goals, benefits, emotions (empathy).**
+
+---
+
+### 5. **Only One Solution in Box 5**
+**Failure Mode:** Listing one feature because stakeholders already decided.
+
+**Consequence:** No exploration of alternatives; can't test which solution is best.
+
+**Fix:** Force yourself to list 3+ solutions. Ask: "What else could solve this problem?"
+
+---
+
+### 6. **Skipping Experiments (Box 8)**
+**Failure Mode:** "We'll just build it and see what happens."
+
+**Consequence:** Waste weeks/months building the wrong thing.
+
+**Fix:** Design smallest experiment first. If you can't think of one, use `pol-probe-advisor.md` to choose a validation method.
 
 ---
 
 ## References
 
 ### Related Skills
-- `problem-statement.md` — Converts business problem into structured problem statement
-- `epic-hypothesis.md` — Turns validated hypotheses into epics
-- `opportunity-solution-tree.md` — Generates solution options and POC experiments
-- `proto-persona.md` — Defines user segments for canvas
+- **[problem-statement](../problem-statement/SKILL.md)** (Component) — Frame problem before filling Box 1
+- **[problem-framing-canvas](../problem-framing-canvas/SKILL.md)** (Interactive) — MITRE Problem Framing before canvas
+- **[proto-persona](../proto-persona/SKILL.md)** (Component) — Create personas for Box 3
+- **[jobs-to-be-done](../jobs-to-be-done/SKILL.md)** (Component) — Identify user benefits for Box 4
+- **[epic-hypothesis](../epic-hypothesis/SKILL.md)** (Component) — Write testable hypotheses (Box 6)
+- **[discovery-interview-prep](../discovery-interview-prep/SKILL.md)** (Interactive) — Design customer interviews for Box 8
+- **[pol-probe-advisor](../pol-probe-advisor/SKILL.md)** (Interactive) — Choose experiment type for Box 8
 
 ### External Frameworks
-- Jeff Gothelf, *Lean UX Canvas v2* (2020) — Origin of canvas framework
-- Jeff Gothelf & Josh Seiden, *Lean UX* (2016) — Hypothesis-driven product development
-- Eric Ries, *The Lean Startup* (2011) — Build-measure-learn cycle
+- **Jeff Gothelf** — *Lean UX: Designing Great Products with Agile Teams* (O'Reilly, 2013; 2nd ed. 2016)
+- **Jeff Gothelf** — [Lean UX Canvas v2](https://jeffgothelf.com/blog/leanuxcanvas-v2/) (official blog post)
+- **Lean UX Canvas PDF** — [Download v2 PDF](https://static1.squarespace.com/static/5e0238b6bf487105fe3309e1/t/5e1016e061066d7f81f2d8fa/1578112737021/LeanUX_canvas_v5.pdf)
 
-### Dean's Work
-- [If Dean has Lean UX resources, link here]
-
----
-
-**Skill type:** Interactive
-**Suggested filename:** `lean-ux-canvas.md`
-**Suggested placement:** `/skills/interactive/`
-**Dependencies:** Uses `problem-statement.md`, `proto-persona.md`, `epic-hypothesis.md`
+### Tools
+- **Miro / Mural** — Digital whiteboard for collaborative canvas filling
+- **Google Slides / PowerPoint** — Template available from Jeff Gothelf's site
+- **Notion / Coda** — Database view for tracking multiple canvases
