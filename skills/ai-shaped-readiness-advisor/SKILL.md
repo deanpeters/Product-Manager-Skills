@@ -33,18 +33,34 @@ This is not about AI tools—it's about **organizational redesign around AI as c
 These competencies define AI-shaped product work. You'll assess your maturity on each.
 
 #### 1. **Context Design**
-Building a durable **"reality layer"** that both humans and AI can trust.
+Building a durable **"reality layer"** that both humans and AI can trust—treating AI attention as a scarce resource and allocating it deliberately.
 
 **What it includes:**
 - Documenting what's true vs. assumed
 - Immutable constraints (technical, regulatory, strategic)
 - Operational glossary (shared definitions)
 - Evidence standards (what counts as validation)
+- **Context boundaries** (what to persist vs. retrieve)
+- **Memory architecture** (short-term conversational + long-term persistent)
+- **Retrieval strategies** (semantic search, contextual retrieval)
 
 **Key Principle:** *"If you can't point to evidence, constraints, and definitions, you don't have context. You have vibes."*
 
-**AI-first version:** Pasting PRDs into ChatGPT
-**AI-shaped version:** CLAUDE.md files, evidence databases, constraint registries AI agents reference
+**Critical Distinction: Context Stuffing vs. Context Engineering**
+- **Context Stuffing (AI-first):** Jamming volume without intent ("paste entire PRD")
+- **Context Engineering (AI-shaped):** Shaping structure for attention (bounded domains, retrieve with intent)
+
+**The 5 Diagnostic Questions:**
+1. What specific decision does this support?
+2. Can retrieval replace persistence?
+3. Who owns the context boundary?
+4. What fails if we exclude this?
+5. Are we fixing structure or avoiding it?
+
+**AI-first version:** Pasting PRDs into ChatGPT; no context boundaries; "more is better" mentality
+**AI-shaped version:** CLAUDE.md files, evidence databases, constraint registries AI agents reference; two-layer memory architecture; Research→Plan→Reset→Implement cycle to prevent context rot
+
+**Deep Dive:** See [`context-engineering-advisor`](../context-engineering-advisor/SKILL.md) for detailed guidance on diagnosing context stuffing and implementing memory architecture.
 
 ---
 
@@ -169,27 +185,33 @@ Before we assess your AI-shaped readiness, let's gather context:
 
 **Agent asks:**
 
-Let's assess your **Context Design** capability—how well you've built a "reality layer" that both humans and AI can trust.
+Let's assess your **Context Design** capability—how well you've built a "reality layer" that both humans and AI can trust, and whether you're doing **context stuffing** (volume without intent) or **context engineering** (structure for attention).
 
 **Which statement best describes your current state?**
 
-1. **Level 1 (AI-First):** "I paste context into ChatGPT every time I need something. No shared knowledge base."
-   - Reality: One-off prompting with no durability
-   - Problem: AI has no memory; you repeat yourself constantly
+1. **Level 1 (AI-First / Context Stuffing):** "I paste entire documents into ChatGPT every time I need something. No shared knowledge base. No context boundaries."
+   - Reality: One-off prompting with no durability; "more is better" mentality
+   - Problem: AI has no memory; you repeat yourself constantly; context stuffing degrades attention
+   - **Context Engineering Gap:** No answers to the 5 diagnostic questions; persisting everything "just in case"
 
-2. **Level 2 (Emerging):** "We have some docs (PRDs, strategy memos), but they're scattered. No consistent format."
-   - Reality: Context exists but isn't structured for AI consumption
-   - Problem: AI can't reliably find or trust information
+2. **Level 2 (Emerging / Early Structure):** "We have some docs (PRDs, strategy memos), but they're scattered. No consistent format. Starting to notice context stuffing issues (vague responses, normalized retries)."
+   - Reality: Context exists but isn't structured for AI consumption; no retrieval strategy
+   - Problem: AI can't reliably find or trust information; mixing always-needed with episodic context
+   - **Context Engineering Gap:** No context boundary owner; no distinction between persist vs. retrieve
 
-3. **Level 3 (Transitioning):** "We've started using CLAUDE.md files and project instructions. Some constraints documented."
-   - Reality: Structured context emerging, but not comprehensive
-   - Problem: Coverage is patchy; some areas well-documented, others vibe-driven
+3. **Level 3 (Transitioning / Context Engineering Emerging):** "We've started using CLAUDE.md files and project instructions. Constraints registry exists. We're identifying what to persist vs. retrieve. Experimenting with Research→Plan→Reset→Implement cycle."
+   - Reality: Structured context emerging, but not comprehensive; context boundaries defined but not fully enforced
+   - Problem: Coverage is patchy; some areas well-documented, others vibe-driven; inconsistent retrieval practices
+   - **Context Engineering Progress:** Can answer 3-4 of the 5 diagnostic questions; context boundary owner assigned; starting to use two-layer memory
 
-4. **Level 4 (AI-Shaped):** "We maintain a durable reality layer: constraints registry, evidence database, operational glossary. AI agents reference these automatically."
-   - Reality: Comprehensive, version-controlled context both humans and AI trust
-   - Outcome: AI operates with high confidence; reduces hallucination and rework
+4. **Level 4 (AI-Shaped / Context Engineering Mastery):** "We maintain a durable reality layer: constraints registry (20+ entries), evidence database, operational glossary (30+ terms). Two-layer memory architecture (short-term conversational + long-term persistent via vector DB). Context boundaries defined and owned. AI agents reference these automatically. We use Research→Plan→Reset→Implement to prevent context rot."
+   - Reality: Comprehensive, version-controlled context both humans and AI trust; retrieval with intent (not completeness)
+   - Outcome: AI operates with high confidence; reduces hallucination and rework; token usage optimized; no context stuffing
+   - **Context Engineering Mastery:** Can answer all 5 diagnostic questions; context boundary audited quarterly; quantitative efficiency tracking: (Accuracy × Coherence) / (Tokens × Latency)
 
 **Select your level:** [1, 2, 3, or 4]
+
+**Note:** If you selected Level 1-2 and struggle with context stuffing, consider using [`context-engineering-advisor`](../context-engineering-advisor/SKILL.md) to diagnose and fix Context Hoarding Disorder before proceeding.
 
 **User response:** [Selection]
 
@@ -421,42 +443,71 @@ Based on your profile, I recommend focusing on **[Competency Name]** first becau
 
 #### If Priority = Context Design
 
-**Goal:** Build a durable "reality layer" that both humans and AI trust.
+**Goal:** Build a durable "reality layer" that both humans and AI trust—move from context stuffing to context engineering.
+
+**Pre-Phase: Diagnose Context Stuffing (If Needed)**
+If you're at Level 1-2, first diagnose context stuffing symptoms:
+1. Run through the 5 diagnostic questions (see [`context-engineering-advisor`](../context-engineering-advisor/SKILL.md))
+2. Identify what you're persisting that should be retrieved
+3. Assign context boundary owner
+4. Create Context Manifest (what's always-needed vs. episodic)
 
 **Phase 1: Document Constraints (Week 1)**
 1. Create a constraints registry:
    - Technical constraints (APIs, data models, performance limits)
    - Regulatory constraints (GDPR, HIPAA, etc.)
    - Strategic constraints (we will/won't build X)
-2. Format: Structured file AI agents can parse (YAML, JSON, or Markdown with frontmatter)
-3. Version control in Git
+2. Apply diagnostic question #4 to each constraint: "What fails if we exclude this?"
+3. Format: Structured file AI agents can parse (YAML, JSON, or Markdown with frontmatter)
+4. Version control in Git
 
 **Phase 2: Build Operational Glossary (Week 2)**
-1. List top 20 terms your team uses (e.g., "user," "customer," "activation," "churn")
+1. List top 20-30 terms your team uses (e.g., "user," "customer," "activation," "churn")
 2. Define each unambiguously (avoid "it depends")
 3. Include edge cases and exceptions
 4. Add to CLAUDE.md or project instructions
+5. This becomes your **long-term persistent memory** (Declarative Memory)
 
-**Phase 3: Establish Evidence Standards (Week 3)**
+**Phase 3: Establish Evidence Standards + Context Boundaries (Week 3)**
 1. Define what counts as validation:
    - User feedback: "X users said Y" (with quotes)
    - Analytics: "Metric Z changed by N%" (with dashboard link)
    - Competitive intel: "Competitor A launched B" (with source)
 2. Reject: "I think," "We feel," "It seems like"
-3. Codify in team docs
+3. Define context boundaries using the 5 diagnostic questions:
+   - What specific decision does each piece of context support?
+   - Can retrieval replace persistence?
+   - Who owns the context boundary?
+4. Create Context Manifest document
+5. Codify in team docs
 
-**Phase 4: Integrate into Workflows (Week 4)**
-1. Update AI prompts to reference constraints registry and glossary
-2. Test: Ask AI to cite constraints when making recommendations
-3. Measure: % of AI outputs that cite evidence vs. hallucinate
+**Phase 4: Implement Memory Architecture + Workflows (Week 4)**
+1. **Set up two-layer memory:**
+   - **Short-term (conversational):** Summarize/truncate older parts of conversation
+   - **Long-term (persistent):** Constraints registry + operational glossary (consider vector database for retrieval)
+2. **Implement Research→Plan→Reset→Implement cycle:**
+   - Research: Allow chaotic context gathering
+   - Plan: Synthesize into high-density SPEC.md or PLAN.md
+   - Reset: Clear context window
+   - Implement: Use only the plan as context
+3. Update AI prompts to reference constraints registry and glossary
+4. Test: Ask AI to cite constraints when making recommendations
+5. Measure: % of AI outputs that cite evidence vs. hallucinate; token usage efficiency
 
 **Success Criteria:**
 - ✅ Constraints registry has 20+ entries
-- ✅ Operational glossary has 20+ terms
+- ✅ Operational glossary has 20-30 terms
 - ✅ Evidence standards documented and shared
+- ✅ Context Manifest created (always-needed vs. episodic)
+- ✅ Context boundary owner assigned
+- ✅ Two-layer memory architecture implemented
+- ✅ Research→Plan→Reset→Implement cycle tested on 1 workflow
 - ✅ AI agents reference these automatically
+- ✅ Token usage down 30%+ (less context stuffing)
+- ✅ Output consistency up (fewer retries)
 
 **Related Skills:**
+- **[`context-engineering-advisor`](../context-engineering-advisor/SKILL.md)** (Interactive) — Deep dive on diagnosing context stuffing and implementing memory architecture
 - `problem-statement.md` — Define constraints before framing problems
 - `epic-hypothesis.md` — Evidence-based hypothesis writing
 
@@ -776,6 +827,7 @@ Would you like me to create a progress tracker for your AI-shaped transformation
 ## References
 
 ### Related Skills
+- **[context-engineering-advisor](../context-engineering-advisor/SKILL.md)** (Interactive) — **Deep dive on Context Design competency:** Diagnose context stuffing, implement memory architecture, use Research→Plan→Reset→Implement cycle
 - **[problem-statement](../problem-statement/SKILL.md)** (Component) — Evidence-based problem framing (Context Design)
 - **[epic-hypothesis](../epic-hypothesis/SKILL.md)** (Component) — Testable hypotheses with evidence standards
 - **[pol-probe-advisor](../pol-probe-advisor/SKILL.md)** (Interactive) — Use AI to compress validation cycles (Outcome Acceleration)
@@ -784,6 +836,7 @@ Would you like me to create a progress tracker for your AI-shaped transformation
 
 ### External Frameworks
 - **Dean Peters** — [*AI-First Is Cute. AI-Shaped Is Survival.*](https://deanpeters.substack.com/p/ai-first-is-cute-ai-shaped-is-survival) (Productside Substack, 2026)
+- **Dean Peters** — [*Context Stuffing Is Not Context Engineering*](https://deanpeters.substack.com/p/context-stuffing-is-not-context-engineering) (Productside Substack, 2026) — Deep dive on Competency #1 (Context Design)
 
 ### Further Reading
 - **Ethan Mollick** — *Co-Intelligence* (on AI as co-intelligence, not replacement)
