@@ -458,7 +458,7 @@ If executives need a demo, build it *after* you've validated the hypothesis with
 ### External Frameworks
 - **Jeff Patton** — *User Story Mapping* (lean validation principles)
 - **Marty Cagan** — *Inspired* (2014 prototype flavors framework)
-- **Dean Peters** — [*Vibe First, Validate Fast, Verify Fit*](https://deanpeters.substack.com/p/vibe-first-validate-fast-verify-fit) (Productside Substack, 2025)
+- **Dean Peters** — [*Vibe First, Validate Fast, Verify Fit*](https://deanpeters.substack.com/p/vibe-first-validate-fast-verify-fit) (Dean Peters' Substack, 2025)
 
 ### Tools by Probe Type
 - **Feasibility:** ChatGPT/Claude, Postman, Jupyter

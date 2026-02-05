@@ -298,7 +298,7 @@ Reframe from the user's perspective:
 - Dave Gray, *Empathy Mapping* — Emotional framing techniques
 
 ### Dean's Work
-- [Link to relevant Productside Substack articles if applicable]
+- [Link to relevant Dean Peters' Substack articles if applicable]
 
 ---
 

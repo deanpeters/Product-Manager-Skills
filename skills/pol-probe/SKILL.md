@@ -312,7 +312,7 @@ If any answer is "no," revise your probe or reconsider whether you need one.
 ### External Frameworks
 - **Jeff Patton** — *User Story Mapping* (lean validation principles)
 - **Marty Cagan** — *Inspired* (2014 prototype flavors framework)
-- **Dean Peters** — [*Vibe First, Validate Fast, Verify Fit*](https://deanpeters.substack.com/p/vibe-first-validate-fast-verify-fit) (Productside Substack, 2025)
+- **Dean Peters** — [*Vibe First, Validate Fast, Verify Fit*](https://deanpeters.substack.com/p/vibe-first-validate-fast-verify-fit) (Dean Peters' Substack, 2025)
 
 ### Tools Mentioned
 - **Feasibility:** GenAI (ChatGPT, Claude), API testing tools

@@ -242,7 +242,7 @@ If any answer is "no" or "sort of," revise.
 - Al Ries & Jack Trout, *Positioning: The Battle for Your Mind* (1981) — Foundational positioning theory
 
 ### Dean's Work
-- [Link to relevant Productside Substack articles if applicable]
+- [Link to relevant Dean Peters' Substack articles if applicable]
 
 ---
 

@@ -725,7 +725,7 @@ Would you like me to:
 - **[pol-probe-advisor](../pol-probe-advisor/SKILL.md)** (Interactive) — Validation experiments benefit from context engineering (define what AI needs to know)
 
 ### External Frameworks
-- **Dean Peters** — [*Context Stuffing Is Not Context Engineering*](https://deanpeters.substack.com/p/context-stuffing-is-not-context-engineering) (Productside Substack, 2026)
+- **Dean Peters** — [*Context Stuffing Is Not Context Engineering*](https://deanpeters.substack.com/p/context-stuffing-is-not-context-engineering) (Dean Peters' Substack, 2026)
 - **Teresa Torres** — *Continuous Discovery Habits* (Context Engineering as one of 5 new AI PM disciplines)
 - **Marty Cagan** — *Empowered* (Feasibility risk in AI era includes understanding "physics of AI")
 - **Anthropic** — [Contextual Retrieval whitepaper](https://www.anthropic.com/news/contextual-retrieval) (35% failure rate reduction)

@@ -318,7 +318,7 @@ Each becomes its own story with focused acceptance criteria.
 - INVEST criteria (Independent, Negotiable, Valuable, Estimable, Small, Testable)
 
 ### Dean's Work
-- [Link to relevant Productside Substack articles if applicable]
+- [Link to relevant Dean Peters' Substack articles if applicable]
 
 ---
 

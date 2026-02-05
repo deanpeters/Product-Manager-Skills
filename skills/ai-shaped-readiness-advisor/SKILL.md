@@ -835,8 +835,8 @@ Would you like me to create a progress tracker for your AI-shaped transformation
 - **[positioning-statement](../positioning-statement/SKILL.md)** (Component) — Articulate your AI-driven differentiation (Strategic Differentiation)
 
 ### External Frameworks
-- **Dean Peters** — [*AI-First Is Cute. AI-Shaped Is Survival.*](https://deanpeters.substack.com/p/ai-first-is-cute-ai-shaped-is-survival) (Productside Substack, 2026)
-- **Dean Peters** — [*Context Stuffing Is Not Context Engineering*](https://deanpeters.substack.com/p/context-stuffing-is-not-context-engineering) (Productside Substack, 2026) — Deep dive on Competency #1 (Context Design)
+- **Dean Peters** — [*AI-First Is Cute. AI-Shaped Is Survival.*](https://deanpeters.substack.com/p/ai-first-is-cute-ai-shaped-is-survival) (Dean Peters' Substack, 2026)
+- **Dean Peters** — [*Context Stuffing Is Not Context Engineering*](https://deanpeters.substack.com/p/context-stuffing-is-not-context-engineering) (Dean Peters' Substack, 2026) — Deep dive on Competency #1 (Context Design)
 
 ### Further Reading
 - **Ethan Mollick** — *Co-Intelligence* (on AI as co-intelligence, not replacement)

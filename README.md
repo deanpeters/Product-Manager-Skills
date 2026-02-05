@@ -342,6 +342,6 @@ See [LICENSE](LICENSE) for full details.
 
 **v0.1 — February 2026**
 
-Built by Dean Peters (Productside) with Claude (Anthropic).
+Built by Dean Peters (Principal Consultant and Trainer with Productside) with Claude (Anthropic) and OpenAI Codex.
 
 *Helping product managers work smarter with AI.*

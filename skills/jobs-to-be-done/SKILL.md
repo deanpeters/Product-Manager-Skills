@@ -421,7 +421,7 @@ Ask: "How would your life be better if this job were easier?"
 - Alexander Osterwalder, *Value Proposition Canvas* (2014) — Customer jobs/pains/gains framework
 
 ### Dean's Work
-- [Link to relevant Productside Substack articles if applicable]
+- [Link to relevant Dean Peters' Substack articles if applicable]
 
 ---
 
