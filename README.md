@@ -10,7 +10,7 @@
 ║   ██║     ██║ ╚═╝ ██║    ███████║██║  ██╗██║███████╗███████╗███████║
 ║   ╚═╝     ╚═╝     ╚═╝    ╚══════╝╚═╝  ╚═╝╚═╝╚══════╝╚══════╝╚══════╝
 ║                                                                   ║
-║   32 battle-tested frameworks for AI agents                      ║
+║   33 battle-tested frameworks for AI agents                      ║
 ║   Claude Code • Cowork • Codex • ChatGPT • Gemini               ║
 ║                                                                   ║
 ║   v0.1 • Feb 2026 • MIT License                                  ║
@@ -25,7 +25,7 @@ Write PRDs. Run discovery. Plan roadmaps. Prioritize backlogs. Break down epics.
 
 ## 🎯 What This Is
 
-**32 ready-to-use PM frameworks** that teach AI agents how to do product management work professionally—without you having to explain your process every time.
+**33 ready-to-use PM frameworks** that teach AI agents how to do product management work professionally—without you having to explain your process every time.
 
 Instead of saying *"Write a PRD"* and hoping for the best, the agent already knows:
 - ✅ How to structure a PRD
@@ -101,7 +101,7 @@ These 29 skills are organized into **three types** that build on each other:
 
 ---
 
-## 📦 All 32 Skills (Clickable)
+## 📦 All 33 Skills (Clickable)
 
 Now that you understand the three types, here's the complete catalog:
 
@@ -128,7 +128,7 @@ Now that you understand the three types, here's the complete catalog:
 
 ---
 
-### 🔄 Interactive Skills (12)
+### 🔄 Interactive Skills (13)
 
 | Skill | What It Does |
 |-------|--------------|
@@ -140,6 +140,7 @@ Now that you understand the three types, here's the complete catalog:
 | **[opportunity-solution-tree](skills/opportunity-solution-tree/SKILL.md)** | Generates opportunities and solutions, recommends best proof-of-concept to test |
 | **[pol-probe-advisor](skills/pol-probe-advisor/SKILL.md)** | Recommends which of 5 prototype types to use based on your hypothesis and risk (Feasibility, Task-Focused, Narrative, Synthetic Data, Vibe-Coded) |
 | **[ai-shaped-readiness-advisor](skills/ai-shaped-readiness-advisor/SKILL.md)** | Assess if you're "AI-first" (automating tasks) or "AI-shaped" (redesigning how you work). Evaluates 5 competencies and recommends which to build first |
+| **[context-engineering-advisor](skills/context-engineering-advisor/SKILL.md)** | Diagnose context stuffing (volume without intent) vs. context engineering (structure for attention). Guides memory architecture, retrieval strategies, and Research→Plan→Reset→Implement cycle |
 | **[user-story-mapping-workshop](skills/user-story-mapping-workshop/SKILL.md)** | Walks you through creating story maps with backbone and release slices |
 | **[customer-journey-mapping-workshop](skills/customer-journey-mapping-workshop/SKILL.md)** | Guides journey mapping with pain point identification |
 | **[problem-framing-canvas](skills/problem-framing-canvas/SKILL.md)** | Leads you through MITRE Problem Framing (Look Inward/Outward/Reframe) |
@@ -202,6 +203,9 @@ claude "Using the PRD Development workflow, create a PRD for our mobile feature"
 
 ### "I want to know if I'm using AI strategically or just for efficiency"
 → **Interactive:** [`ai-shaped-readiness-advisor`](skills/ai-shaped-readiness-advisor/SKILL.md) (assesses 5 competencies: Context Design, Agent Orchestration, Outcome Acceleration, Team-AI Facilitation, Strategic Differentiation)
+
+### "I'm pasting entire docs into AI and getting vague responses"
+→ **Interactive:** [`context-engineering-advisor`](skills/context-engineering-advisor/SKILL.md) (diagnose context stuffing vs. engineering, define boundaries, implement Research→Plan→Reset→Implement cycle)
 
 ### "I need to write a PRD for a new feature"
 → **Workflow:** [`prd-development`](skills/prd-development/SKILL.md) (2-4 days, problem → solution → stories)

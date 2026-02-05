@@ -8,16 +8,18 @@
 
 ## 🎉 v0.1 Release Complete
 
-All 32 skills complete and restructured to comply with Anthropic's official skills format.
+All 33 skills complete and restructured to comply with Anthropic's official skills format.
 
 **Latest Additions (Feb 5, 2026):**
 - `pol-probe` (Component) — Template for defining Proof of Life validation experiments
 - `pol-probe-advisor` (Interactive) — Decision framework for choosing which of 5 prototype types to use
 - `ai-shaped-readiness-advisor` (Interactive) — Assess AI maturity across 5 competencies (Context Design, Agent Orchestration, Outcome Acceleration, Team-AI Facilitation, Strategic Differentiation)
+- `context-engineering-advisor` (Interactive) — Diagnose context stuffing vs. engineering; guide memory architecture, retrieval strategies, and Research→Plan→Reset→Implement cycle
 
 Based on Dean Peters' Substack articles:
 - [*Vibe First, Validate Fast, Verify Fit*](https://deanpeters.substack.com/p/vibe-first-validate-fast-verify-fit)
 - [*AI-First Is Cute. AI-Shaped Is Survival.*](https://deanpeters.substack.com/p/ai-first-is-cute-ai-shaped-is-survival)
+- [*Context Stuffing Is Not Context Engineering*](https://deanpeters.substack.com/p/context-stuffing-is-not-context-engineering)
 
 **Major Structural Change (Feb 5, 2026):**
 - Restructured from TYPE-based directories to flat skill-name directories
@@ -314,11 +316,83 @@ product-strategy-session.md (workflow)
 
 ## Timeline (Aspirational)
 
-- **Phase 1:** February 2026 (6 skills)
-- **Phase 2:** March 2026 (6 skills)
-- **Phase 3:** April 2026 (3 skills)
-- **Phase 4:** May 2026 (10 interactive skills)
-- **Phase 5:** June 2026+ (4 workflow skills)
+- **Phase 1:** February 2026 (6 skills) ✅
+- **Phase 2:** March 2026 (6 skills) ✅
+- **Phase 3:** April 2026 (3 skills) ✅
+- **Phase 4:** May 2026 (10 interactive skills) ✅
+- **Phase 5:** June 2026+ (4 workflow skills) ✅
+- **Phase 6:** Future (AI PM Orchestrator Skills) 📋
+
+---
+
+## Phase 6: AI PM Orchestrator Skills (Future)
+
+**Goal:** Build skills for the remaining AI PM disciplines identified in Teresa Torres' framework and the "Context Engineering for Product Managers" research.
+
+**Status:** 📋 Planned (not yet started)
+
+**Background:** The comprehensive research document identified **5 essential AI PM disciplines**:
+1. ✅ **Context Engineering** — Completed (`context-engineering-advisor`)
+2. 📋 **Orchestration** — Breaking complex goals into agentic workflows
+3. 📋 **Observability** — Tracing and logging to debug AI reasoning
+4. 📋 **Evals (Evaluation)** — Automated quality testing for AI outputs
+5. 📋 **Maintenance** — Ongoing updates as models drift
+
+### Planned Skills (Priority Order)
+
+| # | Skill | Type | Purpose | Priority |
+|---|-------|------|---------|----------|
+| 34 | `agent-orchestration-advisor` | Interactive | Guide PMs through breaking complex tasks into multi-step agentic workflows (research → synthesis → critique → decision) | High |
+| 35 | `ai-product-evals` | Component | Template for designing evaluation frameworks (Golden Datasets, Code Assertions, LLM-as-Judge, Human Evals) | High |
+| 36 | `ai-observability-framework` | Component | Guide for implementing tracing, logging, and error analysis in AI products | Medium |
+| 37 | `ai-maintenance-planning` | Component | Template for planning ongoing updates as models drift or user data changes | Medium |
+| 38 | `ai-product-orchestrator` | Workflow | Complete end-to-end process: Discovery → Context Design → Orchestration → Evals → Maintenance (2-4 weeks) | Low |
+
+### Rationale for Priority
+
+**High Priority (Orchestration + Evals):**
+- **Orchestration** complements Context Engineering (how to structure multi-step AI workflows)
+- **Evals** are critical for production AI products (quality measurement)
+- Both are immediate needs for PMs building AI features
+
+**Medium Priority (Observability + Maintenance):**
+- **Observability** is more technical but helps PMs debug AI systems
+- **Maintenance** is long-term concern (addresses model drift over months)
+- Both support operational excellence after launch
+
+**Low Priority (Workflow):**
+- **AI Product Orchestrator** workflow should wait until component/interactive skills are battle-tested
+- Would orchestrate all 5 disciplines into complete process
+
+### Dependencies
+
+```
+context-engineering-advisor (✅ Complete)
+    ↓ enables
+agent-orchestration-advisor (📋 Planned)
+    ↓ requires
+ai-product-evals (📋 Planned)
+    ↓ supported by
+ai-observability-framework (📋 Planned)
+    ↓ maintained via
+ai-maintenance-planning (📋 Planned)
+    ↓ all orchestrated by
+ai-product-orchestrator (📋 Planned, workflow)
+```
+
+### Source Materials
+
+All Phase 6 skills will draw from:
+- **Research Document:** `/research/Context Engineering for Product Managers.md`
+- **Teresa Torres:** *Continuous Discovery Habits* (5 AI PM disciplines)
+- **Marty Cagan:** *Empowered* (4 big risks in AI era)
+- **Google/Anthropic:** Technical whitepapers on context engineering, RAG, memory systems
+
+### Notes
+
+- **Agent Orchestration** is closely related to `ai-shaped-readiness-advisor` Competency #2 (Agent Orchestration maturity levels)
+- **Evals** framework connects to `pol-probe-advisor` (validation experiments) and `discovery-process` (quality measurement)
+- **Observability** and **Maintenance** are more technical but essential for production AI products
 
 ---
 
