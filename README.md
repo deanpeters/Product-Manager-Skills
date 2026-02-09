@@ -19,7 +19,7 @@
 
 **Train AI agents to do product management work like a pro.**
 
-Write PRDs. Run discovery. Plan roadmaps. Prioritize backlogs. Break down epics. All with proven frameworks from Geoffrey Moore, Jeff Patton, Teresa Torres, Amazon, MITRE, and more.
+Frame problems, hunt opportunities, scaffold validation experiments, and kill bad bets fast. With battle-tested frameworks from Teresa Torres, Geoffrey Moore, Amazon, MITRE, and much more from product management's greatest hits.
 
 ---
 
