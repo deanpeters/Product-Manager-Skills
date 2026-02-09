@@ -88,6 +88,10 @@ The Claude Skills UI expects each uploaded skill to include a `Skill.md` file (c
    ```bash
    ./scripts/zip-a-skill.sh --type component --output dist/skill-zips
    ```
+   For a curated starter pack:
+   ```bash
+   ./scripts/zip-a-skill.sh --preset core-pm --output dist/skill-zips
+   ```
    For all skills at once:
    ```bash
    ./scripts/zip-a-skill.sh --all --output dist/skill-zips
@@ -98,7 +102,7 @@ The Claude Skills UI expects each uploaded skill to include a `Skill.md` file (c
    - Select a ZIP file from `dist/skill-zips/`
 4. **Enable the uploaded skill** and run a quick smoke test prompt.
 
-`zip-a-skill.sh` runs `package-claude-skills.sh` internally, then zips packaged folders for upload.
+`zip-a-skill.sh` runs `package-claude-skills.sh` internally, strips unsupported upload frontmatter keys (for example `type`), then zips packaged folders for upload.
 
 ### Advanced Option: MCP Integrations
 

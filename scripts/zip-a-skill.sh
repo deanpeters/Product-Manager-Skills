@@ -11,6 +11,7 @@
 #   ./scripts/zip-a-skill.sh --skill user-story --skill prd-development --output dist/skill-zips
 #   ./scripts/zip-a-skill.sh --all
 #   ./scripts/zip-a-skill.sh --type workflow
+#   ./scripts/zip-a-skill.sh --preset core-pm
 #
 
 set -euo pipefail
@@ -23,6 +24,8 @@ ALL=false
 OUTPUT_DIR="$ROOT/dist/skill-zips"
 SKILL_ARGS=()
 TYPE_FILTER=""
+PRESET=""
+LIST_PRESETS=false
 
 print_help() {
   cat <<EOF
@@ -34,6 +37,8 @@ Options:
   --skill <name|path>  Zip one skill (repeatable)
   --all                Zip all skills
   --type <type>        Zip by skill type: component|interactive|workflow
+  --preset <name>      Zip a curated preset (see --list-presets)
+  --list-presets       Show available preset names and descriptions
   --output <dir>       Output directory for zip files (default: dist/skill-zips)
   -h, --help           Show this help
 
@@ -44,7 +49,91 @@ Examples:
   $0 --all
   $0 --type interactive
   $0 --all --type workflow
+  $0 --preset core-pm
+  $0 --list-presets
 EOF
+}
+
+print_presets() {
+  cat <<'EOF'
+Available presets:
+  core-pm           Core PM starter set across component/interactive/workflow
+  finance-suite     All finance-focused skills
+  workflow-pack     All workflow skills
+  interactive-pack  High-leverage interactive advisors/workshops
+  component-pack    Common component templates for PM artifacts
+EOF
+}
+
+preset_skills() {
+  local preset="$1"
+  case "$preset" in
+    core-pm)
+      cat <<'EOF'
+problem-statement
+user-story
+epic-hypothesis
+positioning-statement
+prioritization-advisor
+discovery-interview-prep
+problem-framing-canvas
+opportunity-solution-tree
+prd-development
+roadmap-planning
+product-strategy-session
+skill-authoring-workflow
+EOF
+      ;;
+    finance-suite)
+      cat <<'EOF'
+finance-metrics-quickref
+saas-revenue-growth-metrics
+saas-economics-efficiency-metrics
+feature-investment-advisor
+acquisition-channel-advisor
+finance-based-pricing-advisor
+business-health-diagnostic
+EOF
+      ;;
+    workflow-pack)
+      cat <<'EOF'
+discovery-process
+prd-development
+product-strategy-session
+roadmap-planning
+skill-authoring-workflow
+EOF
+      ;;
+    interactive-pack)
+      cat <<'EOF'
+prioritization-advisor
+feature-investment-advisor
+finance-based-pricing-advisor
+business-health-diagnostic
+context-engineering-advisor
+ai-shaped-readiness-advisor
+agent-orchestration-advisor
+opportunity-solution-tree
+EOF
+      ;;
+    component-pack)
+      cat <<'EOF'
+user-story
+problem-statement
+positioning-statement
+epic-hypothesis
+proto-persona
+press-release
+user-story-splitting
+recommendation-canvas
+EOF
+      ;;
+    *)
+      echo "Error: Unknown preset '$preset'." >&2
+      echo "Run '$0 --list-presets' to see valid names." >&2
+      return 1
+      ;;
+  esac
 }
 
 require_value() {
@@ -115,6 +204,15 @@ parse_args() {
         OUTPUT_DIR="$2"
         shift 2
         ;;
+      --preset)
+        require_value "--preset" "${2:-}"
+        PRESET="$2"
+        shift 2
+        ;;
+      --list-presets)
+        LIST_PRESETS=true
+        shift
+        ;;
       -h|--help)
         print_help
         exit 0
@@ -147,14 +245,28 @@ zip_one_skill() {
 main() {
   parse_args "$@"
 
+  if [[ "$LIST_PRESETS" == true ]]; then
+    print_presets
+    exit 0
+  fi
+
   if ! command -v zip >/dev/null 2>&1; then
     echo "Error: 'zip' command not found. Install zip and retry." >&2
     exit 1
   fi
 
+  if [[ -n "$PRESET" && ( "$ALL" == true || -n "$TYPE_FILTER" || "${#SKILL_ARGS[@]}" -gt 0 ) ]]; then
+    echo "Error: --preset cannot be combined with --all, --type, or --skill." >&2
+    exit 1
+  fi
+
+  if [[ -n "$PRESET" ]]; then
+    preset_skills "$PRESET" >/dev/null
+  fi
+
   if [[ "$ALL" == false && "${#SKILL_ARGS[@]}" -eq 0 ]]; then
-    if [[ -z "$TYPE_FILTER" ]]; then
-      echo "Error: Provide --skill <name|path>, --type <type>, or --all." >&2
+    if [[ -z "$TYPE_FILTER" && -z "$PRESET" ]]; then
+      echo "Error: Provide --skill <name|path>, --type <type>, --preset <name>, or --all." >&2
       echo "Run '$0 --help' for usage." >&2
       exit 1
     fi
@@ -189,7 +301,14 @@ main() {
   local packaged_root="$tmp_dir/claude-skills"
 
   local created=0
-  if [[ "$ALL" == true ]]; then
+  if [[ -n "$PRESET" ]]; then
+    local skill_name
+    while IFS= read -r skill_name; do
+      [[ -n "$skill_name" ]] || continue
+      zip_one_skill "$packaged_root" "$skill_name"
+      created=$((created + 1))
+    done < <(preset_skills "$PRESET")
+  elif [[ "$ALL" == true ]]; then
     local skill_dir
     for skill_dir in "$packaged_root"/*; do
       [[ -d "$skill_dir" ]] || continue

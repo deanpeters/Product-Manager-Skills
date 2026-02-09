@@ -116,6 +116,12 @@ Some skills include a `scripts/` folder with deterministic helpers for calculati
 # Build Claude upload zips for one category (component|interactive|workflow)
 ./scripts/zip-a-skill.sh --type component --output dist/skill-zips
 
+# Build curated starter pack
+./scripts/zip-a-skill.sh --preset core-pm --output dist/skill-zips
+
+# Show available curated presets
+./scripts/zip-a-skill.sh --list-presets
+
 # From clipboard
 pbpaste | ./scripts/add-a-skill.sh
 
@@ -134,7 +140,7 @@ pbpaste | ./scripts/add-a-skill.sh
 
 - Keep frontmatter `name` <= 64 chars and `description` <= 200 chars.
 - Ensure the skill folder name matches the `name` value.
-- Use `scripts/zip-a-skill.sh --skill <skill-name>` (or `--type component`) to generate upload-ready ZIPs.
+- Use `scripts/zip-a-skill.sh --skill <skill-name>` (or `--type component`, `--preset core-pm`) to generate upload-ready ZIPs.
 - (Advanced) Use `scripts/package-claude-skills.sh` if you need unpacked upload-ready folders.
 - Validate metadata with `scripts/check-skill-metadata.py`.
 - For GitHub ZIP upload flow, see [`docs/Using PM Skills with Claude.md`](docs/Using%20PM%20Skills%20with%20Claude.md#github-zip-install).

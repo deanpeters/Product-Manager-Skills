@@ -97,6 +97,8 @@ If targeting Claude custom skill upload:
 ./scripts/zip-a-skill.sh --skill <skill-name>
 # or zip one category:
 ./scripts/zip-a-skill.sh --type component --output dist/skill-zips
+# or use a curated starter preset:
+./scripts/zip-a-skill.sh --preset core-pm --output dist/skill-zips
 ```
 
 ## Examples

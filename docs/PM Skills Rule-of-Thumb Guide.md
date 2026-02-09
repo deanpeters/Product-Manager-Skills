@@ -56,7 +56,7 @@ Ask up to 3 clarifying questions when context is missing.
 
 ### Default B: Claude (non-technical)
 
-1. Run `./scripts/zip-a-skill.sh --skill <skill-name>`.
+1. Run `./scripts/zip-a-skill.sh --preset core-pm` (or `--skill <skill-name>`).
 2. Open `dist/skill-zips/`.
 3. Upload the ZIP in Claude Skills settings.
 
