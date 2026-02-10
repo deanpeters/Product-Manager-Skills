@@ -5,40 +5,67 @@ type: interactive
 ---
 
 ## Purpose
-Provide a consistent facilitation pattern for workshop-style skills: one step at a time, with numbered recommendations that adapt to prior answers.
+Provide the canonical facilitation pattern for interactive skills: one step at a time, with clear progress, adaptive recommendations at decision points, and predictable interruption handling.
 
 ## Key Concepts
 - **One-step-at-a-time:** Ask a single targeted question per turn.
-- **Enumerated recommendations:** Provide 3-4 numbered options with a recommended choice first, so users can reply "Choice 1" or "1 & 3."
-- **Context-aware progression:** Each turn builds on previous answers and avoids re-asking resolved questions.
-- **Fast path:** If the user requests a single-shot output, skip the multi-turn flow and deliver a condensed result.
+- **Session heads-up + entry mode:** Start by setting expectations and offering `Guided`, `Context dump`, or `Best guess` mode.
+- **Progress visibility:** Show user-facing progress labels like `Context Qx/8` and `Scoring Qx/5`.
+- **Decision-point recommendations:** Use enumerated options only when a choice is needed, not after every answer.
+- **Flexible selection parsing:** Accept `#1`, `1`, `1 and 3`, `1,3`, or custom text, then synthesize multi-select choices.
+- **Context-aware progression:** Build on previous answers and avoid re-asking resolved questions.
+- **Interruption-safe flow:** Answer meta questions directly (for example, "how many left?"), restate status, then resume.
+- **Fast path:** If the user requests a single-shot output, skip multi-turn facilitation and deliver a condensed result.
 
 ## Application
-1. Confirm goal and scope in one question if missing.
-2. Ask one targeted question that advances the workshop.
-3. Offer 3-4 numbered, context-aware recommendations.
-4. Accept a numbered choice or a custom alternative.
-5. Update context and repeat until outputs are complete.
-6. Summarize decisions and deliver final artifacts.
+1. Start with a brief heads-up on estimated time and number of questions.
+2. Ask the user to choose an entry mode:
+   - `1` Guided mode (one question at a time)
+   - `2` Context dump (paste known context; skip redundancies)
+   - `3` Best guess mode (infer missing details and label assumptions)
+3. Run one question per turn and wait for an answer before continuing.
+4. Keep questions plain-language; include a short example response format when helpful.
+5. Show progress each turn:
+   - `Context Qx/8` during context collection
+   - `Scoring Qx/5` during assessment/scoring
+6. Ask follow-up clarifications only when they materially improve recommendation quality.
+7. Provide numbered recommendations only at decision points:
+   - after context synthesis,
+   - after maturity/profile synthesis,
+   - during priority/action-plan selection.
+8. Accept numeric or custom choices, synthesize multi-select choices, and continue.
+9. If interrupted by a meta question, answer directly, then restate progress and pending question.
+10. If the user says stop/pause, halt immediately and wait for explicit resume.
+11. End with a clear summary, decisions made, and (if best guess mode was used) an `Assumptions to Validate` list.
 
 ## Examples
-**Question:** "What scope should we map?"
-1. **End-to-end journey** (Recommended)
-2. **Single workflow**
-3. **Specific pain point**
-4. **Existing backlog slice**
+**Opening:**
+"Quick heads-up: this should take about 7-10 minutes and around 10 questions. How do you want to start?
+1. Guided mode
+2. Context dump
+3. Best guess mode"
 
-**User:** "1"
+**User:** "2"
 
-**Next question:** "Which persona should anchor the map?"
-1. **Primary persona** (Recommended)
-2. **High-churn segment**
-3. **Newly discovered persona**
+**Facilitator:** "Paste what you already know. I’ll skip answered areas and ask only what’s missing."
+
+**Decision point after synthesis:**
+1. **Prioritize Context Design** (Recommended)
+2. Prioritize Agent Orchestration
+3. Prioritize Team-AI Facilitation
+
+**User:** "1 and 3"
+
+**Facilitator:** "Great. We’ll run Context Design first, with Team-AI Facilitation in parallel."
 
 ## Common Pitfalls
 - Asking multiple questions in the same turn.
-- Offering generic options that ignore user context.
+- Offering recommendations after every answer (creates interaction drag).
+- Using shorthand labels without plain-language questions.
+- Hiding progress, so users don't know how much remains.
 - Ignoring the user's chosen option or custom direction.
+- Failing to label assumptions when running in best-guess mode.
 
 ## References
-- Apply alongside workshop skills in `skills/*-workshop/SKILL.md` when a facilitated, multi-turn flow is desired.
+- Use as the source of truth for interactive facilitation behavior.
+- Apply alongside workshop skills in `skills/*-workshop/SKILL.md` and advisor-style interactive skills.

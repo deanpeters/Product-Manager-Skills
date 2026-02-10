@@ -100,6 +100,19 @@ A PRD (Product Requirements Document) is a structured document that answers:
 
 ---
 
+### Facilitation Source of Truth
+
+When running this workflow as a guided conversation, use [`workshop-facilitation`](../workshop-facilitation/SKILL.md) as the interaction protocol.
+
+It defines:
+- session heads-up + entry mode (Guided, Context dump, Best guess)
+- one-question turns with plain-language prompts
+- progress labels (for example, Context Qx/8 and Scoring Qx/5)
+- interruption handling and pause/resume behavior
+- numbered recommendations at decision points
+
+This file defines the workflow sequence and domain-specific outputs. If there is a conflict, follow this file's workflow logic.
+
 ## Application
 
 Use `template.md` for the full fill-in structure.

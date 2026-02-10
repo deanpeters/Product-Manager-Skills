@@ -36,6 +36,19 @@ A skill is done only when:
 4. Cross-references resolve
 5. README catalog counts and tables are updated (if adding/removing skills)
 
+### Facilitation Source of Truth
+
+When running this workflow as a guided conversation, use [`workshop-facilitation`](../workshop-facilitation/SKILL.md) as the interaction protocol.
+
+It defines:
+- session heads-up + entry mode (Guided, Context dump, Best guess)
+- one-question turns with plain-language prompts
+- progress labels (for example, Context Qx/8 and Scoring Qx/5)
+- interruption handling and pause/resume behavior
+- numbered recommendations at decision points
+
+This file defines the workflow sequence and domain-specific outputs. If there is a conflict, follow this file's workflow logic.
+
 ## Application
 
 ### Phase 1: Preflight (Avoid Duplicate Work)

@@ -45,6 +45,19 @@ A user story is "a description of a change in system behavior from the perspecti
 
 ---
 
+### Facilitation Source of Truth
+
+Use [`workshop-facilitation`](../workshop-facilitation/SKILL.md) as the default interaction protocol for this skill.
+
+It defines:
+- session heads-up + entry mode (Guided, Context dump, Best guess)
+- one-question turns with plain-language prompts
+- progress labels (for example, Context Qx/8 and Scoring Qx/5)
+- interruption handling and pause/resume behavior
+- numbered recommendations at decision points
+
+This file defines the domain-specific assessment content. If there is a conflict, follow this file's domain logic.
+
 ## Application
 
 ### Step 0: Provide Epic Context

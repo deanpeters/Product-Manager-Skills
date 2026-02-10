@@ -151,9 +151,76 @@ Moving beyond efficiency to create **defensible competitive advantages**.
 
 ---
 
+### Facilitation Source of Truth
+
+Use [`workshop-facilitation`](../workshop-facilitation/SKILL.md) as the default interaction protocol for this skill.
+
+It defines:
+- session heads-up + entry mode (Guided, Context dump, Best guess)
+- one-question turns with plain-language prompts
+- progress labels (for example, Context Qx/8 and Scoring Qx/5)
+- interruption handling and pause/resume behavior
+- numbered recommendations at decision points
+
+This file defines the domain-specific assessment content. If there is a conflict, follow this file's domain logic.
+
 ## Application
 
 This interactive skill uses **adaptive questioning** to assess your maturity across 5 competencies, then recommends which to prioritize.
+
+### Facilitation Protocol (Mandatory)
+
+1. Ask exactly **one question per turn**.
+2. Wait for the user's answer before asking the next question.
+3. Use plain-language questions (no shorthand labels as the primary question). If needed, include an example response format.
+4. Show progress on every turn using user-facing labels:
+   - `Context Qx/8` during context gathering
+   - `Scoring Qx/5` during maturity scoring
+   - Include "questions remaining" when practical.
+5. Do not use internal phase labels (like "Step 0") in user-facing prompts unless the user asks for internal structure details.
+6. For maturity scoring questions, present concise 1-4 choices first; share full rubric details only if requested.
+7. Give numbered recommendations **only at decision points**, not after every answer.
+8. Decision points include:
+   - After the full context summary
+   - After the 5-dimension maturity profile
+   - During priority selection and action-plan path selection
+9. When recommendations are shown, enumerate clearly (`1.`, `2.`, `3.`) and accept selections like `#1`, `1`, `1 and 3`, `1,3`, or custom text.
+10. If multiple options are selected, synthesize a combined path and continue.
+11. If custom text is provided, map it to the closest valid path and continue without forcing re-entry.
+12. Interruption handling is mandatory: if the user asks a meta question ("how many left?", "why this label?", "pause"), answer directly first, then restate current progress and resume with the pending question.
+13. If the user says to stop or pause, halt the assessment immediately and wait for explicit resume.
+14. If the user asks for "one question at a time," keep that mode for the rest of the session unless they explicitly opt out.
+15. Before any assessment question, give a short heads-up on time/length and let the user choose an entry mode.
+
+---
+
+### Session Start: Heads-Up + Entry Mode (Mandatory)
+
+**Agent opening prompt (use this first):**
+
+"Quick heads-up before we start: this usually takes about 7-10 minutes and up to 13 questions total (8 context + 5 scoring).
+
+How do you want to do this?
+1. Guided mode: I’ll ask one question at a time.
+2. Context dump: you paste what you already know, and I’ll skip anything redundant.
+3. Best guess mode: I’ll make reasonable assumptions where details are missing, label them, and keep moving."
+
+Accept selections as `#1`, `1`, `1 and 3`, `1,3`, or custom text.
+
+**Mode behavior:**
+
+- **If Guided mode:** Run Step 0 as written, then scoring.
+- **If Context dump:** Ask for pasted context once, summarize it, identify gaps, and:
+  - Skip any context questions already answered.
+  - Ask only the minimum missing context needed (0-2 clarifying questions).
+  - Move to scoring as soon as context is sufficient.
+- **If Best guess mode:** Ask for the smallest viable starting input (role/team + primary goal), then:
+  - Infer missing details using reasonable defaults.
+  - Label each inferred item as `Assumption`.
+  - Include confidence tags (`High`, `Medium`, `Low`) for each assumption.
+  - Continue without blocking on unknowns.
+
+At the final summary, include an **Assumptions to Validate** section when context dump or best guess mode was used.
 
 ---
 
@@ -161,23 +228,22 @@ This interactive skill uses **adaptive questioning** to assess your maturity acr
 
 **Agent asks:**
 
-Before we assess your AI-shaped readiness, let's gather context:
+Collect context using this exact sequence, one question at a time:
 
-**Current AI Usage:**
-- What AI tools do you use today? (ChatGPT, Claude, Copilot, custom agents, etc.)
-- How do you use them? (one-off prompts, workflows, integrations)
-- Who on the team uses AI? (just you, PMs only, cross-functional)
+1. "Which AI tools are you using today?"
+2. "How does your team usually use AI today: one-off prompts, reusable templates, or multi-step workflows?"
+3. "Who uses AI consistently today: just you, PMs, or cross-functional teams?"
+4. "About how many PMs, engineers, and designers are on your team?"
+5. "What stage are you in: startup, growth, or enterprise?"
+6. "How are decisions made: centralized, distributed, or consensus-driven?"
+7. "What competitive advantage are you trying to build with AI?"
+8. "What's the biggest bottleneck slowing learning and iteration today?"
 
-**Team Structure:**
-- Team size (PMs, engineers, designers)
-- Product stage (startup, growth, enterprise)
-- Decision-making style (centralized, distributed, consensus-driven)
-
-**Strategic Goals:**
-- What competitive advantage are you trying to build?
-- What's blocking faster learning/iteration today?
-
-**You can describe briefly or paste context.**
+After question 8, summarize back in 4 lines:
+- Current AI usage pattern
+- Team context
+- Strategic intent
+- Primary bottleneck
 
 ---
 
