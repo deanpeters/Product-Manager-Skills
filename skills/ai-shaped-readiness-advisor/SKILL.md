@@ -161,6 +161,7 @@ It defines:
 - progress labels (for example, Context Qx/8 and Scoring Qx/5)
 - interruption handling and pause/resume behavior
 - numbered recommendations at decision points
+- quick-select numbered response options for regular questions (include `Other (specify)` when useful)
 
 This file defines the domain-specific assessment content. If there is a conflict, follow this file's domain logic.
 
@@ -179,18 +180,19 @@ This interactive skill uses **adaptive questioning** to assess your maturity acr
    - Include "questions remaining" when practical.
 5. Do not use internal phase labels (like "Step 0") in user-facing prompts unless the user asks for internal structure details.
 6. For maturity scoring questions, present concise 1-4 choices first; share full rubric details only if requested.
-7. Give numbered recommendations **only at decision points**, not after every answer.
-8. Decision points include:
+7. For context questions, offer concise numbered quick-select options when practical, plus `Other (specify)` for open-ended answers. Accept multi-select replies like `1,3` or `1 and 3`.
+8. Give numbered recommendations **only at decision points**, not after every answer.
+9. Decision points include:
    - After the full context summary
    - After the 5-dimension maturity profile
    - During priority selection and action-plan path selection
-9. When recommendations are shown, enumerate clearly (`1.`, `2.`, `3.`) and accept selections like `#1`, `1`, `1 and 3`, `1,3`, or custom text.
-10. If multiple options are selected, synthesize a combined path and continue.
-11. If custom text is provided, map it to the closest valid path and continue without forcing re-entry.
-12. Interruption handling is mandatory: if the user asks a meta question ("how many left?", "why this label?", "pause"), answer directly first, then restate current progress and resume with the pending question.
-13. If the user says to stop or pause, halt the assessment immediately and wait for explicit resume.
-14. If the user asks for "one question at a time," keep that mode for the rest of the session unless they explicitly opt out.
-15. Before any assessment question, give a short heads-up on time/length and let the user choose an entry mode.
+10. When recommendations are shown, enumerate clearly (`1.`, `2.`, `3.`) and accept selections like `#1`, `1`, `1 and 3`, `1,3`, or custom text.
+11. If multiple options are selected, synthesize a combined path and continue.
+12. If custom text is provided, map it to the closest valid path and continue without forcing re-entry.
+13. Interruption handling is mandatory: if the user asks a meta question ("how many left?", "why this label?", "pause"), answer directly first, then restate current progress and resume with the pending question.
+14. If the user says to stop or pause, halt the assessment immediately and wait for explicit resume.
+15. If the user asks for "one question at a time," keep that mode for the rest of the session unless they explicitly opt out.
+16. Before any assessment question, give a short heads-up on time/length and let the user choose an entry mode.
 
 ---
 

@@ -83,6 +83,7 @@
 **Important Notes for Claude:**
 - Always check `git status` and recent commits before starting new work
 - Dogfood first: use this repo's own standards/scripts/skill definitions as the source of truth before making recommendations
+- For facilitation behavior changes, update `skills/workshop-facilitation/SKILL.md` first, then use `docs/maintenance/facilitation-scope.md` to find and patch all linked skills
 - For category decisions (Component vs Interactive vs Workflow), anchor to criteria in this file and `README.md` before giving an answer
 - Prefer evidence from local tools (`scripts/find-a-skill.sh`, `scripts/test-a-skill.sh`, `scripts/check-skill-metadata.py`) over subjective preference
 - Skills must follow standard anatomy: Purpose, Key Concepts, Application, Examples, Common Pitfalls, References

@@ -1,6 +1,6 @@
 ---
 name: workshop-facilitation
-description: Facilitate workshop sessions in a multi-turn, one-step flow with numbered recommendations each turn. Use alongside workshop skills to guide choices and keep advice context-aware.
+description: Facilitate workshop sessions in a multi-turn, one-step flow with numbered recommendations at decision points and quick-select options for regular questions.
 type: interactive
 ---
 
@@ -12,6 +12,7 @@ Provide the canonical facilitation pattern for interactive skills: one step at a
 - **Session heads-up + entry mode:** Start by setting expectations and offering `Guided`, `Context dump`, or `Best guess` mode.
 - **Progress visibility:** Show user-facing progress labels like `Context Qx/8` and `Scoring Qx/5`.
 - **Decision-point recommendations:** Use enumerated options only when a choice is needed, not after every answer.
+- **Quick-select response options:** For regular context/scoring questions, provide concise numbered answer options plus `Other (specify)` when useful.
 - **Flexible selection parsing:** Accept `#1`, `1`, `1 and 3`, `1,3`, or custom text, then synthesize multi-select choices.
 - **Context-aware progression:** Build on previous answers and avoid re-asking resolved questions.
 - **Interruption-safe flow:** Answer meta questions directly (for example, "how many left?"), restate status, then resume.
@@ -29,14 +30,18 @@ Provide the canonical facilitation pattern for interactive skills: one step at a
    - `Context Qx/8` during context collection
    - `Scoring Qx/5` during assessment/scoring
 6. Ask follow-up clarifications only when they materially improve recommendation quality.
-7. Provide numbered recommendations only at decision points:
+7. For regular context/scoring questions, offer quick-select numbered response options when practical:
+   - Keep options concise and mutually exclusive when possible.
+   - Include `Other (specify)` if likely answers are open-ended.
+   - Accept multi-select responses like `1,3` or `1 and 3`.
+8. Provide numbered recommendations only at decision points:
    - after context synthesis,
    - after maturity/profile synthesis,
    - during priority/action-plan selection.
-8. Accept numeric or custom choices, synthesize multi-select choices, and continue.
-9. If interrupted by a meta question, answer directly, then restate progress and pending question.
-10. If the user says stop/pause, halt immediately and wait for explicit resume.
-11. End with a clear summary, decisions made, and (if best guess mode was used) an `Assumptions to Validate` list.
+9. Accept numeric or custom choices, synthesize multi-select choices, and continue.
+10. If interrupted by a meta question, answer directly, then restate progress and pending question.
+11. If the user says stop/pause, halt immediately and wait for explicit resume.
+12. End with a clear summary, decisions made, and (if best guess mode was used) an `Assumptions to Validate` list.
 
 ## Examples
 **Opening:**

@@ -73,6 +73,7 @@ It defines:
 - progress labels (for example, Context Qx/8 and Scoring Qx/5)
 - interruption handling and pause/resume behavior
 - numbered recommendations at decision points
+- quick-select numbered response options for regular questions (include `Other (specify)` when useful)
 
 This file defines the domain-specific assessment content. If there is a conflict, follow this file's domain logic.
 
@@ -80,7 +81,7 @@ This file defines the domain-specific assessment content. If there is a conflict
 
 This interactive skill asks **up to 5 adaptive questions**, offering **3-4 enumerated options** at each step.
 
-Interaction pattern: Pair with `skills/workshop-facilitation/SKILL.md` when you want a one-step-at-a-time flow with numbered recommendations each turn. If the user asks for a single-shot output, skip the multi-turn facilitation.
+Interaction pattern: Pair with `skills/workshop-facilitation/SKILL.md` when you want a one-step-at-a-time flow with numbered recommendations at decision points and quick-select options for regular questions. If the user asks for a single-shot output, skip the multi-turn facilitation.
 
 ---
 
