@@ -11,10 +11,10 @@
 ║   ██║     ██║ ╚═╝ ██║    ███████║██║  ██╗██║███████╗███████╗███████║
 ║   ╚═╝     ╚═╝     ╚═╝    ╚══════╝╚═╝  ╚═╝╚═╝╚══════╝╚══════╝╚══════╝
 ║                                                                    ║
-║   42 battle-tested frameworks for AI agents                        ║
+║   46 battle-tested frameworks for AI agents                        ║
 ║   Claude Code • Cowork • Codex • ChatGPT • Gemini                  ║
 ║                                                                    ║
-║   v0.4 • Feb 10, 2026 • CC BY-NC-SA 4.0                            ║
+║   v0.5 • Feb 27, 2026 • CC BY-NC-SA 4.0                            ║
 ╚════════════════════════════════════════════════════════════════════╝
 ```
 
@@ -25,6 +25,20 @@ Frame problems, hunt opportunities, scaffold validation experiments, and kill ba
 ---
 
 ## 📣 Updates & Announcements
+
+### Feb 27, 2026 — v0.5 Career & Leadership Skills Suite
+
+Four new skills covering the full product leadership career arc — from PM to Director to VP/CPO — distilled from two episodes of [The Product Porch](https://the-product-porch-43ca35c0.simplecast.com) podcast.
+
+**Based on Episode 42 — [From PM to Director: How to Make the Shift (Part 1)](https://the-product-porch-43ca35c0.simplecast.com/episodes/from-product-manager-to-director-how-to-make-the-shift-part-1):**
+- [`altitude-horizon-framework`](skills/altitude-horizon-framework/SKILL.md) (Component) — The core mental model: altitude (scope) and horizon (time), the waiter-to-operator shift, four transition zones, named failure modes, and the Cascading Context Map
+- [`director-readiness-advisor`](skills/director-readiness-advisor/SKILL.md) (Interactive) — Coaches PMs and new Directors across four situations: preparing, interviewing, newly landed, and recalibrating
+
+**Based on Episode 43 — [Becoming a VP & CPO: Leading Product at the Executive Level (Part 2)](https://the-product-porch-43ca35c0.simplecast.com/episodes/becoming-a-vp-cpo-leading-product-at-the-executive-level-part-2):**
+- [`executive-onboarding-playbook`](skills/executive-onboarding-playbook/SKILL.md) (Workflow) — A 30-60-90 day diagnostic playbook for VP/CPO transitions: diagnose before acting, surface unwritten strategy, assess people, act with evidence
+- [`vp-cpo-readiness-advisor`](skills/vp-cpo-readiness-advisor/SKILL.md) (Interactive) — Coaches Directors and executives through the VP/CPO transition, including the CEO interview framework for evaluating roles before accepting
+
+---
 
 ### Feb 10, 2026 — v0.4 Facilitation Protocol Fix
 
@@ -64,7 +78,7 @@ Still rewriting PM prompts and getting generic AI output? I built a reusable PM 
 
 ## 🎯 What This Is
 
-**42 ready-to-use PM frameworks** that teach AI agents how to do product management work professionally—without you having to explain your process every time.
+**46 ready-to-use PM frameworks** that teach AI agents how to do product management work professionally—without you having to explain your process every time.
 
 Instead of saying *"Write a PRD"* and hoping for the best, the agent already knows:
 - ✅ How to structure a PRD
@@ -170,32 +184,32 @@ pbpaste | ./scripts/add-a-skill.sh
 
 ## 🏗️ Three-Tier Architecture (How Skills Work Together)
 
-These 42 skills are organized into **three types** that build on each other:
+These 46 skills are organized into **three types** that build on each other:
 
 ```text
 ┌───────────────────────────────────────────────────────────┐
-│  WORKFLOW SKILLS (5)                                      │
+│  WORKFLOW SKILLS (6)                                      │
 │  Complete end-to-end PM processes                         │
 │  Example: "Run a product strategy session"                │
 │  Timeline: 2-4 weeks                                      │
 └───────────────────────────────────────────────────────────┘
                          ↓ orchestrates
 ┌───────────────────────────────────────────────────────────┐
-│  INTERACTIVE SKILLS (18)                                  │
+│  INTERACTIVE SKILLS (20)                                  │
 │  Guided discovery with adaptive questions                 │
 │  Example: "Which prioritization framework should I use?"  │
 │  Timeline: 30-90 minutes                                  │
 └───────────────────────────────────────────────────────────┘
                          ↓ uses
 ┌───────────────────────────────────────────────────────────┐
-│  COMPONENT SKILLS (19)                                    │
+│  COMPONENT SKILLS (20)                                    │
 │  Templates for specific PM deliverables                   │
 │  Example: "Write a user story"                            │
 │  Timeline: 10-30 minutes                                  │
 └───────────────────────────────────────────────────────────┘
 ```
 
-### Component Skills (19) — Templates & Artifacts
+### Component Skills (20) — Templates & Artifacts
 **What:** Reusable templates for creating specific PM deliverables (user stories, positioning statements, epics, personas, PRDs, etc.)
 
 **When to use:** You need a standard template or format for a specific deliverable.
@@ -204,7 +218,7 @@ These 42 skills are organized into **three types** that build on each other:
 
 ---
 
-### Interactive Skills (18) — Guided Discovery
+### Interactive Skills (20) — Guided Discovery
 **What:** Multi-turn conversational flows where AI asks you 3-5 adaptive questions, then offers smart recommendations based on your context.
 
 **When to use:** You need help deciding which approach to take or gathering context before executing.
@@ -220,7 +234,7 @@ These 42 skills are organized into **three types** that build on each other:
 
 ---
 
-### Workflow Skills (5) — End-to-End Processes
+### Workflow Skills (6) — End-to-End Processes
 **What:** Complete PM processes that orchestrate multiple component and interactive skills over days/weeks.
 
 **When to use:** You need to run a full PM workflow from start to finish (strategy session, discovery cycle, roadmap planning, PRD creation).
@@ -229,14 +243,15 @@ These 42 skills are organized into **three types** that build on each other:
 
 ---
 
-## 📦 All 42 Skills (Clickable)
+## 📦 All 46 Skills (Clickable)
 
 Now that you understand the three types, here's the complete catalog:
 
-### 🧱 Component Skills (19)
+### 🧱 Component Skills (20)
 
 | Skill | Use When You Need To... |
 |-------|-------------------------|
+| **[altitude-horizon-framework](skills/altitude-horizon-framework/SKILL.md)** | Understand the PM→Director mindset shift: altitude (scope), horizon (time), four transition zones, failure modes, and the Cascading Context Map. Based on [The Product Porch E42](https://the-product-porch-43ca35c0.simplecast.com/episodes/from-product-manager-to-director-how-to-make-the-shift-part-1) |
 | **[company-research](skills/company-research/SKILL.md)** | Deep-dive competitor or company analysis |
 | **[customer-journey-map](skills/customer-journey-map/SKILL.md)** | Map customer experience across all touchpoints (NNGroup framework) |
 | **[eol-message](skills/eol-message/SKILL.md)** | Communicate product/feature deprecation gracefully |
@@ -259,16 +274,16 @@ Now that you understand the three types, here's the complete catalog:
 
 ---
 
-### 🔄 Interactive Skills (18)
+### 🔄 Interactive Skills (20)
 
 | Skill | What It Does |
 |-------|--------------|
 | **[acquisition-channel-advisor](skills/acquisition-channel-advisor/SKILL.md)** | Evaluate acquisition channels using unit economics, customer quality, and scalability. Recommends scale/test/kill decisions |
-| **[agent-orchestration-advisor](skills/agent-orchestration-advisor/SKILL.md)** | Design multi-agent workflows—break complex tasks into parallel, specialized AI agents. Covers 4 dimensions of orchestration, agent boundary design, launch control tower monitoring, and evaluation frameworks |
 | **[ai-shaped-readiness-advisor](skills/ai-shaped-readiness-advisor/SKILL.md)** | Assess if you're "AI-first" (automating tasks) or "AI-shaped" (redesigning how you work). Evaluates 5 competencies and recommends which to build first |
 | **[business-health-diagnostic](skills/business-health-diagnostic/SKILL.md)** | Diagnose SaaS business health using key metrics, identify red flags, and prioritize actions. Analyzes growth, retention, efficiency, and capital health |
 | **[context-engineering-advisor](skills/context-engineering-advisor/SKILL.md)** | Diagnose context stuffing (volume without intent) vs. context engineering (structure for attention). Guides memory architecture, retrieval strategies, and Research→Plan→Reset→Implement cycle |
 | **[customer-journey-mapping-workshop](skills/customer-journey-mapping-workshop/SKILL.md)** | Guides journey mapping with pain point identification |
+| **[director-readiness-advisor](skills/director-readiness-advisor/SKILL.md)** | Coaches PMs and new Directors through the transition across four situations: preparing, interviewing, newly landed, recalibrating. Based on [The Product Porch E42](https://the-product-porch-43ca35c0.simplecast.com/episodes/from-product-manager-to-director-how-to-make-the-shift-part-1) |
 | **[discovery-interview-prep](skills/discovery-interview-prep/SKILL.md)** | Plans customer interviews (Mom Test style) based on your research goals |
 | **[epic-breakdown-advisor](skills/epic-breakdown-advisor/SKILL.md)** | Splits epics into user stories using Richard Lawrence's 9 patterns |
 | **[feature-investment-advisor](skills/feature-investment-advisor/SKILL.md)** | Evaluate feature investments using revenue impact, cost structure, ROI, and strategic value. Delivers build/don't build recommendations |
@@ -281,15 +296,17 @@ Now that you understand the three types, here's the complete catalog:
 | **[problem-framing-canvas](skills/problem-framing-canvas/SKILL.md)** | Leads you through MITRE Problem Framing (Look Inward/Outward/Reframe) |
 | **[tam-sam-som-calculator](skills/tam-sam-som-calculator/SKILL.md)** | Projects market size (TAM/SAM/SOM) with real-world data and citations |
 | **[user-story-mapping-workshop](skills/user-story-mapping-workshop/SKILL.md)** | Walks you through creating story maps with backbone and release slices |
+| **[vp-cpo-readiness-advisor](skills/vp-cpo-readiness-advisor/SKILL.md)** | Coaches Directors and executives through the VP/CPO transition — includes CEO interview framework for evaluating roles before accepting. Based on [The Product Porch E43](https://the-product-porch-43ca35c0.simplecast.com/episodes/becoming-a-vp-cpo-leading-product-at-the-executive-level-part-2) |
 | **[workshop-facilitation](skills/workshop-facilitation/SKILL.md)** | Adds one-step-at-a-time facilitation with numbered recommendations for workshop skills |
 
 ---
 
-### 🎭 Workflow Skills (5)
+### 🎭 Workflow Skills (6)
 
 | Skill | What It Does | Timeline |
 |-------|--------------|----------|
 | **[discovery-process](skills/discovery-process/SKILL.md)** | Complete discovery cycle: frame problem → research → synthesize → validate solutions | 3-4 weeks |
+| **[executive-onboarding-playbook](skills/executive-onboarding-playbook/SKILL.md)** | 30-60-90 day diagnostic playbook for VP/CPO transitions: diagnose before acting, surface unwritten strategy, assess people, act with evidence. Based on [The Product Porch E43](https://the-product-porch-43ca35c0.simplecast.com/episodes/becoming-a-vp-cpo-leading-product-at-the-executive-level-part-2) | 90 days |
 | **[prd-development](skills/prd-development/SKILL.md)** | Structured PRD: problem statement → personas → solution → metrics → user stories | 2-4 days |
 | **[product-strategy-session](skills/product-strategy-session/SKILL.md)** | Full strategy: positioning → problem framing → solution exploration → roadmap | 2-4 weeks |
 | **[roadmap-planning](skills/roadmap-planning/SKILL.md)** | Strategic roadmap: gather inputs → define epics → prioritize → sequence → communicate | 1-2 weeks |

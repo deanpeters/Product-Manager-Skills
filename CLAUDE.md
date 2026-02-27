@@ -4,16 +4,25 @@
 
 ---
 
-## Project Status (Last updated: Tue Feb 10 2026)
+## Project Status (Last updated: Fri Feb 27 2026)
 
-### Current State: v0.4 Released + Multiple Active Phases
+### Current State: v0.5 Released + Multiple Active Phases
 
-**Released: 42 Skills (Feb 9, 2026)**
-- 19 Component Skills (templates/artifacts + finance metrics)
-- 18 Interactive Skills (guided discovery + finance advisors)
-- 5 Workflow Skills (end-to-end processes + meta skill-authoring workflow)
+**Released: 46 Skills (Feb 27, 2026)**
+- 20 Component Skills (templates/artifacts + finance metrics + career frameworks)
+- 20 Interactive Skills (guided discovery + finance advisors + career advisors)
+- 6 Workflow Skills (end-to-end processes + meta skill-authoring + executive onboarding)
 - License: CC BY-NC-SA 4.0
 - All skills restructured to Anthropic-compliant format (`skills/skill-name/SKILL.md`)
+
+**Phase 8: Career & Leadership Skills (COMPLETE)** ✅
+- ✅ **4 Skills Released (Feb 27, 2026)** — distilled from two episodes of [The Product Porch](https://the-product-porch-43ca35c0.simplecast.com) podcast
+  - [`altitude-horizon-framework`](skills/altitude-horizon-framework/SKILL.md) (Component) — PM→Director mental model: altitude/horizon axes, waiter-to-operator shift, four transition zones, Cascading Context Map. Based on [E42](https://the-product-porch-43ca35c0.simplecast.com/episodes/from-product-manager-to-director-how-to-make-the-shift-part-1)
+  - [`director-readiness-advisor`](skills/director-readiness-advisor/SKILL.md) (Interactive) — Coaching across four situations: preparing, interviewing, newly landed, recalibrating. Based on E42
+  - [`executive-onboarding-playbook`](skills/executive-onboarding-playbook/SKILL.md) (Workflow) — 30-60-90 day diagnostic playbook for VP/CPO transitions. Based on [E43](https://the-product-porch-43ca35c0.simplecast.com/episodes/becoming-a-vp-cpo-leading-product-at-the-executive-level-part-2)
+  - [`vp-cpo-readiness-advisor`](skills/vp-cpo-readiness-advisor/SKILL.md) (Interactive) — Director→VP/CPO coaching; includes CEO interview framework. Based on E43
+- **Source transcripts:** `research/product_porch_transcript.making-the-shift-from-pm-to-director-of-product.md` and `research/product_porch_transcript.becoming-a-vp-or-cpo-of-product-at-executive-level.md`
+- **Potential follow-on:** VP/CPO→C-suite transition (separate skill set, not yet sourced)
 
 **Phase 6: AI PM Orchestrator Skills (In Progress)**
 - ✅ **Skill #34: agent-orchestration-advisor** (Interactive) — Complete
@@ -35,6 +44,7 @@
   - See `docs/Finance Suite Summary.md` for complete overview
 
 **Recent Updates:**
+- ✅ **v0.5 Released (Feb 27, 2026):** Added 4 Career & Leadership skills (Phase 8) distilled from The Product Porch podcast episodes on PM→Director and Director→VP/CPO transitions
 - ✅ **v0.4 Released (Feb 10, 2026):** Fixed facilitation protocol regression and standardized guided interaction behavior
   - Root cause: brevity-focused rewriting could strip facilitation modality details from interactive flows
   - Resolution: established `skills/workshop-facilitation/SKILL.md` as source of truth and linked it across interactive and facilitation-heavy workflow skills

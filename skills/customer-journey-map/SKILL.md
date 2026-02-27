@@ -249,6 +249,7 @@ Review the map and ask:
 ## Examples
 
 See `examples/sample.md` for a full customer journey map example.
+See `examples/meta-product-manager-skills.md` for a meta dogfooding example mapping this repository's own customer journey.
 
 Mini example excerpt:
 
