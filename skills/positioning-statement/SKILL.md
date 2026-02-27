@@ -2,6 +2,15 @@
 name: positioning-statement
 description: Create a Geoffrey Moore-style positioning statement that clearly articulates who your product serves, what need it addresses, how it's categorized, what benefit it delivers, and how it differs from al
 type: component
+theme: strategy-positioning
+best_for:
+  - "Defining your product's market position clearly for the first time"
+  - "Differentiating from specific competitors in your messaging"
+  - "Aligning your team on who you serve, what problem you solve, and why you're different"
+scenarios:
+  - "I need to write a positioning statement for a new B2B SaaS product targeting mid-market HR teams"
+  - "Our positioning feels generic and I need to sharpen it against two specific competitors"
+estimated_time: "10-15 min"
 ---
 
 

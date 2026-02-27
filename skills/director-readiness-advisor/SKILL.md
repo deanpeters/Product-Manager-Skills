@@ -2,6 +2,16 @@
 name: director-readiness-advisor
 description: "Coaches PMs and new Directors through the transition from individual contributor to organizational leader across four situations: preparing, interviewing, newly landed, or recalibrating."
 type: interactive
+theme: career-leadership
+best_for:
+  - "Preparing to make the leap to Director over the next 3-12 months"
+  - "Navigating your first 6 months in a new Director role"
+  - "Diagnosing what isn't working 12+ months into the Director role"
+scenarios:
+  - "I'm a senior PM preparing for Director interviews next quarter"
+  - "I just got promoted to Director and I can't stop jumping into the tactical work"
+  - "I've been a Director for 18 months and my exec relationships aren't working"
+estimated_time: "10-15 min"
 ---
 
 ## Purpose

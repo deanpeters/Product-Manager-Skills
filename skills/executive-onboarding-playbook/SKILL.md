@@ -2,6 +2,16 @@
 name: executive-onboarding-playbook
 description: "A 30-60-90 day playbook for VP and CPO leaders entering a new role: diagnose before acting, surface unwritten strategy, assess people, and build the body of evidence that informs all decisions."
 type: workflow
+theme: career-leadership
+best_for:
+  - "Starting a new VP or CPO role in the first 90 days"
+  - "Evaluating a CPO offer — what to ask before you accept"
+  - "Diagnosing an organization you've just inherited"
+scenarios:
+  - "I just accepted a VP of Product role starting next month — help me plan my first 90 days"
+  - "I'm evaluating a CPO offer and want to know what questions to ask the hiring CEO"
+  - "I'm two months into a new role and want to validate what I've learned before I start acting"
+estimated_time: "20-30 min"
 ---
 
 ## Purpose

@@ -2,6 +2,15 @@
 name: context-engineering-advisor
 description: Diagnose context stuffing vs. context engineering. Assess practices, define boundaries, and advise on memory architecture, retrieval, and the Research→Plan→Reset→Implement cycle.
 type: interactive
+theme: ai-agents
+best_for:
+  - "Diagnosing context stuffing vs. context engineering in your AI workflows"
+  - "Building better memory and retrieval architecture for AI agents"
+  - "Improving AI output quality through structured context design"
+scenarios:
+  - "My AI outputs are mediocre even though I'm giving it lots of information — diagnose what's wrong"
+  - "I want to architect context properly for a multi-step AI workflow in my product team"
+estimated_time: "15-20 min"
 ---
 
 ## Purpose

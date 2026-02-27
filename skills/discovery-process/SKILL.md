@@ -2,6 +2,15 @@
 name: discovery-process
 description: Guide product managers through a complete discovery cycle—from initial problem hypothesis to validated solution—by orchestrating problem framing, customer interviews, synthesis, and experimentatio
 type: workflow
+theme: discovery-research
+best_for:
+  - "Running a full discovery cycle from hypothesis to validated solution"
+  - "Investigating a retention or churn problem systematically"
+  - "Setting up continuous discovery as an ongoing practice"
+scenarios:
+  - "I have a hypothesis that B2B customers struggle with onboarding and want to validate it before building anything"
+  - "Our activation rate dropped 15% this quarter and I need to run discovery to find out why"
+estimated_time: "30-60 min"
 ---
 
 

@@ -2,6 +2,16 @@
 name: vp-cpo-readiness-advisor
 description: "Coaches Directors and executives through the transition to VP or CPO across four situations: preparing, interviewing, newly landed, or recalibrating at executive level."
 type: interactive
+theme: career-leadership
+best_for:
+  - "Preparing for the Director-to-VP or VP-to-CPO transition"
+  - "Evaluating a VP or CPO role before you accept it"
+  - "Recalibrating when something isn't working in an executive product role"
+scenarios:
+  - "I'm a Director preparing for VP roles and want to understand what actually changes"
+  - "I have a CPO offer I'm evaluating — what are the right questions to ask the CEO?"
+  - "I've been a VP for 18 months and my executive peer relationships aren't working"
+estimated_time: "15-20 min"
 ---
 
 ## Purpose

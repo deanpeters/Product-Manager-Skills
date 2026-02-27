@@ -2,6 +2,15 @@
 name: workshop-facilitation
 description: Facilitate workshop sessions in a multi-turn, one-step flow with numbered recommendations at decision points and quick-select options for regular questions.
 type: interactive
+theme: workshops-facilitation
+best_for:
+  - "Adding structured facilitation to any PM workshop or guided session"
+  - "Running interactive sessions with numbered recommendations and progress tracking"
+  - "Ensuring your workshops stay on track and end with actionable choices"
+scenarios:
+  - "I want to run a structured positioning workshop with my product team — set up the facilitation protocol"
+  - "Help me facilitate a discovery sprint kickoff with clear questions, options, and progress labels"
+estimated_time: "varies by workshop"
 ---
 
 ## Purpose
