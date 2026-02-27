@@ -26,6 +26,27 @@ Frame problems, hunt opportunities, scaffold validation experiments, and kill ba
 
 ## 📣 Updates & Announcements
 
+### Feb 27, 2026 — v0.5 Streamlit (beta) Playground
+
+We launched a new **Streamlit (beta)** interface for local skill test-driving.
+
+What shipped:
+- Local playground at `app/main.py` with guided browsing and session flows
+- Multi-provider support (Anthropic, OpenAI, Ollama) with provider/model picker
+- Environment-variable-only API handling (`app/.env.example`) for safer defaults
+- Workflow UX upgrades (phase detection fix, per-phase output persistence, run-all phases control)
+- Fast-model quality warnings on long workflows (especially PRD-style runs)
+
+Docs:
+- [`app/STREAMLIT_INTERFACE.md`](app/STREAMLIT_INTERFACE.md)
+- [`app/.env.example`](app/.env.example)
+
+Feedback welcome:
+- [GitHub Issues](https://github.com/deanpeters/Product-Manager-Skills/issues)
+- [Dean on LinkedIn](https://linkedin.com/in/deanpeters)
+
+---
+
 ### Feb 27, 2026 — v0.5 Career & Leadership Skills Suite
 
 Four new skills covering the full product leadership career arc — from PM to Director to VP/CPO — distilled from two episodes of [The Product Porch](https://the-product-porch-43ca35c0.simplecast.com) podcast.
@@ -90,6 +111,19 @@ Instead of saying *"Write a PRD"* and hoping for the best, the agent already kno
 **Result:** You work faster, with better consistency, at a higher strategic level.
 
 **Works with:** Claude Code, Cowork, OpenAI Codex, ChatGPT, Gemini, and any AI agent that can read structured knowledge.
+
+---
+
+## 🧪 Streamlit (beta)
+
+Want a quick local test-drive before using skills in your agent workflow?
+
+```bash
+pip install -r app/requirements.txt
+streamlit run app/main.py
+```
+
+This beta interface is a feature in flight. Feedback is welcome via [GitHub Issues](https://github.com/deanpeters/Product-Manager-Skills/issues) or [LinkedIn](https://linkedin.com/in/deanpeters).
 
 ---
 
@@ -520,6 +554,13 @@ See [LICENSE](LICENSE) for full details.
 - **Productside:** [Learn more about AI PM consulting](https://productside.com)
 
 ---
+
+**v0.5 — February 27, 2026**
+
+Highlights in this release:
+- Added 4 Career & Leadership skills distilled from The Product Porch episodes on PM→Director and Director→VP/CPO transitions
+- Launched Streamlit (beta) local playground in `app/` with multi-provider/model selection
+- Improved workflow UX in beta app: phase detection, explicit run controls, and per-phase output tracking
 
 **v0.4 — February 10, 2026**
 

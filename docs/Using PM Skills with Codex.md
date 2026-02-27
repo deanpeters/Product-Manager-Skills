@@ -5,6 +5,13 @@ Codex can apply these skills directly from your repo files. There are two practi
 - Codex on ChatGPT (`chatgpt.com/codex`) with GitHub connected
 - Skills marketplace install via `npx skills`
 
+If you want a quick local rehearsal before using Codex directly, try the Streamlit (beta) playground:
+
+```bash
+pip install -r app/requirements.txt
+streamlit run app/main.py
+```
+
 ---
 
 ## Option 1: Local Workspace (Fastest)

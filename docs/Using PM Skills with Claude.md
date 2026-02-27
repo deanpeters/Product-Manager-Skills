@@ -2,6 +2,13 @@
 
 This repo is a library of PM skill files designed for AI agents. Claude Code (CLI) and Claude Cowork (workspace) can both read these files and apply them as structured instructions.
 
+For quick local experimentation before running in Claude, you can also use the Streamlit (beta) playground:
+
+```bash
+pip install -r app/requirements.txt
+streamlit run app/main.py
+```
+
 ---
 
 ## With Claude Code (CLI)

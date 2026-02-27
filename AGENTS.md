@@ -4,6 +4,7 @@
 - `skills/<skill-name>/SKILL.md` holds each skill. Skill folders use lowercase kebab-case names (e.g., `skills/user-story/SKILL.md`).
 - `research/` contains reference essays that inform skills.
 - `docs/` contains usage guides, including `docs/Using PM Skills with Codex.md`.
+- `app/` contains the Streamlit (beta) playground (`app/main.py`) and setup docs (`app/STREAMLIT_INTERFACE.md`).
 - Root docs like `README.md`, `CONTRIBUTING.md`, `PLANS.md`, and `CLAUDE.md` explain catalog, contribution flow, and skill distillation.
 
 ## Build, Test, and Development Commands
@@ -11,6 +12,7 @@ This is a Markdown-first repository with no build system or automated tests.
 - `rg --files` lists all files quickly.
 - `rg "SKILL.md"` finds skill definitions.
 - `rg "skill-name"` verifies references before submitting.
+- `streamlit run app/main.py` launches the Streamlit (beta) skill playground.
 
 ## Coding Style & Naming Conventions
 - Write in Markdown with clear headings and short paragraphs.
@@ -48,6 +50,7 @@ No automated tests exist. Validate changes by:
 - Ensure new skills are linked in the correct section (Component/Interactive/Workflow).
 - Spot-check cross-links from `README.md` and `CONTRIBUTING.md`.
 - Confirm any renamed skills update paths and references.
+- If Streamlit beta changed, update `app/STREAMLIT_INTERFACE.md`, `app/.env.example`, and release notes in `README.md`/`docs/announcements/`.
 
 ## Skill Quality Expectations
 - Agent-ready, self-contained, and practical.

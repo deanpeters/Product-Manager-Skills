@@ -6,7 +6,7 @@
 
 ## Project Status (Last updated: Fri Feb 27 2026)
 
-### Current State: v0.5 Released + Multiple Active Phases
+### Current State: v0.5 Released + Streamlit Beta in Flight + Multiple Active Phases
 
 **Released: 46 Skills (Feb 27, 2026)**
 - 20 Component Skills (templates/artifacts + finance metrics + career frameworks)
@@ -14,6 +14,13 @@
 - 6 Workflow Skills (end-to-end processes + meta skill-authoring + executive onboarding)
 - License: CC BY-NC-SA 4.0
 - All skills restructured to Anthropic-compliant format (`skills/skill-name/SKILL.md`)
+
+**Streamlit (beta) Playground (Feb 27, 2026)**
+- Local app in `app/main.py` for browsing and running skills before install
+- Environment-variable key handling (no in-app key entry), with provider/model selection
+- Provider support: Anthropic, OpenAI, and Ollama
+- Workflow UX improvements: phase detection, run-all phases, per-phase output tracking
+- Feedback channels linked in-app: GitHub Issues + LinkedIn
 
 **Phase 8: Career & Leadership Skills (COMPLETE)** ✅
 - ✅ **4 Skills Released (Feb 27, 2026)** — distilled from two episodes of [The Product Porch](https://the-product-porch-43ca35c0.simplecast.com) podcast
@@ -44,6 +51,7 @@
   - See `docs/Finance Suite Summary.md` for complete overview
 
 **Recent Updates:**
+- ✅ **v0.5 Streamlit (beta) update (Feb 27, 2026):** Added local playground, multi-provider model selection, and workflow UX fixes for phase-based skills (notably PRD flow behavior)
 - ✅ **v0.5 Released (Feb 27, 2026):** Added 4 Career & Leadership skills (Phase 8) distilled from The Product Porch podcast episodes on PM→Director and Director→VP/CPO transitions
 - ✅ **v0.4 Released (Feb 10, 2026):** Fixed facilitation protocol regression and standardized guided interaction behavior
   - Root cause: brevity-focused rewriting could strip facilitation modality details from interactive flows
@@ -57,6 +65,9 @@
   - `Using PM Skills with Codex.md` — Guide for OpenAI Codex
   - `Building PM Skills.md` — Contributor guide
   - `Finance Suite Summary.md` — Complete overview of 7 finance skills (NEW)
+- Streamlit beta documentation in `/app`:
+  - `app/STREAMLIT_INTERFACE.md` — App architecture, setup, and deployment notes
+  - `app/.env.example` — Multi-provider key/model configuration template
 - Updated `CONTRIBUTING.md` with enhanced guidelines
 - Research documents added to `/research`:
   - `Context Engineering for Product Managers.md`
@@ -103,6 +114,7 @@
 - For Claude web custom skills: keep `name` <= 64 chars and `description` <= 200 chars, and ensure folder name matches `name`
 - Claude web uploads require `Skill.md` (case-sensitive); use `scripts/package-claude-skills.sh`
 - Scripts should be deterministic, avoid network calls, and be documented in the skill file
+- If Streamlit beta behavior or provider support changes, update both `app/STREAMLIT_INTERFACE.md` and README release notes in the same PR
 
 **Automation Tools:**
 - **`scripts/add-a-skill.sh`** — Agent-agnostic utility for automated skill creation

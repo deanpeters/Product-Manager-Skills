@@ -2,6 +2,13 @@
 
 You can use this skills repo with ChatGPT in three ways, depending on how repeatable you want the setup.
 
+If you want to test a skill locally first, use the Streamlit (beta) playground:
+
+```bash
+pip install -r app/requirements.txt
+streamlit run app/main.py
+```
+
 ---
 
 ## Option 1: Connect GitHub in ChatGPT Apps (Best for Active Repos)
