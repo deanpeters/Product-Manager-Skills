@@ -35,6 +35,11 @@ No automated tests exist. Validate changes by:
 - If deciding skill type/category, anchor to local criteria in `README.md`, `CLAUDE.md`, and relevant `SKILL.md` files.
 - Prefer proving decisions with repo tools (`scripts/find-a-skill.sh`, `scripts/test-a-skill.sh`, `scripts/check-skill-metadata.py`) over opinion.
 
+## Cross-Repo Boundary
+- This repository is the shared PM skills library, not the Productside playbook distribution repo.
+- Productside playbook skill content must be created/edited in `/Users/deanpeters/Code/productside_playbook_skills`.
+- When supporting Productside work, treat this repo as read-only reference/tooling unless explicitly asked to change this repo.
+
 ## Claude Custom Skills Compatibility
 - Claude web uploads require `Skill.md` (case-sensitive). Use `scripts/package-claude-skills.sh`.
 - Any scripts under a skill should be deterministic, avoid network calls, and be documented in the skill.

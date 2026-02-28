@@ -24,6 +24,14 @@ Frame problems, hunt opportunities, scaffold validation experiments, and kill ba
 
 ---
 
+## Repo Boundary Note
+
+- This repo is the general PM skills library.
+- Productside Playbook-specific skill content belongs in `/Users/deanpeters/Code/productside_playbook_skills`.
+- When working on Productside playbook deliverables, use this repo as reference/tooling only and do not add `productside-*` skills here.
+
+---
+
 ## 📣 Updates & Announcements
 
 ### Feb 27, 2026 — v0.5 Streamlit (beta) Playground
