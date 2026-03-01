@@ -4,13 +4,13 @@ description: "The core mental model for the PM-to-Director transition: altitude 
 type: component
 theme: career-leadership
 best_for:
-"Understanding what actually changes when you move from PM to Director"
-"Diagnosing which transition zone is creating friction in your role"
-"Applying the Cascading Context Map when organizational direction is vague"
+   - "Understanding what actually changes when you move from PM to Director"
+   - "Diagnosing which transition zone is creating friction in your role"
+   - "Applying the Cascading Context Map when organizational direction is vague"
 scenarios:
-"I'm a senior PM trying to understand what changes when I become a Director"
-"I'm newly promoted to Director and something isn't clicking — help me diagnose it"
-"My team has no clear direction and I need to create context from a vague company strategy"
+   - "I'm a senior PM trying to understand what changes when I become a Director"
+   - "I'm newly promoted to Director and something isn't clicking — help me diagnose it"
+   - "My team has no clear direction and I need to create context from a vague company strategy"
 estimated_time: "10-15 min"
 ---
 
