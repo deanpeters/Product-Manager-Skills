@@ -1,5 +1,5 @@
 ---
-name: skill-creator
+name: kne-pm-skill-creator
 description: Design a new PM skill through guided conversation. Use when you have raw content or an idea and want to shape it into a compliant skill.
 intent: >-
   Walk through the full skill design process interactively — from raw idea or content to a structured, repo-compliant SKILL.md draft. Asks adaptive questions to determine skill type, scope, structure, and content, then generates a ready-to-validate draft.
