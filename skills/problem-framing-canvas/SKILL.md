@@ -18,17 +18,7 @@ scenarios:
 ## Purpose
 Guide product managers through the MITRE Problem Framing Canvas process by asking structured questions across three phases: Look Inward (examine your own assumptions and biases), Look Outward (understand who experiences the problem and who doesn't), and Reframe (synthesize insights into an actionable problem statement and "How Might We" question). Use this to ensure you're solving the right problem before jumping to solutions—avoiding confirmation bias, overlooked stakeholders, and solution-first thinking.
 
-This is not a solution brainstorm—it's a problem framing tool that broadens perspective, challenges assumptions, and produces a clear, equity-driven problem statement.
-
 ## Key Concepts
-
-### What is the MITRE Problem Framing Canvas?
-
-The Problem Framing Canvas (MITRE Innovation Toolkit, v3) is a structured framework that helps teams explore a problem space comprehensively before proposing solutions. It's partitioned into **three areas**:
-
-1. **Look Inward** — Examine your own assumptions, biases, and how you might be part of the problem
-2. **Look Outward** — Understand who experiences the problem, who benefits from it, and who's been left out
-3. **Reframe** — Synthesize insights into a clear, actionable problem statement and "How Might We" question
 
 ### Canvas Structure
 
@@ -54,28 +44,6 @@ The Problem Framing Canvas (MITRE Innovation Toolkit, v3) is a structured framew
 │ - How might we [action] as we aim to [objective]?             │
 └─────────────────────────────────────────────────────────────────┘
 ```
-
-### Why This Works
-- **Broadens perspective:** Forces you to look beyond your own assumptions
-- **Equity-driven:** Centers marginalized voices and asks "who's been left out?"
-- **Challenges biases:** Requires explicit examination of assumptions before framing problem
-- **Actionable output:** Produces HMW statement ready for solution exploration
-
-### Anti-Patterns (What This Is NOT)
-- **Not a solution brainstorm:** Canvas frames the problem; solutions come later
-- **Not a feature request list:** Focuses on underlying problems, not surface symptoms
-- **Not a one-person exercise:** Requires diverse perspectives to challenge groupthink
-
-### When to Use This
-- Starting discovery for a new initiative
-- Reframing an existing problem (suspect you're solving the wrong thing)
-- Challenging assumptions before building solutions
-- Aligning cross-functional teams on problem definition
-
-### When NOT to Use This
-- When the problem is already well-understood and validated
-- For tactical bug fixes or technical debt (no deep framing needed)
-- When stakeholders have already committed to a solution (address alignment first)
 
 ---
 
@@ -399,48 +367,13 @@ Mini example excerpt:
 
 ## Common Pitfalls
 
-### Pitfall 1: Skipping "Look Inward" (Assuming You're Neutral)
-**Symptom:** Team jumps straight to "Look Outward" without examining biases
-
-**Consequence:** Groupthink persists, assumptions unchallenged
-
-**Fix:** Force explicit discussion of assumptions and biases (Q2-Q3)
-
----
-
-### Pitfall 2: Ignoring "Who Benefits" Question
-**Symptom:** Canvas completed without exploring who benefits from problem existing
-
-**Consequence:** Miss political dynamics, resistance to change
-
-**Fix:** Always ask "Who loses if this problem is solved?" (Q6)
-
----
-
-### Pitfall 3: Generic Problem Statement
-**Symptom:** Reframed problem is vague ("Improve user experience")
-
-**Consequence:** HMW statement isn't actionable
-
-**Fix:** Make problem specific (who, what, when, consequence, root cause)
-
----
-
-### Pitfall 4: HMW Statement Is Too Narrow
-**Symptom:** "How might we add a mobile app?"
-
-**Consequence:** Constrains solution space to one idea
-
-**Fix:** Keep HMW broad: "How might we enable mobile-first users to access core workflows on any device?"
-
----
-
-### Pitfall 5: Solo Exercise (No Diverse Perspectives)
-**Symptom:** PM fills out canvas alone
-
-**Consequence:** Biases persist, marginalized voices still left out
-
-**Fix:** Facilitate canvas workshop with cross-functional team + customer input
+| Pitfall | Symptom | Fix |
+|---------|---------|-----|
+| Skipping "Look Inward" | Team jumps to "Look Outward" without examining biases | Force explicit discussion of assumptions and biases (Q2-Q3) |
+| Ignoring "Who Benefits" | Canvas completed without exploring who benefits from problem existing | Always ask "Who loses if this problem is solved?" (Q6) |
+| Generic Problem Statement | Reframed problem is vague ("Improve user experience") | Make problem specific (who, what, when, consequence, root cause) |
+| HMW Too Narrow | "How might we add a mobile app?" constrains solution space | Keep HMW broad: "How might we enable mobile-first users to access core workflows on any device?" |
+| Solo Exercise | PM fills out canvas alone; biases persist | Facilitate canvas workshop with cross-functional team + customer input |
 
 ---
 
@@ -458,9 +391,3 @@ Mini example excerpt:
 ### Dean's Work
 - [If Dean has problem framing resources, link here]
 
----
-
-**Skill type:** Interactive
-**Suggested filename:** `problem-framing-canvas.md`
-**Suggested placement:** `/skills/interactive/`
-**Dependencies:** Uses `skills/problem-statement/SKILL.md`

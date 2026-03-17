@@ -7,19 +7,7 @@ type: component
 ---
 
 
-## Purpose
-Create an initial, assumption-based persona profile that synthesizes available user research, market data, and stakeholder knowledge into a working hypothesis about your target user. Use this to align teams early in product development, guide initial design decisions, and identify gaps in understanding that require validation through research.
-
-This is not a validated persona—it's a "proto" (prototype) persona that evolves as you learn more. Think of it as a structured placeholder that prevents design-by-committee while acknowledging you don't have all the answers yet.
-
 ## Key Concepts
-
-### What is a Proto-Persona?
-A proto-persona is a lightweight, hypothesis-driven persona created from:
-- **Existing research:** User interviews, surveys, analytics (if available)
-- **Market data:** Industry reports, competitor analysis, demographic trends
-- **Stakeholder knowledge:** Sales, support, and team insights
-- **Informed assumptions:** Best guesses that need validation
 
 ### Proto vs. Validated Persona
 | Proto-Persona | Validated Persona |
@@ -29,31 +17,6 @@ A proto-persona is a lightweight, hypothesis-driven persona created from:
 | Used to align teams early | Used to guide detailed design |
 | Evolves rapidly | Stable over time |
 | Good enough to start | High confidence |
-
-### Why Use Proto-Personas?
-- **Speed:** Align teams quickly without waiting for months of research
-- **Focus:** Provides a shared reference point for "who we're building for"
-- **Hypothesis framing:** Makes assumptions explicit, which can then be validated
-- **Prevents generic design:** "Design for everyone" = design for no one
-
-### Anti-Patterns (What This Is NOT)
-- **Not validated research:** Don't treat it as fact—it's a hypothesis
-- **Not a replacement for user research:** Use it to *guide* research, not avoid it
-- **Not demographic data alone:** Age and location don't explain behavior
-- **Not permanent:** Proto-personas should evolve as you learn
-
-### When to Use This
-- Early-stage product development (before extensive user research)
-- Kicking off a new feature or pivot
-- Aligning stakeholders on target users
-- Identifying research gaps (who do we need to interview?)
-
-### When NOT to Use This
-- After you've done extensive user research (create a validated persona instead)
-- For mature products with known user segments (you should already have validated personas)
-- As a substitute for quantitative data (proto-personas inform research; research validates them)
-
----
 
 ## Application
 
@@ -253,48 +216,13 @@ Mini example excerpt:
 
 ## Common Pitfalls
 
-### Pitfall 1: Demographics Without Behavior
-**Symptom:** "28 years old, lives in NYC, has a dog"
-
-**Consequence:** Demographics don't explain *why* someone would use your product.
-
-**Fix:** Add behavioral context: "Works remotely, active in 5 Slack communities, values async communication tools."
-
----
-
-### Pitfall 2: Treating Proto-Persona as Fact
-**Symptom:** "Manager Mike would never use feature X because he hates complexity"
-
-**Consequence:** You're treating an assumption as validated research.
-
-**Fix:** Add "[ASSUMPTION—VALIDATE]" tags and plan interviews to test hypotheses.
-
----
-
-### Pitfall 3: Creating 10 Proto-Personas
-**Symptom:** Trying to model every possible user type upfront
-
-**Consequence:** Analysis paralysis. Teams can't focus on a primary user.
-
-**Fix:** Start with 1-2 proto-personas (primary + secondary). Add more as you validate and expand.
-
----
-
-### Pitfall 4: Fabricating Quotes
-**Symptom:** Quotes that sound like marketing copy: "I love products that delight me!"
-
-**Consequence:** Fake personas lead to fake empathy.
-
-**Fix:** Use real quotes from interviews, support tickets, or sales calls. If you don't have quotes yet, note "[PLACEHOLDER—NEEDS RESEARCH]."
-
----
-
-### Pitfall 5: Never Validating
-**Symptom:** Proto-persona created 6 months ago, never updated
-
-**Consequence:** You're designing for a hypothesis that may be wrong.
-
-**Fix:** Plan research sprints to validate key assumptions. Evolve the proto-persona as you learn. Graduate it to a validated persona when confidence is high.
+| Pitfall | Symptom | Fix |
+|---------|---------|-----|
+| Demographics without behavior | "28 years old, lives in NYC, has a dog" | Add behavioral context: "Works remotely, active in 5 Slack communities, values async tools" |
+| Treating proto-persona as fact | "Manager Mike would never use feature X" | Add "[ASSUMPTION—VALIDATE]" tags and plan interviews to test hypotheses |
+| Creating 10 proto-personas | Trying to model every user type upfront | Start with 1-2 (primary + secondary); add more as you validate |
+| Fabricating quotes | Quotes that sound like marketing copy | Use real quotes from interviews/support tickets; note "[PLACEHOLDER—NEEDS RESEARCH]" if missing |
+| Never validating | Proto-persona created 6 months ago, never updated | Plan research sprints to validate; graduate to validated persona when confidence is high |
 
 ---
 
@@ -317,10 +245,3 @@ Mini example excerpt:
 ### Provenance
 - Adapted from `prompts/proto-persona-profile.md` in the `https://github.com/deanpeters/product-manager-prompts` repo.
 
----
-
-**Skill type:** Component
-**Suggested filename:** `proto-persona.md`
-**Suggested placement:** `/skills/components/`
-**Dependencies:** References `skills/jobs-to-be-done/SKILL.md`, `skills/problem-statement/SKILL.md`
-**Used by:** `skills/positioning-statement/SKILL.md`, `skills/user-story/SKILL.md`, `skills/problem-statement/SKILL.md`

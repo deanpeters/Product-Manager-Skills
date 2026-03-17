@@ -10,16 +10,7 @@ type: component
 ## Purpose
 Create a visionary press release following Amazon's "Working Backwards" methodology to define and communicate a product or feature before building it. Use this to align stakeholders on the customer value proposition, clarify the problem being solved, and test if the product story resonates—treating the press release as a forcing function for clarity and customer-centricity.
 
-This is not a marketing artifact for launch day—it's a planning tool that asks "If we shipped this perfectly, how would we explain it to the world?"
-
 ## Key Concepts
-
-### The Amazon Working Backwards Framework
-Popularized by Amazon, the Working Backwards process starts with a press release and FAQ before any code is written. The press release must:
-- Be written from the customer's perspective
-- Focus on the problem solved, not the features built
-- Be short (1-1.5 pages)
-- Be compelling enough that customers would want the product
 
 ### Press Release Structure
 A standard press release follows this format:
@@ -35,28 +26,11 @@ A standard press release follows this format:
 9. **Call to action:** How to learn more
 10. **Media contact:** Press contact information
 
-### Why This Works
-- **Customer-first thinking:** Forces you to articulate value from the customer's perspective
-- **Clarity forcing function:** If you can't write a compelling press release, the product idea may be weak
-- **Alignment tool:** Stakeholders can read and react to the vision before engineering starts
-- **Decision filter:** If a feature wouldn't make it into the press release, question its priority
-
 ### Anti-Patterns (What This Is NOT)
 - **Not feature-centric:** Don't list specs—focus on customer outcomes
 - **Not internal jargon:** Write for customers, not engineers
 - **Not vague:** "Revolutionizes productivity" is fluff; "Reduces report generation time from 8 hours to 10 minutes" is real
 - **Not marketing spin:** Be honest about what the product does
-
-### When to Use This
-- Defining a new product or major feature
-- Aligning stakeholders on vision before development
-- Testing if a product idea is compelling
-- Pitching to execs or securing buy-in
-
-### When NOT to Use This
-- For trivial features (don't over-engineer small tweaks)
-- After you've already built the product (too late)
-- As actual launch-day press release (this is a planning doc, not final marketing copy)
 
 ---
 
@@ -197,48 +171,13 @@ Mini example excerpt:
 
 ## Common Pitfalls
 
-### Pitfall 1: Feature List Instead of Benefits
-**Symptom:** "Includes AI, ML, OCR, NLP, and real-time sync"
-
-**Consequence:** Customers don't care about features—they care about outcomes.
-
-**Fix:** Translate features to benefits: "AI-powered automation reduces invoice processing time by 60%."
-
----
-
-### Pitfall 2: Vague Problem Statement
-**Symptom:** "Solves inefficiency in workflows"
-
-**Consequence:** No one recognizes themselves in this problem.
-
-**Fix:** Be specific: "Small business owners spend 8 hours/month manually entering invoice data."
-
----
-
-### Pitfall 3: Jargon-Heavy Language
-**Symptom:** "Leverages cutting-edge ML models to optimize enterprise-grade workflows"
-
-**Consequence:** Customers can't understand what you're saying.
-
-**Fix:** Write like you're explaining it to a friend: "Automatically handles invoices so you don't have to."
-
----
-
-### Pitfall 4: Generic Executive Quote
-**Symptom:** "We're excited to bring innovation to market"
-
-**Consequence:** Quote adds no value. Could apply to any product.
-
-**Fix:** Make it customer-focused: "Business owners shouldn't spend weekends processing invoices—they should spend that time with family."
-
----
-
-### Pitfall 5: No Data or Validation
-**Symptom:** "Customers will love this revolutionary new solution"
-
-**Consequence:** Unsubstantiated claims = marketing fluff.
-
-**Fix:** Add data: "Beta users saved an average of 5 hours per month" or "68% of SMBs cite invoice processing as their top admin burden."
+| Pitfall | Symptom | Fix |
+|---------|---------|-----|
+| Feature list instead of benefits | "Includes AI, ML, OCR, NLP, and real-time sync" | Translate to outcomes: "AI-powered automation reduces processing time by 60%" |
+| Vague problem statement | "Solves inefficiency in workflows" | Be specific: "Small business owners spend 8 hours/month manually entering invoice data" |
+| Jargon-heavy language | "Leverages cutting-edge ML models to optimize enterprise-grade workflows" | Write plainly: "Automatically handles invoices so you don't have to" |
+| Generic executive quote | "We're excited to bring innovation to market" | Make it customer-focused: "Business owners shouldn't spend weekends processing invoices" |
+| No data or validation | "Customers will love this revolutionary new solution" | Add data: "Beta users saved an average of 5 hours per month" |
 
 ---
 

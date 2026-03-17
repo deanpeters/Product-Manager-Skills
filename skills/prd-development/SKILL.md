@@ -19,8 +19,6 @@ estimated_time: "60-120 min"
 ## Purpose
 Guide product managers through structured PRD (Product Requirements Document) creation by orchestrating problem framing, user research synthesis, solution definition, and success criteria into a cohesive document. Use this to move from scattered notes and Slack threads to a clear, comprehensive PRD that aligns stakeholders, provides engineering context, and serves as a source of truth—avoiding ambiguity, scope creep, and the "build what's in my head" trap.
 
-This is not a waterfall spec—it's a living document that captures strategic context, customer problems, proposed solutions, and success criteria, evolving as you learn through delivery.
-
 ## Key Concepts
 
 ### What is a PRD?
@@ -86,30 +84,6 @@ A PRD (Product Requirements Document) is a structured document that answers:
 - Unresolved decisions
 - Areas requiring discovery
 ```
-
-### Why This Works
-- **Alignment:** Ensures everyone (PM, design, eng, stakeholders) understands the "why"
-- **Context preservation:** Captures research and strategic rationale for future reference
-- **Decision log:** Documents what's in scope, out of scope, and why
-- **Execution clarity:** Provides engineering with user stories and acceptance criteria
-
-### Anti-Patterns (What This Is NOT)
-- **Not a detailed spec:** PRDs frame the problem and solution; they don't specify UI pixel-by-pixel
-- **Not waterfall:** PRDs evolve as you learn; they're not frozen contracts
-- **Not a substitute for collaboration:** PRDs complement conversation, not replace it
-
-### When to Use This
-- Starting a major feature or product initiative
-- Aligning cross-functional teams on scope and requirements
-- Documenting decisions for future reference
-- Onboarding new team members to a project
-
-### When NOT to Use This
-- For small bug fixes or trivial features (overkill)
-- When problem and solution are already clear and aligned (just write user stories)
-- For continuous discovery experiments (use Lean UX Canvas instead)
-
----
 
 ### Facilitation Source of Truth
 
@@ -570,48 +544,13 @@ Mini example excerpt:
 
 ## Common Pitfalls
 
-### Pitfall 1: PRD Written in Isolation
-**Symptom:** PM writes PRD alone, presents finished doc to team
-
-**Consequence:** No buy-in, team doesn't understand rationale
-
-**Fix:** Collaborate on Phase 7 (user stories) with design + eng; review draft PRD before finalizing
-
----
-
-### Pitfall 2: No Evidence in Problem Statement
-**Symptom:** "We believe users have this problem" (no data, no quotes)
-
-**Consequence:** Team questions whether problem is real
-
-**Fix:** Use discovery insights from `skills/discovery-process/SKILL.md`; include customer quotes, analytics, support tickets
-
----
-
-### Pitfall 3: Solution Too Prescriptive
-**Symptom:** PRD specifies exact UI, pixel dimensions, button colors
-
-**Consequence:** Removes design collaboration, becomes waterfall spec
-
-**Fix:** Keep Phase 5 high-level; let design own UI details
-
----
-
-### Pitfall 4: No Success Metrics
-**Symptom:** PRD defines problem + solution but no metrics
-
-**Consequence:** Can't validate if feature succeeded
-
-**Fix:** Always define primary metric in Phase 6 (what you're optimizing for)
-
----
-
-### Pitfall 5: Out of Scope Not Documented
-**Symptom:** No section on what's NOT being built
-
-**Consequence:** Scope creep, stakeholders expect features not planned
-
-**Fix:** Explicitly document out of scope in Phase 8
+| Pitfall | Symptom | Fix |
+|---------|---------|-----|
+| **PRD written in isolation** | PM writes alone, presents finished doc | Collaborate on Phase 7 with design + eng; review draft before finalizing |
+| **No evidence in problem statement** | "We believe users have this problem" (no data) | Include customer quotes, analytics, support tickets from discovery |
+| **Solution too prescriptive** | PRD specifies exact UI, pixel dimensions | Keep Phase 5 high-level; let design own UI details |
+| **No success metrics** | Problem + solution defined but no metrics | Always define primary metric in Phase 6 |
+| **Out of scope not documented** | No section on what's NOT being built | Explicitly document out of scope in Phase 8 |
 
 ---
 
@@ -647,9 +586,3 @@ Mini example excerpt:
 ### Dean's Work
 - [If Dean has PRD templates, link here]
 
----
-
-**Skill type:** Workflow
-**Suggested filename:** `prd-development.md`
-**Suggested placement:** `/skills/workflows/`
-**Dependencies:** Orchestrates 8+ component and interactive skills across 8 phases

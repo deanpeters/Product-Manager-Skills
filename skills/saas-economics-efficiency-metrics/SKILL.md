@@ -19,8 +19,6 @@ scenarios:
 
 Determine whether your SaaS business model is fundamentally viable and capital-efficient. Use this to calculate unit economics, assess profitability, manage cash runway, and decide when to scale vs. optimize. Essential for fundraising, board reporting, and making smart investment trade-offs.
 
-This is not a finance reporting tool—it's a framework for PMs to understand whether the business can sustain growth, when to prioritize efficiency over growth, and which investments have positive returns.
-
 ## Key Concepts
 
 ### Unit Economics Family
@@ -138,31 +136,6 @@ Composite metrics that measure growth vs. profitability trade-offs.
 - **Requirement:** Positive contribution required; aim for >$0 after all variable costs
 
 ---
-
-### Anti-Patterns (What This Is NOT)
-
-- **Not vanity metrics:** High LTV means nothing if payback takes 4 years and customers churn at 3 years.
-- **Not static benchmarks:** "Good" CAC varies wildly by business model (PLG vs. enterprise sales).
-- **Not isolated numbers:** LTV:CAC ratio without payback period can mislead (great ratio, terrible cash efficiency).
-- **Not just finance's problem:** PMs must own unit economics—every feature decision impacts margins and CAC.
-
----
-
-### When to Use These Metrics
-
-**Use these when:**
-- Evaluating whether to scale acquisition (LTV:CAC, payback, magic number)
-- Deciding feature investments (margin impact, contribution to LTV)
-- Planning runway and fundraising (burn rate, runway, Rule of 40)
-- Comparing customer segments or channels (unit economics by segment)
-- Board/investor reporting (Rule of 40, magic number, LTV:CAC)
-- Choosing between growth and profitability (Rule of 40 trade-offs)
-
-**Don't use these when:**
-- Making decisions without revenue context (pair with `saas-revenue-growth-metrics`)
-- Comparing across wildly different business models without normalization
-- Early product discovery (pre-revenue focus on PMF, not unit economics)
-- Short-term tactical decisions (use engagement metrics, not LTV)
 
 ---
 
@@ -582,93 +555,18 @@ See `examples/` folder for detailed scenarios. Mini examples below:
 
 ## Common Pitfalls
 
-### Pitfall 1: Celebrating High LTV Without Checking Payback
-**Symptom:** "Our LTV:CAC is 6:1, amazing!"
-
-**Consequence:** 6:1 ratio with 48-month payback is a cash trap. You'll run out of money before recovering CAC.
-
-**Fix:** Always pair LTV:CAC with payback period. 3:1 with 10-month payback beats 6:1 with 36-month payback.
-
----
-
-### Pitfall 2: Ignoring Gross Margin When Calculating LTV
-**Symptom:** "LTV = $100/month × 36 months = $3,600"
-
-**Consequence:** You're using revenue, not profit. Actual LTV after 30% COGS = $2,520, not $3,600.
-
-**Fix:** Always include gross margin in LTV calculations. `LTV = ARPU × Margin % / Churn Rate`.
-
----
-
-### Pitfall 3: Scaling S&M with Low Magic Number
-**Symptom:** "We need to grow faster—let's double S&M spend!" (Magic Number = 0.3)
-
-**Consequence:** You're pouring gas on a broken engine. Doubling spend will just accelerate cash burn without proportional revenue growth.
-
-**Fix:** Only scale S&M when magic number >0.75. If <0.5, fix GTM efficiency first.
-
----
-
-### Pitfall 4: Using Simplistic LTV Formulas
-**Symptom:** "LTV = ARPU × Lifetime" (ignoring expansion, discount rates, cohort variance)
-
-**Consequence:** Overstating LTV for decision-making. Reality: expansion boosts LTV; discounting reduces it; cohorts vary.
-
-**Fix:** Use sophisticated LTV models for big decisions. Simple LTV ok for directional guidance only.
-
----
-
-### Pitfall 5: Forgetting Time Value of Money
-**Symptom:** "$10K revenue today = $10K revenue in 5 years"
-
-**Consequence:** Overstating LTV for long-payback businesses. $10K in 5 years is worth ~$7.8K today (at 5% discount rate).
-
-**Fix:** Discount future cash flows for LTV periods >24 months. Use NPV (net present value).
-
----
-
-### Pitfall 6: Comparing CAC Across Different Payback Periods
-**Symptom:** "Channel A has $5K CAC, Channel B has $8K CAC—Channel A is better!"
-
-**Consequence:** If Channel A has 24-month payback and Channel B has 8-month payback, Channel B is actually better (faster cash recovery).
-
-**Fix:** Compare CAC + payback together, not CAC in isolation.
-
----
-
-### Pitfall 7: Celebrating Rule of 40 >40 with Negative Cash Flow
-**Symptom:** "Rule of 40 = 50, we're crushing it!" (60% growth, -10% margin, burning $5M/month)
-
-**Consequence:** Rule of 40 doesn't account for absolute burn. You might have great balance but only 3 months runway.
-
-**Fix:** Pair Rule of 40 with burn rate and runway. Balance matters, but survival matters more.
-
----
-
-### Pitfall 8: Ignoring Segment-Specific Unit Economics
-**Symptom:** "Blended CAC is $2K, blended LTV is $10K, we're good!"
-
-**Consequence:** SMB segment might have $500 CAC / $2K LTV (great), while Enterprise has $20K CAC / $15K LTV (terrible). Blended metrics hide the problem.
-
-**Fix:** Calculate unit economics by segment. Optimize each independently.
-
----
-
-### Pitfall 9: Confusing Gross Margin with Contribution Margin
-**Symptom:** "Gross margin is 80%, our margins are great!"
-
-**Consequence:** After variable support costs (10%) and payment processing (3%), contribution margin might be 67%—not 80%.
-
-**Fix:** Track both gross margin (COGS only) AND contribution margin (all variable costs). Use contribution margin for unit economics.
-
----
-
-### Pitfall 10: Forgetting Working Capital Timing
-**Symptom:** "We have 12 months runway based on burn rate" (but all contracts are paid monthly)
-
-**Consequence:** Annual contracts paid upfront boost cash temporarily. Monthly contracts delay cash collection. Runway is longer/shorter than burn rate suggests.
-
-**Fix:** Account for working capital when calculating runway. Cash-based runway ≠ revenue-based runway.
+| Pitfall | Symptom | Fix |
+|---------|---------|-----|
+| High LTV Without Checking Payback | "LTV:CAC 6:1, amazing!" but 48-month payback | Pair LTV:CAC with payback. 3:1 at 10mo beats 6:1 at 36mo |
+| Ignoring Margin in LTV | "LTV = $100 x 36 = $3,600" using revenue not profit | Use `ARPU x Margin % / Churn Rate` |
+| Scaling S&M with Low Magic Number | "Double S&M spend!" at Magic Number 0.3 | Only scale when >0.75. Fix GTM first if <0.5 |
+| Simplistic LTV Formulas | "LTV = ARPU x Lifetime" ignoring expansion/discounting | Use sophisticated models for big decisions |
+| Forgetting Time Value of Money | "$10K today = $10K in 5 years" | Discount future cash flows for LTV >24 months via NPV |
+| Comparing CAC Without Payback | "Channel A $5K CAC < Channel B $8K" | Compare CAC + payback together. Faster payback may win |
+| Rule of 40 With No Runway | "Rule of 40 = 50!" but 3mo runway | Pair Rule of 40 with burn rate and runway |
+| Blended Unit Economics | "Blended CAC $2K, LTV $10K" | Calculate by segment. One segment may be deeply unprofitable |
+| Gross vs. Contribution Margin | "Gross margin 80%!" | Track both. Contribution margin (all variable costs) is the real number |
+| Ignoring Working Capital Timing | "12 months runway" but all monthly billing | Cash-based runway differs from revenue-based. Account for payment timing |
 
 ---
 

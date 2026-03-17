@@ -21,8 +21,6 @@ Assess whether your product work is **"AI-first"** (using AI to automate existin
 
 **Key Distinction:** AI-first is cute (using Copilot to write PRDs faster). AI-shaped is survival (building a durable "reality layer" that both humans and AI trust, orchestrating AI workflows, compressing learning cycles).
 
-This is not about AI tools—it's about **organizational redesign around AI as co-intelligence**. The interactive skill guides you through a maturity assessment, then recommends your next move.
-
 ## Key Concepts
 
 ### AI-First vs. AI-Shaped
@@ -134,31 +132,6 @@ Moving beyond efficiency to create **defensible competitive advantages**.
 
 **AI-first version:** "We use AI to write better docs"
 **AI-shaped version:** "We validate product hypotheses in 2 days vs. industry standard 3 weeks—ship 6x more validated features per quarter"
-
----
-
-### Anti-Patterns (What This Is NOT)
-
-- **Not about AI tools:** Using Claude vs. ChatGPT doesn't matter. Redesigning workflows matters.
-- **Not about speed:** Writing PRDs 2x faster isn't strategic if PRDs weren't the bottleneck.
-- **Not about automation:** Automating bad processes just scales the bad.
-- **Not about replacing humans:** AI-shaped orgs augment judgment, not eliminate it.
-
----
-
-### When to Use This Skill
-
-✅ **Use this when:**
-- You're using AI tools but not seeing strategic advantage
-- You suspect you're "AI-first" (efficiency) but want to be "AI-shaped" (transformation)
-- You need to prioritize which AI capability to build next
-- Leadership asks "How are we using AI?" and you're not sure how to answer strategically
-- You want to assess team readiness for AI-powered product work
-
-❌ **Don't use this when:**
-- You haven't started using AI at all (start with basic tools first)
-- You're looking for tool recommendations (this is about organizational design, not tooling)
-- You need tactical "how to write a prompt" guidance (use skills for that)
 
 ---
 
@@ -858,48 +831,13 @@ Would you like me to create a progress tracker for your AI-shaped transformation
 
 ## Common Pitfalls
 
-### 1. **Mistaking Efficiency for Differentiation**
-**Failure Mode:** "We use AI to write PRDs 2x faster—we're AI-shaped!"
-
-**Consequence:** Competitors copy within 3 months; no lasting advantage.
-
-**Fix:** Ask: "If a competitor threw 2x more people at this, could they match us?" If yes, it's efficiency (table stakes), not differentiation.
-
----
-
-### 2. **Skipping Context Design**
-**Failure Mode:** Building Agent Orchestration workflows without durable context.
-
-**Consequence:** AI workflows are fragile (context changes break everything).
-
-**Fix:** Context Design is foundational. Don't skip it. Build constraints registry, glossary, evidence standards first.
-
----
-
-### 3. **Individual Usage, Not Team Transformation**
-**Failure Mode:** "I'm AI-shaped, but my team isn't."
-
-**Consequence:** Can't scale; workflows die when you're on vacation.
-
-**Fix:** Prioritize Team-AI Facilitation. Shared norms > individual productivity.
-
----
-
-### 4. **Focusing on Tools, Not Workflows**
-**Failure Mode:** "Should we use Claude or ChatGPT?"
-
-**Consequence:** Tool debates distract from organizational redesign.
-
-**Fix:** Tools don't matter. Workflows matter. Focus on redesigning how work gets done, not which AI you use.
-
----
-
-### 5. **Speed Over Learning**
-**Failure Mode:** "AI helps us ship faster!"
-
-**Consequence:** Ship the wrong thing faster (if you're not compressing learning cycles).
-
-**Fix:** Outcome Acceleration is about learning faster, not building faster. Validate hypotheses in days, not weeks.
+| Pitfall | Failure Mode | Fix |
+|---------|-------------|-----|
+| **Mistaking efficiency for differentiation** | "We write PRDs 2x faster — we're AI-shaped!" | Ask: "Could a competitor match this by throwing more people at it?" If yes, it's table stakes |
+| **Skipping Context Design** | Building orchestration workflows without durable context | Context Design is foundational; build constraints registry, glossary, evidence standards first |
+| **Individual usage, not team transformation** | "I'm AI-shaped, but my team isn't" | Prioritize Team-AI Facilitation; shared norms > individual productivity |
+| **Focusing on tools, not workflows** | "Should we use Claude or ChatGPT?" | Tools don't matter. Focus on redesigning how work gets done |
+| **Speed over learning** | "AI helps us ship faster!" | Outcome Acceleration is about learning faster, not building faster |
 
 ---
 

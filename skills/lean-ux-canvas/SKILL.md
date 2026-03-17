@@ -18,8 +18,6 @@ scenarios:
 
 Guide product managers through creating **Jeff Gothelf's Lean UX Canvas (v2)**—a one-page facilitation tool that frames work around a **business problem to solve**, not a **solution to implement**. Use this to align cross-functional teams around core assumptions, craft testable hypotheses, and ensure learning happens every sprint by exposing gaps in understanding (problem, users, value, and why the solution should work).
 
-This is not a roadmap or feature list—it's an **"insurance policy"** that turns assumptions into experiments before committing to full development. The canvas shifts conversations from **outputs** to **outcomes** and ensures teams build the right thing, not just build things right.
-
 ## Key Concepts
 
 ### What is the Lean UX Canvas?
@@ -67,25 +65,7 @@ The **Lean UX Canvas (v2)** is a structured, one-page template designed to help 
 7. **What's Most Important to Learn First?** — The single riskiest assumption right now
 8. **What's the Least Work to Learn Next?** — Smallest experiment to validate/invalidate that assumption
 
----
-
-### Why This Works
-
-**Problem-First, Not Solution-First:**
-Starts with "what changed in the world?" not "we should build X." This prevents solution-driven thinking.
-
-**Assumption-Driven:**
-Makes hypotheses explicit before building. Every discipline surfaces their risks (technical feasibility, user value, business viability).
-
-**Experiment-Focused:**
-Tests assumptions before committing resources. Small experiments beat big bets.
-
-**Cross-Functional Alignment:**
-Shared canvas creates common language. Everyone sees the same gaps in understanding.
-
----
-
-### Key Distinctions (Avoid Confusion)
+### Key Distinctions
 
 **Box 2 (Business Outcomes) vs. Box 4 (User Outcomes):**
 - **Box 2:** Measurable **behavior change** (retention rate, time on site, average order value)
@@ -98,31 +78,6 @@ List candidate solutions (features, policies, even business model shifts). You'r
 
 **Hypotheses (Box 6) Are Testable:**
 Use the template: "We believe [business outcome] will be achieved if [user] attains [benefit] with [solution]." Each hypothesis focuses on **one** solution.
-
----
-
-### Anti-Patterns (What This Is NOT)
-
-- **Not a feature list:** Solutions are ideas to test, not a backlog
-- **Not a project plan:** Canvas frames learning, not delivery timelines
-- **Not a replacement for strategy:** Canvas executes strategy; it doesn't create it
-- **Not a one-time exercise:** Re-visit as you learn; update assumptions
-
----
-
-### When to Use This
-
-✅ **Use this when:**
-- Starting a new product initiative or feature
-- Reframing an existing project (suspect you're building the wrong thing)
-- Aligning cross-functional teams on assumptions and experiments
-- Planning discovery sprints or MVPs
-- Stakeholders are solution-driven ("we need to build X") and you need to expose assumptions
-
-❌ **Don't use this when:**
-- Problem and solution are already validated (move to execution)
-- Tactical bug fixes or technical debt (no learning needed)
-- Stakeholders have committed to a solution regardless of evidence (address alignment first)
 
 ---
 
@@ -485,57 +440,14 @@ Mini example excerpt:
 
 ## Common Pitfalls
 
-### 1. **Starting with Solutions, Not Problems**
-**Failure Mode:** Box 1 says "We need to build X" instead of describing what changed.
-
-**Consequence:** You build the solution someone already decided on, without validating the problem exists.
-
-**Fix:** Ask: "What changed in the world? Why is this a problem now (vs. 6 months ago)?"
-
----
-
-### 2. **Vague Business Outcomes**
-**Failure Mode:** Box 2 says "Increase revenue" or "Make users happy."
-
-**Consequence:** No way to measure success; can't tell if experiments worked.
-
-**Fix:** Define measurable behavior change. "Increase average order value from $50 to $75" or "Reduce support tickets by 30%."
-
----
-
-### 3. **Too-Broad User Segments**
-**Failure Mode:** Box 3 says "All users" or "Everyone."
-
-**Consequence:** Can't design targeted experiments; waste time on personas who won't adopt.
-
-**Fix:** Pick one persona to start. You can expand later.
-
----
-
-### 4. **Confusing Box 2 and Box 4**
-**Failure Mode:** Putting emotions in Box 2 and metrics in Box 4 (or vice versa).
-
-**Consequence:** Misaligned hypotheses; unclear success criteria.
-
-**Fix:** **Box 2 = Behavior change (metrics).** **Box 4 = Goals, benefits, emotions (empathy).**
-
----
-
-### 5. **Only One Solution in Box 5**
-**Failure Mode:** Listing one feature because stakeholders already decided.
-
-**Consequence:** No exploration of alternatives; can't test which solution is best.
-
-**Fix:** Force yourself to list 3+ solutions. Ask: "What else could solve this problem?"
-
----
-
-### 6. **Skipping Experiments (Box 8)**
-**Failure Mode:** "We'll just build it and see what happens."
-
-**Consequence:** Waste weeks/months building the wrong thing.
-
-**Fix:** Design smallest experiment first. If you can't think of one, use `skills/pol-probe-advisor/SKILL.md` to choose a validation method.
+| Pitfall | Failure Mode | Fix |
+|---------|-------------|-----|
+| **Starting with solutions** | Box 1 says "We need to build X" | Ask: "What changed? Why is this a problem now vs. 6 months ago?" |
+| **Vague business outcomes** | Box 2 says "Increase revenue" or "Make users happy" | Define measurable behavior change (e.g., "AOV $50 to $75") |
+| **Too-broad user segments** | Box 3 says "All users" or "Everyone" | Pick one persona to start; expand later |
+| **Confusing Box 2 and Box 4** | Emotions in Box 2, metrics in Box 4 | Box 2 = behavior change (metrics); Box 4 = goals/benefits/emotions |
+| **Only one solution in Box 5** | One feature because stakeholders decided | List 3+ solutions; ask "What else could solve this?" |
+| **Skipping experiments** | "We'll just build it and see" | Design smallest experiment first; use `pol-probe-advisor` if stuck |
 
 ---
 

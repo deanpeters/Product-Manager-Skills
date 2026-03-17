@@ -20,8 +20,6 @@ estimated_time: "15-20 min"
 
 Guide Directors and senior product leaders through the specific challenges of the transition to VP or CPO using adaptive questions and targeted coaching. Diagnoses where you are in the journey and delivers practical, lived-experience coaching calibrated to your situation — not generic executive advice.
 
-The VP/CPO transition is not a continuation of the Director transition. The landscape changes. Strategy becomes largely unwritten. Your primary customer may shift. You stop using product language with executives. Constraints don't disappear — the Rubik's Cube just goes from 3×3 to 9×9. This advisor names what's actually hard at this level and what to do about it.
-
 ## Key Concepts
 
 ### The Three Ps Framework
@@ -356,39 +354,12 @@ See `examples/conversation-flow.md` for a full interaction covering the evaluati
 
 ## Common Pitfalls
 
-### Pitfall 1: Conflating VP and CPO Transitions
-**Symptom:** Treating the Director → VP and VP → CPO transitions as the same move at different scales
-
-**Consequence:** The VP → CPO shift is a qualitative change (product-first to business-first), not just a scope expansion. Applying VP thinking to CPO problems produces the wrong answers.
-
-**Fix:** Explicitly identify which transition you're navigating. The language shift alone is a signal: if you're still leading with product language in executive forums as CPO, you haven't made the transition.
-
----
-
-### Pitfall 2: Waiting for Empowerment
-**Symptom:** Taking the VP/CPO role expecting to finally have the authority to do what you've always known was right
-
-**Consequence:** The Empowerment Myth sets you up for disillusionment. Constraints persist; they just get bigger.
-
-**Fix:** Reframe before you arrive: "My job is not to be empowered. My job is to develop the capacity to navigate larger constraints than I've ever faced."
-
----
-
-### Pitfall 3: Neglecting the Alliance Layer
-**Symptom:** Focusing primarily on managing your direct reports and product organization; treating exec team relationships as secondary
-
-**Consequence:** Without executive alliances, every significant product decision can be undermined by a peer who wasn't brought along.
-
-**Fix:** Your most important team at VP/CPO level is the executive staff, not the product org. Invest in those relationships at least as deliberately as you invest in developing your team.
-
----
-
-### Pitfall 4: Misidentifying Your Situation
-**Symptom:** Selecting "preparing" when you're actually recalibrating a role that isn't working
-
-**Consequence:** You get coaching for a transition you've already made, not for the problem you're actually in.
-
-**Fix:** Be honest about the gap between where you aspire to be and where you actually are. The recalibrating branch will be more useful if the role has already landed badly.
+| Pitfall | Symptom | Fix |
+|---------|---------|-----|
+| Conflating VP and CPO transitions | Treating Director→VP and VP→CPO as the same move at different scales | Explicitly identify which transition you're navigating; the VP→CPO shift is qualitative (product-first to business-first), not just scope expansion |
+| Waiting for empowerment | Taking the role expecting to finally have authority to do what you've always known was right | Reframe: "My job is to develop the capacity to navigate larger constraints, not to be empowered" |
+| Neglecting the alliance layer | Focusing on direct reports; treating exec team relationships as secondary | Your most important team at VP/CPO level is the executive staff, not the product org |
+| Misidentifying your situation | Selecting "preparing" when you're actually recalibrating a role that isn't working | Be honest about the gap between aspiration and reality; the recalibrating branch is more useful if the role has landed badly |
 
 ---
 

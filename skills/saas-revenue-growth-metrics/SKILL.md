@@ -20,8 +20,6 @@ estimated_time: "10-15 min"
 
 Master revenue and retention metrics to understand SaaS business momentum, evaluate product-market fit, and make data-driven decisions about growth investments. Use this to calculate key metrics, interpret trends, identify problems early, and communicate business health to stakeholders.
 
-This is not a business intelligence tool—it's a framework for PMs to understand which metrics matter, how to calculate them correctly, and what actions to take based on the numbers.
-
 ## Key Concepts
 
 ### Revenue Metrics Family
@@ -107,31 +105,6 @@ Metrics that measure how well you keep and grow existing customers.
 - **Benchmark:** Recent cohorts should perform same or better than old cohorts
 
 ---
-
-### Anti-Patterns (What This Is NOT)
-
-- **Not profit metrics:** Revenue is top-line, not bottom-line. High revenue with negative margins is a disaster.
-- **Not vanity metrics:** Total revenue growth means nothing if driven by unsustainable discounting or margin-destroying deals.
-- **Not blended averages:** ARPU that averages $10 SMB and $1,000 enterprise customers hides segment economics.
-- **Not isolated numbers:** Churn rate alone doesn't tell the story—need to see cohort trends and NRR.
-
----
-
-### When to Use These Metrics
-
-**Use these when:**
-- Evaluating overall business health and product-market fit
-- Comparing performance across time periods or cohorts
-- Prioritizing features with direct monetization paths (ARPU impact, expansion enablers)
-- Communicating with leadership, board, or investors
-- Assessing retention problems (churn analysis, cohort degradation)
-- Measuring pricing or packaging changes (ARPU/ARPA shifts)
-
-**Don't use these when:**
-- Evaluating profitability (use margin metrics instead)
-- Assessing capital efficiency (use LTV:CAC, payback period)
-- Making product investment decisions without cost context (revenue alone isn't ROI)
-- Comparing across wildly different business models without normalization
 
 ---
 
@@ -518,93 +491,18 @@ See `examples/` folder for detailed scenarios. Mini examples below:
 
 ## Common Pitfalls
 
-### Pitfall 1: Confusing Revenue with Profit
-**Symptom:** "We grew revenue 50% this year, we're crushing it!"
-
-**Consequence:** Revenue is the top line, not bottom line. You might be growing at a loss, destroying margins, or scaling unprofitable products.
-
-**Fix:** Always pair revenue metrics with margin metrics (see `saas-economics-efficiency-metrics`). $1M revenue at 80% margin >> $2M revenue at 20% margin.
-
----
-
-### Pitfall 2: Celebrating ARPU Growth from Mix Shift
-**Symptom:** "ARPU increased 30%!" (but customer count dropped 40%)
-
-**Consequence:** ARPU rose because you lost all your small customers, not because you improved monetization.
-
-**Fix:** Analyze ARPU by cohort and segment. True ARPU improvement = same customers paying more, not losing cheap customers.
-
----
-
-### Pitfall 3: Ignoring Cohort Degradation
-**Symptom:** "Blended churn is stable at 3%"
-
-**Consequence:** Blended metrics can hide that new cohorts churn at 6% while old cohorts churn at 1%. Product-market fit is degrading.
-
-**Fix:** Always analyze retention by cohort. If newer cohorts perform worse, stop scaling and fix the product.
-
----
-
-### Pitfall 4: Logo Churn vs. Revenue Churn Confusion
-**Symptom:** "Logo churn is only 2%, we're great!"
-
-**Consequence:** You might be losing 2% of customers but 10% of revenue if you're churning large customers.
-
-**Fix:** Track both logo churn AND revenue churn. If revenue churn > logo churn, you're losing high-value customers.
-
----
-
-### Pitfall 5: Treating All Churn Equally
-**Symptom:** "We lost 50 customers this month" (no context on who)
-
-**Consequence:** Losing 50 small customers ($10/month) is different from losing 50 enterprise customers ($10K/month).
-
-**Fix:** Segment churn analysis by customer size, cohort, and reason. Weight by revenue impact, not just logo count.
-
----
-
-### Pitfall 6: Forgetting Compounding Churn
-**Symptom:** "3% monthly churn is fine, that's only 36% annually"
-
-**Consequence:** Churn compounds. 3% monthly = 31% annual churn, not 36%. Math: `1 - (1 - 0.03)^12 = 31%`.
-
-**Fix:** Use the correct formula when converting monthly to annual churn. Don't just multiply by 12.
-
----
-
-### Pitfall 7: Celebrating Gross Revenue While Net Contracts
-**Symptom:** "Gross revenue is up 20%!" (but discounts/refunds doubled)
-
-**Consequence:** Net revenue might be flat or shrinking. Discounts hide pricing power problems; refunds hide product quality issues.
-
-**Fix:** Always track gross AND net revenue. If discounts >20% or refunds >10%, investigate why.
-
----
-
-### Pitfall 8: NRR >100% from Low Churn, Not Expansion
-**Symptom:** "NRR is 105%, we're expanding!"
-
-**Consequence:** NRR can be >100% just from very low churn, without meaningful expansion. True expansion-driven NRR is >120%.
-
-**Fix:** Break down NRR into components: expansion MRR vs. churned/contracted MRR. Aim for expansion-driven NRR, not just low churn.
-
----
-
-### Pitfall 9: Revenue Concentration Risk
-**Symptom:** "We're at $10M ARR!" (but $5M is from one customer)
-
-**Consequence:** Losing that one customer cuts revenue in half. Roadmap becomes hostage to one customer's requests.
-
-**Fix:** Track revenue concentration. Ideal: Top customer <10% of revenue, Top 10 customers <40%. Diversify early.
-
----
-
-### Pitfall 10: Averaging ARPU/ARPA Across Segments
-**Symptom:** "Our ARPU is $100" (average of $10 SMB and $1,000 enterprise)
-
-**Consequence:** Blended ARPU hides segment economics. Can't make smart acquisition or product decisions.
-
-**Fix:** Calculate ARPU/ARPA by segment (SMB, mid-market, enterprise). Optimize each segment independently.
+| Pitfall | Symptom | Fix |
+|---------|---------|-----|
+| Confusing Revenue with Profit | "We grew revenue 50%!" — ignoring margins | Always pair revenue with margin metrics. $1M at 80% margin >> $2M at 20% |
+| ARPU Growth from Mix Shift | "ARPU up 30%!" but customer count dropped 40% | Analyze ARPU by cohort/segment. True improvement = same customers paying more |
+| Ignoring Cohort Degradation | "Blended churn stable at 3%" | Analyze by cohort. If newer cohorts churn faster, stop scaling and fix product |
+| Logo vs. Revenue Churn Confusion | "Logo churn only 2%!" but losing large customers | Track both. If revenue churn > logo churn, you're losing high-value customers |
+| Treating All Churn Equally | "Lost 50 customers" with no size context | Segment by customer size and reason. Weight by revenue impact |
+| Forgetting Compounding Churn | "3% monthly = 36% annual" | Use `1 - (1 - 0.03)^12 = 31%`. Don't multiply by 12 |
+| Gross Revenue While Net Contracts | "Gross up 20%!" but discounts doubled | Track gross AND net. Investigate if discounts >20% or refunds >10% |
+| NRR >100% from Low Churn Only | "NRR 105%, we're expanding!" | Break NRR into components. Aim for expansion-driven NRR, not just low churn |
+| Revenue Concentration Risk | $10M ARR but $5M from one customer | Top customer <10%, Top 10 <40%. Diversify early |
+| Averaging ARPU Across Segments | "ARPU is $100" blending $10 SMB and $1K enterprise | Calculate ARPU/ARPA by segment. Optimize each independently |
 
 ---
 

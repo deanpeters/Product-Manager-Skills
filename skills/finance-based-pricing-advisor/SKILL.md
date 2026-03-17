@@ -19,12 +19,6 @@ scenarios:
 
 Evaluate the **financial impact** of pricing changes (price increases, new tiers, add-ons, discounts) using ARPU/ARPA analysis, conversion impact, churn risk, NRR effects, and CAC payback implications. Use this to make data-driven go/no-go decisions on proposed pricing changes with supporting math and risk assessment.
 
-**What this is:** Financial impact evaluation for pricing decisions you're already considering.
-
-**What this is NOT:** Comprehensive pricing strategy design, value-based pricing frameworks, willingness-to-pay research, competitive positioning, psychological pricing, packaging architecture, or monetization model selection. For those topics, see the future `pricing-strategy-suite` skills.
-
-This skill assumes you have a specific pricing change in mind and need to evaluate its financial viability.
-
 ## Key Concepts
 
 ### The Pricing Impact Framework
@@ -73,29 +67,6 @@ A systematic approach to evaluate pricing changes financially:
 - Feature bundling (combine features into tiers)
 - Unbundling (separate features into add-ons)
 - Pricing metric change (seats → usage, or vice versa)
-
-### Anti-Patterns (What This Is NOT)
-
-- **Not value-based pricing:** This evaluates a proposed change, not "what should we charge?"
-- **Not WTP research:** This analyzes impact, not "what will customers pay?"
-- **Not competitive positioning:** This is financial analysis, not market positioning
-- **Not packaging architecture:** This evaluates one change, not redesigning all tiers
-
-### When to Use This Framework
-
-**Use this when:**
-- You have a specific pricing change to evaluate (e.g., "Should we raise prices 20%?")
-- You need to quantify revenue, churn, and conversion trade-offs
-- You're deciding between pricing change options (test A vs. B)
-- You need to present pricing change impact to leadership or board
-
-**Don't use this when:**
-- You're designing pricing strategy from scratch (use value-based pricing frameworks)
-- You haven't validated willingness-to-pay (do customer research first)
-- You don't have baseline metrics (ARPU, churn, conversion rates)
-- Change is too small to matter (<5% price change, <10% of customers affected)
-
----
 
 ### Facilitation Source of Truth
 
@@ -641,93 +612,18 @@ See `examples/` folder for sample conversation flows. Mini examples below:
 
 ## Common Pitfalls
 
-### Pitfall 1: Ignoring Churn Impact
-**Symptom:** "We'll raise prices 30% and make $X more!" (no churn modeling)
-
-**Consequence:** Churn wipes out revenue gains. Net impact negative.
-
-**Fix:** Model churn scenarios (conservative, base, optimistic). Factor churn-driven revenue loss into net impact.
-
----
-
-### Pitfall 2: Not Grandfathering Existing Customers
-**Symptom:** "We're raising prices for everyone effective immediately"
-
-**Consequence:** Massive churn spike from existing customers who feel betrayed.
-
-**Fix:** Grandfather existing customers. Raise prices for new customers only.
-
----
-
-### Pitfall 3: Testing Without Statistical Power
-**Symptom:** "We tested on 10 customers and it worked!"
-
-**Consequence:** 10 customers isn't statistically significant. Results are noise.
-
-**Fix:** Test with large enough sample (100+ customers per cohort) for 60-90 days.
-
----
-
-### Pitfall 4: Pricing Changes Without Value Justification
-**Symptom:** "We're raising prices because we need more revenue"
-
-**Consequence:** Customers see price increase without corresponding value increase. Churn.
-
-**Fix:** Tie price increases to value improvements (new features, better support, outcomes delivered).
-
----
-
-### Pitfall 5: Ignoring CAC Payback Impact
-**Symptom:** "Higher ARPU is always better!"
-
-**Consequence:** If conversion drops 30%, effective CAC increases dramatically. Payback period explodes.
-
-**Fix:** Calculate CAC payback impact. Higher ARPU with lower conversion might make payback worse, not better.
-
----
-
-### Pitfall 6: Annual Discounts That Hurt Margin
-**Symptom:** "30% discount for annual prepay!" (improves cash but destroys LTV)
-
-**Consequence:** Customers lock in low prices for a year. Revenue per customer decreases.
-
-**Fix:** Limit annual discounts to 10-15%. Balance cash flow improvement with LTV protection.
-
----
-
-### Pitfall 7: Copycat Pricing (Competitor-Based)
-**Symptom:** "Competitor raised prices, so should we"
-
-**Consequence:** Your customers, value prop, and cost structure are different. What works for them may not work for you.
-
-**Fix:** Use competitors as data points, not decisions. Make pricing decisions based on your unit economics.
-
----
-
-### Pitfall 8: Premature Optimization
-**Symptom:** "Let's A/B test 47 different price points!"
-
-**Consequence:** Analysis paralysis. Spending months on 5% pricing optimizations while missing 50% growth opportunities elsewhere.
-
-**Fix:** Big pricing changes (tiers, packaging, add-ons) matter more than micro-optimizations. Start there.
-
----
-
-### Pitfall 9: Forgetting Expansion Revenue
-**Symptom:** "We're maximizing ARPU at acquisition"
-
-**Consequence:** High upfront pricing prevents landing customers. Miss expansion opportunities.
-
-**Fix:** Consider "land and expand" strategy. Lower entry price, higher expansion revenue via upsells.
-
----
-
-### Pitfall 10: No Pricing Change Communication Plan
-**Symptom:** "We're raising prices next month" (no customer communication)
-
-**Consequence:** Surprised customers churn. Poor reviews. Reputation damage.
-
-**Fix:** Communicate pricing changes 30-60 days in advance. Emphasize value, not just price.
+| Pitfall | Symptom | Fix |
+|---------|---------|-----|
+| **Ignoring churn impact** | "Raise prices 30% and make $X more!" (no churn modeling) | Model churn scenarios; factor churn-driven revenue loss into net impact |
+| **Not grandfathering existing customers** | Raising prices for everyone immediately | Grandfather existing customers; raise for new customers only |
+| **Testing without statistical power** | "Tested on 10 customers and it worked!" | 100+ customers per cohort for 60-90 days minimum |
+| **No value justification** | "Raising prices because we need more revenue" | Tie increases to value improvements (features, support, outcomes) |
+| **Ignoring CAC payback impact** | "Higher ARPU is always better!" | Calculate payback impact; higher ARPU + lower conversion may worsen payback |
+| **Annual discounts that hurt margin** | 30% discount for annual prepay | Limit annual discounts to 10-15%; balance cash flow with LTV protection |
+| **Copycat pricing** | "Competitor raised prices, so should we" | Use competitors as data points, not decisions; base on your unit economics |
+| **Premature optimization** | A/B testing 47 price points | Big changes (tiers, packaging) matter more than micro-optimizations |
+| **Forgetting expansion revenue** | Maximizing ARPU at acquisition | Consider "land and expand": lower entry, higher expansion via upsells |
+| **No communication plan** | "Raising prices next month" (no notice) | Communicate 30-60 days in advance; emphasize value, not just price |
 
 ---
 

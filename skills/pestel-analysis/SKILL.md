@@ -7,11 +7,6 @@ type: component
 ---
 
 
-## Purpose
-Conduct a systematic analysis of macro-environmental factors—Political, Economic, Social, Technological, Environmental, and Legal—that could impact your product or project. Use this to identify external opportunities and threats, inform strategic planning, assess market entry risks, and make data-driven decisions about product direction in the context of broader forces beyond your control.
-
-This is not internal analysis—it's outward-facing assessment of the big-picture forces shaping your product's environment.
-
 ## Key Concepts
 
 ### The PESTEL Framework
@@ -23,29 +18,6 @@ Originating from Francis Joseph Aguilar's 1967 PEST analysis, PESTEL extends the
 4. **Technological:** Advancements, R&D, automation, digital transformation
 5. **Environmental:** Climate change, sustainability, resource scarcity, regulations
 6. **Legal:** Compliance, IP rights, employment laws, health/safety regulations
-
-### Why This Works
-- **Comprehensive:** Covers all major external forces affecting your product
-- **Proactive:** Identifies threats and opportunities before they become critical
-- **Strategic:** Informs long-term planning, not just tactical decisions
-- **Risk management:** Highlights vulnerabilities in your product strategy
-
-### Anti-Patterns (What This Is NOT)
-- **Not competitive analysis:** PESTEL looks at macro factors, not competitors
-- **Not internal analysis:** Focuses on external environment, not your company's strengths/weaknesses
-- **Not static:** Macro environment changes—reassess regularly
-
-### When to Use This
-- Entering a new market or geography
-- Strategic planning (annual roadmapping, 3-5 year planning)
-- Assessing product viability in a changing environment
-- Risk assessment for new product initiatives
-- Pitching to execs or investors (shows environmental awareness)
-
-### When NOT to Use This
-- For tactical, short-term decisions (use competitive analysis instead)
-- When external factors are stable and well-understood
-- As a substitute for customer research (PESTEL is macro, not micro)
 
 ---
 
@@ -305,48 +277,13 @@ Mini example excerpt:
 
 ## Common Pitfalls
 
-### Pitfall 1: Generic Analysis
-**Symptom:** "Political: Regulations exist. Economic: Economy affects spending."
-
-**Consequence:** No actionable insights.
-
-**Fix:** Be specific: "EU AI Act requires explainable AI → Need transparency features by Q3 2026."
-
----
-
-### Pitfall 2: Ignoring Low-Impact Factors
-**Symptom:** Forcing relevance where none exists (e.g., "Climate change affects our SaaS product...")
-
-**Consequence:** Wastes time, dilutes focus.
-
-**Fix:** If a factor has low impact, say so. Focus effort on high-impact areas.
-
----
-
-### Pitfall 3: No Data Sources
-**Symptom:** "Economic growth is strong" (no citation)
-
-**Consequence:** Unverifiable claims, low credibility.
-
-**Fix:** Cite sources: "SMB sector growing 5% annually (US Census Bureau, 2025)."
-
----
-
-### Pitfall 4: Analysis Without Action
-**Symptom:** Long list of factors, no strategic recommendations
-
-**Consequence:** Insights don't inform decisions.
-
-**Fix:** Synthesize into "Top Opportunities," "Top Threats," and "Strategic Recommendations."
-
----
-
-### Pitfall 5: One-Time Exercise
-**Symptom:** PESTEL analysis done once, never revisited
-
-**Consequence:** Stale insights as macro environment shifts.
-
-**Fix:** Review annually or when major external events occur (new regulations, economic shifts, etc.).
+| Pitfall | Symptom | Fix |
+|---------|---------|-----|
+| Generic analysis | "Political: Regulations exist" | Be specific: "EU AI Act requires explainable AI → Need transparency features by Q3 2026" |
+| Forcing low-impact factors | "Climate change affects our SaaS product..." | If impact is minimal, say so — focus effort on high-impact areas |
+| No data sources | "Economic growth is strong" (no citation) | Cite sources: "SMB sector growing 5% annually (US Census Bureau, 2025)" |
+| Analysis without action | Long list of factors, no recommendations | Synthesize into Top Opportunities, Top Threats, and Strategic Recommendations |
+| One-time exercise | PESTEL done once, never revisited | Review annually or when major external events occur |
 
 ---
 
@@ -368,9 +305,3 @@ Mini example excerpt:
 ### Provenance
 - Adapted from `prompts/pestel-analysis-prompt-template.md` in the `https://github.com/deanpeters/product-manager-prompts` repo.
 
----
-
-**Skill type:** Component
-**Suggested filename:** `pestel-analysis.md`
-**Suggested placement:** `/skills/components/`
-**Dependencies:** References `skills/recommendation-canvas/SKILL.md`, `skills/positioning-statement/SKILL.md`

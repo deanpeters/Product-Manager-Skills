@@ -19,8 +19,6 @@ estimated_time: "10-15 min"
 ## Purpose
 Create a Geoffrey Moore-style positioning statement that clearly articulates who your product serves, what need it addresses, how it's categorized, what benefit it delivers, and how it differs from alternatives. Use this when you need to align stakeholders on product strategy, guide messaging, or test if your value proposition is crisp and defensible.
 
-This is not a tagline or elevator pitch—it's a strategic clarity tool that forces you to make hard choices about target, need, and differentiation.
-
 ## Key Concepts
 
 ### The Geoffrey Moore Framework
@@ -38,28 +36,11 @@ From *Crossing the Chasm*, Moore's framework splits positioning into two parts:
 - [product name]
 - **provides** [unique differentiation]
 
-### Why This Structure Works
-- **Forces specificity:** You can't say "for everyone" or "unlike all competitors"
-- **Exposes assumptions:** If you can't fill in "unlike X," you may not have defensible differentiation
-- **Focuses on outcomes, not features:** "That reduces churn by 40%" beats "that has analytics"
-- **Category anchors perception:** Saying "is a CRM" vs. "is a workflow tool" changes how buyers evaluate you
-
 ### Anti-Patterns (What This Is NOT)
 - **Not a tagline:** "Positioning" ≠ "Nike: Just Do It"
 - **Not a feature list:** Don't say "that provides AI, automation, and integrations"
 - **Not generic:** "For businesses that need efficiency" = positioning theater
 - **Not aspirational fluff:** "That revolutionizes productivity" without specifics is noise
-
-### When to Use This
-- Defining a new product or major pivot
-- Aligning exec/founder/PM/marketing on strategy
-- Testing if your differentiation is real or imagined
-- Before writing PRDs, launch plans, or sales collateral
-
-### When NOT to Use This
-- For internal tools with captive users (positioning is for markets)
-- When you're still in problem validation (position after you know the problem)
-- As a substitute for customer research (this synthesizes insights, doesn't create them)
 
 ---
 
@@ -158,48 +139,13 @@ Mini example excerpt:
 
 ## Common Pitfalls
 
-### Pitfall 1: "For Everyone"
-**Symptom:** "For businesses that want to grow" or "For anyone who uses software"
-
-**Consequence:** No one feels like it's *for them*. Positioning becomes invisible.
-
-**Fix:** Pick the *first* customer segment you'll serve. You can expand later, but positioning works when it's narrow.
-
----
-
-### Pitfall 2: Feature Creep in Benefit Statement
-**Symptom:** "That provides AI, automation, analytics, and integrations"
-
-**Consequence:** Sounds like a feature list, not a benefit. Buyers tune out.
-
-**Fix:** Lead with the outcome: "That reduces churn by 30% through predictive analytics." The features are how, not why.
-
----
-
-### Pitfall 3: Imaginary Competitor
-**Symptom:** "Unlike outdated legacy systems" or "Unlike traditional approaches"
-
-**Consequence:** You're positioning against a straw man. Real buyers don't recognize this alternative.
-
-**Fix:** Name the *actual* competitor or substitute behavior. If buyers use Excel, say "Unlike Excel." If they use a competitor, name them.
-
----
-
-### Pitfall 4: Differentiation Without Proof
-**Symptom:** "Provides revolutionary AI" or "Delivers unmatched speed"
-
-**Consequence:** Claims without evidence = marketing fluff. Buyers ignore it.
-
-**Fix:** Make it falsifiable: "Provides 10x faster query performance than Snowflake on datasets under 1TB" (can be tested).
-
----
-
-### Pitfall 5: Category Confusion
-**Symptom:** "Is a next-generation platform for digital transformation"
-
-**Consequence:** Buyers don't know how to evaluate you. Category = mental shelf. No shelf = no sale.
-
-**Fix:** Pick a category buyers already understand (CRM, analytics, messaging) OR commit to category creation (requires $$$ and time).
+| Pitfall | Symptom | Fix |
+|---------|---------|-----|
+| "For everyone" | "For businesses that want to grow" or "For anyone who uses software" | Pick the *first* customer segment. Positioning works when it's narrow. |
+| Feature creep in benefit | "That provides AI, automation, analytics, and integrations" | Lead with the outcome: "That reduces churn by 30% through predictive analytics" |
+| Imaginary competitor | "Unlike outdated legacy systems" or "Unlike traditional approaches" | Name the *actual* competitor. If buyers use Excel, say "Unlike Excel." |
+| Differentiation without proof | "Provides revolutionary AI" or "Delivers unmatched speed" | Make it falsifiable: "10x faster query performance than Snowflake on datasets under 1TB" |
+| Category confusion | "Is a next-generation platform for digital transformation" | Pick a category buyers understand, or commit to category creation (requires $$$ and time) |
 
 ---
 

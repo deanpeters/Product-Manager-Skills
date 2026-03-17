@@ -7,11 +7,6 @@ type: component
 ---
 
 
-## Purpose
-Evaluate and propose AI product solutions using a structured canvas that assesses business outcomes, customer outcomes, problem framing, solution hypotheses, positioning, risks, and value justification. Use this to build a comprehensive, defensible recommendation for stakeholders and decision-makers—especially when proposing AI-powered features or products that carry higher uncertainty and risk.
-
-This is not a feature spec—it's a strategic proposal that articulates *why* this AI solution is worth building, *what* assumptions need validating, and *how* you'll measure success.
-
 ## Key Concepts
 
 ### The Recommendation Canvas Framework
@@ -28,32 +23,6 @@ Created for Dean Peters' Productside "AI Innovation for Product Managers" class,
 8. **Value Justification:** Why this is worth doing
 9. **Success Metrics:** SMART metrics to measure impact
 10. **What's Next:** Strategic next steps
-
-### Why This Works
-- **Outcome-driven:** Forces clarity on business AND customer value
-- **Hypothesis-centric:** Treats solution as a bet to validate, not a commitment
-- **Risk-explicit:** Makes assumptions and risks visible upfront
-- **Executive-friendly:** Comprehensive but structured for C-level review
-- **AI-appropriate:** Especially useful for AI features with high uncertainty
-
-### Anti-Patterns (What This Is NOT)
-- **Not a PRD:** This is strategic framing, not detailed requirements
-- **Not a business case (yet):** It informs the business case but needs validation first
-- **Not a feature list:** Focus on outcomes, not capabilities
-
-### When to Use This
-- Proposing a new AI-powered product or feature
-- Pitching to execs or securing budget/sponsorship
-- Evaluating whether an AI solution is worth pursuing
-- Aligning cross-functional stakeholders (product, engineering, data science, business)
-- After completing initial discovery (you need context to fill this out)
-
-### When NOT to Use This
-- For trivial features (don't over-engineer small tweaks)
-- Before any discovery work (you need user research and problem validation first)
-- As a replacement for experimentation (canvas informs experiments, not vice versa)
-
----
 
 ## Application
 
@@ -302,48 +271,13 @@ Mini example excerpt:
 
 ## Common Pitfalls
 
-### Pitfall 1: Vague Outcomes
-**Symptom:** "Business outcome: increase revenue. Product outcome: improve UX."
-
-**Consequence:** No measurability or accountability.
-
-**Fix:** Use the outcome formula: [Direction] [Metric] [Outcome] [Context] [Acceptance Criteria]. Be specific.
-
----
-
-### Pitfall 2: Solution-First Thinking
-**Symptom:** Problem statement is "We need AI-powered X"
-
-**Consequence:** You've jumped to solution without validating the problem.
-
-**Fix:** Frame problem from user perspective. Let the solution hypothesis emerge from validated pain points.
-
----
-
-### Pitfall 3: Skipping Tiny Acts of Discovery
-**Symptom:** Hypothesis → straight to roadmap, no experiments
-
-**Consequence:** High risk of building the wrong thing.
-
-**Fix:** Define 2-3 lightweight experiments. Test before committing engineering resources.
-
----
-
-### Pitfall 4: Generic PESTEL Risks
-**Symptom:** "Political: regulations might change"
-
-**Consequence:** Risk analysis is theater, not actionable.
-
-**Fix:** Be specific: "GDPR compliance for storing client email timing data requires legal review."
-
----
-
-### Pitfall 5: Weak Value Justification
-**Symptom:** "This is valuable because customers will like it"
-
-**Consequence:** Not convincing to execs.
-
-**Fix:** Use data: "Addresses #1 pain point per user research. 20% churn reduction = $500k ARR. Low tech risk."
+| Pitfall | Symptom | Fix |
+|---------|---------|-----|
+| Vague outcomes | "Business outcome: increase revenue" | Use the outcome formula: [Direction] [Metric] [Outcome] [Context] [Acceptance Criteria] |
+| Solution-first thinking | Problem statement is "We need AI-powered X" | Frame problem from user perspective; let hypothesis emerge from validated pain points |
+| Skipping tiny acts of discovery | Hypothesis goes straight to roadmap, no experiments | Define 2-3 lightweight experiments; test before committing engineering resources |
+| Generic PESTEL risks | "Political: regulations might change" | Be specific: "GDPR compliance for storing client email timing data requires legal review" |
+| Weak value justification | "This is valuable because customers will like it" | Use data: "Addresses #1 pain point per user research. 20% churn reduction = $500k ARR" |
 
 ---
 
@@ -367,9 +301,3 @@ Mini example excerpt:
 ### Provenance
 - Adapted from `prompts/recommendation-canvas-template.md` in the `https://github.com/deanpeters/product-manager-prompts` repo.
 
----
-
-**Skill type:** Component
-**Suggested filename:** `recommendation-canvas.md`
-**Suggested placement:** `/skills/components/`
-**Dependencies:** References `skills/problem-statement/SKILL.md`, `skills/epic-hypothesis/SKILL.md`, `skills/positioning-statement/SKILL.md`, `skills/proto-persona/SKILL.md`, `skills/jobs-to-be-done/SKILL.md`

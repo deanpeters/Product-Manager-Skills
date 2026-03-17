@@ -20,8 +20,6 @@ estimated_time: "15-20 min"
 ## Purpose
 Guide product managers through preparing for customer discovery interviews by asking adaptive questions about research goals, customer segments, constraints, and methodologies. Use this to design effective interview plans, craft targeted questions, avoid common biases, and maximize learning from limited customer access—ensuring discovery interviews yield actionable insights rather than confirmation bias or surface-level feedback.
 
-This is not a script generator—it's a strategic prep process that outputs a tailored interview plan with methodology, question framework, and success criteria.
-
 ## Key Concepts
 
 ### The Discovery Interview Prep Flow
@@ -31,29 +29,6 @@ An interactive process that:
 3. Identifies target customer segment and access constraints
 4. Recommends interview methodology (Jobs-to-be-Done, problem validation, switch interviews, etc.)
 5. Generates interview framework with questions, biases to avoid, and success metrics
-
-### Why This Works
-- **Goal-driven:** Aligns interview approach to what you need to learn
-- **Adaptive:** Adjusts methodology based on product stage (idea vs. existing product) and access constraints
-- **Bias-aware:** Highlights common pitfalls (leading questions, confirmation bias, solution-first thinking)
-- **Actionable:** Outputs interview guide ready to use
-
-### Anti-Patterns (What This Is NOT)
-- **Not a user testing script:** Discovery = learning problems; testing = validating solutions
-- **Not a sales demo:** Don't pitch—listen and learn
-- **Not surveys at scale:** Deep qualitative interviews (5-10 people), not broad surveys (100+ people)
-
-### When to Use This
-- Starting product discovery (validating problem space)
-- Repositioning an existing product (understanding new market)
-- Investigating churn or drop-off (retention interviews)
-- Evaluating feature ideas before building
-- Preparing for customer development sprints
-
-### When NOT to Use This
-- User testing a prototype (use usability testing frameworks instead)
-- Quantitative research at scale (use surveys, analytics)
-- When you already know the problem (move to solution validation)
 
 ---
 
@@ -342,48 +317,13 @@ You'll know these interviews are successful if:
 
 ## Common Pitfalls
 
-### Pitfall 1: Asking What Customers Want
-**Symptom:** "What features do you want us to build?"
-
-**Consequence:** You get feature requests, not problems. Customers don't know solutions.
-
-**Fix:** Ask about past behavior: "Tell me about the last time you struggled with X."
-
----
-
-### Pitfall 2: Pitching Instead of Listening
-**Symptom:** Spending 20 minutes explaining your product idea
-
-**Consequence:** Customer feels obligated to be nice. No honest feedback.
-
-**Fix:** Don't mention your solution until the last 5 minutes (if at all). Focus on their problems.
-
----
-
-### Pitfall 3: Interviewing the Wrong People
-**Symptom:** Interviewing friends, family, or people who don't experience the problem
-
-**Consequence:** Polite feedback, not real insights.
-
-**Fix:** Interview people who experience the problem regularly and recently.
-
----
-
-### Pitfall 4: Stopping at 1-2 Interviews
-**Symptom:** "We talked to 2 people, they liked it, let's build!"
-
-**Consequence:** Small sample = confirmation bias.
-
-**Fix:** Interview 5-10 people minimum. Look for patterns, not one-off feedback.
-
----
-
-### Pitfall 5: Not Recording Insights
-**Symptom:** Relying on memory after interviews
-
-**Consequence:** Lose details, misremember quotes, can't spot patterns.
-
-**Fix:** Record (with consent) or take detailed notes. Synthesize immediately after each interview.
+| Pitfall | Symptom | Fix |
+|---------|---------|-----|
+| Asking What Customers Want | "What features should we build?" | Ask about past behavior: "Tell me about the last time you struggled with X" |
+| Pitching Instead of Listening | 20 minutes explaining your product idea | Don't mention your solution until the last 5 minutes (if at all) |
+| Interviewing the Wrong People | Friends, family, or non-problem-havers | Interview people who experience the problem regularly and recently |
+| Stopping at 1-2 Interviews | "2 people liked it, let's build!" | Interview 5-10 minimum. Look for patterns, not one-off feedback |
+| Not Recording Insights | Relying on memory after interviews | Record (with consent) or take detailed notes. Synthesize immediately |
 
 ---
 
@@ -402,9 +342,3 @@ You'll know these interviews are successful if:
 ### Dean's Work
 - Problem Framing Canvas (synthesizes interview findings)
 
----
-
-**Skill type:** Interactive
-**Suggested filename:** `discovery-interview-prep.md`
-**Suggested placement:** `/skills/interactive/`
-**Dependencies:** Uses `problem-statement.md`, `proto-persona.md`, `jobs-to-be-done.md`

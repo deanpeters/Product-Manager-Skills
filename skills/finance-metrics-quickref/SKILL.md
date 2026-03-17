@@ -19,33 +19,7 @@ scenarios:
 
 Quick reference for any SaaS finance metric without deep teaching. Use this when you need a fast formula lookup, benchmark check, or decision framework reminder. For detailed explanations, calculations, and examples, see the related deep-dive skills.
 
-This is not a teaching tool—it's a cheat sheet optimized for speed. Scan, find, apply.
-
 ## Key Concepts
-
-### Metric Categories
-
-Metrics are organized into four families:
-
-1. **Revenue & Growth** — Top-line money (revenue, ARPU, ARPA, MRR/ARR, churn, NRR, expansion)
-2. **Unit Economics** — Customer-level profitability (CAC, LTV, payback, margins)
-3. **Capital Efficiency** — Cash management (burn rate, runway, OpEx, net income)
-4. **Efficiency Ratios** — Growth vs. profitability balance (Rule of 40, magic number)
-
-### When to Use This Skill
-
-**Use this when:**
-- You need a quick formula or benchmark
-- You're preparing for a board meeting or investor call
-- You're evaluating a decision and need to check which metrics matter
-- You want to identify red flags quickly
-
-**Don't use this when:**
-- You need detailed calculation guidance (use `saas-revenue-growth-metrics` or `saas-economics-efficiency-metrics`)
-- You're learning these metrics for the first time (start with deep-dive skills)
-- You need examples and common pitfalls (covered in related skills)
-
----
 
 ## Application
 

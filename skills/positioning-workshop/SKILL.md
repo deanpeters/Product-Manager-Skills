@@ -18,8 +18,6 @@ scenarios:
 ## Purpose
 Guide product managers through discovering and articulating product positioning by asking adaptive questions about target customers, unmet needs, product category, benefits, and competitive differentiation. Use this to align stakeholders on strategic positioning before writing PRDs, launch plans, or marketing materials—ensuring you've made deliberate choices about who you serve, what need you address, and how you differ from alternatives.
 
-This is not a brainstorming session—it's a structured discovery process that outputs a Geoffrey Moore positioning statement backed by evidence and strategic choices.
-
 ## Key Concepts
 
 ### The Positioning Workshop Flow
@@ -31,28 +29,10 @@ An interactive discovery process that:
 5. Establishes competitive differentiation
 6. Outputs a complete positioning statement (uses `positioning-statement.md`)
 
-### Why This Works
-- **Structured discovery:** Prevents "positioning by committee" (too vague)
-- **Evidence-based:** Uses real marketing materials, customer feedback, competitive intel
-- **Adaptive:** Questions adjust based on B2B vs. B2C, new product vs. repositioning, etc.
-- **Actionable output:** Generates a Geoffrey Moore positioning statement ready for stakeholder review
-
 ### Anti-Patterns (What This Is NOT)
 - **Not a tagline generator:** Positioning ≠ marketing copy
 - **Not feature-first:** Starts with customer problems, not product capabilities
 - **Not consensus-driven:** Forces hard choices (can't be "for everyone")
-
-### When to Use This
-- Defining positioning for a new product
-- Repositioning an existing product (pivot, market shift)
-- Aligning stakeholders on product strategy
-- Preparing for launch or major release
-- Before writing positioning-dependent artifacts (PRD, press release, sales deck)
-
-### When NOT to Use This
-- Before customer research (positioning requires validated insights)
-- For internal tools with captive users (no market positioning needed)
-- When positioning is already clear and validated
 
 ---
 
@@ -355,48 +335,13 @@ Acme Workflows is a no-code automation platform for small business owners that r
 
 ## Common Pitfalls
 
-### Pitfall 1: "For Everyone"
-**Symptom:** Target is "all businesses" or "anyone who wants to be productive"
-
-**Consequence:** Positioning becomes invisible—no one feels it's *for them*.
-
-**Fix:** Narrow ruthlessly. Pick the *first* customer segment. You can expand later.
-
----
-
-### Pitfall 2: Need is a Feature Request
-**Symptom:** "Need better dashboards" or "Need AI-powered analytics"
-
-**Consequence:** You've jumped to solution, not problem.
-
-**Fix:** Ask "Why do they need that?" Keep asking until you hit the root need.
-
----
-
-### Pitfall 3: Category Confusion
-**Symptom:** "We're a next-generation platform for digital transformation"
-
-**Consequence:** Buyers don't know how to evaluate you.
-
-**Fix:** Pick a category buyers understand. If creating a new one, budget for category education.
-
----
-
-### Pitfall 4: Differentiation is a Feature
-**Symptom:** "Unlike competitors, we have AI"
-
-**Consequence:** Features are copiable. Not durable differentiation.
-
-**Fix:** Focus on outcomes: "Unlike competitors, we reduce setup time from 2 hours to 10 minutes."
-
----
-
-### Pitfall 5: No Customer Validation
-**Symptom:** Positioning created in a vacuum, never tested with customers
-
-**Consequence:** It sounds good internally but doesn't resonate externally.
-
-**Fix:** Read positioning statement to 5 target customers. If they don't say "Yes, that's me," revise.
+| Pitfall | Symptom | Fix |
+|---------|---------|-----|
+| "For everyone" | Target is "all businesses" or "anyone who wants to be productive" | Narrow ruthlessly. Pick the *first* customer segment. Expand later. |
+| Need is a feature request | "Need better dashboards" or "Need AI-powered analytics" | Ask "Why do they need that?" Keep asking until you hit the root need. |
+| Category confusion | "We're a next-generation platform for digital transformation" | Pick a category buyers understand. If creating a new one, budget for category education. |
+| Differentiation is a feature | "Unlike competitors, we have AI" | Focus on outcomes: "Unlike competitors, we reduce setup time from 2 hours to 10 minutes." |
+| No customer validation | Positioning created in a vacuum, never tested with customers | Read positioning statement to 5 target customers. If they don't say "Yes, that's me," revise. |
 
 ---
 

@@ -15,11 +15,6 @@ scenarios:
 ---
 
 
-## Purpose
-Guide product managers in choosing the right prioritization framework by asking adaptive questions about product stage, team context, decision-making needs, and stakeholder dynamics. Use this to avoid "framework whiplash" (switching frameworks constantly) or applying the wrong framework (e.g., using RICE for strategic bets or ICE for data-driven decisions). Outputs a recommended framework with implementation guidance tailored to your context.
-
-This is not a scoring calculator—it's a decision guide that matches prioritization frameworks to your specific situation.
-
 ## Key Concepts
 
 ### The Prioritization Framework Landscape
@@ -41,29 +36,6 @@ Common frameworks and when to use them:
 - **Cost of Delay** — Urgency-based (time-sensitive features)
 - **Impact Mapping** — Goal-driven (tie features to outcomes)
 - **Story Mapping** — User journey-based (narrative flow)
-
-### Why This Works
-- **Context-aware:** Matches framework to product stage, team maturity, data availability
-- **Anti-dogmatic:** No single "best" framework—it depends on your situation
-- **Actionable:** Provides implementation steps, not just framework names
-
-### Anti-Patterns (What This Is NOT)
-- **Not a universal ranking:** Frameworks aren't "better" or "worse"—they fit different contexts
-- **Not a replacement for strategy:** Frameworks execute strategy; they don't create it
-- **Not set-it-and-forget-it:** Reassess frameworks as your product matures
-
-### When to Use This
-- Choosing a prioritization framework for the first time
-- Switching frameworks (current one isn't working)
-- Aligning stakeholders on prioritization process
-- Onboarding new PMs to team practices
-
-### When NOT to Use This
-- When you already have a working framework (don't fix what isn't broken)
-- For one-off decisions (frameworks are for recurring prioritization)
-- As a substitute for strategic vision (frameworks can't tell you what to build)
-
----
 
 ### Facilitation Source of Truth
 
@@ -379,48 +351,13 @@ After collecting responses, the agent recommends a framework:
 
 ## Common Pitfalls
 
-### Pitfall 1: Using the Wrong Framework for Your Stage
-**Symptom:** Pre-PMF startup using weighted scoring with 10 criteria
-
-**Consequence:** Overhead kills speed. You need experiments, not rigorous scoring.
-
-**Fix:** Match framework to stage. Pre-PMF = ICE or Value/Effort. Scaling = RICE. Mature = Opportunity Scoring or Kano.
-
----
-
-### Pitfall 2: Framework Whiplash
-**Symptom:** Switching frameworks every quarter
-
-**Consequence:** Team confusion, lost time, no consistency.
-
-**Fix:** Stick with one framework for 6-12 months. Reassess only when stage/context changes.
-
----
-
-### Pitfall 3: Treating Scores as Gospel
-**Symptom:** "Feature A scored 8,000, Feature B scored 7,999, so A wins"
-
-**Consequence:** Ignores strategic context, judgment, and vision.
-
-**Fix:** Use frameworks as input, not automation. PM judgment overrides scores when needed.
-
----
-
-### Pitfall 4: Solo PM Scoring
-**Symptom:** PM scores features alone, presents to team
-
-**Consequence:** Lack of buy-in, engineering/design don't trust scores.
-
-**Fix:** Collaborative scoring sessions. PM, design, engineering score together.
-
----
-
-### Pitfall 5: No Framework at All
-**Symptom:** "We prioritize by who shouts loudest"
-
-**Consequence:** HiPPO (Highest Paid Person's Opinion) wins, not data or strategy.
-
-**Fix:** Pick *any* framework. Even imperfect structure beats chaos.
+| Pitfall | Symptom | Fix |
+|---------|---------|-----|
+| Wrong framework for stage | Pre-PMF startup using weighted scoring with 10 criteria | Match framework to stage: Pre-PMF = ICE/Value-Effort, Scaling = RICE, Mature = Opportunity Scoring/Kano |
+| Framework whiplash | Switching frameworks every quarter | Stick with one for 6-12 months; reassess only when stage/context changes |
+| Treating scores as gospel | "Feature A scored 8,000 vs 7,999, so A wins" | Use frameworks as input, not automation — PM judgment overrides when needed |
+| Solo PM scoring | PM scores alone, presents to team | Collaborative scoring sessions with PM, design, and engineering |
+| No framework at all | "We prioritize by who shouts loudest" | Pick *any* framework — even imperfect structure beats chaos |
 
 ---
 
@@ -440,9 +377,3 @@ After collecting responses, the agent recommends a framework:
 ### Dean's Work
 - [If Dean has prioritization resources, link here]
 
----
-
-**Skill type:** Interactive
-**Suggested filename:** `prioritization-advisor.md`
-**Suggested placement:** `/skills/interactive/`
-**Dependencies:** None (standalone, but informs roadmap and backlog decisions)

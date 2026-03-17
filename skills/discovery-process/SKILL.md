@@ -19,42 +19,7 @@ estimated_time: "30-60 min"
 ## Purpose
 Guide product managers through a complete discovery cycle—from initial problem hypothesis to validated solution—by orchestrating problem framing, customer interviews, synthesis, and experimentation skills into a structured process. Use this to systematically explore problem spaces, validate assumptions, and build confidence before committing to full development—avoiding "build it and they will come" syndrome and ensuring you're solving real customer problems.
 
-This is not a one-time research project—it's a continuous discovery practice that runs in parallel with delivery, typically 1-2 discovery cycles per quarter.
-
 ## Key Concepts
-
-### What is the Discovery Process?
-
-The discovery process (Teresa Torres, Marty Cagan) is a structured approach to exploring problem spaces and validating solutions before building. It consists of:
-
-1. **Frame the Problem** — Define what you're investigating and why
-2. **Conduct Research** — Gather qualitative and quantitative evidence
-3. **Synthesize Insights** — Identify patterns, pain points, and opportunities
-4. **Generate Solutions** — Explore multiple solution options
-5. **Validate Solutions** — Test assumptions through experiments
-6. **Decide & Document** — Commit to build, pivot, or kill
-
-### Why This Works
-- **De-risks product decisions:** Tests assumptions before expensive builds
-- **Customer-centric:** Grounds decisions in real customer problems, not internal opinions
-- **Iterative:** Builds confidence progressively through small experiments
-- **Fast learning:** Discovers "no-go" signals early, saves wasted effort
-
-### Anti-Patterns (What This Is NOT)
-- **Not waterfall research:** Discovery runs continuously, not once before dev
-- **Not user testing:** Discovery validates problems; testing validates solutions
-- **Not a substitute for shipping:** Discovery informs delivery, doesn't replace it
-
-### When to Use This
-- Exploring new product/feature areas
-- Investigating retention or churn problems
-- Validating strategic initiatives before roadmap commitment
-- Continuous discovery (weekly customer touchpoints)
-
-### When NOT to Use This
-- For well-understood problems (move to execution)
-- When stakeholders have already committed to a solution (address alignment first)
-- For tactical bug fixes or technical debt (no discovery needed)
 
 ---
 
@@ -418,48 +383,13 @@ Mini example excerpt:
 
 ## Common Pitfalls
 
-### Pitfall 1: Skipping Customer Interviews
-**Symptom:** Rely only on analytics and support tickets, no qualitative research
-
-**Consequence:** Miss "why" behind behavior, build wrong solutions
-
-**Fix:** Always interview 5-10 customers per discovery cycle (even if you have data)
-
----
-
-### Pitfall 2: Asking Leading Questions
-**Symptom:** "Would you use [feature X] if we built it?"
-
-**Consequence:** Confirmation bias, customers say "yes" to be polite
-
-**Fix:** Use Mom Test questions from `skills/discovery-interview-prep/SKILL.md` (focus on past behavior)
-
----
-
-### Pitfall 3: Not Reaching Saturation
-**Symptom:** Interview 2-3 customers, declare discovery complete
-
-**Consequence:** Small sample, not representative
-
-**Fix:** Continue interviews until same patterns emerge across 3+ customers (typically 5-7 interviews minimum)
-
----
-
-### Pitfall 4: Analysis Paralysis
-**Symptom:** Spend 6 weeks synthesizing insights, never move to solutions
-
-**Consequence:** No delivery, team loses momentum
-
-**Fix:** Time-box discovery to 3-4 weeks; after Phase 6, move to execution
-
----
-
-### Pitfall 5: Discovery as One-Time Activity
-**Symptom:** Run discovery once before building, then stop
-
-**Consequence:** Miss evolving customer needs, market changes
-
-**Fix:** Continuous discovery (Teresa Torres): 1 customer interview per week, ongoing
+| Pitfall | Symptom | Fix |
+|---------|---------|-----|
+| Skipping Customer Interviews | Relying only on analytics and support tickets | Interview 5-10 customers per cycle, even if you have data |
+| Asking Leading Questions | "Would you use feature X?" | Use Mom Test questions from `skills/discovery-interview-prep/SKILL.md` |
+| Not Reaching Saturation | 2-3 interviews, declare done | Continue until patterns emerge across 3+ customers (5-7 minimum) |
+| Analysis Paralysis | 6 weeks synthesizing, no solutions | Time-box discovery to 3-4 weeks; move to execution after Phase 6 |
+| Discovery as One-Time Activity | Run once before building, then stop | Continuous discovery: 1 customer interview per week, ongoing |
 
 ---
 
@@ -496,9 +426,3 @@ Mini example excerpt:
 - Productside Blueprint — Strategic discovery process
 - [If Dean has discovery resources, link here]
 
----
-
-**Skill type:** Workflow
-**Suggested filename:** `discovery-process.md`
-**Suggested placement:** `/skills/workflows/`
-**Dependencies:** Orchestrates 10+ component and interactive skills across 6 phases

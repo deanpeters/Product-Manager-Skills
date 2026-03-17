@@ -18,8 +18,6 @@ scenarios:
 ## Purpose
 Guide product managers through breaking down epics into user stories using Richard Lawrence's complete Humanizing Work methodology—a systematic, flowchart-driven approach that applies 9 splitting patterns sequentially. Use this to identify which pattern applies, split while preserving user value, and evaluate splits based on what they reveal about low-value work you can eliminate. This ensures vertical slicing (end-to-end value) rather than horizontal slicing (technical layers).
 
-This is not arbitrary slicing—it's a proven, methodical process that starts with validation, walks through patterns in order, and evaluates results strategically.
-
 ## Key Concepts
 
 ### Core Principles: Vertical Slices Preserve Value
@@ -46,12 +44,6 @@ A user story is "a description of a change in system behavior from the perspecti
 2. List all variations
 3. Reduce variations to **one complete slice**
 4. Make other variations separate stories
-
-### Why This Works
-- **Prevents arbitrary splitting:** Methodical checklist prevents guessing
-- **Preserves user value:** Every story delivers observable value
-- **Reveals waste:** Good splits expose low-value work you can deprioritize
-- **Repeatable:** Apply to any epic consistently
 
 ---
 
@@ -575,57 +567,14 @@ Work through patterns in order. For each pattern, ask "Does this apply?"
 
 ## Common Pitfalls
 
-### Pitfall 1: Skipping Pre-Split Validation
-**Symptom:** Jump straight to splitting without checking INVEST
-
-**Consequence:** Split a story that shouldn't be split (e.g., not Valuable = technical task)
-
-**Fix:** Always run Step 1 (INVEST check) before Step 2 (splitting patterns)
-
----
-
-### Pitfall 2: Step-by-Step Workflow Splitting (Pattern 1 Done Wrong)
-**Symptom:** Story 1 = "Editorial review," Story 2 = "Legal approval"
-
-**Consequence:** Stories don't deliver end-to-end value
-
-**Fix:** Each story should cover **full workflow** (thin end-to-end slice), just with increasing sophistication
-
----
-
-### Pitfall 3: Horizontal Slicing (Technical Layers)
-**Symptom:** "Story 1: Build API. Story 2: Build UI."
-
-**Consequence:** Neither story delivers user value
-
-**Fix:** Vertical slicing—each story includes front-end + back-end to deliver observable user behavior
-
----
-
-### Pitfall 4: Forcing a Pattern That Doesn't Fit
-**Symptom:** "We'll split by workflow even though there's no sequence"
-
-**Consequence:** Arbitrary, meaningless split
-
-**Fix:** If pattern doesn't apply, say NO and continue to next pattern
-
----
-
-### Pitfall 5: Not Re-Splitting Large Stories
-**Symptom:** Split epic into 3 stories, but each is still 5+ days
-
-**Consequence:** Stories too large for sprint
-
-**Fix:** **Restart at Pattern 1** for each large story until all are 1-5 days
-
----
-
-### Pitfall 6: Ignoring Split Evaluation (Step 3)
-**Symptom:** Split but don't evaluate if it reveals low-value work
-
-**Consequence:** Miss opportunity to eliminate waste
-
-**Fix:** After splitting, ask: "Does this reveal work we can kill or defer?"
+| Pitfall | Symptom | Fix |
+|---------|---------|-----|
+| Skipping Pre-Split Validation | Jump straight to splitting without INVEST check | Always run Step 1 (INVEST) before Step 2 (patterns) |
+| Step-by-Step Workflow Splitting | Story 1 = "Editorial review," Story 2 = "Legal approval" | Each story covers full workflow with increasing sophistication |
+| Horizontal Slicing | "Story 1: Build API. Story 2: Build UI." | Vertical slicing: each story delivers observable user behavior |
+| Forcing Wrong Pattern | "Split by workflow" when there's no sequence | If pattern doesn't apply, say NO and try next pattern |
+| Not Re-Splitting Large Stories | 3 stories but each still 5+ days | Restart at Pattern 1 for each large story until all 1-5 days |
+| Ignoring Split Evaluation | Split without checking for low-value work | Always ask: "Does this reveal work we can kill or defer?" |
 
 ---
 
@@ -657,9 +606,3 @@ Work through patterns in order. For each pattern, ask "Does this apply?"
 ### Sources
 - https://www.humanizingwork.com/the-humanizing-work-guide-to-splitting-user-stories/
 
----
-
-**Skill type:** Interactive
-**Suggested filename:** `epic-breakdown-advisor.md`
-**Suggested placement:** `/skills/interactive/`
-**Dependencies:** Uses `user-story-splitting.md`, `user-story.md`, `epic-hypothesis.md`

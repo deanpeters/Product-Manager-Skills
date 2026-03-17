@@ -19,8 +19,6 @@ estimated_time: "5-10 min"
 ## Purpose
 Create clear, concise user stories that combine Mike Cohn's user story format with Gherkin-style acceptance criteria. Use this to translate user needs into actionable development work that focuses on outcomes, ensures shared understanding between product and engineering, and provides testable success criteria.
 
-This is not a feature spec—it's a conversation starter that captures *who* benefits, *what* they're trying to do, *why* it matters, and *how* you'll know it works.
-
 ## Key Concepts
 
 ### The Mike Cohn + Gherkin Format
@@ -38,29 +36,11 @@ A user story combines:
 - **When:** [Event that triggers the action]
 - **Then:** [Expected outcome]
 
-### Why This Structure Works
-- **User-centric:** Forces focus on who benefits and why
-- **Outcome-focused:** "So that" emphasizes the value delivered, not just the action
-- **Testable:** Gherkin acceptance criteria are concrete and verifiable
-- **Conversational:** Story is the opening for discussion, not the final spec
-- **Shared language:** Product, engineering, and QA all understand the format
-
 ### Anti-Patterns (What This Is NOT)
 - **Not a task:** "As a developer, I want to refactor the database" (this is a tech task, not user value)
 - **Not a feature list:** "I want dashboards, reports, and analytics" (this is too big—needs splitting)
 - **Not vague:** "I want a better experience" (unmeasurable, no clear outcome)
 - **Not a contract:** Stories are placeholders for conversation, not locked-in specs
-
-### When to Use This
-- Translating user needs into development work
-- Backlog grooming and sprint planning
-- Communicating value to engineering and design
-- Ensuring testable acceptance criteria exist before development
-
-### When NOT to Use This
-- For pure technical debt or refactoring (use engineering tasks instead)
-- When stories are too large (split first—see `skills/user-story-splitting/SKILL.md`)
-- Before understanding the user problem (write a problem statement first)
 
 ---
 
@@ -196,48 +176,13 @@ Mini example excerpt:
 
 ## Common Pitfalls
 
-### Pitfall 1: Technical Tasks Disguised as User Stories
-**Symptom:** "As a developer, I want to refactor the API, so that the code is cleaner"
-
-**Consequence:** This is an engineering task, not a user story. No user value is delivered.
-
-**Fix:** If there's no user outcome, it's not a user story—use an engineering task or tech debt ticket instead.
-
----
-
-### Pitfall 2: "As a User" (Too Generic)
-**Symptom:** Every story starts with "As a user"
-
-**Consequence:** No persona clarity. Different users have different needs.
-
-**Fix:** Use specific personas: "As a trial user," "As a paid subscriber," "As an admin," etc. (reference `skills/proto-persona/SKILL.md`)
-
----
-
-### Pitfall 3: "So That" Restates "I Want To"
-**Symptom:** "I want to click the save button, so that I can save my work"
-
-**Consequence:** No insight into *why* the user cares. Just restating the action.
-
-**Fix:** Dig into the motivation: "so that I don't lose my progress if the page crashes" (real outcome).
-
----
-
-### Pitfall 4: Multiple When/Then Statements
-**Symptom:** Acceptance criteria with 5 "When" statements and 5 "Then" statements
-
-**Consequence:** Story is too big. Likely multiple features bundled together.
-
-**Fix:** Split the story using `skills/user-story-splitting/SKILL.md`. Each When/Then pair should be its own story (or at least evaluated for splitting).
-
----
-
-### Pitfall 5: Untestable Acceptance Criteria
-**Symptom:** "Then the user has a better experience" or "Then it's faster"
-
-**Consequence:** QA can't verify success. Ambiguous definition of "done."
-
-**Fix:** Make it measurable: "Then the page loads in under 2 seconds" or "Then the user sees a success confirmation message."
+| Pitfall | Symptom | Fix |
+|---------|---------|-----|
+| Technical tasks disguised as stories | "As a developer, I want to refactor the API" | If there's no user outcome, use an engineering task or tech debt ticket instead |
+| "As a user" (too generic) | Every story starts with "As a user" | Use specific personas: "As a trial user," "As a paid subscriber," "As an admin" |
+| "So that" restates "I want to" | "I want to click save, so that I can save my work" | Dig into motivation: "so that I don't lose progress if the page crashes" |
+| Multiple When/Then statements | Acceptance criteria with 5 "When" and 5 "Then" statements | Split using `skills/user-story-splitting/SKILL.md`. Each When/Then pair = its own story |
+| Untestable acceptance criteria | "Then the user has a better experience" | Make measurable: "Then the page loads in under 2 seconds" |
 
 ---
 

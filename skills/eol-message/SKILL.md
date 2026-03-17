@@ -10,8 +10,6 @@ type: component
 ## Purpose
 Craft a clear, empathetic End-of-Life (EOL) message that communicates product or feature discontinuation, explains the rationale, addresses customer impact, provides transition support, and positions the replacement solution. Use this to maintain customer trust during difficult transitions and reduce churn by demonstrating care and offering a clear path forward.
 
-This is not a generic sunset announcement—it's a customer-centric communication that acknowledges loss while framing the change as progress.
-
 ## Key Concepts
 
 ### The EOL Messaging Framework
@@ -26,29 +24,6 @@ An effective EOL message balances honesty about the change with empathy for cust
 7. **Support measures:** How you'll help customers migrate
 8. **Timeline:** Key dates and milestones
 9. **Call to action:** Next steps and contact info
-
-### Why This Works
-- **Empathy-first:** Acknowledges customer disruption before justifying the decision
-- **Clarity:** No ambiguity about what's changing and when
-- **Support-focused:** Shows you're not abandoning customers mid-transition
-- **Future-oriented:** Frames change as progress, not loss
-
-### Anti-Patterns (What This Is NOT)
-- **Not a terse shutdown notice:** "We're discontinuing Product X. Goodbye."
-- **Not business-centric:** Don't lead with "This reduces our costs"
-- **Not vague:** "Soon" is not a timeline
-- **Not defensive:** Don't blame customers ("low usage forced us to shut down")
-
-### When to Use This
-- Discontinuing a product, feature, or service
-- Migrating customers from legacy to new platform
-- Sunsetting an acquisition target's product
-- Deprecating a technology stack or API
-
-### When NOT to Use This
-- For minor feature tweaks (don't over-communicate small changes)
-- Before you have a transition plan (communicate *after* you know how you'll support customers)
-- If you're secretly hoping customers won't notice (be transparent)
 
 ---
 
@@ -278,48 +253,13 @@ Mini example excerpt:
 
 ## Common Pitfalls
 
-### Pitfall 1: Business-Centric Rationale
-**Symptom:** "We're discontinuing Product X to reduce costs and consolidate our portfolio."
-
-**Consequence:** Customers feel like collateral damage in a business decision.
-
-**Fix:** Frame rationale around customer benefits: "We're consolidating to Product Y so we can invest 100% of resources in features you've requested."
-
----
-
-### Pitfall 2: Vague Timeline
-**Symptom:** "Product X will be discontinued soon."
-
-**Consequence:** Customers can't plan. Anxiety and churn increase.
-
-**Fix:** Provide specific dates: "March 1: Migration tool available. December 31: Full shutdown."
-
----
-
-### Pitfall 3: No Support Plan
-**Symptom:** "You'll need to migrate to Product Y. Good luck!"
-
-**Consequence:** Customers feel abandoned. High churn risk.
-
-**Fix:** Offer migration support: "1-on-1 assistance, auto-migration tool, 3-month discount, training resources."
-
----
-
-### Pitfall 4: Ignoring Customer Impact
-**Symptom:** Message jumps from announcement to "Here's the new product!"
-
-**Consequence:** Customers feel their concerns aren't acknowledged.
-
-**Fix:** Explicitly acknowledge impact: "We understand this requires time to migrate and learn new features."
-
----
-
-### Pitfall 5: Terse or Defensive Tone
-**Symptom:** "Due to low usage, we're shutting down Product X."
-
-**Consequence:** Sounds like you're blaming customers.
-
-**Fix:** Be empathetic and forward-looking: "We're consolidating to focus on the future of automation."
+| Pitfall | Symptom | Fix |
+|---------|---------|-----|
+| Business-Centric Rationale | "Discontinuing to reduce costs" | Frame around customer benefits: "Investing 100% in features you requested" |
+| Vague Timeline | "Discontinued soon" | Specific dates: "March 1: Migration tool. December 31: Shutdown" |
+| No Support Plan | "Migrate to Product Y. Good luck!" | Offer migration support: 1-on-1 assistance, auto-migration, discounts |
+| Ignoring Customer Impact | Jumps from announcement to "Here's the new product!" | Acknowledge impact: "We understand this requires time to migrate" |
+| Terse or Defensive Tone | "Low usage forced us to shut down" | Be empathetic: "Consolidating to focus on the future" |
 
 ---
 
@@ -340,9 +280,3 @@ Mini example excerpt:
 ### Provenance
 - Adapted from `prompts/eol-for-a-product-message.md` in the `https://github.com/deanpeters/product-manager-prompts` repo.
 
----
-
-**Skill type:** Component
-**Suggested filename:** `eol-message.md`
-**Suggested placement:** `/skills/components/`
-**Dependencies:** References `skills/positioning-statement/SKILL.md`, `skills/problem-statement/SKILL.md`, `skills/proto-persona/SKILL.md`

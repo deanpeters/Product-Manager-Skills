@@ -10,8 +10,6 @@ type: interactive
 ## Purpose
 Guide product managers through calculating Total Addressable Market (TAM), Serviceable Available Market (SAM), and Serviceable Obtainable Market (SOM) for a product idea by asking adaptive, contextually relevant questions. Use this to build defensible market size estimates backed by real-world citations, economic projections, and population data—essential for pitching to investors, securing budget, or validating product-market fit.
 
-This is not a back-of-napkin guess—it's a structured, citation-backed analysis that withstands scrutiny.
-
 ## Key Concepts
 
 ### TAM/SAM/SOM Framework
@@ -32,27 +30,10 @@ The three-tier market sizing model:
 - Accounts for competition, market constraints, go-to-market capacity
 - "What can we capture in the next 1-3 years?"
 
-### Why This Works
-- **Top-down validation:** TAM → SAM → SOM ensures estimates are grounded in reality
-- **Investor-friendly:** Standard framework VCs and execs understand
-- **Citation-backed:** Real data sources (Census, Statista, World Bank) add credibility
-- **Adaptive:** Questions adjust based on context (B2B vs. B2C, US vs. global, etc.)
-
 ### Anti-Patterns (What This Is NOT)
 - **Not a single-number guess:** "The market is $10B" without supporting data
 - **Not static:** Markets evolve—reassess annually
 - **Not a substitute for customer validation:** Market size ≠ product-market fit
-
-### When to Use This
-- Pitching to investors or execs (need market size in deck)
-- Validating product ideas (is the market big enough?)
-- Prioritizing product lines (which has bigger opportunity?)
-- Setting growth targets (what's realistic to capture?)
-
-### When NOT to Use This
-- For internal tools with captive users (no external market)
-- Before defining the problem (market sizing requires clear problem space)
-- As the only validation (pair with customer research)
 
 ---
 
@@ -317,48 +298,13 @@ Mini example excerpt:
 
 ## Common Pitfalls
 
-### Pitfall 1: TAM Without Citations
-**Symptom:** "The market is $50B" (no source)
-
-**Consequence:** Can't defend the number to investors or execs.
-
-**Fix:** Cite industry reports (Gartner, IBISWorld, Statista) with URLs.
-
----
-
-### Pitfall 2: SOM Equals SAM
-**Symptom:** "SAM is $5B, SOM is $5B" (assuming 100% capture)
-
-**Consequence:** Unrealistic projection—no market has zero competition.
-
-**Fix:** SOM should be 1-20% of SAM in Year 1-3, accounting for competition.
-
----
-
-### Pitfall 3: No Population Estimates
-**Symptom:** Only dollar amounts, no customer counts
-
-**Consequence:** Can't build sales/marketing plans without knowing customer volume.
-
-**Fix:** Always include population (e.g., "1.2M businesses" or "60K customers in Year 1").
-
----
-
-### Pitfall 4: Static Assumptions
-**Symptom:** TAM/SAM/SOM calculated once, never updated
-
-**Consequence:** Stale data as markets shift.
-
-**Fix:** Reassess annually. Markets grow/shrink, competition changes, new data emerges.
-
----
-
-### Pitfall 5: Ignoring GTM Constraints
-**Symptom:** "SOM is 50% of SAM in Year 1" (but no sales team)
-
-**Consequence:** SOM isn't realistic given GTM capacity.
-
-**Fix:** Ground SOM in GTM constraints (sales capacity, marketing budget, conversion rates).
+| Pitfall | Symptom | Fix |
+|---------|---------|-----|
+| TAM without citations | "The market is $50B" (no source) | Cite industry reports (Gartner, IBISWorld, Statista) with URLs |
+| SOM equals SAM | "SAM is $5B, SOM is $5B" (assuming 100% capture) | SOM should be 1-20% of SAM in Year 1-3, accounting for competition |
+| No population estimates | Only dollar amounts, no customer counts | Always include population (e.g., "1.2M businesses" or "60K customers in Year 1") |
+| Static assumptions | TAM/SAM/SOM calculated once, never updated | Reassess annually. Markets grow/shrink, competition changes, new data emerges |
+| Ignoring GTM constraints | "SOM is 50% of SAM in Year 1" (but no sales team) | Ground SOM in GTM constraints (sales capacity, marketing budget, conversion rates) |
 
 ---
 

@@ -16,12 +16,6 @@ scenarios:
 estimated_time: "10-15 min"
 ---
 
-## Purpose
-
-Defines the two-axis mental model that distinguishes Director-level thinking from PM thinking: **Altitude** (how wide you zoom out) and **Horizon** (how far ahead you look). Use this to understand what actually changes in the transition, diagnose which transition zone is creating friction, and apply the Cascading Context Map when organizational direction is vague or absent.
-
-This is not a seniority hierarchy. A PM operating at the right altitude for their role is doing excellent work. A Director operating at PM altitude is leaving their actual job undone.
-
 ## Key Concepts
 
 ### The Two Axes
@@ -200,39 +194,12 @@ See `examples/sample.md` for a full worked scenario with a completed Cascading C
 
 ## Common Pitfalls
 
-### Pitfall 1: Altitude Theater
-**Symptom:** Using strategy language ("portfolio," "ecosystem," "long-term vision") while still making sprint-level decisions
-
-**Consequence:** You sound like a Director but function like a PM. Your team is confused about who's actually deciding and at what level.
-
-**Fix:** If you're in the details, own it. If you're not, delegate it fully. Mixing altitude levels without signaling creates ambiguity that erodes team trust.
-
----
-
-### Pitfall 2: One-and-Done Context Cascade
-**Symptom:** Running the Cascading Context Map once at annual planning, then never revisiting it
-
-**Consequence:** Team aligns in Q1 and drifts as strategy evolves. By Q3, team work is decoupled from current priorities.
-
-**Fix:** Revisit the cascade at major inflection points — quarterly planning, significant exec changes, pivots, or org restructuring.
-
----
-
-### Pitfall 3: Confusing Kindness with Leadership
-**Symptom:** Shielding the team from hard decisions, over-explaining constraints you're holding, softening feedback into meaninglessness
-
-**Consequence:** Team operates without accurate context; trust erodes when reality eventually lands without warning.
-
-**Fix:** Be transparent about the "why" behind hard decisions. You don't need to share everything — but what you share should be honest and actionable.
-
----
-
-### Pitfall 4: Premature Director Thinking as a PM
-**Symptom:** Spending PM years worried about portfolio strategy, organizational dynamics, and "thinking above your pay grade"
-
-**Consequence:** You under-serve your current role. PMs who think like Directors often miss the customer-level signal their actual role requires.
-
-**Fix:** Play your current role with full commitment. The transition will demand Director thinking soon enough — you'll be ready because you did your PM work well, not because you rehearsed the Director role prematurely.
+| Pitfall | Symptom | Fix |
+|---------|---------|-----|
+| Altitude theater | Using strategy language while still making sprint-level decisions | If you're in the details, own it. If you're not, delegate fully. Mixing altitude levels creates ambiguity |
+| One-and-done context cascade | Running the Cascading Context Map once, never revisiting | Revisit at major inflection points — quarterly planning, exec changes, pivots, or restructuring |
+| Confusing kindness with leadership | Shielding team from hard decisions, softening feedback into meaninglessness | Be transparent about the "why" behind hard decisions; what you share should be honest and actionable |
+| Premature Director thinking as a PM | Spending PM years worried about portfolio strategy and org dynamics | Play your current role with full commitment; Director readiness shows in PM work quality, not rehearsal |
 
 ---
 
