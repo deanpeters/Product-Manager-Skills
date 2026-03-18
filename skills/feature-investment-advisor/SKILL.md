@@ -19,8 +19,6 @@ scenarios:
 
 Guide product managers through evaluating whether to build a feature based on financial impact analysis. Use this to make data-driven prioritization decisions by assessing revenue connection (direct or indirect), cost structure (dev + COGS + OpEx), ROI calculation, and strategic value—then deliver actionable build/don't build recommendations with supporting math.
 
-This is not a generic prioritization framework—it's a financial lens for feature decisions that complements other prioritization methods (RICE, value vs. effort, user research). Use when financial impact is a key decision factor.
-
 ## Key Concepts
 
 ### The Feature Investment Framework
@@ -46,28 +44,6 @@ A systematic approach to evaluate features financially:
    - Platform enabler (unlocks future features)
    - Market positioning (needed for enterprise deals)
    - Risk reduction (compliance, security)
-
-### Anti-Patterns (What This Is NOT)
-
-- **Not feature scoring alone:** Combines financial analysis with strategic judgment
-- **Not revenue-only thinking:** Considers margins, costs, and ROI, not just top-line revenue
-- **Not ignoring retention:** Indirect revenue impact (churn reduction) is equally valid
-- **Not building without validation:** Assumes you've done discovery; this is the financial lens
-
-### When to Use This Framework
-
-**Use this when:**
-- Prioritizing between features with quantifiable revenue/retention impact
-- Evaluating expensive features (>1 engineer-month of work)
-- Making build/buy/partner decisions
-- Defending feature prioritization to stakeholders or leadership
-- Choosing between direct monetization (add-on) vs. indirect (retention)
-
-**Don't use this when:**
-- Feature is table stakes (must-have for competitive parity)
-- Impact is purely qualitative (brand, UX delight without measurable retention effect)
-- You haven't validated the problem (do discovery first)
-- Feature is < 1 week of work (just build it)
 
 ---
 
@@ -529,93 +505,18 @@ See `examples/` folder for sample conversation flows. Mini examples below:
 
 ## Common Pitfalls
 
-### Pitfall 1: Confusing Revenue with Profit
-**Symptom:** "This feature will generate $1M in revenue!" (ignoring $800K COGS)
-
-**Consequence:** $1M revenue at 20% margin is worth $200K profit, not $1M. Feature looks great until you factor in costs.
-
-**Fix:** Always calculate contribution margin. Use `Revenue × Margin %`, not just revenue.
-
----
-
-### Pitfall 2: Ignoring Payback Period
-**Symptom:** "ROI is 5:1, let's build!" (but payback is 36 months and customers churn at 24 months)
-
-**Consequence:** You never recover the investment because customers leave before payback.
-
-**Fix:** Check payback period. Must be shorter than average customer lifetime.
-
----
-
-### Pitfall 3: Overestimating Adoption
-**Symptom:** "100% of customers will use this paid add-on!"
-
-**Consequence:** Real adoption is 10-20%. Revenue projections are 5-10x too high.
-
-**Fix:** Use conservative adoption estimates (10-20% for add-ons). Validate with willingness-to-pay research.
-
----
-
-### Pitfall 4: Building Without Validation
-**Symptom:** "We think this will reduce churn" (no customer interviews)
-
-**Consequence:** You build a feature that doesn't address real churn reasons. Churn stays flat.
-
-**Fix:** Interview churned customers first. Validate that this feature addresses top 3 churn reasons.
-
----
-
-### Pitfall 5: Ignoring Opportunity Cost
-**Symptom:** "This feature has 2:1 ROI, let's build!" (other features have 10:1 ROI)
-
-**Consequence:** You build a mediocre feature while better options sit in the backlog.
-
-**Fix:** Compare ROI across features. Build highest-ROI features first (unless strategic value overrides).
-
----
-
-### Pitfall 6: Strategic Value as Excuse
-**Symptom:** "ROI is terrible but it's strategic!" (no clear strategy)
-
-**Consequence:** "Strategic" becomes a catch-all for building low-value features.
-
-**Fix:** Define what "strategic" means (competitive moat, platform enabler, compliance). If it doesn't fit, it's not strategic.
-
----
-
-### Pitfall 7: Margin Dilution Blindness
-**Symptom:** "This feature adds $500K revenue!" (but COGS is $400K)
-
-**Consequence:** Your gross margin drops from 80% to 60%. Feature destroys unit economics.
-
-**Fix:** Calculate contribution margin. If margin is <50%, reconsider or charge a premium.
-
----
-
-### Pitfall 8: Celebrating Vanity Metrics
-**Symptom:** "This feature will increase engagement!" (but not revenue or retention)
-
-**Consequence:** You build features that feel good but don't impact business outcomes.
-
-**Fix:** Tie features to revenue or retention. Engagement is a leading indicator, not an outcome.
-
----
-
-### Pitfall 9: Forgetting Time Value of Money
-**Symptom:** "This feature pays back in 5 years"
-
-**Consequence:** $1 in 5 years is worth ~$0.65 today (at 9% discount rate). ROI is overstated.
-
-**Fix:** For long payback periods (>24 months), use NPV (net present value) to discount future cash flows.
-
----
-
-### Pitfall 10: Building Features for Loud Minorities
-**Symptom:** "50 customers requested this!" (out of 10,000)
-
-**Consequence:** You optimize for 0.5% of your base while ignoring the other 99.5%.
-
-**Fix:** Weight feature requests by revenue impact or customer segment. 10 enterprise customers > 100 SMB customers if enterprise is your strategy.
+| Pitfall | Symptom | Fix |
+|---------|---------|-----|
+| Confusing Revenue with Profit | "$1M revenue!" ignoring $800K COGS | Always calculate contribution margin: `Revenue x Margin %` |
+| Ignoring Payback Period | "ROI 5:1!" but 36-month payback, 24-month customer lifetime | Payback must be shorter than average customer lifetime |
+| Overestimating Adoption | "100% will use this add-on!" | Use conservative estimates (10-20%). Validate with WTP research |
+| Building Without Validation | "We think this reduces churn" — no interviews | Interview churned customers first. Validate top 3 churn reasons |
+| Ignoring Opportunity Cost | "2:1 ROI, let's build!" while 10:1 options exist | Compare ROI across features. Build highest-ROI first |
+| Strategic Value as Excuse | "ROI is bad but it's strategic!" | Define "strategic" concretely: moat, platform enabler, compliance |
+| Margin Dilution Blindness | "$500K revenue!" but $400K COGS | If margin <50%, reconsider or charge a premium |
+| Celebrating Vanity Metrics | "Increases engagement!" but not revenue/retention | Tie features to revenue or retention outcomes |
+| Forgetting Time Value of Money | "Pays back in 5 years" | Use NPV for payback >24 months |
+| Building for Loud Minorities | "50 requested this!" out of 10,000 | Weight by revenue impact/segment, not request count |
 
 ---
 

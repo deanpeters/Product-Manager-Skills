@@ -10,8 +10,6 @@ type: interactive
 ## Purpose
 Guide product managers through creating an Opportunity Solution Tree (OST) by extracting target outcomes from stakeholder requests, generating opportunity options (problems to solve), mapping potential solutions, and selecting the best proof-of-concept (POC) based on feasibility, impact, and market fit. Use this to move from vague product requests to structured discovery, ensuring teams solve the right problems before jumping to solutions—avoiding "feature factory" syndrome and premature convergence on ideas.
 
-This is not a roadmap generator—it's a structured discovery process that outputs validated opportunities with testable solution hypotheses.
-
 ## Key Concepts
 
 ### What is an Opportunity Solution Tree (OST)?
@@ -34,33 +32,6 @@ Opportunity  Opportunity  Opportunity (3)
   | | |       | | |       | | |
  S1 S2 S3    S1 S2 S3    S1 S2 S3 (9 total solutions)
 ```
-
-### Why This Works
-- **Outcome-driven:** Starts with business goal, not feature requests
-- **Divergent before convergent:** Explores multiple opportunities before picking solutions
-- **Problem-focused:** Opportunities are problems, not solutions disguised as problems
-- **Testable:** Each solution maps to experiments, not just "build it and ship"
-- **POC selection:** Evaluates feasibility, impact, market fit before committing resources
-
-### Anti-Patterns (What This Is NOT)
-- **Not a feature list:** Opportunities are problems customers face, not "we need dark mode"
-- **Not solution-first:** Don't start with "we should build X"—start with "customers struggle with Y"
-- **Not waterfall planning:** OST is a discovery tool, not a project plan
-- **Not a one-time exercise:** OSTs evolve as you learn from experiments
-
-### When to Use This
-- Stakeholder requests a feature or product initiative
-- Starting discovery for a new product area
-- Clarifying vague OKRs or strategic goals
-- Prioritizing which problems to solve first
-- Aligning team on what outcomes you're driving
-
-### When NOT to Use This
-- When the problem is already validated (move to solution testing)
-- For tactical bug fixes or technical debt (no discovery needed)
-- When stakeholders demand a specific solution (address alignment issues first)
-
----
 
 ### Facilitation Source of Truth
 
@@ -349,48 +320,13 @@ Mini example excerpt:
 
 ## Common Pitfalls
 
-### Pitfall 1: Opportunities Disguised as Solutions
-**Symptom:** "Opportunity: We need a mobile app"
-
-**Consequence:** You've already converged on a solution without exploring the problem.
-
-**Fix:** Reframe opportunities as customer problems: "Mobile-first users can't access product on the go."
-
----
-
-### Pitfall 2: Skipping Divergence (Jumping to One Solution)
-**Symptom:** "We know the solution is [X], just need to build it"
-
-**Consequence:** Miss better alternatives, no learning.
-
-**Fix:** Generate at least 3 solutions per opportunity. Force divergence before convergence.
-
----
-
-### Pitfall 3: Outcome is Too Vague
-**Symptom:** "Desired Outcome: Improve user experience"
-
-**Consequence:** Can't measure success, can't prioritize opportunities.
-
-**Fix:** Make outcomes measurable: "Increase NPS from 30 to 50" or "Reduce onboarding drop-off from 60% to 40%."
-
----
-
-### Pitfall 4: No Experiments (Just Build It)
-**Symptom:** Picking a solution and moving straight to roadmap
-
-**Consequence:** No validation, high risk of building wrong thing.
-
-**Fix:** Every solution must map to an experiment. No experiments = no OST.
-
----
-
-### Pitfall 5: Analysis Paralysis (Exploring Forever)
-**Symptom:** Generating 20 opportunities, 50 solutions, never picking one
-
-**Consequence:** Team stuck in discovery, no progress.
-
-**Fix:** Limit to 3 opportunities, 3 solutions each (9 total). Pick POC, run experiment, learn, iterate.
+| Pitfall | Symptom | Fix |
+|---------|---------|-----|
+| **Opportunities disguised as solutions** | "Opportunity: We need a mobile app" | Reframe as customer problems: "Mobile-first users can't access product on the go" |
+| **Skipping divergence** | "We know the solution, just need to build it" | Generate at least 3 solutions per opportunity before converging |
+| **Outcome too vague** | "Improve user experience" | Make measurable: "Increase NPS from 30 to 50" or "Reduce drop-off 60% to 40%" |
+| **No experiments** | Picking a solution, moving straight to roadmap | Every solution must map to an experiment; no experiments = no OST |
+| **Analysis paralysis** | 20 opportunities, 50 solutions, never picking one | Limit to 3 opportunities, 3 solutions each; pick POC and run experiment |
 
 ---
 
@@ -412,9 +348,3 @@ Mini example excerpt:
 - Productside Blueprint — Strategic product discovery process
 - [If Dean has OST resources, link here]
 
----
-
-**Skill type:** Interactive
-**Suggested filename:** `opportunity-solution-tree.md`
-**Suggested placement:** `/skills/interactive/`
-**Dependencies:** Uses `skills/problem-statement/SKILL.md`, `skills/jobs-to-be-done/SKILL.md`, `skills/epic-hypothesis/SKILL.md`, `skills/user-story/SKILL.md`

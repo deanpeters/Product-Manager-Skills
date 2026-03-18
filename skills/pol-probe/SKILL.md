@@ -14,21 +14,7 @@ scenarios:
   - "Create a low-cost validation probe before we build this feature"
 ---
 
-## Purpose
-
-Define and document a **Proof of Life (PoL) probe**—a lightweight, disposable validation artifact designed to surface harsh truths before expensive development. Use this when you need to eliminate a specific risk or test a narrow hypothesis **without building production-quality software**. PoL probes are reconnaissance missions, not MVPs—they're meant to be deleted, not scaled.
-
-This framework prevents prototype theater (expensive demos that impress stakeholders but teach nothing) and forces you to match validation method to actual learning goal.
-
 ## Key Concepts
-
-### What is a PoL Probe?
-
-A **Proof of Life (PoL) probe** is a deliberate, disposable validation experiment designed to answer one specific question as cheaply and quickly as possible. It's not a product, not an MVP, not a pilot—it's a targeted truth-seeking mission.
-
-**Origin:** Coined by Dean Peters (Productside), building on Marty Cagan's 2014 work on prototype flavors and Jeff Patton's principle: *"The most expensive way to test your idea is to build production-quality software."*
-
----
 
 ### The 5 Essential Characteristics
 
@@ -74,24 +60,6 @@ Match the probe type to your hypothesis, not your tooling comfort.
 | **5. Vibe-Coded PoL Probes** | "Will this solution survive real user contact?" | 2-3 days | ChatGPT Canvas + Replit + Airtable = "Frankensoft" | You need user feedback on workflow/UX, but not production-grade code |
 
 **Golden Rule:** *"Use the cheapest prototype that tells the harshest truth. If it doesn't sting, it's probably just theater."*
-
----
-
-### When to Use a PoL Probe
-
-✅ **Use a PoL probe when:**
-- You have a specific, falsifiable hypothesis to test
-- A particular risk blocks your next decision (technical feasibility, user task completion, stakeholder support)
-- You need harsh truth fast (within days, not weeks)
-- Building production software would be premature or wasteful
-- You can articulate what "failure" looks like before you start
-
-❌ **Don't use a PoL probe when:**
-- You're trying to impress executives (that's prototype theater)
-- You already know the answer and just want validation (that's confirmation bias)
-- You can't articulate a clear hypothesis or disposal plan
-- The learning goal is too broad ("Will customers like this?")
-- You're using it to avoid making a hard decision
 
 ---
 

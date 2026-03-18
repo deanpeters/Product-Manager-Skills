@@ -16,9 +16,7 @@ scenarios:
 
 ## Purpose
 
-Guide product managers through selecting the right **Proof of Life (PoL) probe** type (of 5 flavors) based on their hypothesis, risk, and available resources. Use this when you need to eliminate a specific risk or test a narrow hypothesis, but aren't sure which validation method to use. This interactive skill ensures you match the cheapest prototype to the harshest truth—not the prototype you're most comfortable building.
-
-This is **not** a tool for deciding *if* you should validate (you should). It's a decision framework for choosing *how* to validate most effectively.
+Guide product managers through selecting the right **Proof of Life (PoL) probe** based on hypothesis, risk, and available resources. Matches the cheapest prototype to the harshest truth — not the prototype you're most comfortable building.
 
 ## Key Concepts
 
@@ -41,31 +39,6 @@ This is **not** a tool for deciding *if* you should validate (you should). It's 
 | **Vibe-Coded PoL Probe** | "Will this solution survive real user contact?" | Workflow/UX validation with real interactions | 2-3 days |
 
 **Golden Rule:** *"Use the cheapest prototype that tells the harshest truth."*
-
----
-
-### Anti-Patterns (What This Is NOT)
-
-- **Not "build the prototype you're comfortable with":** Match method to hypothesis, not skillset
-- **Not "pick based on stakeholder preference":** Optimize for learning, not internal politics
-- **Not "choose the most impressive option":** Impressive ≠ informative
-- **Not "default to code":** Writing code should be your last resort, not your first
-
----
-
-### When to Use This Skill
-
-✅ **Use this when:**
-- You have a clear hypothesis but don't know which validation method to use
-- You're unsure whether to build code, create a video, or run a simulation
-- You need to eliminate a specific risk quickly (within days)
-- You want to avoid prototype theater
-
-❌ **Don't use this when:**
-- You don't have a hypothesis yet (use `problem-statement.md` or `problem-framing-canvas.md` first)
-- You're trying to impress executives (that's not validation)
-- You already know the answer (confirmation bias)
-- You need to ship an MVP (this is for pre-MVP reconnaissance)
 
 ---
 
@@ -425,48 +398,13 @@ If executives need a demo, build it *after* you've validated the hypothesis with
 
 ## Common Pitfalls
 
-### 1. **Choosing Based on Tooling Comfort**
-**Failure Mode:** "I know Figma, so I'll design a UI prototype" (even if design isn't the risk).
-
-**Consequence:** Validate the wrong thing; miss the actual risk.
-
-**Fix:** Answer the core question *first*, then pick the method. If you need a Feasibility Check but only know design tools, pair with an engineer for 1 day.
-
----
-
-### 2. **Defaulting to Code**
-**Failure Mode:** "Let's just build it and see what happens."
-
-**Consequence:** 2 weeks of development before learning you tested the wrong hypothesis.
-
-**Fix:** Ask: "What's the cheapest prototype that tells the harshest truth?" Usually it's NOT code.
-
----
-
-### 3. **Confusing Vibe-Coded Probes with MVPs**
-**Failure Mode:** Vibe-Coded probe "looks real," so team treats it like production code.
-
-**Consequence:** Scope creep, technical debt, resistance to disposal.
-
-**Fix:** Set disposal date before building. Vibe-Coded probes are **Frankensoft by design**—celebrate the jank, delete after learning.
-
----
-
-### 4. **Testing Multiple Things at Once**
-**Failure Mode:** "Let's test the workflow, the pricing, and the UI in one probe."
-
-**Consequence:** Ambiguous results—you won't know which variable caused failure.
-
-**Fix:** One probe, one hypothesis. If you have 3 hypotheses, run 3 probes.
-
----
-
-### 5. **Skipping Success Criteria**
-**Failure Mode:** "We'll know it when we see it."
-
-**Consequence:** No harsh truth—just opinions and vanity metrics.
-
-**Fix:** Write success criteria *before* building. Define "pass," "fail," and "learn" thresholds.
+| Pitfall | Failure Mode | Fix |
+|---------|-------------|-----|
+| Choosing based on tooling comfort | "I know Figma, so I'll design a UI prototype" (even if design isn't the risk) | Answer the core question *first*, then pick the method |
+| Defaulting to code | "Let's just build it and see what happens" | Ask: "What's the cheapest prototype that tells the harshest truth?" Usually it's NOT code |
+| Confusing vibe-coded probes with MVPs | Probe "looks real," team treats it as production code | Set disposal date before building — celebrate the jank, delete after learning |
+| Testing multiple things at once | "Let's test workflow, pricing, and UI in one probe" | One probe, one hypothesis. 3 hypotheses = 3 probes |
+| Skipping success criteria | "We'll know it when we see it" | Write pass/fail/learn thresholds *before* building |
 
 ---
 

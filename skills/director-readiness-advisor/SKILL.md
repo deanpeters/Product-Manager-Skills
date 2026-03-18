@@ -16,12 +16,6 @@ scenarios:
 estimated_time: "10-15 min"
 ---
 
-## Purpose
-
-Guide PMs and Directors through the specific challenges of the PM-to-Director transition using adaptive questions and targeted coaching. Diagnoses where you are in the journey and delivers practical, war-story-backed guidance calibrated to your situation — not generic leadership advice.
-
-This is not a readiness checklist. It's a coaching conversation that names what's actually hard, why it's hard, and what to do about it.
-
 ## Key Concepts
 
 ### The Four Transition Situations
@@ -306,30 +300,11 @@ See `examples/conversation-flow.md` for a full end-to-end interaction, including
 
 ## Common Pitfalls
 
-### Pitfall 1: Treating Preparation Like a Checklist
-**Symptom:** Asking "what do I need to do to get promoted?" and working through items like tasks
-
-**Consequence:** You optimize for appearances of readiness rather than building the actual muscles. Interviewers and managers can tell the difference.
-
-**Fix:** Use this advisor to identify the one or two specific behavior changes that matter most for your situation, not a comprehensive development program.
-
----
-
-### Pitfall 2: Misidentifying Your Situation
-**Symptom:** Selecting "preparing" when you're actually in an active interview process, or selecting "newly landed" when you've been in the role 18 months
-
-**Consequence:** You get coaching calibrated to the wrong situation.
-
-**Fix:** Be honest about where you actually are, not where you'd like to be.
-
----
-
-### Pitfall 3: Looking for Permission
-**Symptom:** Asking this advisor whether you're "ready" for the transition
-
-**Consequence:** There's no readiness test. The transition is a decision, not a graduation.
-
-**Fix:** Use this skill to identify what will be hardest for you specifically and how to address it — not to get a pass/fail verdict.
+| Pitfall | Symptom | Fix |
+|---------|---------|-----|
+| Treating preparation like a checklist | "What do I need to do to get promoted?" worked through like tasks | Identify the 1-2 specific behavior changes that matter most, not a comprehensive development program |
+| Misidentifying your situation | Selecting "preparing" when actually in active interviews | Be honest about where you actually are, not where you'd like to be |
+| Looking for permission | Asking whether you're "ready" for the transition | Use this skill to identify what will be hardest and how to address it — not for a pass/fail verdict |
 
 ---
 

@@ -10,8 +10,6 @@ type: component
 ## Purpose
 Create a comprehensive company profile that extracts executive insights, product strategy, transformation initiatives, and organizational dynamics from publicly available sources. Use this to understand competitive landscape, evaluate partnership opportunities, benchmark best practices, prepare for interviews, or inform market entry decisions by understanding how successful companies think about product management and strategy.
 
-This is not surface-level research—it's strategic intelligence gathering focused on product management perspectives and executive vision.
-
 ## Key Concepts
 
 ### The Executive Insights Framework
@@ -25,31 +23,6 @@ This framework synthesizes company intelligence across multiple dimensions:
 5. **Organizational Impact:** How PM influences strategy, cross-functional collaboration
 6. **Future Roadmap:** Upcoming initiatives and anticipated challenges
 7. **Product-Led Growth (PLG):** PLG strategies, data-driven decisions
-
-### Why This Works
-- **Executive perspective:** Captures leadership thinking, not just marketing copy
-- **Product-centric:** Focuses on PM-relevant insights (strategy, process, culture)
-- **Multi-source:** Synthesizes interviews, earnings calls, blog posts, case studies
-- **Strategic intelligence:** Informs competitive positioning, partnership evaluation, or interview prep
-
-### Anti-Patterns (What This Is NOT)
-- **Not financial analysis:** Focus is product strategy, not valuation or stock performance
-- **Not SWOT analysis:** This documents their perspective, not strengths/weaknesses assessment
-- **Not surface scraping:** Go deeper than "About Us" pages—find executive interviews, product blogs, earnings transcripts
-
-### When to Use This
-- Competitive analysis (understanding how competitors approach PM)
-- Partnership evaluation (assessing cultural fit and strategic direction)
-- Interview preparation (understanding company culture, product philosophy)
-- Benchmarking best practices (learning from successful companies)
-- Market entry decisions (understanding how incumbents operate)
-
-### When NOT to Use This
-- For internal analysis (this is external research)
-- When primary sources are unavailable (executives haven't spoken publicly)
-- As a substitute for customer research (this is company perspective, not customer perspective)
-
----
 
 ## Application
 
@@ -315,48 +288,13 @@ Mini example excerpt:
 
 ## Common Pitfalls
 
-### Pitfall 1: Surface-Level Research
-**Symptom:** "Stripe is a payments company. They process payments."
-
-**Consequence:** No strategic insights.
-
-**Fix:** Go deeper—find executive interviews, engineering blogs, product philosophy posts.
-
----
-
-### Pitfall 2: No Source Citations
-**Symptom:** "The CEO said the company is focused on innovation"
-
-**Consequence:** Unverifiable, low credibility.
-
-**Fix:** Always cite source and date: "The CEO said X (Source: Lenny's Podcast, Episode 185, Sept 2023)."
-
----
-
-### Pitfall 3: Mixing Opinion with Facts
-**Symptom:** "Stripe's product strategy is great because they focus on developers"
-
-**Consequence:** Analysis, not research.
-
-**Fix:** Document *what* they do, not whether it's "good." Save analysis for "Key Takeaways."
-
----
-
-### Pitfall 4: Outdated Information
-**Symptom:** Using 5-year-old quotes or strategies
-
-**Consequence:** Irrelevant insights (company strategies evolve).
-
-**Fix:** Prioritize sources from the last 12-24 months.
-
----
-
-### Pitfall 5: Ignoring Negative Signals
-**Symptom:** Only documenting successes, ignoring challenges or failures
-
-**Consequence:** Incomplete picture.
-
-**Fix:** Include "Anticipated Market Challenges" and competitive threats.
+| Pitfall | Symptom | Fix |
+|---------|---------|-----|
+| **Surface-level research** | "Stripe is a payments company. They process payments." | Find executive interviews, engineering blogs, product philosophy posts |
+| **No source citations** | "The CEO said the company is focused on innovation" | Always cite source and date (e.g., "Lenny's Podcast, Ep 185, Sept 2023") |
+| **Mixing opinion with facts** | "Stripe's product strategy is great because..." | Document *what* they do, not whether it's "good"; save analysis for Key Takeaways |
+| **Outdated information** | Using 5-year-old quotes or strategies | Prioritize sources from the last 12-24 months |
+| **Ignoring negative signals** | Only documenting successes | Include anticipated challenges and competitive threats |
 
 ---
 
@@ -377,9 +315,3 @@ Mini example excerpt:
 ### Provenance
 - Adapted from `prompts/company-profile-executive-insights-research.md` in the `https://github.com/deanpeters/product-manager-prompts` repo.
 
----
-
-**Skill type:** Component
-**Suggested filename:** `company-research.md`
-**Suggested placement:** `/skills/components/`
-**Dependencies:** References `skills/positioning-statement/SKILL.md`, `skills/pestel-analysis/SKILL.md`

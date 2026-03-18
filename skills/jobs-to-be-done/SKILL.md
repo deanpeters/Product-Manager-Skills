@@ -10,8 +10,6 @@ type: component
 ## Purpose
 Systematically explore what customers are trying to accomplish (functional, social, emotional jobs), the pains they experience, and the gains they seek. Use this framework to uncover unmet needs, validate product ideas, and ensure your solution addresses real motivations—not just surface-level feature requests.
 
-This is not a survey—it's a structured lens for understanding *why* customers "hire" your product and what would make them "fire" it.
-
 ## Key Concepts
 
 ### The Jobs-to-be-Done Framework
@@ -33,32 +31,6 @@ Influenced by Clayton Christensen and the Value Proposition Canvas (Osterwalder)
 - **Savings:** Time, money, or effort reductions that delight
 - **Adoption factors:** What increases likelihood of switching
 - **Life improvement:** How a solution makes life easier or more enjoyable
-
-### Why This Structure Works
-- **Separates job from solution:** "Communicate with my team" (job) ≠ "email" (solution)
-- **Reveals underlying motivations:** Functional job may be "track expenses," but emotional job is "feel in control of finances"
-- **Surfaces competition you didn't see:** Customers "hire" non-obvious alternatives (pen and paper, spreadsheets, workarounds)
-- **Prioritizes by intensity:** Not all pains are equal—focus on the most acute
-
-### Anti-Patterns (What This Is NOT)
-- **Not a feature wishlist:** "I want AI, automation, and dashboards" is not a job
-- **Not demographics:** "Millennials want mobile-first" is a persona trait, not a job
-- **Not generic:** "Be more productive" is too vague—dig into *which* tasks and *why*
-- **Not one-dimensional:** Focusing only on functional jobs misses social/emotional motivations
-
-### When to Use This
-- Early-stage discovery (before you know the solution)
-- Validating product-market fit (does your solution address the right jobs?)
-- Prioritizing roadmap (which jobs are most painful/important?)
-- Competitive analysis (what are customers "hiring" competitors for?)
-- Marketing messaging (speak to jobs, not features)
-
-### When NOT to Use This
-- After you've already built the product (too late for discovery)
-- For trivial features (don't over-analyze small tweaks)
-- As a substitute for quantitative validation (JTBD informs hypotheses; data validates them)
-
----
 
 ## Application
 
@@ -298,48 +270,13 @@ Mini example excerpt:
 
 ## Common Pitfalls
 
-### Pitfall 1: Confusing Jobs with Solutions
-**Symptom:** "I need to use Slack" or "I need AI-powered analytics"
-
-**Consequence:** You've anchored on a solution, not the underlying job.
-
-**Fix:** Ask "Why?" 5 times. "I need Slack" → "Why?" → "To communicate with my team" → "Why?" → "To get quick answers" → "Why?" → "To avoid project delays."
-
----
-
-### Pitfall 2: Generic Jobs
-**Symptom:** "Be more productive" or "Save time"
-
-**Consequence:** Too vague to inform product decisions.
-
-**Fix:** Get specific. "Save time" → "Reduce time spent generating monthly reports from 8 hours to 1 hour."
-
----
-
-### Pitfall 3: Ignoring Social/Emotional Jobs
-**Symptom:** Only documenting functional jobs
-
-**Consequence:** You miss powerful motivators. People often buy based on emotional/social needs, not just functional.
-
-**Fix:** Explicitly ask about perception and emotions in interviews. "How would solving this make you feel?" "Who would notice if you solved this?"
-
----
-
-### Pitfall 4: Fabricating JTBD Without Research
-**Symptom:** Filling out the template based on assumptions
-
-**Consequence:** You're guessing. JTBD analysis is only valuable if grounded in real customer insights.
-
-**Fix:** Conduct "switch interviews" (ask why they switched from a previous solution), contextual inquiries, or problem validation interviews.
-
----
-
-### Pitfall 5: Treating All Pains as Equal
-**Symptom:** Listing 20 pains without prioritization
-
-**Consequence:** No clarity on what to solve first.
-
-**Fix:** Rank pains by intensity (acute vs. mild). Ask "If we only solved one pain, which would have the biggest impact?"
+| Pitfall | Symptom | Fix |
+|---------|---------|-----|
+| **Confusing jobs with solutions** | "I need Slack" or "I need AI analytics" | Ask "Why?" 5 times until you reach the underlying job |
+| **Generic jobs** | "Be more productive" or "Save time" | Get specific: "Reduce monthly report generation from 8 hours to 1 hour" |
+| **Ignoring social/emotional jobs** | Only documenting functional jobs | Ask "How would solving this make you feel?" and "Who would notice?" |
+| **Fabricating JTBD without research** | Filling template based on assumptions | Conduct switch interviews, contextual inquiries, or problem validation interviews |
+| **Treating all pains as equal** | Listing 20 pains without prioritization | Rank by intensity: "If we only solved one pain, which has the biggest impact?" |
 
 ---
 
@@ -361,10 +298,3 @@ Mini example excerpt:
 ### Provenance
 - Adapted from `prompts/jobs-to-be-done.md` in the `https://github.com/deanpeters/product-manager-prompts` repo.
 
----
-
-**Skill type:** Component
-**Suggested filename:** `jobs-to-be-done.md`
-**Suggested placement:** `/skills/components/`
-**Dependencies:** References `skills/proto-persona/SKILL.md`
-**Used by:** `skills/positioning-statement/SKILL.md`, `skills/problem-statement/SKILL.md`, `skills/epic-hypothesis/SKILL.md`

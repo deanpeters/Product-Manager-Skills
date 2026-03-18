@@ -10,8 +10,6 @@ type: component
 ## Purpose
 Frame epics as testable hypotheses using an if/then structure that articulates the action or solution, the target beneficiary, the expected outcome, and how you'll validate success. Use this to manage uncertainty in product development by making assumptions explicit, defining lightweight experiments ("tiny acts of discovery"), and establishing measurable success criteria before committing to full build-out.
 
-This is not a requirements spec—it's a hypothesis you're testing, not a feature you're committed to shipping.
-
 ## Key Concepts
 
 ### The Epic Hypothesis Framework
@@ -35,29 +33,11 @@ Inspired by Tim Herbig's Lean UX hypothesis format, the structure is:
   - [Qualitative measurable outcome]
   - [Add more as necessary]
 
-### Why This Structure Works
-- **Hypothesis-driven:** Forces you to state what you believe (and could be wrong about)
-- **Outcome-focused:** "Then we will" emphasizes user benefit, not feature output
-- **Experiment-first:** Encourages lightweight validation before full build
-- **Falsifiable:** Clear success criteria make it possible to kill bad ideas early
-- **Risk management:** Treats epics as bets, not commitments
-
 ### Anti-Patterns (What This Is NOT)
 - **Not a feature spec:** "Build a dashboard with 5 charts" is a feature, not a hypothesis
 - **Not a guaranteed commitment:** Hypotheses can (and should) be invalidated
 - **Not output-focused:** "Ship feature X by Q2" misses the point—did it achieve the outcome?
 - **Not experiment-free:** If you skip experiments and go straight to build, you're not testing a hypothesis
-
-### When to Use This
-- Early-stage feature exploration (before committing to full roadmap)
-- Validating product-market fit for new capabilities
-- Prioritizing backlog (epics with validated hypotheses get higher priority)
-- Managing stakeholder expectations (frame work as experiments, not promises)
-
-### When NOT to Use This
-- For well-validated features (if you've already proven demand, skip straight to user stories)
-- For trivial features (don't over-engineer small tweaks)
-- When experiments aren't feasible (rare, but sometimes you must commit before testing)
 
 ---
 
@@ -202,48 +182,13 @@ Mini example excerpt:
 
 ## Common Pitfalls
 
-### Pitfall 1: Hypothesis is a Feature, Not an Outcome
-**Symptom:** "If we build a dashboard, then we will have a dashboard"
-
-**Consequence:** You're describing output, not outcome. This doesn't test anything.
-
-**Fix:** Focus on the user outcome: "If we build a dashboard showing real-time task status, then PMs will spend 50% less time asking for status updates."
-
----
-
-### Pitfall 2: Skipping Experiments
-**Symptom:** "We'll test our assumption by building the full feature"
-
-**Consequence:** You've committed to building before validating. Not a hypothesis—it's a feature commitment.
-
-**Fix:** Design lightweight experiments (prototypes, concierge tests, landing pages) that take days/weeks, not months.
-
----
-
-### Pitfall 3: Vague Validation Measures
-**Symptom:** "We know it's valid if users are happy"
-
-**Consequence:** Success criteria are subjective and unmeasurable.
-
-**Fix:** Define specific, falsifiable metrics: "80% of surveyed users rate the feature 4+ out of 5" or "Response time drops by 50%."
-
----
-
-### Pitfall 4: Unrealistic Timeframes
-**Symptom:** "We know it's valid if within 6 months revenue increases"
-
-**Consequence:** Too slow to inform decisions. By then, you've already built it.
-
-**Fix:** Aim for 2-4 week validation cycles. If you can't measure in that timeframe, choose a leading indicator (e.g., activation rate, not annual revenue).
-
----
-
-### Pitfall 5: Treating Epics as Commitments
-**Symptom:** "We already told the CEO we're shipping this, so we have to validate it"
-
-**Consequence:** Experiments are theater—you're going to build it regardless of results.
-
-**Fix:** Frame epics as hypotheses *before* making commitments. If stakeholders need certainty, explain the risk of building unvalidated features.
+| Pitfall | Symptom | Fix |
+|---------|---------|-----|
+| Hypothesis is a feature, not an outcome | "If we build a dashboard, then we will have a dashboard" | Focus on user outcome: "PMs will spend 50% less time asking for status updates" |
+| Skipping experiments | "We'll test our assumption by building the full feature" | Design lightweight experiments (prototypes, concierge tests) that take days/weeks, not months |
+| Vague validation measures | "We know it's valid if users are happy" | Define specific, falsifiable metrics: "80% rate it 4+ out of 5" or "Response time drops by 50%" |
+| Unrealistic timeframes | "We know it's valid if within 6 months revenue increases" | Aim for 2-4 week validation cycles. Use leading indicators (activation rate, not annual revenue) |
+| Treating epics as commitments | "We already told the CEO we're shipping this" | Frame epics as hypotheses *before* making commitments |
 
 ---
 

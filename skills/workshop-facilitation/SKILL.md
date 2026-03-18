@@ -75,12 +75,15 @@ Provide the canonical facilitation pattern for interactive skills: one step at a
 **Facilitator:** "Great. We’ll run Context Design first, with Team-AI Facilitation in parallel."
 
 ## Common Pitfalls
-- Asking multiple questions in the same turn.
-- Offering recommendations after every answer (creates interaction drag).
-- Using shorthand labels without plain-language questions.
-- Hiding progress, so users don't know how much remains.
-- Ignoring the user's chosen option or custom direction.
-- Failing to label assumptions when running in best-guess mode.
+
+| Pitfall | Consequence |
+|---------|-------------|
+| Asking multiple questions in the same turn | Overwhelms user, breaks one-step flow |
+| Offering recommendations after every answer | Creates interaction drag |
+| Using shorthand labels without plain-language questions | Confuses users unfamiliar with internal terms |
+| Hiding progress | Users don't know how much remains |
+| Ignoring the user's chosen option or custom direction | Breaks trust and flow |
+| Failing to label assumptions in best-guess mode | User can't validate inferred context |
 
 ## References
 - Use as the source of truth for interactive facilitation behavior.

@@ -10,8 +10,6 @@ type: component
 ## Purpose
 Articulate a problem from the user's perspective using an empathy-driven framework that captures who they are, what they're trying to do, what's blocking them, why, and how it makes them feel. Use this to align stakeholders on the problem before jumping to solutions, and to frame product work around user outcomes rather than feature requests.
 
-This is not a requirements doc—it's a human-centered problem narrative that ensures you're solving a problem worth solving.
-
 ## Key Concepts
 
 ### The Problem Framing Framework
@@ -30,30 +28,11 @@ Based on Jobs-to-be-Done and empathy mapping, the framework structures problems 
 **Final Problem Statement:**
 - [Single, concise, empathetic summary]
 
-### Why This Structure Works
-- **Persona-centric:** Forces you to see the problem through the user's eyes
-- **Outcome-focused:** "Trying to" emphasizes desired results, not tasks
-- **Root cause analysis:** "Because" pushes past symptoms to underlying issues
-- **Emotional validation:** "Makes me feel" humanizes the problem and builds empathy
-- **Contextual:** Constraints acknowledge real-world limitations
-
 ### Anti-Patterns (What This Is NOT)
 - **Not a solution in disguise:** "The problem is we lack AI-powered analytics" = sneaking in a solution
 - **Not a business problem:** "Our revenue is down" isn't a user problem (it's a symptom)
 - **Not a feature request:** "Users need a dashboard" isn't a problem (what are they trying to do?)
 - **Not generic:** "Users want better UX" is too vague to be actionable
-
-### When to Use This
-- Kicking off discovery or problem validation work
-- Aligning stakeholders before solutioning
-- Socializing a problem with engineering, design, or exec teams
-- When you have feature requests but unclear underlying problems
-- Pitching why a problem is worth solving
-
-### When NOT to Use This
-- When you haven't done any user research yet (don't guess—interview first)
-- For internal operational problems (this is for user-facing problems)
-- As a substitute for a PRD (this frames the problem; PRD defines the solution)
 
 ---
 
@@ -174,48 +153,13 @@ Mini example excerpt:
 
 ## Common Pitfalls
 
-### Pitfall 1: Solution Smuggling
-**Symptom:** "The problem is we don't have [specific feature]"
-
-**Consequence:** You've predetermined the solution without validating the problem.
-
-**Fix:** Reframe around the user's desired outcome, not the feature. Ask "What are they trying to achieve?"
-
----
-
-### Pitfall 2: Business Problem Disguised as User Problem
-**Symptom:** "Users want to increase our revenue" or "The problem is our churn rate"
-
-**Consequence:** These are company problems, not user problems. Users don't care about your metrics.
-
-**Fix:** Dig into *why* users churn or *what* would make them spend more. Frame it from their perspective.
-
----
-
-### Pitfall 3: Generic Personas
-**Symptom:** "I am a busy professional trying to be more productive"
-
-**Consequence:** Too broad to be actionable. Every product claims to help "busy professionals."
-
-**Fix:** Get specific. "I am a sales rep managing 50+ leads manually in spreadsheets, trying to prioritize follow-ups without missing high-value opportunities."
-
----
-
-### Pitfall 4: Symptom Instead of Root Cause
-**Symptom:** "Because the UI is confusing"
-
-**Consequence:** You're describing a symptom, not the underlying issue.
-
-**Fix:** Ask "Why is the UI confusing?" Keep asking "why" until you hit the root cause (e.g., "Because users have no mental model for how the system works").
-
----
-
-### Pitfall 5: Fabricated Emotions
-**Symptom:** "Which makes me feel empowered and delighted"
-
-**Consequence:** These sound like marketing copy, not real user emotions.
-
-**Fix:** Use actual quotes from user interviews. Real emotions: "frustrated," "overwhelmed," "anxious," "stuck."
+| Pitfall | Symptom | Fix |
+|---------|---------|-----|
+| Solution smuggling | "The problem is we don't have [specific feature]" | Reframe around the user's desired outcome. Ask "What are they trying to achieve?" |
+| Business problem disguised as user problem | "Users want to increase our revenue" or "The problem is our churn rate" | Dig into *why* users churn. Frame from their perspective, not your metrics. |
+| Generic personas | "I am a busy professional trying to be more productive" | Get specific: "I am a sales rep managing 50+ leads in spreadsheets" |
+| Symptom instead of root cause | "Because the UI is confusing" | Keep asking "why" until you hit root cause (e.g., "users have no mental model for how the system works") |
+| Fabricated emotions | "Which makes me feel empowered and delighted" | Use actual quotes from user interviews. Real emotions: "frustrated," "overwhelmed," "stuck" |
 
 ---
 

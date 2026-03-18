@@ -18,13 +18,7 @@ scenarios:
 ## Purpose
 Guide product managers through creating a customer journey map by asking adaptive questions about the actor (persona), scenario/goal, journey phases, actions/emotions, and opportunities for improvement. Use this to visualize the end-to-end customer experience, identify pain points, and create a shared mental model across teams—avoiding surface-level feature lists and ensuring discovery work focuses on real customer problems, not assumed solutions.
 
-This is not a feature roadmap—it's a discovery and alignment tool that uncovers where the experience breaks down and where improvements will have the greatest impact.
-
 ## Key Concepts
-
-### What is a Customer Journey Map?
-
-A journey map (NNGroup) visualizes "the process that a person goes through in order to accomplish a goal." It compiles user actions into a timeline, enriched with thoughts and emotions to create a narrative, then condenses and polishes into a visual artifact.
 
 ### Five Key Components (NNGroup Framework)
 
@@ -48,28 +42,6 @@ Emotions: 😊😐😞    Emotions:        Emotions:       Emotions:       Emoti
    ↓                  ↓                ↓               ↓               ↓
 Opportunities:     Opportunities:   Opportunities:  Opportunities:  Opportunities:
 ```
-
-### Why This Works
-- **Forces conversation:** Teams align on shared understanding of customer experience
-- **Reveals pain points:** Emotions + actions highlight where experience breaks down
-- **Prioritizes improvements:** Opportunities ranked by impact guide roadmap decisions
-- **Human-centered:** Focuses on customer perspective, not internal processes
-
-### Anti-Patterns (What This Is NOT)
-- **Not a service blueprint:** Journey maps focus on customer perspective; service blueprints map internal operations
-- **Not a user story map:** Journey maps support discovery; user story maps facilitate implementation planning
-- **Not an experience map:** Journey maps target specific users and products; experience maps explore broader human behaviors
-
-### When to Use This
-- Starting customer discovery (understanding current experience)
-- Identifying pain points for retention/engagement initiatives
-- Aligning cross-functional teams on customer perspective
-- Prioritizing which problems to solve first
-
-### When NOT to Use This
-- When you already understand the customer journey deeply
-- For technical refactoring (no customer-facing journey)
-- As a substitute for user research (maps require research input)
 
 ---
 
@@ -419,11 +391,6 @@ Pain Points:
 2. Simplify terminology (MEDIUM — affects understanding)
 3. Reduce required form fields (MEDIUM — affects completion rate)
 
-**Why this works:**
-- Emotions + actions reveal pain points clearly
-- Opportunities tied to specific phases
-- Evidence from research (drop-off data, support tickets)
-
 ---
 
 ### Example 2: Bad Journey Map (Too Generic)
@@ -440,62 +407,19 @@ Pain Points:
 **Emotions:**
 - Happy 😊
 
-**Why this fails:**
-- No specificity (what tasks? which features?)
-- No pain points identified (everything is "good")
-- Can't extract actionable opportunities
-
-**Fix:**
-- Get specific: "User creates invoice → sends to client → tracks payment status"
-- Include real customer quotes: "I wish I could bulk-send invoices"
-- Show emotional highs AND lows (not just happy)
+**Fix:** Get specific ("User creates invoice → sends to client → tracks payment status"), include real customer quotes, and show emotional highs AND lows.
 
 ---
 
 ## Common Pitfalls
 
-### Pitfall 1: Mapping Internal Process, Not Customer Experience
-**Symptom:** Journey phases = "Lead generated → Qualified → Demo scheduled → Deal closed"
-
-**Consequence:** Focuses on sales process, not customer perspective
-
-**Fix:** Map from customer POV: "Discovers problem → Researches solutions → Tries product → Adopts"
-
----
-
-### Pitfall 2: No Emotions or Pain Points
-**Symptom:** Journey map lists actions only, no thoughts/emotions
-
-**Consequence:** Misses the point—can't identify where experience breaks down
-
-**Fix:** Add customer quotes, emotional states (frustrated, delighted, confused)
-
----
-
-### Pitfall 3: Too Many Personas in One Map
-**Symptom:** Trying to map "all users" in a single journey
-
-**Consequence:** Loses focus, becomes generic
-
-**Fix:** One map per persona. If multiple personas, create separate maps.
-
----
-
-### Pitfall 4: Opportunities Aren't Prioritized
-**Symptom:** List 20 opportunities with no ranking
-
-**Consequence:** Team paralyzed, doesn't know where to start
-
-**Fix:** Rank by impact (HIGH/MEDIUM/LOW) based on evidence and emotional intensity
-
----
-
-### Pitfall 5: Map Created in Isolation
-**Symptom:** PM creates journey map alone, doesn't involve team
-
-**Consequence:** No shared mental model, map doesn't drive decisions
-
-**Fix:** Facilitate workshop with cross-functional team (PM, design, engineering, support)
+| Pitfall | Symptom | Fix |
+|---------|---------|-----|
+| Mapping Internal Process | Phases = "Lead generated → Qualified → Demo → Closed" | Map from customer POV: "Discovers → Researches → Tries → Adopts" |
+| No Emotions or Pain Points | Journey lists actions only | Add customer quotes, emotional states (frustrated, delighted, confused) |
+| Too Many Personas | Trying to map "all users" in one journey | One map per persona. Create separate maps for each |
+| Opportunities Not Prioritized | 20 opportunities with no ranking | Rank by impact (HIGH/MEDIUM/LOW) based on evidence and emotional intensity |
+| Map Created in Isolation | PM creates journey map alone | Facilitate workshop with cross-functional team |
 
 ---
 
@@ -515,9 +439,3 @@ Pain Points:
 ### Dean's Work
 - [If Dean has journey mapping resources, link here]
 
----
-
-**Skill type:** Interactive
-**Suggested filename:** `customer-journey-mapping-workshop.md`
-**Suggested placement:** `/skills/interactive/`
-**Dependencies:** Uses `customer-journey-map.md`, `proto-persona.md`, `problem-statement.md`, `jobs-to-be-done.md`

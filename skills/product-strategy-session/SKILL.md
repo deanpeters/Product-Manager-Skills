@@ -7,45 +7,7 @@ type: workflow
 ---
 
 
-## Purpose
-Guide product managers through a comprehensive product strategy session by orchestrating positioning, problem framing, customer discovery, and roadmap planning skills into a cohesive end-to-end process. Use this to move from vague strategic direction to concrete, validated product strategy with clear positioning, target customers, problem statements, and prioritized roadmap—ensuring alignment across stakeholders before committing to execution.
-
-This is not a one-time workshop—it's a repeatable process for establishing or refreshing product strategy, typically spanning 2-4 weeks with multiple touchpoints.
-
 ## Key Concepts
-
-### What is a Product Strategy Session?
-
-A product strategy session is a structured, multi-phase process that takes a product from strategic ambiguity to validated direction. It orchestrates:
-
-1. **Positioning & Market Context** — Define who you serve, what problem you solve, and how you're differentiated
-2. **Problem Discovery & Validation** — Frame and validate customer problems through research
-3. **Solution Exploration** — Generate opportunity solutions and prioritize based on impact
-4. **Roadmap Planning** — Sequence epics and releases based on strategy
-
-### Why This Works
-- **Structured discovery:** Prevents jumping to solutions before understanding problems
-- **Stakeholder alignment:** Creates shared mental model across exec, product, design, engineering
-- **Validated strategy:** Tests assumptions before committing resources
-- **Executable roadmap:** Connects high-level strategy to concrete work
-
-### Anti-Patterns (What This Is NOT)
-- **Not a feature brainstorm:** Strategy sessions frame problems, not just list features
-- **Not waterfall planning:** Builds in feedback loops and iteration
-- **Not a solo PM exercise:** Requires cross-functional participation
-
-### When to Use This
-- Launching a new product or major initiative
-- Annual/quarterly strategic planning cycles
-- Repositioning an existing product
-- Onboarding new product leaders (align on strategy)
-
-### When NOT to Use This
-- When strategy is already clear and validated
-- For tactical feature additions (no strategic shift needed)
-- When you lack executive sponsorship (strategy won't stick)
-
----
 
 ### Facilitation Source of Truth
 
@@ -332,48 +294,13 @@ Mini example excerpt:
 
 ## Common Pitfalls
 
-### Pitfall 1: Skipping Problem Validation
-**Symptom:** Jump from positioning to solution exploration without validating problem
-
-**Consequence:** Build solutions to unvalidated problems
-
-**Fix:** Force decision point after Phase 2: "Is problem validated?" If NO, run discovery interviews.
-
----
-
-### Pitfall 2: Solo PM Exercise
-**Symptom:** PM runs strategy session alone, presents finished strategy to team
-
-**Consequence:** No buy-in, team doesn't understand rationale
-
-**Fix:** Include cross-functional participants in workshops (design, eng, sales, CS)
-
----
-
-### Pitfall 3: Strategy Session Without Executive Sponsorship
-**Symptom:** Run full strategy session, execs don't show up for Phase 5 alignment
-
-**Consequence:** Strategy doesn't get resourced or prioritized
-
-**Fix:** Secure exec commitment upfront; schedule Phase 5 presentation before starting.
-
----
-
-### Pitfall 4: No Decision Points (Run All Phases Regardless)
-**Symptom:** Blindly follow all 6 phases without checking if discovery/experiments are needed
-
-**Consequence:** Waste time on low-uncertainty activities
-
-**Fix:** Use decision points after Phase 2 and Phase 3 to adapt workflow.
-
----
-
-### Pitfall 5: Strategy Session Becomes Permanent Process
-**Symptom:** Team spends 6 weeks in strategy mode, never executes
-
-**Consequence:** Analysis paralysis, no delivery
-
-**Fix:** Time-box strategy session to 2-4 weeks; after Phase 6, move to execution.
+| Pitfall | Symptom | Fix |
+|---------|---------|-----|
+| Skipping problem validation | Jump from positioning to solutions without validating | Force decision point after Phase 2 — run discovery interviews if needed |
+| Solo PM exercise | PM runs session alone, presents finished strategy | Include cross-functional participants in workshops (design, eng, sales, CS) |
+| No executive sponsorship | Execs don't show up for Phase 5 alignment | Secure exec commitment upfront; schedule Phase 5 presentation before starting |
+| No decision points | Blindly follow all 6 phases regardless of uncertainty | Use decision points after Phase 2 and Phase 3 to adapt workflow |
+| Permanent strategy mode | Team spends 6 weeks in strategy, never executes | Time-box to 2-4 weeks; after Phase 6, move to execution |
 
 ---
 
@@ -418,9 +345,3 @@ Mini example excerpt:
 - Productside Blueprint — Strategic product discovery
 - [If Dean has strategy session resources, link here]
 
----
-
-**Skill type:** Workflow
-**Suggested filename:** `product-strategy-session.md`
-**Suggested placement:** `/skills/workflows/`
-**Dependencies:** Orchestrates 15+ component and interactive skills across 6 phases

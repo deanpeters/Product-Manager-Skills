@@ -10,8 +10,6 @@ type: component
 ## Purpose
 Break down large user stories, epics, or features into smaller, independently deliverable stories using systematic splitting patterns. Use this to make work more manageable, reduce risk, enable faster feedback cycles, and maintain flow in agile development. This skill applies to user stories, epics, and any work that's too large to complete in a single sprint.
 
-This is not arbitrary slicing—it's strategic decomposition that preserves user value while reducing complexity.
-
 ## Key Concepts
 
 ### The Story Splitting Framework
@@ -26,29 +24,10 @@ Based on Richard Lawrence and Peter Green's "Humanizing Work Guide to Splitting 
 7. **DevOps steps:** Split by deployment or infrastructure requirements
 8. **Tiny Acts of Discovery (TADs):** When none of the above apply, use small experiments to unpack unknowns
 
-### Why Split Stories?
-- **Faster feedback:** Smaller stories ship sooner, allowing earlier validation
-- **Reduced risk:** Less to build = less that can go wrong
-- **Better estimation:** Small stories are easier to estimate accurately
-- **Maintain flow:** Keeps work moving through the sprint without bottlenecks
-- **Testability:** Smaller scope = easier to write and run tests
-
 ### Anti-Patterns (What This Is NOT)
 - **Not horizontal slicing:** Don't split into "front-end story" and "back-end story" (each story should deliver user value)
 - **Not task decomposition:** Stories aren't tasks ("Set up database," "Write API")
 - **Not arbitrary chopping:** Don't split "Add user management" into "Add user" and "Management" (meaningless)
-
-### When to Use This
-- Story is too large for a single sprint
-- Multiple "When" or "Then" statements in acceptance criteria
-- Epic needs to be broken down into deliverable increments
-- Team can't reach consensus on story size or scope
-- Story has multiple personas or workflows bundled together
-
-### When NOT to Use This
-- Story is already small and well-scoped (don't over-split)
-- Splitting would create dependencies that slow delivery
-- The story is a technical task (use engineering task breakdown instead)
 
 ---
 
@@ -231,48 +210,13 @@ As a team admin, I want to manage team members so that I can control access.
 
 ## Common Pitfalls
 
-### Pitfall 1: Horizontal Slicing (Technical Layers)
-**Symptom:** "Story 1: Build the API. Story 2: Build the UI."
-
-**Consequence:** Neither story delivers user value independently.
-
-**Fix:** Split vertically—each story should include front-end + back-end work to deliver a complete user-facing capability.
-
----
-
-### Pitfall 2: Over-Splitting
-**Symptom:** "Story 1: Add button. Story 2: Wire button to API. Story 3: Display result."
-
-**Consequence:** Creates unnecessary overhead and dependencies.
-
-**Fix:** Only split when the story is too large. A 2-day story doesn't need splitting.
-
----
-
-### Pitfall 3: Meaningless Splits
-**Symptom:** "Story 1: First half of feature. Story 2: Second half of feature."
-
-**Consequence:** Arbitrary splits that don't map to user value or workflow.
-
-**Fix:** Use one of the 8 splitting patterns—each split should have a clear rationale.
-
----
-
-### Pitfall 4: Creating Hard Dependencies
-**Symptom:** "Story 2 can't start until Story 1 is 100% done, tested, and deployed."
-
-**Consequence:** No parallelization, slows delivery.
-
-**Fix:** Split in a way that allows independent development. If dependencies are unavoidable, prioritize Story 1.
-
----
-
-### Pitfall 5: Ignoring the "So That"
-**Symptom:** Split stories have the same "so that" statement.
-
-**Consequence:** You've split the action but not the outcome—likely a task decomposition, not a story split.
-
-**Fix:** Ensure each split has a distinct user outcome. If not, reconsider the split pattern.
+| Pitfall | Symptom | Fix |
+|---------|---------|-----|
+| Horizontal slicing | "Story 1: Build the API. Story 2: Build the UI." | Split vertically — each story delivers a complete user-facing capability |
+| Over-splitting | "Story 1: Add button. Story 2: Wire button to API." | Only split when the story is too large. A 2-day story doesn't need splitting. |
+| Meaningless splits | "Story 1: First half. Story 2: Second half." | Use one of the 8 splitting patterns — each split needs a clear rationale |
+| Creating hard dependencies | "Story 2 can't start until Story 1 is done, tested, and deployed" | Split to allow independent development. If unavoidable, prioritize Story 1. |
+| Ignoring the "so that" | Split stories share the same "so that" statement | Ensure each split has a distinct user outcome. If not, reconsider the split pattern. |
 
 ---
 

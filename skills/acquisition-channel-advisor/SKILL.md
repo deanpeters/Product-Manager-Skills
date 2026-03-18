@@ -19,8 +19,6 @@ scenarios:
 
 Guide product managers through evaluating whether to scale, test, or kill an acquisition channel based on unit economics (CAC, LTV, payback), customer quality (retention, NRR), and scalability (magic number, volume potential). Use this to make data-driven go-to-market decisions and optimize channel mix for sustainable growth.
 
-This is not a channel strategy framework—it's a financial lens for channel evaluation that helps you avoid scaling unprofitable channels or killing channels with fixable problems. Use when deciding how to allocate marketing budget across channels.
-
 ## Key Concepts
 
 ### The Channel Evaluation Framework
@@ -57,30 +55,6 @@ A systematic approach to evaluate acquisition channels:
 | >3:1 | <12mo | Good retention | High volume | **Scale aggressively** |
 | 2-3:1 | 12-18mo | Average retention | Medium volume | **Test & optimize** |
 | <2:1 | >18mo | Poor retention | Low volume | **Kill or fix** |
-
-### Anti-Patterns (What This Is NOT)
-
-- **Not vanity metrics:** "We got 10,000 signups!" means nothing if they churn in 30 days
-- **Not CAC-only thinking:** Low CAC with terrible retention is worse than high CAC with great retention
-- **Not ignoring payback:** 5:1 LTV:CAC with 36-month payback is a cash trap
-- **Not scaling broken channels:** Pouring money into inefficient channels accelerates failure
-
-### When to Use This Framework
-
-**Use this when:**
-- Evaluating whether to scale a new channel (content, paid, events, etc.)
-- Deciding how to allocate marketing budget across channels
-- Assessing whether to kill an underperforming channel
-- Comparing channels to optimize ROI
-- Planning annual marketing budget allocation
-
-**Don't use this when:**
-- Channel is brand-new (<3 months, <100 customers) — not enough data
-- You're testing channel fit (this is for evaluation, not experimentation)
-- Strategic channels (e.g., enterprises require field sales regardless of CAC)
-- You don't have channel-level data (need to track CAC, retention by source)
-
----
 
 ### Facilitation Source of Truth
 
@@ -533,93 +507,18 @@ See `examples/` folder for sample conversation flows. Mini examples below:
 
 ## Common Pitfalls
 
-### Pitfall 1: Scaling Broken Channels
-**Symptom:** "Let's 10x our Google Ads spend!" (LTV:CAC is 1.5:1)
-
-**Consequence:** You accelerate cash burn without improving unit economics. Lose money faster.
-
-**Fix:** Only scale channels with LTV:CAC >3:1 and payback <12 months. Fix broken channels before scaling.
-
----
-
-### Pitfall 2: Ignoring Customer Quality
-**Symptom:** "CAC is only $100!" (but customers churn in 30 days)
-
-**Consequence:** Low CAC means nothing if LTV is also low. You're acquiring churners, not customers.
-
-**Fix:** Track cohort retention and NRR by channel. Low CAC + high churn = bad channel.
-
----
-
-### Pitfall 3: Celebrating Vanity Metrics
-**Symptom:** "We got 10,000 signups from this campaign!" (5% convert to paid)
-
-**Consequence:** Signups don't pay bills. CAC is calculated on paid customers, not signups.
-
-**Fix:** Track CAC on paid customers only. Ignore vanity metrics like signups, impressions, clicks.
-
----
-
-### Pitfall 4: Averaging Across Channels
-**Symptom:** "Blended CAC is $500" (but hiding that one channel is $10K CAC)
-
-**Consequence:** Bad channels hide in blended metrics. You don't know which channels to kill.
-
-**Fix:** Track CAC, LTV, payback by channel. Compare channels individually.
-
----
-
-### Pitfall 5: Short-Term CAC Optimization
-**Symptom:** "We reduced CAC 50%!" (by targeting low-intent, low-LTV customers)
-
-**Consequence:** CAC dropped but so did LTV. Unit economics got worse, not better.
-
-**Fix:** Optimize for LTV:CAC ratio, not CAC alone. Higher CAC with higher LTV is better.
-
----
-
-### Pitfall 6: Ignoring Payback Period
-**Symptom:** "LTV:CAC is 6:1, this channel is amazing!" (payback is 48 months)
-
-**Consequence:** You run out of cash before recovering CAC. Great ratio, terrible cash flow.
-
-**Fix:** Pair LTV:CAC with payback period. 3:1 with 8-month payback beats 6:1 with 36-month payback.
-
----
-
-### Pitfall 7: Killing Channels Too Early
-**Symptom:** "This channel didn't work after 2 weeks"
-
-**Consequence:** Channels need time to optimize. Killing too early wastes learning.
-
-**Fix:** Give channels 3-6 months and 100+ customers before evaluating. Track trends, not snapshots.
-
----
-
-### Pitfall 8: Over-Relying on One Channel
-**Symptom:** "90% of our customers come from Google Ads"
-
-**Consequence:** Algorithm change, competitor outbids you, channel saturates = business grinds to halt.
-
-**Fix:** Diversify channels. No single channel should be >50% of new customer acquisition.
-
----
-
-### Pitfall 9: Forgetting Incrementality
-**Symptom:** "This retargeting campaign has great ROI!" (but customers would've converted anyway)
-
-**Consequence:** You're paying for conversions that would happen organically. Inflated ROI.
-
-**Fix:** Test incrementality with holdout groups. Only count truly incremental conversions.
-
----
-
-### Pitfall 10: Strategic Channels Without Limits
-**Symptom:** "Enterprise events are strategic, we can't stop!" (losing $500K/year)
-
-**Consequence:** "Strategic" becomes an excuse for burning cash indefinitely.
-
-**Fix:** Cap spend on strategic channels. Set timeline for improvement (6-12 months). If no progress, kill.
+| Pitfall | Symptom | Fix |
+|---------|---------|-----|
+| **Scaling broken channels** | "10x Google Ads spend!" (LTV:CAC 1.5:1) | Only scale channels with LTV:CAC >3:1 and payback <12 months |
+| **Ignoring customer quality** | "CAC is only $100!" (customers churn in 30 days) | Track cohort retention and NRR by channel |
+| **Celebrating vanity metrics** | "10,000 signups!" (5% convert to paid) | Track CAC on paid customers only |
+| **Averaging across channels** | "Blended CAC is $500" (hiding $10K channel) | Track CAC, LTV, payback per channel individually |
+| **Short-term CAC optimization** | "Reduced CAC 50%!" (targeting low-LTV customers) | Optimize for LTV:CAC ratio, not CAC alone |
+| **Ignoring payback period** | "LTV:CAC is 6:1!" (payback is 48 months) | Pair LTV:CAC with payback; 3:1 at 8-month beats 6:1 at 36-month |
+| **Killing channels too early** | "Didn't work after 2 weeks" | Give 3-6 months and 100+ customers before evaluating |
+| **Over-relying on one channel** | "90% of customers from Google Ads" | Diversify; no single channel >50% of acquisition |
+| **Forgetting incrementality** | "Retargeting has great ROI!" (organic converts) | Test incrementality with holdout groups |
+| **Strategic channels without limits** | "Events are strategic, can't stop!" (losing $500K/yr) | Cap spend; set 6-12 month improvement timeline |
 
 ---
 

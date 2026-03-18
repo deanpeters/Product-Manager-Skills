@@ -19,8 +19,6 @@ estimated_time: "20-30 min"
 ## Purpose
 Create a comprehensive customer journey map that visualizes how customers interact with your brand across all stages—from awareness to loyalty—documenting their actions, touchpoints, emotions, KPIs, business goals, and teams involved at each stage. Use this to identify pain points, align cross-functional teams, and systematically improve the customer experience to achieve business objectives.
 
-This is not a user flow diagram—it's a strategic artifact that combines customer empathy with business metrics to drive actionable improvements.
-
 ## Key Concepts
 
 ### The Customer Journey Mapping Framework
@@ -40,30 +38,6 @@ Adapted from NNGroup's framework and Carnegie Mellon's PM curriculum, a customer
 - **KPIs:** Metrics to measure success
 - **Business Goals:** What you're trying to achieve
 - **Teams Involved:** Who owns this stage
-
-### Why This Works
-- **Empathy-driven:** Centers on customer emotions, not just actions
-- **Cross-functional alignment:** Shows which teams affect which stages
-- **Metric-focused:** Ties customer experience to measurable outcomes
-- **Gap identification:** Makes pain points and opportunities visible
-- **Actionable:** Clear KPIs and goals enable prioritization
-
-### Anti-Patterns (What This Is NOT)
-- **Not a user story map:** Journey maps are broader (all touchpoints, not just product use)
-- **Not a service blueprint:** Less detailed on internal processes, more focused on customer experience
-- **Not static:** Journey maps evolve as customer behavior changes
-
-### When to Use This
-- Understanding customer experience across all touchpoints (not just product)
-- Aligning cross-functional teams (marketing, sales, product, support)
-- Identifying pain points and prioritizing improvements
-- Onboarding new team members to customer perspective
-- Auditing the end-to-end customer experience
-
-### When NOT to Use This
-- For deep product-specific workflows (use story mapping instead)
-- Before defining personas (need to know who you're mapping)
-- As a one-time exercise (journey maps require ongoing updates)
 
 ---
 
@@ -274,48 +248,13 @@ Mini example excerpt:
 
 ## Common Pitfalls
 
-### Pitfall 1: Generic Emotions
-**Symptom:** "Customer feels happy" or "Customer is satisfied"
-
-**Consequence:** No insight into *why* they feel that way or what to improve.
-
-**Fix:** Be specific: "Relieved that setup took 30 minutes, not 3 hours as feared."
-
----
-
-### Pitfall 2: Missing Touchpoints
-**Symptom:** Only documenting digital touchpoints (website, app)
-
-**Consequence:** Miss offline interactions (conferences, word-of-mouth, support calls).
-
-**Fix:** Include all touchpoints: physical, digital, human, and automated.
-
----
-
-### Pitfall 3: Internal Perspective
-**Symptom:** Mapping what *you* want customers to do, not what they *actually* do
-
-**Consequence:** Journey map reflects wishful thinking, not reality.
-
-**Fix:** Validate with customer research, analytics, and support tickets.
-
----
-
-### Pitfall 4: No KPIs or Goals
-**Symptom:** Journey map has actions and emotions but no metrics or business objectives
-
-**Consequence:** No way to measure success or prioritize improvements.
-
-**Fix:** Add KPIs and business goals for each stage. Make them measurable.
-
----
-
-### Pitfall 5: One-and-Done Exercise
-**Symptom:** Journey map created once, never updated
-
-**Consequence:** Map becomes outdated as customer behavior evolves.
-
-**Fix:** Review quarterly. Update based on new data, product changes, or market shifts.
+| Pitfall | Symptom | Fix |
+|---------|---------|-----|
+| Generic Emotions | "Customer feels happy" — no insight into why | Be specific: "Relieved that setup took 30 minutes, not 3 hours as feared" |
+| Missing Touchpoints | Only documenting digital touchpoints | Include all touchpoints: physical, digital, human, and automated |
+| Internal Perspective | Mapping what you *want* customers to do, not what they actually do | Validate with customer research, analytics, and support tickets |
+| No KPIs or Goals | Actions and emotions but no metrics or business objectives | Add KPIs and business goals for each stage; make them measurable |
+| One-and-Done Exercise | Journey map created once, never updated | Review quarterly; update based on new data, product changes, or market shifts |
 
 ---
 
@@ -338,9 +277,3 @@ Mini example excerpt:
 ### Provenance
 - Adapted from `prompts/customer-journey-mapping-prompt-template.md` in the `https://github.com/deanpeters/product-manager-prompts` repo.
 
----
-
-**Skill type:** Component
-**Suggested filename:** `customer-journey-map.md`
-**Suggested placement:** `/skills/components/`
-**Dependencies:** References `skills/proto-persona/SKILL.md`, `skills/jobs-to-be-done/SKILL.md`, `skills/problem-statement/SKILL.md`

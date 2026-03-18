@@ -10,8 +10,6 @@ type: component
 ## Purpose
 Create a 6-frame visual narrative that tells the story of a user's journey from problem to solution, using the classic storytelling arc to build empathy, illustrate value, and make abstract product concepts concrete. Use this to align stakeholders, pitch features, communicate vision, or test if your solution resonates emotionally before building it.
 
-This is not a UI mockup—it's a storytelling tool that brings the human side of your product to life.
-
 ## Key Concepts
 
 ### The 6-Frame Storyboard Structure
@@ -23,30 +21,6 @@ Based on classic narrative arcs, the 6-frame format follows this pattern:
 4. **Frame 4: The Solution Appears** — Introduce your product/feature
 5. **Frame 5: The "Aha" Moment** — Show the user experiencing the breakthrough
 6. **Frame 6: Life After the Solution** — Illustrate the improved state
-
-### Why This Works
-- **Emotional engagement:** Stories create empathy in ways specs can't
-- **Concrete over abstract:** Visual narrative makes vague concepts tangible
-- **Memorable:** People remember stories better than feature lists
-- **Alignment tool:** Stakeholders can react to a story and give feedback
-- **Low-fidelity:** Doesn't require polished design—sketches work great
-
-### Anti-Patterns (What This Is NOT)
-- **Not a user flow diagram:** This is emotional storytelling, not process documentation
-- **Not a feature demo:** Focus on user outcomes, not product capabilities
-- **Not marketing copy:** Authentic narrative, not hype
-
-### When to Use This
-- Pitching a new product or feature to stakeholders
-- Aligning teams on user value (product, design, engineering, execs)
-- Testing if a product idea resonates emotionally
-- Communicating vision at all-hands or investor meetings
-- Validating problem/solution fit before building
-
-### When NOT to Use This
-- For technical implementation details (use architecture diagrams instead)
-- When the user problem is trivial or well-understood
-- As a replacement for user research (storyboards illustrate insights, don't create them)
 
 ---
 
@@ -180,48 +154,13 @@ Mini example excerpt:
 
 ## Common Pitfalls
 
-### Pitfall 1: Generic Persona
-**Symptom:** "Meet User, a busy professional"
-
-**Consequence:** No one identifies with this character.
-
-**Fix:** Get specific: "Meet Sarah, 35, freelance designer, juggling 10 clients, home office, loves design but hates admin."
-
----
-
-### Pitfall 2: Weak Problem
-**Symptom:** "User has a problem with efficiency"
-
-**Consequence:** Problem doesn't resonate emotionally.
-
-**Fix:** Make it visceral: "Sarah spends 8 hours/month chasing overdue invoices, missing family dinners, feeling anxious about cash flow."
-
----
-
-### Pitfall 3: Forced Solution Introduction
-**Symptom:** "User magically discovers our product"
-
-**Consequence:** Feels contrived, not authentic.
-
-**Fix:** Show realistic discovery: "Sarah sees a recommendation in a designer forum" or "Sarah's colleague mentions it."
-
----
-
-### Pitfall 4: Feature-Centric "Aha" Moment
-**Symptom:** "User sees the dashboard and loves the features"
-
-**Consequence:** No emotional payoff.
-
-**Fix:** Focus on outcome: "Sarah gets notification: '$5,000 received!' She's relieved—no awkward call needed."
-
----
-
-### Pitfall 5: Vague "After" State
-**Symptom:** "Life is better now"
-
-**Consequence:** Not aspirational or concrete.
-
-**Fix:** Be specific: "Sarah leaves work at 6pm now, spending evenings with her kids instead of chasing clients. On-time payments jumped from 50% to 80%."
+| Pitfall | Symptom | Fix |
+|---------|---------|-----|
+| Generic Persona | "Meet User, a busy professional" | Get specific: "Sarah, 35, freelance designer, 10 clients, hates admin" |
+| Weak Problem | "User has a problem with efficiency" | Make it visceral: "8 hours/month chasing invoices, missing family dinners" |
+| Forced Solution Introduction | "User magically discovers our product" | Show realistic discovery: forum recommendation, colleague mention |
+| Feature-Centric "Aha" Moment | "User sees dashboard, loves features" | Focus on outcome: "'$5,000 received!' — no awkward call needed" |
+| Vague "After" State | "Life is better now" | Be specific: "Leaves work at 6pm, on-time payments jumped 50% to 80%" |
 
 ---
 
@@ -244,9 +183,3 @@ Mini example excerpt:
 ### Provenance
 - Adapted from `prompts/storyboard-storytelling-prompt.md` in the `https://github.com/deanpeters/product-manager-prompts` repo.
 
----
-
-**Skill type:** Component
-**Suggested filename:** `storyboard.md`
-**Suggested placement:** `/skills/components/`
-**Dependencies:** References `skills/proto-persona/SKILL.md`, `skills/problem-statement/SKILL.md`, `skills/positioning-statement/SKILL.md`, `skills/jobs-to-be-done/SKILL.md`

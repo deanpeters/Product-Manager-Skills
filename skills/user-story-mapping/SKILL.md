@@ -10,8 +10,6 @@ type: component
 ## Purpose
 Visualize the user journey by creating a hierarchical map that breaks down high-level activities into steps and tasks, organized left-to-right as a narrative flow. Use this to build shared understanding across product, design, and engineering, prioritize features based on user workflows, and identify gaps or opportunities in the user experience.
 
-This is not a backlog—it's a strategic artifact that shows *how* users accomplish their goals, which then informs *what* to build.
-
 ## Key Concepts
 
 ### The Jeff Patton Story Mapping Framework
@@ -43,29 +41,10 @@ Segment → Persona → Narrative (User's goal)
   ...            ...            ...            ...            ...
 ```
 
-### Why This Works
-- **User-centric:** Organizes work around user goals, not engineering modules
-- **Shared understanding:** Product, design, engineering all see the same journey
-- **Prioritization clarity:** Top tasks = MVP, lower tasks = future iterations
-- **Gap identification:** Missing steps or tasks become obvious
-- **Release planning:** Draw horizontal "release lines" to define scope
-
 ### Anti-Patterns (What This Is NOT)
 - **Not a Gantt chart:** This isn't project management—it's user journey visualization
 - **Not a feature list:** Activities aren't features—they're user behaviors
 - **Not static:** Story maps evolve as you learn more about users
-
-### When to Use This
-- Kicking off a new product or major feature
-- Aligning stakeholders on user workflow
-- Prioritizing backlog based on user needs
-- Identifying MVP vs. future releases
-- Onboarding new team members to the product vision
-
-### When NOT to Use This
-- For trivial features (don't map what you already understand)
-- When user workflows are constantly changing (map stabilizes workflows)
-- As a replacement for user stories (the map informs stories, doesn't replace them)
 
 ---
 
@@ -214,48 +193,13 @@ See `examples/sample.md` for a full story map example.
 
 ## Common Pitfalls
 
-### Pitfall 1: Activities Are Features, Not User Behaviors
-**Symptom:** "Activity 1: Use the dashboard. Activity 2: Generate reports."
-
-**Consequence:** You've mapped the product, not the user journey.
-
-**Fix:** Reframe as user actions: "Activity 1: Monitor project progress. Activity 2: Summarize work for stakeholders."
-
----
-
-### Pitfall 2: Too Many Activities
-**Symptom:** 10+ activities across the backbone
-
-**Consequence:** Map becomes overwhelming and loses focus.
-
-**Fix:** Consolidate. If you have 10 activities, you're likely mixing activities with steps. Aim for 3-5 high-level activities.
-
----
-
-### Pitfall 3: Tasks Are Too Vague
-**Symptom:** "Task 1: Do the thing"
-
-**Consequence:** Can't prioritize or estimate vague tasks.
-
-**Fix:** Be specific: "Task 1: Enter client email address in the 'Bill To' field."
-
----
-
-### Pitfall 4: Ignoring Vertical Prioritization
-**Symptom:** All tasks at the same level—no MVP vs. future releases defined
-
-**Consequence:** No clarity on what to build first.
-
-**Fix:** Explicitly prioritize. Draw release lines. Force hard choices about what's MVP.
-
----
-
-### Pitfall 5: Mapping in Isolation
-**Symptom:** PM creates the map alone, then presents it to the team
-
-**Consequence:** No shared ownership or understanding.
-
-**Fix:** Map collaboratively. Run a story mapping workshop with product, design, and engineering.
+| Pitfall | Symptom | Fix |
+|---------|---------|-----|
+| Activities are features, not user behaviors | "Activity 1: Use the dashboard. Activity 2: Generate reports." | Reframe as user actions: "Monitor project progress," "Summarize work for stakeholders" |
+| Too many activities | 10+ activities across the backbone | Consolidate. You're likely mixing activities with steps. Aim for 3-5. |
+| Tasks are too vague | "Task 1: Do the thing" | Be specific: "Enter client email address in the 'Bill To' field" |
+| Ignoring vertical prioritization | All tasks at the same level — no MVP vs. future releases | Draw release lines. Force hard choices about what's MVP. |
+| Mapping in isolation | PM creates the map alone, then presents to team | Map collaboratively with product, design, and engineering |
 
 ---
 

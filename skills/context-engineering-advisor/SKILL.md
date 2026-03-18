@@ -21,8 +21,6 @@ Guide product managers through diagnosing whether they're doing **context stuffi
 
 **Key Distinction:** Context stuffing assumes volume = quality ("paste the entire PRD"). Context engineering treats AI attention as a scarce resource and allocates it deliberately.
 
-This is not about prompt writing—it's about **designing the information architecture** that grounds AI in reality without overwhelming it with noise.
-
 ## Key Concepts
 
 ### The Paradigm Shift: Parametric → Contextual Intelligence
@@ -134,31 +132,6 @@ Ask these to identify context stuffing:
 4. **Implement:** Fresh session using **only** the high-density plan as context
 
 **Why This Works:** Context rot is eliminated; agent starts clean with compressed, high-signal context.
-
----
-
-### Anti-Patterns (What This Is NOT)
-
-- **Not about choosing AI tools** — Claude vs. ChatGPT doesn't matter; architecture matters
-- **Not about writing better prompts** — This is systems design, not copywriting
-- **Not about adding more tokens** — "Infinite context" narratives are marketing, not engineering reality
-- **Not about replacing human judgment** — Context engineering amplifies judgment, doesn't eliminate it
-
----
-
-### When to Use This Skill
-
-✅ **Use this when:**
-- You're pasting entire PRDs/codebases into AI and getting vague responses
-- AI outputs are inconsistent ("works sometimes, not others")
-- You're burning tokens without seeing accuracy improvements
-- You suspect you're "context stuffing" but don't know how to fix it
-- You need to design context architecture for an AI product feature
-
-❌ **Don't use this when:**
-- You're just getting started with AI (start with basic prompts first)
-- You're looking for tool recommendations (this is about architecture, not tooling)
-- Your AI usage is working well (if it ain't broke, don't fix it)
 
 ---
 
@@ -696,48 +669,13 @@ Would you like me to:
 
 ## Common Pitfalls
 
-### 1. **"Infinite Context" Marketing vs. Engineering Reality**
-**Failure Mode:** Believing "1 million token context windows" means you should use all of them.
-
-**Consequence:** Reasoning Noise degrades performance; accuracy drops below 20% past ~32k tokens.
-
-**Fix:** Context windows are not free. Treat tokens as scarce; optimize for density, not volume.
-
----
-
-### 2. **Retrying Instead of Restructuring**
-**Failure Mode:** "It works if I run it 3 times" → normalizing retries instead of fixing structure.
-
-**Consequence:** Wastes time and money; masks deeper context rot issues.
-
-**Fix:** If retries are common, your context structure is broken. Apply Q5 (fix structure, don't add volume).
-
----
-
-### 3. **No Context Boundary Owner**
-**Failure Mode:** Ad-hoc, implicit context decisions → unbounded growth.
-
-**Consequence:** Six months later, every query stuffs 100k tokens per interaction.
-
-**Fix:** Assign explicit ownership; create Context Manifest; schedule quarterly audits.
-
----
-
-### 4. **Mixing Always-Needed with Episodic**
-**Failure Mode:** Persisting historical data that should be retrieved on-demand.
-
-**Consequence:** Context window crowded with irrelevant information; attention diluted.
-
-**Fix:** Apply Q2 test: persist only what's needed in 80%+ of interactions; retrieve the rest.
-
----
-
-### 5. **Skipping the Reset Phase**
-**Failure Mode:** Never clearing context window during Research→Plan→Implement cycle.
-
-**Consequence:** Context rot accumulates; goal drift; dead ends poison implementation.
-
-**Fix:** Mandatory Reset phase after Plan; start implementation with only high-density plan as context.
+| Pitfall | Failure Mode | Fix |
+|---------|-------------|-----|
+| **"Infinite Context" thinking** | Believing large context windows mean you should fill them | Treat tokens as scarce; accuracy drops below 20% past ~32k tokens |
+| **Retrying instead of restructuring** | "It works if I run it 3 times" normalizes bad structure | If retries are common, fix context structure (Q5) |
+| **No context boundary owner** | Ad-hoc decisions → unbounded growth to 100k+ tokens | Assign ownership; create Context Manifest; quarterly audits |
+| **Mixing always-needed with episodic** | Persisting historical data that should be retrieved on-demand | Persist only what's needed in 80%+ of interactions (Q2 test) |
+| **Skipping the Reset phase** | Never clearing context during Research→Plan→Implement | Mandatory Reset after Plan; implement with only high-density plan |
 
 ---
 

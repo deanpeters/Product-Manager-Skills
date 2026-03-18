@@ -19,62 +19,14 @@ estimated_time: "45-90 min"
 ## Purpose
 Guide product managers through strategic roadmap planning by orchestrating prioritization, epic definition, stakeholder alignment, and release sequencing skills into a structured process. Use this to move from disconnected feature requests to a cohesive, outcome-driven roadmap that aligns stakeholders, sequences work logically, and communicates strategic intent—avoiding "feature factory" roadmaps that lack strategic narrative or customer-centric framing.
 
-This is not a Gantt chart—it's a strategic communication tool that shows what you're building, why it matters, and how it ladders up to business outcomes.
-
 ## Key Concepts
 
-### What is Strategic Roadmap Planning?
-
-Roadmap planning is the process of:
-1. **Gathering inputs** — Customer problems, business goals, technical constraints
-2. **Defining initiatives** — Epics with clear hypotheses and success metrics
-3. **Prioritizing** — Rank initiatives by impact, effort, strategic fit
-4. **Sequencing** — Organize into releases/quarters with logical dependencies
-5. **Communicating** — Present roadmap to stakeholders with strategic narrative
-
-### Types of Roadmaps
-
-**Now/Next/Later Roadmap:**
-- **Now:** Current quarter (committed)
-- **Next:** Following quarter (high confidence)
-- **Later:** Future exploration (low confidence)
-- **Best for:** Agile teams, uncertainty, continuous discovery
-
-**Theme-Based Roadmap:**
-- Organize by strategic themes (e.g., "Retention," "Enterprise Expansion," "Mobile Experience")
-- **Best for:** Communicating to execs, showing strategic intent
-
-**Timeline Roadmap (Quarters):**
-- Q1: Epics A, B; Q2: Epics C, D; Q3: Epics E, F
-- **Best for:** Resource planning, stakeholder communication
-
-**Feature-Based Roadmap (Anti-Pattern):**
-- Lists features without context (e.g., "Dark mode," "SSO," "Advanced reporting")
-- **Why it fails:** No strategic narrative, no customer problems framed
-
-### Why This Works
-- **Outcome-driven:** Ties initiatives to business/customer outcomes
-- **Stakeholder alignment:** Transparent process reduces political friction
-- **Strategic clarity:** Shows not just "what" but "why"
-- **Flexible:** Adapts as you learn from discovery/delivery
-
-### Anti-Patterns (What This Is NOT)
-- **Not a commitment:** Roadmaps are strategic plans, not contracts
-- **Not a feature list:** Roadmaps frame problems, not just solutions
-- **Not waterfall:** Roadmaps evolve quarterly based on learning
-
-### When to Use This
-- Annual or quarterly planning cycles
-- After product strategy session (translate strategy to roadmap)
-- Onboarding new stakeholders (align on direction)
-- Reframing existing roadmap (shift from feature-driven to outcome-driven)
-
-### When NOT to Use This
-- For tactical sprint planning (use backlog instead)
-- When strategy is unclear (run product-strategy-session first)
-- When stakeholders expect date commitments (address expectations first)
-
----
+| Roadmap Type | Structure | Best For |
+|-------------|-----------|----------|
+| Now/Next/Later | Committed → High confidence → Exploration | Agile teams, continuous discovery |
+| Theme-Based | Strategic themes (Retention, Expansion, Mobile) | Exec communication, strategic intent |
+| Timeline (Quarters) | Q1: Epics A,B; Q2: Epics C,D | Resource planning, stakeholder updates |
+| Feature-Based ❌ | Feature list without context | Anti-pattern — no strategic narrative |
 
 ### Facilitation Source of Truth
 
@@ -423,48 +375,13 @@ Later: Mobile workflows (DAU lift)
 
 ## Common Pitfalls
 
-### Pitfall 1: Feature-Driven Roadmap (No Outcomes)
-**Symptom:** Roadmap lists features ("Dark mode," "SSO," "Advanced filters") with no context
-
-**Consequence:** No strategic clarity, stakeholders don't understand "why"
-
-**Fix:** Frame epics as hypotheses with success metrics (not just feature names)
-
----
-
-### Pitfall 2: Prioritizing by HiPPO (Highest Paid Person's Opinion)
-**Symptom:** Execs dictate roadmap, no data-driven prioritization
-
-**Consequence:** Build wrong things, ignore customer problems
-
-**Fix:** Use prioritization framework (RICE, ICE) to transparently score epics
-
----
-
-### Pitfall 3: Roadmap as Commitment (Waterfall Thinking)
-**Symptom:** Roadmap treated as contract, no flexibility to adjust
-
-**Consequence:** Can't pivot when you learn new information
-
-**Fix:** Communicate roadmap as "strategic plan, subject to change based on learning"
-
----
-
-### Pitfall 4: No Dependencies Mapped
-**Symptom:** Sequence epics without checking technical dependencies
-
-**Consequence:** Q2 epic blocked because Q1 dependency didn't finish
-
-**Fix:** Map dependencies explicitly in Phase 4, validate with engineering
-
----
-
-### Pitfall 5: Solo PM Roadmap (No Stakeholder Input)
-**Symptom:** PM creates roadmap alone, presents finished plan
-
-**Consequence:** No buy-in, stakeholders feel excluded
-
-**Fix:** Gather inputs (Phase 1) from all stakeholders, present draft (Phase 5) for feedback
+| Pitfall | Symptom | Fix |
+|---------|---------|-----|
+| **Feature-driven roadmap** | Lists features with no context ("Dark mode," "SSO") | Frame epics as hypotheses with success metrics |
+| **Prioritizing by HiPPO** | Execs dictate roadmap, no data-driven prioritization | Use RICE/ICE framework to transparently score epics |
+| **Roadmap as commitment** | Treated as contract, no flexibility | Communicate as "strategic plan, subject to change based on learning" |
+| **No dependencies mapped** | Epics sequenced without checking technical dependencies | Map dependencies in Phase 4, validate with engineering |
+| **Solo PM roadmap** | PM creates alone, presents finished plan | Gather inputs (Phase 1) from all stakeholders; present draft for feedback |
 
 ---
 
@@ -497,9 +414,3 @@ Later: Mobile workflows (DAU lift)
 ### Dean's Work
 - [If Dean has roadmap planning resources, link here]
 
----
-
-**Skill type:** Workflow
-**Suggested filename:** `roadmap-planning.md`
-**Suggested placement:** `/skills/workflows/`
-**Dependencies:** Orchestrates `skills/epic-hypothesis/SKILL.md`, `skills/prioritization-advisor/SKILL.md`, plus manual activities

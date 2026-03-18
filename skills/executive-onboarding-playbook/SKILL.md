@@ -16,14 +16,6 @@ scenarios:
 estimated_time: "20-30 min"
 ---
 
-## Purpose
-
-Structure the first 90 days of a VP or CPO transition as a diagnostic process, not an execution sprint. The single most common failure in senior product leadership transitions is acting before understanding — changing structures, replacing people, or announcing strategy before building the evidence base that makes those decisions defensible.
-
-This playbook runs in three phases: **Diagnose** (Month 1), **Validate** (Month 2), **Act with Evidence** (Month 3). Each phase builds on the last. Skipping phases doesn't accelerate results — it guarantees expensive reversals.
-
-This is not a 100-day plan for impressing your new boss. It's a diagnostic protocol for making durable decisions.
-
 ## Key Concepts
 
 ### The Consultant Mindset
@@ -219,48 +211,13 @@ See `examples/sample.md` for a full 30-60-90 diagnostic walkthrough with concret
 
 ## Common Pitfalls
 
-### Pitfall 1: Performing Action Instead of Building Evidence
-**Symptom:** Making structural announcements or process changes in Month 1 to signal decisive leadership
-
-**Consequence:** You build on incomplete understanding. Reversals in Month 3 damage credibility more than patience in Month 1 would have.
-
-**Fix:** Reframe patience as methodology, not passivity. "I'm in diagnostic mode for the first 30 days" is a confident statement when said clearly to your boss and team.
-
----
-
-### Pitfall 2: Staying in Consultant Mode Too Long
-**Symptom:** Still gathering information in Month 3; no visible actions or decisions
-
-**Consequence:** Organizational confidence erodes. People start to wonder if the new leader has opinions. Your boss starts to wonder if you can make decisions.
-
-**Fix:** Month 3 is the action phase. You won't have complete information — no one ever does. Act on your best current evidence and commit to learning from what follows.
-
----
-
-### Pitfall 3: Trusting the Loudest Voice
-**Symptom:** Forming early opinions based on the most vocal, most accessible, or most persuasive person you met in Month 1
-
-**Consequence:** You adopt one person's organizational narrative as ground truth. Decisions built on single-source information collapse when the rest of the organization provides context.
-
-**Fix:** Pattern-match across multiple independent conversations. Only act on themes you've heard from three or more unrelated sources.
-
----
-
-### Pitfall 4: Skipping the CEO Interview (Before Accepting)
-**Symptom:** Taking the CPO role without probing constraints, expectations, and talent assessment upfront
-
-**Consequence:** You walk into a situation where the roadmap is locked, the timeline is impossible, or the CEO's mental model of the team is so wrong that your first six months are spent managing their misperceptions instead of leading.
-
-**Fix:** The five questions in Phase 0 are not optional. Walk away from roles where the answers reveal fundamental misalignment. No role is worth a death march.
-
----
-
-### Pitfall 5: Ignoring Executive Dysfunction
-**Symptom:** Assuming that executive staff meetings will be mature, collaborative, and politics-free
-
-**Consequence:** You're blindsided by alliances, personal agendas, and interpersonal dynamics that operate beneath the surface of every executive team.
-
-**Fix:** Expect dysfunction. Patrick Lencioni's *Five Dysfunctions of a Team* applies to leadership teams as much as any other. Integrity gets tested more at higher levels, not less. Map the alliances in Month 1 as carefully as you map the product portfolio.
+| Pitfall | Symptom | Fix |
+|---------|---------|-----|
+| Performing action instead of building evidence | Making structural changes in Month 1 to signal decisiveness | Reframe patience as methodology: "I'm in diagnostic mode for 30 days" is a confident statement |
+| Staying in consultant mode too long | Still gathering information in Month 3, no visible actions | Month 3 is the action phase — act on your best current evidence and commit to learning |
+| Trusting the loudest voice | Forming opinions based on the most vocal person in Month 1 | Pattern-match across multiple independent conversations; act on themes from 3+ unrelated sources |
+| Skipping the CEO interview | Taking CPO role without probing constraints and expectations | The five Phase 0 questions are not optional — walk away from fundamental misalignment |
+| Ignoring executive dysfunction | Assuming exec meetings will be mature and politics-free | Expect dysfunction; map alliances in Month 1 as carefully as you map the product portfolio |
 
 ---
 

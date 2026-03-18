@@ -20,8 +20,6 @@ estimated_time: "20-30 min"
 
 Diagnose overall SaaS business health by analyzing growth, retention, unit economics, and capital efficiency metrics together. Use this to identify problems early, prioritize actions by urgency, and deliver a comprehensive health scorecard for board meetings, quarterly reviews, or fundraising preparation.
 
-This is not a single-metric check—it's a holistic diagnostic that connects revenue, retention, economics, and efficiency to reveal systemic issues and opportunities.
-
 ## Key Concepts
 
 ### The Business Health Framework
@@ -100,30 +98,6 @@ A SaaS business is healthy when four dimensions work together:
 - Magic Number 0.3-0.5
 - Operating leverage negative
 - Churn rate stable but high (>5% monthly)
-
-### Anti-Patterns (What This Is NOT)
-
-- **Not a single metric:** "Revenue is growing 50%, we're great!" (ignoring burn, churn, unit economics)
-- **Not stage-agnostic:** Early-stage burn is acceptable; scale-stage burn is a problem
-- **Not static:** Health is directional—are metrics improving or degrading?
-- **Not just numbers:** Context matters (competitive pressure, market changes, team capacity)
-
-### When to Use This Framework
-
-**Use this when:**
-- Preparing for board meetings or investor updates
-- Quarterly business reviews (QBR)
-- Fundraising preparation (know your numbers)
-- Annual planning (identify improvement areas)
-- You suspect problems but can't pinpoint them
-- New PM/exec joining and needs health assessment
-
-**Don't use this when:**
-- You're pre-revenue (focus on product-market fit first)
-- You're in pure research mode (not enough data)
-- You need tactical guidance (use specific skills: feature, channel, pricing)
-
----
 
 ### Facilitation Source of Truth
 
@@ -716,48 +690,13 @@ See `examples/` folder. Mini examples below:
 
 ## Common Pitfalls
 
-### Pitfall 1: Celebrating Single Metrics
-**Symptom:** "Revenue growing 50%!" (ignoring burn, churn, unit economics)
-
-**Consequence:** Unsustainable growth. Scaling broken model.
-
-**Fix:** Look at all four dimensions together.
-
----
-
-### Pitfall 2: Ignoring Stage-Specific Benchmarks
-**Symptom:** "We're not profitable yet, is that bad?" (early-stage company)
-
-**Consequence:** Misplaced worry. Early-stage should optimize for growth and unit economics, not profitability.
-
-**Fix:** Use stage-appropriate benchmarks.
-
----
-
-### Pitfall 3: Focusing on Lagging Indicators Only
-**Symptom:** "Churn is 5%, let's watch it"
-
-**Consequence:** By the time lagging indicators (churn, NRR) show problems, it's late.
-
-**Fix:** Track leading indicators (usage, engagement, onboarding completion).
-
----
-
-### Pitfall 4: Not Acting on Red Flags
-**Symptom:** "NRR <100% for 3 quarters, but we'll fix it eventually"
-
-**Consequence:** Problems compound. Becomes crisis.
-
-**Fix:** Set clear timelines. If metric doesn't improve in X time, escalate.
-
----
-
-### Pitfall 5: Trying to Fix Everything at Once
-**Symptom:** "Let's improve growth, retention, CAC, and efficiency simultaneously"
-
-**Consequence:** Resources spread thin. Nothing improves.
-
-**Fix:** Prioritize top 1-3 issues. Fix sequentially.
+| Pitfall | Symptom | Fix |
+|---------|---------|-----|
+| **Celebrating single metrics** | "Revenue growing 50%!" (ignoring burn, churn) | Look at all four dimensions together |
+| **Ignoring stage-specific benchmarks** | "We're not profitable yet, is that bad?" (early-stage) | Use stage-appropriate benchmarks |
+| **Focusing on lagging indicators only** | "Churn is 5%, let's watch it" | Track leading indicators (usage, engagement, onboarding) |
+| **Not acting on red flags** | "NRR <100% for 3 quarters, we'll fix it eventually" | Set clear timelines; escalate if no improvement |
+| **Trying to fix everything at once** | Improving growth, retention, CAC, and efficiency simultaneously | Prioritize top 1-3 issues; fix sequentially |
 
 ---
 

@@ -7,11 +7,6 @@ type: interactive
 ---
 
 
-## Purpose
-Guide product managers through creating a user story map by asking adaptive questions about the system, users, workflow, and priorities—then generating a two-dimensional map with backbone (activities), user tasks, and release slices. Use this to move from flat backlogs to visual story maps that communicate the big picture, identify missing functionality, and enable meaningful release planning—avoiding "context-free mulch" where stories lose connection to the overall system narrative.
-
-This is not a backlog generator—it's a visual communication framework that organizes work by user workflow (horizontal) and priority (vertical).
-
 ## Key Concepts
 
 ### What is a User Story Map?
@@ -40,30 +35,6 @@ Details/Acceptance Criteria (at the bottom)
 **Ribs:** Supporting tasks descend vertically under each activity, indicating priority through placement.
 
 **Left-to-Right, Top-to-Bottom Build Strategy:** Build incrementally across all major features rather than completing one feature fully before starting another.
-
-### Why This Works
-- **Visual communication:** Story maps remain displayed as information radiators, maintaining focus on the big picture
-- **Narrative structure:** Organizes by user workflow, not technical architecture
-- **Release planning:** Horizontal slices reveal MVPs and incremental releases
-- **Gap identification:** Reveals missing functionality that flat backlogs obscure
-
-### Anti-Patterns (What This Is NOT)
-- **Not a Gantt chart:** Story maps show priority, not time estimates
-- **Not technical architecture:** Maps follow user workflow, not system layers (UI → API → DB)
-- **Not a project plan:** It's a discovery and communication tool, not a schedule
-
-### When to Use This
-- Starting a new product or major feature
-- Reframing an existing backlog (moving from flat list to visual map)
-- Aligning stakeholders on scope and priorities
-- Planning MVP or incremental releases
-
-### When NOT to Use This
-- Single-feature projects (story map overkill)
-- When backlog is already well-understood and prioritized
-- For technical refactoring work (no user workflow to map)
-
----
 
 ### Facilitation Source of Truth
 
@@ -406,48 +377,13 @@ UI Layer → API Layer → Database Layer → Deployment
 
 ## Common Pitfalls
 
-### Pitfall 1: Flat Backlog in Disguise
-**Symptom:** Story map is just a vertical list, no horizontal narrative
-
-**Consequence:** Loses communication benefit; still "context-free mulch"
-
-**Fix:** Force horizontal structure—activities across top, tasks descending vertically
-
----
-
-### Pitfall 2: Technical Architecture as Backbone
-**Symptom:** Backbone = "Frontend → Backend → Database"
-
-**Consequence:** Not user-centric, can't deliver value incrementally
-
-**Fix:** Backbone should follow user workflow, not system layers
-
----
-
-### Pitfall 3: Feature-Complete Waterfall
-**Symptom:** Release 1 = "Build Activity 1 fully," Release 2 = "Build Activity 2 fully"
-
-**Consequence:** No end-to-end value until all activities complete
-
-**Fix:** Walking skeleton = thin slice across ALL activities, incrementally enhanced
-
----
-
-### Pitfall 4: Too Much Detail Too Soon
-**Symptom:** Trying to map every edge case and acceptance criterion upfront
-
-**Consequence:** Analysis paralysis, lost big picture
-
-**Fix:** Start with backbone + high-level tasks, refine later
-
----
-
-### Pitfall 5: Map Hidden in a Tool
-**Symptom:** Story map lives in Jira/Miro, never displayed
-
-**Consequence:** Loses value as information radiator
-
-**Fix:** Print/post map physically; make it visible to team daily
+| Pitfall | Symptom | Fix |
+|---------|---------|-----|
+| Flat backlog in disguise | Story map is just a vertical list, no horizontal narrative | Force horizontal structure — activities across top, tasks descending vertically |
+| Technical architecture as backbone | Backbone = "Frontend → Backend → Database" | Backbone should follow user workflow, not system layers |
+| Feature-complete waterfall | Release 1 = "Build Activity 1 fully" | Walking skeleton = thin slice across ALL activities, incrementally enhanced |
+| Too much detail too soon | Mapping every edge case and acceptance criterion upfront | Start with backbone + high-level tasks, refine later |
+| Map hidden in a tool | Story map lives in Jira/Miro, never displayed | Print/post map physically; make it visible to team daily |
 
 ---
 
@@ -469,9 +405,3 @@ UI Layer → API Layer → Database Layer → Deployment
 ### Provenance
 - Derived from `skills/user-story/SKILL.md`, `skills/user-story-splitting/SKILL.md`, and `skills/user-story-mapping/SKILL.md`.
 
----
-
-**Skill type:** Interactive
-**Suggested filename:** `user-story-mapping-workshop.md`
-**Suggested placement:** `/skills/interactive/`
-**Dependencies:** Uses `skills/user-story-mapping/SKILL.md`, `skills/user-story/SKILL.md`, `skills/proto-persona/SKILL.md`
