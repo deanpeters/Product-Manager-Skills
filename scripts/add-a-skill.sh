@@ -38,6 +38,8 @@ NC='\033[0m' # No Color
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 ADAPTERS_DIR="$SCRIPT_DIR/adapters"
+# SECURITY: ADAPTERS_DIR must not be world-writable. Any .sh file placed here
+# will be sourced in this script's shell context. Verify with: ls -ld "$ADAPTERS_DIR"
 SKILLS_DIR="$PROJECT_ROOT/skills"
 DOCS_DIR="$PROJECT_ROOT/docs"
 
@@ -95,6 +97,26 @@ confirm() {
     [[ "$response" =~ ^[Yy] ]]
 }
 
+# Validate an adapter path before sourcing.
+# Rejects names that contain path separators or characters outside [a-zA-Z0-9_-].
+validate_adapter() {
+    local adapter="$1"
+    local name
+    name="$(basename "$adapter" .sh)"
+    if [[ "$name" =~ [^a-zA-Z0-9_-] ]]; then
+        print_error "Refusing to source adapter with unsafe name: $name"
+        exit 1
+    fi
+    # Ensure the resolved path is still inside ADAPTERS_DIR (no traversal)
+    local real_adapter real_adapters_dir
+    real_adapter="$(realpath "$adapter" 2>/dev/null || echo "$adapter")"
+    real_adapters_dir="$(realpath "$ADAPTERS_DIR" 2>/dev/null || echo "$ADAPTERS_DIR")"
+    if [[ "$real_adapter" != "$real_adapters_dir"/* ]]; then
+        print_error "Refusing to source adapter outside adapters directory: $adapter"
+        exit 1
+    fi
+}
+
 # List available adapters
 list_agents() {
     print_header "Available Adapters"
@@ -108,7 +130,8 @@ list_agents() {
 
         local adapter_name=$(basename "$adapter" .sh)
 
-        # Source adapter to check if available
+        # Validate and source adapter to check if available
+        validate_adapter "$adapter"
         # shellcheck source=/dev/null
         source "$adapter"
 
@@ -141,6 +164,7 @@ detect_agent() {
         local adapter="$ADAPTERS_DIR/$agent_name.sh"
 
         if [[ -f "$adapter" ]]; then
+            validate_adapter "$adapter"
             # shellcheck source=/dev/null
             source "$adapter"
 
@@ -169,6 +193,7 @@ load_agent() {
         exit 1
     fi
 
+    validate_adapter "$adapter"
     # shellcheck source=/dev/null
     source "$adapter"
 
