@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 #
 # run-pm.sh - Fast runner for PM skills and commands
+# NOTE: This is a local development tool. Do not expose it as a service.
 #
 # Usage:
 #   ./scripts/run-pm.sh skill prd-development "Create a PRD for ..."
@@ -52,6 +53,13 @@ parse_args() {
     MODE="$1"
     TARGET="$2"
     INPUT="$3"
+
+    # Guard: reject inputs over 2000 characters to prevent runaway prompts
+    if [[ ${#INPUT} -gt 2000 ]]; then
+        echo "Error: Input exceeds 2000 characters (got ${#INPUT}). Truncate your input and retry." >&2
+        exit 1
+    fi
+
     shift 3
 
     while [[ $# -gt 0 ]]; do
