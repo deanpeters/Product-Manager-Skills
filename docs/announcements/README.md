@@ -4,6 +4,7 @@ Canonical location for launch posts, social copy, and release-related announceme
 
 ## Latest
 
+- **2026-04-26:** [v0.78 Release Packaging: One Download, Then Better PM Work](2026-04-26-v0-78-release-packaging.md)
 - **2026-03-17:** [v0.75 Pedagogic-First: Restoring What This Repo Is Actually For](2026-03-17-v0-75-pedagogic-first.md)
 - **2026-03-09:** [v0.7 Sharper Skills, Faster Discovery](2026-03-09-v0-7-skill-quality-trigger-clarity.md)
 - **2026-03-08:** [v0.65 You Asked, We Listened](2026-03-08-v0-65-onboarding-integration-guides.md)
@@ -15,6 +16,7 @@ Canonical location for launch posts, social copy, and release-related announceme
 
 ## Timeline
 
+- [2026-04-26-v0-78-release-packaging.md](2026-04-26-v0-78-release-packaging.md) — v0.78 release note for one-command packaging, Claude Desktop/Web ZIP packs, Codex `.agents/skills`, GitHub Release automation, and clearer install paths
 - [2026-03-17-v0-75-pedagogic-first.md](2026-03-17-v0-75-pedagogic-first.md) — v0.75 release note restoring pedagogic-first philosophy and ABC (Always Be Coaching) across CONTRIBUTING, CLAUDE, AGENTS, and README; includes LinkedIn blurb
 - [2026-03-09-v0-7-skill-quality-trigger-clarity.md](2026-03-09-v0-7-skill-quality-trigger-clarity.md) — v0.7 release note for trigger-oriented metadata, `intent`, higher validation standards, better skill discovery, and the new Streamlit `Find My Skill` mode
 - [2026-03-08-v0-65-onboarding-integration-guides.md](2026-03-08-v0-65-onboarding-integration-guides.md) — v0.65 release note for comprehensive PM-first setup and integration guides across chat, CLI, automation, and agent frameworks

@@ -1,0 +1,50 @@
+name: Build Release Artifacts
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    name: Validate and package skills
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Validate skills
+        run: ./scripts/validate-skills.sh
+
+      - name: Build release artifacts
+        run: ./scripts/build-release.sh
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: product-manager-skills-release-artifacts
+          path: |
+            dist/Product-Manager-Skills-*-release.zip
+            dist/claude-desktop/*.zip
+            dist/codex/codex-product-manager-skills.zip
+          if-no-files-found: error
+
+      - name: Publish GitHub Release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            dist/Product-Manager-Skills-*-release.zip
+            dist/claude-desktop/*.zip
+            dist/codex/codex-product-manager-skills.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

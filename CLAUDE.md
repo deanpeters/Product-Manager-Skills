@@ -4,9 +4,9 @@
 
 ---
 
-## Project Status (Last updated: Wed Mar 18 2026)
+## Project Status (Last updated: Sun Apr 26 2026)
 
-### Current State: v0.75 Released + Pedagogic-First Philosophy Restored
+### Current State: v0.78 Released + Release Packaging Added
 
 **Released: 46 Skills (Feb 27, 2026)**
 - 20 Component Skills (templates/artifacts + finance metrics + career frameworks)
@@ -51,6 +51,14 @@
   - See `docs/Finance Suite Summary.md` for complete overview
 
 **Recent Updates:**
+- ✅ **v0.78 Released (Apr 26, 2026):** Added release packaging automation and clearer install paths
+  - Added `scripts/validate-skills.sh`, `scripts/build-claude-desktop-packs.sh`, `scripts/build-codex-skills.sh`, and `scripts/build-release.sh`
+  - Added Claude Desktop/Web ZIP packs for starter, discovery, strategy, delivery, AI PM, and all-skills use cases
+  - Added Codex package output with `.agents/skills`, root `AGENTS.md`, and `codex-product-manager-skills.zip`
+  - Added `.github/workflows/build-release.yml` to validate/build on PRs/main and publish assets on `v*` tags
+  - Added install docs for Claude Desktop/Web, Claude Code, Codex, and release maintainers
+  - Updated README with a clear Start Here path and release packaging explanation
+  - Release note: `docs/announcements/2026-04-26-v0-78-release-packaging.md`
 - ✅ **v0.75 Released (Mar 17, 2026):** Restored pedagogic-first philosophy across all governance docs
   - Added Design Philosophy section to `CLAUDE.md`, `CONTRIBUTING.md`, `AGENTS.md`, and `README.md`
   - ABC (Always Be Coaching) and "send the ladder down" named as governing principles throughout

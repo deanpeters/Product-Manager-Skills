@@ -26,14 +26,17 @@ If you are making efficiency improvements, tighten fluff — not lessons. If you
 - `research/` contains reference essays that inform skills.
 - `docs/` contains usage guides, including `docs/Using PM Skills with Codex.md`.
 - `app/` contains the Streamlit (beta) playground (`app/main.py`) and setup docs (`app/STREAMLIT_INTERFACE.md`).
+- `dist/` contains generated release artifacts. Do not edit generated files there directly.
 - Root docs like `README.md`, `CONTRIBUTING.md`, `PLANS.md`, and `CLAUDE.md` explain catalog, contribution flow, and skill distillation.
 
 ## Build, Test, and Development Commands
-This is a Markdown-first repository with no build system or automated tests.
+This is a Markdown-first repository with lightweight validation and packaging scripts.
 - `rg --files` lists all files quickly.
 - `rg "SKILL.md"` finds skill definitions.
 - `rg "skill-name"` verifies references before submitting.
 - `./scripts/find-a-command.sh --list-all` lists available workflow commands.
+- `./scripts/validate-skills.sh` validates canonical skill folders before packaging.
+- `./scripts/build-release.sh` builds all downloadable release artifacts.
 - `./scripts/test-library.sh` validates skills + commands and regenerates catalogs.
 - `streamlit run app/main.py` launches the Streamlit (beta) skill playground.
 
@@ -67,6 +70,10 @@ No automated tests exist. Validate changes by:
 - Use this repo's own definitions, scripts, and standards before making structural decisions.
 - If deciding skill type/category, anchor to local criteria in `README.md`, `CLAUDE.md`, and relevant `SKILL.md` files.
 - Prefer proving decisions with repo tools (`scripts/find-a-skill.sh`, `scripts/test-a-skill.sh`, `scripts/check-skill-metadata.py`) over opinion.
+- Treat `skills/` as the canonical source of truth for all packaging.
+- Preserve compatibility with Claude Desktop/Web, Claude Code, and Codex.
+- Prefer small, maintainable Bash scripts over complex build systems.
+- Do not rename skills unless necessary.
 
 ## Cross-Repo Boundary
 - This repository is the shared PM skills library, not the Productside playbook distribution repo.
@@ -77,6 +84,26 @@ No automated tests exist. Validate changes by:
 - Claude web uploads require `Skill.md` (case-sensitive). Use `scripts/package-claude-skills.sh`.
 - Any scripts under a skill should be deterministic, avoid network calls, and be documented in the skill.
 - Review skills and scripts for safety before sharing or running.
+- Do not delete existing Claude Code marketplace files such as `.claude-plugin/marketplace.json`.
+
+## Codex Skill Guidance
+When users ask for product management help, inspect available skills before improvising. Prefer the most specific skill.
+
+Relevant topics include:
+- discovery
+- Jobs to be Done
+- personas
+- product strategy
+- prioritization
+- roadmaps
+- PRDs
+- user stories
+- acceptance criteria
+- AI product management
+- agent workflows
+- stakeholder alignment
+
+These are product management coaching and artifact-generation workflows, not software engineering workflows.
 
 ## Commit & Pull Request Guidelines
 - Commit messages in history use the imperative voice with a clear subject (e.g., `Add agent-orchestration-advisor skill`), sometimes followed by an issue tag and an em dash for context.

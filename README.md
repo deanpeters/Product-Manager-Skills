@@ -4,7 +4,7 @@
 ![GitHub stars](https://img.shields.io/github/stars/deanpeters/Product-Manager-Skills?style=flat-square)
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey?style=flat-square)](https://github.com/deanpeters/Product-Manager-Skills/blob/main/LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](https://github.com/deanpeters/Product-Manager-Skills/blob/main/CONTRIBUTING.md)
-[![Version](https://img.shields.io/badge/version-v0.75-blue?style=flat-square)](https://github.com/deanpeters/Product-Manager-Skills)
+[![Version](https://img.shields.io/badge/version-v0.78-blue?style=flat-square)](https://github.com/deanpeters/Product-Manager-Skills)
 [![Claude Code Plugin](https://img.shields.io/badge/Claude%20Code-Plugin%20Marketplace-5C4EE5?style=flat-square)](https://code.claude.com/docs/en/plugin-marketplaces)
 ![Skills](https://img.shields.io/badge/skills-46-informational?style=flat-square)
 ![Commands](https://img.shields.io/badge/commands-6-informational?style=flat-square)
@@ -23,7 +23,7 @@
 ║   46 battle-tested skills + 6 command workflows                    ║
 ║   Claude Code • Cursor • Codex  • n8n • OpenClaw • and more ...    ║
 ║                                                                    ║
-║   v0.75 • Mar 17, 2026 • CC BY-NC-SA 4.0                           ║
+║   v0.78 • Apr 26, 2026 • CC BY-NC-SA 4.0                            ║
 ╚════════════════════════════════════════════════════════════════════╝
 ```
 
@@ -35,7 +35,62 @@ Frame problems, hunt opportunities, scaffold validation experiments, and kill ba
 
 ---
 
+## Start Here
+
+Choose your setup:
+
+| I use... | Download/use this | Best for |
+|---|---|---|
+| Claude Desktop / Claude Web | `01-core-pm-starter-pack.zip` | Nontechnical PMs |
+| Claude Code | Plugin marketplace | Terminal users |
+| Codex | `codex-product-manager-skills.zip` or repo clone | Codex CLI/app users |
+| I am not sure | `01-core-pm-starter-pack.zip` | Most people |
+
+### Fastest Path
+
+Download the starter pack from GitHub Releases:
+
+```text
+01-core-pm-starter-pack.zip
+```
+
+Upload it to Claude Skills.
+
+Ask:
+
+```text
+Use the Product Manager Skills to help me frame this product problem.
+```
+
+### Install Guides
+
+- Claude Desktop/Web: [`docs/INSTALL-CLAUDE-DESKTOP.md`](docs/INSTALL-CLAUDE-DESKTOP.md)
+- Claude Code: [`docs/INSTALL-CLAUDE-CODE.md`](docs/INSTALL-CLAUDE-CODE.md)
+- Codex: [`docs/INSTALL-CODEX.md`](docs/INSTALL-CODEX.md)
+- Release packaging for maintainers: [`docs/RELEASE-PACKAGING.md`](docs/RELEASE-PACKAGING.md)
+
+---
+
 ## 📣 Updates & Announcements
+
+### Apr 26, 2026 — v0.78 Release Packaging: One Download, Then Better PM Work
+
+This release makes Product Manager Skills easier to use outside the repo. The job is simple: when a PM wants to use these skills with Claude or Codex, they should not have to understand GitHub folders, packaging scripts, or agent internals first.
+
+**Who this is for:** nontechnical PMs using Claude Desktop/Web, Claude Code users who prefer the plugin marketplace, Codex users who need `.agents/skills`, and maintainers who want releases to be repeatable instead of handmade.
+
+**What changed in v0.78:**
+- Claude Desktop/Web users get ready-to-upload ZIP skill packs, including a small starter pack and themed packs for discovery, strategy, delivery, and AI PM work
+- Codex users get a `codex-product-manager-skills.zip` with `.agents/skills` and `AGENTS.md`
+- Maintainers get one release command: `./scripts/build-release.sh`
+- GitHub Actions now builds release artifacts on PRs, main, and version tags
+- New install docs tell each audience which path to use
+
+Why it matters: the repo now has a source, a shelf, a storefront, and a rescue desk. `skills/` remains the source of truth; `dist/` becomes the generated shelf; GitHub Releases becomes the storefront; and the README helps people choose the right path without feeling lost.
+
+Release note: [`docs/announcements/2026-04-26-v0-78-release-packaging.md`](docs/announcements/2026-04-26-v0-78-release-packaging.md)
+
+---
 
 ### Mar 17, 2026 — v0.75 Pedagogic-First: Restoring What This Repo Is Actually For
 
@@ -757,6 +812,16 @@ See [LICENSE](LICENSE) for full details.
 - **Productside:** [Learn more about AI PM consulting](https://productside.com)
 
 ---
+
+**v0.78 — April 26, 2026**
+
+Highlights in this release:
+- Added one-command release packaging with `./scripts/build-release.sh`
+- Added Claude Desktop/Web ZIP packs for starter, discovery, strategy, delivery, AI PM, and all-skills use cases
+- Added a Codex ZIP that installs `.agents/skills` plus `AGENTS.md`
+- Added GitHub Actions to validate, build, upload artifacts, and publish release assets on `v*` tags
+- Added install docs for Claude Desktop/Web, Claude Code, Codex, and release maintainers
+- Updated the README with a clearer Start Here path for people who just want to use the skills
 
 **v0.7 — March 9, 2026**
 
