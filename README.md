@@ -98,6 +98,7 @@ Since v0.78, three members of the community spotted things we missed and showed 
 Every one of these contributions made the repo more useful for everyone. This is exactly the kind of community this project is trying to build.
 
 **What changed in v0.79:**
+- Added `skills/organic-growth-advisor/` — interactive McKinsey Growth Pyramid triage (L2–L5); three questions diagnose your growth constraint and recommend path-specific experiments for New Segments, New Geographies, New Distribution, or New Products. [Download skill zip](https://github.com/deanpeters/Product-Manager-Skills/releases/download/v0.79/organic-growth-advisor.zip)
 - Added `skills/pm-skill-creator/` — interactive skill for guided skill design ([@KNE-AI](https://github.com/KNE-AI))
 - Added configurable input length guard to `run-pm.sh` via `PM_MAX_INPUT` env var, default 4000 characters ([@xiaolai](https://github.com/xiaolai))
 - Added adapter name validation and path traversal protection to `add-a-skill.sh` ([@xiaolai](https://github.com/xiaolai))
@@ -853,6 +854,7 @@ See [LICENSE](LICENSE) for full details.
 **v0.79 — May 15, 2026**
 
 Highlights in this release:
+- Added `organic-growth-advisor` interactive skill — McKinsey Growth Pyramid L2–L5 triage
 - Added `pm-skill-creator` interactive skill for guided skill design
 - Added configurable input length guard to `run-pm.sh` (env var `PM_MAX_INPUT`, default 4000)
 - Added adapter name validation and path traversal protection to `add-a-skill.sh`
