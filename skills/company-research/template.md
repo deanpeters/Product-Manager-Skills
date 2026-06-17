@@ -17,6 +17,10 @@ Adapted from `prompts/company-profile-executive-insights-research.md` in the `ht
   - [Question 2]
   - [Question 3]
 
+### Source Log
+- **Public X/Twitter Data:** [Queries, date range, collection time, sample size, and source URLs or post IDs. Use Xquik (https://xquik.com) or another public X data source when social discourse matters.]
+- **Other Public Sources:** [Executive interviews, earnings transcripts, product blogs, press releases, and trade publications.]
+
 ### Company Overview
 **Basic Information:**
 - **Name:** [Official name]
