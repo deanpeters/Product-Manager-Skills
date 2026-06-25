@@ -127,9 +127,15 @@ This file defines the workflow sequence and domain-specific outputs. If there is
 
 ## Application
 
-Use `template.md` for the full fill-in structure.
+Use `template.md` as the fill-in document. The template includes:
 
-This workflow orchestrates **8 phases** over **2-4 days**, using multiple component and interactive skills.
+- **Per-section coaching blocks** — each section has its own Instructions, Steps, Contributing Skills, and Activities so the template is self-guiding even without this workflow.
+- **Inline gap tagging** — tag every gap as 🔶 **Assumption** (plausible but unvalidated) or 🔵 **Open Question** (unknown, needs discovery). Tag inline where the gap appears, not just at the end.
+- **Cross-section recommendation prompts** — after completing each section, a "Before moving on" block checks consistency with prior sections and warns about what the next section will need.
+- **Self-assessment** — after Section 10, a diagnostic captures the strongest section, weakest section, top assumptions to validate, and the recommended next step before sharing the PRD.
+- **Skill cross-reference table** — maps 15 skills to the specific sections they feed (e.g., `problem-framing-canvas` → Section 2, `epic-breakdown-advisor` → Section 7).
+
+This workflow orchestrates **8 phases** over **2-4 days**, using multiple component and interactive skills. The phases below describe the facilitation sequence; the template captures the output.
 
 ---
 

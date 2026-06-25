@@ -37,6 +37,9 @@ Generate a PRD that moves smoothly from strategy to delivery.
 - Validate scope boundaries before writing requirements.
 - Keep success criteria measurable and tied to outcome metrics.
 - Ensure at least one anti-pattern is called out in risks.
+- Tag every gap inline: 🔶 **Assumption** (plausible but unvalidated) or 🔵 **Open Question** (needs discovery).
+- After each section, review the "Before moving on" cross-section prompt in the template before continuing.
+- After the final section, complete the **Self-Assessment**: strongest section, weakest section, top assumptions to validate, and recommended next step.
 
 ## Next Steps
 
