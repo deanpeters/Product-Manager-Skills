@@ -71,11 +71,7 @@ This interactive skill asks **1 diagnostic question + up to 3 adaptive follow-up
 
 **Agent says:**
 
-Before we start, you can choose how to run this session:
-
-1. **Guided** — I'll ask questions one at a time and build recommendations from your answers (recommended for most situations)
-2. **Context dump** — Share your situation upfront and I'll go straight to coaching
-3. **Best guess** — Tell me nothing; I'll give you the highest-value advice for the most common transition situation (newly landed Director, 0–3 months in)
+This session runs in **Guided** mode: I'll ask you a short series of questions one at a time and build a tailored set of recommendations from your answers. (If you'd rather dump your full situation upfront, or get a "best guess" without answering questions, just say so and I'll adapt; otherwise we'll proceed with the guided flow below.)
 
 ---
 
