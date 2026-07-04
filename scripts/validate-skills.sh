@@ -80,4 +80,11 @@ if [[ "$failures" -gt 0 ]]; then
   exit 1
 fi
 
+echo
+echo "Checking library drift (marketplace + doc links)"
+if ! (cd "$ROOT" && python3 "$SCRIPT_DIR/check-library-drift.py"); then
+  echo "Validation failed." >&2
+  exit 1
+fi
+
 echo "Validation passed."
