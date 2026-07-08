@@ -1,19 +1,22 @@
 ---
 name: business-health-diagnostic
-argument-hint: "[metrics or business context]"
 description: Diagnose SaaS business health across growth, retention, efficiency, and capital. Use when preparing a business review or prioritizing urgent fixes.
-intent: >-
-  Diagnose overall SaaS business health by analyzing growth, retention, unit economics, and capital efficiency metrics together. Use this to identify problems early, prioritize actions by urgency, and deliver a comprehensive health scorecard for board meetings, quarterly reviews, or fundraising preparation.
-type: interactive
-theme: finance-metrics
-best_for:
-  - "Getting a complete read on your SaaS business health across all dimensions"
-  - "Identifying which metrics are red flags vs. leading indicators"
-  - "Preparing for a board meeting or investor review"
-scenarios:
-  - "Our growth is strong but we're burning cash fast — I need to understand our unit economics before the board meeting"
-  - "I'm preparing for a Series A board meeting and need to assess our business health across growth, retention, and efficiency"
-estimated_time: "20-30 min"
+compatibility: opencode
+argument-hint: "[metrics or business context]"
+metadata:
+  best_for:
+    - "Getting a complete read on your SaaS business health across all dimensions"
+    - "Identifying which metrics are red flags vs. leading indicators"
+    - "Preparing for a board meeting or investor review"
+  estimated_time: "20-30 min"
+  intent: >-
+    Diagnose overall SaaS business health by analyzing growth, retention, unit economics, and capital efficiency metrics together. Use this to identify problems early, prioritize actions by urgency, and
+    deliver a comprehensive health scorecard for board meetings, quarterly reviews, or fundraising preparation.
+  scenarios:
+    - "Our growth is strong but we're burning cash fast — I need to understand our unit economics before the board meeting"
+    - "I'm preparing for a Series A board meeting and need to assess our business health across growth, retention, and efficiency"
+  theme: finance-metrics
+  type: interactive
 ---
 
 

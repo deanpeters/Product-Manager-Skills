@@ -1,10 +1,13 @@
 ---
 name: jobs-to-be-done
-argument-hint: "[customer segment or product]"
 description: Uncover customer jobs, pains, and gains in a structured JTBD format. Use when clarifying unmet needs, repositioning a product, or improving discovery and messaging.
-intent: >-
-  Systematically explore what customers are trying to accomplish (functional, social, emotional jobs), the pains they experience, and the gains they seek. Use this framework to uncover unmet needs, validate product ideas, and ensure your solution addresses real motivations—not just surface-level feature requests.
-type: component
+compatibility: opencode
+argument-hint: "[customer segment or product]"
+metadata:
+  intent: >-
+    Systematically explore what customers are trying to accomplish (functional, social, emotional jobs), the pains they experience, and the gains they seek. Use this framework to uncover unmet needs, validate
+    product ideas, and ensure your solution addresses real motivations—not just surface-level feature requests.
+  type: component
 ---
 
 

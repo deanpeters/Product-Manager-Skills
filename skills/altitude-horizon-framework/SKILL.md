@@ -1,19 +1,22 @@
 ---
 name: altitude-horizon-framework
 description: Understand the PM-to-Director transition through altitude and horizon thinking. Use when diagnosing scope, time-horizon, or leadership-level gaps.
-intent: >-
-  Defines the two-axis mental model that distinguishes Director-level thinking from PM thinking: **Altitude** (how wide you zoom out) and **Horizon** (how far ahead you look). Use this to understand what actually changes in the transition, diagnose which transition zone is creating friction, and apply the Cascading Context Map when organizational direction is vague or absent.
-type: component
-theme: career-leadership
-best_for:
-   - "Understanding what actually changes when you move from PM to Director"
-   - "Diagnosing which transition zone is creating friction in your role"
-   - "Applying the Cascading Context Map when organizational direction is vague"
-scenarios:
-   - "I'm a senior PM trying to understand what changes when I become a Director"
-   - "I'm newly promoted to Director and something isn't clicking — help me diagnose it"
-   - "My team has no clear direction and I need to create context from a vague company strategy"
-estimated_time: "10-15 min"
+compatibility: opencode
+metadata:
+  best_for:
+    - "Understanding what actually changes when you move from PM to Director"
+    - "Diagnosing which transition zone is creating friction in your role"
+    - "Applying the Cascading Context Map when organizational direction is vague"
+  estimated_time: "10-15 min"
+  intent: >-
+    Defines the two-axis mental model that distinguishes Director-level thinking from PM thinking: **Altitude** (how wide you zoom out) and **Horizon** (how far ahead you look). Use this to understand what
+    actually changes in the transition, diagnose which transition zone is creating friction, and apply the Cascading Context Map when organizational direction is vague or absent.
+  scenarios:
+    - "I'm a senior PM trying to understand what changes when I become a Director"
+    - "I'm newly promoted to Director and something isn't clicking — help me diagnose it"
+    - "My team has no clear direction and I need to create context from a vague company strategy"
+  theme: career-leadership
+  type: component
 ---
 
 ## Purpose

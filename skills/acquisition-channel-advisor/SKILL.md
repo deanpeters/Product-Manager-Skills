@@ -1,18 +1,21 @@
 ---
 name: acquisition-channel-advisor
-argument-hint: "[channel to evaluate]"
 description: Evaluate acquisition channels using unit economics, customer quality, and scalability. Use when deciding whether to scale, test, or kill a growth channel.
-intent: >-
-  Guide product managers through evaluating whether to scale, test, or kill an acquisition channel based on unit economics (CAC, LTV, payback), customer quality (retention, NRR), and scalability (magic number, volume potential). Use this to make data-driven go-to-market decisions and optimize channel mix for sustainable growth.
-type: interactive
-best_for:
-  - "Deciding whether a paid or outbound channel deserves more budget"
-  - "Comparing channel quality, payback, and scalability side by side"
-  - "Making scale, test, or kill decisions with finance-backed reasoning"
-scenarios:
-  - "Should we keep investing in paid LinkedIn ads for enterprise leads?"
-  - "Compare content marketing, outbound email, and partner referrals as acquisition channels"
-  - "Help me decide whether to scale or kill our webinar acquisition channel"
+compatibility: opencode
+argument-hint: "[channel to evaluate]"
+metadata:
+  best_for:
+    - "Deciding whether a paid or outbound channel deserves more budget"
+    - "Comparing channel quality, payback, and scalability side by side"
+    - "Making scale, test, or kill decisions with finance-backed reasoning"
+  intent: >-
+    Guide product managers through evaluating whether to scale, test, or kill an acquisition channel based on unit economics (CAC, LTV, payback), customer quality (retention, NRR), and scalability (magic
+    number, volume potential). Use this to make data-driven go-to-market decisions and optimize channel mix for sustainable growth.
+  scenarios:
+    - "Should we keep investing in paid LinkedIn ads for enterprise leads?"
+    - "Compare content marketing, outbound email, and partner referrals as acquisition channels"
+    - "Help me decide whether to scale or kill our webinar acquisition channel"
+  type: interactive
 ---
 
 

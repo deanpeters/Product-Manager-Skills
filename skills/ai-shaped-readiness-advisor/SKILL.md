@@ -1,19 +1,22 @@
 ---
 name: ai-shaped-readiness-advisor
-argument-hint: "[team or workflow context]"
 description: Assess whether your product work is AI-first or AI-shaped. Use when evaluating AI maturity and choosing the next team capability to build.
-intent: >-
-  Assess whether your product work is **"AI-first"** (using AI to automate existing tasks faster) or **"AI-shaped"** (fundamentally redesigning how product teams operate around AI capabilities). Use this to evaluate your readiness across **5 essential PM competencies for 2026**, identify gaps, and get concrete recommendations on which capability to build first.
-type: interactive
-theme: ai-agents
-best_for:
-  - "Assessing whether your team is AI-first or genuinely AI-shaped"
-  - "Identifying which of the 5 AI competencies to build next"
-  - "Understanding your product org's AI maturity honestly"
-scenarios:
-  - "My team uses AI tools but I'm not sure if we're working differently or just automating the same tasks"
-  - "I want to assess my product org's AI maturity and prioritize where to invest next quarter"
-estimated_time: "15-20 min"
+compatibility: opencode
+argument-hint: "[team or workflow context]"
+metadata:
+  best_for:
+    - "Assessing whether your team is AI-first or genuinely AI-shaped"
+    - "Identifying which of the 5 AI competencies to build next"
+    - "Understanding your product org's AI maturity honestly"
+  estimated_time: "15-20 min"
+  intent: >-
+    Assess whether your product work is **"AI-first"** (using AI to automate existing tasks faster) or **"AI-shaped"** (fundamentally redesigning how product teams operate around AI capabilities). Use this
+    to evaluate your readiness across **5 essential PM competencies for 2026**, identify gaps, and get concrete recommendations on which capability to build first.
+  scenarios:
+    - "My team uses AI tools but I'm not sure if we're working differently or just automating the same tasks"
+    - "I want to assess my product org's AI maturity and prioritize where to invest next quarter"
+  theme: ai-agents
+  type: interactive
 ---
 
 ## Purpose

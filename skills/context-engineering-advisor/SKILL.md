@@ -1,19 +1,22 @@
 ---
 name: context-engineering-advisor
-argument-hint: "[AI workflow to diagnose]"
 description: Diagnose context stuffing vs. context engineering. Use when an AI workflow feels bloated, brittle, or hard to steer reliably.
-intent: >-
-  Guide product managers through diagnosing whether they're doing **context stuffing** (jamming volume without intent) or **context engineering** (shaping structure for attention). Use this to identify context boundaries, fix "Context Hoarding Disorder," and implement tactical practices like bounded domains, episodic retrieval, and the Research→Plan→Reset→Implement cycle.
-type: interactive
-theme: ai-agents
-best_for:
-  - "Diagnosing context stuffing vs. context engineering in your AI workflows"
-  - "Building better memory and retrieval architecture for AI agents"
-  - "Improving AI output quality through structured context design"
-scenarios:
-  - "My AI outputs are mediocre even though I'm giving it lots of information — diagnose what's wrong"
-  - "I want to architect context properly for a multi-step AI workflow in my product team"
-estimated_time: "15-20 min"
+compatibility: opencode
+argument-hint: "[AI workflow to diagnose]"
+metadata:
+  best_for:
+    - "Diagnosing context stuffing vs. context engineering in your AI workflows"
+    - "Building better memory and retrieval architecture for AI agents"
+    - "Improving AI output quality through structured context design"
+  estimated_time: "15-20 min"
+  intent: >-
+    Guide product managers through diagnosing whether they're doing **context stuffing** (jamming volume without intent) or **context engineering** (shaping structure for attention). Use this to identify
+    context boundaries, fix "Context Hoarding Disorder," and implement tactical practices like bounded domains, episodic retrieval, and the Research→Plan→Reset→Implement cycle.
+  scenarios:
+    - "My AI outputs are mediocre even though I'm giving it lots of information — diagnose what's wrong"
+    - "I want to architect context properly for a multi-step AI workflow in my product team"
+  theme: ai-agents
+  type: interactive
 ---
 
 ## Purpose

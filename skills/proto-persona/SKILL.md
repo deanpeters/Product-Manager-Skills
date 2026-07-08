@@ -1,10 +1,13 @@
 ---
 name: proto-persona
-argument-hint: "[target user or segment]"
 description: Create a proto-persona from current research, market signals, and team knowledge. Use when you need a working customer profile before deeper validation.
-intent: >-
-  Create an initial, assumption-based persona profile that synthesizes available user research, market data, and stakeholder knowledge into a working hypothesis about your target user. Use this to align teams early in product development, guide initial design decisions, and identify gaps in understanding that require validation through research.
-type: component
+compatibility: opencode
+argument-hint: "[target user or segment]"
+metadata:
+  intent: >-
+    Create an initial, assumption-based persona profile that synthesizes available user research, market data, and stakeholder knowledge into a working hypothesis about your target user. Use this to align
+    teams early in product development, guide initial design decisions, and identify gaps in understanding that require validation through research.
+  type: component
 ---
 
 

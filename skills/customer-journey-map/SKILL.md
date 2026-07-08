@@ -1,19 +1,22 @@
 ---
 name: customer-journey-map
-argument-hint: "[persona] [scenario]"
 description: Create a customer journey map across stages, touchpoints, actions, emotions, and metrics. Use when diagnosing a broken experience or aligning a team on the full customer flow.
-intent: >-
-  Create a comprehensive customer journey map that visualizes how customers interact with your brand across all stages—from awareness to loyalty—documenting their actions, touchpoints, emotions, KPIs, business goals, and teams involved at each stage. Use this to identify pain points, align cross-functional teams, and systematically improve the customer experience to achieve business objectives.
-type: component
-theme: workshops-facilitation
-best_for:
-  - "Mapping the full customer experience across all touchpoints"
-  - "Aligning cross-functional teams on the end-to-end customer journey"
-  - "Identifying pain points and opportunities by stage with measurable KPIs"
-scenarios:
-  - "I need to map the customer journey for our B2B SaaS onboarding experience from signup to first value"
-  - "Create a journey map for a PM leader evaluating our skills repo — from discovery through loyalty"
-estimated_time: "20-30 min"
+compatibility: opencode
+argument-hint: "[persona] [scenario]"
+metadata:
+  best_for:
+    - "Mapping the full customer experience across all touchpoints"
+    - "Aligning cross-functional teams on the end-to-end customer journey"
+    - "Identifying pain points and opportunities by stage with measurable KPIs"
+  estimated_time: "20-30 min"
+  intent: >-
+    Create a comprehensive customer journey map that visualizes how customers interact with your brand across all stages—from awareness to loyalty—documenting their actions, touchpoints, emotions, KPIs,
+    business goals, and teams involved at each stage. Use this to identify pain points, align cross-functional teams, and systematically improve the customer experience to achieve business objectives.
+  scenarios:
+    - "I need to map the customer journey for our B2B SaaS onboarding experience from signup to first value"
+    - "Create a journey map for a PM leader evaluating our skills repo — from discovery through loyalty"
+  theme: workshops-facilitation
+  type: component
 ---
 
 

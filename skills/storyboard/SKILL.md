@@ -1,10 +1,13 @@
 ---
 name: storyboard
-argument-hint: "[user and problem]"
 description: Create a six-frame storyboard that shows a user's journey from problem to solution. Use when you need a fast narrative for alignment, concept reviews, or demos.
-intent: >-
-  Create a 6-frame visual narrative that tells the story of a user's journey from problem to solution, using the classic storytelling arc to build empathy, illustrate value, and make abstract product concepts concrete. Use this to align stakeholders, pitch features, communicate vision, or test if your solution resonates emotionally before building it.
-type: component
+compatibility: opencode
+argument-hint: "[user and problem]"
+metadata:
+  intent: >-
+    Create a 6-frame visual narrative that tells the story of a user's journey from problem to solution, using the classic storytelling arc to build empathy, illustrate value, and make abstract product
+    concepts concrete. Use this to align stakeholders, pitch features, communicate vision, or test if your solution resonates emotionally before building it.
+  type: component
 ---
 
 

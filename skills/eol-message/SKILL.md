@@ -1,10 +1,13 @@
 ---
 name: eol-message
-argument-hint: "[product or feature being retired]"
 description: Write a clear, empathetic EOL announcement with rationale, customer impact, and next steps. Use when retiring a product, feature, or plan without creating avoidable confusion.
-intent: >-
-  Craft a clear, empathetic End-of-Life (EOL) message that communicates product or feature discontinuation, explains the rationale, addresses customer impact, provides transition support, and positions the replacement solution. Use this to maintain customer trust during difficult transitions and reduce churn by demonstrating care and offering a clear path forward.
-type: component
+compatibility: opencode
+argument-hint: "[product or feature being retired]"
+metadata:
+  intent: >-
+    Craft a clear, empathetic End-of-Life (EOL) message that communicates product or feature discontinuation, explains the rationale, addresses customer impact, provides transition support, and positions
+    the replacement solution. Use this to maintain customer trust during difficult transitions and reduce churn by demonstrating care and offering a clear path forward.
+  type: component
 ---
 
 

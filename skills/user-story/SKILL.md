@@ -1,19 +1,22 @@
 ---
 name: user-story
-argument-hint: "[feature or user need]"
 description: Create user stories with Mike Cohn format and Gherkin acceptance criteria. Use when turning user needs into development-ready work with clear outcomes and testable conditions.
-intent: >-
-  Create clear, concise user stories that combine Mike Cohn's user story format with Gherkin-style acceptance criteria. Use this to translate user needs into actionable development work that focuses on outcomes, ensures shared understanding between product and engineering, and provides testable success criteria.
-type: component
-theme: pm-artifacts
-best_for:
-  - "Writing user stories with proper acceptance criteria"
-  - "Converting requirements into development-ready stories"
-  - "Establishing story quality standards across your team"
-scenarios:
-  - "I need to write a user story for a new notification system in our B2B SaaS app"
-  - "Convert this PRD requirement into a properly formatted user story with Gherkin acceptance criteria"
-estimated_time: "5-10 min"
+compatibility: opencode
+argument-hint: "[feature or user need]"
+metadata:
+  best_for:
+    - "Writing user stories with proper acceptance criteria"
+    - "Converting requirements into development-ready stories"
+    - "Establishing story quality standards across your team"
+  estimated_time: "5-10 min"
+  intent: >-
+    Create clear, concise user stories that combine Mike Cohn's user story format with Gherkin-style acceptance criteria. Use this to translate user needs into actionable development work that focuses on
+    outcomes, ensures shared understanding between product and engineering, and provides testable success criteria.
+  scenarios:
+    - "I need to write a user story for a new notification system in our B2B SaaS app"
+    - "Convert this PRD requirement into a properly formatted user story with Gherkin acceptance criteria"
+  theme: pm-artifacts
+  type: component
 ---
 
 

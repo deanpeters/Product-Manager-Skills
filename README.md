@@ -15,13 +15,13 @@
 ║   ╚═╝     ╚═╝     ╚═╝    ╚══════╝╚═╝  ╚═╝╚═╝╚══════╝╚══════╝╚══════╝
 ║                                                                    ║
 ║   55 battle-tested skills + 6 command workflows                    ║
-║   Claude Code • Cursor • Codex  • n8n • OpenClaw • and more ...    ║
+║   Claude Code • Cursor • Codex  • n8n • OpenClaw • OpenCode • ...  ║
 ║                                                                    ║
 ║   v0.81 • July 4, 2026 • CC BY-NC-SA 4.0                           ║
 ╚════════════════════════════════════════════════════════════════════╝
 ```
 
-**55 battle-tested PM frameworks, ready for Claude, Codex, ChatGPT, and any agent that can read structured knowledge.**
+**55 battle-tested PM frameworks, ready for Claude, Codex, ChatGPT, OpenCode, and any agent that can read structured knowledge.**
 
 ---
 
@@ -94,6 +94,7 @@ Choose your setup:
 | Claude Desktop or Claude Web | [`pm-skills-starter-pack.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/pm-skills-starter-pack.zip) | Unzip, then upload the individual skill ZIPs to Claude Skills |
 | Claude Code | Plugin marketplace | `claude /plugin marketplace add deanpeters/Product-Manager-Skills` |
 | Codex | [`pm-skills-codex.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/pm-skills-codex.zip) | Installs `.agents/skills` and `AGENTS.md` |
+| OpenCode | Global: `cp -r skills/* ~/.config/opencode/skills/` | opencode discovers `.claude/skills/` and `~/.config/opencode/skills/` natively. Uses `metadata` frontmatter. |
 | Not sure | [`pm-skills-starter-pack.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/pm-skills-starter-pack.zip) | Start here |
 
 **All downloads:** [GitHub Releases](https://github.com/deanpeters/Product-Manager-Skills/releases/latest)
@@ -116,6 +117,7 @@ Each pack below is a ZIP of upload-ready skill ZIPs — unzip, then upload indiv
 - [Claude Desktop / Web](docs/INSTALL-CLAUDE-DESKTOP.md)
 - [Claude Code](docs/INSTALL-CLAUDE-CODE.md)
 - [Codex](docs/INSTALL-CODEX.md)
+- [OpenCode](docs/INSTALL-OPENCODE.md)
 - [Platform chooser for non-technical PMs](docs/PM%20Skills%20Rule-of-Thumb%20Guide.md)
 
 ---
@@ -178,7 +180,7 @@ Every `SKILL.md` follows the same structure:
 
 | Section | What it contains |
 |---|---|
-| **Frontmatter** | `name`, `description`, `type`, `intent`, `best_for`, `scenarios` |
+| **Frontmatter** | `name`, `description`, `compatibility`, `type`, `intent`, `best_for`, `scenarios`, `metadata` |
 | **Purpose** | What this skill does and when to reach for it |
 | **Input** | What you *can* bring (with example invocations) — inline input is used, not re-asked, and arriving empty-handed is fine: the skill walks you through it |
 | **Key Concepts** | Frameworks, definitions, anti-patterns — with vocabulary explained |
@@ -195,7 +197,7 @@ The `best_for` frontmatter field lists 3-5 specific scenarios where the skill is
 
 ## Works With
 
-Claude Code · Claude Desktop · Claude Web · OpenAI Codex · ChatGPT · Cursor · Windsurf · n8n · LangFlow · CrewAI · Gemini · any agent that reads structured markdown
+Claude Code · Claude Desktop · Claude Web · OpenAI Codex · ChatGPT · Cursor · Windsurf · n8n · LangFlow · CrewAI · Gemini · OpenCode · any agent that reads structured markdown
 
 See [docs/Platform Guides for PMs.md](docs/Platform%20Guides%20for%20PMs.md) for platform-specific setup.
 
@@ -209,6 +211,7 @@ See [docs/Platform Guides for PMs.md](docs/Platform%20Guides%20for%20PMs.md) for
 | [Platform Guides for PMs](docs/Platform%20Guides%20for%20PMs.md) | Tool-by-tool setup chooser for every supported platform |
 | [Using PM Skills with Claude](docs/Using%20PM%20Skills%20with%20Claude.md) | Claude Code + GitHub ZIP upload for Claude Desktop/Web |
 | [Using PM Skills with Codex](docs/Using%20PM%20Skills%20with%20Codex.md) | Local workspace + GitHub-connected Codex on ChatGPT |
+| [Using PM Skills with OpenCode](docs/INSTALL-OPENCODE.md) | Global `~/.config/opencode/skills/` or project `.opencode/skills/` |
 | [Using PM Skills with ChatGPT](docs/Using%20PM%20Skills%20with%20ChatGPT.md) | GitHub app, Custom GPT Knowledge, and Project-based usage |
 | [Using PM Skills with Slash Commands 101](docs/Using%20PM%20Skills%20with%20Slash%20Commands%20101.md) | Turn skills into reusable slash commands like `/pm-story` |
 | [Add-a-Skill Utility Guide](docs/Add-a-Skill%20Utility%20Guide.md) | End-to-end guide for generating and validating new skills |

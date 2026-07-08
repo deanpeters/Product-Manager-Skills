@@ -1,18 +1,21 @@
 ---
 name: feature-investment-advisor
-argument-hint: "[feature to evaluate]"
 description: Evaluate feature investments using revenue impact, cost structure, ROI, and strategy. Use when deciding whether a feature deserves investment.
-intent: >-
-  Guide product managers through evaluating whether to build a feature based on financial impact analysis. Use this to make data-driven prioritization decisions by assessing revenue connection (direct or indirect), cost structure (dev + COGS + OpEx), ROI calculation, and strategic value—then deliver actionable build/don't build recommendations with supporting math.
-type: interactive
-best_for:
-  - "Assessing whether a feature should be built now"
-  - "Comparing ROI and strategic value of feature ideas"
-  - "Pressure-testing roadmap requests with financial logic"
-scenarios:
-  - "Should we build SSO for mid-market customers this quarter?"
-  - "Evaluate whether an AI assistant feature is worth the investment"
-  - "Help me decide if this roadmap request has enough ROI to build"
+compatibility: opencode
+argument-hint: "[feature to evaluate]"
+metadata:
+  best_for:
+    - "Assessing whether a feature should be built now"
+    - "Comparing ROI and strategic value of feature ideas"
+    - "Pressure-testing roadmap requests with financial logic"
+  intent: >-
+    Guide product managers through evaluating whether to build a feature based on financial impact analysis. Use this to make data-driven prioritization decisions by assessing revenue connection (direct
+    or indirect), cost structure (dev + COGS + OpEx), ROI calculation, and strategic value—then deliver actionable build/don't build recommendations with supporting math.
+  scenarios:
+    - "Should we build SSO for mid-market customers this quarter?"
+    - "Evaluate whether an AI assistant feature is worth the investment"
+    - "Help me decide if this roadmap request has enough ROI to build"
+  type: interactive
 ---
 
 

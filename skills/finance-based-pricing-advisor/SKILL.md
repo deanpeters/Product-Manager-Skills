@@ -1,18 +1,21 @@
 ---
 name: finance-based-pricing-advisor
-argument-hint: "[pricing change to evaluate]"
 description: Evaluate pricing changes using ARPU, conversion, churn risk, NRR, and payback. Use when deciding whether a pricing move should ship.
-intent: >-
-  Evaluate the **financial impact** of pricing changes (price increases, new tiers, add-ons, discounts) using ARPU/ARPA analysis, conversion impact, churn risk, NRR effects, and CAC payback implications. Use this to make data-driven go/no-go decisions on proposed pricing changes with supporting math and risk assessment.
-type: interactive
-best_for:
-  - "Evaluating price increases, discounts, or new packaging"
-  - "Estimating churn and conversion risk before a pricing change"
-  - "Making a go/no-go call on monetization changes"
-scenarios:
-  - "Should we raise prices 15% for new customers next quarter?"
-  - "Evaluate a new premium tier for our SaaS product"
-  - "Help me assess whether an annual discount will improve revenue"
+compatibility: opencode
+argument-hint: "[pricing change to evaluate]"
+metadata:
+  best_for:
+    - "Evaluating price increases, discounts, or new packaging"
+    - "Estimating churn and conversion risk before a pricing change"
+    - "Making a go/no-go call on monetization changes"
+  intent: >-
+    Evaluate the **financial impact** of pricing changes (price increases, new tiers, add-ons, discounts) using ARPU/ARPA analysis, conversion impact, churn risk, NRR effects, and CAC payback implications.
+    Use this to make data-driven go/no-go decisions on proposed pricing changes with supporting math and risk assessment.
+  scenarios:
+    - "Should we raise prices 15% for new customers next quarter?"
+    - "Evaluate a new premium tier for our SaaS product"
+    - "Help me assess whether an annual discount will improve revenue"
+  type: interactive
 ---
 
 

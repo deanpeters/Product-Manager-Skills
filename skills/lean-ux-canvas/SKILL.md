@@ -1,18 +1,22 @@
 ---
 name: lean-ux-canvas
-argument-hint: "[business problem]"
 description: Guide teams through Lean UX Canvas v2. Use when framing a business problem, surfacing assumptions, and defining what to learn next.
-intent: >-
-  Guide product managers through creating **Jeff Gothelf's Lean UX Canvas (v2)**—a one-page facilitation tool that frames work around a **business problem to solve**, not a **solution to implement**. Use this to align cross-functional teams around core assumptions, craft testable hypotheses, and ensure learning happens every sprint by exposing gaps in understanding (problem, users, value, and why the solution should work).
-type: interactive
-best_for:
-  - "Framing a business problem before solutioning"
-  - "Surfacing assumptions in a cross-functional workshop"
-  - "Turning a vague initiative into hypotheses and learning goals"
-scenarios:
-  - "Help me run a Lean UX Canvas workshop for onboarding drop-off"
-  - "Use Lean UX Canvas to frame a new AI product idea"
-  - "We have a business problem but too many assumptions. Run a Lean UX Canvas session."
+compatibility: opencode
+argument-hint: "[business problem]"
+metadata:
+  best_for:
+    - "Framing a business problem before solutioning"
+    - "Surfacing assumptions in a cross-functional workshop"
+    - "Turning a vague initiative into hypotheses and learning goals"
+  intent: >-
+    Guide product managers through creating **Jeff Gothelf's Lean UX Canvas (v2)**—a one-page facilitation tool that frames work around a **business problem to solve**, not a **solution to implement**.
+    Use this to align cross-functional teams around core assumptions, craft testable hypotheses, and ensure learning happens every sprint by exposing gaps in understanding (problem, users, value, and why
+    the solution should work).
+  scenarios:
+    - "Help me run a Lean UX Canvas workshop for onboarding drop-off"
+    - "Use Lean UX Canvas to frame a new AI product idea"
+    - "We have a business problem but too many assumptions. Run a Lean UX Canvas session."
+  type: interactive
 ---
 
 ## Purpose

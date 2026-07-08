@@ -1,29 +1,31 @@
 ---
 name: stakeholder-engagement-advisor
-argument-hint: "[stakeholder and situation]"
 description: Plan engagement for a specific stakeholder. Use when preparing an outreach, navigating resistance, or aligning a critical relationship before a key milestone.
-intent: >-
-  Guide per-stakeholder engagement planning through the Adaptive Decision Ladder:
-  three targeted questions diagnose the stakeholder's profile, power/impact quadrant,
-  and your engagement context, then deliver a tailored approach — key message framing,
-  recommended medium and cadence, what you need from them versus what they need from
-  you, and a named next action with owner and deadline. Treats both sides of the
-  relationship, not just yours.
-type: interactive
-best_for:
-  - "Preparing to engage a powerful executive sponsor whose support is critical but whose motivations are unclear"
-  - "Planning outreach to a resistant or skeptical stakeholder who could block your roadmap"
-  - "Navigating first contact with a newly identified stakeholder mid-initiative"
-  - "Designing inclusive engagement for a Q1 (high-impact, low-power) user community that needs more voice"
-  - "Aligning cross-functional engagement strategy before a high-stakes roadmap review or launch"
-scenarios:
-  - "Help me plan how to engage [stakeholder] before my roadmap review"
-  - "I have a resistant stakeholder — how do I approach them?"
-  - "I need to bring a new executive sponsor up to speed quickly"
-  - "How do I engage frontline users who've been excluded from our feedback loops?"
-  - "Help me prepare a 1:1 with someone who could block this initiative"
-sources:
-  - "MITRE Innovation Toolkit — Quickstart Stakeholder Engagement Canvas: https://itk.mitre.org/toolkit-tools/quickstart-stakeholder-engagement-canvas/"
+compatibility: opencode
+argument-hint: "[stakeholder and situation]"
+metadata:
+  best_for:
+    - "Preparing to engage a powerful executive sponsor whose support is critical but whose motivations are unclear"
+    - "Planning outreach to a resistant or skeptical stakeholder who could block your roadmap"
+    - "Navigating first contact with a newly identified stakeholder mid-initiative"
+    - "Designing inclusive engagement for a Q1 (high-impact, low-power) user community that needs more voice"
+    - "Aligning cross-functional engagement strategy before a high-stakes roadmap review or launch"
+  intent: >-
+    Guide per-stakeholder engagement planning through the Adaptive Decision Ladder:
+    three targeted questions diagnose the stakeholder's profile, power/impact quadrant,
+    and your engagement context, then deliver a tailored approach — key message framing,
+    recommended medium and cadence, what you need from them versus what they need from
+    you, and a named next action with owner and deadline. Treats both sides of the
+    relationship, not just yours.
+  scenarios:
+    - "Help me plan how to engage [stakeholder] before my roadmap review"
+    - "I have a resistant stakeholder — how do I approach them?"
+    - "I need to bring a new executive sponsor up to speed quickly"
+    - "How do I engage frontline users who've been excluded from our feedback loops?"
+    - "Help me prepare a 1:1 with someone who could block this initiative"
+  sources:
+    - "MITRE Innovation Toolkit — Quickstart Stakeholder Engagement Canvas: https://itk.mitre.org/toolkit-tools/quickstart-stakeholder-engagement-canvas/"
+  type: interactive
 ---
 
 # Stakeholder Engagement Advisor

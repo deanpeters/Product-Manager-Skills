@@ -1,18 +1,22 @@
 ---
 name: prioritization-advisor
-argument-hint: "[decision context]"
 description: Choose a prioritization framework based on stage, team context, and stakeholder needs. Use when deciding between RICE, ICE, value/effort, or another scoring approach.
-intent: >-
-  Guide product managers in choosing the right prioritization framework by asking adaptive questions about product stage, team context, decision-making needs, and stakeholder dynamics. Use this to avoid "framework whiplash" (switching frameworks constantly) or applying the wrong framework (e.g., using RICE for strategic bets or ICE for data-driven decisions). Outputs a recommended framework with implementation guidance tailored to your context.
-type: interactive
-best_for:
-  - "Choosing the right prioritization framework for a team or stage"
-  - "Deciding between RICE, ICE, value/effort, and similar models"
-  - "Reducing debate about how to prioritize competing work"
-scenarios:
-  - "Which prioritization framework should my startup use right now?"
-  - "Help me choose between RICE and value/effort for roadmap planning"
-  - "We keep arguing about prioritization. Recommend a framework."
+compatibility: opencode
+argument-hint: "[decision context]"
+metadata:
+  best_for:
+    - "Choosing the right prioritization framework for a team or stage"
+    - "Deciding between RICE, ICE, value/effort, and similar models"
+    - "Reducing debate about how to prioritize competing work"
+  intent: >-
+    Guide product managers in choosing the right prioritization framework by asking adaptive questions about product stage, team context, decision-making needs, and stakeholder dynamics. Use this to avoid
+    "framework whiplash" (switching frameworks constantly) or applying the wrong framework (e.g., using RICE for strategic bets or ICE for data-driven decisions). Outputs a recommended framework with implementation
+    guidance tailored to your context.
+  scenarios:
+    - "Which prioritization framework should my startup use right now?"
+    - "Help me choose between RICE and value/effort for roadmap planning"
+    - "We keep arguing about prioritization. Recommend a framework."
+  type: interactive
 ---
 
 

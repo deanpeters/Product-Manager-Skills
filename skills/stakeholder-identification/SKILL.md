@@ -1,28 +1,30 @@
 ---
 name: stakeholder-identification
-argument-hint: "[initiative]"
 description: Map every stakeholder before engaging anyone. Use when launching an initiative, scoping discovery, or building an engagement plan from scratch.
-intent: >-
-  Produce a comprehensive, equity-aware stakeholder set before any engagement begins.
-  Combines broad brainstorm with structured categorization (Allies / Audiences / Influencers,
-  R/P/D marking), an explicit equity and bias check, and a disciplined narrowing to
-  the 2-3 stakeholders to understand deeply first. Designed to run as a solo exercise
-  or a kickoff workshop. Feed outputs directly into stakeholder-mapping for prioritization.
-type: component
-best_for:
-  - "Launching a new initiative where the stakeholder landscape is unmapped and influence networks are unknown"
-  - "Scoping a discovery sprint to define who to research, interview, and recruit"
-  - "Preparing a PRD stakeholder section with a validated, comprehensive list before writing requirements"
-  - "Onboarding to a new product domain and needing to map allies, gatekeepers, and decision-makers quickly"
-  - "Pressure-testing an existing stakeholder list for blind spots, bias, and missing edge-case populations"
-scenarios:
-  - "Who are all the stakeholders for this initiative?"
-  - "Are we missing anyone important in our stakeholder map?"
-  - "Help me prepare the stakeholder section of my PRD"
-  - "Who should we recruit for discovery research?"
-sources:
-  - "MITRE Innovation Toolkit — Stakeholder Identification Canvas: https://itk.mitre.org/toolkit-tools/stakeholder-identification-canvas/"
-  - "MITRE Innovation Toolkit — Community Map: https://itk.mitre.org/toolkit-tools/community-map/"
+compatibility: opencode
+argument-hint: "[initiative]"
+metadata:
+  best_for:
+    - "Launching a new initiative where the stakeholder landscape is unmapped and influence networks are unknown"
+    - "Scoping a discovery sprint to define who to research, interview, and recruit"
+    - "Preparing a PRD stakeholder section with a validated, comprehensive list before writing requirements"
+    - "Onboarding to a new product domain and needing to map allies, gatekeepers, and decision-makers quickly"
+    - "Pressure-testing an existing stakeholder list for blind spots, bias, and missing edge-case populations"
+  intent: >-
+    Produce a comprehensive, equity-aware stakeholder set before any engagement begins.
+    Combines broad brainstorm with structured categorization (Allies / Audiences / Influencers,
+    R/P/D marking), an explicit equity and bias check, and a disciplined narrowing to
+    the 2-3 stakeholders to understand deeply first. Designed to run as a solo exercise
+    or a kickoff workshop. Feed outputs directly into stakeholder-mapping for prioritization.
+  scenarios:
+    - "Who are all the stakeholders for this initiative?"
+    - "Are we missing anyone important in our stakeholder map?"
+    - "Help me prepare the stakeholder section of my PRD"
+    - "Who should we recruit for discovery research?"
+  sources:
+    - "MITRE Innovation Toolkit — Stakeholder Identification Canvas: https://itk.mitre.org/toolkit-tools/stakeholder-identification-canvas/"
+    - "MITRE Innovation Toolkit — Community Map: https://itk.mitre.org/toolkit-tools/community-map/"
+  type: component
 ---
 
 # Stakeholder Identification

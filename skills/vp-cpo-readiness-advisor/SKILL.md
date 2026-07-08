@@ -1,20 +1,23 @@
 ---
 name: vp-cpo-readiness-advisor
-argument-hint: "[where you are in the transition]"
 description: Guide the transition to VP or CPO across preparing, interviewing, landing, and recalibrating. Use when executive product scope is changing fast.
-intent: >-
-  Guide Directors and senior product leaders through the specific challenges of the transition to VP or CPO using adaptive questions and targeted coaching. Diagnoses where you are in the journey and delivers practical, lived-experience coaching calibrated to your situation — not generic executive advice.
-type: interactive
-theme: career-leadership
-best_for:
-  - "Preparing for the Director-to-VP or VP-to-CPO transition"
-  - "Evaluating a VP or CPO role before you accept it"
-  - "Recalibrating when something isn't working in an executive product role"
-scenarios:
-  - "I'm a Director preparing for VP roles and want to understand what actually changes"
-  - "I have a CPO offer I'm evaluating — what are the right questions to ask the CEO?"
-  - "I've been a VP for 18 months and my executive peer relationships aren't working"
-estimated_time: "15-20 min"
+compatibility: opencode
+argument-hint: "[where you are in the transition]"
+metadata:
+  best_for:
+    - "Preparing for the Director-to-VP or VP-to-CPO transition"
+    - "Evaluating a VP or CPO role before you accept it"
+    - "Recalibrating when something isn't working in an executive product role"
+  estimated_time: "15-20 min"
+  intent: >-
+    Guide Directors and senior product leaders through the specific challenges of the transition to VP or CPO using adaptive questions and targeted coaching. Diagnoses where you are in the journey and delivers
+    practical, lived-experience coaching calibrated to your situation — not generic executive advice.
+  scenarios:
+    - "I'm a Director preparing for VP roles and want to understand what actually changes"
+    - "I have a CPO offer I'm evaluating — what are the right questions to ask the CEO?"
+    - "I've been a VP for 18 months and my executive peer relationships aren't working"
+  theme: career-leadership
+  type: interactive
 ---
 
 ## Purpose
