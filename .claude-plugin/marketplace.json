@@ -295,6 +295,20 @@
       "strict": false
     },
     {
+      "name": "incoming-request-advisor",
+      "source": "./skills/incoming-request-advisor",
+      "description": "Decode an incoming message into a structured breakdown that separates the literal ask from the job-to-be-done.",
+      "category": "stakeholder",
+      "tags": [
+        "pm",
+        "stakeholder",
+        "communication",
+        "triage",
+        "jobs-to-be-done"
+      ],
+      "strict": false
+    },
+    {
       "name": "jobs-to-be-done",
       "source": "./skills/jobs-to-be-done",
       "description": "Uncover customer jobs, pains, and gains in a structured JTBD format.",
