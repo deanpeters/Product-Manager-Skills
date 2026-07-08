@@ -1,29 +1,31 @@
 ---
 name: stakeholder-mapping
-argument-hint: "[stakeholder list or initiative]"
 description: Prioritize stakeholders using two complementary grids. Use when setting engagement strategy and surfacing whose voice needs elevating after stakeholder identification.
-intent: >-
-  Run two complementary 2x2 grids — Power × Interest (sets engagement strategy per
-  stakeholder) and Impact × Power (surfaces who bears consequences but lacks voice) —
-  then compare outputs to reveal blind spots and plan quadrant migration. The grids
-  answer different questions and neither one alone is sufficient: Power × Interest
-  tells you how to engage; Impact × Power tells you whose voice to elevate. Feed
-  outputs into stakeholder-engagement-advisor for per-stakeholder action planning.
-type: component
-best_for:
-  - "After stakeholder identification, when you need to decide who gets which level of engagement"
-  - "Preparing an engagement plan before a roadmap review where executives and impacted user groups have conflicting authority"
-  - "Surfacing high-impact, low-power user segments who deserve more voice in product decisions but lack org pull"
-  - "Re-baselining stakeholder strategy after a reorg has shifted who holds decision authority"
-  - "Planning a compliance or regulatory initiative where power to block sits separately from who bears the consequences"
-scenarios:
-  - "Who should I prioritize engaging on this initiative?"
-  - "How do I handle stakeholders with conflicting priorities?"
-  - "Help me figure out whose voice is missing from our roadmap decisions"
-  - "I need a stakeholder engagement strategy before our quarterly review"
-sources:
-  - "MITRE Innovation Toolkit — Stakeholder Map & Matrix: https://itk.mitre.org/toolkit-tools/stakeholder-map-and-matrix/"
-  - "MITRE Innovation Toolkit — Stakeholder Power Categories: https://itk.mitre.org/toolkit-tools/stakeholder-power-categories/"
+compatibility: opencode
+argument-hint: "[stakeholder list or initiative]"
+metadata:
+  best_for:
+    - "After stakeholder identification, when you need to decide who gets which level of engagement"
+    - "Preparing an engagement plan before a roadmap review where executives and impacted user groups have conflicting authority"
+    - "Surfacing high-impact, low-power user segments who deserve more voice in product decisions but lack org pull"
+    - "Re-baselining stakeholder strategy after a reorg has shifted who holds decision authority"
+    - "Planning a compliance or regulatory initiative where power to block sits separately from who bears the consequences"
+  intent: >-
+    Run two complementary 2x2 grids — Power × Interest (sets engagement strategy per
+    stakeholder) and Impact × Power (surfaces who bears consequences but lacks voice) —
+    then compare outputs to reveal blind spots and plan quadrant migration. The grids
+    answer different questions and neither one alone is sufficient: Power × Interest
+    tells you how to engage; Impact × Power tells you whose voice to elevate. Feed
+    outputs into stakeholder-engagement-advisor for per-stakeholder action planning.
+  scenarios:
+    - "Who should I prioritize engaging on this initiative?"
+    - "How do I handle stakeholders with conflicting priorities?"
+    - "Help me figure out whose voice is missing from our roadmap decisions"
+    - "I need a stakeholder engagement strategy before our quarterly review"
+  sources:
+    - "MITRE Innovation Toolkit — Stakeholder Map & Matrix: https://itk.mitre.org/toolkit-tools/stakeholder-map-and-matrix/"
+    - "MITRE Innovation Toolkit — Stakeholder Power Categories: https://itk.mitre.org/toolkit-tools/stakeholder-power-categories/"
+  type: component
 ---
 
 # Stakeholder Mapping

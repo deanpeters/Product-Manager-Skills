@@ -1,18 +1,20 @@
 ---
 name: workshop-facilitation
 description: Facilitate workshop sessions in a one-step, multi-turn flow. Use when an interactive skill needs consistent pacing, options, and progress tracking.
-intent: >-
-  Provide the canonical facilitation pattern for interactive skills: one step at a time, with clear progress, adaptive recommendations at decision points, and predictable interruption handling.
-type: interactive
-theme: workshops-facilitation
-best_for:
-  - "Adding structured facilitation to any PM workshop or guided session"
-  - "Running interactive sessions with numbered recommendations and progress tracking"
-  - "Ensuring your workshops stay on track and end with actionable choices"
-scenarios:
-  - "I want to run a structured positioning workshop with my product team — set up the facilitation protocol"
-  - "Help me facilitate a discovery sprint kickoff with clear questions, options, and progress labels"
-estimated_time: "varies by workshop"
+compatibility: opencode
+metadata:
+  best_for:
+    - "Adding structured facilitation to any PM workshop or guided session"
+    - "Running interactive sessions with numbered recommendations and progress tracking"
+    - "Ensuring your workshops stay on track and end with actionable choices"
+  estimated_time: "varies by workshop"
+  intent: >-
+    Provide the canonical facilitation pattern for interactive skills: one step at a time, with clear progress, adaptive recommendations at decision points, and predictable interruption handling.
+  scenarios:
+    - "I want to run a structured positioning workshop with my product team — set up the facilitation protocol"
+    - "Help me facilitate a discovery sprint kickoff with clear questions, options, and progress labels"
+  theme: workshops-facilitation
+  type: interactive
 ---
 
 ## Purpose

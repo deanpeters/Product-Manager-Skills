@@ -1,18 +1,22 @@
 ---
 name: epic-breakdown-advisor
-argument-hint: "[epic to split]"
 description: Break down epics into user stories with Humanizing Work split patterns. Use when a backlog item is too large to estimate, sequence, or deliver safely.
-intent: >-
-  Guide product managers through breaking down epics into user stories using Richard Lawrence's complete Humanizing Work methodology—a systematic, flowchart-driven approach that applies 9 splitting patterns sequentially. Use this to identify which pattern applies, split while preserving user value, and evaluate splits based on what they reveal about low-value work you can eliminate. This ensures vertical slicing (end-to-end value) rather than horizontal slicing (technical layers).
-type: interactive
-best_for:
-  - "Splitting epics into smaller vertical slices"
-  - "Choosing the right story split pattern for a large backlog item"
-  - "Turning vague feature blobs into sprint-sized stories"
-scenarios:
-  - "Break this onboarding epic into smaller user stories"
-  - "Help me split a large reporting feature before sprint planning"
-  - "Which story-splitting pattern should I use for this admin workflow epic?"
+compatibility: opencode
+argument-hint: "[epic to split]"
+metadata:
+  best_for:
+    - "Splitting epics into smaller vertical slices"
+    - "Choosing the right story split pattern for a large backlog item"
+    - "Turning vague feature blobs into sprint-sized stories"
+  intent: >-
+    Guide product managers through breaking down epics into user stories using Richard Lawrence's complete Humanizing Work methodology—a systematic, flowchart-driven approach that applies 9 splitting patterns
+    sequentially. Use this to identify which pattern applies, split while preserving user value, and evaluate splits based on what they reveal about low-value work you can eliminate. This ensures vertical
+    slicing (end-to-end value) rather than horizontal slicing (technical layers).
+  scenarios:
+    - "Break this onboarding epic into smaller user stories"
+    - "Help me split a large reporting feature before sprint planning"
+    - "Which story-splitting pattern should I use for this admin workflow epic?"
+  type: interactive
 ---
 
 

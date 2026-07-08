@@ -1,10 +1,13 @@
 ---
 name: pestel-analysis
-argument-hint: "[product or market]"
 description: Analyze political, economic, social, technological, environmental, and legal forces. Use when external market shifts could materially affect a product, roadmap, or strategy.
-intent: >-
-  Conduct a systematic analysis of macro-environmental factors—Political, Economic, Social, Technological, Environmental, and Legal—that could impact your product or project. Use this to identify external opportunities and threats, inform strategic planning, assess market entry risks, and make data-driven decisions about product direction in the context of broader forces beyond your control.
-type: component
+compatibility: opencode
+argument-hint: "[product or market]"
+metadata:
+  intent: >-
+    Conduct a systematic analysis of macro-environmental factors—Political, Economic, Social, Technological, Environmental, and Legal—that could impact your product or project. Use this to identify external
+    opportunities and threats, inform strategic planning, assess market entry risks, and make data-driven decisions about product direction in the context of broader forces beyond your control.
+  type: component
 ---
 
 

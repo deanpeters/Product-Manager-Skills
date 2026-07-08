@@ -1,19 +1,22 @@
 ---
 name: agent-orchestration-advisor
-argument-hint: "[workflow or task to orchestrate]"
 description: Design multi-agent AI workflows with clear boundaries, handoffs, and monitoring. Use when a complex PM task should run as parallel specialized agents instead of one linear process.
-intent: >-
-  Guide product managers through designing multi-agent workflows — breaking complex, repetitive tasks into parallel, specialized AI agents rather than linear, sequential processes. Covers the 4 dimensions of orchestration, agent boundary design, launch control tower monitoring, and evaluation frameworks.
-type: interactive
-theme: ai-agents
-best_for:
-  - "Breaking a complex PM workflow into parallel, specialized AI agents"
-  - "Designing agent boundaries, handoffs, and human review points"
-  - "Setting up launch control tower monitoring for agentic workflows"
-scenarios:
-  - "I spend hours on competitive research every week — help me design agents to run it in parallel"
-  - "Our AI workflow is one giant sequential prompt chain — help me re-architect it as an orchestrated system"
-estimated_time: "15-25 min"
+compatibility: opencode
+argument-hint: "[workflow or task to orchestrate]"
+metadata:
+  best_for:
+    - "Breaking a complex PM workflow into parallel, specialized AI agents"
+    - "Designing agent boundaries, handoffs, and human review points"
+    - "Setting up launch control tower monitoring for agentic workflows"
+  estimated_time: "15-25 min"
+  intent: >-
+    Guide product managers through designing multi-agent workflows — breaking complex, repetitive tasks into parallel, specialized AI agents rather than linear, sequential processes. Covers the 4 dimensions
+    of orchestration, agent boundary design, launch control tower monitoring, and evaluation frameworks.
+  scenarios:
+    - "I spend hours on competitive research every week — help me design agents to run it in parallel"
+    - "Our AI workflow is one giant sequential prompt chain — help me re-architect it as an orchestrated system"
+  theme: ai-agents
+  type: interactive
 ---
 
 ## Purpose

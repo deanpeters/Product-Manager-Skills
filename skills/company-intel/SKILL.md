@@ -1,28 +1,30 @@
 ---
 name: company-intel
-argument-hint: "[company, industry, or competitor set]"
 description: Research a company, industry, or competitor set using web search and seven analytical lenses. Use when you need structured intel that feeds downstream PM skills.
-intent: >-
-  Act as a research engine that builds deep, structured understanding of companies, industries,
-  and competitor sets through **seven analytical lenses** — financial landscape, market offer,
-  product portfolio, competitive dynamics, rising trends, PM implications, and strategic signals
-  (patents, hiring, leadership). Produces a stable, structured output that downstream skills
-  consume to generate battlecards, SWOT analyses, positioning statements, PESTEL assessments,
-  and market sizing. Supports four entry points: single company, industry/sector, named competitor
-  set, or company + "discover my competitors" (researches the company first, identifies likely
-  competitors, confirms the list, then runs the full competitor set analysis).
-type: workflow
-best_for:
-  - "Building deep company or industry knowledge before a client engagement or workshop"
-  - "Generating structured research that feeds battlecards, SWOT, positioning, or PESTEL"
-  - "Running a competitive scan across 3-5 companies with cross-company comparison"
-  - "Refreshing intel quarterly on companies you track"
-scenarios:
-  - "Run company-intel on Parker Hannifin"
-  - "Give me intel on the clinical data management industry"
-  - "Compare Emerson, Honeywell, and Parker Hannifin"
-  - "Run company-intel on productside.com competitors"
-  - "Refresh my intel on Novo Nordisk — what's changed since last quarter?"
+compatibility: opencode
+argument-hint: "[company, industry, or competitor set]"
+metadata:
+  best_for:
+    - "Building deep company or industry knowledge before a client engagement or workshop"
+    - "Generating structured research that feeds battlecards, SWOT, positioning, or PESTEL"
+    - "Running a competitive scan across 3-5 companies with cross-company comparison"
+    - "Refreshing intel quarterly on companies you track"
+  intent: >-
+    Act as a research engine that builds deep, structured understanding of companies, industries,
+    and competitor sets through **seven analytical lenses** — financial landscape, market offer,
+    product portfolio, competitive dynamics, rising trends, PM implications, and strategic signals
+    (patents, hiring, leadership). Produces a stable, structured output that downstream skills
+    consume to generate battlecards, SWOT analyses, positioning statements, PESTEL assessments,
+    and market sizing. Supports four entry points: single company, industry/sector, named competitor
+    set, or company + "discover my competitors" (researches the company first, identifies likely
+    competitors, confirms the list, then runs the full competitor set analysis).
+  scenarios:
+    - "Run company-intel on Parker Hannifin"
+    - "Give me intel on the clinical data management industry"
+    - "Compare Emerson, Honeywell, and Parker Hannifin"
+    - "Run company-intel on productside.com competitors"
+    - "Refresh my intel on Novo Nordisk — what's changed since last quarter?"
+  type: workflow
 ---
 
 ## Purpose

@@ -1,18 +1,22 @@
 ---
 name: problem-framing-canvas
-argument-hint: "[problem area]"
 description: Guide teams through MITRE's Problem Framing Canvas. Use when you need a clearer problem statement before jumping to solutions.
-intent: >-
-  Guide product managers through the MITRE Problem Framing Canvas process by asking structured questions across three phases: Look Inward (examine your own assumptions and biases), Look Outward (understand who experiences the problem and who doesn't), and Reframe (synthesize insights into an actionable problem statement and "How Might We" question). Use this to ensure you're solving the right problem before jumping to solutions—avoiding confirmation bias, overlooked stakeholders, and solution-first thinking.
-type: interactive
-best_for:
-  - "Clarifying a messy problem before solutioning"
-  - "Surfacing assumptions and overlooked stakeholders"
-  - "Creating a bias-resistant problem statement in a workshop"
-scenarios:
-  - "Run a Problem Framing Canvas for our mobile retention issue"
-  - "Help me reframe this stakeholder request before we build anything"
-  - "We need a clearer problem statement for onboarding drop-off"
+compatibility: opencode
+argument-hint: "[problem area]"
+metadata:
+  best_for:
+    - "Clarifying a messy problem before solutioning"
+    - "Surfacing assumptions and overlooked stakeholders"
+    - "Creating a bias-resistant problem statement in a workshop"
+  intent: >-
+    Guide product managers through the MITRE Problem Framing Canvas process by asking structured questions across three phases: Look Inward (examine your own assumptions and biases), Look Outward (understand
+    who experiences the problem and who doesn't), and Reframe (synthesize insights into an actionable problem statement and "How Might We" question). Use this to ensure you're solving the right problem
+    before jumping to solutions—avoiding confirmation bias, overlooked stakeholders, and solution-first thinking.
+  scenarios:
+    - "Run a Problem Framing Canvas for our mobile retention issue"
+    - "Help me reframe this stakeholder request before we build anything"
+    - "We need a clearer problem statement for onboarding drop-off"
+  type: interactive
 ---
 
 

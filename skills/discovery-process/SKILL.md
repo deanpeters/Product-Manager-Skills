@@ -1,19 +1,23 @@
 ---
 name: discovery-process
-argument-hint: "[problem hypothesis]"
 description: Run a full discovery cycle from problem hypothesis to validated solution. Use when a team needs a structured path through framing, interviews, synthesis, and experiments.
-intent: >-
-  Guide product managers through a complete discovery cycle—from initial problem hypothesis to validated solution—by orchestrating problem framing, customer interviews, synthesis, and experimentation skills into a structured process. Use this to systematically explore problem spaces, validate assumptions, and build confidence before committing to full development—avoiding "build it and they will come" syndrome and ensuring you're solving real customer problems.
-type: workflow
-theme: discovery-research
-best_for:
-  - "Running a full discovery cycle from hypothesis to validated solution"
-  - "Investigating a retention or churn problem systematically"
-  - "Setting up continuous discovery as an ongoing practice"
-scenarios:
-  - "I have a hypothesis that B2B customers struggle with onboarding and want to validate it before building anything"
-  - "Our activation rate dropped 15% this quarter and I need to run discovery to find out why"
-estimated_time: "30-60 min"
+compatibility: opencode
+argument-hint: "[problem hypothesis]"
+metadata:
+  best_for:
+    - "Running a full discovery cycle from hypothesis to validated solution"
+    - "Investigating a retention or churn problem systematically"
+    - "Setting up continuous discovery as an ongoing practice"
+  estimated_time: "30-60 min"
+  intent: >-
+    Guide product managers through a complete discovery cycle—from initial problem hypothesis to validated solution—by orchestrating problem framing, customer interviews, synthesis, and experimentation
+    skills into a structured process. Use this to systematically explore problem spaces, validate assumptions, and build confidence before committing to full development—avoiding "build it and they will
+    come" syndrome and ensuring you're solving real customer problems.
+  scenarios:
+    - "I have a hypothesis that B2B customers struggle with onboarding and want to validate it before building anything"
+    - "Our activation rate dropped 15% this quarter and I need to run discovery to find out why"
+  theme: discovery-research
+  type: workflow
 ---
 
 

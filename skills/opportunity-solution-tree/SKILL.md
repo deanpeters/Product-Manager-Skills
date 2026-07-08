@@ -1,10 +1,14 @@
 ---
 name: opportunity-solution-tree
-argument-hint: "[stakeholder request or outcome]"
 description: Build an Opportunity Solution Tree from outcomes to opportunities, solutions, and tests. Use when a stakeholder request needs problem framing before you decide what to build.
-intent: >-
-  Guide product managers through creating an Opportunity Solution Tree (OST) by extracting target outcomes from stakeholder requests, generating opportunity options (problems to solve), mapping potential solutions, and selecting the best proof-of-concept (POC) based on feasibility, impact, and market fit. Use this to move from vague product requests to structured discovery, ensuring teams solve the right problems before jumping to solutions—avoiding "feature factory" syndrome and premature convergence on ideas.
-type: interactive
+compatibility: opencode
+argument-hint: "[stakeholder request or outcome]"
+metadata:
+  intent: >-
+    Guide product managers through creating an Opportunity Solution Tree (OST) by extracting target outcomes from stakeholder requests, generating opportunity options (problems to solve), mapping potential
+    solutions, and selecting the best proof-of-concept (POC) based on feasibility, impact, and market fit. Use this to move from vague product requests to structured discovery, ensuring teams solve the
+    right problems before jumping to solutions—avoiding "feature factory" syndrome and premature convergence on ideas.
+  type: interactive
 ---
 
 

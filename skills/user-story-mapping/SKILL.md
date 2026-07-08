@@ -1,10 +1,13 @@
 ---
 name: user-story-mapping
-argument-hint: "[product or workflow]"
 description: Create a user story map that lays out activities, steps, tasks, and release slices. Use when planning a workflow, backlog, or MVP around the user journey.
-intent: >-
-  Visualize the user journey by creating a hierarchical map that breaks down high-level activities into steps and tasks, organized left-to-right as a narrative flow. Use this to build shared understanding across product, design, and engineering, prioritize features based on user workflows, and identify gaps or opportunities in the user experience.
-type: component
+compatibility: opencode
+argument-hint: "[product or workflow]"
+metadata:
+  intent: >-
+    Visualize the user journey by creating a hierarchical map that breaks down high-level activities into steps and tasks, organized left-to-right as a narrative flow. Use this to build shared understanding
+    across product, design, and engineering, prioritize features based on user workflows, and identify gaps or opportunities in the user experience.
+  type: component
 ---
 
 

@@ -1,13 +1,15 @@
 #!/usr/bin/env python3
-"""Validate skill conformance for repository and Claude compatibility.
+"""Validate skill conformance for repository, Claude, and OpenCode compatibility.
 
 Checks:
 - Valid YAML frontmatter
 - name present, lowercase kebab-case, and <= 64 chars
 - description present and <= 200 chars
-- intent present and non-empty
-- type present and one of: component, interactive, workflow
+- intent present and non-empty (top-level or under metadata)
+- type present and one of: component, interactive, workflow (top-level or under metadata)
 - folder name matches frontmatter name
+- compatibility field accepted when present (opencode supported)
+- metadata field accepted as optional nested map
 - required sections exist in order:
   Purpose, Input, Key Concepts, Application, Examples, Common Pitfalls, References
 - no $ARGUMENTS template syntax in the body (outside code formatting) — skills
@@ -122,10 +124,12 @@ def check_skill(path: str) -> list[Issue]:
         issues.append(Issue(path, "frontmatter_missing", "Missing or malformed frontmatter"))
         return issues
 
+    metadata = data.get("metadata") or {}
+
     name = str(data.get("name") or "").strip()
     description = str(data.get("description") or "").strip()
-    intent = str(data.get("intent") or "").strip()
-    skill_type = str(data.get("type") or "").strip()
+    intent = str(metadata.get("intent") or data.get("intent") or "").strip()
+    skill_type = str(metadata.get("type") or data.get("type") or "").strip()
 
     if not name:
         issues.append(Issue(path, "name_missing", "Frontmatter name is required"))

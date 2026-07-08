@@ -1,19 +1,24 @@
 ---
 name: organic-growth-advisor
+description: "Identify which organic growth path to pursue — new segments, geographies, channels, or products. Use when diagnosing where a growth constraint lives and which McKinsey growth level to act\
+  \ on next."
+compatibility: opencode
 argument-hint: "[product and growth context]"
-description: "Identify which organic growth path to pursue — new segments, geographies, channels, or products. Use when diagnosing where a growth constraint lives and which McKinsey growth level to act on next."
-intent: >-
-  Guide product managers through a fast triage to identify which of four organic growth paths fits their current constraint: new customer segments (L2), new geographies (L3), new distribution channels (L4), or new products or services (L5). Uses a 2x2 diagnostic based on customer/market context familiarity and degree of product change required. Outputs a growth path recommendation with rationale and immediate next steps.
-type: interactive
-best_for:
-  - "Choosing which organic growth motion to pursue when multiple seem viable"
-  - "Diagnosing whether the constraint is in reach, access, market context, or product value"
-  - "Setting up an AI-assisted growth experiment with the right starting hypothesis"
-scenarios:
-  - "We need to grow but aren't sure if we should go after new customer segments or new geographies"
-  - "Help me figure out which McKinsey growth level we should focus on"
-  - "We have strong product-market fit but growth is stalling. Where should we look?"
-  - "Which organic growth path fits our current situation?"
+metadata:
+  best_for:
+    - "Choosing which organic growth motion to pursue when multiple seem viable"
+    - "Diagnosing whether the constraint is in reach, access, market context, or product value"
+    - "Setting up an AI-assisted growth experiment with the right starting hypothesis"
+  intent: >-
+    Guide product managers through a fast triage to identify which of four organic growth paths fits their current constraint: new customer segments (L2), new geographies (L3), new distribution channels
+    (L4), or new products or services (L5). Uses a 2x2 diagnostic based on customer/market context familiarity and degree of product change required. Outputs a growth path recommendation with rationale
+    and immediate next steps.
+  scenarios:
+    - "We need to grow but aren't sure if we should go after new customer segments or new geographies"
+    - "Help me figure out which McKinsey growth level we should focus on"
+    - "We have strong product-market fit but growth is stalling. Where should we look?"
+    - "Which organic growth path fits our current situation?"
+  type: interactive
 ---
 
 

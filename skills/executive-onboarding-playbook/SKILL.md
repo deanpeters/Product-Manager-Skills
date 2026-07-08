@@ -1,20 +1,23 @@
 ---
 name: executive-onboarding-playbook
-argument-hint: "[role and company context]"
 description: Plan a VP or CPO 30-60-90 day diagnostic onboarding path. Use when entering a new executive product role and avoiding premature change.
-intent: >-
-  Structure the first 90 days of a VP or CPO transition as a diagnostic process, not an execution sprint. The single most common failure in senior product leadership transitions is acting before understanding — changing structures, replacing people, or announcing strategy before building the evidence base that makes those decisions defensible.
-type: workflow
-theme: career-leadership
-best_for:
-  - "Starting a new VP or CPO role in the first 90 days"
-  - "Evaluating a CPO offer — what to ask before you accept"
-  - "Diagnosing an organization you've just inherited"
-scenarios:
-  - "I just accepted a VP of Product role starting next month — help me plan my first 90 days"
-  - "I'm evaluating a CPO offer and want to know what questions to ask the hiring CEO"
-  - "I'm two months into a new role and want to validate what I've learned before I start acting"
-estimated_time: "20-30 min"
+compatibility: opencode
+argument-hint: "[role and company context]"
+metadata:
+  best_for:
+    - "Starting a new VP or CPO role in the first 90 days"
+    - "Evaluating a CPO offer — what to ask before you accept"
+    - "Diagnosing an organization you've just inherited"
+  estimated_time: "20-30 min"
+  intent: >-
+    Structure the first 90 days of a VP or CPO transition as a diagnostic process, not an execution sprint. The single most common failure in senior product leadership transitions is acting before understanding
+    — changing structures, replacing people, or announcing strategy before building the evidence base that makes those decisions defensible.
+  scenarios:
+    - "I just accepted a VP of Product role starting next month — help me plan my first 90 days"
+    - "I'm evaluating a CPO offer and want to know what questions to ask the hiring CEO"
+    - "I'm two months into a new role and want to validate what I've learned before I start acting"
+  theme: career-leadership
+  type: workflow
 ---
 
 ## Purpose

@@ -1,26 +1,28 @@
 ---
 name: derisk-measurement-advisor
-argument-hint: "[product or AI idea]"
 description: Identify what to measure, test, or track to de-risk a product or AI idea. Use when stress-testing an idea across internal (DUFV) and external (PESTEL) dimensions.
-intent: >-
-  Guide product managers through a structured risk scan across **10 dimensions** — 4 internal
-  (Desirability, Usability, Feasibility, Viability) and 6 external (Political, Economic, Social,
-  Technological, Environmental, Legal) — to identify the most important things to measure, test,
-  or track before committing to a product or AI idea. Each surfaced risk gets triaged into
-  **act on immediately** or **start tracking**, producing a prioritized risk register with
-  concrete next steps.
-type: interactive
-best_for:
-  - "Stress-testing an AI or product idea before putting it on the roadmap"
-  - "Identifying the cheapest tests to run before committing teams and budget"
-  - "Scanning for external forces that could blindside your product plans"
-  - "Building a risk register with clear act-now vs. watch-and-track priorities"
-scenarios:
-  - "I have an AI product idea. What should I measure before we commit?"
-  - "Help me figure out what risks to act on now vs. track over time"
-  - "We're about to put this on the roadmap. What could go wrong internally and externally?"
-  - "Is this idea worth the squeeze? What should we test first?"
-estimated_time: "15-20 min"
+compatibility: opencode
+argument-hint: "[product or AI idea]"
+metadata:
+  best_for:
+    - "Stress-testing an AI or product idea before putting it on the roadmap"
+    - "Identifying the cheapest tests to run before committing teams and budget"
+    - "Scanning for external forces that could blindside your product plans"
+    - "Building a risk register with clear act-now vs. watch-and-track priorities"
+  estimated_time: "15-20 min"
+  intent: >-
+    Guide product managers through a structured risk scan across **10 dimensions** — 4 internal
+    (Desirability, Usability, Feasibility, Viability) and 6 external (Political, Economic, Social,
+    Technological, Environmental, Legal) — to identify the most important things to measure, test,
+    or track before committing to a product or AI idea. Each surfaced risk gets triaged into
+    **act on immediately** or **start tracking**, producing a prioritized risk register with
+    concrete next steps.
+  scenarios:
+    - "I have an AI product idea. What should I measure before we commit?"
+    - "Help me figure out what risks to act on now vs. track over time"
+    - "We're about to put this on the roadmap. What could go wrong internally and externally?"
+    - "Is this idea worth the squeeze? What should we test first?"
+  type: interactive
 ---
 
 ## Purpose

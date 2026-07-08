@@ -1,10 +1,13 @@
 ---
 name: press-release
-argument-hint: "[product or feature idea]"
 description: Write an Amazon-style press release that defines customer value before building. Use when aligning stakeholders on a new product, feature, or strategic bet.
-intent: >-
-  Create a visionary press release following Amazon's "Working Backwards" methodology to define and communicate a product or feature before building it. Use this to align stakeholders on the customer value proposition, clarify the problem being solved, and test if the product story resonates—treating the press release as a forcing function for clarity and customer-centricity.
-type: component
+compatibility: opencode
+argument-hint: "[product or feature idea]"
+metadata:
+  intent: >-
+    Create a visionary press release following Amazon's "Working Backwards" methodology to define and communicate a product or feature before building it. Use this to align stakeholders on the customer
+    value proposition, clarify the problem being solved, and test if the product story resonates—treating the press release as a forcing function for clarity and customer-centricity.
+  type: component
 ---
 
 

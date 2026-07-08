@@ -1,20 +1,23 @@
 ---
 name: director-readiness-advisor
-argument-hint: "[where you are: preparing | interviewing | landed | recalibrating]"
 description: Guide the PM-to-Director transition across preparing, interviewing, landing, and recalibrating. Use when leadership scope is changing and you need practical coaching.
-intent: >-
-  Guide PMs and Directors through the specific challenges of the PM-to-Director transition using adaptive questions and targeted coaching. Diagnoses where you are in the journey and delivers practical, war-story-backed guidance calibrated to your situation — not generic leadership advice.
-type: interactive
-theme: career-leadership
-best_for:
-  - "Preparing to make the leap to Director over the next 3-12 months"
-  - "Navigating your first 6 months in a new Director role"
-  - "Diagnosing what isn't working 12+ months into the Director role"
-scenarios:
-  - "I'm a senior PM preparing for Director interviews next quarter"
-  - "I just got promoted to Director and I can't stop jumping into the tactical work"
-  - "I've been a Director for 18 months and my exec relationships aren't working"
-estimated_time: "10-15 min"
+compatibility: opencode
+argument-hint: "[where you are: preparing | interviewing | landed | recalibrating]"
+metadata:
+  best_for:
+    - "Preparing to make the leap to Director over the next 3-12 months"
+    - "Navigating your first 6 months in a new Director role"
+    - "Diagnosing what isn't working 12+ months into the Director role"
+  estimated_time: "10-15 min"
+  intent: >-
+    Guide PMs and Directors through the specific challenges of the PM-to-Director transition using adaptive questions and targeted coaching. Diagnoses where you are in the journey and delivers practical,
+    war-story-backed guidance calibrated to your situation — not generic leadership advice.
+  scenarios:
+    - "I'm a senior PM preparing for Director interviews next quarter"
+    - "I just got promoted to Director and I can't stop jumping into the tactical work"
+    - "I've been a Director for 18 months and my exec relationships aren't working"
+  theme: career-leadership
+  type: interactive
 ---
 
 ## Purpose

@@ -1,10 +1,14 @@
 ---
 name: company-research
-argument-hint: "[company name] [purpose]"
 description: Create a company research brief with executive quotes, product strategy, and org context. Use when preparing for interviews, competitive analysis, partnerships, or market-entry work.
-intent: >-
-  Create a comprehensive company profile that extracts executive insights, product strategy, transformation initiatives, and organizational dynamics from publicly available sources. Use this to understand competitive landscape, evaluate partnership opportunities, benchmark best practices, prepare for interviews, or inform market entry decisions by understanding how successful companies think about product management and strategy.
-type: component
+compatibility: opencode
+argument-hint: "[company name] [purpose]"
+metadata:
+  intent: >-
+    Create a comprehensive company profile that extracts executive insights, product strategy, transformation initiatives, and organizational dynamics from publicly available sources. Use this to understand
+    competitive landscape, evaluate partnership opportunities, benchmark best practices, prepare for interviews, or inform market entry decisions by understanding how successful companies think about product
+    management and strategy.
+  type: component
 ---
 
 

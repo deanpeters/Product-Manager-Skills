@@ -1,20 +1,23 @@
 ---
 name: pm-skill-creator
-argument-hint: "[idea or raw content]"
 description: Design a new PM skill through guided conversation. Use when you have raw content or an idea and want to shape it into a compliant skill.
-intent: >-
-  Walk through the full skill design process interactively — from raw idea or content to a structured, repo-compliant SKILL.md draft. Asks adaptive questions to determine skill type, scope, structure, and content, then generates a ready-to-validate draft.
-type: interactive
-theme: meta-authoring
-best_for:
-  - "Turning a rough idea or framework into a structured PM skill"
-  - "Deciding whether raw content should be a component, interactive, or workflow skill"
-  - "Getting from blank page to a complete SKILL.md draft through guided conversation"
-scenarios:
-  - "I have notes from a workshop and want to turn them into a skill"
-  - "Help me create a new skill — I know the topic but not the structure"
-  - "I have a PM framework I want to formalize as a repo skill"
-estimated_time: "10-15 min"
+compatibility: opencode
+argument-hint: "[idea or raw content]"
+metadata:
+  best_for:
+    - "Turning a rough idea or framework into a structured PM skill"
+    - "Deciding whether raw content should be a component, interactive, or workflow skill"
+    - "Getting from blank page to a complete SKILL.md draft through guided conversation"
+  estimated_time: "10-15 min"
+  intent: >-
+    Walk through the full skill design process interactively — from raw idea or content to a structured, repo-compliant SKILL.md draft. Asks adaptive questions to determine skill type, scope, structure,
+    and content, then generates a ready-to-validate draft.
+  scenarios:
+    - "I have notes from a workshop and want to turn them into a skill"
+    - "Help me create a new skill — I know the topic but not the structure"
+    - "I have a PM framework I want to formalize as a repo skill"
+  theme: meta-authoring
+  type: interactive
 ---
 
 ## Purpose

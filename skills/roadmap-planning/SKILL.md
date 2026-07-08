@@ -1,19 +1,23 @@
 ---
 name: roadmap-planning
-argument-hint: "[product and planning horizon]"
 description: Plan a strategic roadmap across prioritization, epic definition, stakeholder alignment, and sequencing. Use when turning strategy into a release plan that teams can execute.
-intent: >-
-  Guide product managers through strategic roadmap planning by orchestrating prioritization, epic definition, stakeholder alignment, and release sequencing skills into a structured process. Use this to move from disconnected feature requests to a cohesive, outcome-driven roadmap that aligns stakeholders, sequences work logically, and communicates strategic intent—avoiding "feature factory" roadmaps that lack strategic narrative or customer-centric framing.
-type: workflow
-theme: strategy-positioning
-best_for:
-  - "Building a strategic roadmap that survives exec review"
-  - "Prioritizing competing initiatives across multiple teams"
-  - "Planning and sequencing work for the next quarter or half-year"
-scenarios:
-  - "I have 15 competing initiatives and need to build a Q2 roadmap my exec team will actually approve"
-  - "I'm planning our 6-month product roadmap and need to sequence work across 3 teams"
-estimated_time: "45-90 min"
+compatibility: opencode
+argument-hint: "[product and planning horizon]"
+metadata:
+  best_for:
+    - "Building a strategic roadmap that survives exec review"
+    - "Prioritizing competing initiatives across multiple teams"
+    - "Planning and sequencing work for the next quarter or half-year"
+  estimated_time: "45-90 min"
+  intent: >-
+    Guide product managers through strategic roadmap planning by orchestrating prioritization, epic definition, stakeholder alignment, and release sequencing skills into a structured process. Use this to
+    move from disconnected feature requests to a cohesive, outcome-driven roadmap that aligns stakeholders, sequences work logically, and communicates strategic intent—avoiding "feature factory" roadmaps
+    that lack strategic narrative or customer-centric framing.
+  scenarios:
+    - "I have 15 competing initiatives and need to build a Q2 roadmap my exec team will actually approve"
+    - "I'm planning our 6-month product roadmap and need to sequence work across 3 teams"
+  theme: strategy-positioning
+  type: workflow
 ---
 
 

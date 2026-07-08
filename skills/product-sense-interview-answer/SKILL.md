@@ -1,24 +1,26 @@
 ---
 name: product-sense-interview-answer
-argument-hint: "[interview prompt]"
 description: Structure a spoken PM product-sense answer with assumptions, segmentation, pain-point prioritization, and MVP tradeoffs. Use when practicing design, improve, or build-next interview questions.
-intent: >-
-  Coach PM candidates through open-ended product-sense interviews using a repeatable
-  six-part answer spine: clarify, rationale, goal, segmentation, pain points,
-  and solution choice. Use this to practice product design and product improvement
-  questions, avoid solution-first answers, and produce responses that sound
-  thoughtful out loud rather than over-scripted on the page.
-type: component
-theme: career-leadership
-best_for:
-  - "Practicing product design and product improvement interview questions"
-  - "Coaching candidates who jump to solutions too quickly"
-  - "Turning messy ideation into a crisp spoken interview answer"
-scenarios:
-  - "How would you improve YouTube?"
-  - "Design a product for travelers with flight anxiety"
-  - "What would you build next for DoorDash?"
-estimated_time: "20-30 min"
+compatibility: opencode
+argument-hint: "[interview prompt]"
+metadata:
+  best_for:
+    - "Practicing product design and product improvement interview questions"
+    - "Coaching candidates who jump to solutions too quickly"
+    - "Turning messy ideation into a crisp spoken interview answer"
+  estimated_time: "20-30 min"
+  intent: >-
+    Coach PM candidates through open-ended product-sense interviews using a repeatable
+    six-part answer spine: clarify, rationale, goal, segmentation, pain points,
+    and solution choice. Use this to practice product design and product improvement
+    questions, avoid solution-first answers, and produce responses that sound
+    thoughtful out loud rather than over-scripted on the page.
+  scenarios:
+    - "How would you improve YouTube?"
+    - "Design a product for travelers with flight anxiety"
+    - "What would you build next for DoorDash?"
+  theme: career-leadership
+  type: component
 ---
 
 ## Purpose

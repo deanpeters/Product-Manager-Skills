@@ -1,10 +1,13 @@
 ---
 name: recommendation-canvas
-argument-hint: "[AI product idea]"
 description: Evaluate an AI product idea across outcomes, hypotheses, risks, and positioning. Use when deciding whether an AI solution deserves investment or recommendation.
-intent: >-
-  Evaluate and propose AI product solutions using a structured canvas that assesses business outcomes, customer outcomes, problem framing, solution hypotheses, positioning, risks, and value justification. Use this to build a comprehensive, defensible recommendation for stakeholders and decision-makers—especially when proposing AI-powered features or products that carry higher uncertainty and risk.
-type: component
+compatibility: opencode
+argument-hint: "[AI product idea]"
+metadata:
+  intent: >-
+    Evaluate and propose AI product solutions using a structured canvas that assesses business outcomes, customer outcomes, problem framing, solution hypotheses, positioning, risks, and value justification.
+    Use this to build a comprehensive, defensible recommendation for stakeholders and decision-makers—especially when proposing AI-powered features or products that carry higher uncertainty and risk.
+  type: component
 ---
 
 

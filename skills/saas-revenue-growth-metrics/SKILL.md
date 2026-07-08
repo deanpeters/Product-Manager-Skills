@@ -1,19 +1,22 @@
 ---
 name: saas-revenue-growth-metrics
-argument-hint: "[metrics or question]"
 description: Calculate SaaS revenue, retention, and growth metrics. Use when diagnosing momentum, churn, expansion, or product-market-fit signals.
-intent: >-
-  Master revenue and retention metrics to understand SaaS business momentum, evaluate product-market fit, and make data-driven decisions about growth investments. Use this to calculate key metrics, interpret trends, identify problems early, and communicate business health to stakeholders.
-type: component
-theme: finance-metrics
-best_for:
-  - "Understanding your key revenue and retention metrics"
-  - "Calculating MRR, ARR, churn, and NRR correctly"
-  - "Building a metrics dashboard for your SaaS product"
-scenarios:
-  - "I need to calculate and interpret our MRR, churn rate, and NRR for a board deck"
-  - "Help me understand the difference between gross and net revenue retention and how to improve it"
-estimated_time: "10-15 min"
+compatibility: opencode
+argument-hint: "[metrics or question]"
+metadata:
+  best_for:
+    - "Understanding your key revenue and retention metrics"
+    - "Calculating MRR, ARR, churn, and NRR correctly"
+    - "Building a metrics dashboard for your SaaS product"
+  estimated_time: "10-15 min"
+  intent: >-
+    Master revenue and retention metrics to understand SaaS business momentum, evaluate product-market fit, and make data-driven decisions about growth investments. Use this to calculate key metrics, interpret
+    trends, identify problems early, and communicate business health to stakeholders.
+  scenarios:
+    - "I need to calculate and interpret our MRR, churn rate, and NRR for a board deck"
+    - "Help me understand the difference between gross and net revenue retention and how to improve it"
+  theme: finance-metrics
+  type: component
 ---
 
 
