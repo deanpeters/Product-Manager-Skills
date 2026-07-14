@@ -28,7 +28,6 @@
   - [`director-readiness-advisor`](skills/director-readiness-advisor/SKILL.md) (Interactive) — Coaching across four situations: preparing, interviewing, newly landed, recalibrating. Based on E42
   - [`executive-onboarding-playbook`](skills/executive-onboarding-playbook/SKILL.md) (Workflow) — 30-60-90 day diagnostic playbook for VP/CPO transitions. Based on [E43](https://the-product-porch-43ca35c0.simplecast.com/episodes/becoming-a-vp-cpo-leading-product-at-the-executive-level-part-2)
   - [`vp-cpo-readiness-advisor`](skills/vp-cpo-readiness-advisor/SKILL.md) (Interactive) — Director→VP/CPO coaching; includes CEO interview framework. Based on E43
-- **Source transcripts:** `research/product_porch_transcript.making-the-shift-from-pm-to-director-of-product.md` and `research/product_porch_transcript.becoming-a-vp-or-cpo-of-product-at-executive-level.md`
 - **Potential follow-on:** VP/CPO→C-suite transition (separate skill set, not yet sourced)
 
 **Phase 6: AI PM Orchestrator Skills (In Progress)**
