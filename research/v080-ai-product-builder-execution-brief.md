@@ -27,7 +27,7 @@ Do not use, mention, summarize, paraphrase, or derive examples from:
 Allowed source material:
 
 1. The public `Product-Manager-Skills` repository itself.
-2. The uploaded Substack export at `deanpeters.substack.com/` (also available in the path 'research/deanpeters-substack-posts.zip' of this project, or the path '/Users/deanpeters/Code/15-days-of-aipm/substack/deanpeters.substack.com' on this device)
+2. The uploaded Substack export at `deanpeters.substack.com/` (also available in the path 'research/deanpeters-substack-posts.zip' of this project; see the 15 Days of AIPM series capstone at https://deanpeters.substack.com/p/day-15-the-wave-is-already-here)
 3. Public market evidence only when needed for release notes or context.
 4. Original synthesis from public/product-management concepts.
 

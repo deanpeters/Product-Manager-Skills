@@ -260,6 +260,18 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines, or open an issue to start
 
 [CC BY-NC-SA 4.0](LICENSE) — non-commercial use with share-alike.
 
+**Everything in this repository — every skill, template, and doc — is licensed CC BY-NC-SA 4.0. There is no mix of licenses here.**
+
+Some skills note in their Provenance sections that they were adapted from [product-manager-prompts](https://github.com/deanpeters/product-manager-prompts), Dean's earlier prompt library. That repo has the same author, so there is no license conflict: a license grants permissions to *other* people, and a copyright holder is free to adapt and relicense their own work. Those Provenance lines are lineage — a breadcrumb back to where an idea started — not a license dependency. No third-party MIT-licensed text is incorporated anywhere in this library.
+
+**In plain terms:**
+
+- ✅ **Use these skills in your day job** — at a for-profit company, with your team, in your agents. That's what they're for.
+- ✅ **Adapt and remix them** — share what you build under this same license, with credit.
+- ✅ **Teach with them** — workshops, brown bags, mentoring, sending the ladder down.
+- ❌ **Don't sell them** — no repackaging the skills themselves into a paid product, course, or service without expressed written permission.
+- 🤔 **Not sure your use qualifies?** [Open an issue](https://github.com/deanpeters/Product-Manager-Skills/issues) and ask. If you're using these in the spirit they were built — to get better at the craft and help others do the same — the answer is almost certainly yes.
+
 ---
 
 ## Questions
