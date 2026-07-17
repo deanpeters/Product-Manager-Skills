@@ -22,7 +22,12 @@ Anything supplied with the invocation itself — text after the skill name, a pa
 
 **Arriving empty-handed? That works too.** The calculator opens by asking what you're sizing and for whom, then works through method and assumptions.
 
-**Example invocation:** `Size the market: AI scheduling assistant for independent dental practices, US only, $99/mo price point.`
+**Three entry modes** — pick whichever matches where your evidence lives:
+1. **Bring your own numbers** — you have population and ARPU figures; jump to the math (the helper script makes this deterministic)
+2. **Guided interview** — up to 4 adaptive questions build the inputs with you (the default flow below)
+3. **Autonomous research** — the agent builds a bottom-up, citation-backed estimate from government statistics and filings while you review the evidence (see *Mode 3* in Application)
+
+**Example invocation:** `Size the market: AI scheduling assistant for independent dental practices, US only, $99/mo price point.` — or for research mode: `Research-mode market sizing: field-service dispatch software, DACH region; I have no numbers yet.`
 
 ## Key Concepts
 
@@ -124,6 +129,42 @@ If you already have population and ARPU numbers (or a TAM estimate), you can run
 ```bash
 python3 scripts/market-sizing.py --population 5400000 --arpu 1000 --sam-share 30% --som-share 10%
 ```
+
+---
+
+### Mode 3: Autonomous Research (when the user has no numbers)
+
+When the user picks research mode — or arrives with a market and a decision but no data — run the
+sizing as an investigation under the [`autonomous-investigation`](../autonomous-investigation/SKILL.md)
+protocol: ask at most the questions below that remain unanswered, show a 3-bullet search plan, then
+build the estimate bottom-up with every figure labeled **Fact / Inference / Assumption** and cited.
+
+**The bottom-up recipe** (from the GEOINT/DEMOINT discipline in
+[`intelligence-collection-disciplines`](../intelligence-collection-disciplines/SKILL.md)):
+
+~~~
+TAM: Establishment counts for the market (Census/NAICS, Eurostat/NACE,
+     or the national equivalent for the geography)
+     × employment/spend benchmarks (BLS, Eurostat, trade associations)
+     (validate against two independent analyst reports; if they disagree by 3x, say so)
+
+SAM: TAM filtered by your actual constraints: geography, segment, compliance
+     requirements, tech prerequisites (technographics: who *can* buy you),
+     vendor-registration eligibility where applicable
+
+SOM: SAM × realistic capture rate derived from competitor public filings
+     (their revenue ÷ their claimed customer count = deal size reality check)
+~~~
+
+**Why bottom-up wins scrutiny:** a top-down number ("2% of a $50B market") borrows someone else's
+denominator and hides every assumption inside it. Establishment counts × benchmarks shows the math,
+so a skeptical CFO can attack one assumption at a time instead of dismissing the whole slide. The
+capture-rate trick grounds SOM in what incumbents *actually* achieve rather than hope.
+
+Research-mode output uses the same analysis structure below, with two additions: an evidence label on
+every figure, and an **Assumptions to Validate** list. When done, offer the standard next steps plus
+a re-run option — sizing built from statistics releases rots slowly but really; re-run annually per
+the fusion cadence.
 
 ---
 
@@ -380,6 +421,9 @@ Mini example excerpt:
 - `skills/positioning-statement/SKILL.md` — TAM/SAM/SOM informs "For [target]" segment size
 - `skills/problem-statement/SKILL.md` — Problem space defines the market
 - `skills/recommendation-canvas/SKILL.md` — Market sizing informs business outcome projections
+- `skills/autonomous-investigation/SKILL.md` — The protocol governing Mode 3 (research mode)
+- `skills/intelligence-collection-disciplines/SKILL.md` — GEOINT/DEMOINT sources for the bottom-up recipe; FININT for capture rates
+- `skills/market-landscape-scan/SKILL.md` — Maps the segments worth sizing (structure before magnitude)
 
 ### Optional Helpers
 - `skills/tam-sam-som-calculator/scripts/market-sizing.py` — Deterministic TAM/SAM/SOM calculator (no network access)

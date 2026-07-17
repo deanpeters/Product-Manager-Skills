@@ -1,5 +1,5 @@
 generated_from: skills/*/SKILL.md
-count: 56
+count: 69
 skills:
 - name: acquisition-channel-advisor
   description: Evaluate acquisition channels using unit economics, customer quality,
@@ -41,6 +41,38 @@ skills:
     ahead you look). Use this to understand what actually changes in the transition,
     diagnose which transition zone is creating friction, and apply the Cascading Context
     Map when organizational direction is vague or absent.'
+- name: ansoff-matrix
+  description: Map evidence-backed growth options across the Ansoff Matrix with risk-rated
+    sequencing. Use when the question is where the next tranche of growth comes from,
+    and at what risk.
+  type: workflow
+  path: skills/ansoff-matrix/SKILL.md
+  intent: 'A researched Ansoff Matrix, not a brainstorm grid: market penetration,
+    market development, product development, and diversification, each quadrant populated
+    with candidate moves backed by documented signals, risk ratings that respect the
+    matrix''s risk gradient, and a recommended sequence with the assumption that breaks
+    it.'
+- name: autonomous-investigation
+  description: 'The protocol behind every investigation skill. Use when AI research
+    must proceed without you: search-plan gate, Fact/Inference/Assumption labels,
+    confidence stacking, diffable outputs.'
+  type: workflow
+  path: skills/autonomous-investigation/SKILL.md
+  intent: "Provide the canonical contract for autonomous research skills: a bounded\
+    \ question budget, a search-plan gate, three-level evidence labeling, do-not-invent\
+    \ lists, just-enough output, stable diffable schemas, and confidence stacking\
+    \ \u2014 so investigations are trustworthy, schedulable, and comparable run over\
+    \ run."
+- name: battle-card-builder
+  description: "Research and draft a competitive battle card from public evidence\
+    \ \u2014 every claim labeled and sourced. Use when a rep needs a field-action\
+    \ card, not a research report."
+  type: workflow
+  path: skills/battle-card-builder/SKILL.md
+  intent: "Autonomous battle card construction: given your product and one competitor,\
+    \ the AI does the fieldwork \u2014 pricing pages, reviews, release notes, customer\
+    \ stories \u2014 and produces a field-action card with a source URL and Fact/Inference/Assumption\
+    \ label on every claim, sized to a rep's thirty seconds."
 - name: business-health-diagnostic
   description: Diagnose SaaS business health across growth, retention, efficiency,
     and capital. Use when preparing a business review or prioritizing urgent fixes.
@@ -78,6 +110,38 @@ skills:
     partnership opportunities, benchmark best practices, prepare for interviews, or
     inform market entry decisions by understanding how successful companies think
     about product management and strategy.
+- name: competitive-analysis-process
+  description: Orchestrate a complete competitive analysis across six steps, from
+    landscape to strategic direction. Use when you need the full picture, not a single
+    scan or card.
+  type: workflow
+  path: skills/competitive-analysis-process/SKILL.md
+  intent: "The umbrella workflow for competitive analysis: six analytical steps \u2014\
+    \ landscape overview, product comparison, customer-need fulfillment, business\
+    \ baseline, perception and positioning, strategic direction \u2014 each grounded\
+    \ in named frameworks and delegated to the right investigation skill, ending in\
+    \ the four output artifacts that make the work actionable."
+- name: competitive-intel-watch
+  description: 'Scheduled delta monitoring against a prior competitive snapshot. Use
+    when tracking competitors on a cadence: material shifts only, cited evidence,
+    battle-card update flags, runs unattended.'
+  type: workflow
+  path: skills/competitive-intel-watch/SKILL.md
+  intent: "A competitive intelligence delta monitor: given a previous Competitive\
+    \ Research Snapshot, sweep for material shifts since the last run and report only\
+    \ what changed \u2014 a cited changelog plus flags naming which battle card or\
+    \ positioning sections now need updating. Designed to run unattended on a loop\
+    \ or schedule; an empty changelog is a valid, useful result."
+- name: competitive-research-snapshot
+  description: Research a competitive landscape with cited snapshots, a comparison
+    matrix, and so-what implications. Use when a product decision needs competitive
+    grounding, not a market report.
+  type: workflow
+  path: skills/competitive-research-snapshot/SKILL.md
+  intent: "Autonomous competitive research as a workflow: search plan, competitor\
+    \ selection, just-enough research, Fact/Inference/Assumption labels, real URL\
+    \ citations, and next-step options \u2014 producing a stable snapshot schema that\
+    \ battle cards and delta monitors consume and diff."
 - name: context-engineering-advisor
   description: Diagnose context stuffing vs. context engineering. Use when an AI workflow
     feels bloated, brittle, or hard to steer reliably.
@@ -244,6 +308,16 @@ skills:
     it, reading sender power and stake from a product leader's chair, and opening
     the conversation toward a reply or next artifact. Trains the PM habit of finding
     the outcome before responding.
+- name: intelligence-collection-disciplines
+  description: 'Run competitive research like an intelligence agency: eight collection
+    disciplines (OSINT to MASINT), signal-to-inference chains, and fusion. Use when
+    one-source research isn''t enough.'
+  type: component
+  path: skills/intelligence-collection-disciplines/SKILL.md
+  intent: "Give product managers the intelligence community's collection playbook:\
+    \ eight independent disciplines, each with free and paid sources, signal-to-inference\
+    \ chains, and the PM artifact it feeds \u2014 then fuse them with confidence stacking\
+    \ so three weak signals become one strong conclusion."
 - name: jobs-to-be-done
   description: Uncover customer jobs, pains, and gains in a structured JTBD format.
     Use when clarifying unmet needs, repositioning a product, or improving discovery
@@ -266,6 +340,17 @@ skills:
     \ teams around core assumptions, craft testable hypotheses, and ensure learning\
     \ happens every sprint by exposing gaps in understanding (problem, users, value,\
     \ and why the solution should work)."
+- name: market-landscape-scan
+  description: Map a market's segments, players, substitutes, and whitespace with
+    cited evidence. Use when entering or re-evaluating a market before sizing, positioning,
+    or picking competitors to study.
+  type: workflow
+  path: skills/market-landscape-scan/SKILL.md
+  intent: "Autonomous market discovery: map how buyers segment the market, who plays\
+    \ where (direct, adjacent, substitutes, emerging), where the money and momentum\
+    \ are, and whether apparent whitespace is opportunity or dead zone \u2014 with\
+    \ labeled evidence, so sizing and positioning start from structure instead of\
+    \ vibes."
 - name: opportunity-solution-tree
   description: Build an Opportunity Solution Tree from outcomes to opportunities,
     solutions, and tests. Use when a stakeholder request needs problem framing before
@@ -302,6 +387,16 @@ skills:
     \ your product or project. Use this to identify external opportunities and threats,\
     \ inform strategic planning, assess market entry risks, and make data-driven decisions\
     \ about product direction in the context of broader forces beyond your control."
+- name: pestel-delta-monitor
+  description: "Quarterly re-scan of a prior PESTEL analysis. Use when checking which\
+    \ macro factors moved, which assumptions broke, and what's new \u2014 turning\
+    \ PESTEL from a workshop artifact into a radar."
+  type: workflow
+  path: skills/pestel-delta-monitor/SKILL.md
+  intent: "Refresh a PESTEL analysis by diffing each factor against the prior run\
+    \ and reporting material movement only \u2014 regulation passed, thresholds crossed,\
+    \ technology matured, assumptions broken. Macro factors move slowly; the value\
+    \ is catching the two that moved, not re-debating the twenty that did not."
 - name: pm-skill-creator
   description: Design a new PM skill through guided conversation. Use when you have
     raw content or an idea and want to shape it into a compliant skill.
@@ -333,6 +428,17 @@ skills:
     \ but aren't sure which validation method to use. This interactive skill ensures\
     \ you match the cheapest prototype to the harshest truth\u2014not the prototype\
     \ you're most comfortable building."
+- name: porters-five-forces
+  description: Read an industry's structure through Porter's Five Forces with documented
+    signals per rating, ending at the profit pool. Use when weighing market entry
+    or when margins erode and nobody can say why.
+  type: workflow
+  path: skills/porters-five-forces/SKILL.md
+  intent: "An evidence-cited five-forces read: rivalry, new entrants, substitutes\
+    \ (with AI-driven substitution named explicitly), buyer power, and supplier power\
+    \ \u2014 each force rated weak/moderate/strong with the documented signals that\
+    \ justify the rating, closing with where the profit pool sits and who is squeezing\
+    \ it."
 - name: positioning-statement
   description: Create a Geoffrey Moore-style positioning statement. Use when clarifying
     who you serve, what problem you solve, your category, and why you're different
@@ -379,6 +485,16 @@ skills:
     \ Use this to align stakeholders on the customer value proposition, clarify the\
     \ problem being solved, and test if the product story resonates\u2014treating\
     \ the press release as a forcing function for clarity and customer-centricity."
+- name: pricing-packaging-tracker
+  description: Track competitor pricing and packaging as a diffable time series. Use
+    when monitoring tiers, gates, limits, and price moves on a monthly or quarterly
+    cadence.
+  type: workflow
+  path: skills/pricing-packaging-tracker/SKILL.md
+  intent: "Capture competitor public pricing pages into a stable schema, diff against\
+    \ the prior capture, and report tier changes, price moves, feature-gate shifts,\
+    \ and packaging restructures with URLs and dates \u2014 because packaging changes\
+    \ signal strategy earlier than price changes do."
 - name: prioritization-advisor
   description: Choose a prioritization framework based on stage, team context, and
     stakeholder needs. Use when deciding between RICE, ICE, value/effort, or another
@@ -542,6 +658,16 @@ skills:
     illustrate value, and make abstract product concepts concrete. Use this to align
     stakeholders, pitch features, communicate vision, or test if your solution resonates
     emotionally before building it.
+- name: swot-analysis
+  description: "Build an evidence-cited SWOT of one company \u2014 yours or a competitor's\
+    \ \u2014 from public sources, ending with the S-O/W-T crossings. Use for strategy\
+    \ reviews, board prep, or competitor depth."
+  type: workflow
+  path: skills/swot-analysis/SKILL.md
+  intent: "An evidence-cited SWOT from the public record: strengths and weaknesses\
+    \ from documented capability and customer voice, opportunities and threats from\
+    \ market and macro signals \u2014 every entry labeled and sourced, closing with\
+    \ the S-O attack and W-T exposure crossings that most SWOTs skip."
 - name: tam-sam-som-calculator
   description: Calculate TAM, SAM, and SOM with explicit assumptions, methods, and
     caveats. Use when sizing a market for a product idea, business case, or executive
@@ -599,6 +725,16 @@ skills:
     more manageable, reduce risk, enable faster feedback cycles, and maintain flow
     in agile development. This skill applies to user stories, epics, and any work
     that's too large to complete in a single sprint.
+- name: voice-of-customer-miner
+  description: "Mine public reviews, app stores, and forums for unmet needs, competitor\
+    \ weaknesses, and switching triggers \u2014 with quoted evidence. Use when you\
+    \ want customer voice without waiting on interviews."
+  type: workflow
+  path: skills/voice-of-customer-miner/SKILL.md
+  intent: "Mine public customer voice for unmet needs, competitor weaknesses, and\
+    \ switching triggers, with real quoted verbatims and labeled inference. Bridges\
+    \ competitive intelligence and discovery: outputs feed JTBD canvases, opportunity\
+    \ solution trees, and battle cards \u2014 as hypotheses to validate, not verdicts."
 - name: vp-cpo-readiness-advisor
   description: Guide the transition to VP or CPO across preparing, interviewing, landing,
     and recalibrating. Use when executive product scope is changing fast.

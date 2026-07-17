@@ -5,7 +5,7 @@
     "email": "dean.peters@productside.com"
   },
   "metadata": {
-    "description": "56 battle-tested product management skills for Claude Code \u2014 discovery, strategy, finance, career, and more.",
+    "description": "69 battle-tested product management skills for Claude Code \u2014 discovery, strategy, finance, career, and more.",
     "version": "0.82.0"
   },
   "plugins": [
@@ -66,6 +66,48 @@
       "strict": false
     },
     {
+      "name": "ansoff-matrix",
+      "source": "./skills/ansoff-matrix",
+      "description": "Map evidence-backed growth options across the Ansoff Matrix with risk-rated sequencing.",
+      "category": "market-intelligence",
+      "tags": [
+        "pm",
+        "market-intelligence",
+        "growth",
+        "strategy",
+        "ansoff"
+      ],
+      "strict": false
+    },
+    {
+      "name": "autonomous-investigation",
+      "source": "./skills/autonomous-investigation",
+      "description": "Protocol for AI research that proceeds without you: evidence labels, search-plan gate, diffable output.",
+      "category": "market-intelligence",
+      "tags": [
+        "pm",
+        "market-intelligence",
+        "research",
+        "protocol",
+        "evidence"
+      ],
+      "strict": false
+    },
+    {
+      "name": "battle-card-builder",
+      "source": "./skills/battle-card-builder",
+      "description": "Research and draft a competitive battle card from public evidence, every claim labeled and sourced.",
+      "category": "market-intelligence",
+      "tags": [
+        "pm",
+        "market-intelligence",
+        "competitive",
+        "sales-enablement",
+        "battle-card"
+      ],
+      "strict": false
+    },
+    {
       "name": "business-health-diagnostic",
       "source": "./skills/business-health-diagnostic",
       "description": "Diagnose SaaS business health across growth, retention, efficiency, and capital.",
@@ -102,6 +144,48 @@
         "research",
         "competitive-analysis",
         "interviews"
+      ],
+      "strict": false
+    },
+    {
+      "name": "competitive-analysis-process",
+      "source": "./skills/competitive-analysis-process",
+      "description": "Orchestrate a complete six-step competitive analysis, from landscape overview to strategic direction.",
+      "category": "market-intelligence",
+      "tags": [
+        "pm",
+        "market-intelligence",
+        "competitive",
+        "process",
+        "orchestration"
+      ],
+      "strict": false
+    },
+    {
+      "name": "competitive-intel-watch",
+      "source": "./skills/competitive-intel-watch",
+      "description": "Scheduled delta monitor for competitive shifts: material changes only, with battle-card update flags.",
+      "category": "market-intelligence",
+      "tags": [
+        "pm",
+        "market-intelligence",
+        "competitive",
+        "monitoring",
+        "delta"
+      ],
+      "strict": false
+    },
+    {
+      "name": "competitive-research-snapshot",
+      "source": "./skills/competitive-research-snapshot",
+      "description": "Cited competitive landscape research with comparison matrix and so-what implications.",
+      "category": "market-intelligence",
+      "tags": [
+        "pm",
+        "market-intelligence",
+        "competitive",
+        "research",
+        "citations"
       ],
       "strict": false
     },
@@ -309,6 +393,20 @@
       "strict": false
     },
     {
+      "name": "intelligence-collection-disciplines",
+      "source": "./skills/intelligence-collection-disciplines",
+      "description": "Eight intelligence-community collection disciplines for PMs, with sources, signal chains, and fusion.",
+      "category": "market-intelligence",
+      "tags": [
+        "pm",
+        "market-intelligence",
+        "osint",
+        "research",
+        "fusion"
+      ],
+      "strict": false
+    },
+    {
       "name": "jobs-to-be-done",
       "source": "./skills/jobs-to-be-done",
       "description": "Uncover customer jobs, pains, and gains in a structured JTBD format.",
@@ -331,6 +429,20 @@
         "lean-ux",
         "assumptions",
         "experimentation"
+      ],
+      "strict": false
+    },
+    {
+      "name": "market-landscape-scan",
+      "source": "./skills/market-landscape-scan",
+      "description": "Map a market's segments, players, substitutes, and whitespace with cited evidence before sizing or positioning.",
+      "category": "market-intelligence",
+      "tags": [
+        "pm",
+        "market-intelligence",
+        "market-research",
+        "segmentation",
+        "whitespace"
       ],
       "strict": false
     },
@@ -374,6 +486,20 @@
       "strict": false
     },
     {
+      "name": "pestel-delta-monitor",
+      "source": "./skills/pestel-delta-monitor",
+      "description": "Quarterly PESTEL re-scan: which macro factors moved, which assumptions broke, what's new to the frame.",
+      "category": "market-intelligence",
+      "tags": [
+        "pm",
+        "market-intelligence",
+        "pestel",
+        "monitoring",
+        "macro"
+      ],
+      "strict": false
+    },
+    {
       "name": "pm-skill-creator",
       "source": "./skills/pm-skill-creator",
       "description": "Design a new PM skill through guided conversation.",
@@ -408,6 +534,20 @@
         "validation",
         "proof-of-life",
         "advisor"
+      ],
+      "strict": false
+    },
+    {
+      "name": "porters-five-forces",
+      "source": "./skills/porters-five-forces",
+      "description": "Read an industry's structure through Porter's Five Forces with documented signals and the profit-pool close.",
+      "category": "market-intelligence",
+      "tags": [
+        "pm",
+        "market-intelligence",
+        "strategy",
+        "porter",
+        "industry"
       ],
       "strict": false
     },
@@ -460,6 +600,20 @@
         "press-release",
         "amazon",
         "working-backwards"
+      ],
+      "strict": false
+    },
+    {
+      "name": "pricing-packaging-tracker",
+      "source": "./skills/pricing-packaging-tracker",
+      "description": "Track competitor pricing and packaging as a diffable time series: tiers, gates, and what changed.",
+      "category": "market-intelligence",
+      "tags": [
+        "pm",
+        "market-intelligence",
+        "pricing",
+        "monitoring",
+        "competitive"
       ],
       "strict": false
     },
@@ -663,6 +817,20 @@
       "strict": false
     },
     {
+      "name": "swot-analysis",
+      "source": "./skills/swot-analysis",
+      "description": "Evidence-cited SWOT of one company from public sources, ending with the S-O and W-T crossings.",
+      "category": "market-intelligence",
+      "tags": [
+        "pm",
+        "market-intelligence",
+        "swot",
+        "strategy",
+        "competitive"
+      ],
+      "strict": false
+    },
+    {
       "name": "tam-sam-som-calculator",
       "source": "./skills/tam-sam-som-calculator",
       "description": "Calculate TAM, SAM, and SOM with explicit assumptions, methods, and caveats.",
@@ -724,6 +892,20 @@
         "splitting",
         "user-stories",
         "backlog"
+      ],
+      "strict": false
+    },
+    {
+      "name": "voice-of-customer-miner",
+      "source": "./skills/voice-of-customer-miner",
+      "description": "Mine public reviews, app stores, and forums for unmet needs and competitor weaknesses, with quoted evidence.",
+      "category": "market-intelligence",
+      "tags": [
+        "pm",
+        "market-intelligence",
+        "voc",
+        "discovery",
+        "reviews"
       ],
       "strict": false
     },

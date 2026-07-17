@@ -18,11 +18,11 @@ best_for:
   - "Running a competitive scan across 3-5 companies with cross-company comparison"
   - "Refreshing intel quarterly on companies you track"
 scenarios:
-  - "Run company-intel on Parker Hannifin"
+  - "Run company-intel on [company or their domain, e.g. helix-motion.com]"
   - "Give me intel on the clinical data management industry"
-  - "Compare Emerson, Honeywell, and Parker Hannifin"
-  - "Run company-intel on productside.com competitors"
-  - "Refresh my intel on Novo Nordisk — what's changed since last quarter?"
+  - "Compare [Company A], [Company B], and [Company C]"
+  - "Run company-intel on [company] competitors"
+  - "Refresh my intel on [company] — what's changed since last quarter?"
 ---
 
 ## Purpose
@@ -48,19 +48,19 @@ Anything supplied with the invocation itself — text after the skill name, a pa
 
 The skill auto-detects entry point from the user's input. If ambiguous, ask one clarifying question: "Is this about a specific company, an industry, or a set of competitors?"
 
-**Single Company** — User names a company (e.g., "Parker Hannifin," "Novo Nordisk"). Produce the full 11-section output for that company.
+**Single Company** — User names a company (e.g., "Helix Motion Systems," "Brightwater Biologics" — or any real company). Produce the full 11-section output for that company.
 
 **Industry/Sector** — User names an industry, sector, or niche (e.g., "clinical data management," "embedded finance," "upstream oil and gas"). Establish broad industry context, narrow into the segment, and connect findings to PM implications. Use the same 11-section structure adapted for sector-level analysis.
 
-**Named Competitor Set** — User names 2-5 companies (e.g., "Compare Emerson, Honeywell, and Parker Hannifin"). Produce individual 11-section outputs for each company, then add a **Section 12: Cross-Company Comparison** that synthesizes across the set.
+**Named Competitor Set** — User names 2-5 companies (e.g., "Compare Helix Motion, Northfield Automation, and Corvid Industrial"). Produce individual 11-section outputs for each company, then add a **Section 12: Cross-Company Comparison** that synthesizes across the set.
 
-**Discover Competitors** — User names a company plus the word "competitors" (e.g., "productside.com competitors" or "Parker Hannifin competitors"). The skill:
+**Discover Competitors** — User names a company plus the word "competitors" (e.g., "helix-motion.com competitors" or "Helix Motion Systems competitors"). The skill:
 1. Researches the named company first — enough to understand what it does, who it serves, and what market it plays in (a lightweight pass through Lenses 1-4)
 2. Identifies 3-5 likely competitors based on that research, citing why each is a competitor (direct, adjacent, substitute, or emerging disruptor)
 3. Presents the list for confirmation: "Based on my research, [Company]'s closest competitors appear to be [A, B, C, D, E]. Want me to run the full competitor set on these, or adjust the list first?"
 4. Once confirmed, proceeds with the Named Competitor Set flow — full 11-section output for each company plus Section 12 cross-company comparison
 
-The user can also provide a URL instead of a company name (e.g., "productside.com"). The skill should resolve the URL to the company, research accordingly, and proceed.
+The user can also provide a URL instead of a company name (e.g., "helix-motion.com"). The skill should resolve the URL to the company, research accordingly, and proceed.
 
 ---
 
@@ -91,6 +91,19 @@ Three signal types — always check all three:
 - **Patent activity:** Recent filings and grants via patent databases. Technology domains, R&D clusters, gaps between patent activity and public product narrative.
 - **Hiring signals:** Roles open in volume, skills and tools in job descriptions, seniority being hired, language that reveals product culture (discovery, outcomes, AI-native, regulatory, experimentation).
 - **Leadership changes:** C-suite and product leadership arrivals or departures in the last 12-18 months. Origin of new leaders (platform companies, consulting, competitors). New CPO, CTO, or CDO roles created, eliminated, or restructured. Board-level changes.
+
+Sharp heuristics for reading the product organization specifically:
+- **CPO/VP Product tenure:** a new product leader hired in the last 12-18 months almost always means the prior approach failed — read what they were hired *from* (platform company? consultancy? competitor?) as the intended correction.
+- **PM job postings as culture documents:** how they define the PM role — outcome language vs. feature/roadmap language, discovery expectations, who PMs report to — reveals how product actually works there better than any About page.
+- **Employee-review themes:** clusters around "roadmap chaos," "priorities change weekly," or "product vs. engineering tension" are Lens 6 evidence — community-tier confidence, labeled, but often the earliest honest signal.
+
+**Reading organizational distress (optional deepening, for engagement or partnership prep).** When the
+intel supports a conversation with the company — a partnership, a sales motion, a job interview — add
+the distress read: what's the most likely **presenting problem** (what they'd say is wrong) versus the
+probable **underlying problem** (what the evidence suggests is actually wrong)? Was there a **trigger
+event** — missed guidance, a failed launch, a reorg, a new executive inheriting a mess? Calibrate the
+distress level: *doing fine and optimizing* → *knows something's wrong* → *in trouble and doesn't know
+it yet*. Label the whole read as Inference; it's the most useful and least certain section in the file.
 
 ---
 
@@ -153,9 +166,22 @@ Highlight conflicts and tradeoffs wherever they appear:
 - Executive appointment announcements and leadership change coverage
 - Industry analysts (Gartner, Forrester, IDC) and reputable news coverage
 
-**Cite sources.** Every factual claim should include a source. Separate fact from inference. When you're inferring — especially on Lens 6 (PM culture) and Lens 7 (strategic signals) — label it clearly: "Inference based on [evidence]."
+**Cite sources.** Every factual claim should include a source. Use the library's canonical evidence
+labels from [`autonomous-investigation`](../autonomous-investigation/SKILL.md): **Fact**
+(source-supported), **Inference** (evidence-based interpretation), **Assumption** (working guess).
+When you're inferring — especially on Lens 6 (PM culture) and Lens 7 (strategic signals) — show the
+basis: "Inference based on [evidence]."
 
-**Recency matters.** Prioritize sources from the last 12-24 months. Flag anything older.
+**Source priority ladder.** Primary (filings, earnings calls, investor docs) → credible secondary
+(major business press, trade publications) → community (Glassdoor, review sites, forums — lower
+confidence) → inferred signals (job postings, announcements). State where each claim sits.
+
+**Recency matters.** Prioritize sources from the last 12-24 months. Flag anything older than 18
+months explicitly.
+
+**Do not sanitize.** Brutal product reviews, public criticism of leadership, employee accounts of
+roadmap chaos — it all belongs in the file, labeled and sourced. Intelligence that flatters the
+subject is marketing; the reader needs the real picture.
 
 ## Application
 
@@ -166,7 +192,7 @@ Determine from user input:
 - **Industry/sector** → proceed to Step 2, adapt sections for sector-level analysis
 - **Named competitor set** (2-5 companies listed) → proceed to Step 2 for each company, then Step 3
 - **Discover competitors** (one company + "competitors") → proceed to Step 1b, then Step 2 for each, then Step 3
-- **URL provided** (e.g., "productside.com") → resolve to company name, then detect entry point from any additional context
+- **URL provided** (e.g., "helix-motion.com") → resolve to company name, then detect entry point from any additional context
 
 If ambiguous, ask one question: "Is this about a specific company, an industry, or a set of competitors?"
 
@@ -315,64 +341,81 @@ Select a number, combine them (e.g., '1 and 4'), or describe what you need."
 
 ---
 
-### Rerun Pattern
+### Rerun Pattern (Executive Signal Refresh)
 
-When the user reruns the skill on a previously researched entity:
+When the user reruns the skill on a previously researched entity — or asks for a quarterly refresh —
+run it as a delta investigation, not a regeneration:
 
-- Focus web search on recent developments (last 90 days)
-- Lead the output with a **"What's Changed"** summary before the full 11 sections
+- **Read the prior output fully before searching**; diff against it. Focus web search on the period
+  since (typically the last 90 days), prioritizing primary sources: earnings transcripts, filings,
+  investor days, direct executive interviews. Quote executives *exactly* — never fabricate quotes,
+  figures, or guidance.
+- Lead with a **"What's Changed"** summary before any full sections. For each material shift, use the
+  Then/Now form:
+  - **Then:** what the prior run recorded
+  - **Now:** the new signal — "exact quote or observation" (source, date, URL)
+  - **Reading:** what this suggests for strategy or product (labeled Inference)
+  - **Confidence:** high / medium / low
+- Include a **Dropped Language** subsection: initiatives, phrases, or metrics the company *stopped*
+  mentioning quarter over quarter. What leaders stop saying is often the strongest signal — a
+  transformation program that vanishes from the earnings script died without a press release. Read
+  earnings materials as strategy documents, not finance rituals: separating narrative shifts from
+  metric shifts is the skill.
 - In Section 9 (Strategic Signals), highlight delta from prior run: new hires, new patents, leadership moves
-- Flag sections where nothing material changed: "No significant change since [prior date]"
+- Flag sections where nothing material changed: "No significant change since [prior date]" — and if
+  the quiet is sustained across runs, note the quiet as its own signal.
 
-The user does not need to say "refresh" — if the agent has prior output in context, it should default to delta-first reporting.
+The user does not need to say "refresh" — if the agent has prior output in context, it should default
+to delta-first reporting. For monitoring a whole competitor *set* at lower depth, hand off to
+[`competitive-intel-watch`](../competitive-intel-watch/SKILL.md); this refresh goes deep on one company.
 
 ## Examples
 
-### Example: Single Company — Parker Hannifin
+### Example: Single Company — Helix Motion Systems *(fictional, as are all companies in these examples)*
 
-**Trigger:** "Run company-intel on Parker Hannifin"
+**Trigger:** "Run company-intel on Helix Motion Systems"
 
 **Entry point:** Single Company
 
 **Section 1 excerpt:**
-Parker Hannifin is a Fortune 250 diversified industrial manufacturer headquartered in Cleveland, Ohio, specializing in motion and control technologies. Founded in 1917, it operates across two segments: Diversified Industrial (~85% of revenue) and Aerospace Systems (~15%). The 2023 acquisition of Meggitt for $8.8B significantly expanded its aerospace portfolio.
+Helix Motion Systems is a large diversified industrial manufacturer specializing in motion and control technologies. A century-old firm, it operates across two segments: Diversified Industrial (~85% of revenue) and Aerospace Systems (~15%). A recent multi-billion-dollar aerospace acquisition significantly expanded that second segment.
 
 **Section 9 excerpt:**
 - **Patents:** Clustering in electro-hydraulic controls and hydrogen fuel cell components. R&D investment in electrification outpacing public product announcements — signals a bet on industrial decarbonization. *(Source: Google Patents, 2024-2025 filings)*
 - **Hiring:** Volume hiring for "digital twin" engineers and IoT platform architects in the Diversified Industrial segment. Job descriptions reference AWS IoT and Azure Digital Twins. *(Source: LinkedIn, Indeed — June 2026)*
-- **Leadership:** New VP of Digital Transformation hired from Rockwell Automation (2025). New Group President for Engineered Materials from Honeywell (2024). Pattern: importing talent from platform-oriented industrials. *(Source: company press releases)*
+- **Leadership:** New VP of Digital Transformation hired from a platform-oriented automation rival (2025). New Group President for Engineered Materials from a diversified conglomerate (2024). Pattern: importing talent from platform-first industrials. *(Source: company press releases)*
 
 **Section 10 excerpt:**
-PMs at Parker face the classic industrial tension: long product lifecycles (10-20 years) vs. pressure to digitize and create recurring-revenue service layers. Product management is historically engineering-led, not customer-led. Discovery is constrained by the fact that customers (OEMs, utilities, defense contractors) have long procurement cycles and low tolerance for experimentation. The hiring signals suggest a push toward platform thinking, but the org structure (segment-based P&Ls) creates incentives to optimize locally rather than build horizontal platforms. *Inference: the digital twin hiring is likely ahead of organizational readiness to consume it.*
+PMs at Helix face the classic industrial tension: long product lifecycles (10-20 years) vs. pressure to digitize and create recurring-revenue service layers. Product management is historically engineering-led, not customer-led. Discovery is constrained by the fact that customers (OEMs, utilities, defense contractors) have long procurement cycles and low tolerance for experimentation. The hiring signals suggest a push toward platform thinking, but the org structure (segment-based P&Ls) creates incentives to optimize locally rather than build horizontal platforms. *Inference: the digital twin hiring is likely ahead of organizational readiness to consume it.*
 
 ---
 
 ### Example: Competitor Set — Industrial Motion Control
 
-**Trigger:** "Compare Parker Hannifin, Emerson Electric, and Honeywell on company-intel"
+**Trigger:** "Compare Helix Motion, Northfield Automation, and Corvid Industrial on company-intel"
 
 **Entry point:** Competitor Set (3 companies)
 
 **Section 12 excerpt (Cross-Company Comparison):**
 
 **Where They're Betting Differently:**
-- Parker is investing heavily in electrification and hydrogen (patent evidence). Emerson is betting on software-defined automation (Aspen Technology acquisition). Honeywell is splitting into three companies and doubling down on aerospace autonomy.
+- Helix is investing heavily in electrification and hydrogen (patent evidence). Northfield is betting on software-defined automation (a major industrial-software acquisition). Corvid is splitting into three companies and doubling down on aerospace autonomy.
 
 **Gaps and White Space:**
 - None of the three have a credible PLG motion for their digital products — all rely on enterprise sales. A startup that cracks self-serve industrial IoT tooling could undercut all three on adoption speed.
 
 **PM Implications Across the Set:**
-- Parker PM = engineer-first, platform-curious but segment-siloed
-- Emerson PM = software-led post-AspenTech, navigating legacy OT culture
-- Honeywell PM = post-split identity crisis, aerospace PMs and industrial PMs now in different companies
+- Helix PM = engineer-first, platform-curious but segment-siloed
+- Northfield PM = software-led post-acquisition, navigating legacy OT culture
+- Corvid PM = post-split identity crisis, aerospace PMs and industrial PMs now in different companies
 
 ---
 
 ### Anti-Pattern Example
 
-**Weak:** "Parker Hannifin makes industrial equipment and has strong financials."
+**Weak:** "Helix Motion Systems makes industrial equipment and has strong financials."
 
-**Strong:** Identifies the tension between Parker's motion-and-control platform business (recurring revenue, long service cycles) and its push into intelligent manufacturing and IIoT — and explains why that tension creates specific PM challenges around build-vs-partner decisions, aftermarket monetization, and the pace of digital product adoption in asset-intensive industries.
+**Strong:** Identifies the tension between Helix's motion-and-control platform business (recurring revenue, long service cycles) and its push into intelligent manufacturing and IIoT — and explains why that tension creates specific PM challenges around build-vs-partner decisions, aftermarket monetization, and the pace of digital product adoption in asset-intensive industries.
 
 ## Common Pitfalls
 
@@ -452,6 +495,9 @@ When handing off to a downstream skill, pass the relevant sections explicitly:
 
 ### Related Skills
 - **[company-research](../company-research/SKILL.md)** (Component) — Lighter-weight company profile focused on executive quotes and product strategy; `company-intel` is deeper and broader, producing structured output for downstream consumption
+- **[autonomous-investigation](../autonomous-investigation/SKILL.md)** (Workflow) — The evidence-label and confidence protocol this skill's research follows
+- **[intelligence-collection-disciplines](../intelligence-collection-disciplines/SKILL.md)** (Component) — OSINT/FININT/HUMINT source tables and signal chains behind Lenses 1, 6, and 7
+- **[competitive-intel-watch](../competitive-intel-watch/SKILL.md)** (Workflow) — Breadth sibling: monitors the whole competitor set on a cadence while this skill goes deep on one entity
 - **[pestel-analysis](../pestel-analysis/SKILL.md)** (Component) — Deep PESTEL template; consumes Sections 6 and 8 from company-intel
 - **[derisk-measurement-advisor](../derisk-measurement-advisor/SKILL.md)** (Interactive) — Risk scan that benefits from Sections 6 and 8 as context input
 - **[tam-sam-som-calculator](../tam-sam-som-calculator/SKILL.md)** (Component) — Market sizing; consumes Sections 2, 3, 5
