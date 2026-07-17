@@ -99,9 +99,9 @@ Offer the six steps as a numbered menu; recommend a subset when the decision doe
 
 - **Frameworks:** Outcome-Driven Innovation (score against customer-defined outcomes); Value
   Proposition Canvas (their promise vs. the jobs/pains/gains that matter).
-- **Run:** review mining across the sources your buyer reads (OSINT discipline) — quoted evidence of
-  unmet needs and competitor weaknesses. *(A dedicated `voice-of-customer-miner` skill lands in a
-  future wave; until then, run this as an OSINT pass per `intelligence-collection-disciplines`.)*
+- **Run:** [`voice-of-customer-miner`](../voice-of-customer-miner/SKILL.md) across the sources your
+  buyer reads — need themes, quoted verbatims, competitor weak points, and switching triggers, each
+  with a source-bias note.
 - **Watch for:** vendor-authored "reviews" and case studies. Independent complaint clusters are the
   signal; curated success stories are marketing.
 
@@ -156,6 +156,8 @@ Then set the maintenance cadence: [`competitive-intel-watch`](../competitive-int
 the schedule the artifact mapping in `intelligence-collection-disciplines` prescribes (weekly SIGINT
 layer for cards, quarterly deep passes for direction).
 
+A copy/paste engagement tracker for all seven steps lives in [`template.md`](template.md).
+
 ## Examples
 
 **Scoping to the decision (fictional):** the decision is deal defense against one rival in enterprise
@@ -172,6 +174,12 @@ mid-pack. The direction pass finds a patent cluster in a new classification, fou
 postings, and an earnings call where the CFO declined to break out R&D — three disciplines, one story:
 a platform pivot in progress. The threat assessment brief re-ranks them from "monitor" to "act," a
 quarter before their announcement would have forced a reactive scramble.
+
+See [`examples/sample.md`](examples/sample.md) for a complete worked engagement (fictional
+FSM-software market) showing the orchestration decisions — scoping menu, recorded skips, and
+step-to-step compounding — with links into the delegated skills' own worked artifacts.
+[`examples/sample-industrial.md`](examples/sample-industrial.md) shows the umbrella bending —
+steps merged, one run out of order, cadence slowed — with each call's reasoning stated.
 
 ## Common Pitfalls
 
@@ -190,6 +198,7 @@ quarter before their announcement would have forced a reactive scramble.
 
 - [`market-landscape-scan`](../market-landscape-scan/SKILL.md) (Workflow) — Step 1
 - [`competitive-research-snapshot`](../competitive-research-snapshot/SKILL.md) (Workflow) — Step 2
+- [`voice-of-customer-miner`](../voice-of-customer-miner/SKILL.md) (Workflow) — Step 3
 - [`company-intel`](../company-intel/SKILL.md) (Workflow) — Step 4
 - [`positioning-statement`](../positioning-statement/SKILL.md) (Component) — Step 5
 - [`competitive-intel-watch`](../competitive-intel-watch/SKILL.md) (Workflow) — Step 6 cadence + maintenance

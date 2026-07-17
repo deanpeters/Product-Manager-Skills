@@ -369,6 +369,12 @@ The user does not need to say "refresh" — if the agent has prior output in con
 to delta-first reporting. For monitoring a whole competitor *set* at lower depth, hand off to
 [`competitive-intel-watch`](../competitive-intel-watch/SKILL.md); this refresh goes deep on one company.
 
+See [`examples/executive-signal-refresh.md`](examples/executive-signal-refresh.md) for a full worked
+refresh (fictional, industrial) — Then/Now shifts, a Dropped Language read that carries the headline, and quiet
+sections graded rather than padded. [`examples/executive-signal-refresh-saas.md`](examples/executive-signal-refresh-saas.md)
+is the SaaS sibling, where the vocabulary to watch changes — tier names, "self-serve," NRR framing —
+but the pattern holds.
+
 ## Examples
 
 ### Example: Single Company — Helix Motion Systems *(fictional, as are all companies in these examples)*

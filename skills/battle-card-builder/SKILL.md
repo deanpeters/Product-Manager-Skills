@@ -124,6 +124,8 @@ buyers — triggered by three straight losses on "their integrations are deeper.
 - [Assumption 1] / [Assumption 2] / [Assumption 3]
 ~~~
 
+A copy/paste fill-in version of this schema, with quality checks, lives in [`template.md`](template.md).
+
 ### Final Step (offer exactly 4 options)
 
 1. Pressure-test the card: role-play the competitor's rep against it
@@ -149,6 +151,11 @@ Accept `1`, `2`, `3`, `4`, `1 and 3`, `Verbose Mode`, or a custom path.
 >   correction that costs the room's trust.
 > - Don't lead with "we're cheaper" — true only below 50 seats ([their pricing](https://example.com/pricing),
 >   [ours](https://example.com/our-pricing)); above that the math flips, and enterprise buyers check.
+
+See [`examples/sample.md`](examples/sample.md) for a complete worked card (fictional FSM-software
+market) rebuilt from the `competitive-intel-watch` example's update flags — the full chain landing
+in a field artifact. [`examples/sample-industrial.md`](examples/sample-industrial.md) builds the
+industrial version, where the channel partner is a card audience and pricing is opaque.
 
 ## Common Pitfalls
 

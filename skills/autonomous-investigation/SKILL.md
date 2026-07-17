@@ -145,6 +145,9 @@ method.**
 8. Close with the Final Step block. If the user picks a number, execute; if they answer nothing (a
    scheduled run), file the output and stop.
 
+A copy/paste **investigation brief** — the contract's seven clauses as fill-in decisions, for
+briefing an agent or designing a new investigation skill — lives in [`template.md`](template.md).
+
 ## Examples
 
 **Opening of a protocol-honoring run (user gave target + decision inline, so no questions spent):**
@@ -172,6 +175,12 @@ method.**
 question budget is already spent (zero questions — context was inline), the plan gate auto-continues,
 and the output diffs cleanly against last quarter because the schema didn't move. The delta — not the
 report — is what the team reads.
+
+See [`examples/protocol-in-action.md`](examples/protocol-in-action.md) for a full worked run
+(fictional) showing every clause under load — including a user revising the search plan at the
+gate and an honest gaps list where the do-not-invent list held.
+[`examples/protocol-in-action-industrial.md`](examples/protocol-in-action-industrial.md) shows the
+conflict case: four channels agree, one disagrees, and the dig changes the strategic response.
 
 ## Common Pitfalls
 

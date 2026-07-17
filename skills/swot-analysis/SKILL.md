@@ -113,6 +113,8 @@ perspective — supports the Q3 positioning refresh. Last month's snapshot is at
 - [Assumption 1] / [Assumption 2] / [Assumption 3]
 ~~~
 
+A copy/paste fill-in version of this schema, with quality checks, lives in [`template.md`](template.md).
+
 ### Final Step (offer exactly 4 options)
 
 1. Run the W-T exposure into a battle card or risk plan ([`battle-card-builder`](../battle-card-builder/SKILL.md))
@@ -139,6 +141,12 @@ Accept `1`, `2`, `3`, `4`, `1 and 2`, `Verbose Mode`, or a custom path.
 > - Strength as evidenced: "publishes a status page with 26 months of >99.95% uptime — **Fact**
 >   ([status page, URL]) — and reliability praise recurs across independent reviews — **Fact**
 >   ([review site, URL])." Ranked #2 by defensibility: verifiable, sustained, hard to copy quickly.
+
+See [`examples/sample.md`](examples/sample.md) for a complete worked SWOT (fictional FSM-software
+market, same scenario as the suite's chain examples) that synthesizes from a snapshot and watch
+report already in session. [`examples/sample-industrial.md`](examples/sample-industrial.md) runs the
+same quadrant discipline on an industrial evidence diet, including a fortress-move warning in the
+S-O crossing.
 
 ## Common Pitfalls
 

@@ -113,6 +113,8 @@ For each of the top 3-5 themes:
 Each bullet: label, confidence, URL where relevant.
 ~~~
 
+A copy/paste fill-in version of this schema, with quality checks, lives in [`template.md`](template.md).
+
 ### Final Step (offer exactly 4 options)
 
 1. Generate discovery interview questions from the top theme ([`discovery-interview-prep`](../discovery-interview-prep/SKILL.md))
@@ -136,6 +138,11 @@ Accept `1`, `2`, `3`, `4`, `1 and 2`, `Verbose Mode`, or a custom path.
 
 Notice the theme name contains no feature ("export tool") — it names the need, so discovery can
 explore solutions the reviews never imagined.
+
+See [`examples/sample.md`](examples/sample.md) for a complete worked mining run (fictional
+FSM-software market) where frequency honesty caps a vivid theme at low confidence and each
+source's bias becomes a reading instruction. [`examples/sample-industrial.md`](examples/sample-industrial.md)
+shows the thin-voice case — what honest mining looks like when the market barely posts reviews.
 
 ## Common Pitfalls
 

@@ -123,6 +123,8 @@ software for mid-market HVAC firms, US. Outcome: +40% ARR in 24 months. Constrai
 - [Assumption 1] / [Assumption 2] / [Assumption 3]
 ~~~
 
+A copy/paste fill-in version of this schema, with quality checks, lives in [`template.md`](template.md).
+
 ### Final Step (offer exactly 4 options)
 
 1. Size the top move with TAM/SAM/SOM ([`tam-sam-som-calculator`](../tam-sam-som-calculator/SKILL.md)) (Recommended)
@@ -153,6 +155,11 @@ Accept `1`, `2`, `3`, `4`, `1 and 2`, `Verbose Mode`, or a custom path.
 >   enthusiasm is not extraordinary evidence
 > - **The assumption that breaks this sequence:** churned customers left for fixable reasons; if
 >   win-loss shows they left the *category*, penetration is a dead first move and development leads.
+
+See [`examples/sample.md`](examples/sample.md) for a complete worked matrix (fictional FSM-software
+market) with an honestly empty diversification quadrant and a sequence whose breaking assumption is
+named. [`examples/sample-industrial.md`](examples/sample-industrial.md) shows the opposite lesson: a
+populated diversification quadrant whose entry fails the evidence bar in writing.
 
 ## Common Pitfalls
 

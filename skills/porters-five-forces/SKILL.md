@@ -122,6 +122,8 @@ decision: whether we enter or partner.`
 - [Assumption 1] / [Assumption 2] / [Assumption 3]
 ~~~
 
+A copy/paste fill-in version of this schema, with quality checks, lives in [`template.md`](template.md).
+
 ### Final Step (offer exactly 4 options)
 
 1. Trace the strongest force into your strategy's exposed assumptions
@@ -149,6 +151,12 @@ agents absorbing the low-complexity tier), buyers strong, suppliers moderate. Th
 regulated high-complexity tier — the only place two strong forces don't reach — **Inference**. For
 the entry decision: enter *only* via the regulated tier; the volume tier's margin is already spoken
 for by buyers below and AI substitution above.
+
+See [`examples/sample.md`](examples/sample.md) for a complete worked five-forces read (fictional
+FSM-software market) that builds on the `market-landscape-scan` example and lands at a profit-pool
+close that changes the decision. [`examples/sample-industrial.md`](examples/sample-industrial.md)
+shows the forces inverting in an industrial market — read both to see the framework adapt instead
+of recite.
 
 ## Common Pitfalls
 

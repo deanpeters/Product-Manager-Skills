@@ -119,6 +119,8 @@ For each competitor, max 5 bullets:
 Each bullet: label, confidence, source URL where relevant.
 ~~~
 
+A copy/paste fill-in version of this schema, with quality checks, lives in [`template.md`](template.md).
+
 ### Final Step (offer exactly 4 options)
 
 1. Competitive battle card ([`battle-card-builder`](../battle-card-builder/SKILL.md))
@@ -143,6 +145,12 @@ Accept `1`, `2`, `3`, `4`, `1 and 2`, `Verbose Mode`, or a custom path.
 every claim traces to their own marketing. The So What section then refuses to list Comp 3 as a
 primary risk: "insufficient independent evidence — **Assumption to validate** via customer
 references." That row exists so weak columns can't masquerade as strong ones.
+
+See [`examples/sample.md`](examples/sample.md) for a complete worked snapshot (fictional
+FSM-software market) that consumes the `market-landscape-scan` example and becomes the baseline the
+`competitive-intel-watch` example diffs against. [`examples/sample-industrial.md`](examples/sample-industrial.md)
+shows the same schema on an industrial evidence diet — filings, registries, and honest
+absence-of-evidence.
 
 ## Common Pitfalls
 

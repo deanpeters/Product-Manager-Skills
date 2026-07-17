@@ -112,6 +112,8 @@ If nothing changed: "No pricing or packaging changes this cycle."
 - [Assumption 1] / [Assumption 2] / [Assumption 3]
 ~~~
 
+A copy/paste fill-in version of this schema, with quality checks, lives in [`template.md`](template.md).
+
 ### Final Step (offer exactly 4 options)
 
 1. Update battle card pricing sections from these changes ([`battle-card-builder`](../battle-card-builder/SKILL.md))
@@ -137,6 +139,11 @@ Accept `1`, `2`, `3`, `4`, `1 and 2`, `Verbose Mode`, or a custom path.
 quarter while holding seat prices flat — **Inference:** the market is testing consumption pricing
 without headline price increases. Your pricing debate is no longer hypothetical; the Signals section
 names the evidence.
+
+See [`examples/sample.md`](examples/sample.md) for a complete worked delta run (fictional
+FSM-software market) where both material moves are structural — a new tier and a relocated gate —
+and no headline price changed at all. [`examples/sample-industrial.md`](examples/sample-industrial.md)
+shows the fully opaque case: zero published prices, and structure as the only public signal.
 
 ## Common Pitfalls
 

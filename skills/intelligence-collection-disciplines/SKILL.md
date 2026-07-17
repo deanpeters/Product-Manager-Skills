@@ -339,6 +339,9 @@ announced budget, an approved budget, committed financing, a tender value, and a
 five different numbers wearing the same headline. Search in local languages; never assume the English
 portal contains every notice.
 
+A copy/paste **collection plan** — instantiation variables, discipline-selection table, cadence,
+and fusion table — lives in [`template.md`](template.md).
+
 ## Examples
 
 **Illustrative fusion fill (all names fictional):** you suspect [TARGET] = Meridian Freight Systems is
@@ -355,6 +358,12 @@ not after.
 FININT pass finds deferred revenue declining three quarters straight while claimed customer count grew
 — **Inference:** deal sizes are shrinking. The card gains a quarter-end discount-pressure play, with
 the filing URL attached.
+
+See [`examples/sample.md`](examples/sample.md) for a complete worked collection plan (fictional) —
+four disciplines chosen and three consciously skipped, a fusion table that escalates to
+actionable, and a June signal that correctly *stayed* a watch item until other channels corroborated.
+[`examples/sample-industrial.md`](examples/sample-industrial.md) is the plan where MASINT stars —
+customs, registries, permits — and an absence enters the fusion table as a Fact.
 
 ## Common Pitfalls
 

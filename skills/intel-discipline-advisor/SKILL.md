@@ -121,6 +121,9 @@ protocol.
 | Standing watch | SIGINT weekly, OSINT+HUMINT monthly, FININT+TECHINT quarterly — scaled to stated capacity | [`competitive-intel-watch`](../competitive-intel-watch/SKILL.md) |
 | The full picture | All of the above, sequenced | [`competitive-analysis-process`](../competitive-analysis-process/SKILL.md) |
 
+Close by offering the one-page **triage card** ([`template.md`](template.md)) filled in from the
+session — the route, its "because," and a review date, as a handoff artifact.
+
 ## Examples
 
 **Sample flow (fictional):**
@@ -149,6 +152,12 @@ protocol.
 "why did our last three enterprise deals stall?" The honest recommendation leads with win/loss
 interviews (HUMINT's ground-truth layer) and [`discovery-interview-prep`](../discovery-interview-prep/SKILL.md)
 — "no public-web sweep answers a question your own churned prospects can answer better."
+
+See [`examples/conversation-flow.md`](examples/conversation-flow.md) for a full end-to-end session:
+inline input crediting two of the three questions, a capacity answer that gets believed, a
+combination selection, and a "tell me more" that earns a teaching answer.
+[`examples/conversation-flow-industrial.md`](examples/conversation-flow-industrial.md) shows the
+routing shift for a physical-world signal — permits and customs data instead of site diffs.
 
 ## Common Pitfalls
 

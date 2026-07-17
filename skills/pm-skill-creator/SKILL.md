@@ -172,7 +172,7 @@ Give me your best attempt and I'll tighten it if needed. Or just describe the sk
 "What are the core elements of this artifact or framework? I need:
 1. **The template or structure** — What sections/fields does it contain?
 2. **Quality criteria** — What separates a good one from a bad one?
-3. **One concrete example** — A filled-in version showing it done well
+3. **One concrete example** — A filled-in version showing it done well; optimally ask for (or generate) a second from a different business domain — one SaaS, one industrial/non-SaaS — so the skill doesn't quietly teach "this only works in SaaS." Use the repo's fictional universes and name the second file by domain (`sample-industrial.md`); all example companies must be fictional
 
 Give me whatever you have — bullet points, rough notes, or a full draft."
 
@@ -220,7 +220,7 @@ After collecting answers to Q1-Q5, the agent generates a complete SKILL.md draft
 3. **Input** — Derived from Q2/Q3: what the user provides, an example invocation, and the inline-input rule (use what's supplied, don't re-ask)
 4. **Key Concepts** — Structured from Q4 content
 5. **Application** — Step-by-step instructions derived from Q4
-6. **Examples** — Concrete example from Q4 (or generated if not provided)
+6. **Examples** — Concrete example from Q4 (or generated if not provided); dual-domain (SaaS + industrial) is the quality bar for full adornment
 7. **Common Pitfalls** — Structured from Q5
 8. **References** — Related skills identified during conversation + source material
 

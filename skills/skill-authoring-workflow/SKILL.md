@@ -107,7 +107,8 @@ If you want guided prompts:
 
 Manually review for:
 - Clear "when to use" guidance
-- One concrete example
+- One concrete example — optimally two, from different business domains (one SaaS, one industrial/non-SaaS), so the framework visibly generalizes; reuse the repo's fictional universes (Fieldlight/Wrenchline for SaaS, Helix/Northfield/Corvid for industrial) and suffix the second file by domain (`sample-industrial.md`)
+- A `template.md` when the skill produces an artifact — the output schema as a copy/paste fill-in with quality checks
 - One explicit anti-pattern
 - No filler or vague consultant-speak
 

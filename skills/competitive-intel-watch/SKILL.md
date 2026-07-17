@@ -124,6 +124,8 @@ Only rows with real updates; omit the rest.
 - [Assumption 1] / [Assumption 2] / [Assumption 3]
 ~~~
 
+A copy/paste fill-in version of this schema, with quality checks, lives in [`template.md`](template.md).
+
 ### Final Step (offer exactly 4 options)
 
 1. Update the battle card sections flagged above ([`battle-card-builder`](../battle-card-builder/SKILL.md))
@@ -152,6 +154,12 @@ run, file the report and stop — the options wait for a human.
 > three thought-leadership posts on compliance automation (watchlist: possible positioning shift if
 > their product pages follow), and two senior-engineer job posts mention a language we haven't seen
 > in their stack before (watchlist: TECHINT corroboration needed before this means anything).
+
+See [`examples/sample.md`](examples/sample.md) for a complete worked run (fictional FSM-software
+market) that diffs against the `competitive-research-snapshot` example's baseline — including an
+assumption from that baseline getting confirmed by the diff. [`examples/sample-industrial.md`](examples/sample-industrial.md)
+shows the quarterly-cadence industrial version, where a top risk gets *demoted* and that's
+reported as material.
 
 ## Common Pitfalls
 

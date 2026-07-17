@@ -113,6 +113,8 @@ Keep "no material movement" factors to a single line each.
 Each bullet: label, confidence, URL where relevant.
 ~~~
 
+A copy/paste fill-in version of this schema, with quality checks, lives in [`template.md`](template.md).
+
 ### Final Step (offer exactly 4 options)
 
 1. Update the baseline PESTEL with these deltas (new baseline)
@@ -139,6 +141,12 @@ Accept `1`, `2`, `3`, `4`, `1 and 2`, `Verbose Mode`, or a custom path.
 one Economic entry moved (a rate-path shift crossing the baseline's stated budget-gate threshold).
 The report is half a page. That brevity *is* the radar working — the reader spends two minutes and
 knows the strategy's macro floor held except where it didn't.
+
+See [`examples/sample.md`](examples/sample.md) for a complete worked delta run (fictional
+trades-software scope) with two broken assumptions traced to their baseline entries and furniture
+flagged for retirement. [`examples/sample-industrial.md`](examples/sample-industrial.md) runs the
+industrial scope, where the hot factors swap — tariffs, energy, disclosure rules — and threshold
+crossings are distinguished from broken assumptions.
 
 ## Common Pitfalls
 

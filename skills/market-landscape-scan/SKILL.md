@@ -123,6 +123,8 @@ Cap the full map at 12 players; strongest signal only.
 Each bullet: label, confidence, URL where relevant.
 ~~~
 
+A copy/paste fill-in version of this schema, with quality checks, lives in [`template.md`](template.md).
+
 ### Final Step (offer exactly 4 options)
 
 1. Run [`competitive-research-snapshot`](../competitive-research-snapshot/SKILL.md) on the deep-dive players
@@ -151,6 +153,12 @@ Accept `1`, `2`, `3`, `4`, `1 and 2`, `Verbose Mode`, or a custom path.
 > not demand — **Inference** (founder postmortem cites CAC/LTV, not lack of interest). Verdict:
 > conditional whitespace — viable only with a radically cheaper acquisition motion. **Assumption to
 > validate:** the segment's tooling budget clears $50/month.
+
+See [`examples/sample.md`](examples/sample.md) for a complete worked scan (fictional FSM-software
+market) whose output feeds the `competitive-research-snapshot` example — the chain's schemas
+demonstrated end to end. [`examples/sample-industrial.md`](examples/sample-industrial.md) runs the
+same schema in a fictional industrial market, where the substitutes and freshest signals change
+completely.
 
 ## Common Pitfalls
 
