@@ -1,5 +1,5 @@
 generated_from: skills/*/SKILL.md
-count: 69
+count: 70
 skills:
 - name: acquisition-channel-advisor
   description: Evaluate acquisition channels using unit economics, customer quality,
@@ -308,6 +308,17 @@ skills:
     it, reading sender power and stake from a product leader's chair, and opening
     the conversation toward a reply or next artifact. Trains the PM habit of finding
     the outcome before responding.
+- name: intel-discipline-advisor
+  description: Triage a competitive or market question into the right intelligence
+    disciplines, cadence, and executing skill. Use when you know something needs researching
+    but not which channel to run.
+  type: interactive
+  path: skills/intel-discipline-advisor/SKILL.md
+  intent: "Interactive triage for market intelligence: three adaptive questions about\
+    \ the decision on your desk, then numbered recommendations naming the discipline\
+    \ mix (OSINT, FININT, TECHINT...), the cadence, and the investigation skill that\
+    \ executes \u2014 teaching the decision-to-discipline mapping through use, so\
+    \ you eventually stop needing the advisor."
 - name: intelligence-collection-disciplines
   description: 'Run competitive research like an intelligence agency: eight collection
     disciplines (OSINT to MASINT), signal-to-inference chains, and fusion. Use when

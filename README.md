@@ -2,7 +2,7 @@
 
 # Product Manager Skills
 
-![GitHub stars](https://img.shields.io/github/stars/deanpeters/Product-Manager-Skills?style=flat-square) [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey?style=flat-square)](LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](CONTRIBUTING.md) [![Version](https://img.shields.io/badge/version-v0.82-blue?style=flat-square)](https://github.com/deanpeters/Product-Manager-Skills/releases/latest) [![Claude Code Plugin](https://img.shields.io/badge/Claude%20Code-Plugin%20Marketplace-5C4EE5?style=flat-square)](https://code.claude.com/docs/en/plugin-marketplaces) ![Skills](https://img.shields.io/badge/skills-69-informational?style=flat-square)
+![GitHub stars](https://img.shields.io/github/stars/deanpeters/Product-Manager-Skills?style=flat-square) [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey?style=flat-square)](LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](CONTRIBUTING.md) [![Version](https://img.shields.io/badge/version-v0.82-blue?style=flat-square)](https://github.com/deanpeters/Product-Manager-Skills/releases/latest) [![Claude Code Plugin](https://img.shields.io/badge/Claude%20Code-Plugin%20Marketplace-5C4EE5?style=flat-square)](https://code.claude.com/docs/en/plugin-marketplaces) ![Skills](https://img.shields.io/badge/skills-70-informational?style=flat-square)
 
 ```text
 ╔════════════════════════════════════════════════════════════════════╗
@@ -14,14 +14,14 @@
 ║   ██║     ██║ ╚═╝ ██║    ███████║██║  ██╗██║███████╗███████╗███████║
 ║   ╚═╝     ╚═╝     ╚═╝    ╚══════╝╚═╝  ╚═╝╚═╝╚══════╝╚══════╝╚══════╝
 ║                                                                    ║
-║   69 battle-tested skills + 6 command workflows                    ║
+║   70 battle-tested skills + 6 command workflows                    ║
 ║   Claude Code • Cursor • Codex  • n8n • OpenClaw • and more ...    ║
 ║                                                                    ║
 ║   v0.82 • July 8, 2026 • CC BY-NC-SA 4.0                           ║
 ╚════════════════════════════════════════════════════════════════════╝
 ```
 
-**69 battle-tested PM frameworks, ready for Claude, Codex, ChatGPT, and any agent that can read structured knowledge.**
+**70 battle-tested PM frameworks, ready for Claude, Codex, ChatGPT, and any agent that can read structured knowledge.**
 
 ---
 
@@ -109,7 +109,7 @@ Each pack below is a ZIP of upload-ready skill ZIPs — unzip, then upload indiv
 | Strategy | [`03-strategy-pack.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/03-strategy-pack.zip) | Positioning, roadmapping, prioritization |
 | Delivery | [`04-delivery-pack.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/04-delivery-pack.zip) | PRDs, stories, epics |
 | AI PM | [`05-ai-pm-pack.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/05-ai-pm-pack.zip) | Context engineering, orchestration, readiness |
-| All skills | [`99-all-skills-pack.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/99-all-skills-pack.zip) | All 69 skills |
+| All skills | [`99-all-skills-pack.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/99-all-skills-pack.zip) | All 70 skills |
 
 ### Install guides
 
@@ -168,7 +168,7 @@ Skills are organized in three tiers that build on each other:
 
 **Interactive skills use an Adaptive Decision Ladder.** Instead of dumping a framework at you, an interactive skill asks 3-5 targeted questions about your specific context, then offers numbered recommendations — each with a clear "use this when" rationale. You pick a path. The skill executes it and explains the *why* as it goes. If you want to just learn the framework without doing the work, you can ask that too — the skill coaches you either way. This is ABC — Always Be Coaching — in practice.
 
-**Full catalog:** [catalog/INDEX.md](catalog/README.md) — all 69 skills with descriptions, or browse `skills/` directly.
+**Full catalog:** [catalog/INDEX.md](catalog/README.md) — all 70 skills with descriptions, or browse `skills/` directly.
 
 ---
 
@@ -222,7 +222,7 @@ See [docs/Platform Guides for PMs.md](docs/Platform%20Guides%20for%20PMs.md) for
 **v0.82 — July 8, 2026**
 - Added `incoming-request-advisor` (Interactive) — drop in a Slack ping, email, mandate, or escalation and get a structured breakdown that separates the literal ask from the real job-to-be-done, reads sender power and stake, and points you toward a reply. Ships with a copy/paste template so you can run it by hand too
 - **New: a browsable [download shelf](dist/) at `/dist`** — no terminal, no Releases tab. Read the plain-language [README](dist/README.md), scan the [CATALOG](dist/CATALOG.md), and download any skill or pack straight from the repo. Built for PMs who just want the skills
-- Library now at **69 skills**
+- Library now at **70 skills**
 
 **v0.81 — July 4, 2026**
 - Every skill now has a required `## Input` section: what to bring, what happens to context you supply up front (it's used, not re-asked), and reassurance that arriving empty-handed is fine — the guided flow covers the rest

@@ -5,7 +5,7 @@
     "email": "dean.peters@productside.com"
   },
   "metadata": {
-    "description": "69 battle-tested product management skills for Claude Code \u2014 discovery, strategy, finance, career, and more.",
+    "description": "70 battle-tested product management skills for Claude Code \u2014 discovery, strategy, finance, career, and more.",
     "version": "0.82.0"
   },
   "plugins": [
@@ -389,6 +389,20 @@
         "communication",
         "triage",
         "jobs-to-be-done"
+      ],
+      "strict": false
+    },
+    {
+      "name": "intel-discipline-advisor",
+      "source": "./skills/intel-discipline-advisor",
+      "description": "Triage a competitive question into the right intelligence disciplines, cadence, and executing skill.",
+      "category": "market-intelligence",
+      "tags": [
+        "pm",
+        "market-intelligence",
+        "advisor",
+        "triage",
+        "research"
       ],
       "strict": false
     },
