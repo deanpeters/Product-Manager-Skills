@@ -17,6 +17,7 @@ find upload-ready skill ZIPs inside.
 | [`03-strategy-pack.zip`](packages/03-strategy-pack.zip) | Positioning, market thinking, product direction |
 | [`04-delivery-pack.zip`](packages/04-delivery-pack.zip) | Stories, epics, PRDs, roadmap execution |
 | [`05-ai-pm-pack.zip`](packages/05-ai-pm-pack.zip) | AI product work |
+| [`06-market-intel-pack.zip`](packages/06-market-intel-pack.zip) | Competitive and market intelligence — the full suite |
 | [`99-all-skills-pack.zip`](packages/99-all-skills-pack.zip) | Everything — all 70 skills |
 | [`pm-skills-codex.zip`](packages/pm-skills-codex.zip) | OpenAI Codex users (`.agents/skills` + `AGENTS.md`) |
 
