@@ -2,8 +2,8 @@
 """Detect silent drift between what the docs claim and what's actually shipped.
 
 Checks:
-- every skills/<name>/ directory has an entry in .claude-plugin/marketplace.json
-- every marketplace.json entry points at a skill directory that exists (no ghosts)
+- marketplace.json is either a single root plugin (source "./") or a legacy
+  per-skill plugins[] list kept in sync with skills/*/
 - every skills/<name>/SKILL.md link mentioned in README.md and CLAUDE.md resolves
 
 Why this exists: v0.81 shipped two fixes for exactly these failures — a skill
@@ -37,6 +37,13 @@ def skill_dirs() -> set[str]:
 
 
 def check_marketplace(skills: set[str]) -> list[str]:
+    """Validate marketplace.json against the skill tree.
+
+    Two supported shapes:
+    1. Single-plugin marketplace: one entry with source "./" (or ".") that
+       ships the whole repo via root .claude-plugin/plugin.json.
+    2. Legacy per-skill marketplace: one plugins[] entry per skills/<name>/.
+    """
     issues: list[str] = []
     if not os.path.isfile(MARKETPLACE_PATH):
         return [f"marketplace_missing: {MARKETPLACE_PATH} not found"]
@@ -44,7 +51,40 @@ def check_marketplace(skills: set[str]) -> list[str]:
     with open(MARKETPLACE_PATH, "r", encoding="utf-8") as handle:
         marketplace = json.load(handle)
 
-    listed = {plugin["name"] for plugin in marketplace.get("plugins", [])}
+    plugins = marketplace.get("plugins", [])
+    if not plugins:
+        return [f"marketplace_empty: {MARKETPLACE_PATH} has no plugins entries"]
+
+    # Single-plugin layout (preferred): source is the repo root.
+    if len(plugins) == 1:
+        plugin = plugins[0]
+        source = plugin.get("source", "").rstrip("/") or "."
+        if source in {".", "./"}:
+            plugin_json_path = ".claude-plugin/plugin.json"
+            if not os.path.isfile(plugin_json_path):
+                issues.append(
+                    "marketplace_single_plugin_missing_manifest: "
+                    f"{plugin_json_path} not found for source '{source}'"
+                )
+                return issues
+            with open(plugin_json_path, "r", encoding="utf-8") as handle:
+                plugin_json = json.load(handle)
+            expected_name = plugin_json.get("name")
+            actual_name = plugin.get("name")
+            if expected_name and actual_name != expected_name:
+                issues.append(
+                    "marketplace_plugin_name_mismatch: marketplace lists "
+                    f"'{actual_name}' but {plugin_json_path} name is "
+                    f"'{expected_name}'"
+                )
+            if not skills:
+                issues.append(
+                    "marketplace_single_plugin_no_skills: skills/ is empty"
+                )
+            return issues
+
+    # Legacy per-skill layout: every skill dir <-> marketplace entry.
+    listed = {plugin["name"] for plugin in plugins}
 
     for name in sorted(skills - listed):
         issues.append(

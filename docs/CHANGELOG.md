@@ -712,7 +712,7 @@ Detailed concept notes live in [`PLANS.md`](PLANS.md#future-skill-candidates).
 ./scripts/run-pm.sh command plan-roadmap "Q3-Q4 roadmap for enterprise reporting"
 ```
 
-Command definitions live in [`commands/`](commands/README.md), and generated browse indexes live in [`catalog/`](catalog/README.md).
+Command definitions live in [`commands/`](docs/commands.md), and generated browse indexes live in [`catalog/`](catalog/README.md).
 
 ### With Claude Desktop or Claude.ai
 
@@ -759,7 +759,7 @@ Use GitHub app connections (formerly connectors), Custom GPT Knowledge uploads, 
 - **[Using PM Skills with LangFlow](docs/Using%20PM%20Skills%20with%20LangFlow.md)** — Visual workflow setup using skill-guided prompt templates.
 - **Additional harness guides:** [Cursor](docs/Using%20PM%20Skills%20with%20Cursor.md), [Windsurf](docs/Using%20PM%20Skills%20with%20Windsurf.md), [Bolt](docs/Using%20PM%20Skills%20with%20Bolt.md), [Replit Agent](docs/Using%20PM%20Skills%20with%20Replit%20Agent.md), [Make.com](docs/Using%20PM%20Skills%20with%20Make.com.md), [Devin](docs/Using%20PM%20Skills%20with%20Devin.md), [CrewAI](docs/Using%20PM%20Skills%20with%20CrewAI.md), [Gemini](docs/Using%20PM%20Skills%20with%20Gemini.md)
 - **[Start Here](START_HERE.md)** — One-page "do this now" onboarding for skills and commands.
-- **[Commands](commands/README.md)** — Command format, command list, validation, and discovery.
+- **[Commands](docs/commands.md)** — Command format, command list, validation, and discovery.
 - **[Catalog Artifacts](catalog/README.md)** — Generated skill/command indexes for fast navigation.
 - **[PM Skills Rule-of-Thumb Guide](docs/PM%20Skills%20Rule-of-Thumb%20Guide.md)** — Non-technical setup choices (local repo vs ZIP vs app connections) in plain English.
 - **[Marketplace Strategy](MARKETPLACE_STRATEGY.md)** — PM-friendly strategy for distributing skills in marketplaces.
