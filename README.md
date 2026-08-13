@@ -136,9 +136,21 @@ Each pack below is a ZIP of upload-ready skill ZIPs — unzip, then upload indiv
 
 ---
 
-## Try It First — Streamlit (beta)
+## Try It First
 
-Not ready to wire skills into your agent setup? Run the local playground first and kick the tires in your browser.
+Not ready to pick a ZIP or plugin path? Two low-friction ways to evaluate the library before you install Claude Code, Codex, or a full agent setup.
+
+### One-click PRD trial (Telegram / WhatsApp)
+
+Run the already-imported [`prd-development`](skills/prd-development/SKILL.md) workflow in an OpenClaw/Hermes-style agent—no marketplace install, Codex ZIP, or local clone.
+
+**[Try PRD Development in Telegram or WhatsApp](https://app.clawmama.run/skills/4qhr37/hermes?utm_source=github&utm_medium=readme&utm_campaign=skill_outreach_deanpeters_product_manager_skills_prd_development)**
+
+Bring your own feature idea. The skill walks problem framing → users → success metrics → requirements → risks → open questions so you can judge the PRD flow before committing to a longer setup. This sits **alongside** Claude Code, Codex, and Streamlit—it does not replace them.
+
+### Streamlit playground (beta)
+
+Prefer a browser on your machine? Run the local playground and kick the tires without wiring skills into your agent.
 
 ```bash
 pip install -r app/requirements.txt
