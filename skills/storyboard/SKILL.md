@@ -142,10 +142,16 @@ Based on the answers above, draft the narrative:
 
 For each frame, create or describe the visual:
 
+Default to a written frame brief or a hand sketch. When the user explicitly wants
+rendered image files and has Atlas Cloud configured, use the optional
+[Atlas Cloud rendering workflow](references/atlas-cloud-rendering.md). Rendering
+comes after the narrative passes Step 5; it must not turn a storyboard exercise into
+a provider setup task or block delivery of the six-frame story.
+
 **Frame 1: Main Character**
 - **Visual:** Sarah at her desk, surrounded by sticky notes, laptop open, coffee cup
 - **Mood:** Busy, slightly stressed
-- **Tools:** DALL·E, MidJourney, hand-drawn sketches
+- **Tools:** Hand-drawn sketches, Atlas Cloud, DALL·E, or MidJourney
 
 **Frame 2: The Problem Emerges**
 - **Visual:** Sarah staring at a spreadsheet labeled "Overdue Invoices," multiple browser tabs open
