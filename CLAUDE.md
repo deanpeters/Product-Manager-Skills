@@ -173,6 +173,8 @@
 - `research/finance/Finance_Metrics_Additions_Reference.md` — Common mistakes reference
 
 **What's Next:**
+- Docs readability program (from `docs/writing-for-our-readers.md`): README first screen + `START_HERE.md` + install docs (`INSTALL-CLAUDE-DESKTOP.md` is missing packs 06/07; `START_HERE.md` still says "New in v0.65") → prose-count drift check → audit the ~25 "Using PM Skills with…" guides → optional docs style checker
+- Future em-dash sweep (deferred Nov 12, 2026): decide whether to limit em dashes and in what scope. Skill bodies need special care; dashes there often carry teaching beats
 - Complete remaining Phase 6 skills (evals, observability, maintenance)
 - Build final workflow skill that orchestrates all 5 AI PM disciplines
 - Potential Phase 8: Pricing & Monetization Suite (7 comprehensive pricing skills)
@@ -186,6 +188,7 @@
 
 **Important Notes for Claude:**
 - Always check `git status` and recent commits before starting new work
+- For reader-facing docs (README, `START_HERE.md`, install guides, "Using PM Skills with…" guides, `dist/README.md`), follow `docs/writing-for-our-readers.md`: three readers (Practitioner / Adopter / Builder), layer don't split, the first screen belongs to the Practitioner
 - Dogfood first: use this repo's own standards/scripts/skill definitions as the source of truth before making recommendations
 - For facilitation behavior changes, update `skills/workshop-facilitation/SKILL.md` first, then use `docs/maintenance/facilitation-scope.md` to find and patch all linked skills
 - For category decisions (Component vs Interactive vs Workflow), anchor to criteria in this file and `README.md` before giving an answer
@@ -458,7 +461,7 @@ After user selects, the skill should:
 ## Tone & Style Rules for Skills
 
 ### Do:
-- Write like you're teaching a smart junior PM
+- Write like you're teaching a smart, less experienced or emerging PM
 - Use short sentences and active voice
 - Name the tradeoffs (not just "best practices")
 - Include one vivid metaphor or label when it clarifies (e.g., "feature factory")

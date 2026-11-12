@@ -409,8 +409,10 @@ Your skill should pass these checks:
 
 ## 🎨 Writing Style Guide
 
+This section covers skill content. For reader-facing docs (README, install guides, the "Using PM Skills with…" guides), follow [Writing for Our Readers](docs/writing-for-our-readers.md): three readers, layered docs, and the first screen belongs to the least technical one.
+
 ### ✅ Do This:
-- Write like you're teaching a smart colleague (not a junior intern)
+- Write like you're teaching a smart, less experienced or emerging PM: explain the *why*, and never condescend
 - Use short sentences and active voice
 - Name tradeoffs (not just "best practices")
 - Include vivid labels when helpful ("feature factory," "HiPPO decision-making")
