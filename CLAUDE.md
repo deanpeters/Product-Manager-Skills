@@ -4,9 +4,16 @@
 
 ---
 
-## Project Status (Last updated: Mon Aug 10 2026)
+## Project Status (Last updated: Thu Nov 12 2026)
 
-### Current State: v0.84 (77 skills)
+### Current State: v0.84 (77 skills) + unreleased work on main
+
+**Nov 12, 2026 session (unreleased, on main). Handoff brief: `12NOV26.md`**
+- **Guided Context Capture:** `skills/workshop-facilitation/SKILL.md` upgraded (Known/Assumed/Missing/Conflicting read-back, completion summary before generating, `(Recommended)` decision ladder, ranked Assumptions to Validate, replay-on-correction, resume recap). Explainer: `docs/guided-context-capture.md`. Skills **link** to the rulebook; never copy its text
+- **Configurable default entry mode:** `pm-skills.config.yaml` (`default_entry_mode` + per-skill `overrides`; ships `guided`, `incoming-request-advisor: context-dump`). 33 skills carry one `**Default entry mode:**` line so lone ZIPs know their default. `scripts/apply-entry-mode.py` applies it; `--check` runs in `validate-skills.sh`. User's in-session choice always wins
+- **Docs guide:** `docs/writing-for-our-readers.md` (Practitioner / Adopter / Builder; layer, don't split; first screen belongs to the Practitioner). Em-dash rule deliberately deferred
+- **Pending:** `dist/` rebuild (ZIPs hold pre-Nov-12 text), docs readability program, v0.85 release
+
 
 **77 Skills**
 - 28 Component Skills (templates/artifacts + finance metrics + career frameworks + stakeholder tools + intelligence disciplines + EOL artifacts + lifecycle plays)
@@ -221,6 +228,7 @@
   - **Content-level, never byte-level** — rebuilt ZIPs differ every run from embedded timestamps
   - Runs as its **own CI step**, NOT inside `validate-skills.sh`: `build-dist.sh` → `build-release.sh` → `validate-skills.sh`, so a check there would abort the command that fixes the staleness. Also step 7 of `test-library.sh`
   - Fix drift with: `python3 scripts/generate-catalog.py` then `bash scripts/build-dist.sh`
+- **`scripts/apply-entry-mode.py`** — Applies `pm-skills.config.yaml`'s default entry mode to every protocol-running skill (or a packaged copy via `--skills-dir`); `--check` fails on drift, bad values, unknown overrides, or a skill that uses `workshop-facilitation` without the `**Default entry mode:**` line. Runs inside `validate-skills.sh` (safe there: its fix is itself, not a rebuild)
 - **`scripts/test-a-skill.sh`** — Skill quality gate
   - Runs strict conformance checks (`check-skill-metadata.py`)
   - Verifies linked `skills/*/SKILL.md` references resolve

@@ -38,6 +38,8 @@ This is a Markdown-first repository with lightweight validation and packaging sc
 - `./scripts/validate-skills.sh` validates canonical skill folders before packaging.
 - `./scripts/build-release.sh` builds all downloadable release artifacts.
 - `./scripts/test-library.sh` validates skills + commands and regenerates catalogs.
+- `python3 scripts/apply-entry-mode.py` writes the default entry mode from `pm-skills.config.yaml` into every protocol-running skill; `--check` (run by `validate-skills.sh`) fails on drift or a missing line.
+- Handoff briefs live at the repo root as `DDMMMYY.md` (newest: `12NOV26.md`). Read the newest one before starting work.
 - `streamlit run app/main.py` launches the Streamlit (beta) skill playground.
 
 ## Coding Style & Naming Conventions
@@ -49,6 +51,7 @@ This is a Markdown-first repository with lightweight validation and packaging sc
 - Ensure the skill folder name matches the frontmatter `name` exactly (lowercase kebab-case).
 - Use fenced code blocks with language tags for commands or templates.
 - Keep language concise and opinionated; avoid filler.
+- For reader-facing docs (README, `START_HERE.md`, install guides, "Using PM Skills with…" guides, `dist/README.md`), follow `docs/writing-for-our-readers.md`: three readers, layer don't split, the first screen belongs to the least technical reader. There is no em-dash rule; never strip em dashes from skill bodies.
 
 ### Interactive Skills
 **What:** Multi-turn conversational flows that gather context through sequential questioning and offer intelligent next-step recommendations.
@@ -59,6 +62,8 @@ This is a Markdown-first repository with lightweight validation and packaging sc
 - Offers **enumerated, context-aware recommendations** for next steps
 - Allows user to select by number ("1", "2 & 4") or provide custom input
 - Adapts based on user choices
+
+**Facilitation protocol (Guided Context Capture):** `skills/workshop-facilitation/SKILL.md` is the single source of truth; the user-facing explainer is `docs/guided-context-capture.md`. Interactive skills (and workflows run as guided conversations) link to it rather than copying its text, and carry exactly one `**Default entry mode:** Guided · …` line (copy it from any advisor). The library-wide default and per-skill overrides live in `pm-skills.config.yaml`; the user's in-session choice always wins. Change behavior in the rulebook first, then use `docs/maintenance/facilitation-scope.md` to find skills whose local wording contradicts it.
 
 ## Testing Guidelines
 No automated tests exist. Validate changes by:
@@ -119,6 +124,7 @@ These are product management coaching and artifact-generation workflows, not sof
 
 ## Release Checklist
 - Update skill counts and tables in `README.md`.
+- Rebuild the shelf (`python3 scripts/generate-catalog.py`, then `bash scripts/build-dist.sh`) after any skill text change. `check-dist-freshness.py` checks membership, not ZIP contents, so it will not catch stale text.
 - Ensure new skills are linked in the correct section (Component/Interactive/Workflow).
 - Spot-check cross-links from `README.md` and `CONTRIBUTING.md`.
 - Confirm any renamed skills update paths and references.
