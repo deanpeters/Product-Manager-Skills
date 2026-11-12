@@ -89,6 +89,10 @@ Before we start, you can choose how to run this session:
 2. **Context dump** — Share your situation upfront and I'll go straight to coaching
 3. **Best guess** — Tell me nothing; I'll give you the highest-value advice for the most common transition situation (newly landed Director, 0–3 months in)
 
+Guided is the default, so here's the first question.
+
+**Same turn, don't wait for a mode pick:** Guided is the default. Ask Question 1 (Q1/3) right after the options. If the user answers it, carry on in Guided mode; if they pick 2 or 3 instead, switch.
+
 ---
 
 ### Question 1: Where Are You?

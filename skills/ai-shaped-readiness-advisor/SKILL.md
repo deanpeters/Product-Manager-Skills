@@ -215,7 +215,7 @@ This interactive skill uses **adaptive questioning** to assess your maturity acr
 13. Interruption handling is mandatory: if the user asks a meta question ("how many left?", "why this label?", "pause"), answer directly first, then restate current progress and resume with the pending question.
 14. If the user says to stop or pause, halt the assessment immediately and wait for explicit resume.
 15. If the user asks for "one question at a time," keep that mode for the rest of the session unless they explicitly opt out.
-16. Before any assessment question, give a short heads-up on time/length and let the user choose an entry mode.
+16. Before any assessment question, give a short heads-up on time/length and offer the three entry modes, then ask the first context question in the same turn (Guided is the default; switch if the user picks another mode).
 
 ---
 
@@ -228,14 +228,18 @@ This interactive skill uses **adaptive questioning** to assess your maturity acr
 How do you want to do this?
 1. Guided mode: I’ll ask one question at a time.
 2. Context dump: you paste what you already know, and I’ll skip anything redundant.
-3. Best guess mode: I’ll make reasonable assumptions where details are missing, label them, and keep moving."
+3. Best guess mode: I’ll make reasonable assumptions where details are missing, label them, and keep moving.
+
+Guided is the default, so here's the first one:"
+
+Then ask `Context Q1/8` in the same turn. Don't wait for a mode pick. If the user answers the question, carry on in Guided mode. If they pick 2 or 3, switch.
 
 Accept selections as `#1`, `1`, `1 and 3`, `1,3`, or custom text.
 
 **Mode behavior:**
 
 - **If Guided mode:** Run Step 0 as written, then scoring.
-- **If Context dump:** Ask for pasted context once, summarize it, identify gaps, and:
+- **If Context dump:** Ask for pasted context once, show your read as **Known / Assumed / Missing / Conflicting** (credit where each item came from; surface conflicts rather than resolving them silently), and:
   - Skip any context questions already answered.
   - Ask only the minimum missing context needed (0-2 clarifying questions).
   - Move to scoring as soon as context is sufficient.
@@ -245,7 +249,7 @@ Accept selections as `#1`, `1`, `1 and 3`, `1,3`, or custom text.
   - Include confidence tags (`High`, `Medium`, `Low`) for each assumption.
   - Continue without blocking on unknowns.
 
-At the final summary, include an **Assumptions to Validate** section when context dump or best guess mode was used.
+Before scoring results, give the completion summary (supplied · inferred · unknown or disputed) and confirm. At the final summary, include an **Assumptions to Validate** section when context dump or best guess mode was used, ranked by how much each assumption could change the recommendation.
 
 ---
 

@@ -9,6 +9,7 @@ Use this file to quickly identify impacted skills and apply repo-wide fixes cons
 ## Canonical Source Of Truth
 
 - `skills/workshop-facilitation/SKILL.md`
+- User-facing explainer: `docs/guided-context-capture.md` (Guided Context Capture) — update it when the user-visible contract changes
 
 Core rule to preserve:
 - Regular context/scoring questions should offer quick-select numbered options (include `Other (specify)` when useful).

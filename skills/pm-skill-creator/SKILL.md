@@ -96,7 +96,11 @@ This interactive skill asks **up to 5 adaptive questions**, then delivers a **co
 
 1. **Guided** — I'll ask questions one at a time and build the skill from your answers (recommended)
 2. **Context dump** — Paste your raw content, notes, or framework and I'll propose a skill structure
-3. **Best guess** — Tell me just the topic and I'll draft a skill you can refine"
+3. **Best guess** — Tell me just the topic and I'll draft a skill you can refine
+
+Guided is the default, so let's start with the first question."
+
+**Same turn, don't wait for a mode pick:** Guided is the default. Ask Question 1 (Q1/5) right after the options. If the user answers it, carry on in Guided mode; if they pick 2 or 3 instead, switch.
 
 ---
 

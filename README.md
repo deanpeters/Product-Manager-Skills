@@ -233,6 +233,8 @@ The `best_for` frontmatter field lists 3-5 specific scenarios where the skill is
 
 **Why no `$ARGUMENTS` templating?** Other skill libraries use Claude Code's `$ARGUMENTS` substitution for input. We deliberately don't: it only expands in Claude Code (it renders as literal syntax in Claude Desktop/Web, Codex, and the Streamlit playground), and it teaches the human reader nothing. Instead, every skill has a plain-language `## Input` section that works on every runtime — and makes clear you can show up with full context, partial context, or nothing at all and be guided through the rest. Full rationale in [CONTRIBUTING.md](CONTRIBUTING.md).
 
+**Guided Context Capture.** Every interactive skill gathers context the same way. You can go one question at a time, paste what you know, or say "best guess." A pasted dump gets read back to you as Known / Assumed / Missing / Conflicting before any question is asked. You get a recap before anything is generated. Decisions come as a ranked ladder (Recommended first, real alternatives with tradeoffs), and you make the call. The skill never re-asks what you already said or passes a guess off as a fact. How it works and why: [docs/guided-context-capture.md](docs/guided-context-capture.md).
+
 ---
 
 ## Works With

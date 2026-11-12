@@ -152,7 +152,11 @@ This interactive skill uses **adaptive questioning** to scan your product idea a
 How do you want to do this?
 1. **Guided mode:** I'll walk through each dimension one at a time.
 2. **Context dump:** Paste what you know about the idea and I'll skip what's covered.
-3. **Best guess mode:** Give me the idea in a sentence and I'll make reasonable assumptions, labeled."
+3. **Best guess mode:** Give me the idea in a sentence and I'll make reasonable assumptions, labeled.
+
+Guided is the default, so let's start with the first question."
+
+**Same turn, don't wait for a mode pick:** Guided is the default. Ask `Context Q1/4` right after the options. If the user answers it, carry on in Guided mode; if they pick 2 or 3 instead, switch.
 
 ---
 
