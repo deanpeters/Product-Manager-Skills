@@ -70,6 +70,33 @@ Look at what the skill did *not* do. It didn't ask about users or timing, becaus
 - **Plain-language input, no templating.** Context arrives through each skill's `## Input` section, which works the same in every runtime. See the `$ARGUMENTS` rationale in [CONTRIBUTING.md](../CONTRIBUTING.md).
 - **Labels carry through.** The Known / Assumed / Missing / Conflicting read uses the same Fact / Inference / Assumption discipline as [`autonomous-investigation`](../skills/autonomous-investigation/SKILL.md). Guided sessions and autonomous research speak the same language about evidence.
 
+## Setting the Default Entry Mode
+
+Guided is the default when nothing else is set. That fits a library whose job is half teaching, because one question at a time is where a PM learns the framework. Teams that usually show up with notes in hand may prefer to open in Context dump, so the library lets you change the default without editing 33 skills.
+
+The master setting is [`pm-skills.config.yaml`](../pm-skills.config.yaml) at the repo root:
+
+```yaml
+facilitation:
+  default_entry_mode: guided        # guided | context-dump | best-guess
+  overrides:
+    incoming-request-advisor: context-dump
+```
+
+- **`default_entry_mode`** applies to every skill that runs the protocol.
+- **`overrides`** set a different default for one skill, by folder name. `incoming-request-advisor` ships as Context dump because the pasted message *is* the context.
+- **The user's choice always wins.** The default only decides how the first turn opens. All three modes are still offered, and the user can switch at any point. This is a dial the user sets, not a setting that takes the choice away.
+
+**How the setting reaches the agent.** Every skill that runs the protocol carries one line, `**Default entry mode:** Guided · …`, so a skill installed on its own (a single Claude Desktop ZIP, say) still knows its default. Agents working inside the repo can read the config file directly. Precedence: the user's choice in the session › the config file › the skill's own line › Guided.
+
+**Changing it:**
+
+1. Edit `pm-skills.config.yaml`.
+2. Run `python3 scripts/apply-entry-mode.py` to rewrite the line in every affected skill.
+3. Build as usual. `package-claude-skills.sh` and `build-codex-skills.sh` apply the config to packaged copies too, and `validate-skills.sh` fails if `skills/` has drifted from the config.
+
+If you fork the library for a team, this is the one setting most worth tuning. Use Best guess as a library-wide default only if your people reliably read the ranked Assumptions to Validate list. Otherwise it trains them to ship guesses.
+
 ## Grounding Options When Domain Context Is Thin
 
 When the skill lacks domain knowledge to offer sharp options and the runtime has web search, it should search before offering options, so the choices reflect real roles, products, and workflows. When search isn't available, it should say the options are typical examples and ask the user to correct them. Either way, it must not invent specifics just to make an option look sharp.
@@ -79,5 +106,6 @@ When the skill lacks domain knowledge to offer sharp options and the runtime has
 1. Change behavior in [`skills/workshop-facilitation/SKILL.md`](../skills/workshop-facilitation/SKILL.md) first.
 2. Find the skills that inherit it with the scope query in [`docs/maintenance/facilitation-scope.md`](maintenance/facilitation-scope.md), and patch only the ones whose local wording contradicts the change.
 3. Update this page if the user-visible contract changes.
+4. A new interactive skill that runs the protocol needs the `**Default entry mode:**` line (copy it from any advisor). Then run `python3 scripts/apply-entry-mode.py --check`.
 
 Worked transcripts: [`skills/workshop-facilitation/examples/inline-input-flow.md`](../skills/workshop-facilitation/examples/inline-input-flow.md).

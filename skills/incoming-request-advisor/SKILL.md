@@ -72,6 +72,8 @@ Every bullet in the breakdown is 4 to 8 words, ASCII only, short and scannable â
 
 Use [`workshop-facilitation`](../workshop-facilitation/SKILL.md) as the default interaction protocol for this skill.
 
+**Default entry mode:** Context dump Â· set in `pm-skills.config.yaml` (library-wide default or a per-skill override); the user's own choice in the session always wins. On the first turn, offer all three modes, then open in the default without waiting for a pick: Guided asks the first question, Context dump invites the paste, Best guess asks for a one-sentence minimum and drafts with every assumption labeled.
+
 It defines:
 - session heads-up + entry mode (Guided, Context dump, Best guess)
 - one-question turns with plain-language prompts

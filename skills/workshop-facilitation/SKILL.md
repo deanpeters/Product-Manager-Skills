@@ -32,6 +32,7 @@ Anything supplied with the invocation itself — text after the skill name, a pa
 ## Key Concepts
 - **One-step-at-a-time:** Ask a single targeted question per turn.
 - **Session heads-up + entry mode:** Start by setting expectations and offering `Guided`, `Context dump`, or `Best guess` mode.
+- **Default entry mode (configurable):** Each skill that runs this protocol carries a `**Default entry mode:**` line. It is set from `pm-skills.config.yaml` at the library root: a library-wide `default_entry_mode` plus optional per-skill `overrides`. Precedence: the user's own choice in the session › the config file (if you can read it) › the skill's own line › Guided. The default decides how the first turn opens; it never removes the other two modes, and the user can switch at any time.
 - **Progress visibility:** Show user-facing progress labels like `Context Qx/8` and `Scoring Qx/5`.
 - **Decision-point recommendations:** Use enumerated options only when a choice is needed, not after every answer.
 - **Quick-select response options:** For regular context/scoring questions, provide concise numbered answer options plus `Other (specify)` when useful.
@@ -45,12 +46,14 @@ Anything supplied with the invocation itself — text after the skill name, a pa
 - **Ranked assumptions:** Whenever best guess mode was used, end with `Assumptions to Validate`, ranked by how much each one could change the decision.
 - **Fast path:** If the user requests a single-shot output, skip multi-turn facilitation and deliver a condensed result.
 
+**Default entry mode:** Guided · set in `pm-skills.config.yaml` (library-wide default or a per-skill override); the user's own choice in the session always wins.
+
 ## Application
 1. Start with a brief heads-up on estimated time and number of questions.
-2. Offer an entry mode, then ask the first question right away (Guided is the default; don't stall waiting for a pick):
-   - `1` Guided mode (one question at a time)
-   - `2` Context dump (paste known context; skip redundancies)
-   - `3` Best guess mode (infer missing details and label assumptions)
+2. Offer all three entry modes, then open in the skill's default entry mode in the same turn. Don't stall waiting for a pick:
+   - `1` Guided mode (one question at a time). Default opening: ask the first question.
+   - `2` Context dump (paste known context; skip redundancies). Default opening: invite the paste.
+   - `3` Best guess mode (infer missing details and label assumptions). Default opening: ask for a one-sentence minimum, then draft.
    - If context was supplied with the invocation, open at the first real gap and keep the progress label honest.
    - In context dump mode, show the **Known / Assumed / Missing / Conflicting** read before any question.
 3. Run one question per turn and wait for an answer before continuing.
@@ -80,7 +83,9 @@ Anything supplied with the invocation itself — text after the skill name, a pa
 2. Context dump
 3. Best guess mode
 
-Guided is the default, so let's start. `Context Q1/10`: what's the session for?"
+Let's start one question at a time. `Context Q1/10`: what's the session for?"
+
+*(This opening assumes the default entry mode is Guided. With Context dump as the default, the same turn would end with "Paste what you already know." With Best guess, it would end with "Give me the session in one sentence and I'll draft the plan.")*
 
 **User:** "2"
 
@@ -118,7 +123,7 @@ Two questions would change this most. `Context Q1/2`: which segment is v1 for?"
 - **The silent resolve:** quietly picking a side when the supplied context conflicts. The artifact looks clean but rests on a choice the user never made. Surface it under **Conflicting** and ask.
 - **The flat assumption list:** listing assumptions without ranking them. The one guess holding up the whole plan gets buried among trivia. Rank by how much each could change the decision.
 - **Generating before the recap:** jumping from the last answer straight to the artifact. The user never gets to catch a misread before it spreads. Give the completion summary and confirm first.
-- **The stalled opening:** listing the three modes and then waiting for a pick. That turn adds nothing. Open in Guided with the first question; the user can still switch.
+- **The stalled opening:** listing the three modes and then waiting for a pick. That turn adds nothing. Open in the default mode; the user can still switch.
 - **Placeholder options:** options like "Option A / Option B" or generic roles late in a session. These show the skill wasn't listening. Use what the user has told you.
 
 ## References

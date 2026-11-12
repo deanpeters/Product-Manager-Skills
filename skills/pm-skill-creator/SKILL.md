@@ -72,6 +72,8 @@ Every skill requires these sections in order:
 
 Use [`workshop-facilitation`](../workshop-facilitation/SKILL.md) as the default interaction protocol for this skill.
 
+**Default entry mode:** Guided · set in `pm-skills.config.yaml` (library-wide default or a per-skill override); the user's own choice in the session always wins. On the first turn, offer all three modes, then open in the default without waiting for a pick: Guided asks the first question, Context dump invites the paste, Best guess asks for a one-sentence minimum and drafts with every assumption labeled.
+
 It defines:
 - Session heads-up + entry mode (Guided, Context dump, Best guess)
 - One-question turns with plain-language prompts
@@ -96,11 +98,9 @@ This interactive skill asks **up to 5 adaptive questions**, then delivers a **co
 
 1. **Guided** — I'll ask questions one at a time and build the skill from your answers (recommended)
 2. **Context dump** — Paste your raw content, notes, or framework and I'll propose a skill structure
-3. **Best guess** — Tell me just the topic and I'll draft a skill you can refine
+3. **Best guess** — Tell me just the topic and I'll draft a skill you can refine"
 
-Guided is the default, so let's start with the first question."
-
-**Same turn, don't wait for a mode pick:** Guided is the default. Ask Question 1 (Q1/5) right after the options. If the user answers it, carry on in Guided mode; if they pick 2 or 3 instead, switch.
+**Same turn, don't wait for a mode pick:** open in this skill's default entry mode (the `Default entry mode` line). If it's Guided, ask Question 1 (Q1/5) right after the options. If it's Context dump, invite the paste. If it's Best guess, ask for a one-sentence minimum and start drafting. Switch as soon as the user picks a different mode.
 
 ---
 
@@ -222,7 +222,7 @@ After collecting answers to Q1-Q5, the agent generates a complete SKILL.md draft
 1. **YAML frontmatter** — `name`, `description`, `intent`, `type`, `best_for`, `scenarios`, `estimated_time`
 2. **Purpose** — Synthesized from Q1 + Q3
 3. **Input** — Derived from Q2/Q3: what the user provides, an example invocation, and the inline-input rule (use what's supplied, don't re-ask)
-4. **Key Concepts** — Structured from Q4 content
+4. **Key Concepts** — Structured from Q4 content. *For interactive skills (and workflows run as guided conversations):* include the paragraph pointing to `workshop-facilitation` as the interaction protocol, followed by the `**Default entry mode:** Guided · …` line, copied verbatim from any existing advisor. The line carries the library's configurable default into the skill; validation fails without it
 5. **Application** — Step-by-step instructions derived from Q4
 6. **Examples** — Concrete example from Q4 (or generated if not provided); dual-domain (SaaS + industrial) is the quality bar for full adornment
 7. **Common Pitfalls** — Structured from Q5

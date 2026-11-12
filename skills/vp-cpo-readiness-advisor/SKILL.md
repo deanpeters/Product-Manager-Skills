@@ -110,6 +110,8 @@ Without them, you're a "dead man walking." Executives can appear supportive in m
 
 Use [`workshop-facilitation`](../workshop-facilitation/SKILL.md) as the default interaction protocol for this skill.
 
+**Default entry mode:** Guided · set in `pm-skills.config.yaml` (library-wide default or a per-skill override); the user's own choice in the session always wins. On the first turn, offer all three modes, then open in the default without waiting for a pick: Guided asks the first question, Context dump invites the paste, Best guess asks for a one-sentence minimum and drafts with every assumption labeled.
+
 It defines:
 - Session heads-up + entry mode (Guided, Context dump, Best guess)
 - One-question turns with plain-language prompts
@@ -138,9 +140,7 @@ Before we start, choose how to run this session:
 2. **Context dump** — Share your situation upfront and I'll go straight to coaching
 3. **Best guess** — Tell me nothing; I'll give you the highest-value advice for the most common situation (newly landed VP, 0–3 months in)
 
-Guided is the default, so here's the first question.
-
-**Same turn, don't wait for a mode pick:** Guided is the default. Ask Question 1 (Q1/3) right after the options. If the user answers it, carry on in Guided mode; if they pick 2 or 3 instead, switch.
+**Same turn, don't wait for a mode pick:** open in this skill's default entry mode (the `Default entry mode` line). If it's Guided, ask Question 1 (Q1/3) right after the options. If it's Context dump, invite the paste. If it's Best guess, ask for a one-sentence minimum and start drafting. Switch as soon as the user picks a different mode.
 
 ---
 

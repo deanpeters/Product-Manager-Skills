@@ -54,4 +54,7 @@ for skill_dir in "$ROOT"/skills/*; do
 
 done
 
+# Write pm-skills.config.yaml's default entry mode into the packaged copies.
+python3 "$ROOT/scripts/apply-entry-mode.py" --skills-dir "$OUT_DIR" --filename Skill.md
+
 echo "Prepared Claude skills folder at: $OUT_DIR"

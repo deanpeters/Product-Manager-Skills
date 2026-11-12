@@ -87,4 +87,11 @@ if ! (cd "$ROOT" && python3 "$SCRIPT_DIR/check-library-drift.py"); then
   exit 1
 fi
 
+echo
+echo "Checking default entry mode against pm-skills.config.yaml"
+if ! (cd "$ROOT" && python3 "$SCRIPT_DIR/apply-entry-mode.py" --check); then
+  echo "Validation failed." >&2
+  exit 1
+fi
+
 echo "Validation passed."

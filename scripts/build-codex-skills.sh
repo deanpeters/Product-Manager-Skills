@@ -37,6 +37,9 @@ for skill_dir in "$SKILLS_DIR"/*; do
   count=$((count + 1))
 done
 
+# Write pm-skills.config.yaml's default entry mode into the packaged copies.
+python3 "$ROOT/scripts/apply-entry-mode.py" --skills-dir "$OUT_SKILLS"
+
 cp "$ROOT/AGENTS.md" "$OUT_DIR/AGENTS.md"
 
 if [[ "$count" -eq 0 ]]; then

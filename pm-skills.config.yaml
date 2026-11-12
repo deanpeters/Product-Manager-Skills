@@ -1,0 +1,27 @@
+# pm-skills.config.yaml — library-wide settings for Product Manager Skills
+#
+# Change a value here, then run:
+#   python3 scripts/apply-entry-mode.py
+# to write it into every skill's "Default entry mode" line. The build scripts
+# apply this file to packaged copies too, so ZIPs follow it.
+#
+# How it fits Guided Context Capture: docs/guided-context-capture.md
+
+facilitation:
+  # The entry mode an interactive skill opens in when the user hasn't picked one.
+  # The user's own choice in the session always wins over this setting.
+  #
+  #   guided        one question per turn, numbered options (gentlest; best for learning)
+  #   context-dump  invite a paste first, read it back, ask only the gaps
+  #   best-guess    ask for a one-sentence minimum, draft now, label every assumption
+  #
+  # Pick the mode that matches how your team usually arrives. Teams new to a
+  # framework learn most from guided; teams that arrive with notes waste the
+  # least time with context-dump. Use best-guess as a default only if your
+  # people reliably read the Assumptions to Validate list.
+  default_entry_mode: guided
+
+  # Per-skill overrides, by skill folder name. Beats default_entry_mode.
+  overrides:
+    # The pasted message IS the context, so a read-back beats a questionnaire.
+    incoming-request-advisor: context-dump

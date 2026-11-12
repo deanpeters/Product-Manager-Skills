@@ -68,6 +68,8 @@ CTO on a preprint server, and their careers page doubled — what do I run?`
   customers churn," the answer is win/loss interviews and discovery, not a patent sweep. The advisor
   says so.
 
+**Default entry mode:** Guided · set in `pm-skills.config.yaml` (library-wide default or a per-skill override); the user's own choice in the session always wins. On the first turn, offer all three modes, then open in the default without waiting for a pick: Guided asks the first question, Context dump invites the paste, Best guess asks for a one-sentence minimum and drafts with every assumption labeled.
+
 ## Application
 
 This interactive skill asks **3 adaptive questions**, then offers **numbered, context-aware

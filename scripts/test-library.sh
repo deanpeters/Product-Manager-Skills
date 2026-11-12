@@ -61,8 +61,9 @@ main() {
     echo "[3/7] Validating commands"
     python3 "$SCRIPT_DIR/check-command-metadata.py"
 
-    echo "[4/7] Checking library drift (marketplace + doc links)"
+    echo "[4/7] Checking library drift (marketplace + doc links + default entry mode)"
     python3 "$SCRIPT_DIR/check-library-drift.py"
+    python3 "$SCRIPT_DIR/apply-entry-mode.py" --check
 
     if $RUN_SMOKE; then
         echo "[5/7] Running skill smoke tests"

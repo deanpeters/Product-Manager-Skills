@@ -403,6 +403,7 @@ Your skill should pass these checks:
 - [ ] **Enumerated options:** 3-5 numbered choices per question
 - [ ] **Context-aware:** Options adapt based on previous answers
 - [ ] **Handles input gracefully:** User can pick numbers, combine options, or provide custom input
+- [ ] **Uses the facilitation protocol:** Links [`workshop-facilitation`](skills/workshop-facilitation/SKILL.md) as its interaction protocol *and* carries the `**Default entry mode:**` line (copy both from any advisor, e.g. `prioritization-advisor`). *Why:* the line is how the library-wide setting in `pm-skills.config.yaml` reaches a skill installed on its own. `validate-skills.sh` fails without it. See [Guided Context Capture](docs/guided-context-capture.md)
 
 ---
 

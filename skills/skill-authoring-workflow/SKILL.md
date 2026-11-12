@@ -66,6 +66,8 @@ A skill is done only when:
 
 When running this workflow as a guided conversation, use [`workshop-facilitation`](../workshop-facilitation/SKILL.md) as the interaction protocol.
 
+**Default entry mode:** Guided · set in `pm-skills.config.yaml` (library-wide default or a per-skill override); the user's own choice in the session always wins. On the first turn, offer all three modes, then open in the default without waiting for a pick: Guided asks the first question, Context dump invites the paste, Best guess asks for a one-sentence minimum and drafts with every assumption labeled.
+
 It defines:
 - session heads-up + entry mode (Guided, Context dump, Best guess)
 - one-question turns with plain-language prompts
@@ -113,6 +115,7 @@ Manually review for:
 - A `template.md` when the skill produces an artifact — the output schema as a copy/paste fill-in with quality checks
 - One explicit anti-pattern
 - No filler or vague consultant-speak
+- For interactive skills (or workflows run as guided conversations): the `workshop-facilitation` protocol paragraph plus the `**Default entry mode:**` line, copied from any advisor. `apply-entry-mode.py --check` fails without it (see `docs/guided-context-capture.md`)
 
 ### Phase 4: Validate Hard
 

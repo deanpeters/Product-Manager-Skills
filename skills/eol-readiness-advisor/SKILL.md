@@ -135,6 +135,8 @@ Evidence that argues against retiring *now*, even when the retire signals are lo
 Use [`workshop-facilitation`](../workshop-facilitation/SKILL.md) as the default interaction
 protocol for this skill.
 
+**Default entry mode:** Guided · set in `pm-skills.config.yaml` (library-wide default or a per-skill override); the user's own choice in the session always wins. On the first turn, offer all three modes, then open in the default without waiting for a pick: Guided asks the first question, Context dump invites the paste, Best guess asks for a one-sentence minimum and drafts with every assumption labeled.
+
 This skill asks **up to 4 adaptive questions**, then delivers a verdict, an intensity level, and
 numbered next steps. Give the heads-up at the start: four questions, roughly fifteen minutes, and
 they can dump context at any point to skip ahead.

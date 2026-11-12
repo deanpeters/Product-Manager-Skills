@@ -127,6 +127,8 @@ The triage applies equally to internal and external risks. A desirability gap yo
 
 Use [`workshop-facilitation`](../workshop-facilitation/SKILL.md) as the default interaction protocol for this skill.
 
+**Default entry mode:** Guided · set in `pm-skills.config.yaml` (library-wide default or a per-skill override); the user's own choice in the session always wins. On the first turn, offer all three modes, then open in the default without waiting for a pick: Guided asks the first question, Context dump invites the paste, Best guess asks for a one-sentence minimum and drafts with every assumption labeled.
+
 It defines:
 - session heads-up + entry mode (Guided, Context dump, Best guess)
 - one-question turns with plain-language prompts
@@ -152,11 +154,9 @@ This interactive skill uses **adaptive questioning** to scan your product idea a
 How do you want to do this?
 1. **Guided mode:** I'll walk through each dimension one at a time.
 2. **Context dump:** Paste what you know about the idea and I'll skip what's covered.
-3. **Best guess mode:** Give me the idea in a sentence and I'll make reasonable assumptions, labeled.
+3. **Best guess mode:** Give me the idea in a sentence and I'll make reasonable assumptions, labeled."
 
-Guided is the default, so let's start with the first question."
-
-**Same turn, don't wait for a mode pick:** Guided is the default. Ask `Context Q1/4` right after the options. If the user answers it, carry on in Guided mode; if they pick 2 or 3 instead, switch.
+**Same turn, don't wait for a mode pick:** open in this skill's default entry mode (the `Default entry mode` line). If it's Guided, ask `Context Q1/4` right after the options. If it's Context dump, invite the paste. If it's Best guess, ask for a one-sentence minimum and start drafting. Switch as soon as the user picks a different mode.
 
 ---
 
