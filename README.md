@@ -4,7 +4,7 @@
 
 [![GitHub stars](https://img.shields.io/github/stars/deanpeters/Product-Manager-Skills?style=flat-square)](https://github.com/deanpeters/Product-Manager-Skills/stargazers) [![GitHub forks](https://img.shields.io/github/forks/deanpeters/Product-Manager-Skills?style=flat-square)](https://github.com/deanpeters/Product-Manager-Skills/forks) [![GitHub watchers](https://img.shields.io/github/watchers/deanpeters/Product-Manager-Skills?style=flat-square)](https://github.com/deanpeters/Product-Manager-Skills/watchers) [![Contributors](https://img.shields.io/github/contributors/deanpeters/Product-Manager-Skills?style=flat-square)](https://github.com/deanpeters/Product-Manager-Skills/graphs/contributors) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](CONTRIBUTING.md)
 
-[![Version](https://img.shields.io/badge/version-v0.84-blue?style=flat-square)](https://github.com/deanpeters/Product-Manager-Skills/releases/latest) ![Skills](https://img.shields.io/badge/skills-83-informational?style=flat-square) [![Last commit](https://img.shields.io/github/last-commit/deanpeters/Product-Manager-Skills?style=flat-square)](https://github.com/deanpeters/Product-Manager-Skills/commits/main) [![Claude Code Plugin](https://img.shields.io/badge/Claude%20Code-Plugin%20Marketplace-5C4EE5?style=flat-square)](https://code.claude.com/docs/en/plugin-marketplaces)
+[![Version](https://img.shields.io/badge/version-v0.85-blue?style=flat-square)](https://github.com/deanpeters/Product-Manager-Skills/releases/latest) ![Skills](https://img.shields.io/badge/skills-83-informational?style=flat-square) [![Last commit](https://img.shields.io/github/last-commit/deanpeters/Product-Manager-Skills?style=flat-square)](https://github.com/deanpeters/Product-Manager-Skills/commits/main) [![Claude Code Plugin](https://img.shields.io/badge/Claude%20Code-Plugin%20Marketplace-5C4EE5?style=flat-square)](https://code.claude.com/docs/en/plugin-marketplaces)
 
 ```text
 ╔════════════════════════════════════════════════════════════════════╗
@@ -19,7 +19,7 @@
 ║   83 battle-tested skills + 6 command workflows                    ║
 ║   Claude Code • Cursor • Codex  • n8n • OpenClaw • and more ...    ║
 ║                                                                    ║
-║   v0.84 • August 10, 2026 • CC BY-NC-SA 4.0                        ║
+║   v0.85 • November 13, 2026 • CC BY-NC-SA 4.0                      ║
 ╚════════════════════════════════════════════════════════════════════╝
 ```
 
@@ -287,6 +287,13 @@ See [docs/Platform Guides for PMs.md](docs/Platform%20Guides%20for%20PMs.md) for
 ---
 
 ## What's New
+
+**v0.85 — November 13, 2026 · Lifecycle Bundles, a Navigator, and the Go-to-Market Gap Filled**
+- **Six installable lifecycle bundles** that follow the product arc: Determine, Discover, Define, Develop, Deliver, plus Drive (stakeholders and career) underneath. Install one with `/plugin install pm-define@pm-skills`, or download its pack for Claude Desktop. Every skill still runs on its own
+- **[`pm-skills-navigator`](skills/pm-skills-navigator/SKILL.md):** describe what's on your desk and get routed to the right phase and skill
+- **Go-to-market, filled:** [`launch-plan`](skills/launch-plan/SKILL.md), [`launch-metrics`](skills/launch-metrics/SKILL.md), [`message-house`](skills/message-house/SKILL.md), [`sales-value-narrative`](skills/sales-value-narrative/SKILL.md), [`buying-journey-enablement`](skills/buying-journey-enablement/SKILL.md)
+- Also: [`LICENSING.md`](LICENSING.md), an [OpenCode install guide](docs/INSTALL-OPENCODE.md), and drift guards for prose counts
+- Library now at **83 skills** · full story in the [release note](docs/announcements/2026-11-13-v0-85-lifecycle-bundles.md)
 
 **v0.84 — August 10, 2026 · The Lifecycle & End-of-Life Suite**
 - **7 new skills + 1 upgrade** for the part of product management nobody trains you on: what to do with a product that has stopped growing, and how to retire one without losing the customer

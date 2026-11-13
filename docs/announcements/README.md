@@ -4,6 +4,7 @@ Canonical location for launch posts, social copy, and release-related announceme
 
 ## Latest
 
+- **2026-11-13:** [v0.85 Lifecycle Bundles, a Navigator, and the Go-to-Market Gap Filled](2026-11-13-v0-85-lifecycle-bundles.md)
 - **2026-07-04:** [v0.81 Every Skill Now Declares Its Inputs (and Why We Don't Use `$ARGUMENTS`)](2026-07-04-v0-81-input-sections.md)
 - **2026-05-15:** [v0.79 Community Contributions: Thank You](2026-05-15-v0-79-community-contributions.md)
 - **2026-04-26:** [v0.78 Release Packaging: One Download, Then Better PM Work](2026-04-26-v0-78-release-packaging.md)
@@ -18,6 +19,7 @@ Canonical location for launch posts, social copy, and release-related announceme
 
 ## Timeline
 
+- [2026-11-13-v0-85-lifecycle-bundles.md](2026-11-13-v0-85-lifecycle-bundles.md) — v0.85 release note for six lifecycle bundles (Determine through Drive), the navigator skill, 5 go-to-market skills, bundle packs, and drift guards
 - [2026-07-04-v0-81-input-sections.md](2026-07-04-v0-81-input-sections.md) — v0.81 release note for the required `## Input` section across all 55 skills, the inline-input rule, the "Why We Don't Use `$ARGUMENTS`" differentiator with validator enforcement, Streamlit "What to bring" pre-flight, and the inline-input example flow
 - [2026-05-15-v0-79-community-contributions.md](2026-05-15-v0-79-community-contributions.md) — v0.79 release note for community contributions: pm-skill-creator, plugin.json discovery fix, and script security hardening
 - [2026-04-26-v0-78-release-packaging.md](2026-04-26-v0-78-release-packaging.md) — v0.78 release note for one-command packaging, Claude Desktop/Web ZIP packs, Codex `.agents/skills`, GitHub Release automation, and clearer install paths

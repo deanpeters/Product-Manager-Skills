@@ -1,7 +1,7 @@
 {
   "name": "pm-determine",
   "description": "Set outcomes and read the terrain: strategy, finance, market, customers. 24 skills (Direct, Diagnose, Detect, Describe); shared helper skills included.",
-  "version": "0.84",
+  "version": "0.85",
   "author": {
     "name": "Dean Peters"
   },

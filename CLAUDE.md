@@ -6,7 +6,7 @@
 
 ## Project Status (Last updated: Fri Nov 13 2026)
 
-### Current State: v0.84 (83 skills) + unreleased work on main
+### Current State: v0.85 (83 skills), released Nov 13, 2026
 
 **Nov 12, 2026 session (unreleased, on main). Handoff brief: `12NOV26.md`**
 - **Guided Context Capture:** `skills/workshop-facilitation/SKILL.md` upgraded (Known/Assumed/Missing/Conflicting read-back, completion summary before generating, `(Recommended)` decision ladder, ranked Assumptions to Validate, replay-on-correction, resume recap). Explainer: `docs/guided-context-capture.md`. Skills **link** to the rulebook; never copy its text
