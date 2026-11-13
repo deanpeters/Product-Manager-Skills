@@ -331,6 +331,7 @@ Some skills note in their Provenance sections that they were adapted from [produ
 - ✅ **Adapt and remix them** — share what you build under this same license, with credit.
 - ✅ **Teach with them** — workshops, brown bags, mentoring, sending the ladder down.
 - ❌ **Don't sell them** — no repackaging the skills themselves into a paid product, course, or service without expressed written permission.
+- 📄 **Need something citable for your legal team?** See [LICENSING.md](LICENSING.md): internal use at a for-profit company is fine, and what you produce *using* the skills is yours.
 - 🤔 **Not sure your use qualifies?** [Open an issue](https://github.com/deanpeters/Product-Manager-Skills/issues) and ask. If you're using these in the spirit they were built — to get better at the craft and help others do the same — the answer is almost certainly yes.
 
 The companion prompt library, [product-manager-prompts](https://github.com/deanpeters/product-manager-prompts), carries the same CC BY-NC-SA 4.0 license as of its v2.3.0, with its own plain-language permissions (stricter on commercial use) — see its [LICENSING.md](https://github.com/deanpeters/product-manager-prompts/blob/main/LICENSING.md), which governs that repo.
