@@ -145,10 +145,10 @@ This block is generated from `pm-skills.config.yaml`. Don't edit it here; run
 
 **Deliver** (Deliver): Take it to market, measure it, and retire it well.
 
-- **Debut** (Launch planning and messaging): *Coming: GAP: launch plan, message house, sales narrative, buying journey, launch metrics (source: PM-Star go-to-market)*
+- **Debut** (Launch planning and messaging): [`launch-plan`](https://github.com/deanpeters/Product-Manager-Skills/blob/main/skills/launch-plan/SKILL.md)
 - **Dollars** (Pricing and packaging): [`finance-based-pricing-advisor`](https://github.com/deanpeters/Product-Manager-Skills/blob/main/skills/finance-based-pricing-advisor/SKILL.md), [`pricing-packaging-tracker`](https://github.com/deanpeters/Product-Manager-Skills/blob/main/skills/pricing-packaging-tracker/SKILL.md)
 - **Demand** (Channels and acquisition): [`acquisition-channel-advisor`](https://github.com/deanpeters/Product-Manager-Skills/blob/main/skills/acquisition-channel-advisor/SKILL.md)
-- **Dashboard** (Measure outcomes after launch): *Coming: GAP: metrics review, outcome tracking (source: PM-Star launch metrics)*
+- **Dashboard** (Measure outcomes after launch): [`launch-metrics`](https://github.com/deanpeters/Product-Manager-Skills/blob/main/skills/launch-metrics/SKILL.md)
 - **Decommission** (Lifecycle plays through end of life): [`eol-checklist`](https://github.com/deanpeters/Product-Manager-Skills/blob/main/skills/eol-checklist/SKILL.md), [`eol-internal-enablement`](https://github.com/deanpeters/Product-Manager-Skills/blob/main/skills/eol-internal-enablement/SKILL.md), [`eol-message`](https://github.com/deanpeters/Product-Manager-Skills/blob/main/skills/eol-message/SKILL.md), [`eol-process`](https://github.com/deanpeters/Product-Manager-Skills/blob/main/skills/eol-process/SKILL.md), [`eol-readiness-advisor`](https://github.com/deanpeters/Product-Manager-Skills/blob/main/skills/eol-readiness-advisor/SKILL.md), [`eol-stakeholder-sequence`](https://github.com/deanpeters/Product-Manager-Skills/blob/main/skills/eol-stakeholder-sequence/SKILL.md), [`lifecycle-play-advisor`](https://github.com/deanpeters/Product-Manager-Skills/blob/main/skills/lifecycle-play-advisor/SKILL.md), [`product-lifecycle-plays`](https://github.com/deanpeters/Product-Manager-Skills/blob/main/skills/product-lifecycle-plays/SKILL.md)
 
 **Drive** (Runs under all five phases): Drive your career and your stakeholders.

@@ -1,5 +1,5 @@
 generated_from: skills/*/SKILL.md
-count: 78
+count: 80
 skills:
 - name: acquisition-channel-advisor
   description: Evaluate acquisition channels using unit economics, customer quality,
@@ -465,6 +465,32 @@ skills:
     \ Use this framework to uncover unmet needs, validate product ideas, and ensure\
     \ your solution addresses real motivations\u2014not just surface-level feature\
     \ requests."
+- name: launch-metrics
+  description: Define launch success metrics, decision triggers, and 30/90/180-day
+    reviews before launch. Use when you need to know early whether a launch is working
+    and what you will do if it isn't.
+  type: component
+  path: skills/launch-metrics/SKILL.md
+  bundle: deliver
+  motion: dashboard
+  intent: Turn "was the launch a success?" into a question the team can answer with
+    data, early enough to act, using thresholds and responses agreed before anyone
+    sees the results. Pairs leading with lagging indicators across adoption, commercial,
+    operational, and customer categories, and schedules structured reviews that end
+    in owned actions.
+- name: launch-plan
+  description: 'Build a launch plan sized by tier: owners, dates, go/no-go criteria,
+    and a readiness scorecard. Use when a launch needs every function ready at once
+    and nobody has defined ''ready''.'
+  type: workflow
+  path: skills/launch-plan/SKILL.md
+  bundle: deliver
+  motion: debut
+  intent: Make a launch a coordinated business event instead of a ship date, so every
+    function that touches the customer is ready, the effort fits the size of the launch,
+    and the go/no-go call is made on criteria the team agreed before anyone saw the
+    status. Right-sized so a minor variant gets a short punch list and a platform
+    launch gets the full cross-functional plan.
 - name: lean-ux-canvas
   description: Guide teams through Lean UX Canvas v2. Use when framing a business
     problem, surfacing assumptions, and defining what to learn next.

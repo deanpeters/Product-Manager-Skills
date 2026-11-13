@@ -1,10 +1,10 @@
 # Skill Catalog
 
-All **78 skills** in this library. Each links to its individual download ZIP in this folder — click, download, unzip, and upload the `SKILL.md` to Claude. No terminal required.
+All **80 skills** in this library. Each links to its individual download ZIP in this folder — click, download, unzip, and upload the `SKILL.md` to Claude. No terminal required.
 
 > New here? Read [`README.md`](README.md) first — it explains how to pick a pack and install.
 
-## Component Skills (28)
+## Component Skills (29)
 
 _Self-contained artifacts and templates._
 
@@ -21,6 +21,7 @@ _Self-contained artifacts and templates._
 | [`finance-metrics-quickref`](finance-metrics-quickref.zip) | Look up SaaS finance metrics, formulas, and benchmarks fast. Use when you need a quick metric definition, formula, or benchmark during analysis. |
 | [`intelligence-collection-disciplines`](intelligence-collection-disciplines.zip) | Run competitive research like an intelligence agency: eight collection disciplines (OSINT to MASINT), signal-to-inference chains, and fusion. Use when one-source research isn't enough. |
 | [`jobs-to-be-done`](jobs-to-be-done.zip) | Uncover customer jobs, pains, and gains in a structured JTBD format. Use when clarifying unmet needs, repositioning a product, or improving discovery and messaging. |
+| [`launch-metrics`](launch-metrics.zip) | Define launch success metrics, decision triggers, and 30/90/180-day reviews before launch. Use when you need to know early whether a launch is working and what you will do if it isn't. |
 | [`pestel-analysis`](pestel-analysis.zip) | Analyze political, economic, social, technological, environmental, and legal forces. Use when external market shifts could materially affect a product, roadmap, or strategy. |
 | [`pol-probe`](pol-probe.zip) | Define a Proof of Life probe to test a risky hypothesis cheaply. Use when you need harsh truth before building real product. |
 | [`positioning-statement`](positioning-statement.zip) | Create a Geoffrey Moore-style positioning statement. Use when clarifying who you serve, what problem you solve, your category, and why you're different from alternatives. |
@@ -76,7 +77,7 @@ _Guided, multi-turn advisors that ask then recommend._
 | [`vp-cpo-readiness-advisor`](vp-cpo-readiness-advisor.zip) | Guide the transition to VP or CPO across preparing, interviewing, landing, and recalibrating. Use when executive product scope is changing fast. |
 | [`workshop-facilitation`](workshop-facilitation.zip) | Facilitate workshop sessions in a one-step, multi-turn flow. Use when an interactive skill needs consistent pacing, options, and progress tracking. |
 
-## Workflow Skills (20)
+## Workflow Skills (21)
 
 _End-to-end processes that orchestrate other skills._
 
@@ -92,6 +93,7 @@ _End-to-end processes that orchestrate other skills._
 | [`discovery-process`](discovery-process.zip) | Run a full discovery cycle from problem hypothesis to validated solution. Use when a team needs a structured path through framing, interviews, synthesis, and experiments. |
 | [`eol-process`](eol-process.zip) | Run a product sunset end to end — decide, align, plan, prepare, announce, close. Use when you need the whole EOL process, not just one artifact. |
 | [`executive-onboarding-playbook`](executive-onboarding-playbook.zip) | Plan a VP or CPO 30-60-90 day diagnostic onboarding path. Use when entering a new executive product role and avoiding premature change. |
+| [`launch-plan`](launch-plan.zip) | Build a launch plan sized by tier: owners, dates, go/no-go criteria, and a readiness scorecard. Use when a launch needs every function ready at once and nobody has defined 'ready'. |
 | [`market-landscape-scan`](market-landscape-scan.zip) | Map a market's segments, players, substitutes, and whitespace with cited evidence. Use when entering or re-evaluating a market before sizing, positioning, or picking competitors to study. |
 | [`pestel-delta-monitor`](pestel-delta-monitor.zip) | Quarterly re-scan of a prior PESTEL analysis. Use when checking which macro factors moved, which assumptions broke, and what's new — turning PESTEL from a workshop artifact into a radar. |
 | [`porters-five-forces`](porters-five-forces.zip) | Read an industry's structure through Porter's Five Forces with documented signals per rating, ending at the profit pool. Use when weighing market entry or when margins erode and nobody can say why. |
@@ -215,7 +217,7 @@ Take it to market, measure it, and retire it well.
 
 **Debut**: Launch planning and messaging
 
-- _Coming: GAP: launch plan, message house, sales narrative, buying journey, launch metrics (source: PM-Star go-to-market)_
+- [`launch-plan`](launch-plan.zip): Build a launch plan sized by tier: owners, dates, go/no-go criteria, and a readiness scorecard. Use when a launch needs every function ready at once and nobody has defined 'ready'.
 
 **Dollars**: Pricing and packaging
 
@@ -228,7 +230,7 @@ Take it to market, measure it, and retire it well.
 
 **Dashboard**: Measure outcomes after launch
 
-- _Coming: GAP: metrics review, outcome tracking (source: PM-Star launch metrics)_
+- [`launch-metrics`](launch-metrics.zip): Define launch success metrics, decision triggers, and 30/90/180-day reviews before launch. Use when you need to know early whether a launch is working and what you will do if it isn't.
 
 **Decommission**: Lifecycle plays through end of life
 

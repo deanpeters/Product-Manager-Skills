@@ -95,8 +95,8 @@ bundles:
     motions:
       debut:
         summary: "Launch planning and messaging"
-        skills: []
-        gap: "GAP: launch plan, message house, sales narrative, buying journey, launch metrics (source: PM-Star go-to-market)"
+        skills: [launch-plan]
+        # still to build: message house, sales narrative, buying journey
       dollars:
         summary: "Pricing and packaging"
         skills: [finance-based-pricing-advisor, pricing-packaging-tracker]
@@ -105,8 +105,7 @@ bundles:
         skills: [acquisition-channel-advisor]
       dashboard:
         summary: "Measure outcomes after launch"
-        skills: []
-        gap: "GAP: metrics review, outcome tracking (source: PM-Star launch metrics)"
+        skills: [launch-metrics]
       decommission:
         summary: "Lifecycle plays through end of life"
         skills: [eol-checklist, eol-internal-enablement, eol-message, eol-process, eol-readiness-advisor, eol-stakeholder-sequence, lifecycle-play-advisor, product-lifecycle-plays]

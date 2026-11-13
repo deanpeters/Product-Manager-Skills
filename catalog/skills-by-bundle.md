@@ -136,7 +136,7 @@ Take it to market, measure it, and retire it well.
 
 Launch planning and messaging
 
-- _Coming: GAP: launch plan, message house, sales narrative, buying journey, launch metrics (source: PM-Star go-to-market)_
+- `launch-plan` - Build a launch plan sized by tier: owners, dates, go/no-go criteria, and a readiness scorecard. Use when a launch needs every function ready at once and nobody has defined 'ready'.
 
 ### Dollars
 
@@ -155,7 +155,7 @@ Channels and acquisition
 
 Measure outcomes after launch
 
-- _Coming: GAP: metrics review, outcome tracking (source: PM-Star launch metrics)_
+- `launch-metrics` - Define launch success metrics, decision triggers, and 30/90/180-day reviews before launch. Use when you need to know early whether a launch is working and what you will do if it isn't.
 
 ### Decommission
 

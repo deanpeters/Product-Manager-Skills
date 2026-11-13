@@ -145,10 +145,10 @@ This block is generated from `pm-skills.config.yaml`. Don't edit it here; run
 
 **Deliver** (Deliver): Take it to market, measure it, and retire it well.
 
-- **Debut** (Launch planning and messaging): *Coming: GAP: launch plan, message house, sales narrative, buying journey, launch metrics (source: PM-Star go-to-market)*
+- **Debut** (Launch planning and messaging): [`launch-plan`](../launch-plan/SKILL.md)
 - **Dollars** (Pricing and packaging): [`finance-based-pricing-advisor`](../finance-based-pricing-advisor/SKILL.md), [`pricing-packaging-tracker`](../pricing-packaging-tracker/SKILL.md)
 - **Demand** (Channels and acquisition): [`acquisition-channel-advisor`](../acquisition-channel-advisor/SKILL.md)
-- **Dashboard** (Measure outcomes after launch): *Coming: GAP: metrics review, outcome tracking (source: PM-Star launch metrics)*
+- **Dashboard** (Measure outcomes after launch): [`launch-metrics`](../launch-metrics/SKILL.md)
 - **Decommission** (Lifecycle plays through end of life): [`eol-checklist`](../eol-checklist/SKILL.md), [`eol-internal-enablement`](../eol-internal-enablement/SKILL.md), [`eol-message`](../eol-message/SKILL.md), [`eol-process`](../eol-process/SKILL.md), [`eol-readiness-advisor`](../eol-readiness-advisor/SKILL.md), [`eol-stakeholder-sequence`](../eol-stakeholder-sequence/SKILL.md), [`lifecycle-play-advisor`](../lifecycle-play-advisor/SKILL.md), [`product-lifecycle-plays`](../product-lifecycle-plays/SKILL.md)
 
 **Drive** (Runs under all five phases): Drive your career and your stakeholders.

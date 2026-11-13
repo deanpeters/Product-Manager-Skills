@@ -5,7 +5,7 @@
     "email": "dean.peters@productside.com"
   },
   "metadata": {
-    "description": "78 battle-tested product management skills for Claude Code \u2014 discovery, strategy, finance, career, lifecycle, and more.",
+    "description": "80 battle-tested product management skills for Claude Code \u2014 discovery, strategy, finance, career, lifecycle, and more.",
     "version": "0.84.0"
   },
   "plugins": [
@@ -79,7 +79,7 @@
     {
       "name": "pm-deliver",
       "source": "./plugins/pm-deliver",
-      "description": "Take it to market, measure it, and retire it well. 11 skills (Debut, Dollars, Demand, Dashboard, Decommission); shared helper skills included.",
+      "description": "Take it to market, measure it, and retire it well. 13 skills (Debut, Dollars, Demand, Dashboard, Decommission); shared helper skills included.",
       "category": "lifecycle-bundle",
       "tags": [
         "pm",
@@ -801,6 +801,32 @@
         "press-release",
         "amazon",
         "working-backwards"
+      ],
+      "strict": false
+    },
+    {
+      "name": "launch-plan",
+      "source": "./skills/launch-plan",
+      "description": "Build a tiered launch plan with owners, go/no-go criteria, and a readiness scorecard.",
+      "category": "strategy",
+      "tags": [
+        "pm",
+        "launch",
+        "go-to-market",
+        "workflow"
+      ],
+      "strict": false
+    },
+    {
+      "name": "launch-metrics",
+      "source": "./skills/launch-metrics",
+      "description": "Define launch success metrics, decision triggers, and 30/90/180-day reviews before you launch.",
+      "category": "strategy",
+      "tags": [
+        "pm",
+        "launch",
+        "metrics",
+        "component"
       ],
       "strict": false
     },
