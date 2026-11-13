@@ -152,7 +152,7 @@ Product work unfolds in an order: set the outcome before you investigate, invest
 
 **Not sure which bundle?** Ask the [pm-skills-navigator](skills/pm-skills-navigator/SKILL.md): describe what's on your desk, and in about five minutes it tells you where the work really is and which skill to open first.
 
-Every bundle includes a few shared helper skills (the facilitation rulebook and the navigator among them), so each works installed alone. Deliver is still growing: launch planning and post-launch measurement are on the way. The full list, grouped by bundle and by the smaller "motions" inside each, is in [catalog/skills-by-bundle.md](catalog/skills-by-bundle.md).
+Every bundle includes a few shared helper skills (the facilitation rulebook and the navigator among them), so each works installed alone. The full list, grouped by bundle and by the smaller "motions" inside each, is in [catalog/skills-by-bundle.md](catalog/skills-by-bundle.md).
 
 *Why this order?* Skipping ahead is how teams build the right thing for the wrong problem. Naming the outcome first gives discovery a target, and discovery gives definition something real to test.
 
@@ -169,7 +169,7 @@ Each pack is a ZIP of upload-ready skill ZIPs. Unzip it, then upload the skills 
 | Discover | [`pm-discover-pack.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/pm-discover-pack.zip) | Interviews, problem framing, opportunity trees, journey maps (7 skills) |
 | Define | [`pm-define-pack.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/pm-define-pack.zip) | Hypotheses, probes, experiments, positioning (9 skills) |
 | Develop | [`pm-develop-pack.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/pm-develop-pack.zip) | PRDs, stories, prioritization, roadmaps, AI agents (13 skills) |
-| Deliver | [`pm-deliver-pack.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/pm-deliver-pack.zip) | Pricing, channels, and the full lifecycle and end-of-life suite (11 skills) |
+| Deliver | [`pm-deliver-pack.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/pm-deliver-pack.zip) | Launch plans, messaging, sales enablement, pricing, channels, post-launch metrics, and the end-of-life suite (16 skills) |
 | Drive | [`pm-drive-pack.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/pm-drive-pack.zip) | Stakeholders, influence, and career transitions (9 skills) |
 | All skills | [`99-all-skills-pack.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/99-all-skills-pack.zip) | All 83 skills |
 
