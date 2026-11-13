@@ -4,11 +4,21 @@ If you are new to this repo, you are in the right place.
 
 You do **not** need to be a programmer to use PM Skills well.
 
-## New in v0.65
+## Find your place in the lifecycle
 
-You asked, we listened. We took a moment to create comprehensive instructions on how to install, integrate, or otherwise use any one or all of these skills.
+The skills are grouped by where they fit in product work, in the order it tends to unfold:
 
-Start here:
+1. **Determine**: set the outcome and read the market
+2. **Discover**: find the real problem
+3. **Define**: shape a solution and test the bet
+4. **Develop**: turn it into buildable work
+5. **Deliver**: price it, take it to market, retire it well
+
+A sixth group, **Drive**, runs underneath all five: your stakeholders and your career.
+
+It's a cycle, not a line, so loop back whenever the evidence says to. Not sure where you are? Pick the phase that sounds like your week. The full map, with a "start with" skill for each, is in the [README](README.md#browse-by-lifecycle).
+
+Setup guides, if you want them:
 - `docs/Using PM Skills 101.md`
 - `docs/Platform Guides for PMs.md`
 - `docs/Using PM Skills with Slash Commands 101.md`

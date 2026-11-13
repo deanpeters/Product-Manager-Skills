@@ -180,9 +180,20 @@ def build_system_prompt(skill):
 
 ---
 
-## Adding Theme Metadata to a Skill
+## Lifecycle Bundles (how the browser groups skills)
 
-Skills appear in the themed browser only if they have a `theme` field in their frontmatter. All other skills appear in an "All other skills" expander on the Home screen.
+The browser groups skills by **lifecycle bundle**: Determine, Discover, Define, Develop, Deliver, Drive, and Core. The grouping is not stored in the skill files. `app/main.py` reads the `bundles:` and `core:` sections of `pm-skills.config.yaml` (the same mapping that builds the Claude Code plugins and the download packs) and:
+
+- builds the home cards and the Skill Finder's filter from the bundles,
+- shows each bundle's skills grouped under their **motions** (for example Define → De-risk, Differentiate),
+- shows a "Coming" note for a motion that has no skills yet (a gap the config records),
+- overrides a skill's frontmatter `theme` with its bundle. If the config is missing or unreadable, the app falls back to the old `theme` frontmatter below.
+
+To move a skill between bundles, edit the config (then run `python3 scripts/check-bundles.py`). Don't edit the app.
+
+## Adding Theme Metadata to a Skill (legacy fallback)
+
+Used only when `pm-skills.config.yaml` has no `bundles:` section. Skills appear in the themed browser only if they have a `theme` field in their frontmatter. All other skills appear in an "All other skills" expander on the Home screen.
 
 **Add these optional fields to `SKILL.md` frontmatter:**
 

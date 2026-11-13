@@ -105,6 +105,52 @@ THEMES = {
     },
 }
 
+
+# ─── Lifecycle bundles (from pm-skills.config.yaml) ───────────────────────────
+# The browser groups skills by lifecycle bundle (Determine, Discover, Define,
+# Develop, Deliver, Drive, plus Core). The old per-skill `theme` frontmatter is
+# the fallback if the config is missing.
+BUNDLE_ICONS = {
+    "determine": "🧭", "discover": "🔍", "define": "🧪",
+    "develop": "🛠️", "deliver": "🚚", "drive": "🪜", "core": "🧰",
+}
+SKILL_HOMES: dict[str, tuple[str, str]] = {}      # skill -> (bundle, motion)
+BUNDLE_MOTIONS: dict[str, list[dict]] = {}        # bundle -> [{name, summary, skills, gap}]
+
+
+def _load_lifecycle() -> None:
+    global THEMES
+    cfg_path = Path(__file__).parent.parent / "pm-skills.config.yaml"
+    try:
+        cfg = yaml.safe_load(cfg_path.read_text(encoding="utf-8")) or {}
+    except (OSError, yaml.YAMLError):
+        return
+    bundles = cfg.get("bundles") or {}
+    if not bundles:
+        return
+    themes: dict = {}
+    for bname, bundle in bundles.items():
+        motions = []
+        for mname, motion in bundle["motions"].items():
+            for sk in motion.get("skills") or []:
+                SKILL_HOMES[sk] = (bname, mname)
+            motions.append({"name": mname, "summary": motion.get("summary", ""),
+                            "skills": motion.get("skills") or [], "gap": motion.get("gap")})
+        BUNDLE_MOTIONS[bname] = motions
+        themes[bname] = {"label": bname.capitalize(), "icon": BUNDLE_ICONS.get(bname, "📦"),
+                         "description": f"{bundle['summary']} ({bundle['phase']})"}
+    core = cfg.get("core") or []
+    if core:
+        for sk in core:
+            SKILL_HOMES[sk] = ("core", "core")
+        themes["core"] = {"label": "Core", "icon": BUNDLE_ICONS["core"],
+                          "description": "Shared helpers the other skills lean on: facilitation, investigation, authoring"}
+        BUNDLE_MOTIONS["core"] = [{"name": "core", "summary": "", "skills": core, "gap": None}]
+    THEMES = themes
+
+
+_load_lifecycle()
+
 TYPE_BADGES = {
     "component": ("🧱", "Component"),
     "interactive": ("🔄", "Interactive"),
@@ -335,7 +381,8 @@ def load_skills():
                 "description": fm.get("description", ""),
                 "intent": fm.get("intent", ""),
                 "type": fm.get("type", "component"),
-                "theme": fm.get("theme"),
+                "theme": SKILL_HOMES.get(fm.get("name", skill_dir.name), (fm.get("theme"),))[0],
+                "motion": SKILL_HOMES.get(fm.get("name", skill_dir.name), (None, None))[1],
                 "best_for": fm.get("best_for") or [],
                 "scenarios": fm.get("scenarios") or [],
                 "estimated_time": fm.get("estimated_time"),
@@ -1354,7 +1401,7 @@ def render_run_home(skills: list):
 def render_theme(skills: list, theme_slug: str):
     meta = THEMES.get(theme_slug, {"label": theme_slug, "icon": "📦", "description": ""})
 
-    if st.button("← Back to themes"):
+    if st.button("← Back to the lifecycle"):
         nav("run_home")
 
     st.title(f"{meta['icon']} {meta['label']}")
@@ -1367,7 +1414,7 @@ def render_theme(skills: list, theme_slug: str):
         st.info("No skills tagged with this theme yet — check back soon.")
         return
 
-    for s in sorted(theme_skills, key=lambda x: x["name"]):
+    def _skill_card(s):
         icon, type_label = TYPE_BADGES.get(s["type"], ("", "Skill"))
         with st.container(border=True):
             c1, c2 = st.columns([4, 1])
@@ -1388,6 +1435,24 @@ def render_theme(skills: list, theme_slug: str):
                 st.caption(f"{type_label} skill")
                 if st.button("Try it →", key=f"skill_{s['name']}", use_container_width=True):
                     nav("skill", skill=s, theme=theme_slug)
+
+    motions = BUNDLE_MOTIONS.get(theme_slug)
+    if not motions:
+        for s in sorted(theme_skills, key=lambda x: x["name"]):
+            _skill_card(s)
+        return
+
+    by_name = {s["name"]: s for s in theme_skills}
+    for motion in motions:
+        if theme_slug != "core":
+            st.subheader(motion["name"].capitalize())
+            if motion["summary"]:
+                st.caption(motion["summary"])
+        for sk in sorted(motion["skills"]):
+            if sk in by_name:
+                _skill_card(by_name[sk])
+        if not motion["skills"]:
+            st.info(f"Coming: {motion['gap'] or 'in progress'}")
 
 
 # ─── Screen: Skill Detail ─────────────────────────────────────────────────────

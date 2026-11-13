@@ -106,7 +106,7 @@ Choose your setup:
 | I use... | Get this | Notes |
 |---|---|---|
 | Claude Desktop or Claude Web | [`pm-skills-starter-pack.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/pm-skills-starter-pack.zip) | Unzip, then upload the individual skill ZIPs to Claude Skills |
-| Claude Code | Plugin marketplace | `/plugin marketplace add deanpeters/Product-Manager-Skills`, then `/plugin install product-manager-skills@pm-skills` for everything (or install skills one at a time) |
+| Claude Code | Plugin marketplace | `/plugin marketplace add deanpeters/Product-Manager-Skills`, then `/plugin install product-manager-skills@pm-skills` for everything, or one lifecycle bundle at a time (see [Browse by lifecycle](#browse-by-lifecycle)) |
 | Codex | [`pm-skills-codex.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/pm-skills-codex.zip) | Installs `.agents/skills` and `AGENTS.md` |
 | OpenCode | Copy `skills/*` to `~/.config/opencode/skills/` (or reuse the Codex ZIP) | OpenCode reads our `SKILL.md` format as-is. See the [install guide](docs/INSTALL-OPENCODE.md) |
 | Not sure | [`pm-skills-starter-pack.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/pm-skills-starter-pack.zip) | Start here |
@@ -137,22 +137,41 @@ Don't know where to begin? Find the line that sounds like your week. Each route 
 - **PRD → epics → stories.** The *why* first, then slices, then the smallest writeable pieces. Writing stories first is how a backlog loses its reason.
 - **Aging → play → readiness → process.** The first skill may say **"nothing yet"** — extending or harvesting is a legitimate answer, and starting here does not commit you to a sunset.
 
-**On Claude Desktop or Web?** Several of these skills aren't in a themed pack. Grab them one at a time from the [download shelf](dist/), or take the All-skills pack.
+### Browse by lifecycle
 
-### Themed packs for Claude Desktop / Web
+Product work unfolds in an order: set the outcome before you investigate, investigate before you define, define before you build. The library follows that arc in five bundles, with a sixth that runs underneath all of them. It's a cycle, not a pipeline, so you will loop back, and every skill still runs on its own.
 
-Each pack below is a ZIP of upload-ready skill ZIPs — unzip, then upload individuals to Claude Skills:
+| Bundle | The question it answers | Start with | Claude Code install |
+|---|---|---|---|
+| **Determine** | What are we trying to achieve, and what is the market doing? | [product-strategy-session](skills/product-strategy-session/SKILL.md), [market-landscape-scan](skills/market-landscape-scan/SKILL.md), [business-health-diagnostic](skills/business-health-diagnostic/SKILL.md) | `/plugin install pm-determine@pm-skills` |
+| **Discover** | What is the real problem? | [problem-framing-canvas](skills/problem-framing-canvas/SKILL.md), [discovery-interview-prep](skills/discovery-interview-prep/SKILL.md) | `/plugin install pm-discover@pm-skills` |
+| **Define** | Is this solution worth building, and how do we position it? | [pol-probe-advisor](skills/pol-probe-advisor/SKILL.md), [positioning-statement](skills/positioning-statement/SKILL.md) | `/plugin install pm-define@pm-skills` |
+| **Develop** | How do we turn the chosen solution into buildable work? | [prd-development](skills/prd-development/SKILL.md), [user-story](skills/user-story/SKILL.md), [prioritization-advisor](skills/prioritization-advisor/SKILL.md) | `/plugin install pm-develop@pm-skills` |
+| **Deliver** | How do we price it, take it to market, and retire it well? | [finance-based-pricing-advisor](skills/finance-based-pricing-advisor/SKILL.md), [lifecycle-play-advisor](skills/lifecycle-play-advisor/SKILL.md) | `/plugin install pm-deliver@pm-skills` |
+| **Drive** | How do I work with stakeholders and grow my career? | [stakeholder-mapping](skills/stakeholder-mapping/SKILL.md), [director-readiness-advisor](skills/director-readiness-advisor/SKILL.md) | `/plugin install pm-drive@pm-skills` |
+
+Every bundle includes a few shared helper skills (the facilitation rulebook among them), so each works installed alone. Deliver is still growing: launch planning and post-launch measurement are on the way. The full list, grouped by bundle and by the smaller "motions" inside each, is in [catalog/skills-by-bundle.md](catalog/skills-by-bundle.md).
+
+*Why this order?* Skipping ahead is how teams build the right thing for the wrong problem. Naming the outcome first gives discovery a target, and discovery gives definition something real to test.
+
+**On Claude Desktop or Web?** Download the bundle pack that matches your phase, or grab single skills from the [download shelf](dist/).
+
+### Lifecycle bundle packs for Claude Desktop / Web
+
+Each pack is a ZIP of upload-ready skill ZIPs. Unzip it, then upload the skills to Claude Skills:
 
 | Pack | Download | What's inside |
 |---|---|---|
-| Starter | [`pm-skills-starter-pack.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/pm-skills-starter-pack.zip) | Core skills across all categories |
-| Discovery | [`02-discovery-pack.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/02-discovery-pack.zip) | Research, interviewing, synthesis |
-| Strategy | [`03-strategy-pack.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/03-strategy-pack.zip) | Positioning, roadmapping, prioritization |
-| Delivery | [`04-delivery-pack.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/04-delivery-pack.zip) | PRDs, stories, epics |
-| AI PM | [`05-ai-pm-pack.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/05-ai-pm-pack.zip) | Context engineering, orchestration, readiness |
-| Market Intel | [`06-market-intel-pack.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/06-market-intel-pack.zip) | The full Market Intelligence Suite: disciplines, investigation chain, frameworks, monitors |
-| Lifecycle & EOL | [`07-lifecycle-eol-pack.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/07-lifecycle-eol-pack.zip) | Aging products: extend, replace, or retire — plus the full sunset process |
+| Starter | [`pm-skills-starter-pack.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/pm-skills-starter-pack.zip) | Six core skills across the craft. The best first download |
+| Determine | [`pm-determine-pack.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/pm-determine-pack.zip) | Strategy, finance, market intelligence, customer context (24 skills) |
+| Discover | [`pm-discover-pack.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/pm-discover-pack.zip) | Interviews, problem framing, opportunity trees, journey maps (7 skills) |
+| Define | [`pm-define-pack.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/pm-define-pack.zip) | Hypotheses, probes, experiments, positioning (9 skills) |
+| Develop | [`pm-develop-pack.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/pm-develop-pack.zip) | PRDs, stories, prioritization, roadmaps, AI agents (13 skills) |
+| Deliver | [`pm-deliver-pack.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/pm-deliver-pack.zip) | Pricing, channels, and the full lifecycle and end-of-life suite (11 skills) |
+| Drive | [`pm-drive-pack.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/pm-drive-pack.zip) | Stakeholders, influence, and career transitions (9 skills) |
 | All skills | [`99-all-skills-pack.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/99-all-skills-pack.zip) | All 77 skills |
+
+The older themed packs (`02-discovery` through `07-lifecycle-eol`) are still on the [download shelf](dist/) for one more release, then retire.
 
 ### Install guides
 
@@ -186,25 +205,25 @@ Feedback welcome via [GitHub Issues](https://github.com/deanpeters/Product-Manag
 
 ---
 
-## 70 Skills, 3 Types
+## 77 Skills, 3 Types
 
 Skills are organized in three tiers that build on each other:
 
 ```
 ┌────────────────────────────────────────────────────────┐
-│  WORKFLOW SKILLS (19)                                  │
+│  WORKFLOW SKILLS (20)                                  │
 │  Complete end-to-end PM processes (days to weeks)      │
 │  Example: run a full discovery cycle or write a PRD    │
 └────────────────────────────────────────────────────────┘
                        ↓ orchestrates
 ┌────────────────────────────────────────────────────────┐
-│  INTERACTIVE SKILLS (27)                               │
+│  INTERACTIVE SKILLS (29)                               │
 │  Guided discovery — 3-5 questions, then recommendations│
 │  Example: "Which prioritization framework fits here?"  │
 └────────────────────────────────────────────────────────┘
                        ↓ uses
 ┌────────────────────────────────────────────────────────┐
-│  COMPONENT SKILLS (24)                                 │
+│  COMPONENT SKILLS (28)                                 │
 │  Templates for specific PM deliverables (30-90 min)    │
 │  Example: write a user story with acceptance criteria  │
 └────────────────────────────────────────────────────────┘
@@ -212,7 +231,7 @@ Skills are organized in three tiers that build on each other:
 
 **Interactive skills use an Adaptive Decision Ladder.** Instead of dumping a framework at you, an interactive skill asks 3-5 targeted questions about your specific context, then offers numbered recommendations — each with a clear "use this when" rationale. You pick a path. The skill executes it and explains the *why* as it goes. If you want to just learn the framework without doing the work, you can ask that too — the skill coaches you either way. This is ABC — Always Be Coaching — in practice.
 
-**Full catalog:** [catalog/INDEX.md](catalog/README.md) — all 77 skills with descriptions, or browse `skills/` directly.
+**Full catalog:** [by type](catalog/skills-by-type.md) or [by lifecycle bundle](catalog/skills-by-bundle.md), all 77 skills with descriptions, or browse `skills/` directly.
 
 ---
 
