@@ -108,6 +108,7 @@ Choose your setup:
 | Claude Desktop or Claude Web | [`pm-skills-starter-pack.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/pm-skills-starter-pack.zip) | Unzip, then upload the individual skill ZIPs to Claude Skills |
 | Claude Code | Plugin marketplace | `/plugin marketplace add deanpeters/Product-Manager-Skills`, then `/plugin install product-manager-skills@pm-skills` for everything (or install skills one at a time) |
 | Codex | [`pm-skills-codex.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/pm-skills-codex.zip) | Installs `.agents/skills` and `AGENTS.md` |
+| OpenCode | Copy `skills/*` to `~/.config/opencode/skills/` (or reuse the Codex ZIP) | OpenCode reads our `SKILL.md` format as-is. See the [install guide](docs/INSTALL-OPENCODE.md) |
 | Not sure | [`pm-skills-starter-pack.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/pm-skills-starter-pack.zip) | Start here |
 
 **All downloads:** [GitHub Releases](https://github.com/deanpeters/Product-Manager-Skills/releases/latest)
@@ -158,6 +159,7 @@ Each pack below is a ZIP of upload-ready skill ZIPs — unzip, then upload indiv
 - [Claude Desktop / Web](docs/INSTALL-CLAUDE-DESKTOP.md)
 - [Claude Code](docs/INSTALL-CLAUDE-CODE.md)
 - [Codex](docs/INSTALL-CODEX.md)
+- [OpenCode](docs/INSTALL-OPENCODE.md)
 - [Platform chooser for non-technical PMs](docs/PM%20Skills%20Rule-of-Thumb%20Guide.md)
 
 ---
@@ -239,7 +241,7 @@ The `best_for` frontmatter field lists 3-5 specific scenarios where the skill is
 
 ## Works With
 
-Claude Code · Claude Desktop · Claude Web · OpenAI Codex · ChatGPT · Cursor · Windsurf · n8n · LangFlow · CrewAI · Gemini · any agent that reads structured markdown
+Claude Code · Claude Desktop · Claude Web · OpenAI Codex · ChatGPT · Cursor · Windsurf · n8n · LangFlow · CrewAI · Gemini · OpenCode · any agent that reads structured markdown
 
 See [docs/Platform Guides for PMs.md](docs/Platform%20Guides%20for%20PMs.md) for platform-specific setup.
 

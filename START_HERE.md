@@ -46,6 +46,7 @@ Start with:
 - `Claude Code`: `docs/Using PM Skills with Claude Code.md`
 - `Claude /slash commands`: `docs/Using PM Skills with Slash Commands 101.md`
 - `Codex`: `docs/Using PM Skills with Codex.md`
+- `OpenCode`: `docs/INSTALL-OPENCODE.md`
 
 Copy/paste starter prompt:
 
