@@ -5,7 +5,7 @@
     "email": "dean.peters@productside.com"
   },
   "metadata": {
-    "description": "77 battle-tested product management skills for Claude Code \u2014 discovery, strategy, finance, career, lifecycle, and more.",
+    "description": "78 battle-tested product management skills for Claude Code \u2014 discovery, strategy, finance, career, lifecycle, and more.",
     "version": "0.84.0"
   },
   "plugins": [
@@ -684,6 +684,19 @@
         "pestel",
         "monitoring",
         "macro"
+      ],
+      "strict": false
+    },
+    {
+      "name": "pm-skills-navigator",
+      "source": "./skills/pm-skills-navigator",
+      "description": "Find the right PM skill for the situation on your desk, by lifecycle phase.",
+      "category": "meta",
+      "tags": [
+        "pm",
+        "navigation",
+        "lifecycle",
+        "meta"
       ],
       "strict": false
     },

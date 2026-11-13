@@ -196,6 +196,7 @@ Career ladders, leadership transitions, interviews
 ## Core
 
 - `workshop-facilitation` - Facilitate workshop sessions in a one-step, multi-turn flow. Use when an interactive skill needs consistent pacing, options, and progress tracking.
+- `pm-skills-navigator` - Find the right PM skill for the situation on your desk. Use when you don't know where you are in the product lifecycle or which skill in this library to start with.
 - `autonomous-investigation` - The protocol behind every investigation skill. Use when AI research must proceed without you: search-plan gate, Fact/Inference/Assumption labels, confidence stacking, diffable outputs.
 - `pm-skill-creator` - Design a new PM skill through guided conversation. Use when you have raw content or an idea and want to shape it into a compliant skill.
 - `skill-authoring-workflow` - Turn raw PM content into a compliant, publish-ready skill. Use when creating or updating a repo skill without breaking standards.

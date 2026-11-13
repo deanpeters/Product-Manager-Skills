@@ -38,6 +38,7 @@ Career ladders, leadership transitions, interviews
 Shared helpers the skills above lean on:
 
 - [`workshop-facilitation`](skills/workshop-facilitation/SKILL.md)
+- [`pm-skills-navigator`](skills/pm-skills-navigator/SKILL.md)
 - [`autonomous-investigation`](skills/autonomous-investigation/SKILL.md)
 - [`pm-skill-creator`](skills/pm-skill-creator/SKILL.md)
 - [`skill-authoring-workflow`](skills/skill-authoring-workflow/SKILL.md)

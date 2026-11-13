@@ -1,6 +1,6 @@
 # Skill Catalog
 
-All **77 skills** in this library. Each links to its individual download ZIP in this folder — click, download, unzip, and upload the `SKILL.md` to Claude. No terminal required.
+All **78 skills** in this library. Each links to its individual download ZIP in this folder — click, download, unzip, and upload the `SKILL.md` to Claude. No terminal required.
 
 > New here? Read [`README.md`](README.md) first — it explains how to pick a pack and install.
 
@@ -39,7 +39,7 @@ _Self-contained artifacts and templates._
 | [`user-story-mapping`](user-story-mapping.zip) | Create a user story map that lays out activities, steps, tasks, and release slices. Use when planning a workflow, backlog, or MVP around the user journey. |
 | [`user-story-splitting`](user-story-splitting.zip) | Break a large story or epic into smaller deliverable stories using proven split patterns. Use when backlog items are too big for estimation, sequencing, or independent release. |
 
-## Interactive Skills (29)
+## Interactive Skills (30)
 
 _Guided, multi-turn advisors that ask then recommend._
 
@@ -65,6 +65,7 @@ _Guided, multi-turn advisors that ask then recommend._
 | [`opportunity-solution-tree`](opportunity-solution-tree.zip) | Build an Opportunity Solution Tree from outcomes to opportunities, solutions, and tests. Use when a stakeholder request needs problem framing before you decide what to build. |
 | [`organic-growth-advisor`](organic-growth-advisor.zip) | Identify which organic growth path to pursue — new segments, geographies, channels, or products. Use when diagnosing where a growth constraint lives and which McKinsey growth level to act on next. |
 | [`pm-skill-creator`](pm-skill-creator.zip) | Design a new PM skill through guided conversation. Use when you have raw content or an idea and want to shape it into a compliant skill. |
+| [`pm-skills-navigator`](pm-skills-navigator.zip) | Find the right PM skill for the situation on your desk. Use when you don't know where you are in the product lifecycle or which skill in this library to start with. |
 | [`pol-probe-advisor`](pol-probe-advisor.zip) | Select the right Proof of Life (PoL) probe based on hypothesis, risk, and resources. Use this to match the validation method to the real learning goal, not tooling comfort. |
 | [`positioning-workshop`](positioning-workshop.zip) | Run a positioning workshop that surfaces target customer, unmet need, category, benefits, and differentiation. Use when your product messaging feels fuzzy, generic, or misaligned. |
 | [`prioritization-advisor`](prioritization-advisor.zip) | Choose a prioritization framework based on stage, team context, and stakeholder needs. Use when deciding between RICE, ICE, value/effort, or another scoring approach. |
@@ -262,6 +263,7 @@ Drive your career and your stakeholders.
 ### Core (ships with every bundle)
 
 - [`workshop-facilitation`](workshop-facilitation.zip): Facilitate workshop sessions in a one-step, multi-turn flow. Use when an interactive skill needs consistent pacing, options, and progress tracking.
+- [`pm-skills-navigator`](pm-skills-navigator.zip): Find the right PM skill for the situation on your desk. Use when you don't know where you are in the product lifecycle or which skill in this library to start with.
 - [`autonomous-investigation`](autonomous-investigation.zip): The protocol behind every investigation skill. Use when AI research must proceed without you: search-plan gate, Fact/Inference/Assumption labels, confidence stacking, diffable outputs.
 - [`pm-skill-creator`](pm-skill-creator.zip): Design a new PM skill through guided conversation. Use when you have raw content or an idea and want to shape it into a compliant skill.
 - [`skill-authoring-workflow`](skill-authoring-workflow.zip): Turn raw PM content into a compliant, publish-ready skill. Use when creating or updating a repo skill without breaking standards.

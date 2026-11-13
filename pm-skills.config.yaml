@@ -122,4 +122,4 @@ bundles:
         skills: [altitude-horizon-framework, director-readiness-advisor, executive-onboarding-playbook, product-sense-interview-answer, vp-cpo-readiness-advisor]
 
 # Shared infrastructure the other skills lean on. Not a bundle; shipped with each plugin.
-core: [workshop-facilitation, autonomous-investigation, pm-skill-creator, skill-authoring-workflow]
+core: [workshop-facilitation, pm-skills-navigator, autonomous-investigation, pm-skill-creator, skill-authoring-workflow]

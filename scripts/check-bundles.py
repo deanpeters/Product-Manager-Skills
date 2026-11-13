@@ -12,6 +12,10 @@ Fails (exit 1) when:
 Usage:
   python3 scripts/check-bundles.py            # check skills/ against the config
   python3 scripts/check-bundles.py --summary  # also print bundle and motion counts
+  python3 scripts/check-bundles.py --write-navigator   # regenerate the map inside skills/pm-skills-navigator
+
+The navigator skill carries a copy of the bundle map between BUNDLE-MAP markers (skills must
+run standalone, so it can't read the config at runtime). The check fails if that copy drifts.
 
 Deterministic, no network calls.
 """
@@ -25,6 +29,25 @@ import sys
 import yaml
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+NAV_START, NAV_END = "<!-- BUNDLE-MAP:START -->", "<!-- BUNDLE-MAP:END -->"
+
+
+def render_map(bundles: dict, core: list[str]) -> str:
+    """The bundle map the navigator skill carries, generated from the config."""
+    lines: list[str] = []
+    for bname, bundle in bundles.items():
+        lines += [f"**{bname.capitalize()}** ({bundle['phase']}): {bundle['summary']}", ""]
+        for mname, motion in bundle["motions"].items():
+            skills = motion.get("skills") or []
+            names = ", ".join(f"[`{x}`](../{x}/SKILL.md)" for x in skills) if skills else f"*Coming: {motion.get('gap', 'in progress')}*"
+            lines.append(f"- **{mname.capitalize()}** ({motion['summary']}): {names}")
+        lines.append("")
+    lines.append("**Core** (shared helpers that ship with every bundle): " + ", ".join(f"[`{x}`](../{x}/SKILL.md)" for x in core))
+    return "\n".join(lines)
+
+
+def navigator_path(skills_dir: str) -> str:
+    return os.path.join(skills_dir, "pm-skills-navigator", "SKILL.md")
 
 
 def main() -> int:
@@ -32,6 +55,7 @@ def main() -> int:
     ap.add_argument("--skills-dir", default=os.path.join(ROOT, "skills"))
     ap.add_argument("--config", default=os.path.join(ROOT, "pm-skills.config.yaml"))
     ap.add_argument("--summary", action="store_true")
+    ap.add_argument("--write-navigator", action="store_true", help="regenerate the map in the navigator skill")
     args = ap.parse_args()
 
     with open(args.config, encoding="utf-8") as fh:
@@ -75,6 +99,21 @@ def main() -> int:
         errors.append(f"config names unknown skill '{skill}'")
     for skill in sorted(on_disk - mapped):
         errors.append(f"skill '{skill}' has no bundle home (add it to a motion or to core)")
+
+    nav = navigator_path(args.skills_dir)
+    if os.path.isfile(nav):
+        text = open(nav, encoding="utf-8").read()
+        want = f"{NAV_START}\n{render_map(bundles, core)}\n{NAV_END}"
+        if NAV_START in text and NAV_END in text:
+            have = text[text.index(NAV_START): text.index(NAV_END) + len(NAV_END)]
+            if args.write_navigator:
+                open(nav, "w", encoding="utf-8").write(text.replace(have, want))
+                print("Navigator map regenerated.")
+                return 0
+            if have != want:
+                errors.append("pm-skills-navigator's bundle map is stale; run: python3 scripts/check-bundles.py --write-navigator")
+        else:
+            errors.append("pm-skills-navigator is missing its BUNDLE-MAP markers")
 
     if args.summary:
         for bname, bundle in bundles.items():

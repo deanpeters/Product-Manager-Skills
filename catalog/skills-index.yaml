@@ -1,5 +1,5 @@
 generated_from: skills/*/SKILL.md
-count: 77
+count: 78
 skills:
 - name: acquisition-channel-advisor
   description: Evaluate acquisition channels using unit economics, customer quality,
@@ -568,6 +568,19 @@ skills:
     \ idea or content to a structured, repo-compliant SKILL.md draft. Asks adaptive\
     \ questions to determine skill type, scope, structure, and content, then generates\
     \ a ready-to-validate draft."
+- name: pm-skills-navigator
+  description: Find the right PM skill for the situation on your desk. Use when you
+    don't know where you are in the product lifecycle or which skill in this library
+    to start with.
+  type: interactive
+  path: skills/pm-skills-navigator/SKILL.md
+  bundle: core
+  motion: core
+  intent: Guided triage from a situation to a route. Places the work on the product
+    lifecycle by what is validated versus assumed, names the bundle and motion that
+    fits, recommends one to three skills in order with a reason each, says plainly
+    when the library has no skill for the need yet, and hands over a paste-ready first
+    prompt.
 - name: pol-probe
   description: Define a Proof of Life probe to test a risky hypothesis cheaply. Use
     when you need harsh truth before building real product.

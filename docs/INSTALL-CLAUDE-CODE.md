@@ -12,7 +12,7 @@ Want the whole library without picking skills one by one? Install the all-in-one
 /reload-plugins
 ```
 
-You get all 77 skills and the slash commands in one step.
+You get all 78 skills and the slash commands in one step.
 
 **Choose one path.** Install the all-in-one plugin, *or* lifecycle bundles, *or* individual skills. Mixing them can load the same skill twice.
 
