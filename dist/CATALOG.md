@@ -1,10 +1,10 @@
 # Skill Catalog
 
-All **88 skills** in this library. Each links to its individual download ZIP in this folder — click, download, unzip, and upload the `SKILL.md` to Claude. No terminal required.
+All **91 skills** in this library. Each links to its individual download ZIP in this folder — click, download, unzip, and upload the `SKILL.md` to Claude. No terminal required.
 
 > New here? Read [`README.md`](README.md) first — it explains how to pick a pack and install.
 
-## Component Skills (32)
+## Component Skills (33)
 
 _Self-contained artifacts and templates._
 
@@ -33,6 +33,7 @@ _Self-contained artifacts and templates._
 | [`product-sense-interview-answer`](product-sense-interview-answer.zip) | Structure a spoken PM product-sense answer with assumptions, segmentation, pain-point prioritization, and MVP tradeoffs. Use when practicing design, improve, or build-next interview questions. |
 | [`proto-persona`](proto-persona.zip) | Create a proto-persona from current research, market signals, and team knowledge. Use when you need a working customer profile before deeper validation. |
 | [`recommendation-canvas`](recommendation-canvas.zip) | Evaluate an AI product idea across outcomes, hypotheses, risks, and positioning. Use when deciding whether an AI solution deserves investment or recommendation. |
+| [`release-readiness`](release-readiness.zip) | Check a release is safe to ship: tests, rollout, monitoring, rollback, support. Use when a build is about to go out and you need to know what could hurt, and how you'd undo it. |
 | [`saas-economics-efficiency-metrics`](saas-economics-efficiency-metrics.zip) | Evaluate SaaS unit economics and capital efficiency. Use when deciding whether the business can scale efficiently or needs correction. |
 | [`saas-revenue-growth-metrics`](saas-revenue-growth-metrics.zip) | Calculate SaaS revenue, retention, and growth metrics. Use when diagnosing momentum, churn, expansion, or product-market-fit signals. |
 | [`sales-value-narrative`](sales-value-narrative.zip) | Build a sales value narrative: why change, why now, why us, value by buying-group role, objections, and a do-not-say list. Use when Sales or partners must explain value with claims they can defend. |
@@ -43,7 +44,7 @@ _Self-contained artifacts and templates._
 | [`user-story-mapping`](user-story-mapping.zip) | Create a user story map that lays out activities, steps, tasks, and release slices. Use when planning a workflow, backlog, or MVP around the user journey. |
 | [`user-story-splitting`](user-story-splitting.zip) | Break a large story or epic into smaller deliverable stories using proven split patterns. Use when backlog items are too big for estimation, sequencing, or independent release. |
 
-## Interactive Skills (32)
+## Interactive Skills (33)
 
 _Guided, multi-turn advisors that ask then recommend._
 
@@ -52,6 +53,7 @@ _Guided, multi-turn advisors that ask then recommend._
 | [`acquisition-channel-advisor`](acquisition-channel-advisor.zip) | Evaluate acquisition channels using unit economics, customer quality, and scalability. Use when deciding whether to scale, test, or kill a growth channel. |
 | [`agent-orchestration-advisor`](agent-orchestration-advisor.zip) | Design multi-agent AI workflows with clear boundaries, handoffs, and monitoring. Use when a complex PM task should run as parallel specialized agents instead of one linear process. |
 | [`ai-shaped-readiness-advisor`](ai-shaped-readiness-advisor.zip) | Assess whether your product work is AI-first or AI-shaped. Use when evaluating AI maturity and choosing the next team capability to build. |
+| [`backlog-refinement-advisor`](backlog-refinement-advisor.zip) | Get backlog items ready for planning: understood, small, testable. Use when planning stalls on unclear tickets, or items keep growing and bouncing back mid-sprint. |
 | [`business-health-diagnostic`](business-health-diagnostic.zip) | Diagnose SaaS business health across growth, retention, efficiency, and capital. Use when preparing a business review or prioritizing urgent fixes. |
 | [`context-engineering-advisor`](context-engineering-advisor.zip) | Diagnose context stuffing vs. context engineering. Use when an AI workflow feels bloated, brittle, or hard to steer reliably. |
 | [`customer-journey-mapping-workshop`](customer-journey-mapping-workshop.zip) | Run a customer journey mapping workshop with adaptive questions and outputs. Use when you need to map stages, actions, emotions, pain points, and opportunities for a persona and scenario. |
@@ -82,7 +84,7 @@ _Guided, multi-turn advisors that ask then recommend._
 | [`vp-cpo-readiness-advisor`](vp-cpo-readiness-advisor.zip) | Guide the transition to VP or CPO across preparing, interviewing, landing, and recalibrating. Use when executive product scope is changing fast. |
 | [`workshop-facilitation`](workshop-facilitation.zip) | Facilitate workshop sessions in a one-step, multi-turn flow. Use when an interactive skill needs consistent pacing, options, and progress tracking. |
 
-## Workflow Skills (24)
+## Workflow Skills (25)
 
 _End-to-end processes that orchestrate other skills._
 
@@ -109,6 +111,7 @@ _End-to-end processes that orchestrate other skills._
 | [`research-synthesis`](research-synthesis.zip) | Turn raw interview notes and feedback into themes, insights, and opportunity statements. Use when you have a pile of research and need to know what it says before deciding anything. |
 | [`roadmap-planning`](roadmap-planning.zip) | Plan a strategic roadmap across prioritization, epic definition, stakeholder alignment, and sequencing. Use when turning strategy into a release plan that teams can execute. |
 | [`skill-authoring-workflow`](skill-authoring-workflow.zip) | Turn raw PM content into a compliant, publish-ready skill. Use when creating or updating a repo skill without breaking standards. |
+| [`sprint-planning`](sprint-planning.zip) | Plan a sprint around a goal, real capacity, and named risks. Use when a team's sprints end with carryover, a pile of unrelated tickets, or a goal nobody can state. |
 | [`swot-analysis`](swot-analysis.zip) | Build an evidence-cited SWOT of one company — yours or a competitor's — from public sources, ending with the S-O/W-T crossings. Use for strategy reviews, board prep, or competitor depth. |
 | [`usage-data-investigation`](usage-data-investigation.zip) | Investigate what customers actually do from product analytics, with every claim labeled Fact, Inference, or Assumption. Use when you need behavior evidence, not opinions, before deciding. |
 | [`voice-of-customer-miner`](voice-of-customer-miner.zip) | Mine public reviews, app stores, and forums for unmet needs, competitor weaknesses, and switching triggers — with quoted evidence. Use when you want customer voice without waiting on interviews. |
@@ -229,6 +232,12 @@ Turn the chosen solution into buildable work.
 - [`agent-orchestration-advisor`](agent-orchestration-advisor.zip): Design multi-agent AI workflows with clear boundaries, handoffs, and monitoring. Use when a complex PM task should run as parallel specialized agents instead of one linear process.
 - [`ai-shaped-readiness-advisor`](ai-shaped-readiness-advisor.zip): Assess whether your product work is AI-first or AI-shaped. Use when evaluating AI maturity and choosing the next team capability to build.
 - [`context-engineering-advisor`](context-engineering-advisor.zip): Diagnose context stuffing vs. context engineering. Use when an AI workflow feels bloated, brittle, or hard to steer reliably.
+
+**Drumbeat**: Execution rhythm: backlog refinement, sprint planning, release readiness
+
+- [`backlog-refinement-advisor`](backlog-refinement-advisor.zip): Get backlog items ready for planning: understood, small, testable. Use when planning stalls on unclear tickets, or items keep growing and bouncing back mid-sprint.
+- [`sprint-planning`](sprint-planning.zip): Plan a sprint around a goal, real capacity, and named risks. Use when a team's sprints end with carryover, a pile of unrelated tickets, or a goal nobody can state.
+- [`release-readiness`](release-readiness.zip): Check a release is safe to ship: tests, rollout, monitoring, rollback, support. Use when a build is about to go out and you need to know what could hurt, and how you'd undo it.
 
 ### Deliver (Deliver)
 

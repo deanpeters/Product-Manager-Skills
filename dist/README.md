@@ -3,7 +3,7 @@
 Welcome. This folder is the **easy download shelf** for the library — no code, no
 terminal. Grab what you want, unzip it, and upload the skills to Claude.
 
-There are **88 skills** in total. Two ways to get them:
+There are **91 skills** in total. Two ways to get them:
 
 ## 1. Grab a bundle (recommended)
 
@@ -16,10 +16,10 @@ find upload-ready skill ZIPs inside.
 | [`pm-determine-pack.zip`](packages/pm-determine-pack.zip) | **Determine**: Set outcomes and read the terrain: strategy, finance, market, customers. 24 skills + shared helpers |
 | [`pm-discover-pack.zip`](packages/pm-discover-pack.zip) | **Discover**: Find and frame the real problem. 12 skills + shared helpers |
 | [`pm-define-pack.zip`](packages/pm-define-pack.zip) | **Define**: Shape a solution worth building and test the bet. 9 skills + shared helpers |
-| [`pm-develop-pack.zip`](packages/pm-develop-pack.zip) | **Develop**: Turn the chosen solution into buildable work. 13 skills + shared helpers |
+| [`pm-develop-pack.zip`](packages/pm-develop-pack.zip) | **Develop**: Turn the chosen solution into buildable work. 16 skills + shared helpers |
 | [`pm-deliver-pack.zip`](packages/pm-deliver-pack.zip) | **Deliver**: Take it to market, measure it, and retire it well. 16 skills + shared helpers |
 | [`pm-drive-pack.zip`](packages/pm-drive-pack.zip) | **Drive**: Drive your career and your stakeholders. 9 skills + shared helpers |
-| [`99-all-skills-pack.zip`](packages/99-all-skills-pack.zip) | Everything — all 88 skills |
+| [`99-all-skills-pack.zip`](packages/99-all-skills-pack.zip) | Everything — all 91 skills |
 | [`pm-skills-codex.zip`](packages/pm-skills-codex.zip) | OpenAI Codex users (`.agents/skills` + `AGENTS.md`) |
 
 ### The lifecycle bundles

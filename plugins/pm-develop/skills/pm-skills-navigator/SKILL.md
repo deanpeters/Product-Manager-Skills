@@ -144,6 +144,7 @@ This block is generated from `pm-skills.config.yaml`. Don't edit it here; run
 - **Draft** (User stories, splitting, story mapping, epic breakdown): [`user-story`](../user-story/SKILL.md), [`user-story-splitting`](../user-story-splitting/SKILL.md), [`user-story-mapping`](../user-story-mapping/SKILL.md), [`user-story-mapping-workshop`](../user-story-mapping-workshop/SKILL.md), [`epic-breakdown-advisor`](../epic-breakdown-advisor/SKILL.md)
 - **Decide** (Prioritization and roadmaps): [`prioritization-advisor`](../prioritization-advisor/SKILL.md), [`roadmap-planning`](../roadmap-planning/SKILL.md)
 - **Delegate** (Work with AI agents: orchestration, context engineering, readiness): [`agent-orchestration-advisor`](../agent-orchestration-advisor/SKILL.md), [`ai-shaped-readiness-advisor`](../ai-shaped-readiness-advisor/SKILL.md), [`context-engineering-advisor`](../context-engineering-advisor/SKILL.md)
+- **Drumbeat** (Execution rhythm: backlog refinement, sprint planning, release readiness): [`backlog-refinement-advisor`](../backlog-refinement-advisor/SKILL.md), [`sprint-planning`](../sprint-planning/SKILL.md), [`release-readiness`](../release-readiness/SKILL.md)
 
 **Deliver** (Deliver): Take it to market, measure it, and retire it well.
 

@@ -5,7 +5,7 @@
     "email": "dean.peters@productside.com"
   },
   "metadata": {
-    "description": "88 battle-tested product management skills for Claude Code \u2014 discovery, strategy, finance, career, lifecycle, and more.",
+    "description": "91 battle-tested product management skills for Claude Code \u2014 discovery, strategy, finance, career, lifecycle, and more.",
     "version": "0.85.0"
   },
   "plugins": [
@@ -66,7 +66,7 @@
     {
       "name": "pm-develop",
       "source": "./plugins/pm-develop",
-      "description": "Turn the chosen solution into buildable work. 13 skills (Document, Draft, Decide, Delegate); shared helper skills included.",
+      "description": "Turn the chosen solution into buildable work. 16 skills (Document, Draft, Decide, Delegate, Drumbeat); shared helper skills included.",
       "category": "lifecycle-bundle",
       "tags": [
         "pm",
@@ -75,7 +75,8 @@
         "document",
         "draft",
         "decide",
-        "delegate"
+        "delegate",
+        "drumbeat"
       ]
     },
     {
@@ -1278,6 +1279,42 @@
         "facilitation",
         "workshop",
         "interactive"
+      ],
+      "strict": false
+    },
+    {
+      "name": "sprint-planning",
+      "source": "./skills/sprint-planning",
+      "description": "Plan a sprint around a goal, real capacity, and named risks.",
+      "category": "delivery",
+      "tags": [
+        "pm",
+        "sprint",
+        "workflow"
+      ],
+      "strict": false
+    },
+    {
+      "name": "backlog-refinement-advisor",
+      "source": "./skills/backlog-refinement-advisor",
+      "description": "Get backlog items ready for planning",
+      "category": " understood, small, testable.",
+      "tags": [
+        "pm",
+        "delivery:backlog",
+        "interactive"
+      ],
+      "strict": false
+    },
+    {
+      "name": "release-readiness",
+      "source": "./skills/release-readiness",
+      "description": "Check a release is safe to ship",
+      "category": " tests, rollout, monitoring, rollback, support.",
+      "tags": [
+        "pm",
+        "delivery:release",
+        "component"
       ],
       "strict": false
     }

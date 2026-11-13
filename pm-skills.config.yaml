@@ -95,6 +95,9 @@ bundles:
       delegate:
         summary: "Work with AI agents: orchestration, context engineering, readiness"
         skills: [agent-orchestration-advisor, ai-shaped-readiness-advisor, context-engineering-advisor]
+      drumbeat:
+        summary: "Execution rhythm: backlog refinement, sprint planning, release readiness"
+        skills: [backlog-refinement-advisor, sprint-planning, release-readiness]
   deliver:
     phase: "Deliver"
     summary: "Take it to market, measure it, and retire it well."

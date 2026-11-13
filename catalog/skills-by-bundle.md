@@ -143,6 +143,14 @@ Work with AI agents: orchestration, context engineering, readiness
 - `ai-shaped-readiness-advisor` - Assess whether your product work is AI-first or AI-shaped. Use when evaluating AI maturity and choosing the next team capability to build.
 - `context-engineering-advisor` - Diagnose context stuffing vs. context engineering. Use when an AI workflow feels bloated, brittle, or hard to steer reliably.
 
+### Drumbeat
+
+Execution rhythm: backlog refinement, sprint planning, release readiness
+
+- `backlog-refinement-advisor` - Get backlog items ready for planning: understood, small, testable. Use when planning stalls on unclear tickets, or items keep growing and bouncing back mid-sprint.
+- `sprint-planning` - Plan a sprint around a goal, real capacity, and named risks. Use when a team's sprints end with carryover, a pile of unrelated tickets, or a goal nobody can state.
+- `release-readiness` - Check a release is safe to ship: tests, rollout, monitoring, rollback, support. Use when a build is about to go out and you need to know what could hurt, and how you'd undo it.
+
 ## Deliver (Deliver)
 
 Take it to market, measure it, and retire it well.

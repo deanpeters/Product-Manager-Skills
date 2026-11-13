@@ -1,5 +1,5 @@
 generated_from: skills/*/SKILL.md
-count: 88
+count: 91
 skills:
 - name: acquisition-channel-advisor
   description: Evaluate acquisition channels using unit economics, customer quality,
@@ -87,6 +87,19 @@ skills:
     \ lists, just-enough output, stable diffable schemas, and confidence stacking\
     \ \u2014 so investigations are trustworthy, schedulable, and comparable run over\
     \ run."
+- name: backlog-refinement-advisor
+  description: 'Get backlog items ready for planning: understood, small, testable.
+    Use when planning stalls on unclear tickets, or items keep growing and bouncing
+    back mid-sprint.'
+  type: interactive
+  path: skills/backlog-refinement-advisor/SKILL.md
+  bundle: develop
+  motion: drumbeat
+  intent: Guided triage from a messy backlog item to a ready one. Diagnoses what is
+    missing (the why, the scope, the acceptance, the size, or a dependency), recommends
+    the refinement move that fits (clarify, split, spike, or park), and defines "ready"
+    for this team so planning stops guessing. Right-sized so a small fix gets a sentence
+    and a risky epic gets a conversation.
 - name: battle-card-builder
   description: "Research and draft a competitive battle card from public evidence\
     \ \u2014 every claim labeled and sourced. Use when a rep needs a field-action\
@@ -867,6 +880,19 @@ skills:
     \ defensible recommendation for stakeholders and decision-makers\u2014especially\
     \ when proposing AI-powered features or products that carry higher uncertainty\
     \ and risk."
+- name: release-readiness
+  description: 'Check a release is safe to ship: tests, rollout, monitoring, rollback,
+    support. Use when a build is about to go out and you need to know what could hurt,
+    and how you''d undo it.'
+  type: component
+  path: skills/release-readiness/SKILL.md
+  bundle: develop
+  motion: drumbeat
+  intent: A right-sized readiness check for shipping a release (a deploy, a firmware
+    update, a configuration change), distinct from the business launch. Confirms what
+    changed, how it's tested, how it rolls out, how it's watched, how it is undone,
+    and who is ready to support it, with a go / hold decision made on criteria agreed
+    before looking at status. Sized to the blast radius and reversibility.
 - name: research-synthesis
   description: Turn raw interview notes and feedback into themes, insights, and opportunity
     statements. Use when you have a pile of research and need to know what it says
@@ -939,6 +965,20 @@ skills:
   intent: Create or update PM skills without chaos. This workflow turns rough notes,
     workshop content, or half-baked prompt dumps into compliant `skills/<skill-name>/SKILL.md`
     assets that actually pass validation and belong in this repo.
+- name: sprint-planning
+  description: Plan a sprint around a goal, real capacity, and named risks. Use when
+    a team's sprints end with carryover, a pile of unrelated tickets, or a goal nobody
+    can state.
+  type: workflow
+  path: skills/sprint-planning/SKILL.md
+  bundle: develop
+  motion: drumbeat
+  intent: Run sprint planning as a decision about what the team can commit to and
+    why, not a ticket-filling exercise. Starts from a sprint goal, sizes capacity
+    from real availability, selects work that serves the goal, holds slack for the
+    unplanned, names the risks and dependencies, and leaves a commitment the team
+    believes. Works for software sprints and for hardware or service teams on a fixed
+    cadence.
 - name: stakeholder-engagement-advisor
   description: Plan engagement for a specific stakeholder. Use when preparing an outreach,
     navigating resistance, or aligning a critical relationship before a key milestone.

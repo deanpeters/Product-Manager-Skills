@@ -47,6 +47,14 @@ Work with AI agents: orchestration, context engineering, readiness
 - [`ai-shaped-readiness-advisor`](skills/ai-shaped-readiness-advisor/SKILL.md)
 - [`context-engineering-advisor`](skills/context-engineering-advisor/SKILL.md)
 
+### Drumbeat
+
+Execution rhythm: backlog refinement, sprint planning, release readiness
+
+- [`backlog-refinement-advisor`](skills/backlog-refinement-advisor/SKILL.md)
+- [`sprint-planning`](skills/sprint-planning/SKILL.md)
+- [`release-readiness`](skills/release-readiness/SKILL.md)
+
 ## Also included (Core)
 
 Shared helpers the skills above lean on:

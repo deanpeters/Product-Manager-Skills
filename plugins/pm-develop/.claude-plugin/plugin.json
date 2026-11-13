@@ -1,6 +1,6 @@
 {
   "name": "pm-develop",
-  "description": "Turn the chosen solution into buildable work. 13 skills (Document, Draft, Decide, Delegate); shared helper skills included.",
+  "description": "Turn the chosen solution into buildable work. 16 skills (Document, Draft, Decide, Delegate, Drumbeat); shared helper skills included.",
   "version": "0.85",
   "author": {
     "name": "Dean Peters"
@@ -15,6 +15,7 @@
     "document",
     "draft",
     "decide",
-    "delegate"
+    "delegate",
+    "drumbeat"
   ]
 }
