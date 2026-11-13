@@ -68,6 +68,21 @@ Interviews, problem framing, opportunity solution trees, journey maps
 - `customer-journey-map` - Create a customer journey map across stages, touchpoints, actions, emotions, and metrics. Use when diagnosing a broken experience or aligning a team on the full customer flow.
 - `customer-journey-mapping-workshop` - Run a customer journey mapping workshop with adaptive questions and outputs. Use when you need to map stages, actions, emotions, pain points, and opportunities for a persona and scenario.
 
+### Dig
+
+Collect evidence: surveys, usage data, a steady customer-contact habit
+
+- `survey-design-advisor` - Decide whether a survey is the right tool, then shape it. Use when you're about to send a survey and want to learn something real instead of collecting biased, unusable answers.
+- `usage-data-investigation` - Investigate what customers actually do from product analytics, with every claim labeled Fact, Inference, or Assumption. Use when you need behavior evidence, not opinions, before deciding.
+- `discovery-habits-advisor` - Set up a steady rhythm of customer contact that feeds decisions. Use when discovery happens in bursts, or never, and you want a habit the team will actually keep.
+
+### Decode
+
+Make sense of it: synthesis and assumption mapping
+
+- `research-synthesis` - Turn raw interview notes and feedback into themes, insights, and opportunity statements. Use when you have a pile of research and need to know what it says before deciding anything.
+- `assumption-mapping` - List the assumptions behind an idea and rank them by importance and evidence. Use when a plan feels solid and you need to find the beliefs it rests on before you commit.
+
 ## Define (Discover + Define)
 
 Shape a solution worth building and test the bet.

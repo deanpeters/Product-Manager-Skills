@@ -26,6 +26,21 @@ Interviews, problem framing, opportunity solution trees, journey maps
 - [`customer-journey-map`](skills/customer-journey-map/SKILL.md)
 - [`customer-journey-mapping-workshop`](skills/customer-journey-mapping-workshop/SKILL.md)
 
+### Dig
+
+Collect evidence: surveys, usage data, a steady customer-contact habit
+
+- [`survey-design-advisor`](skills/survey-design-advisor/SKILL.md)
+- [`usage-data-investigation`](skills/usage-data-investigation/SKILL.md)
+- [`discovery-habits-advisor`](skills/discovery-habits-advisor/SKILL.md)
+
+### Decode
+
+Make sense of it: synthesis and assumption mapping
+
+- [`research-synthesis`](skills/research-synthesis/SKILL.md)
+- [`assumption-mapping`](skills/assumption-mapping/SKILL.md)
+
 ## Also included (Core)
 
 Shared helpers the skills above lean on:

@@ -130,6 +130,8 @@ This block is generated from `pm-skills.config.yaml`. Don't edit it here; run
 **Discover** (Discover + Investigate): Find and frame the real problem.
 
 - **Drill-down** (Interviews, problem framing, opportunity solution trees, journey maps): [`discovery-interview-prep`](../discovery-interview-prep/SKILL.md), [`discovery-process`](../discovery-process/SKILL.md), [`opportunity-solution-tree`](../opportunity-solution-tree/SKILL.md), [`problem-framing-canvas`](../problem-framing-canvas/SKILL.md), [`problem-statement`](../problem-statement/SKILL.md), [`customer-journey-map`](../customer-journey-map/SKILL.md), [`customer-journey-mapping-workshop`](../customer-journey-mapping-workshop/SKILL.md)
+- **Dig** (Collect evidence: surveys, usage data, a steady customer-contact habit): [`survey-design-advisor`](../survey-design-advisor/SKILL.md), [`usage-data-investigation`](../usage-data-investigation/SKILL.md), [`discovery-habits-advisor`](../discovery-habits-advisor/SKILL.md)
+- **Decode** (Make sense of it: synthesis and assumption mapping): [`research-synthesis`](../research-synthesis/SKILL.md), [`assumption-mapping`](../assumption-mapping/SKILL.md)
 
 **Define** (Discover + Define): Shape a solution worth building and test the bet.
 

@@ -63,6 +63,12 @@ bundles:
       drill-down:
         summary: "Interviews, problem framing, opportunity solution trees, journey maps"
         skills: [discovery-interview-prep, discovery-process, opportunity-solution-tree, problem-framing-canvas, problem-statement, customer-journey-map, customer-journey-mapping-workshop]
+      dig:
+        summary: "Collect evidence: surveys, usage data, a steady customer-contact habit"
+        skills: [survey-design-advisor, usage-data-investigation, discovery-habits-advisor]
+      decode:
+        summary: "Make sense of it: synthesis and assumption mapping"
+        skills: [research-synthesis, assumption-mapping]
   define:
     phase: "Discover + Define"
     summary: "Shape a solution worth building and test the bet."

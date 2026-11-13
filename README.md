@@ -4,7 +4,7 @@
 
 [![GitHub stars](https://img.shields.io/github/stars/deanpeters/Product-Manager-Skills?style=flat-square)](https://github.com/deanpeters/Product-Manager-Skills/stargazers) [![GitHub forks](https://img.shields.io/github/forks/deanpeters/Product-Manager-Skills?style=flat-square)](https://github.com/deanpeters/Product-Manager-Skills/forks) [![GitHub watchers](https://img.shields.io/github/watchers/deanpeters/Product-Manager-Skills?style=flat-square)](https://github.com/deanpeters/Product-Manager-Skills/watchers) [![Contributors](https://img.shields.io/github/contributors/deanpeters/Product-Manager-Skills?style=flat-square)](https://github.com/deanpeters/Product-Manager-Skills/graphs/contributors) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](CONTRIBUTING.md)
 
-[![Version](https://img.shields.io/badge/version-v0.85-blue?style=flat-square)](https://github.com/deanpeters/Product-Manager-Skills/releases/latest) ![Skills](https://img.shields.io/badge/skills-83-informational?style=flat-square) [![Last commit](https://img.shields.io/github/last-commit/deanpeters/Product-Manager-Skills?style=flat-square)](https://github.com/deanpeters/Product-Manager-Skills/commits/main) [![Claude Code Plugin](https://img.shields.io/badge/Claude%20Code-Plugin%20Marketplace-5C4EE5?style=flat-square)](https://code.claude.com/docs/en/plugin-marketplaces)
+[![Version](https://img.shields.io/badge/version-v0.85-blue?style=flat-square)](https://github.com/deanpeters/Product-Manager-Skills/releases/latest) ![Skills](https://img.shields.io/badge/skills-88-informational?style=flat-square) [![Last commit](https://img.shields.io/github/last-commit/deanpeters/Product-Manager-Skills?style=flat-square)](https://github.com/deanpeters/Product-Manager-Skills/commits/main) [![Claude Code Plugin](https://img.shields.io/badge/Claude%20Code-Plugin%20Marketplace-5C4EE5?style=flat-square)](https://code.claude.com/docs/en/plugin-marketplaces)
 
 ```text
 ╔════════════════════════════════════════════════════════════════════╗
@@ -16,14 +16,14 @@
 ║   ██║     ██║ ╚═╝ ██║    ███████║██║  ██╗██║███████╗███████╗███████║
 ║   ╚═╝     ╚═╝     ╚═╝    ╚══════╝╚═╝  ╚═╝╚═╝╚══════╝╚══════╝╚══════╝
 ║                                                                    ║
-║   83 battle-tested skills + 6 command workflows                    ║
+║   88 battle-tested skills + 6 command workflows                    ║
 ║   Claude Code • Cursor • Codex  • n8n • OpenClaw • and more ...    ║
 ║                                                                    ║
 ║   v0.85 • November 13, 2026 • CC BY-NC-SA 4.0                      ║
 ╚════════════════════════════════════════════════════════════════════╝
 ```
 
-**83 battle-tested PM frameworks, ready for Claude, Codex, ChatGPT, and any agent that can read structured knowledge.**
+**88 battle-tested PM frameworks, ready for Claude, Codex, ChatGPT, and any agent that can read structured knowledge.**
 
 ---
 
@@ -166,12 +166,12 @@ Each pack is a ZIP of upload-ready skill ZIPs. Unzip it, then upload the skills 
 |---|---|---|
 | Starter | [`pm-skills-starter-pack.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/pm-skills-starter-pack.zip) | Six core skills across the craft. The best first download |
 | Determine | [`pm-determine-pack.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/pm-determine-pack.zip) | Strategy, finance, market intelligence, customer context (24 skills) |
-| Discover | [`pm-discover-pack.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/pm-discover-pack.zip) | Interviews, problem framing, opportunity trees, journey maps (7 skills) |
+| Discover | [`pm-discover-pack.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/pm-discover-pack.zip) | Interviews, surveys, usage data, synthesis, assumptions, problem framing, opportunity trees, journey maps (12 skills) |
 | Define | [`pm-define-pack.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/pm-define-pack.zip) | Hypotheses, probes, experiments, positioning (9 skills) |
 | Develop | [`pm-develop-pack.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/pm-develop-pack.zip) | PRDs, stories, prioritization, roadmaps, AI agents (13 skills) |
 | Deliver | [`pm-deliver-pack.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/pm-deliver-pack.zip) | Launch plans, messaging, sales enablement, pricing, channels, post-launch metrics, and the end-of-life suite (16 skills) |
 | Drive | [`pm-drive-pack.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/pm-drive-pack.zip) | Stakeholders, influence, and career transitions (9 skills) |
-| All skills | [`99-all-skills-pack.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/99-all-skills-pack.zip) | All 83 skills |
+| All skills | [`99-all-skills-pack.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/99-all-skills-pack.zip) | All 88 skills |
 
 The older themed packs (`02-discovery` through `07-lifecycle-eol`) are still on the [download shelf](dist/) for one more release, then retire.
 
@@ -207,25 +207,25 @@ Feedback welcome via [GitHub Issues](https://github.com/deanpeters/Product-Manag
 
 ---
 
-## 83 Skills, 3 Types
+## 88 Skills, 3 Types
 
 Skills are organized in three tiers that build on each other:
 
 ```
 ┌────────────────────────────────────────────────────────┐
-│  WORKFLOW SKILLS (22)                                  │
+│  WORKFLOW SKILLS (24)                                  │
 │  Complete end-to-end PM processes (days to weeks)      │
 │  Example: run a full discovery cycle or write a PRD    │
 └────────────────────────────────────────────────────────┘
                        ↓ orchestrates
 ┌────────────────────────────────────────────────────────┐
-│  INTERACTIVE SKILLS (30)                               │
+│  INTERACTIVE SKILLS (32)                               │
 │  Guided discovery — 3-5 questions, then recommendations│
 │  Example: "Which prioritization framework fits here?"  │
 └────────────────────────────────────────────────────────┘
                        ↓ uses
 ┌────────────────────────────────────────────────────────┐
-│  COMPONENT SKILLS (31)                                 │
+│  COMPONENT SKILLS (32)                                 │
 │  Templates for specific PM deliverables (30-90 min)    │
 │  Example: write a user story with acceptance criteria  │
 └────────────────────────────────────────────────────────┘
@@ -233,7 +233,7 @@ Skills are organized in three tiers that build on each other:
 
 **Interactive skills use an Adaptive Decision Ladder.** Instead of dumping a framework at you, an interactive skill asks 3-5 targeted questions about your specific context, then offers numbered recommendations — each with a clear "use this when" rationale. You pick a path. The skill executes it and explains the *why* as it goes. If you want to just learn the framework without doing the work, you can ask that too — the skill coaches you either way. This is ABC — Always Be Coaching — in practice.
 
-**Full catalog:** [by type](catalog/skills-by-type.md) or [by lifecycle bundle](catalog/skills-by-bundle.md), all 83 skills with descriptions, or browse `skills/` directly.
+**Full catalog:** [by type](catalog/skills-by-type.md) or [by lifecycle bundle](catalog/skills-by-bundle.md), all 88 skills with descriptions, or browse `skills/` directly.
 
 ---
 

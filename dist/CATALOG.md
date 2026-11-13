@@ -1,16 +1,17 @@
 # Skill Catalog
 
-All **83 skills** in this library. Each links to its individual download ZIP in this folder — click, download, unzip, and upload the `SKILL.md` to Claude. No terminal required.
+All **88 skills** in this library. Each links to its individual download ZIP in this folder — click, download, unzip, and upload the `SKILL.md` to Claude. No terminal required.
 
 > New here? Read [`README.md`](README.md) first — it explains how to pick a pack and install.
 
-## Component Skills (31)
+## Component Skills (32)
 
 _Self-contained artifacts and templates._
 
 | Skill | What it does |
 |---|---|
 | [`altitude-horizon-framework`](altitude-horizon-framework.zip) | Understand the PM-to-Director transition through altitude and horizon thinking. Use when diagnosing scope, time-horizon, or leadership-level gaps. |
+| [`assumption-mapping`](assumption-mapping.zip) | List the assumptions behind an idea and rank them by importance and evidence. Use when a plan feels solid and you need to find the beliefs it rests on before you commit. |
 | [`company-research`](company-research.zip) | Create a company research brief with executive quotes, product strategy, and org context. Use when preparing for interviews, competitive analysis, partnerships, or market-entry work. |
 | [`customer-journey-map`](customer-journey-map.zip) | Create a customer journey map across stages, touchpoints, actions, emotions, and metrics. Use when diagnosing a broken experience or aligning a team on the full customer flow. |
 | [`eol-checklist`](eol-checklist.zip) | Build a phase-gated EOL checklist sized to the sunset, with a named owner on every item. Use when the decision to retire is made and you need the operational plan. |
@@ -42,7 +43,7 @@ _Self-contained artifacts and templates._
 | [`user-story-mapping`](user-story-mapping.zip) | Create a user story map that lays out activities, steps, tasks, and release slices. Use when planning a workflow, backlog, or MVP around the user journey. |
 | [`user-story-splitting`](user-story-splitting.zip) | Break a large story or epic into smaller deliverable stories using proven split patterns. Use when backlog items are too big for estimation, sequencing, or independent release. |
 
-## Interactive Skills (30)
+## Interactive Skills (32)
 
 _Guided, multi-turn advisors that ask then recommend._
 
@@ -56,6 +57,7 @@ _Guided, multi-turn advisors that ask then recommend._
 | [`customer-journey-mapping-workshop`](customer-journey-mapping-workshop.zip) | Run a customer journey mapping workshop with adaptive questions and outputs. Use when you need to map stages, actions, emotions, pain points, and opportunities for a persona and scenario. |
 | [`derisk-measurement-advisor`](derisk-measurement-advisor.zip) | Identify what to measure, test, or track to de-risk a product or AI idea. Use when stress-testing an idea across internal (DUFV) and external (PESTEL) dimensions. |
 | [`director-readiness-advisor`](director-readiness-advisor.zip) | Guide the PM-to-Director transition across preparing, interviewing, landing, and recalibrating. Use when leadership scope is changing and you need practical coaching. |
+| [`discovery-habits-advisor`](discovery-habits-advisor.zip) | Set up a steady rhythm of customer contact that feeds decisions. Use when discovery happens in bursts, or never, and you want a habit the team will actually keep. |
 | [`discovery-interview-prep`](discovery-interview-prep.zip) | Plan customer discovery interviews with the right goal, segment, constraints, and method. Use when preparing interviews for problem validation, churn research, or new product ideas. |
 | [`eol-readiness-advisor`](eol-readiness-advisor.zip) | Run a go/no-go assessment for retiring a product or feature, then right-size the effort. Use when someone says "we should probably kill this" and nobody has made the call. |
 | [`epic-breakdown-advisor`](epic-breakdown-advisor.zip) | Break down epics into user stories with Humanizing Work split patterns. Use when a backlog item is too large to estimate, sequence, or deliver safely. |
@@ -74,12 +76,13 @@ _Guided, multi-turn advisors that ask then recommend._
 | [`prioritization-advisor`](prioritization-advisor.zip) | Choose a prioritization framework based on stage, team context, and stakeholder needs. Use when deciding between RICE, ICE, value/effort, or another scoring approach. |
 | [`problem-framing-canvas`](problem-framing-canvas.zip) | Guide teams through MITRE's Problem Framing Canvas. Use when you need a clearer problem statement before jumping to solutions. |
 | [`stakeholder-engagement-advisor`](stakeholder-engagement-advisor.zip) | Plan engagement for a specific stakeholder. Use when preparing an outreach, navigating resistance, or aligning a critical relationship before a key milestone. |
+| [`survey-design-advisor`](survey-design-advisor.zip) | Decide whether a survey is the right tool, then shape it. Use when you're about to send a survey and want to learn something real instead of collecting biased, unusable answers. |
 | [`tam-sam-som-calculator`](tam-sam-som-calculator.zip) | Calculate TAM, SAM, and SOM with explicit assumptions, methods, and caveats. Use when sizing a market for a product idea, business case, or executive review. |
 | [`user-story-mapping-workshop`](user-story-mapping-workshop.zip) | Run a user story mapping workshop with adaptive questions and a structured map output. Use when you need backbone activities, tasks, and release slices for a workflow. |
 | [`vp-cpo-readiness-advisor`](vp-cpo-readiness-advisor.zip) | Guide the transition to VP or CPO across preparing, interviewing, landing, and recalibrating. Use when executive product scope is changing fast. |
 | [`workshop-facilitation`](workshop-facilitation.zip) | Facilitate workshop sessions in a one-step, multi-turn flow. Use when an interactive skill needs consistent pacing, options, and progress tracking. |
 
-## Workflow Skills (22)
+## Workflow Skills (24)
 
 _End-to-end processes that orchestrate other skills._
 
@@ -103,9 +106,11 @@ _End-to-end processes that orchestrate other skills._
 | [`prd-development`](prd-development.zip) | Build a structured PRD that connects problem, users, solution, and success criteria. Use when turning discovery notes into an engineering-ready document for a major initiative. |
 | [`pricing-packaging-tracker`](pricing-packaging-tracker.zip) | Track competitor pricing and packaging as a diffable time series. Use when monitoring tiers, gates, limits, and price moves on a monthly or quarterly cadence. |
 | [`product-strategy-session`](product-strategy-session.zip) | Run an end-to-end product strategy session across positioning, discovery, and roadmap planning. Use when a team needs validated direction before committing to execution. |
+| [`research-synthesis`](research-synthesis.zip) | Turn raw interview notes and feedback into themes, insights, and opportunity statements. Use when you have a pile of research and need to know what it says before deciding anything. |
 | [`roadmap-planning`](roadmap-planning.zip) | Plan a strategic roadmap across prioritization, epic definition, stakeholder alignment, and sequencing. Use when turning strategy into a release plan that teams can execute. |
 | [`skill-authoring-workflow`](skill-authoring-workflow.zip) | Turn raw PM content into a compliant, publish-ready skill. Use when creating or updating a repo skill without breaking standards. |
 | [`swot-analysis`](swot-analysis.zip) | Build an evidence-cited SWOT of one company — yours or a competitor's — from public sources, ending with the S-O/W-T crossings. Use for strategy reviews, board prep, or competitor depth. |
+| [`usage-data-investigation`](usage-data-investigation.zip) | Investigate what customers actually do from product analytics, with every claim labeled Fact, Inference, or Assumption. Use when you need behavior evidence, not opinions, before deciding. |
 | [`voice-of-customer-miner`](voice-of-customer-miner.zip) | Mine public reviews, app stores, and forums for unmet needs, competitor weaknesses, and switching triggers — with quoted evidence. Use when you want customer voice without waiting on interviews. |
 
 ## Browse by lifecycle bundle
@@ -165,6 +170,17 @@ Find and frame the real problem.
 - [`problem-statement`](problem-statement.zip): Write a user-centered problem statement with who is blocked, what they are trying to do, why it matters, and how it feels. Use when framing discovery, prioritization, or a PRD.
 - [`customer-journey-map`](customer-journey-map.zip): Create a customer journey map across stages, touchpoints, actions, emotions, and metrics. Use when diagnosing a broken experience or aligning a team on the full customer flow.
 - [`customer-journey-mapping-workshop`](customer-journey-mapping-workshop.zip): Run a customer journey mapping workshop with adaptive questions and outputs. Use when you need to map stages, actions, emotions, pain points, and opportunities for a persona and scenario.
+
+**Dig**: Collect evidence: surveys, usage data, a steady customer-contact habit
+
+- [`survey-design-advisor`](survey-design-advisor.zip): Decide whether a survey is the right tool, then shape it. Use when you're about to send a survey and want to learn something real instead of collecting biased, unusable answers.
+- [`usage-data-investigation`](usage-data-investigation.zip): Investigate what customers actually do from product analytics, with every claim labeled Fact, Inference, or Assumption. Use when you need behavior evidence, not opinions, before deciding.
+- [`discovery-habits-advisor`](discovery-habits-advisor.zip): Set up a steady rhythm of customer contact that feeds decisions. Use when discovery happens in bursts, or never, and you want a habit the team will actually keep.
+
+**Decode**: Make sense of it: synthesis and assumption mapping
+
+- [`research-synthesis`](research-synthesis.zip): Turn raw interview notes and feedback into themes, insights, and opportunity statements. Use when you have a pile of research and need to know what it says before deciding anything.
+- [`assumption-mapping`](assumption-mapping.zip): List the assumptions behind an idea and rank them by importance and evidence. Use when a plan feels solid and you need to find the beliefs it rests on before you commit.
 
 ### Define (Discover + Define)
 

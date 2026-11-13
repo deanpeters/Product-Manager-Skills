@@ -1,6 +1,6 @@
 {
   "name": "pm-discover",
-  "description": "Find and frame the real problem. 7 skills (Drill-down); shared helper skills included.",
+  "description": "Find and frame the real problem. 12 skills (Drill-down, Dig, Decode); shared helper skills included.",
   "version": "0.85",
   "author": {
     "name": "Dean Peters"
@@ -12,6 +12,8 @@
     "product-management",
     "pm",
     "discover",
-    "drill-down"
+    "drill-down",
+    "dig",
+    "decode"
   ]
 }

@@ -5,7 +5,7 @@
     "email": "dean.peters@productside.com"
   },
   "metadata": {
-    "description": "83 battle-tested product management skills for Claude Code \u2014 discovery, strategy, finance, career, lifecycle, and more.",
+    "description": "88 battle-tested product management skills for Claude Code \u2014 discovery, strategy, finance, career, lifecycle, and more.",
     "version": "0.85.0"
   },
   "plugins": [
@@ -39,13 +39,15 @@
     {
       "name": "pm-discover",
       "source": "./plugins/pm-discover",
-      "description": "Find and frame the real problem. 7 skills (Drill-down); shared helper skills included.",
+      "description": "Find and frame the real problem. 12 skills (Drill-down, Dig, Decode); shared helper skills included.",
       "category": "lifecycle-bundle",
       "tags": [
         "pm",
         "bundle",
         "discover",
-        "drill-down"
+        "drill-down",
+        "dig",
+        "decode"
       ]
     },
     {
@@ -869,6 +871,66 @@
         "go-to-market",
         "workflow",
         "enablement"
+      ],
+      "strict": false
+    },
+    {
+      "name": "research-synthesis",
+      "source": "./skills/research-synthesis",
+      "description": "Turn raw interview notes and feedback into themes, insights, and opportunity statements.",
+      "category": "discovery",
+      "tags": [
+        "pm",
+        "discovery",
+        "workflow"
+      ],
+      "strict": false
+    },
+    {
+      "name": "assumption-mapping",
+      "source": "./skills/assumption-mapping",
+      "description": "List the assumptions behind an idea and rank them by importance and evidence.",
+      "category": "discovery",
+      "tags": [
+        "pm",
+        "discovery",
+        "component"
+      ],
+      "strict": false
+    },
+    {
+      "name": "usage-data-investigation",
+      "source": "./skills/usage-data-investigation",
+      "description": "Read product usage data honestly: funnel, cohorts, segments, with Fact/Inference/Assumption labels.",
+      "category": "discovery",
+      "tags": [
+        "pm",
+        "discovery",
+        "workflow"
+      ],
+      "strict": false
+    },
+    {
+      "name": "survey-design-advisor",
+      "source": "./skills/survey-design-advisor",
+      "description": "Decide whether a survey is the right tool, then design one that avoids bias.",
+      "category": "discovery",
+      "tags": [
+        "pm",
+        "discovery",
+        "interactive"
+      ],
+      "strict": false
+    },
+    {
+      "name": "discovery-habits-advisor",
+      "source": "./skills/discovery-habits-advisor",
+      "description": "Set up a steady rhythm of customer contact that feeds decisions.",
+      "category": "discovery",
+      "tags": [
+        "pm",
+        "discovery",
+        "interactive"
       ],
       "strict": false
     },

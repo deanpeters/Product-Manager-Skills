@@ -1,5 +1,5 @@
 generated_from: skills/*/SKILL.md
-count: 83
+count: 88
 skills:
 - name: acquisition-channel-advisor
   description: Evaluate acquisition channels using unit economics, customer quality,
@@ -62,6 +62,18 @@ skills:
     with candidate moves backed by documented signals, risk ratings that respect the
     matrix''s risk gradient, and a recommended sequence with the assumption that breaks
     it.'
+- name: assumption-mapping
+  description: List the assumptions behind an idea and rank them by importance and
+    evidence. Use when a plan feels solid and you need to find the beliefs it rests
+    on before you commit.
+  type: component
+  path: skills/assumption-mapping/SKILL.md
+  bundle: discover
+  motion: decode
+  intent: Surface the assumptions hiding inside an idea, a plan, or a business case,
+    sort them into desirable, usable, viable, feasible, and ethical risk types, and
+    place each on an importance by evidence map so the team tests the few that can
+    sink the idea first. Output is a ranked list that feeds the de-risking skills.
 - name: autonomous-investigation
   description: 'The protocol behind every investigation skill. Use when AI research
     must proceed without you: search-plan gate, Fact/Inference/Assumption labels,
@@ -247,6 +259,19 @@ skills:
     \ transition using adaptive questions and targeted coaching. Diagnoses where you\
     \ are in the journey and delivers practical, war-story-backed guidance calibrated\
     \ to your situation \u2014 not generic leadership advice."
+- name: discovery-habits-advisor
+  description: Set up a steady rhythm of customer contact that feeds decisions. Use
+    when discovery happens in bursts, or never, and you want a habit the team will
+    actually keep.
+  type: interactive
+  path: skills/discovery-habits-advisor/SKILL.md
+  bundle: discover
+  motion: dig
+  intent: Guided triage from how a team talks to customers today to a sustainable
+    cadence. Diagnoses the real blocker (access, time, ownership, or what happens
+    to the evidence), fits a weekly or fortnightly touchpoint rhythm to the team and
+    customer reach, and defines who joins, how evidence is captured, and how it reaches
+    a decision. Right-sized so a small team starts with one habit.
 - name: discovery-interview-prep
   description: Plan customer discovery interviews with the right goal, segment, constraints,
     and method. Use when preparing interviews for problem validation, churn research,
@@ -842,6 +867,20 @@ skills:
     \ defensible recommendation for stakeholders and decision-makers\u2014especially\
     \ when proposing AI-powered features or products that carry higher uncertainty\
     \ and risk."
+- name: research-synthesis
+  description: Turn raw interview notes and feedback into themes, insights, and opportunity
+    statements. Use when you have a pile of research and need to know what it says
+    before deciding anything.
+  type: workflow
+  path: skills/research-synthesis/SKILL.md
+  bundle: discover
+  motion: decode
+  intent: Take research that is still raw (interview notes, call transcripts, tickets,
+    survey comments) and walk it through coding, affinity grouping, insight writing,
+    and opportunity framing, with every insight traced to the notes behind it and
+    every claim sized by how many people said it. Ends with opportunity statements
+    ready for an opportunity solution tree, and a list of what the research does not
+    show.
 - name: roadmap-planning
   description: Plan a strategic roadmap across prioritization, epic definition, stakeholder
     alignment, and sequencing. Use when turning strategy into a release plan that
@@ -954,6 +993,19 @@ skills:
     illustrate value, and make abstract product concepts concrete. Use this to align
     stakeholders, pitch features, communicate vision, or test if your solution resonates
     emotionally before building it.
+- name: survey-design-advisor
+  description: Decide whether a survey is the right tool, then shape it. Use when
+    you're about to send a survey and want to learn something real instead of collecting
+    biased, unusable answers.
+  type: interactive
+  path: skills/survey-design-advisor/SKILL.md
+  bundle: discover
+  motion: dig
+  intent: Guided triage from a research question to a survey decision. Checks whether
+    a survey is the right method at all, then fits the question types, sample, length,
+    and bias controls to what you need to learn, and flags the leading questions and
+    sampling traps that make survey data look more certain than it is. Recommends
+    a design, or recommends interviews or usage data instead.
 - name: swot-analysis
   description: "Build an evidence-cited SWOT of one company \u2014 yours or a competitor's\
     \ \u2014 from public sources, ending with the S-O/W-T crossings. Use for strategy\
@@ -980,6 +1032,19 @@ skills:
     \ this to build defensible market size estimates backed by real-world citations,\
     \ economic projections, and population data\u2014essential for pitching to investors,\
     \ securing budget, or validating product-market fit."
+- name: usage-data-investigation
+  description: Investigate what customers actually do from product analytics, with
+    every claim labeled Fact, Inference, or Assumption. Use when you need behavior
+    evidence, not opinions, before deciding.
+  type: workflow
+  path: skills/usage-data-investigation/SKILL.md
+  bundle: discover
+  motion: dig
+  intent: 'Turn a question about customer behavior into a disciplined read of product
+    usage data: define the question and the unit of analysis, check the data''s trustworthiness,
+    look at funnels, cohorts, and segments, separate what the data shows from what
+    you conclude, and name the follow-up that qualitative research must answer. Quantitative
+    discovery that points to the "why" without claiming it.'
 - name: user-story
   description: Create user stories with Mike Cohn format and Gherkin acceptance criteria.
     Use when turning user needs into development-ready work with clear outcomes and
