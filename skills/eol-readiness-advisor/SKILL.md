@@ -450,7 +450,7 @@ simply saying "Level 2" when you start; there's no handoff format to preserve.
 - [`eol-message`](../eol-message/SKILL.md) — the customer-facing announcement
 - [`incoming-request-advisor`](../incoming-request-advisor/SKILL.md) — when the EOL request arrived
   as a message you need to decode first
-- [`stakeholder-map`](../stakeholder-map/SKILL.md) — general stakeholder mapping
+- [`stakeholder-mapping`](../stakeholder-mapping/SKILL.md) — general stakeholder mapping
 - [`business-health-diagnostic`](../business-health-diagnostic/SKILL.md) — when the trigger is
   financial and you want the numbers examined properly
 - [`workshop-facilitation`](../workshop-facilitation/SKILL.md) — the interaction protocol

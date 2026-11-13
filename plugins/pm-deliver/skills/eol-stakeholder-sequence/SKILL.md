@@ -276,7 +276,7 @@ to it.
   after these conversations
 - [`eol-readiness-advisor`](../eol-readiness-advisor/SKILL.md) — if the decision still needs a case
 - [`eol-message`](../eol-message/SKILL.md) — the customer-facing announcement
-- [`stakeholder-map`](https://github.com/deanpeters/Product-Manager-Skills/blob/main/skills/stakeholder-map/SKILL.md) — general power/interest mapping for non-EOL work
+- [`stakeholder-mapping`](https://github.com/deanpeters/Product-Manager-Skills/blob/main/skills/stakeholder-mapping/SKILL.md) — general power/interest mapping for non-EOL work
 
 ### External Frameworks
 - Mendelow's Matrix — power/interest prioritization, useful for choosing depth per stop

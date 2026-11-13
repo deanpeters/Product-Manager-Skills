@@ -558,13 +558,13 @@ Mini example excerpt:
 ## References
 
 ### Related Skills
-- **[problem-statement](skills/problem-statement/SKILL.md)** (Component) — Frame problem before filling Box 1
-- **[problem-framing-canvas](skills/problem-framing-canvas/SKILL.md)** (Interactive) — MITRE Problem Framing before canvas
-- **[proto-persona](skills/proto-persona/SKILL.md)** (Component) — Create personas for Box 3
-- **[jobs-to-be-done](skills/jobs-to-be-done/SKILL.md)** (Component) — Identify user benefits for Box 4
-- **[epic-hypothesis](skills/epic-hypothesis/SKILL.md)** (Component) — Write testable hypotheses (Box 6)
-- **[discovery-interview-prep](skills/discovery-interview-prep/SKILL.md)** (Interactive) — Design customer interviews for Box 8
-- **[pol-probe-advisor](skills/pol-probe-advisor/SKILL.md)** (Interactive) — Choose experiment type for Box 8
+- **[problem-statement](https://github.com/deanpeters/Product-Manager-Skills/blob/main/skills/problem-statement/SKILL.md)** (Component) — Frame problem before filling Box 1
+- **[problem-framing-canvas](https://github.com/deanpeters/Product-Manager-Skills/blob/main/skills/problem-framing-canvas/SKILL.md)** (Interactive) — MITRE Problem Framing before canvas
+- **[proto-persona](https://github.com/deanpeters/Product-Manager-Skills/blob/main/skills/proto-persona/SKILL.md)** (Component) — Create personas for Box 3
+- **[jobs-to-be-done](https://github.com/deanpeters/Product-Manager-Skills/blob/main/skills/jobs-to-be-done/SKILL.md)** (Component) — Identify user benefits for Box 4
+- **[epic-hypothesis](../epic-hypothesis/SKILL.md)** (Component) — Write testable hypotheses (Box 6)
+- **[discovery-interview-prep](https://github.com/deanpeters/Product-Manager-Skills/blob/main/skills/discovery-interview-prep/SKILL.md)** (Interactive) — Design customer interviews for Box 8
+- **[pol-probe-advisor](../pol-probe-advisor/SKILL.md)** (Interactive) — Choose experiment type for Box 8
 
 ### External Frameworks
 - **Jeff Gothelf** — *Lean UX: Designing Great Products with Agile Teams* (O'Reilly, 2013; 2nd ed. 2016)
