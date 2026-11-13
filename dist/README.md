@@ -53,9 +53,12 @@ Every skill has its own ZIP right here in this folder. Browse them in
 ## How to install (Claude Desktop / Web)
 
 1. Download a bundle (or an individual skill ZIP).
-2. If it's a bundle, unzip it to reveal the individual skill ZIPs.
-3. In Claude, open **Skills** and upload the skill ZIP(s).
-4. Start asking better product questions.
+2. If it's a bundle, unzip it. Inside is a folder of smaller skill ZIPs.
+   **Don't upload the outer bundle ZIP to Claude.** Upload the skill ZIPs inside it.
+3. In Claude, open **Settings → Capabilities → Skills** and upload one or more skill ZIPs.
+4. Start a chat and paste: `Which of these skills fits what's on my desk this week?`
+   You'll know it worked when Claude names a skill and starts asking you questions.
+   Arriving empty-handed is fine; the skills ask for what they need.
 
 Full step-by-step guides live in [`../docs/`](../docs): `INSTALL-CLAUDE-DESKTOP.md`,
 `INSTALL-CLAUDE-CODE.md`, and `INSTALL-CODEX.md`.

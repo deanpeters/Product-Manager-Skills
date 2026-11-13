@@ -2,7 +2,7 @@
 
 This page helps you pick the easiest setup path for your comfort level.
 
-Part of the v0.65 onboarding update: clearer install/integration paths for PM teams.
+Clear install and integration paths for PM teams, whatever tools you use.
 
 If you are non-technical, start here first:
 - [`Using PM Skills 101.md`](Using%20PM%20Skills%20101.md)

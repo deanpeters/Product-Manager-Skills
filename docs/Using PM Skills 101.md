@@ -1,7 +1,7 @@
 # Using PM Skills 101
 
 **Repository:** [deanpeters/Product-Manager-Skills](https://github.com/deanpeters/Product-Manager-Skills)
-**Skills available:** 47 | **Version:** 0.65 | **Works with:** Claude, Codex, ChatGPT, Cowork, n8n, LangFlow, Lovable, OpenClaw, Cursor, Windsurf, Bolt, Replit, Make.com, Devin, CrewAI, Gemini
+**Skills available:** 95 | **Works with:** Claude, Codex, ChatGPT, Cowork, n8n, LangFlow, Lovable, OpenClaw, Cursor, Windsurf, Bolt, Replit, Make.com, Devin, CrewAI, Gemini
 
 ---
 
@@ -32,17 +32,17 @@ Instead of saying *"Write a PRD"* and hoping for the best, the agent already kno
 
 Skills are organized into three tiers that build on each other.
 
-### 🧱 Component Skills (21) — Templates & Artifacts
+### 🧱 Component Skills (36) — Templates & Artifacts
 **When to use:** You need a standard template for a specific deliverable.
 **Time:** 10–30 minutes
 **Example:** "Write a user story" → `user-story` skill
 
-### 🔄 Interactive Skills (20) — Guided Discovery
+### 🔄 Interactive Skills (34) — Guided Discovery
 **When to use:** You need help deciding which approach to take before executing.
 **Time:** 30–90 minutes
 **Example:** "Which prioritization framework should I use?" → `prioritization-advisor` skill asks 3–5 questions about your context, then recommends RICE, ICE, Kano, or others.
 
-### 🎭 Workflow Skills (6) — End-to-End Processes
+### 🎭 Workflow Skills (25) — End-to-End Processes
 **When to use:** You need to run a full PM workflow from start to finish.
 **Time:** Days to weeks
 **Example:** "Align stakeholders on product strategy" → `product-strategy-session` skill guides you through positioning → problem framing → solution exploration → roadmap.

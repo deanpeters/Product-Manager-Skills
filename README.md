@@ -2,6 +2,22 @@
 
 # Product Manager Skills
 
+**Ready-made PM skills for your AI assistant.** A *skill* is a short instruction file that teaches an AI how to do one PM job the way a pro would, such as writing a PRD or mapping stakeholders, so you stop re-explaining your process every time.
+
+## Try it in five minutes
+
+1. Download the [starter pack](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/pm-skills-starter-pack.zip) and unzip it.
+2. In Claude, open **Settings → Capabilities → Skills** and upload one skill ZIP from inside the folder. Using Claude Code, Codex or something else? Jump to [Get Started](#get-started).
+3. Start a chat and paste this, swapping in your own details:
+
+```text
+Which of these skills fits what's on my desk this week? Here's the situation: [one or two sentences].
+```
+
+You should see Claude name the skill it is using and start asking you questions. Arriving empty-handed is fine: the skills ask for what they need.
+
+---
+
 [![GitHub stars](https://img.shields.io/github/stars/deanpeters/Product-Manager-Skills?style=flat-square)](https://github.com/deanpeters/Product-Manager-Skills/stargazers) [![GitHub forks](https://img.shields.io/github/forks/deanpeters/Product-Manager-Skills?style=flat-square)](https://github.com/deanpeters/Product-Manager-Skills/forks) [![GitHub watchers](https://img.shields.io/github/watchers/deanpeters/Product-Manager-Skills?style=flat-square)](https://github.com/deanpeters/Product-Manager-Skills/watchers) [![Contributors](https://img.shields.io/github/contributors/deanpeters/Product-Manager-Skills?style=flat-square)](https://github.com/deanpeters/Product-Manager-Skills/graphs/contributors) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](CONTRIBUTING.md)
 
 [![Version](https://img.shields.io/badge/version-v0.85-blue?style=flat-square)](https://github.com/deanpeters/Product-Manager-Skills/releases/latest) ![Skills](https://img.shields.io/badge/skills-95-informational?style=flat-square) [![Last commit](https://img.shields.io/github/last-commit/deanpeters/Product-Manager-Skills?style=flat-square)](https://github.com/deanpeters/Product-Manager-Skills/commits/main) [![Claude Code Plugin](https://img.shields.io/badge/Claude%20Code-Plugin%20Marketplace-5C4EE5?style=flat-square)](https://code.claude.com/docs/en/plugin-marketplaces)
@@ -27,6 +43,7 @@
 
 ---
 
+
 ## Why This Exists
 
 Generic AI output is a PM's worst enemy. When you tell your agent "write a PRD" without shared context, you get a generic document that no stakeholder trusts and no engineer can act on.
@@ -35,67 +52,6 @@ This library gives both you and your AI agent the same professional foundation: 
 
 **The goal is dual — functional and pedagogic in equal measure.** Skills equip agents to do PM work at a professional level, and they teach the human PM the reasoning behind each framework — so you can explain it, adapt it, and pass it on. Neither is a byproduct of the other.
 
----
-
-## What You Can Get Done
-
-Navigate by what you're actually trying to accomplish:
-
-**Framing and strategy**
-- [problem-framing-canvas](skills/problem-framing-canvas/SKILL.md) — MITRE's Look Inward / Look Outward / Reframe sequence; stops teams from solving the wrong problem
-- [positioning-statement](skills/positioning-statement/SKILL.md) — Geoffrey Moore's template for defining who you serve, what you solve, and how you're different
-- [product-strategy-session](skills/product-strategy-session/SKILL.md) — full strategy arc: positioning → problem framing → solution exploration → roadmap (2-4 weeks)
-
-**Stakeholder alignment**
-- [stakeholder-identification](skills/stakeholder-identification/SKILL.md) — map every stakeholder before engaging anyone: broad brainstorm → allies/audiences/influencers → R/P/D marking → equity lens → narrow to priority targets
-- [stakeholder-mapping](skills/stakeholder-mapping/SKILL.md) — run two complementary grids (Power × Interest for engagement strategy; Impact × Power for whose voice to elevate) and compare to find the gaps
-- [stakeholder-engagement-advisor](skills/stakeholder-engagement-advisor/SKILL.md) — per-stakeholder engagement planning: diagnoses their profile and context, then delivers tailored message framing, medium, cadence, and a named next action
-
-**Customer discovery and research**
-- [discovery-interview-prep](skills/discovery-interview-prep/SKILL.md) — plans Mom Test-style interviews based on your research goals
-- [opportunity-solution-tree](skills/opportunity-solution-tree/SKILL.md) — generates opportunities and solutions, then recommends the best proof-of-concept to test first
-- [discovery-process](skills/discovery-process/SKILL.md) — complete discovery cycle: frame → research → synthesize → validate (3-4 weeks)
-
-**Prioritization and roadmapping**
-- [prioritization-advisor](skills/prioritization-advisor/SKILL.md) — asks 3-5 questions about your context, then recommends RICE, ICE, Kano, or the right alternative
-- [epic-breakdown-advisor](skills/epic-breakdown-advisor/SKILL.md) — splits large epics using Richard Lawrence's 9 patterns
-- [roadmap-planning](skills/roadmap-planning/SKILL.md) — gather inputs → define epics → prioritize → sequence → communicate (1-2 weeks)
-
-**Writing PM deliverables**
-- [user-story](skills/user-story/SKILL.md) — Mike Cohn format + Gherkin acceptance criteria, with anti-patterns
-- [prd-development](skills/prd-development/SKILL.md) — structured PRD: problem → personas → solution → metrics → stories (2-4 days)
-- [press-release](skills/press-release/SKILL.md) — Amazon Working Backwards: clarify product vision before writing a line of spec
-
-**Validation and experimentation**
-- [pol-probe-advisor](skills/pol-probe-advisor/SKILL.md) — recommends which prototype type to run based on your hypothesis and risk level
-- [pol-probe](skills/pol-probe/SKILL.md) — template for documenting lightweight validation experiments before building
-
-**Finance and growth**
-- [business-health-diagnostic](skills/business-health-diagnostic/SKILL.md) — diagnoses SaaS health across growth, retention, efficiency, and capital using your real metrics
-- [organic-growth-advisor](skills/organic-growth-advisor/SKILL.md) — McKinsey Growth Pyramid triage: diagnoses whether your constraint is in new segments, geographies, channels, or products
-- [feature-investment-advisor](skills/feature-investment-advisor/SKILL.md) — build / don't build recommendation using revenue impact, cost, ROI, and strategic value
-
-**Market and competitive intelligence**
-- [intel-discipline-advisor](skills/intel-discipline-advisor/SKILL.md) — start here: triages the question on your desk into the right intelligence disciplines, cadence, and executing skill
-- [competitive-analysis-process](skills/competitive-analysis-process/SKILL.md) — the six-step umbrella: landscape → product comparison → customer needs → business baseline → positioning → strategic direction
-- The investigation chain: [market-landscape-scan](skills/market-landscape-scan/SKILL.md) → [competitive-research-snapshot](skills/competitive-research-snapshot/SKILL.md) → [competitive-intel-watch](skills/competitive-intel-watch/SKILL.md) → [battle-card-builder](skills/battle-card-builder/SKILL.md) — each consumes the prior's schema, so research becomes a cadence instead of a one-off deck
-- [tam-sam-som-calculator](skills/tam-sam-som-calculator/SKILL.md) — market sizing three ways: your own numbers, guided interview, or autonomous bottom-up research a skeptical CFO can attack one assumption at a time
-
-**Aging products: extend, replace, or retire**
-- [lifecycle-play-advisor](skills/lifecycle-play-advisor/SKILL.md) — start here when a product stops growing: seven transition questions establish the stage, then it picks the play — extend, replace, or retire — and tells you when the honest answer is "nothing yet"
-- [product-lifecycle-plays](skills/product-lifecycle-plays/SKILL.md) — the framework behind that call: the PLC strategy grid, the seven replacement hazards, and a risk register whose last column asks *what is Plan B?*
-- [eol-process](skills/eol-process/SKILL.md) — the whole sunset in six phases, decide → align → plan → prepare → announce → close, including the post-EOL review everyone skips
-- The EOL chain: [eol-readiness-advisor](skills/eol-readiness-advisor/SKILL.md) → [eol-stakeholder-sequence](skills/eol-stakeholder-sequence/SKILL.md) → [eol-checklist](skills/eol-checklist/SKILL.md) → [eol-internal-enablement](skills/eol-internal-enablement/SKILL.md) → [eol-message](skills/eol-message/SKILL.md) — every one runs standalone, sized Light/Standard/Heavy by you
-
-**Career and leadership transitions**
-- [director-readiness-advisor](skills/director-readiness-advisor/SKILL.md) — coaches PMs through the PM→Director shift across four situations: preparing, interviewing, newly landed, recalibrating
-- [vp-cpo-readiness-advisor](skills/vp-cpo-readiness-advisor/SKILL.md) — coaches Directors through VP/CPO transition, including a CEO interview framework for evaluating roles before you accept
-- [executive-onboarding-playbook](skills/executive-onboarding-playbook/SKILL.md) — 30-60-90 day diagnostic playbook for VP/CPO transitions
-
-**AI product work**
-- [ai-shaped-readiness-advisor](skills/ai-shaped-readiness-advisor/SKILL.md) — assesses whether you're automating tasks (AI-first) or redesigning how you work (AI-shaped), then tells you which competency to build first
-- [context-engineering-advisor](skills/context-engineering-advisor/SKILL.md) — diagnoses context stuffing vs. context engineering and guides memory architecture for AI-powered products
-- [agent-orchestration-advisor](skills/agent-orchestration-advisor/SKILL.md) — guides multi-agent workflow design across four dimensions
 
 ---
 
@@ -185,6 +141,7 @@ The older themed packs (`02-discovery` through `07-lifecycle-eol`) are still on 
 
 ---
 
+
 ## Try It First — Streamlit (beta)
 
 Not ready to wire skills into your agent setup? Run the local playground first and kick the tires in your browser.
@@ -204,6 +161,69 @@ Multi-provider support: Anthropic, OpenAI, Ollama. API keys via environment vari
 Docs: [`app/STREAMLIT_INTERFACE.md`](app/STREAMLIT_INTERFACE.md) · [`app/.env.example`](app/.env.example)
 
 Feedback welcome via [GitHub Issues](https://github.com/deanpeters/Product-Manager-Skills/issues) or [LinkedIn](https://linkedin.com/in/deanpeters).
+
+---
+
+## What You Can Get Done
+
+Navigate by what you're actually trying to accomplish:
+
+**Framing and strategy**
+- [problem-framing-canvas](skills/problem-framing-canvas/SKILL.md) — MITRE's Look Inward / Look Outward / Reframe sequence; stops teams from solving the wrong problem
+- [positioning-statement](skills/positioning-statement/SKILL.md) — Geoffrey Moore's template for defining who you serve, what you solve, and how you're different
+- [product-strategy-session](skills/product-strategy-session/SKILL.md) — full strategy arc: positioning → problem framing → solution exploration → roadmap (2-4 weeks)
+
+**Stakeholder alignment**
+- [stakeholder-identification](skills/stakeholder-identification/SKILL.md) — map every stakeholder before engaging anyone: broad brainstorm → allies/audiences/influencers → R/P/D marking → equity lens → narrow to priority targets
+- [stakeholder-mapping](skills/stakeholder-mapping/SKILL.md) — run two complementary grids (Power × Interest for engagement strategy; Impact × Power for whose voice to elevate) and compare to find the gaps
+- [stakeholder-engagement-advisor](skills/stakeholder-engagement-advisor/SKILL.md) — per-stakeholder engagement planning: diagnoses their profile and context, then delivers tailored message framing, medium, cadence, and a named next action
+
+**Customer discovery and research**
+- [discovery-interview-prep](skills/discovery-interview-prep/SKILL.md) — plans Mom Test-style interviews based on your research goals
+- [opportunity-solution-tree](skills/opportunity-solution-tree/SKILL.md) — generates opportunities and solutions, then recommends the best proof-of-concept to test first
+- [discovery-process](skills/discovery-process/SKILL.md) — complete discovery cycle: frame → research → synthesize → validate (3-4 weeks)
+
+**Prioritization and roadmapping**
+- [prioritization-advisor](skills/prioritization-advisor/SKILL.md) — asks 3-5 questions about your context, then recommends RICE, ICE, Kano, or the right alternative
+- [epic-breakdown-advisor](skills/epic-breakdown-advisor/SKILL.md) — splits large epics using Richard Lawrence's 9 patterns
+- [roadmap-planning](skills/roadmap-planning/SKILL.md) — gather inputs → define epics → prioritize → sequence → communicate (1-2 weeks)
+
+**Writing PM deliverables**
+- [user-story](skills/user-story/SKILL.md) — Mike Cohn format + Gherkin acceptance criteria, with anti-patterns
+- [prd-development](skills/prd-development/SKILL.md) — structured PRD: problem → personas → solution → metrics → stories (2-4 days)
+- [press-release](skills/press-release/SKILL.md) — Amazon Working Backwards: clarify product vision before writing a line of spec
+
+**Validation and experimentation**
+- [pol-probe-advisor](skills/pol-probe-advisor/SKILL.md) — recommends which prototype type to run based on your hypothesis and risk level
+- [pol-probe](skills/pol-probe/SKILL.md) — template for documenting lightweight validation experiments before building
+
+**Finance and growth**
+- [business-health-diagnostic](skills/business-health-diagnostic/SKILL.md) — diagnoses SaaS health across growth, retention, efficiency, and capital using your real metrics
+- [organic-growth-advisor](skills/organic-growth-advisor/SKILL.md) — McKinsey Growth Pyramid triage: diagnoses whether your constraint is in new segments, geographies, channels, or products
+- [feature-investment-advisor](skills/feature-investment-advisor/SKILL.md) — build / don't build recommendation using revenue impact, cost, ROI, and strategic value
+
+**Market and competitive intelligence**
+- [intel-discipline-advisor](skills/intel-discipline-advisor/SKILL.md) — start here: triages the question on your desk into the right intelligence disciplines, cadence, and executing skill
+- [competitive-analysis-process](skills/competitive-analysis-process/SKILL.md) — the six-step umbrella: landscape → product comparison → customer needs → business baseline → positioning → strategic direction
+- The investigation chain: [market-landscape-scan](skills/market-landscape-scan/SKILL.md) → [competitive-research-snapshot](skills/competitive-research-snapshot/SKILL.md) → [competitive-intel-watch](skills/competitive-intel-watch/SKILL.md) → [battle-card-builder](skills/battle-card-builder/SKILL.md) — each consumes the prior's schema, so research becomes a cadence instead of a one-off deck
+- [tam-sam-som-calculator](skills/tam-sam-som-calculator/SKILL.md) — market sizing three ways: your own numbers, guided interview, or autonomous bottom-up research a skeptical CFO can attack one assumption at a time
+
+**Aging products: extend, replace, or retire**
+- [lifecycle-play-advisor](skills/lifecycle-play-advisor/SKILL.md) — start here when a product stops growing: seven transition questions establish the stage, then it picks the play — extend, replace, or retire — and tells you when the honest answer is "nothing yet"
+- [product-lifecycle-plays](skills/product-lifecycle-plays/SKILL.md) — the framework behind that call: the PLC strategy grid, the seven replacement hazards, and a risk register whose last column asks *what is Plan B?*
+- [eol-process](skills/eol-process/SKILL.md) — the whole sunset in six phases, decide → align → plan → prepare → announce → close, including the post-EOL review everyone skips
+- The EOL chain: [eol-readiness-advisor](skills/eol-readiness-advisor/SKILL.md) → [eol-stakeholder-sequence](skills/eol-stakeholder-sequence/SKILL.md) → [eol-checklist](skills/eol-checklist/SKILL.md) → [eol-internal-enablement](skills/eol-internal-enablement/SKILL.md) → [eol-message](skills/eol-message/SKILL.md) — every one runs standalone, sized Light/Standard/Heavy by you
+
+**Career and leadership transitions**
+- [director-readiness-advisor](skills/director-readiness-advisor/SKILL.md) — coaches PMs through the PM→Director shift across four situations: preparing, interviewing, newly landed, recalibrating
+- [vp-cpo-readiness-advisor](skills/vp-cpo-readiness-advisor/SKILL.md) — coaches Directors through VP/CPO transition, including a CEO interview framework for evaluating roles before you accept
+- [executive-onboarding-playbook](skills/executive-onboarding-playbook/SKILL.md) — 30-60-90 day diagnostic playbook for VP/CPO transitions
+
+**AI product work**
+- [ai-shaped-readiness-advisor](skills/ai-shaped-readiness-advisor/SKILL.md) — assesses whether you're automating tasks (AI-first) or redesigning how you work (AI-shaped), then tells you which competency to build first
+- [context-engineering-advisor](skills/context-engineering-advisor/SKILL.md) — diagnoses context stuffing vs. context engineering and guides memory architecture for AI-powered products
+- [agent-orchestration-advisor](skills/agent-orchestration-advisor/SKILL.md) — guides multi-agent workflow design across four dimensions
+
 
 ---
 

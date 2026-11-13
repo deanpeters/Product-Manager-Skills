@@ -2,21 +2,22 @@
 
 Claude Desktop and Claude Web are the easiest path for nontechnical PMs: download one pack, unzip it, upload the skill ZIPs inside, and start working.
 
-## Quick Setup
+## Quick Setup (about 5 minutes)
 
 1. Open the [Product Manager Skills Releases page](https://github.com/deanpeters/Product-Manager-Skills/releases/latest).
 2. Download [`pm-skills-starter-pack.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/pm-skills-starter-pack.zip), or choose the pack for your lifecycle phase from the table below. The six `pm-` packs follow the product lifecycle (Determine, Discover, Define, Develop, Deliver), and Drive runs underneath all of them.
-3. Unzip the pack on your computer.
-4. Open Claude.
-5. Go to `Settings -> Capabilities -> Skills`.
-6. Upload the individual skill ZIPs inside the pack.
-7. Start a new chat and ask Claude to use the Product Manager Skills.
+3. Unzip the pack on your computer. You now have a folder of smaller ZIP files, one per skill.
+4. Open Claude and go to **Settings → Capabilities → Skills**.
+5. Upload the individual skill ZIPs from inside that folder. Start with two or three; you can add more later.
+6. Start a new chat and ask Claude to use the Product Manager Skills.
 
 Try:
 
 ```text
 Use the Product Manager Skills to help me frame this product problem.
 ```
+
+**You'll know it worked when** the skills appear in your Skills list and Claude names the skill it is using, then starts asking you questions. If the list stays empty, see the first note below.
 
 ## Which Pack Should I Choose?
 
@@ -41,7 +42,8 @@ Use the Product Manager Skills. Ask me the minimum useful questions, then help m
 
 - Start with the starter pack unless you know you need a specific pack. Each lifecycle pack also includes a few shared helper skills, so it works on its own.
 - The older themed packs (`02-discovery` through `07-lifecycle-eol`) remain on the [download shelf](../dist/) for one more release, then retire.
-- Do not upload the outer pack ZIP to Claude. Unzip the pack first, then upload the skill ZIPs inside it.
+- Do not upload the outer pack ZIP to Claude. Unzip the pack first, then upload the skill ZIPs inside it. If Claude rejects an upload or the Skills list stays empty, this is the usual cause.
+- Arriving empty-handed is fine. The skills ask for what they need, so you can start with a one-line description of your situation.
 - Use one practical problem from your work. These skills are strongest with real context.
 - Claude Code users should usually use the plugin marketplace instead of these ZIPs. See [`INSTALL-CLAUDE-CODE.md`](INSTALL-CLAUDE-CODE.md).
-- Codex users should use the Codex ZIP or clone the repo. See [`INSTALL-CODEX.md`](INSTALL-CODEX.md).
+- Codex users should use the Codex ZIP or download the full library from GitHub (green **Code** button, then **Download ZIP**). See [`INSTALL-CODEX.md`](INSTALL-CODEX.md).
