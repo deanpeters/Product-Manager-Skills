@@ -137,6 +137,9 @@ Take it to market, measure it, and retire it well.
 Launch planning and messaging
 
 - `launch-plan` - Build a launch plan sized by tier: owners, dates, go/no-go criteria, and a readiness scorecard. Use when a launch needs every function ready at once and nobody has defined 'ready'.
+- `message-house` - Build a message house: one roof message, three value pillars, sourced proof, a foundation, and role and channel variants. Use when Marketing, Sales, and partners each tell a different story.
+- `sales-value-narrative` - Build a sales value narrative: why change, why now, why us, value by buying-group role, objections, and a do-not-say list. Use when Sales or partners must explain value with claims they can defend.
+- `buying-journey-enablement` - Map how a buying group buys, then assign the enablement asset for each stage and role, for direct sales and partners. Use when Sales has a pile of assets and customers still stall.
 
 ### Dollars
 

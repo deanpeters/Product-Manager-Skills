@@ -145,7 +145,7 @@ This block is generated from `pm-skills.config.yaml`. Don't edit it here; run
 
 **Deliver** (Deliver): Take it to market, measure it, and retire it well.
 
-- **Debut** (Launch planning and messaging): [`launch-plan`](https://github.com/deanpeters/Product-Manager-Skills/blob/main/skills/launch-plan/SKILL.md)
+- **Debut** (Launch planning and messaging): [`launch-plan`](https://github.com/deanpeters/Product-Manager-Skills/blob/main/skills/launch-plan/SKILL.md), [`message-house`](https://github.com/deanpeters/Product-Manager-Skills/blob/main/skills/message-house/SKILL.md), [`sales-value-narrative`](https://github.com/deanpeters/Product-Manager-Skills/blob/main/skills/sales-value-narrative/SKILL.md), [`buying-journey-enablement`](https://github.com/deanpeters/Product-Manager-Skills/blob/main/skills/buying-journey-enablement/SKILL.md)
 - **Dollars** (Pricing and packaging): [`finance-based-pricing-advisor`](https://github.com/deanpeters/Product-Manager-Skills/blob/main/skills/finance-based-pricing-advisor/SKILL.md), [`pricing-packaging-tracker`](https://github.com/deanpeters/Product-Manager-Skills/blob/main/skills/pricing-packaging-tracker/SKILL.md)
 - **Demand** (Channels and acquisition): [`acquisition-channel-advisor`](https://github.com/deanpeters/Product-Manager-Skills/blob/main/skills/acquisition-channel-advisor/SKILL.md)
 - **Dashboard** (Measure outcomes after launch): [`launch-metrics`](https://github.com/deanpeters/Product-Manager-Skills/blob/main/skills/launch-metrics/SKILL.md)

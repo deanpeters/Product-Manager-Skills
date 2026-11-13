@@ -1,10 +1,10 @@
 # Skill Catalog
 
-All **80 skills** in this library. Each links to its individual download ZIP in this folder — click, download, unzip, and upload the `SKILL.md` to Claude. No terminal required.
+All **83 skills** in this library. Each links to its individual download ZIP in this folder — click, download, unzip, and upload the `SKILL.md` to Claude. No terminal required.
 
 > New here? Read [`README.md`](README.md) first — it explains how to pick a pack and install.
 
-## Component Skills (29)
+## Component Skills (31)
 
 _Self-contained artifacts and templates._
 
@@ -22,6 +22,7 @@ _Self-contained artifacts and templates._
 | [`intelligence-collection-disciplines`](intelligence-collection-disciplines.zip) | Run competitive research like an intelligence agency: eight collection disciplines (OSINT to MASINT), signal-to-inference chains, and fusion. Use when one-source research isn't enough. |
 | [`jobs-to-be-done`](jobs-to-be-done.zip) | Uncover customer jobs, pains, and gains in a structured JTBD format. Use when clarifying unmet needs, repositioning a product, or improving discovery and messaging. |
 | [`launch-metrics`](launch-metrics.zip) | Define launch success metrics, decision triggers, and 30/90/180-day reviews before launch. Use when you need to know early whether a launch is working and what you will do if it isn't. |
+| [`message-house`](message-house.zip) | Build a message house: one roof message, three value pillars, sourced proof, a foundation, and role and channel variants. Use when Marketing, Sales, and partners each tell a different story. |
 | [`pestel-analysis`](pestel-analysis.zip) | Analyze political, economic, social, technological, environmental, and legal forces. Use when external market shifts could materially affect a product, roadmap, or strategy. |
 | [`pol-probe`](pol-probe.zip) | Define a Proof of Life probe to test a risky hypothesis cheaply. Use when you need harsh truth before building real product. |
 | [`positioning-statement`](positioning-statement.zip) | Create a Geoffrey Moore-style positioning statement. Use when clarifying who you serve, what problem you solve, your category, and why you're different from alternatives. |
@@ -33,6 +34,7 @@ _Self-contained artifacts and templates._
 | [`recommendation-canvas`](recommendation-canvas.zip) | Evaluate an AI product idea across outcomes, hypotheses, risks, and positioning. Use when deciding whether an AI solution deserves investment or recommendation. |
 | [`saas-economics-efficiency-metrics`](saas-economics-efficiency-metrics.zip) | Evaluate SaaS unit economics and capital efficiency. Use when deciding whether the business can scale efficiently or needs correction. |
 | [`saas-revenue-growth-metrics`](saas-revenue-growth-metrics.zip) | Calculate SaaS revenue, retention, and growth metrics. Use when diagnosing momentum, churn, expansion, or product-market-fit signals. |
+| [`sales-value-narrative`](sales-value-narrative.zip) | Build a sales value narrative: why change, why now, why us, value by buying-group role, objections, and a do-not-say list. Use when Sales or partners must explain value with claims they can defend. |
 | [`stakeholder-identification`](stakeholder-identification.zip) | Map every stakeholder before engaging anyone. Use when launching an initiative, scoping discovery, or building an engagement plan from scratch. |
 | [`stakeholder-mapping`](stakeholder-mapping.zip) | Prioritize stakeholders using two complementary grids. Use when setting engagement strategy and surfacing whose voice needs elevating after stakeholder identification. |
 | [`storyboard`](storyboard.zip) | Create a six-frame storyboard that shows a user's journey from problem to solution. Use when you need a fast narrative for alignment, concept reviews, or demos. |
@@ -77,7 +79,7 @@ _Guided, multi-turn advisors that ask then recommend._
 | [`vp-cpo-readiness-advisor`](vp-cpo-readiness-advisor.zip) | Guide the transition to VP or CPO across preparing, interviewing, landing, and recalibrating. Use when executive product scope is changing fast. |
 | [`workshop-facilitation`](workshop-facilitation.zip) | Facilitate workshop sessions in a one-step, multi-turn flow. Use when an interactive skill needs consistent pacing, options, and progress tracking. |
 
-## Workflow Skills (21)
+## Workflow Skills (22)
 
 _End-to-end processes that orchestrate other skills._
 
@@ -86,6 +88,7 @@ _End-to-end processes that orchestrate other skills._
 | [`ansoff-matrix`](ansoff-matrix.zip) | Map evidence-backed growth options across the Ansoff Matrix with risk-rated sequencing. Use when the question is where the next tranche of growth comes from, and at what risk. |
 | [`autonomous-investigation`](autonomous-investigation.zip) | The protocol behind every investigation skill. Use when AI research must proceed without you: search-plan gate, Fact/Inference/Assumption labels, confidence stacking, diffable outputs. |
 | [`battle-card-builder`](battle-card-builder.zip) | Research and draft a competitive battle card from public evidence — every claim labeled and sourced. Use when a rep needs a field-action card, not a research report. |
+| [`buying-journey-enablement`](buying-journey-enablement.zip) | Map how a buying group buys, then assign the enablement asset for each stage and role, for direct sales and partners. Use when Sales has a pile of assets and customers still stall. |
 | [`company-intel`](company-intel.zip) | Research a company, industry, or competitor set using web search and seven analytical lenses. Use when you need structured intel that feeds downstream PM skills. |
 | [`competitive-analysis-process`](competitive-analysis-process.zip) | Orchestrate a complete competitive analysis across six steps, from landscape to strategic direction. Use when you need the full picture, not a single scan or card. |
 | [`competitive-intel-watch`](competitive-intel-watch.zip) | Scheduled delta monitoring against a prior competitive snapshot. Use when tracking competitors on a cadence: material shifts only, cited evidence, battle-card update flags, runs unattended. |
@@ -218,6 +221,9 @@ Take it to market, measure it, and retire it well.
 **Debut**: Launch planning and messaging
 
 - [`launch-plan`](launch-plan.zip): Build a launch plan sized by tier: owners, dates, go/no-go criteria, and a readiness scorecard. Use when a launch needs every function ready at once and nobody has defined 'ready'.
+- [`message-house`](message-house.zip): Build a message house: one roof message, three value pillars, sourced proof, a foundation, and role and channel variants. Use when Marketing, Sales, and partners each tell a different story.
+- [`sales-value-narrative`](sales-value-narrative.zip): Build a sales value narrative: why change, why now, why us, value by buying-group role, objections, and a do-not-say list. Use when Sales or partners must explain value with claims they can defend.
+- [`buying-journey-enablement`](buying-journey-enablement.zip): Map how a buying group buys, then assign the enablement asset for each stage and role, for direct sales and partners. Use when Sales has a pile of assets and customers still stall.
 
 **Dollars**: Pricing and packaging
 

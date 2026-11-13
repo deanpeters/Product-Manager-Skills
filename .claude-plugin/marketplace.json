@@ -5,7 +5,7 @@
     "email": "dean.peters@productside.com"
   },
   "metadata": {
-    "description": "80 battle-tested product management skills for Claude Code \u2014 discovery, strategy, finance, career, lifecycle, and more.",
+    "description": "83 battle-tested product management skills for Claude Code \u2014 discovery, strategy, finance, career, lifecycle, and more.",
     "version": "0.84.0"
   },
   "plugins": [
@@ -79,7 +79,7 @@
     {
       "name": "pm-deliver",
       "source": "./plugins/pm-deliver",
-      "description": "Take it to market, measure it, and retire it well. 13 skills (Debut, Dollars, Demand, Dashboard, Decommission); shared helper skills included.",
+      "description": "Take it to market, measure it, and retire it well. 16 skills (Debut, Dollars, Demand, Dashboard, Decommission); shared helper skills included.",
       "category": "lifecycle-bundle",
       "tags": [
         "pm",
@@ -827,6 +827,48 @@
         "launch",
         "metrics",
         "component"
+      ],
+      "strict": false
+    },
+    {
+      "name": "message-house",
+      "source": "./skills/message-house",
+      "description": "Build a message house: one roof message, value pillars, sourced proof, and role and channel variants.",
+      "category": "strategy",
+      "tags": [
+        "pm",
+        "launch",
+        "go-to-market",
+        "component",
+        "messaging"
+      ],
+      "strict": false
+    },
+    {
+      "name": "sales-value-narrative",
+      "source": "./skills/sales-value-narrative",
+      "description": "Build a sales story: why change, why now, why us, value by role, objections, do-not-say.",
+      "category": "strategy",
+      "tags": [
+        "pm",
+        "launch",
+        "go-to-market",
+        "component",
+        "sales"
+      ],
+      "strict": false
+    },
+    {
+      "name": "buying-journey-enablement",
+      "source": "./skills/buying-journey-enablement",
+      "description": "Map how buyers buy and assign the enablement asset for each stage, role, and channel.",
+      "category": "strategy",
+      "tags": [
+        "pm",
+        "launch",
+        "go-to-market",
+        "workflow",
+        "enablement"
       ],
       "strict": false
     },

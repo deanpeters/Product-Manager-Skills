@@ -95,8 +95,7 @@ bundles:
     motions:
       debut:
         summary: "Launch planning and messaging"
-        skills: [launch-plan]
-        # still to build: message house, sales narrative, buying journey
+        skills: [launch-plan, message-house, sales-value-narrative, buying-journey-enablement]
       dollars:
         summary: "Pricing and packaging"
         skills: [finance-based-pricing-advisor, pricing-packaging-tracker]

@@ -19,6 +19,9 @@ Generated from `pm-skills.config.yaml`. Do not edit here: change the skill in [`
 Launch planning and messaging
 
 - [`launch-plan`](skills/launch-plan/SKILL.md)
+- [`message-house`](skills/message-house/SKILL.md)
+- [`sales-value-narrative`](skills/sales-value-narrative/SKILL.md)
+- [`buying-journey-enablement`](skills/buying-journey-enablement/SKILL.md)
 
 ### Dollars
 

@@ -145,7 +145,7 @@ This block is generated from `pm-skills.config.yaml`. Don't edit it here; run
 
 **Deliver** (Deliver): Take it to market, measure it, and retire it well.
 
-- **Debut** (Launch planning and messaging): [`launch-plan`](../launch-plan/SKILL.md)
+- **Debut** (Launch planning and messaging): [`launch-plan`](../launch-plan/SKILL.md), [`message-house`](../message-house/SKILL.md), [`sales-value-narrative`](../sales-value-narrative/SKILL.md), [`buying-journey-enablement`](../buying-journey-enablement/SKILL.md)
 - **Dollars** (Pricing and packaging): [`finance-based-pricing-advisor`](../finance-based-pricing-advisor/SKILL.md), [`pricing-packaging-tracker`](../pricing-packaging-tracker/SKILL.md)
 - **Demand** (Channels and acquisition): [`acquisition-channel-advisor`](../acquisition-channel-advisor/SKILL.md)
 - **Dashboard** (Measure outcomes after launch): [`launch-metrics`](../launch-metrics/SKILL.md)

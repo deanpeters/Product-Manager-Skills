@@ -1,5 +1,5 @@
 generated_from: skills/*/SKILL.md
-count: 80
+count: 83
 skills:
 - name: acquisition-channel-advisor
   description: Evaluate acquisition channels using unit economics, customer quality,
@@ -98,6 +98,18 @@ skills:
     economics, and capital efficiency metrics together. Use this to identify problems
     early, prioritize actions by urgency, and deliver a comprehensive health scorecard
     for board meetings, quarterly reviews, or fundraising preparation.
+- name: buying-journey-enablement
+  description: Map how a buying group buys, then assign the enablement asset for each
+    stage and role, for direct sales and partners. Use when Sales has a pile of assets
+    and customers still stall.
+  type: workflow
+  path: skills/buying-journey-enablement/SKILL.md
+  bundle: deliver
+  motion: debut
+  intent: 'Enable the buying, not only the selling: map the buying jobs a group must
+    complete, what each role needs at each stage, and the one asset that meets it,
+    then set what partners need, how they are trained and certified, and how field
+    feedback keeps the toolkit current. Fewer, better assets.'
 - name: company-intel
   description: Research a company, industry, or competitor set using web search and
     seven analytical lenses. Use when you need structured intel that feeds downstream
@@ -529,6 +541,18 @@ skills:
     \ are, and whether apparent whitespace is opportunity or dead zone \u2014 with\
     \ labeled evidence, so sizing and positioning start from structure instead of\
     \ vibes."
+- name: message-house
+  description: 'Build a message house: one roof message, three value pillars, sourced
+    proof, a foundation, and role and channel variants. Use when Marketing, Sales,
+    and partners each tell a different story.'
+  type: component
+  path: skills/message-house/SKILL.md
+  bundle: deliver
+  motion: debut
+  intent: Give everyone who speaks about the offering one consistent, customer-tested
+    value story built on real customer pains and gains and backed by proof, so the
+    market hears value instead of a feature list. Turns a positioning statement into
+    words customers will read, without inventing proof.
 - name: opportunity-solution-tree
   description: Build an Opportunity Solution Tree from outcomes to opportunities,
     solutions, and tests. Use when a stakeholder request needs problem framing before
@@ -854,6 +878,18 @@ skills:
     evaluate product-market fit, and make data-driven decisions about growth investments.
     Use this to calculate key metrics, interpret trends, identify problems early,
     and communicate business health to stakeholders.
+- name: sales-value-narrative
+  description: 'Build a sales value narrative: why change, why now, why us, value
+    by buying-group role, objections, and a do-not-say list. Use when Sales or partners
+    must explain value with claims they can defend.'
+  type: component
+  path: skills/sales-value-narrative/SKILL.md
+  bundle: deliver
+  motion: debut
+  intent: Give Sales and partners a short story the customer can retell inside their
+    own company, from the cost of staying put to a better outcome, with proof for
+    every claim and a prepared answer for the objections reps actually hear. Hands
+    the one-page competitive card to battle-card-builder.
 - name: skill-authoring-workflow
   description: Turn raw PM content into a compliant, publish-ready skill. Use when
     creating or updating a repo skill without breaking standards.
