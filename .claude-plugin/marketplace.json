@@ -22,6 +22,90 @@
       "strict": false
     },
     {
+      "name": "pm-determine",
+      "source": "./plugins/pm-determine",
+      "description": "Set outcomes and read the terrain: strategy, finance, market, customers. 24 skills (Direct, Diagnose, Detect, Describe); shared helper skills included.",
+      "category": "lifecycle-bundle",
+      "tags": [
+        "pm",
+        "bundle",
+        "determine",
+        "direct",
+        "diagnose",
+        "detect",
+        "describe"
+      ]
+    },
+    {
+      "name": "pm-discover",
+      "source": "./plugins/pm-discover",
+      "description": "Find and frame the real problem. 7 skills (Drill-down); shared helper skills included.",
+      "category": "lifecycle-bundle",
+      "tags": [
+        "pm",
+        "bundle",
+        "discover",
+        "drill-down"
+      ]
+    },
+    {
+      "name": "pm-define",
+      "source": "./plugins/pm-define",
+      "description": "Shape a solution worth building and test the bet. 9 skills (De-risk, Differentiate); shared helper skills included.",
+      "category": "lifecycle-bundle",
+      "tags": [
+        "pm",
+        "bundle",
+        "define",
+        "de-risk",
+        "differentiate"
+      ]
+    },
+    {
+      "name": "pm-develop",
+      "source": "./plugins/pm-develop",
+      "description": "Turn the chosen solution into buildable work. 13 skills (Document, Draft, Decide, Delegate); shared helper skills included.",
+      "category": "lifecycle-bundle",
+      "tags": [
+        "pm",
+        "bundle",
+        "develop",
+        "document",
+        "draft",
+        "decide",
+        "delegate"
+      ]
+    },
+    {
+      "name": "pm-deliver",
+      "source": "./plugins/pm-deliver",
+      "description": "Take it to market, measure it, and retire it well. 11 skills (Debut, Dollars, Demand, Dashboard, Decommission); shared helper skills included.",
+      "category": "lifecycle-bundle",
+      "tags": [
+        "pm",
+        "bundle",
+        "deliver",
+        "debut",
+        "dollars",
+        "demand",
+        "dashboard",
+        "decommission"
+      ]
+    },
+    {
+      "name": "pm-drive",
+      "source": "./plugins/pm-drive",
+      "description": "Drive your career and your stakeholders. 9 skills (Diplomacy, Demystify); shared helper skills included.",
+      "category": "lifecycle-bundle",
+      "tags": [
+        "pm",
+        "bundle",
+        "drive",
+        "diplomacy",
+        "demystify"
+      ]
+    },
+    {
       "name": "acquisition-channel-advisor",
       "source": "./skills/acquisition-channel-advisor",
       "description": "Evaluate acquisition channels using unit economics, customer quality, and scalability.",

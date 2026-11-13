@@ -4,7 +4,8 @@
 Checks:
 - every skills/<name>/ directory has an entry in .claude-plugin/marketplace.json
 - every marketplace.json entry points at a skill directory that exists (no ghosts)
-  (bundle entries with source "./" install the whole repo and are exempt)
+  (bundle entries with source "./" install the whole repo and are exempt;
+  lifecycle-bundle entries must point at a generated plugins/<name>/ folder)
 - every skills/<name>/SKILL.md link mentioned in README.md and CLAUDE.md resolves
 
 Why this exists: v0.81 shipped two fixes for exactly these failures — a skill
@@ -48,7 +49,17 @@ def check_marketplace(skills: set[str]) -> list[str]:
     plugins = marketplace.get("plugins", [])
     # Bundle entries (source "./") install the whole repo, not one skill dir.
     bundles = [p for p in plugins if p.get("source") in ("./", ".")]
-    listed = {p["name"] for p in plugins if p not in bundles}
+    # Lifecycle-bundle entries point at generated plugins/<name>/ folders
+    # (scripts/build-plugins.py); each must exist and carry a plugin manifest.
+    lifecycle = [p for p in plugins if p.get("category") == "lifecycle-bundle"]
+    for entry in lifecycle:
+        src = entry.get("source", "")
+        if not os.path.isfile(os.path.join(src, ".claude-plugin", "plugin.json")):
+            issues.append(
+                f"marketplace_bundle_broken: lifecycle bundle '{entry['name']}' has no "
+                f"plugin at {src} (run python3 scripts/build-plugins.py)"
+            )
+    listed = {p["name"] for p in plugins if p not in bundles and p not in lifecycle}
     for bundle in bundles:
         if not os.path.isdir("skills"):
             issues.append(

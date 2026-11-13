@@ -65,6 +65,7 @@ main() {
     python3 "$SCRIPT_DIR/check-library-drift.py"
     python3 "$SCRIPT_DIR/apply-entry-mode.py" --check
     python3 "$SCRIPT_DIR/check-bundles.py"
+    python3 "$SCRIPT_DIR/build-plugins.py" --check
 
     if $RUN_SMOKE; then
         echo "[5/7] Running skill smoke tests"

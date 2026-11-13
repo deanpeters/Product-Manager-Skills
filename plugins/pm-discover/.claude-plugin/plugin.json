@@ -1,0 +1,17 @@
+{
+  "name": "pm-discover",
+  "description": "Find and frame the real problem. 7 skills (Drill-down); shared helper skills included.",
+  "version": "0.84",
+  "author": {
+    "name": "Dean Peters"
+  },
+  "homepage": "https://github.com/deanpeters/Product-Manager-Skills",
+  "repository": "https://github.com/deanpeters/Product-Manager-Skills",
+  "license": "CC-BY-NC-SA-4.0",
+  "keywords": [
+    "product-management",
+    "pm",
+    "discover",
+    "drill-down"
+  ]
+}

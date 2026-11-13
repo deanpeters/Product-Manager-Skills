@@ -1,0 +1,201 @@
+---
+name: skill-authoring-workflow
+argument-hint: "[source content or skill to update]"
+description: Turn raw PM content into a compliant, publish-ready skill. Use when creating or updating a repo skill without breaking standards.
+intent: >-
+  Create or update PM skills without chaos. This workflow turns rough notes, workshop content, or half-baked prompt dumps into compliant `skills/<skill-name>/SKILL.md` assets that actually pass validation and belong in this repo.
+type: workflow
+best_for:
+  - "Creating a new repo skill from notes or source material"
+  - "Updating an existing skill while keeping standards intact"
+  - "Running the full authoring and validation workflow before commit"
+scenarios:
+  - "Help me turn these workshop notes into a new PM skill"
+  - "I need to update an existing skill without breaking the repo standards"
+  - "What workflow should I use to author a new skill in this repo?"
+theme: meta-authoring
+estimated_time: "45-90 min"
+---
+
+## Purpose
+
+Create or update PM skills without chaos. This workflow turns rough notes, workshop content, or half-baked prompt dumps into compliant `skills/<skill-name>/SKILL.md` assets that actually pass validation and belong in this repo.
+
+Use it when you want to ship a new skill without "looks good to me" roulette.
+
+## Input
+
+Bring the raw material and the intent — rough is fine; the workflow exists to get it the rest of the way:
+- **Works best with:** the source content (notes, transcript, framework, prompt sequence) or the existing skill you want to update
+- **Also useful:** the intended skill type (component/interactive/workflow), target audience, and any naming preference
+
+If you supply this inline with your request (e.g., "turn `research/pricing-workshop-notes.md` into an interactive advisor"), the workflow starts at Phase 1 with that context — it won't re-ask for what you already gave. If you provide nothing, it opens by asking what content you want to turn into a skill and offers the entry modes from the facilitation protocol.
+
+Example: `Use skill-authoring-workflow: convert research/pricing-workshop-notes.md into an interactive pricing advisor.`
+
+## Key Concepts
+
+### Dogfood First
+
+Use repo-native tools and standards before inventing a custom process:
+- `scripts/find-a-skill.sh`
+- `scripts/add-a-skill.sh`
+- `scripts/build-a-skill.sh`
+- `scripts/test-a-skill.sh`
+- `scripts/check-skill-metadata.py`
+
+### Pick the Right Creation Path
+
+- **Guided wizard (`build-a-skill.sh`)**: Best when you have an idea but not final prose.
+- **Content-first generator (`add-a-skill.sh`)**: Best when you already have source content.
+- **Manual edit + validate**: Best for tightening an existing skill.
+
+### Definition of Done (No Exceptions)
+
+A skill is done only when:
+1. Frontmatter is valid (`name`, `description`, `intent`, `type`)
+2. Section order is compliant (Purpose, Input, Key Concepts, Application, Examples, Common Pitfalls, References)
+3. Metadata limits are respected (`name` <= 64 chars, `description` <= 200 chars)
+4. Description says both what the skill does and when to use it
+5. The Input section says what the user can bring, shows an example invocation, tells the agent to use inline input instead of re-asking, and makes clear that arriving with partial or zero input is fine — in plain language, never runtime template syntax like `$ARGUMENTS` (rationale: CONTRIBUTING.md, "Why We Don't Use `$ARGUMENTS`")
+6. Intent carries the fuller repo-facing summary without replacing the trigger-oriented description
+7. Cross-references resolve
+8. README catalog counts and tables are updated (if adding/removing skills)
+
+### Facilitation Source of Truth
+
+When running this workflow as a guided conversation, use [`workshop-facilitation`](../workshop-facilitation/SKILL.md) as the interaction protocol.
+
+**Default entry mode:** Guided · set in `pm-skills.config.yaml` (library-wide default or a per-skill override); the user's own choice in the session always wins. On the first turn, offer all three modes, then open in the default without waiting for a pick: Guided asks the first question, Context dump invites the paste, Best guess asks for a one-sentence minimum and drafts with every assumption labeled.
+
+It defines:
+- session heads-up + entry mode (Guided, Context dump, Best guess)
+- one-question turns with plain-language prompts
+- progress labels (for example, Context Qx/8 and Scoring Qx/5)
+- interruption handling and pause/resume behavior
+- numbered recommendations at decision points
+- quick-select numbered response options for regular questions (include `Other (specify)` when useful)
+
+This file defines the workflow sequence and domain-specific outputs. If there is a conflict, follow this file's workflow logic.
+
+## Application
+
+### Phase 1: Preflight (Avoid Duplicate Work)
+
+1. Search for overlapping skills:
+
+```bash
+./scripts/find-a-skill.sh --keyword "<topic>"
+```
+
+2. Decide type:
+- **Component**: one artifact/template
+- **Interactive**: 3-5 adaptive questions + numbered options
+- **Workflow**: multi-phase orchestration
+
+### Phase 2: Generate Draft
+
+If you have source material:
+
+```bash
+./scripts/add-a-skill.sh research/your-framework.md
+```
+
+If you want guided prompts:
+
+```bash
+./scripts/build-a-skill.sh
+```
+
+### Phase 3: Tighten the Skill
+
+Manually review for:
+- Clear "when to use" guidance
+- One concrete example — optimally two, from different business domains (one SaaS, one industrial/non-SaaS), so the framework visibly generalizes; reuse the repo's fictional universes (Fieldlight/Wrenchline for SaaS, Helix/Northfield/Corvid for industrial) and suffix the second file by domain (`sample-industrial.md`)
+- A `template.md` when the skill produces an artifact — the output schema as a copy/paste fill-in with quality checks
+- One explicit anti-pattern
+- No filler or vague consultant-speak
+- For interactive skills (or workflows run as guided conversations): the `workshop-facilitation` protocol paragraph plus the `**Default entry mode:**` line, copied from any advisor. `apply-entry-mode.py --check` fails without it (see `docs/guided-context-capture.md`)
+
+### Phase 4: Validate Hard
+
+Run strict checks before thinking about commit:
+
+```bash
+./scripts/test-a-skill.sh --skill <skill-name> --smoke
+python3 scripts/check-skill-metadata.py skills/<skill-name>/SKILL.md
+python3 scripts/check-skill-triggers.py skills/<skill-name>/SKILL.md --show-cases
+```
+
+### Phase 5: Integrate with Repo Docs
+
+If this is a new skill:
+1. Add it to the correct README category table
+2. Update skill totals and category counts
+3. Verify link paths resolve
+
+### Phase 6: Optional Packaging
+
+If targeting Claude custom skill upload:
+
+```bash
+./scripts/zip-a-skill.sh --skill <skill-name>
+# or zip one category:
+./scripts/zip-a-skill.sh --type component --output dist/skill-zips
+# or use a curated starter preset:
+./scripts/zip-a-skill.sh --preset core-pm --output dist/skill-zips
+```
+
+## Examples
+
+### Example: Turn Workshop Notes into a Skill
+
+Input: `research/pricing-workshop-notes.md`  
+Goal: new interactive advisor
+
+```bash
+./scripts/add-a-skill.sh research/pricing-workshop-notes.md
+./scripts/test-a-skill.sh --skill <new-skill-name> --smoke
+python3 scripts/check-skill-metadata.py skills/<new-skill-name>/SKILL.md
+```
+
+Expected result:
+- New skill folder exists
+- Skill passes structural and metadata checks
+- README catalog entry added/updated
+
+### Anti-Pattern Example
+
+"We wrote a cool skill, skipped validation, forgot README counts, and shipped anyway."
+
+Result:
+- Broken references
+- Inconsistent catalog numbers
+- Confusion for contributors and users
+
+## Common Pitfalls
+
+- Shipping vibes, not standards.
+- Choosing `workflow` when the task is really a component template.
+- Bloated descriptions that exceed upload limits.
+- Descriptions that say what the skill is but not when Claude should trigger it.
+- Descriptions that silently hit the 200-char limit and get cut off mid-thought.
+- Letting `intent` become a substitute for a weak trigger description.
+- Forgetting to update README counts after adding a skill.
+- Treating generated output as final without review.
+
+## References
+
+- `README.md`
+- `AGENTS.md`
+- `CLAUDE.md`
+- `docs/Building PM Skills.md`
+- `docs/Add-a-Skill Utility Guide.md`
+- Anthropic's [Complete Guide to Building Skills for Claude](https://resources.anthropic.com/hubfs/The-Complete-Guide-to-Building-Skill-for-Claude.pdf)
+- `scripts/add-a-skill.sh`
+- `scripts/build-a-skill.sh`
+- `scripts/find-a-skill.sh`
+- `scripts/test-a-skill.sh`
+- `scripts/check-skill-metadata.py`
+- `scripts/check-skill-triggers.py`
+- `scripts/zip-a-skill.sh`

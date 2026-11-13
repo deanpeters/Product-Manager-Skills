@@ -1,0 +1,18 @@
+{
+  "name": "pm-define",
+  "description": "Shape a solution worth building and test the bet. 9 skills (De-risk, Differentiate); shared helper skills included.",
+  "version": "0.84",
+  "author": {
+    "name": "Dean Peters"
+  },
+  "homepage": "https://github.com/deanpeters/Product-Manager-Skills",
+  "repository": "https://github.com/deanpeters/Product-Manager-Skills",
+  "license": "CC-BY-NC-SA-4.0",
+  "keywords": [
+    "product-management",
+    "pm",
+    "define",
+    "de-risk",
+    "differentiate"
+  ]
+}

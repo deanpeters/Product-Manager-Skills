@@ -1,0 +1,21 @@
+{
+  "name": "pm-deliver",
+  "description": "Take it to market, measure it, and retire it well. 11 skills (Debut, Dollars, Demand, Dashboard, Decommission); shared helper skills included.",
+  "version": "0.84",
+  "author": {
+    "name": "Dean Peters"
+  },
+  "homepage": "https://github.com/deanpeters/Product-Manager-Skills",
+  "repository": "https://github.com/deanpeters/Product-Manager-Skills",
+  "license": "CC-BY-NC-SA-4.0",
+  "keywords": [
+    "product-management",
+    "pm",
+    "deliver",
+    "debut",
+    "dollars",
+    "demand",
+    "dashboard",
+    "decommission"
+  ]
+}
