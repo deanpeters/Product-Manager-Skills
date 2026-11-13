@@ -5,7 +5,7 @@
     "email": "dean.peters@productside.com"
   },
   "metadata": {
-    "description": "91 battle-tested product management skills for Claude Code \u2014 discovery, strategy, finance, career, lifecycle, and more.",
+    "description": "93 battle-tested product management skills for Claude Code \u2014 discovery, strategy, finance, career, lifecycle, and more.",
     "version": "0.85.0"
   },
   "plugins": [
@@ -98,14 +98,15 @@
     {
       "name": "pm-drive",
       "source": "./plugins/pm-drive",
-      "description": "Drive your career and your stakeholders. 9 skills (Diplomacy, Demystify); shared helper skills included.",
+      "description": "Drive your career and your stakeholders. 11 skills (Diplomacy, Demystify, Delineate); shared helper skills included.",
       "category": "lifecycle-bundle",
       "tags": [
         "pm",
         "bundle",
         "drive",
         "diplomacy",
-        "demystify"
+        "demystify",
+        "delineate"
       ]
     },
     {
@@ -1314,6 +1315,32 @@
       "tags": [
         "pm",
         "delivery:release",
+        "component"
+      ],
+      "strict": false
+    },
+    {
+      "name": "decision-rights-matrix",
+      "source": "./skills/decision-rights-matrix",
+      "description": "Define who decides what for key product decisions, with one accountable person each.",
+      "category": "stakeholder",
+      "tags": [
+        "pm",
+        "decisions",
+        "raci",
+        "component"
+      ],
+      "strict": false
+    },
+    {
+      "name": "pm-role-charter",
+      "source": "./skills/pm-role-charter",
+      "description": "Write a one-page charter for a PM role",
+      "category": " outcome, decisions, interfaces, measures.",
+      "tags": [
+        "pm",
+        "stakeholder:role",
+        "charter",
         "component"
       ],
       "strict": false

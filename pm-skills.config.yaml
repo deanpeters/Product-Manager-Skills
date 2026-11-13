@@ -127,6 +127,9 @@ bundles:
       demystify:
         summary: "Career ladders, leadership transitions, interviews"
         skills: [altitude-horizon-framework, director-readiness-advisor, executive-onboarding-playbook, product-sense-interview-answer, vp-cpo-readiness-advisor]
+      delineate:
+        summary: "Draw the lines: decision rights and the PM role"
+        skills: [decision-rights-matrix, pm-role-charter]
 
 # Shared infrastructure the other skills lean on. Not a bundle; shipped with each plugin.
 core: [workshop-facilitation, pm-skills-navigator, autonomous-investigation, pm-skill-creator, skill-authoring-workflow]

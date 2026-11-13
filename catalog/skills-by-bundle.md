@@ -219,6 +219,13 @@ Career ladders, leadership transitions, interviews
 - `product-sense-interview-answer` - Structure a spoken PM product-sense answer with assumptions, segmentation, pain-point prioritization, and MVP tradeoffs. Use when practicing design, improve, or build-next interview questions.
 - `vp-cpo-readiness-advisor` - Guide the transition to VP or CPO across preparing, interviewing, landing, and recalibrating. Use when executive product scope is changing fast.
 
+### Delineate
+
+Draw the lines: decision rights and the PM role
+
+- `decision-rights-matrix` - Define who decides, who is consulted, and who is told for key product decisions, with one accountable person each. Use when decisions stall, get reopened, or go to whoever pushes hardest.
+- `pm-role-charter` - Write a one-page charter for a PM role: what it owns, decides, influences, and is measured on. Use when expectations clash, scope creeps, or a PM is held accountable for things they can't control.
+
 ## Core
 
 - `workshop-facilitation` - Facilitate workshop sessions in a one-step, multi-turn flow. Use when an interactive skill needs consistent pacing, options, and progress tracking.

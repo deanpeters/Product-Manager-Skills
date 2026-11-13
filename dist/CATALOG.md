@@ -1,10 +1,10 @@
 # Skill Catalog
 
-All **91 skills** in this library. Each links to its individual download ZIP in this folder — click, download, unzip, and upload the `SKILL.md` to Claude. No terminal required.
+All **93 skills** in this library. Each links to its individual download ZIP in this folder — click, download, unzip, and upload the `SKILL.md` to Claude. No terminal required.
 
 > New here? Read [`README.md`](README.md) first — it explains how to pick a pack and install.
 
-## Component Skills (33)
+## Component Skills (35)
 
 _Self-contained artifacts and templates._
 
@@ -14,6 +14,7 @@ _Self-contained artifacts and templates._
 | [`assumption-mapping`](assumption-mapping.zip) | List the assumptions behind an idea and rank them by importance and evidence. Use when a plan feels solid and you need to find the beliefs it rests on before you commit. |
 | [`company-research`](company-research.zip) | Create a company research brief with executive quotes, product strategy, and org context. Use when preparing for interviews, competitive analysis, partnerships, or market-entry work. |
 | [`customer-journey-map`](customer-journey-map.zip) | Create a customer journey map across stages, touchpoints, actions, emotions, and metrics. Use when diagnosing a broken experience or aligning a team on the full customer flow. |
+| [`decision-rights-matrix`](decision-rights-matrix.zip) | Define who decides, who is consulted, and who is told for key product decisions, with one accountable person each. Use when decisions stall, get reopened, or go to whoever pushes hardest. |
 | [`eol-checklist`](eol-checklist.zip) | Build a phase-gated EOL checklist sized to the sunset, with a named owner on every item. Use when the decision to retire is made and you need the operational plan. |
 | [`eol-internal-enablement`](eol-internal-enablement.zip) | Build the support FAQ, sales talking points, and objection handling teams need before an EOL announcement. Use when customer-facing teams must be ready before customers hear. |
 | [`eol-message`](eol-message.zip) | Write a right-sized EOL announcement — brief notice through full phased comms — with rationale, customer impact, and next steps. Use when retiring a product, feature, or plan. |
@@ -25,6 +26,7 @@ _Self-contained artifacts and templates._
 | [`launch-metrics`](launch-metrics.zip) | Define launch success metrics, decision triggers, and 30/90/180-day reviews before launch. Use when you need to know early whether a launch is working and what you will do if it isn't. |
 | [`message-house`](message-house.zip) | Build a message house: one roof message, three value pillars, sourced proof, a foundation, and role and channel variants. Use when Marketing, Sales, and partners each tell a different story. |
 | [`pestel-analysis`](pestel-analysis.zip) | Analyze political, economic, social, technological, environmental, and legal forces. Use when external market shifts could materially affect a product, roadmap, or strategy. |
+| [`pm-role-charter`](pm-role-charter.zip) | Write a one-page charter for a PM role: what it owns, decides, influences, and is measured on. Use when expectations clash, scope creeps, or a PM is held accountable for things they can't control. |
 | [`pol-probe`](pol-probe.zip) | Define a Proof of Life probe to test a risky hypothesis cheaply. Use when you need harsh truth before building real product. |
 | [`positioning-statement`](positioning-statement.zip) | Create a Geoffrey Moore-style positioning statement. Use when clarifying who you serve, what problem you solve, your category, and why you're different from alternatives. |
 | [`press-release`](press-release.zip) | Write an Amazon-style press release that defines customer value before building. Use when aligning stakeholders on a new product, feature, or strategic bet. |
@@ -292,6 +294,11 @@ Drive your career and your stakeholders.
 - [`executive-onboarding-playbook`](executive-onboarding-playbook.zip): Plan a VP or CPO 30-60-90 day diagnostic onboarding path. Use when entering a new executive product role and avoiding premature change.
 - [`product-sense-interview-answer`](product-sense-interview-answer.zip): Structure a spoken PM product-sense answer with assumptions, segmentation, pain-point prioritization, and MVP tradeoffs. Use when practicing design, improve, or build-next interview questions.
 - [`vp-cpo-readiness-advisor`](vp-cpo-readiness-advisor.zip): Guide the transition to VP or CPO across preparing, interviewing, landing, and recalibrating. Use when executive product scope is changing fast.
+
+**Delineate**: Draw the lines: decision rights and the PM role
+
+- [`decision-rights-matrix`](decision-rights-matrix.zip): Define who decides, who is consulted, and who is told for key product decisions, with one accountable person each. Use when decisions stall, get reopened, or go to whoever pushes hardest.
+- [`pm-role-charter`](pm-role-charter.zip): Write a one-page charter for a PM role: what it owns, decides, influences, and is measured on. Use when expectations clash, scope creeps, or a PM is held accountable for things they can't control.
 
 ### Core (ships with every bundle)
 

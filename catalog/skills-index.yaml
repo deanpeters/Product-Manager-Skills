@@ -1,5 +1,5 @@
 generated_from: skills/*/SKILL.md
-count: 91
+count: 93
 skills:
 - name: acquisition-channel-advisor
   description: Evaluate acquisition channels using unit economics, customer quality,
@@ -245,6 +245,20 @@ skills:
     \ end-to-end customer experience, identify pain points, and create a shared mental\
     \ model across teams\u2014avoiding surface-level feature lists and ensuring discovery\
     \ work focuses on real customer problems, not assumed solutions."
+- name: decision-rights-matrix
+  description: Define who decides, who is consulted, and who is told for key product
+    decisions, with one accountable person each. Use when decisions stall, get reopened,
+    or go to whoever pushes hardest.
+  type: component
+  path: skills/decision-rights-matrix/SKILL.md
+  bundle: drive
+  motion: delineate
+  intent: 'Make it explicit who decides what, using RACI for the work and DACI (or
+    a similar single-approver model) for decisions, for the handful of product decisions
+    that cause the most friction: pricing, roadmap, requirements, launch go/no-go,
+    and end of life. Adds the forums where decisions are made, the escalation path,
+    and a decision log. Right-sized so a small team gets a half-page and a matrix
+    organization gets the full set.'
 - name: derisk-measurement-advisor
   description: Identify what to measure, test, or track to de-risk a product or AI
     idea. Use when stress-testing an idea across internal (DUFV) and external (PESTEL)
@@ -645,6 +659,19 @@ skills:
     \ and reporting material movement only \u2014 regulation passed, thresholds crossed,\
     \ technology matured, assumptions broken. Macro factors move slowly; the value\
     \ is catching the two that moved, not re-debating the twenty that did not."
+- name: pm-role-charter
+  description: 'Write a one-page charter for a PM role: what it owns, decides, influences,
+    and is measured on. Use when expectations clash, scope creeps, or a PM is held
+    accountable for things they can''t control.'
+  type: component
+  path: skills/pm-role-charter/SKILL.md
+  bundle: drive
+  motion: delineate
+  intent: 'Make a PM role explicit enough to hold someone accountable and to defend:
+    the outcome the role is responsible for, the decisions it makes versus shares,
+    the interfaces with engineering, design, sales, and support, how success is judged,
+    and what the role is not. Sized so a new PM gets a half page and a senior or multi-product
+    role gets the full charter.'
 - name: pm-skill-creator
   description: Design a new PM skill through guided conversation. Use when you have
     raw content or an idea and want to shape it into a compliant skill.

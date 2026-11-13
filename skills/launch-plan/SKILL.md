@@ -364,6 +364,7 @@ response. Stories come from the people who will run the launch.
 - [`roadmap-planning`](../roadmap-planning/SKILL.md): upstream; sets which launches are coming and roughly when
 - [`launch-metrics`](../launch-metrics/SKILL.md): downstream; how the launch is judged after it happens, including whether the premortem's drivers showed up
 - [`stakeholder-mapping`](../stakeholder-mapping/SKILL.md): for owners who have not agreed their rows
+- [`decision-rights-matrix`](../decision-rights-matrix/SKILL.md): names the forum and the one approver for each gate
 - [`eol-process`](../eol-process/SKILL.md): the other end of the lifecycle; a launch that replaces a product usually needs a sunset plan beside it
 - [`workshop-facilitation`](../workshop-facilitation/SKILL.md): interaction protocol
 

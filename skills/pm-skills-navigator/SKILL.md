@@ -158,6 +158,7 @@ This block is generated from `pm-skills.config.yaml`. Don't edit it here; run
 
 - **Diplomacy** (Stakeholders, incoming requests, alignment): [`incoming-request-advisor`](../incoming-request-advisor/SKILL.md), [`stakeholder-engagement-advisor`](../stakeholder-engagement-advisor/SKILL.md), [`stakeholder-identification`](../stakeholder-identification/SKILL.md), [`stakeholder-mapping`](../stakeholder-mapping/SKILL.md)
 - **Demystify** (Career ladders, leadership transitions, interviews): [`altitude-horizon-framework`](../altitude-horizon-framework/SKILL.md), [`director-readiness-advisor`](../director-readiness-advisor/SKILL.md), [`executive-onboarding-playbook`](../executive-onboarding-playbook/SKILL.md), [`product-sense-interview-answer`](../product-sense-interview-answer/SKILL.md), [`vp-cpo-readiness-advisor`](../vp-cpo-readiness-advisor/SKILL.md)
+- **Delineate** (Draw the lines: decision rights and the PM role): [`decision-rights-matrix`](../decision-rights-matrix/SKILL.md), [`pm-role-charter`](../pm-role-charter/SKILL.md)
 
 **Core** (shared helpers that ship with every bundle): [`workshop-facilitation`](../workshop-facilitation/SKILL.md), [`pm-skills-navigator`](../pm-skills-navigator/SKILL.md), [`autonomous-investigation`](../autonomous-investigation/SKILL.md), [`pm-skill-creator`](../pm-skill-creator/SKILL.md), [`skill-authoring-workflow`](../skill-authoring-workflow/SKILL.md)
 <!-- BUNDLE-MAP:END -->

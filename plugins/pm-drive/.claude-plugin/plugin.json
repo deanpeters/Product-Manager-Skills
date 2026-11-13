@@ -1,6 +1,6 @@
 {
   "name": "pm-drive",
-  "description": "Drive your career and your stakeholders. 9 skills (Diplomacy, Demystify); shared helper skills included.",
+  "description": "Drive your career and your stakeholders. 11 skills (Diplomacy, Demystify, Delineate); shared helper skills included.",
   "version": "0.85",
   "author": {
     "name": "Dean Peters"
@@ -13,6 +13,7 @@
     "pm",
     "drive",
     "diplomacy",
-    "demystify"
+    "demystify",
+    "delineate"
   ]
 }
