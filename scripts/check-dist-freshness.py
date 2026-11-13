@@ -50,6 +50,14 @@ def declared_packs() -> set[str]:
     text = PACK_BUILDER.read_text()
     names = set(re.findall(r'pack_skills\s+"([^"]+\.zip)"', text))
     names |= set(re.findall(r'pack_all_skills\s+"([^"]+\.zip)"', text))
+    names = {n for n in names if "$" not in n}  # the bundle loop's template, not a real pack
+    # Lifecycle bundle packs are generated from the bundles: mapping in the config.
+    try:
+        import yaml
+        cfg = yaml.safe_load((ROOT / "pm-skills.config.yaml").read_text()) or {}
+        names |= {f"pm-{b}-pack.zip" for b in (cfg.get("bundles") or {})}
+    except ImportError:
+        pass
     return names
 
 

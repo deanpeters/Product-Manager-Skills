@@ -36,9 +36,13 @@ cp "$DIST"/skill-zips/*.zip "$DIST"/
 skill_zip_count="$(find "$DIST" -maxdepth 1 -type f -name '*.zip' | wc -l | tr -d ' ')"
 
 # Curated bundles + codex -> dist/packages/
-for p in pm-skills-starter-pack 02-discovery-pack 03-strategy-pack \
-         04-delivery-pack 05-ai-pm-pack 06-market-intel-pack \
-         07-lifecycle-eol-pack 99-all-skills-pack; do
+# Lifecycle bundle packs come from the bundles: mapping in pm-skills.config.yaml.
+bundle_packs=()
+while read -r b; do bundle_packs+=("pm-${b}-pack"); done \
+  < <(python3 "$SCRIPT_DIR/bundle-skills.py" --list)
+for p in pm-skills-starter-pack "${bundle_packs[@]}" \
+         02-discovery-pack 03-strategy-pack 04-delivery-pack 05-ai-pm-pack \
+         06-market-intel-pack 07-lifecycle-eol-pack 99-all-skills-pack; do
   cp "$DIST/claude-desktop/$p.zip" "$DIST/packages/"
 done
 cp "$DIST/codex/pm-skills-codex.zip" "$DIST/packages/"
@@ -104,6 +108,41 @@ for key, title, blurb in TYPES:
     lines.append("")
 open(os.path.join(dist, "CATALOG.md"), "w", encoding="utf-8").write("\n".join(lines))
 
+# ---- bundle + legacy rows (bundles come from pm-skills.config.yaml) ----
+cfg = yaml.safe_load(open(os.path.join(root, "pm-skills.config.yaml"), encoding="utf-8"))
+core = cfg.get("core") or []
+bundle_rows = ""
+for bname, b in cfg["bundles"].items():
+    n = sum(len(m.get("skills") or []) for m in b["motions"].values())
+    bundle_rows += (f"| [`pm-{bname}-pack.zip`](packages/pm-{bname}-pack.zip) | "
+                    f"**{bname.capitalize()}**: {b['summary']} {n} skills + shared helpers |\n")
+legacy_rows = """| Older pack | Best for |
+|---|---|
+| [`02-discovery-pack.zip`](packages/02-discovery-pack.zip) | Understanding customers, problems, and opportunities |
+| [`03-strategy-pack.zip`](packages/03-strategy-pack.zip) | Positioning, market thinking, product direction |
+| [`04-delivery-pack.zip`](packages/04-delivery-pack.zip) | Stories, epics, PRDs, roadmap execution |
+| [`05-ai-pm-pack.zip`](packages/05-ai-pm-pack.zip) | AI product work |
+| [`06-market-intel-pack.zip`](packages/06-market-intel-pack.zip) | Competitive and market intelligence |
+| [`07-lifecycle-eol-pack.zip`](packages/07-lifecycle-eol-pack.zip) | Extend, replace, or retire a product |"""
+
+# ---- CATALOG: browse by bundle (the lifecycle view) ----
+desc = {s["name"]: s["desc"] for s in skills}
+cat_lines = ["", "## Browse by lifecycle bundle", "",
+             "_The same skills, grouped by where they fit in the product lifecycle._", ""]
+for bname, b in cfg["bundles"].items():
+    cat_lines += [f"### {bname.capitalize()} ({b['phase']})", "", f"{b['summary']}", ""]
+    for mname, m in b["motions"].items():
+        cat_lines += [f"**{mname.capitalize()}**: {m['summary']}", ""]
+        for sk in (m.get("skills") or []):
+            cat_lines.append(f"- [`{sk}`]({sk}.zip): {desc.get(sk, '')}")
+        if not m.get("skills"):
+            cat_lines.append(f"- _Coming: {m.get('gap', 'in progress')}_")
+        cat_lines.append("")
+cat_lines += ["### Core (ships with every bundle)", ""]
+cat_lines += [f"- [`{sk}`]({sk}.zip): {desc.get(sk, '')}" for sk in core] + [""]
+with open(os.path.join(dist, "CATALOG.md"), "a", encoding="utf-8") as fh:
+    fh.write("\n".join(cat_lines))
+
 # ---- README.md ----
 readme = f"""# Product Manager Skills — Downloads
 
@@ -119,15 +158,25 @@ find upload-ready skill ZIPs inside.
 
 | Bundle | Best for |
 |---|---|
-| [`pm-skills-starter-pack.zip`](packages/pm-skills-starter-pack.zip) | Most PMs — a small, practical starter set |
-| [`02-discovery-pack.zip`](packages/02-discovery-pack.zip) | Understanding customers, problems, and opportunities |
-| [`03-strategy-pack.zip`](packages/03-strategy-pack.zip) | Positioning, market thinking, product direction |
-| [`04-delivery-pack.zip`](packages/04-delivery-pack.zip) | Stories, epics, PRDs, roadmap execution |
-| [`05-ai-pm-pack.zip`](packages/05-ai-pm-pack.zip) | AI product work |
-| [`06-market-intel-pack.zip`](packages/06-market-intel-pack.zip) | Competitive and market intelligence — the full suite |
-| [`07-lifecycle-eol-pack.zip`](packages/07-lifecycle-eol-pack.zip) | Aging products — extend, replace, or retire, and how to sunset well |
-| [`99-all-skills-pack.zip`](packages/99-all-skills-pack.zip) | Everything — all {total} skills |
+| [`pm-skills-starter-pack.zip`](packages/pm-skills-starter-pack.zip) | Most PMs: a small, practical starter set |
+{bundle_rows}| [`99-all-skills-pack.zip`](packages/99-all-skills-pack.zip) | Everything — all {total} skills |
 | [`pm-skills-codex.zip`](packages/pm-skills-codex.zip) | OpenAI Codex users (`.agents/skills` + `AGENTS.md`) |
+
+### The lifecycle bundles
+
+The library follows the product lifecycle. Each `pm-<name>-pack.zip` holds one
+phase, plus the shared helper skills, so it works on its own:
+**Determine** (set outcomes, read the market) → **Discover** (find the real problem)
+→ **Define** (shape and test the solution) → **Develop** (turn it into buildable work)
+→ **Deliver** (take it to market, measure, retire). **Drive** runs under all five:
+your stakeholders and your career.
+
+<details>
+<summary>Older packs (still available, replaced by the bundles above)</summary>
+
+{legacy_rows}
+
+</details>
 
 ## 2. Grab one skill at a time
 

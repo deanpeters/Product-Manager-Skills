@@ -6,6 +6,8 @@ skills:
     and scalability. Use when deciding whether to scale, test, or kill a growth channel.
   type: interactive
   path: skills/acquisition-channel-advisor/SKILL.md
+  bundle: deliver
+  motion: demand
   intent: Guide product managers through evaluating whether to scale, test, or kill
     an acquisition channel based on unit economics (CAC, LTV, payback), customer quality
     (retention, NRR), and scalability (magic number, volume potential). Use this to
@@ -17,6 +19,8 @@ skills:
     instead of one linear process.
   type: interactive
   path: skills/agent-orchestration-advisor/SKILL.md
+  bundle: develop
+  motion: delegate
   intent: "Guide product managers through designing multi-agent workflows \u2014 breaking\
     \ complex, repetitive tasks into parallel, specialized AI agents rather than linear,\
     \ sequential processes. Covers the 4 dimensions of orchestration, agent boundary\
@@ -26,6 +30,8 @@ skills:
     evaluating AI maturity and choosing the next team capability to build.
   type: interactive
   path: skills/ai-shaped-readiness-advisor/SKILL.md
+  bundle: develop
+  motion: delegate
   intent: Assess whether your product work is **"AI-first"** (using AI to automate
     existing tasks faster) or **"AI-shaped"** (fundamentally redesigning how product
     teams operate around AI capabilities). Use this to evaluate your readiness across
@@ -36,6 +42,8 @@ skills:
     thinking. Use when diagnosing scope, time-horizon, or leadership-level gaps.
   type: component
   path: skills/altitude-horizon-framework/SKILL.md
+  bundle: drive
+  motion: demystify
   intent: 'Defines the two-axis mental model that distinguishes Director-level thinking
     from PM thinking: **Altitude** (how wide you zoom out) and **Horizon** (how far
     ahead you look). Use this to understand what actually changes in the transition,
@@ -47,6 +55,8 @@ skills:
     and at what risk.
   type: workflow
   path: skills/ansoff-matrix/SKILL.md
+  bundle: determine
+  motion: diagnose
   intent: 'A researched Ansoff Matrix, not a brainstorm grid: market penetration,
     market development, product development, and diversification, each quadrant populated
     with candidate moves backed by documented signals, risk ratings that respect the
@@ -58,6 +68,8 @@ skills:
     confidence stacking, diffable outputs.'
   type: workflow
   path: skills/autonomous-investigation/SKILL.md
+  bundle: core
+  motion: core
   intent: "Provide the canonical contract for autonomous research skills: a bounded\
     \ question budget, a search-plan gate, three-level evidence labeling, do-not-invent\
     \ lists, just-enough output, stable diffable schemas, and confidence stacking\
@@ -69,6 +81,8 @@ skills:
     \ card, not a research report."
   type: workflow
   path: skills/battle-card-builder/SKILL.md
+  bundle: define
+  motion: differentiate
   intent: "Autonomous battle card construction: given your product and one competitor,\
     \ the AI does the fieldwork \u2014 pricing pages, reviews, release notes, customer\
     \ stories \u2014 and produces a field-action card with a source URL and Fact/Inference/Assumption\
@@ -78,6 +92,8 @@ skills:
     and capital. Use when preparing a business review or prioritizing urgent fixes.
   type: interactive
   path: skills/business-health-diagnostic/SKILL.md
+  bundle: determine
+  motion: direct
   intent: Diagnose overall SaaS business health by analyzing growth, retention, unit
     economics, and capital efficiency metrics together. Use this to identify problems
     early, prioritize actions by urgency, and deliver a comprehensive health scorecard
@@ -88,6 +104,8 @@ skills:
     PM skills.
   type: workflow
   path: skills/company-intel/SKILL.md
+  bundle: determine
+  motion: detect
   intent: "Act as a research engine that builds deep, structured understanding of\
     \ companies, industries, and competitor sets through **seven analytical lenses**\
     \ \u2014 financial landscape, market offer, product portfolio, competitive dynamics,\
@@ -104,6 +122,8 @@ skills:
     or market-entry work.
   type: component
   path: skills/company-research/SKILL.md
+  bundle: determine
+  motion: detect
   intent: Create a comprehensive company profile that extracts executive insights,
     product strategy, transformation initiatives, and organizational dynamics from
     publicly available sources. Use this to understand competitive landscape, evaluate
@@ -116,6 +136,8 @@ skills:
     scan or card.
   type: workflow
   path: skills/competitive-analysis-process/SKILL.md
+  bundle: determine
+  motion: detect
   intent: "The umbrella workflow for competitive analysis: six analytical steps \u2014\
     \ landscape overview, product comparison, customer-need fulfillment, business\
     \ baseline, perception and positioning, strategic direction \u2014 each grounded\
@@ -127,6 +149,8 @@ skills:
     battle-card update flags, runs unattended.'
   type: workflow
   path: skills/competitive-intel-watch/SKILL.md
+  bundle: determine
+  motion: detect
   intent: "A competitive intelligence delta monitor: given a previous Competitive\
     \ Research Snapshot, sweep for material shifts since the last run and report only\
     \ what changed \u2014 a cited changelog plus flags naming which battle card or\
@@ -138,6 +162,8 @@ skills:
     grounding, not a market report.
   type: workflow
   path: skills/competitive-research-snapshot/SKILL.md
+  bundle: determine
+  motion: detect
   intent: "Autonomous competitive research as a workflow: search plan, competitor\
     \ selection, just-enough research, Fact/Inference/Assumption labels, real URL\
     \ citations, and next-step options \u2014 producing a stable snapshot schema that\
@@ -147,6 +173,8 @@ skills:
     feels bloated, brittle, or hard to steer reliably.
   type: interactive
   path: skills/context-engineering-advisor/SKILL.md
+  bundle: develop
+  motion: delegate
   intent: "Guide product managers through diagnosing whether they're doing **context\
     \ stuffing** (jamming volume without intent) or **context engineering** (shaping\
     \ structure for attention). Use this to identify context boundaries, fix \"Context\
@@ -158,6 +186,8 @@ skills:
     on the full customer flow.
   type: component
   path: skills/customer-journey-map/SKILL.md
+  bundle: discover
+  motion: drill-down
   intent: "Create a comprehensive customer journey map that visualizes how customers\
     \ interact with your brand across all stages\u2014from awareness to loyalty\u2014\
     documenting their actions, touchpoints, emotions, KPIs, business goals, and teams\
@@ -170,6 +200,8 @@ skills:
     opportunities for a persona and scenario.
   type: interactive
   path: skills/customer-journey-mapping-workshop/SKILL.md
+  bundle: discover
+  motion: drill-down
   intent: "Guide product managers through creating a customer journey map by asking\
     \ adaptive questions about the actor (persona), scenario/goal, journey phases,\
     \ actions/emotions, and opportunities for improvement. Use this to visualize the\
@@ -182,6 +214,8 @@ skills:
     dimensions.
   type: interactive
   path: skills/derisk-measurement-advisor/SKILL.md
+  bundle: define
+  motion: de-risk
   intent: "Guide product managers through a structured risk scan across **10 dimensions**\
     \ \u2014 4 internal (Desirability, Usability, Feasibility, Viability) and 6 external\
     \ (Political, Economic, Social, Technological, Environmental, Legal) \u2014 to\
@@ -195,6 +229,8 @@ skills:
     practical coaching.
   type: interactive
   path: skills/director-readiness-advisor/SKILL.md
+  bundle: drive
+  motion: demystify
   intent: "Guide PMs and Directors through the specific challenges of the PM-to-Director\
     \ transition using adaptive questions and targeted coaching. Diagnoses where you\
     \ are in the journey and delivers practical, war-story-backed guidance calibrated\
@@ -205,6 +241,8 @@ skills:
     or new product ideas.
   type: interactive
   path: skills/discovery-interview-prep/SKILL.md
+  bundle: discover
+  motion: drill-down
   intent: "Guide product managers through preparing for customer discovery interviews\
     \ by asking adaptive questions about research goals, customer segments, constraints,\
     \ and methodologies. Use this to design effective interview plans, craft targeted\
@@ -217,6 +255,8 @@ skills:
     and experiments.
   type: workflow
   path: skills/discovery-process/SKILL.md
+  bundle: discover
+  motion: drill-down
   intent: "Guide product managers through a complete discovery cycle\u2014from initial\
     \ problem hypothesis to validated solution\u2014by orchestrating problem framing,\
     \ customer interviews, synthesis, and experimentation skills into a structured\
@@ -230,6 +270,8 @@ skills:
     operational plan.
   type: component
   path: skills/eol-checklist/SKILL.md
+  bundle: deliver
+  motion: decommission
   intent: Generate a phase-gated EOL checklist tailored to the complexity of the sunset.
     Covers up to 15 functional areas across the lifecycle gates, but right-sizes the
     output so a minor feature deprecation gets a short punch list while a flagship
@@ -241,6 +283,8 @@ skills:
     ready before customers hear.
   type: component
   path: skills/eol-internal-enablement/SKILL.md
+  bundle: deliver
+  motion: decommission
   intent: 'Generate the internal enablement materials customer-facing teams need before
     an EOL announcement goes out: a support FAQ, sales comparison talking points,
     objection-handling scripts using Acknowledge-Reframe-Offer, and an escalation
@@ -252,6 +296,8 @@ skills:
     \ retiring a product, feature, or plan."
   type: component
   path: skills/eol-message/SKILL.md
+  bundle: deliver
+  motion: decommission
   intent: "Craft a clear, empathetic End-of-Life (EOL) message that communicates product\
     \ or feature discontinuation, explains the rationale, addresses customer impact,\
     \ provides transition support, and positions the replacement solution \u2014 sized\
@@ -262,6 +308,8 @@ skills:
     \ announce, close. Use when you need the whole EOL process, not just one artifact."
   type: workflow
   path: skills/eol-process/SKILL.md
+  bundle: deliver
+  motion: decommission
   intent: Orchestrate a complete product end-of-life from the go/no-go decision through
     post-retirement review, sequencing the decision, stakeholder alignment, operational
     plan, internal enablement, customer announcement, and closure. Right-sized so
@@ -273,6 +321,8 @@ skills:
     made the call.
   type: interactive
   path: skills/eol-readiness-advisor/SKILL.md
+  bundle: deliver
+  motion: decommission
   intent: Structured go/no-go assessment for sunsetting a product or feature. Determines
     whether EOL is the right call, how intense the sunset effort needs to be, and
     which organizational functions need to be involved. Prevents both premature kills
@@ -283,6 +333,8 @@ skills:
     before the announcement.
   type: component
   path: skills/eol-stakeholder-sequence/SKILL.md
+  bundle: deliver
+  motion: decommission
   intent: "Plan the order and content of stakeholder conversations for an EOL decision.\
     \ Encodes the hard-won lesson that EOL engagement has a specific sequence \u2014\
     \ legal exposure first, financial impact second, then revenue-facing teams, then\
@@ -293,6 +345,8 @@ skills:
     Use when a backlog item is too large to estimate, sequence, or deliver safely.
   type: interactive
   path: skills/epic-breakdown-advisor/SKILL.md
+  bundle: develop
+  motion: draft
   intent: "Guide product managers through breaking down epics into user stories using\
     \ Richard Lawrence's complete Humanizing Work methodology\u2014a systematic, flowchart-driven\
     \ approach that applies 9 splitting patterns sequentially. Use this to identify\
@@ -306,6 +360,8 @@ skills:
     or delivery planning.
   type: component
   path: skills/epic-hypothesis/SKILL.md
+  bundle: define
+  motion: de-risk
   intent: Frame epics as testable hypotheses using an if/then structure that articulates
     the action or solution, the target beneficiary, the expected outcome, and how
     you'll validate success. Use this to manage uncertainty in product development
@@ -317,6 +373,8 @@ skills:
     entering a new executive product role and avoiding premature change.
   type: workflow
   path: skills/executive-onboarding-playbook/SKILL.md
+  bundle: drive
+  motion: demystify
   intent: "Structure the first 90 days of a VP or CPO transition as a diagnostic process,\
     \ not an execution sprint. The single most common failure in senior product leadership\
     \ transitions is acting before understanding \u2014 changing structures, replacing\
@@ -327,6 +385,8 @@ skills:
     ROI, and strategy. Use when deciding whether a feature deserves investment.
   type: interactive
   path: skills/feature-investment-advisor/SKILL.md
+  bundle: determine
+  motion: direct
   intent: "Guide product managers through evaluating whether to build a feature based\
     \ on financial impact analysis. Use this to make data-driven prioritization decisions\
     \ by assessing revenue connection (direct or indirect), cost structure (dev +\
@@ -337,6 +397,8 @@ skills:
     payback. Use when deciding whether a pricing move should ship.
   type: interactive
   path: skills/finance-based-pricing-advisor/SKILL.md
+  bundle: deliver
+  motion: dollars
   intent: Evaluate the **financial impact** of pricing changes (price increases, new
     tiers, add-ons, discounts) using ARPU/ARPA analysis, conversion impact, churn
     risk, NRR effects, and CAC payback implications. Use this to make data-driven
@@ -346,6 +408,8 @@ skills:
     you need a quick metric definition, formula, or benchmark during analysis.
   type: component
   path: skills/finance-metrics-quickref/SKILL.md
+  bundle: determine
+  motion: direct
   intent: Quick reference for any SaaS finance metric without deep teaching. Use this
     when you need a fast formula lookup, benchmark check, or decision framework reminder.
     For detailed explanations, calculations, and examples, see the related deep-dive
@@ -356,6 +420,8 @@ skills:
     or escalation needs a reply.
   type: interactive
   path: skills/incoming-request-advisor/SKILL.md
+  bundle: drive
+  motion: diplomacy
   intent: Act as a chief-of-staff-grade analyst that decodes an incoming message into
     a structured breakdown, separating the literal ask from the job-to-be-done underneath
     it, reading sender power and stake from a product leader's chair, and opening
@@ -367,6 +433,8 @@ skills:
     but not which channel to run.
   type: interactive
   path: skills/intel-discipline-advisor/SKILL.md
+  bundle: determine
+  motion: detect
   intent: "Interactive triage for market intelligence: three adaptive questions about\
     \ the decision on your desk, then numbered recommendations naming the discipline\
     \ mix (OSINT, FININT, TECHINT...), the cadence, and the investigation skill that\
@@ -378,6 +446,8 @@ skills:
     one-source research isn''t enough.'
   type: component
   path: skills/intelligence-collection-disciplines/SKILL.md
+  bundle: determine
+  motion: detect
   intent: "Give product managers the intelligence community's collection playbook:\
     \ eight independent disciplines, each with free and paid sources, signal-to-inference\
     \ chains, and the PM artifact it feeds \u2014 then fuse them with confidence stacking\
@@ -388,6 +458,8 @@ skills:
     and messaging.
   type: component
   path: skills/jobs-to-be-done/SKILL.md
+  bundle: determine
+  motion: describe
   intent: "Systematically explore what customers are trying to accomplish (functional,\
     \ social, emotional jobs), the pains they experience, and the gains they seek.\
     \ Use this framework to uncover unmet needs, validate product ideas, and ensure\
@@ -398,6 +470,8 @@ skills:
     problem, surfacing assumptions, and defining what to learn next.
   type: interactive
   path: skills/lean-ux-canvas/SKILL.md
+  bundle: define
+  motion: de-risk
   intent: "Guide product managers through creating **Jeff Gothelf's Lean UX Canvas\
     \ (v2)**\u2014a one-page facilitation tool that frames work around a **business\
     \ problem to solve**, not a **solution to implement**. Use this to align cross-functional\
@@ -410,6 +484,8 @@ skills:
     \ the call, not just the worry."
   type: interactive
   path: skills/lifecycle-play-advisor/SKILL.md
+  bundle: deliver
+  motion: decommission
   intent: Guided triage for a product at the mature-to-decline inflection. Establishes
     the lifecycle stage from the transition questions, identifies what is actually
     driving the pressure, tests the extension play before conceding to replacement
@@ -420,6 +496,8 @@ skills:
     or picking competitors to study.
   type: workflow
   path: skills/market-landscape-scan/SKILL.md
+  bundle: determine
+  motion: detect
   intent: "Autonomous market discovery: map how buyers segment the market, who plays\
     \ where (direct, adjacent, substitutes, emerging), where the money and momentum\
     \ are, and whether apparent whitespace is opportunity or dead zone \u2014 with\
@@ -431,6 +509,8 @@ skills:
     you decide what to build.
   type: interactive
   path: skills/opportunity-solution-tree/SKILL.md
+  bundle: discover
+  motion: drill-down
   intent: "Guide product managers through creating an Opportunity Solution Tree (OST)\
     \ by extracting target outcomes from stakeholder requests, generating opportunity\
     \ options (problems to solve), mapping potential solutions, and selecting the\
@@ -444,6 +524,8 @@ skills:
     \ lives and which McKinsey growth level to act on next."
   type: interactive
   path: skills/organic-growth-advisor/SKILL.md
+  bundle: determine
+  motion: direct
   intent: 'Guide product managers through a fast triage to identify which of four
     organic growth paths fits their current constraint: new customer segments (L2),
     new geographies (L3), new distribution channels (L4), or new products or services
@@ -456,6 +538,8 @@ skills:
     roadmap, or strategy.
   type: component
   path: skills/pestel-analysis/SKILL.md
+  bundle: determine
+  motion: diagnose
   intent: "Conduct a systematic analysis of macro-environmental factors\u2014Political,\
     \ Economic, Social, Technological, Environmental, and Legal\u2014that could impact\
     \ your product or project. Use this to identify external opportunities and threats,\
@@ -467,6 +551,8 @@ skills:
     \ PESTEL from a workshop artifact into a radar."
   type: workflow
   path: skills/pestel-delta-monitor/SKILL.md
+  bundle: determine
+  motion: detect
   intent: "Refresh a PESTEL analysis by diffing each factor against the prior run\
     \ and reporting material movement only \u2014 regulation passed, thresholds crossed,\
     \ technology matured, assumptions broken. Macro factors move slowly; the value\
@@ -476,6 +562,8 @@ skills:
     raw content or an idea and want to shape it into a compliant skill.
   type: interactive
   path: skills/pm-skill-creator/SKILL.md
+  bundle: core
+  motion: core
   intent: "Walk through the full skill design process interactively \u2014 from raw\
     \ idea or content to a structured, repo-compliant SKILL.md draft. Asks adaptive\
     \ questions to determine skill type, scope, structure, and content, then generates\
@@ -485,6 +573,8 @@ skills:
     when you need harsh truth before building real product.
   type: component
   path: skills/pol-probe/SKILL.md
+  bundle: define
+  motion: de-risk
   intent: "Define and document a **Proof of Life (PoL) probe**\u2014a lightweight,\
     \ disposable validation artifact designed to surface harsh truths before expensive\
     \ development. Use this when you need to eliminate a specific risk or test a narrow\
@@ -496,6 +586,8 @@ skills:
     not tooling comfort.
   type: interactive
   path: skills/pol-probe-advisor/SKILL.md
+  bundle: define
+  motion: de-risk
   intent: "Guide product managers through selecting the right **Proof of Life (PoL)\
     \ probe** type (of 5 flavors) based on their hypothesis, risk, and available resources.\
     \ Use this when you need to eliminate a specific risk or test a narrow hypothesis,\
@@ -508,6 +600,8 @@ skills:
     or when margins erode and nobody can say why.
   type: workflow
   path: skills/porters-five-forces/SKILL.md
+  bundle: determine
+  motion: diagnose
   intent: "An evidence-cited five-forces read: rivalry, new entrants, substitutes\
     \ (with AI-driven substitution named explicitly), buyer power, and supplier power\
     \ \u2014 each force rated weak/moderate/strong with the documented signals that\
@@ -519,6 +613,8 @@ skills:
     from alternatives.
   type: component
   path: skills/positioning-statement/SKILL.md
+  bundle: define
+  motion: differentiate
   intent: Create a Geoffrey Moore-style positioning statement that clearly articulates
     who your product serves, what need it addresses, how it's categorized, what benefit
     it delivers, and how it differs from alternatives. Use this when you need to align
@@ -530,6 +626,8 @@ skills:
     fuzzy, generic, or misaligned.
   type: interactive
   path: skills/positioning-workshop/SKILL.md
+  bundle: define
+  motion: differentiate
   intent: "Guide product managers through discovering and articulating product positioning\
     \ by asking adaptive questions about target customers, unmet needs, product category,\
     \ benefits, and competitive differentiation. Use this to align stakeholders on\
@@ -542,6 +640,8 @@ skills:
     for a major initiative.
   type: workflow
   path: skills/prd-development/SKILL.md
+  bundle: develop
+  motion: document
   intent: "Guide product managers through structured PRD (Product Requirements Document)\
     \ creation by orchestrating problem framing, user research synthesis, solution\
     \ definition, and success criteria into a cohesive document. Use this to move\
@@ -554,6 +654,8 @@ skills:
     bet.
   type: component
   path: skills/press-release/SKILL.md
+  bundle: develop
+  motion: document
   intent: "Create a visionary press release following Amazon's \"Working Backwards\"\
     \ methodology to define and communicate a product or feature before building it.\
     \ Use this to align stakeholders on the customer value proposition, clarify the\
@@ -565,6 +667,8 @@ skills:
     cadence.
   type: workflow
   path: skills/pricing-packaging-tracker/SKILL.md
+  bundle: deliver
+  motion: dollars
   intent: "Capture competitor public pricing pages into a stable schema, diff against\
     \ the prior capture, and report tier changes, price moves, feature-gate shifts,\
     \ and packaging restructures with URLs and dates \u2014 because packaging changes\
@@ -575,6 +679,8 @@ skills:
     scoring approach.
   type: interactive
   path: skills/prioritization-advisor/SKILL.md
+  bundle: develop
+  motion: decide
   intent: Guide product managers in choosing the right prioritization framework by
     asking adaptive questions about product stage, team context, decision-making needs,
     and stakeholder dynamics. Use this to avoid "framework whiplash" (switching frameworks
@@ -586,6 +692,8 @@ skills:
     a clearer problem statement before jumping to solutions.
   type: interactive
   path: skills/problem-framing-canvas/SKILL.md
+  bundle: discover
+  motion: drill-down
   intent: "Guide product managers through the MITRE Problem Framing Canvas process\
     \ by asking structured questions across three phases: Look Inward (examine your\
     \ own assumptions and biases), Look Outward (understand who experiences the problem\
@@ -599,6 +707,8 @@ skills:
     prioritization, or a PRD.
   type: component
   path: skills/problem-statement/SKILL.md
+  bundle: discover
+  motion: drill-down
   intent: Articulate a problem from the user's perspective using an empathy-driven
     framework that captures who they are, what they're trying to do, what's blocking
     them, why, and how it makes them feel. Use this to align stakeholders on the problem
@@ -610,6 +720,8 @@ skills:
     move isn't obvious.
   type: component
   path: skills/product-lifecycle-plays/SKILL.md
+  bundle: deliver
+  motion: decommission
   intent: "Diagnose where a product sits in the Product Life Cycle and choose deliberately\
     \ among the three plays available at the decline inflection \u2014 extend the\
     \ product, replace it with a successor, or retire it. Includes the mature-to-declining\
@@ -621,6 +733,8 @@ skills:
     or build-next interview questions.
   type: component
   path: skills/product-sense-interview-answer/SKILL.md
+  bundle: drive
+  motion: demystify
   intent: 'Coach PM candidates through open-ended product-sense interviews using a
     repeatable six-part answer spine: clarify, rationale, goal, segmentation, pain
     points, and solution choice. Use this to practice product design and product improvement
@@ -632,6 +746,8 @@ skills:
     to execution.
   type: workflow
   path: skills/product-strategy-session/SKILL.md
+  bundle: determine
+  motion: direct
   intent: "Guide product managers through a comprehensive product strategy session\
     \ by orchestrating positioning, problem framing, customer discovery, and roadmap\
     \ planning skills into a cohesive end-to-end process. Use this to move from vague\
@@ -643,6 +759,8 @@ skills:
     knowledge. Use when you need a working customer profile before deeper validation.
   type: component
   path: skills/proto-persona/SKILL.md
+  bundle: determine
+  motion: describe
   intent: Create an initial, assumption-based persona profile that synthesizes available
     user research, market data, and stakeholder knowledge into a working hypothesis
     about your target user. Use this to align teams early in product development,
@@ -653,6 +771,8 @@ skills:
     positioning. Use when deciding whether an AI solution deserves investment or recommendation.
   type: component
   path: skills/recommendation-canvas/SKILL.md
+  bundle: define
+  motion: de-risk
   intent: "Evaluate and propose AI product solutions using a structured canvas that\
     \ assesses business outcomes, customer outcomes, problem framing, solution hypotheses,\
     \ positioning, risks, and value justification. Use this to build a comprehensive,\
@@ -665,6 +785,8 @@ skills:
     teams can execute.
   type: workflow
   path: skills/roadmap-planning/SKILL.md
+  bundle: develop
+  motion: decide
   intent: "Guide product managers through strategic roadmap planning by orchestrating\
     \ prioritization, epic definition, stakeholder alignment, and release sequencing\
     \ skills into a structured process. Use this to move from disconnected feature\
@@ -676,6 +798,8 @@ skills:
     whether the business can scale efficiently or needs correction.
   type: component
   path: skills/saas-economics-efficiency-metrics/SKILL.md
+  bundle: determine
+  motion: direct
   intent: Determine whether your SaaS business model is fundamentally viable and capital-efficient.
     Use this to calculate unit economics, assess profitability, manage cash runway,
     and decide when to scale vs. optimize. Essential for fundraising, board reporting,
@@ -685,6 +809,8 @@ skills:
     momentum, churn, expansion, or product-market-fit signals.
   type: component
   path: skills/saas-revenue-growth-metrics/SKILL.md
+  bundle: determine
+  motion: direct
   intent: Master revenue and retention metrics to understand SaaS business momentum,
     evaluate product-market fit, and make data-driven decisions about growth investments.
     Use this to calculate key metrics, interpret trends, identify problems early,
@@ -694,6 +820,8 @@ skills:
     creating or updating a repo skill without breaking standards.
   type: workflow
   path: skills/skill-authoring-workflow/SKILL.md
+  bundle: core
+  motion: core
   intent: Create or update PM skills without chaos. This workflow turns rough notes,
     workshop content, or half-baked prompt dumps into compliant `skills/<skill-name>/SKILL.md`
     assets that actually pass validation and belong in this repo.
@@ -702,6 +830,8 @@ skills:
     navigating resistance, or aligning a critical relationship before a key milestone.
   type: interactive
   path: skills/stakeholder-engagement-advisor/SKILL.md
+  bundle: drive
+  motion: diplomacy
   intent: "Guide per-stakeholder engagement planning through the Adaptive Decision\
     \ Ladder: three targeted questions diagnose the stakeholder's profile, power/impact\
     \ quadrant, and your engagement context, then deliver a tailored approach \u2014\
@@ -713,6 +843,8 @@ skills:
     initiative, scoping discovery, or building an engagement plan from scratch.
   type: component
   path: skills/stakeholder-identification/SKILL.md
+  bundle: drive
+  motion: diplomacy
   intent: Produce a comprehensive, equity-aware stakeholder set before any engagement
     begins. Combines broad brainstorm with structured categorization (Allies / Audiences
     / Influencers, R/P/D marking), an explicit equity and bias check, and a disciplined
@@ -725,6 +857,8 @@ skills:
     identification.
   type: component
   path: skills/stakeholder-mapping/SKILL.md
+  bundle: drive
+  motion: diplomacy
   intent: "Run two complementary 2x2 grids \u2014 Power \xD7 Interest (sets engagement\
     \ strategy per stakeholder) and Impact \xD7 Power (surfaces who bears consequences\
     \ but lacks voice) \u2014 then compare outputs to reveal blind spots and plan\
@@ -738,6 +872,8 @@ skills:
     or demos.
   type: component
   path: skills/storyboard/SKILL.md
+  bundle: develop
+  motion: document
   intent: Create a 6-frame visual narrative that tells the story of a user's journey
     from problem to solution, using the classic storytelling arc to build empathy,
     illustrate value, and make abstract product concepts concrete. Use this to align
@@ -749,6 +885,8 @@ skills:
     \ reviews, board prep, or competitor depth."
   type: workflow
   path: skills/swot-analysis/SKILL.md
+  bundle: determine
+  motion: diagnose
   intent: "An evidence-cited SWOT from the public record: strengths and weaknesses\
     \ from documented capability and customer voice, opportunities and threats from\
     \ market and macro signals \u2014 every entry labeled and sourced, closing with\
@@ -759,6 +897,8 @@ skills:
     review.
   type: interactive
   path: skills/tam-sam-som-calculator/SKILL.md
+  bundle: determine
+  motion: diagnose
   intent: "Guide product managers through calculating Total Addressable Market (TAM),\
     \ Serviceable Available Market (SAM), and Serviceable Obtainable Market (SOM)\
     \ for a product idea by asking adaptive, contextually relevant questions. Use\
@@ -771,6 +911,8 @@ skills:
     testable conditions.
   type: component
   path: skills/user-story/SKILL.md
+  bundle: develop
+  motion: draft
   intent: Create clear, concise user stories that combine Mike Cohn's user story format
     with Gherkin-style acceptance criteria. Use this to translate user needs into
     actionable development work that focuses on outcomes, ensures shared understanding
@@ -781,6 +923,8 @@ skills:
     journey.
   type: component
   path: skills/user-story-mapping/SKILL.md
+  bundle: develop
+  motion: draft
   intent: Visualize the user journey by creating a hierarchical map that breaks down
     high-level activities into steps and tasks, organized left-to-right as a narrative
     flow. Use this to build shared understanding across product, design, and engineering,
@@ -792,6 +936,8 @@ skills:
     a workflow.
   type: interactive
   path: skills/user-story-mapping-workshop/SKILL.md
+  bundle: develop
+  motion: draft
   intent: "Guide product managers through creating a user story map by asking adaptive\
     \ questions about the system, users, workflow, and priorities\u2014then generating\
     \ a two-dimensional map with backbone (activities), user tasks, and release slices.\
@@ -805,6 +951,8 @@ skills:
     or independent release.
   type: component
   path: skills/user-story-splitting/SKILL.md
+  bundle: develop
+  motion: draft
   intent: Break down large user stories, epics, or features into smaller, independently
     deliverable stories using systematic splitting patterns. Use this to make work
     more manageable, reduce risk, enable faster feedback cycles, and maintain flow
@@ -816,6 +964,8 @@ skills:
     \ want customer voice without waiting on interviews."
   type: workflow
   path: skills/voice-of-customer-miner/SKILL.md
+  bundle: determine
+  motion: describe
   intent: "Mine public customer voice for unmet needs, competitor weaknesses, and\
     \ switching triggers, with real quoted verbatims and labeled inference. Bridges\
     \ competitive intelligence and discovery: outputs feed JTBD canvases, opportunity\
@@ -825,6 +975,8 @@ skills:
     and recalibrating. Use when executive product scope is changing fast.
   type: interactive
   path: skills/vp-cpo-readiness-advisor/SKILL.md
+  bundle: drive
+  motion: demystify
   intent: "Guide Directors and senior product leaders through the specific challenges\
     \ of the transition to VP or CPO using adaptive questions and targeted coaching.\
     \ Diagnoses where you are in the journey and delivers practical, lived-experience\
@@ -834,6 +986,8 @@ skills:
     an interactive skill needs consistent pacing, options, and progress tracking.
   type: interactive
   path: skills/workshop-facilitation/SKILL.md
+  bundle: core
+  motion: core
   intent: 'Provide the canonical facilitation pattern for interactive skills: one
     step at a time, with clear progress, adaptive recommendations at decision points,
     and predictable interruption handling.'

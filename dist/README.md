@@ -12,15 +12,38 @@ find upload-ready skill ZIPs inside.
 
 | Bundle | Best for |
 |---|---|
-| [`pm-skills-starter-pack.zip`](packages/pm-skills-starter-pack.zip) | Most PMs — a small, practical starter set |
+| [`pm-skills-starter-pack.zip`](packages/pm-skills-starter-pack.zip) | Most PMs: a small, practical starter set |
+| [`pm-determine-pack.zip`](packages/pm-determine-pack.zip) | **Determine**: Set outcomes and read the terrain: strategy, finance, market, customers. 24 skills + shared helpers |
+| [`pm-discover-pack.zip`](packages/pm-discover-pack.zip) | **Discover**: Find and frame the real problem. 7 skills + shared helpers |
+| [`pm-define-pack.zip`](packages/pm-define-pack.zip) | **Define**: Shape a solution worth building and test the bet. 9 skills + shared helpers |
+| [`pm-develop-pack.zip`](packages/pm-develop-pack.zip) | **Develop**: Turn the chosen solution into buildable work. 13 skills + shared helpers |
+| [`pm-deliver-pack.zip`](packages/pm-deliver-pack.zip) | **Deliver**: Take it to market, measure it, and retire it well. 11 skills + shared helpers |
+| [`pm-drive-pack.zip`](packages/pm-drive-pack.zip) | **Drive**: Drive your career and your stakeholders. 9 skills + shared helpers |
+| [`99-all-skills-pack.zip`](packages/99-all-skills-pack.zip) | Everything — all 77 skills |
+| [`pm-skills-codex.zip`](packages/pm-skills-codex.zip) | OpenAI Codex users (`.agents/skills` + `AGENTS.md`) |
+
+### The lifecycle bundles
+
+The library follows the product lifecycle. Each `pm-<name>-pack.zip` holds one
+phase, plus the shared helper skills, so it works on its own:
+**Determine** (set outcomes, read the market) → **Discover** (find the real problem)
+→ **Define** (shape and test the solution) → **Develop** (turn it into buildable work)
+→ **Deliver** (take it to market, measure, retire). **Drive** runs under all five:
+your stakeholders and your career.
+
+<details>
+<summary>Older packs (still available, replaced by the bundles above)</summary>
+
+| Older pack | Best for |
+|---|---|
 | [`02-discovery-pack.zip`](packages/02-discovery-pack.zip) | Understanding customers, problems, and opportunities |
 | [`03-strategy-pack.zip`](packages/03-strategy-pack.zip) | Positioning, market thinking, product direction |
 | [`04-delivery-pack.zip`](packages/04-delivery-pack.zip) | Stories, epics, PRDs, roadmap execution |
 | [`05-ai-pm-pack.zip`](packages/05-ai-pm-pack.zip) | AI product work |
-| [`06-market-intel-pack.zip`](packages/06-market-intel-pack.zip) | Competitive and market intelligence — the full suite |
-| [`07-lifecycle-eol-pack.zip`](packages/07-lifecycle-eol-pack.zip) | Aging products — extend, replace, or retire, and how to sunset well |
-| [`99-all-skills-pack.zip`](packages/99-all-skills-pack.zip) | Everything — all 77 skills |
-| [`pm-skills-codex.zip`](packages/pm-skills-codex.zip) | OpenAI Codex users (`.agents/skills` + `AGENTS.md`) |
+| [`06-market-intel-pack.zip`](packages/06-market-intel-pack.zip) | Competitive and market intelligence |
+| [`07-lifecycle-eol-pack.zip`](packages/07-lifecycle-eol-pack.zip) | Extend, replace, or retire a product |
+
+</details>
 
 ## 2. Grab one skill at a time
 

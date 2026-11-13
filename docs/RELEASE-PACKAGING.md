@@ -26,11 +26,18 @@ dist/
   <skill-name>.zip       # individual, upload-ready skill ZIPs (flat)
   packages/
     pm-skills-starter-pack.zip
-    02-discovery-pack.zip
+    pm-determine-pack.zip      lifecycle bundles (generated from the config)
+    pm-discover-pack.zip
+    pm-define-pack.zip
+    pm-develop-pack.zip
+    pm-deliver-pack.zip
+    pm-drive-pack.zip
+    02-discovery-pack.zip      older themed packs, kept one release (superseded)
     03-strategy-pack.zip
     04-delivery-pack.zip
     05-ai-pm-pack.zip
     06-market-intel-pack.zip
+    07-lifecycle-eol-pack.zip
     99-all-skills-pack.zip
     pm-skills-codex.zip
 ```
@@ -64,6 +71,7 @@ dist/
   claude-desktop/
     01-core-pm-starter-pack.zip
     pm-skills-starter-pack.zip
+    pm-<bundle>-pack.zip       one per bundle in pm-skills.config.yaml
     02-discovery-pack.zip
     03-strategy-pack.zip
     04-delivery-pack.zip
@@ -165,3 +173,17 @@ and train everyone to ignore the check.
 - Claude Desktop/Web: [`INSTALL-CLAUDE-DESKTOP.md`](INSTALL-CLAUDE-DESKTOP.md)
 - Claude Code: [`INSTALL-CLAUDE-CODE.md`](INSTALL-CLAUDE-CODE.md)
 - Codex: [`INSTALL-CODEX.md`](INSTALL-CODEX.md)
+
+## Lifecycle bundles (v0.85)
+
+The library is grouped into six bundles (Determine, Discover, Define, Develop, Deliver, Drive) plus Core, defined once in the `bundles:` section of `pm-skills.config.yaml` and checked by `scripts/check-bundles.py`. Three things are generated from that one mapping, so they cannot drift:
+
+| Output | Built by | For |
+|---|---|---|
+| `plugins/pm-<bundle>/` + entries in `.claude-plugin/marketplace.json` | `scripts/build-plugins.py` | Claude Code plugin installs |
+| `dist/packages/pm-<bundle>-pack.zip` | `scripts/build-claude-desktop-packs.sh` (via `scripts/bundle-skills.py`) | Claude Desktop/Web downloads |
+| `catalog/skills-by-bundle.md`, `bundle`/`motion` in `skills-index.yaml` | `scripts/generate-catalog.py` | Browsing |
+
+Every bundle carries the Core skills so facilitation links keep working when a bundle is installed alone. `skills/` is still the only place anyone edits. The older themed packs (`02`-`07`) stay on the shelf for one release, then are removed.
+
+After changing a skill or the mapping: `python3 scripts/build-plugins.py`, `python3 scripts/generate-catalog.py`, `bash scripts/build-dist.sh`.

@@ -150,6 +150,17 @@ main() {
     eol-internal-enablement \
     eol-message
 
+  # Lifecycle bundle packs, generated from the bundles: mapping in
+  # pm-skills.config.yaml (each carries the Core helper skills). Same grouping
+  # as the Claude Code plugins in plugins/.
+  local bundle
+  while read -r bundle; do
+    local bundle_skills=()
+    while read -r skill_name; do bundle_skills+=("$skill_name"); done \
+      < <(python3 "$SCRIPT_DIR/bundle-skills.py" "$bundle")
+    pack_skills "pm-${bundle}-pack.zip" "${bundle_skills[@]}"
+  done < <(python3 "$SCRIPT_DIR/bundle-skills.py" --list)
+
   pack_all_skills "99-all-skills-pack.zip"
 
   echo "Claude Desktop/Web packs ready in: ${OUT_DIR#$ROOT/}"
