@@ -94,4 +94,11 @@ if ! (cd "$ROOT" && python3 "$SCRIPT_DIR/apply-entry-mode.py" --check); then
   exit 1
 fi
 
+echo
+echo "Checking bundle mapping in pm-skills.config.yaml"
+if ! (cd "$ROOT" && python3 "$SCRIPT_DIR/check-bundles.py"); then
+  echo "Validation failed." >&2
+  exit 1
+fi
+
 echo "Validation passed."

@@ -25,3 +25,101 @@ facilitation:
   overrides:
     # The pasted message IS the context, so a read-back beats a questionnaire.
     incoming-request-advisor: context-dump
+
+# ---------------------------------------------------------------------------
+# Bundles: how the library is grouped for plugins, packs, and navigation.
+#
+# Five bundles follow the product lifecycle (Productside Blueprint, SDLC, and
+# ADLC share the arc): Determine -> Discover -> Define -> Develop -> Deliver.
+# A sixth, Drive, runs under all of them. 'core' is shared infrastructure.
+#
+# Rules (enforced by scripts/check-bundles.py):
+#   - every skill has exactly ONE home: one bundle, one motion (or core)
+#   - bundles and motions start with D; a motion never shares its bundle's name
+#   - an empty motion must say what gap it holds (a 'gap:' line)
+# skills/ is NOT reorganized: bundles are a mapping, plugins are generated from it.
+# ---------------------------------------------------------------------------
+bundles:
+  determine:
+    phase: "Context"
+    summary: "Set outcomes and read the terrain: strategy, finance, market, customers."
+    motions:
+      direct:
+        summary: "Business and product outcomes, strategy, and the finance behind them"
+        skills: [product-strategy-session, organic-growth-advisor, business-health-diagnostic, feature-investment-advisor, finance-metrics-quickref, saas-economics-efficiency-metrics, saas-revenue-growth-metrics]
+      diagnose:
+        summary: "Strategic lenses: SWOT, Porter's, Ansoff, PESTEL, TAM/SAM/SOM"
+        skills: [ansoff-matrix, pestel-analysis, porters-five-forces, swot-analysis, tam-sam-som-calculator]
+      detect:
+        summary: "The market and competitor investigation chain"
+        skills: [company-intel, company-research, competitive-analysis-process, competitive-intel-watch, competitive-research-snapshot, intel-discipline-advisor, intelligence-collection-disciplines, market-landscape-scan, pestel-delta-monitor]
+      describe:
+        summary: "Who the customer is: jobs, personas, voice of customer"
+        skills: [jobs-to-be-done, proto-persona, voice-of-customer-miner]
+  discover:
+    phase: "Discover + Investigate"
+    summary: "Find and frame the real problem."
+    motions:
+      drill-down:
+        summary: "Interviews, problem framing, opportunity solution trees, journey maps"
+        skills: [discovery-interview-prep, discovery-process, opportunity-solution-tree, problem-framing-canvas, problem-statement, customer-journey-map, customer-journey-mapping-workshop]
+  define:
+    phase: "Discover + Define"
+    summary: "Shape a solution worth building and test the bet."
+    motions:
+      de-risk:
+        summary: "Hypotheses, probes, experiments, measurement"
+        skills: [derisk-measurement-advisor, lean-ux-canvas, pol-probe-advisor, pol-probe, recommendation-canvas, epic-hypothesis]
+      differentiate:
+        summary: "Positioning and competitive sales tools"
+        skills: [positioning-statement, positioning-workshop, battle-card-builder]
+  develop:
+    phase: "Create"
+    summary: "Turn the chosen solution into buildable work."
+    motions:
+      document:
+        summary: "PRDs, press releases, storyboards"
+        skills: [prd-development, press-release, storyboard]
+      draft:
+        summary: "User stories, splitting, story mapping, epic breakdown"
+        skills: [user-story, user-story-splitting, user-story-mapping, user-story-mapping-workshop, epic-breakdown-advisor]
+      decide:
+        summary: "Prioritization and roadmaps"
+        skills: [prioritization-advisor, roadmap-planning]
+      delegate:
+        summary: "Work with AI agents: orchestration, context engineering, readiness"
+        skills: [agent-orchestration-advisor, ai-shaped-readiness-advisor, context-engineering-advisor]
+  deliver:
+    phase: "Deliver"
+    summary: "Take it to market, measure it, and retire it well."
+    motions:
+      debut:
+        summary: "Launch planning and messaging"
+        skills: []
+        gap: "GAP: launch plan, message house, sales narrative, buying journey, launch metrics (source: PM-Star go-to-market)"
+      dollars:
+        summary: "Pricing and packaging"
+        skills: [finance-based-pricing-advisor, pricing-packaging-tracker]
+      demand:
+        summary: "Channels and acquisition"
+        skills: [acquisition-channel-advisor]
+      dashboard:
+        summary: "Measure outcomes after launch"
+        skills: []
+        gap: "GAP: metrics review, outcome tracking (source: PM-Star launch metrics)"
+      decommission:
+        summary: "Lifecycle plays through end of life"
+        skills: [eol-checklist, eol-internal-enablement, eol-message, eol-process, eol-readiness-advisor, eol-stakeholder-sequence, lifecycle-play-advisor, product-lifecycle-plays]
+  drive:
+    phase: "Runs under all five phases"
+    summary: "Drive your career and your stakeholders."
+    motions:
+      diplomacy:
+        summary: "Stakeholders, incoming requests, alignment"
+        skills: [incoming-request-advisor, stakeholder-engagement-advisor, stakeholder-identification, stakeholder-mapping]
+      demystify:
+        summary: "Career ladders, leadership transitions, interviews"
+        skills: [altitude-horizon-framework, director-readiness-advisor, executive-onboarding-playbook, product-sense-interview-answer, vp-cpo-readiness-advisor]
+
+# Shared infrastructure the other skills lean on. Not a bundle; shipped with each plugin.
+core: [workshop-facilitation, autonomous-investigation, pm-skill-creator, skill-authoring-workflow]

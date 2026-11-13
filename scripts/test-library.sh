@@ -64,6 +64,7 @@ main() {
     echo "[4/7] Checking library drift (marketplace + doc links + default entry mode)"
     python3 "$SCRIPT_DIR/check-library-drift.py"
     python3 "$SCRIPT_DIR/apply-entry-mode.py" --check
+    python3 "$SCRIPT_DIR/check-bundles.py"
 
     if $RUN_SMOKE; then
         echo "[5/7] Running skill smoke tests"
