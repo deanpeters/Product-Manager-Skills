@@ -41,7 +41,7 @@ Use the Product Manager Skills. Ask me the minimum useful questions, then help m
 ## Notes
 
 - Start with the starter pack unless you know you need a specific pack. Each lifecycle pack also includes a few shared helper skills, so it works on its own.
-- The older themed packs (`02-discovery` through `07-lifecycle-eol`) remain on the [download shelf](../dist/) for one more release, then retire.
+- The older themed packs (`02-discovery` through `07-lifecycle-eol`) were retired in v0.86. Every skill in them lives in a lifecycle pack above.
 - Do not upload the outer pack ZIP to Claude. Unzip the pack first, then upload the skill ZIPs inside it. If Claude rejects an upload or the Skills list stays empty, this is the usual cause.
 - Arriving empty-handed is fine. The skills ask for what they need, so you can start with a one-line description of your situation.
 - Use one practical problem from your work. These skills are strongest with real context.

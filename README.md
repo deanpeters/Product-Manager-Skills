@@ -20,7 +20,7 @@ You should see Claude name the skill it is using and start asking you questions.
 
 [![GitHub stars](https://img.shields.io/github/stars/deanpeters/Product-Manager-Skills?style=flat-square)](https://github.com/deanpeters/Product-Manager-Skills/stargazers) [![GitHub forks](https://img.shields.io/github/forks/deanpeters/Product-Manager-Skills?style=flat-square)](https://github.com/deanpeters/Product-Manager-Skills/forks) [![GitHub watchers](https://img.shields.io/github/watchers/deanpeters/Product-Manager-Skills?style=flat-square)](https://github.com/deanpeters/Product-Manager-Skills/watchers) [![Contributors](https://img.shields.io/github/contributors/deanpeters/Product-Manager-Skills?style=flat-square)](https://github.com/deanpeters/Product-Manager-Skills/graphs/contributors) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](CONTRIBUTING.md)
 
-[![Version](https://img.shields.io/badge/version-v0.85-blue?style=flat-square)](https://github.com/deanpeters/Product-Manager-Skills/releases/latest) ![Skills](https://img.shields.io/badge/skills-95-informational?style=flat-square) [![Last commit](https://img.shields.io/github/last-commit/deanpeters/Product-Manager-Skills?style=flat-square)](https://github.com/deanpeters/Product-Manager-Skills/commits/main) [![Claude Code Plugin](https://img.shields.io/badge/Claude%20Code-Plugin%20Marketplace-5C4EE5?style=flat-square)](https://code.claude.com/docs/en/plugin-marketplaces)
+[![Version](https://img.shields.io/badge/version-v0.86-blue?style=flat-square)](https://github.com/deanpeters/Product-Manager-Skills/releases/latest) ![Skills](https://img.shields.io/badge/skills-95-informational?style=flat-square) [![Last commit](https://img.shields.io/github/last-commit/deanpeters/Product-Manager-Skills?style=flat-square)](https://github.com/deanpeters/Product-Manager-Skills/commits/main) [![Claude Code Plugin](https://img.shields.io/badge/Claude%20Code-Plugin%20Marketplace-5C4EE5?style=flat-square)](https://code.claude.com/docs/en/plugin-marketplaces)
 
 ```text
 ╔════════════════════════════════════════════════════════════════════╗
@@ -35,7 +35,7 @@ You should see Claude name the skill it is using and start asking you questions.
 ║   95 battle-tested skills + 6 command workflows                    ║
 ║   Claude Code • Cursor • Codex  • n8n • OpenClaw • and more ...    ║
 ║                                                                    ║
-║   v0.85 • November 13, 2026 • CC BY-NC-SA 4.0                      ║
+║   v0.86 • November 13, 2026 • CC BY-NC-SA 4.0                      ║
 ╚════════════════════════════════════════════════════════════════════╝
 ```
 
@@ -129,7 +129,7 @@ Each pack is a ZIP of upload-ready skill ZIPs. Unzip it, then upload the skills 
 | Drive | [`pm-drive-pack.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/pm-drive-pack.zip) | Stakeholders, decision rights, influence, and career transitions (11 skills) |
 | All skills | [`99-all-skills-pack.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/99-all-skills-pack.zip) | All 95 skills |
 
-The older themed packs (`02-discovery` through `07-lifecycle-eol`) are still on the [download shelf](dist/) for one more release, then retire.
+The older themed packs (`02-discovery` through `07-lifecycle-eol`) were retired in v0.86. Every skill in them lives in a lifecycle pack above.
 
 ### Install guides
 
@@ -307,6 +307,13 @@ See [docs/Platform Guides for PMs.md](docs/Platform%20Guides%20for%20PMs.md) for
 ---
 
 ## What's New
+
+**v0.86 — November 13, 2026 · The Everyday Work of Product, Now on the Map**
+- **12 new skills fill the map:** Discover gains *Dig* ([`survey-design-advisor`](skills/survey-design-advisor/SKILL.md), [`usage-data-investigation`](skills/usage-data-investigation/SKILL.md), [`discovery-habits-advisor`](skills/discovery-habits-advisor/SKILL.md)) and *Decode* ([`research-synthesis`](skills/research-synthesis/SKILL.md), [`assumption-mapping`](skills/assumption-mapping/SKILL.md)); Develop gains *Drumbeat* ([`backlog-refinement-advisor`](skills/backlog-refinement-advisor/SKILL.md), [`sprint-planning`](skills/sprint-planning/SKILL.md), [`release-readiness`](skills/release-readiness/SKILL.md)); Drive gains *Delineate* ([`decision-rights-matrix`](skills/decision-rights-matrix/SKILL.md), [`pm-role-charter`](skills/pm-role-charter/SKILL.md)); Deliver gains *Deepen* ([`activation-design`](skills/activation-design/SKILL.md), [`retention-diagnostic-advisor`](skills/retention-diagnostic-advisor/SKILL.md))
+- **Pick your slice, not all 95:** agents are converging on installable plugins and bundles, so the lifecycle bundles let you install what matches your work
+- **Easier to start:** a five-minute path on the README's first screen, a layered `START_HERE.md`, a clearer Desktop install, and a docs style guard
+- **Older packs `02`-`07` retired;** every skill in them lives in a lifecycle bundle
+- Library at **95 skills** · full story in the [release note](docs/announcements/2026-11-13-v0-86-the-everyday-work-of-product.md)
 
 **v0.85 — November 13, 2026 · Lifecycle Bundles, a Navigator, and the Go-to-Market Gap Filled**
 - **Six installable lifecycle bundles** that follow the product arc: Determine, Discover, Define, Develop, Deliver, plus Drive (stakeholders and career) underneath. Install one with `/plugin install pm-define@pm-skills`, or download its pack for Claude Desktop. Every skill still runs on its own

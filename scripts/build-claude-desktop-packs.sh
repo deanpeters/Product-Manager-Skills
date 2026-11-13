@@ -88,68 +88,6 @@ main() {
   cp "$OUT_DIR/01-core-pm-starter-pack.zip" "$OUT_DIR/pm-skills-starter-pack.zip"
   echo "Created alias: ${OUT_DIR#$ROOT/}/pm-skills-starter-pack.zip"
 
-  pack_skills "02-discovery-pack.zip" \
-    discovery-process \
-    discovery-interview-prep \
-    jobs-to-be-done \
-    proto-persona \
-    problem-statement \
-    opportunity-solution-tree \
-    customer-journey-map
-
-  pack_skills "03-strategy-pack.zip" \
-    product-strategy-session \
-    positioning-statement \
-    positioning-workshop \
-    tam-sam-som-calculator \
-    pestel-analysis \
-    recommendation-canvas \
-    lean-ux-canvas
-
-  pack_skills "04-delivery-pack.zip" \
-    user-story \
-    user-story-splitting \
-    epic-breakdown-advisor \
-    epic-hypothesis \
-    prd-development \
-    roadmap-planning
-
-  pack_skills "05-ai-pm-pack.zip" \
-    ai-shaped-readiness-advisor \
-    context-engineering-advisor \
-    recommendation-canvas \
-    pol-probe \
-    pol-probe-advisor \
-    company-research
-
-  pack_skills "06-market-intel-pack.zip" \
-    intel-discipline-advisor \
-    intelligence-collection-disciplines \
-    autonomous-investigation \
-    competitive-analysis-process \
-    market-landscape-scan \
-    competitive-research-snapshot \
-    competitive-intel-watch \
-    battle-card-builder \
-    voice-of-customer-miner \
-    pricing-packaging-tracker \
-    swot-analysis \
-    porters-five-forces \
-    ansoff-matrix \
-    pestel-delta-monitor \
-    tam-sam-som-calculator \
-    company-intel
-
-  pack_skills "07-lifecycle-eol-pack.zip" \
-    lifecycle-play-advisor \
-    product-lifecycle-plays \
-    eol-readiness-advisor \
-    eol-process \
-    eol-checklist \
-    eol-stakeholder-sequence \
-    eol-internal-enablement \
-    eol-message
-
   # Lifecycle bundle packs, generated from the bundles: mapping in
   # pm-skills.config.yaml (each carries the Core helper skills). Same grouping
   # as the Claude Code plugins in plugins/.

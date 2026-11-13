@@ -41,8 +41,7 @@ bundle_packs=()
 while read -r b; do bundle_packs+=("pm-${b}-pack"); done \
   < <(python3 "$SCRIPT_DIR/bundle-skills.py" --list)
 for p in pm-skills-starter-pack "${bundle_packs[@]}" \
-         02-discovery-pack 03-strategy-pack 04-delivery-pack 05-ai-pm-pack \
-         06-market-intel-pack 07-lifecycle-eol-pack 99-all-skills-pack; do
+         99-all-skills-pack; do
   cp "$DIST/claude-desktop/$p.zip" "$DIST/packages/"
 done
 cp "$DIST/codex/pm-skills-codex.zip" "$DIST/packages/"
@@ -116,14 +115,6 @@ for bname, b in cfg["bundles"].items():
     n = sum(len(m.get("skills") or []) for m in b["motions"].values())
     bundle_rows += (f"| [`pm-{bname}-pack.zip`](packages/pm-{bname}-pack.zip) | "
                     f"**{bname.capitalize()}**: {b['summary']} {n} skills + shared helpers |\n")
-legacy_rows = """| Older pack | Best for |
-|---|---|
-| [`02-discovery-pack.zip`](packages/02-discovery-pack.zip) | Understanding customers, problems, and opportunities |
-| [`03-strategy-pack.zip`](packages/03-strategy-pack.zip) | Positioning, market thinking, product direction |
-| [`04-delivery-pack.zip`](packages/04-delivery-pack.zip) | Stories, epics, PRDs, roadmap execution |
-| [`05-ai-pm-pack.zip`](packages/05-ai-pm-pack.zip) | AI product work |
-| [`06-market-intel-pack.zip`](packages/06-market-intel-pack.zip) | Competitive and market intelligence |
-| [`07-lifecycle-eol-pack.zip`](packages/07-lifecycle-eol-pack.zip) | Extend, replace, or retire a product |"""
 
 # ---- CATALOG: browse by bundle (the lifecycle view) ----
 desc = {s["name"]: s["desc"] for s in skills}
@@ -170,13 +161,6 @@ phase, plus the shared helper skills, so it works on its own:
 → **Define** (shape and test the solution) → **Develop** (turn it into buildable work)
 → **Deliver** (take it to market, measure, retire). **Drive** runs under all five:
 your stakeholders and your career.
-
-<details>
-<summary>Older packs (still available, replaced by the bundles above)</summary>
-
-{legacy_rows}
-
-</details>
 
 ## 2. Grab one skill at a time
 

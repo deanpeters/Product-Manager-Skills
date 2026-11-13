@@ -146,7 +146,7 @@ the precondition.
 ## Download
 
 The whole suite in one pack:
-[`07-lifecycle-eol-pack.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/07-lifecycle-eol-pack.zip)
+[`pm-deliver-pack.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/pm-deliver-pack.zip) (the Deliver bundle, which holds the end-of-life skills)
 
 Release note:
 [v0.84 — The Lifecycle & End-of-Life Suite](announcements/2026-08-10-v0-84-lifecycle-and-eol-suite.md)

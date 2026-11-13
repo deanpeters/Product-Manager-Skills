@@ -31,20 +31,6 @@ phase, plus the shared helper skills, so it works on its own:
 → **Deliver** (take it to market, measure, retire). **Drive** runs under all five:
 your stakeholders and your career.
 
-<details>
-<summary>Older packs (still available, replaced by the bundles above)</summary>
-
-| Older pack | Best for |
-|---|---|
-| [`02-discovery-pack.zip`](packages/02-discovery-pack.zip) | Understanding customers, problems, and opportunities |
-| [`03-strategy-pack.zip`](packages/03-strategy-pack.zip) | Positioning, market thinking, product direction |
-| [`04-delivery-pack.zip`](packages/04-delivery-pack.zip) | Stories, epics, PRDs, roadmap execution |
-| [`05-ai-pm-pack.zip`](packages/05-ai-pm-pack.zip) | AI product work |
-| [`06-market-intel-pack.zip`](packages/06-market-intel-pack.zip) | Competitive and market intelligence |
-| [`07-lifecycle-eol-pack.zip`](packages/07-lifecycle-eol-pack.zip) | Extend, replace, or retire a product |
-
-</details>
-
 ## 2. Grab one skill at a time
 
 Every skill has its own ZIP right here in this folder. Browse them in

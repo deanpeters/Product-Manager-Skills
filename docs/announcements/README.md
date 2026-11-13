@@ -4,6 +4,7 @@ Canonical location for launch posts, social copy, and release-related announceme
 
 ## Latest
 
+- **2026-11-13:** [v0.86 The Everyday Work of Product, Now on the Map](2026-11-13-v0-86-the-everyday-work-of-product.md)
 - **2026-11-13:** [v0.85 Lifecycle Bundles, a Navigator, and the Go-to-Market Gap Filled](2026-11-13-v0-85-lifecycle-bundles.md)
 - **2026-07-04:** [v0.81 Every Skill Now Declares Its Inputs (and Why We Don't Use `$ARGUMENTS`)](2026-07-04-v0-81-input-sections.md)
 - **2026-05-15:** [v0.79 Community Contributions: Thank You](2026-05-15-v0-79-community-contributions.md)

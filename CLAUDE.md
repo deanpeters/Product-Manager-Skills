@@ -6,13 +6,13 @@
 
 ## Project Status (Last updated: Fri Nov 13 2026)
 
-### Current State: v0.85 (95 skills), released Nov 13, 2026
+### Current State: v0.86 (95 skills), released Nov 13, 2026
 
 **Nov 12, 2026 session (unreleased, on main). Handoff brief: `12NOV26.md`**
 - **Guided Context Capture:** `skills/workshop-facilitation/SKILL.md` upgraded (Known/Assumed/Missing/Conflicting read-back, completion summary before generating, `(Recommended)` decision ladder, ranked Assumptions to Validate, replay-on-correction, resume recap). Explainer: `docs/guided-context-capture.md`. Skills **link** to the rulebook; never copy its text
 - **Configurable default entry mode:** `pm-skills.config.yaml` (`default_entry_mode` + per-skill `overrides`; ships `guided`, `incoming-request-advisor: context-dump`). 33 skills carry one `**Default entry mode:**` line so lone ZIPs know their default. `scripts/apply-entry-mode.py` applies it; `--check` runs in `validate-skills.sh`. User's in-session choice always wins
 - **Docs guide:** `docs/writing-for-our-readers.md` (Practitioner / Adopter / Builder; layer, don't split; first screen belongs to the Practitioner). Em-dash rule deliberately deferred
-- **Pending:** docs readability program, v0.85 release (the `dist/` rebuild is done as of Nov 13)
+- **Shipped in v0.86 (Nov 13):** the 12 skills added after v0.85 (Dig, Decode, Drumbeat, Delineate, Deepen), the docs readability pass (README first screen, `START_HERE.md`, Desktop install, `scripts/check-docs-style.py`), and the retirement of older packs 02-07. Release note: `docs/announcements/2026-11-13-v0-86-the-everyday-work-of-product.md`
 
 **Nov 13, 2026 session (unreleased, on main): lifecycle bundles**
 - **Five lifecycle bundles + Drive + Core**, all D-named: **Determine** (Context) → **Discover** → **Define** → **Develop** (the build) → **Deliver**; **Drive** (stakeholders + career) runs under all five; **Core** (facilitation, navigator, investigation, authoring) ships inside every bundle. Each bundle has D-named **motions** (e.g. Define → De-risk, Differentiate; Deliver → Debut, Dollars, Demand, Dashboard, Decommission). Aligned with the Productside Blueprint / SDLC / ADLC arc

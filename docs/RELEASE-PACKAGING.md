@@ -32,12 +32,6 @@ dist/
     pm-develop-pack.zip
     pm-deliver-pack.zip
     pm-drive-pack.zip
-    02-discovery-pack.zip      older themed packs, kept one release (superseded)
-    03-strategy-pack.zip
-    04-delivery-pack.zip
-    05-ai-pm-pack.zip
-    06-market-intel-pack.zip
-    07-lifecycle-eol-pack.zip
     99-all-skills-pack.zip
     pm-skills-codex.zip
 ```
@@ -72,11 +66,6 @@ dist/
     01-core-pm-starter-pack.zip
     pm-skills-starter-pack.zip
     pm-<bundle>-pack.zip       one per bundle in pm-skills.config.yaml
-    02-discovery-pack.zip
-    03-strategy-pack.zip
-    04-delivery-pack.zip
-    05-ai-pm-pack.zip
-    06-market-intel-pack.zip
     99-all-skills-pack.zip
 
   skill-zips/

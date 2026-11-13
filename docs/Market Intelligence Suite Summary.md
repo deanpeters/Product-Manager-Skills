@@ -150,7 +150,7 @@ the repo's anonymization protocol.)
 
 ## Getting the Suite
 
-- **One pack:** [`06-market-intel-pack.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/06-market-intel-pack.zip) — all 14 suite skills plus the two upgraded ones
+- **One pack:** [`pm-determine-pack.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/pm-determine-pack.zip) — the Determine bundle holds the whole suite (its Detect motion) plus the two upgraded skills
 - **Browse individually:** the [`dist/`](https://github.com/deanpeters/Product-Manager-Skills/tree/main/dist) download shelf
 - **Claude Code:** the plugin marketplace carries the `market-intelligence` category
 
