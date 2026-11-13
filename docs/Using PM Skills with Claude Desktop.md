@@ -18,7 +18,7 @@ If this is your first time here, read [`Using PM Skills 101.md`](Using%20PM%20Sk
 ./scripts/zip-a-skill.sh --skill user-story
 ```
 
-2. In Claude Desktop, open `Settings -> Capabilities -> Skills`.
+2. In Claude Desktop, open **Settings → Capabilities → Skills**.
 3. Upload the zip from `dist/skill-zips/`.
 4. Start with a practical prompt:
 

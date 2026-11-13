@@ -239,6 +239,7 @@
 - **`scripts/apply-entry-mode.py`** — Applies `pm-skills.config.yaml`'s default entry mode to every protocol-running skill (or a packaged copy via `--skills-dir`); `--check` fails on drift, bad values, unknown overrides, or a skill that uses `workshop-facilitation` without the `**Default entry mode:**` line. Runs inside `validate-skills.sh` (safe there: its fix is itself, not a rebuild)
 - **`scripts/check-bundles.py`** — Validates the bundle mapping (one home per skill, D-names, no motion named like its bundle, gaps recorded) and that the navigator's embedded map matches the config. `--write-navigator` regenerates it
 - **`scripts/build-plugins.py`** — Generates `plugins/` and marketplace bundle entries from the mapping; `--check` fails on staleness. Fix drift: run it, then `generate-catalog.py` and `build-dist.sh`
+- **`scripts/check-docs-style.py`** — Style guard for reader-facing docs (README, `START_HERE.md`, install guides, "Using PM Skills with…" guides). Hard failures: "click here" links, stale "New in vX" lines, stale pack names outside an older-packs context, menu paths in backticks instead of bold. Warnings only: jargon (repo, clone, terminal…) in the first 40 lines of Practitioner-facing files. Runs inside `validate-skills.sh`
 - **`scripts/test-a-skill.sh`** — Skill quality gate
   - Runs strict conformance checks (`check-skill-metadata.py`)
   - Verifies linked `skills/*/SKILL.md` references resolve

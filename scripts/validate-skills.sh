@@ -102,6 +102,13 @@ if ! (cd "$ROOT" && python3 "$SCRIPT_DIR/check-bundles.py"); then
 fi
 
 echo
+echo "Checking reader-facing docs style"
+if ! (cd "$ROOT" && python3 "$SCRIPT_DIR/check-docs-style.py"); then
+  echo "Validation failed." >&2
+  exit 1
+fi
+
+echo
 echo "Checking generated bundle plugins are current"
 if ! (cd "$ROOT" && python3 "$SCRIPT_DIR/build-plugins.py" --check); then
   echo "Validation failed." >&2
