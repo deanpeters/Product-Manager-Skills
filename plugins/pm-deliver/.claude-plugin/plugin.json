@@ -1,6 +1,6 @@
 {
   "name": "pm-deliver",
-  "description": "Take it to market, measure it, and retire it well. 16 skills (Debut, Dollars, Demand, Dashboard, Decommission); shared helper skills included.",
+  "description": "Take it to market, measure it, and retire it well. 18 skills (Debut, Dollars, Demand, Dashboard, Deepen, Decommission); shared helper skills included.",
   "version": "0.85",
   "author": {
     "name": "Dean Peters"
@@ -16,6 +16,7 @@
     "dollars",
     "demand",
     "dashboard",
+    "deepen",
     "decommission"
   ]
 }

@@ -42,6 +42,13 @@ Measure outcomes after launch
 
 - [`launch-metrics`](skills/launch-metrics/SKILL.md)
 
+### Deepen
+
+Keep customers and grow them: activation and retention
+
+- [`activation-design`](skills/activation-design/SKILL.md)
+- [`retention-diagnostic-advisor`](skills/retention-diagnostic-advisor/SKILL.md)
+
 ### Decommission
 
 Lifecycle plays through end of life

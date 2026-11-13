@@ -1,5 +1,5 @@
 generated_from: skills/*/SKILL.md
-count: 93
+count: 95
 skills:
 - name: acquisition-channel-advisor
   description: Evaluate acquisition channels using unit economics, customer quality,
@@ -13,6 +13,19 @@ skills:
     (retention, NRR), and scalability (magic number, volume potential). Use this to
     make data-driven go-to-market decisions and optimize channel mix for sustainable
     growth.
+- name: activation-design
+  description: Define the moment a new customer first gets real value, then design
+    the shortest path to it. Use when trials stall, installs sit idle, or onboarding
+    is a checklist nobody finishes.
+  type: component
+  path: skills/activation-design/SKILL.md
+  bundle: deliver
+  motion: deepen
+  intent: Name the activation moment (the first time a customer gets the value they
+    bought for), measure the time to reach it, find what stands between sign-up or
+    delivery and that moment, and design the onboarding path, owner handoffs, and
+    checkpoints around it. Works for self-serve software, assisted onboarding, and
+    hardware commissioning, and ends with an activation metric the team can track.
 - name: agent-orchestration-advisor
   description: Design multi-agent AI workflows with clear boundaries, handoffs, and
     monitoring. Use when a complex PM task should run as parallel specialized agents
@@ -934,6 +947,19 @@ skills:
     every claim sized by how many people said it. Ends with opportunity statements
     ready for an opportunity solution tree, and a list of what the research does not
     show.
+- name: retention-diagnostic-advisor
+  description: Find why customers leave or go quiet, then pick the fix that fits.
+    Use when churn or renewal numbers slipped and you need the cause before you launch
+    a retention program.
+  type: interactive
+  path: skills/retention-diagnostic-advisor/SKILL.md
+  bundle: deliver
+  motion: deepen
+  intent: Guided triage from a retention symptom to a diagnosis. Separates four causes
+    (never activated, never a fit, value faded, or something changed around the customer),
+    checks which the evidence supports, and recommends the move that fits (activation
+    fix, segment correction, value reinforcement, or a save and win-back play). Says
+    plainly when the data can't tell yet.
 - name: roadmap-planning
   description: Plan a strategic roadmap across prioritization, epic definition, stakeholder
     alignment, and sequencing. Use when turning strategy into a release plan that

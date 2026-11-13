@@ -5,7 +5,7 @@
     "email": "dean.peters@productside.com"
   },
   "metadata": {
-    "description": "93 battle-tested product management skills for Claude Code \u2014 discovery, strategy, finance, career, lifecycle, and more.",
+    "description": "95 battle-tested product management skills for Claude Code \u2014 discovery, strategy, finance, career, lifecycle, and more.",
     "version": "0.85.0"
   },
   "plugins": [
@@ -82,7 +82,7 @@
     {
       "name": "pm-deliver",
       "source": "./plugins/pm-deliver",
-      "description": "Take it to market, measure it, and retire it well. 16 skills (Debut, Dollars, Demand, Dashboard, Decommission); shared helper skills included.",
+      "description": "Take it to market, measure it, and retire it well. 18 skills (Debut, Dollars, Demand, Dashboard, Deepen, Decommission); shared helper skills included.",
       "category": "lifecycle-bundle",
       "tags": [
         "pm",
@@ -92,6 +92,7 @@
         "dollars",
         "demand",
         "dashboard",
+        "deepen",
         "decommission"
       ]
     },
@@ -1342,6 +1343,32 @@
         "stakeholder:role",
         "charter",
         "component"
+      ],
+      "strict": false
+    },
+    {
+      "name": "activation-design",
+      "source": "./skills/activation-design",
+      "description": "Define the first-real-value moment and design the shortest path to it.",
+      "category": "delivery",
+      "tags": [
+        "pm",
+        "activation",
+        "onboarding",
+        "component"
+      ],
+      "strict": false
+    },
+    {
+      "name": "retention-diagnostic-advisor",
+      "source": "./skills/retention-diagnostic-advisor",
+      "description": "Find why customers leave or go quiet, then pick the fix that fits the cause.",
+      "category": "delivery",
+      "tags": [
+        "pm",
+        "retention",
+        "churn",
+        "interactive"
       ],
       "strict": false
     }

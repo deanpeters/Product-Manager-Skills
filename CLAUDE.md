@@ -6,7 +6,7 @@
 
 ## Project Status (Last updated: Fri Nov 13 2026)
 
-### Current State: v0.85 (93 skills), released Nov 13, 2026
+### Current State: v0.85 (95 skills), released Nov 13, 2026
 
 **Nov 12, 2026 session (unreleased, on main). Handoff brief: `12NOV26.md`**
 - **Guided Context Capture:** `skills/workshop-facilitation/SKILL.md` upgraded (Known/Assumed/Missing/Conflicting read-back, completion summary before generating, `(Recommended)` decision ladder, ranked Assumptions to Validate, replay-on-correction, resume recap). Explainer: `docs/guided-context-capture.md`. Skills **link** to the rulebook; never copy its text
@@ -18,14 +18,14 @@
 - **Five lifecycle bundles + Drive + Core**, all D-named: **Determine** (Context) → **Discover** → **Define** → **Develop** (the build) → **Deliver**; **Drive** (stakeholders + career) runs under all five; **Core** (facilitation, navigator, investigation, authoring) ships inside every bundle. Each bundle has D-named **motions** (e.g. Define → De-risk, Differentiate; Deliver → Debut, Dollars, Demand, Dashboard, Decommission). Aligned with the Productside Blueprint / SDLC / ADLC arc
 - **The mapping is the source of truth:** `bundles:` + `core:` in `pm-skills.config.yaml`, one home per skill, validated by `scripts/check-bundles.py` (in `validate-skills.sh`). **`skills/` is NOT reorganized** (it is load-bearing: ~25 files reference the path). Everything else is generated from the mapping
 - **Generated from it:** `plugins/pm-<bundle>/` + bundle entries in `marketplace.json` (`scripts/build-plugins.py`, `--check` in `validate-skills.sh`; cross-bundle links rewritten to absolute URLs in the copies only); `dist/packages/pm-<bundle>-pack.zip` (`bundle-skills.py` → pack builder); `catalog/skills-by-bundle.md`; the Streamlit browser groups by bundle and motion; the navigator skill's map (`check-bundles.py --write-navigator`)
-- **New skill `pm-skills-navigator`** (Interactive, Core): "what's on my desk" → phase by evidence (validated vs assumed) → route. Library at **93**. Real install verified end to end (`/plugin install pm-define@pm-skills`)
-- **GTM gap-fill (Nov 13):** `launch-plan` (Workflow, Debut: tiers, four dates, go/no-go, scorecard, premortem) and `launch-metrics` (Component, Dashboard: leading/lagging, triggers, 30/90/180 reviews) adapted from PM-Star go-to-market. Debut now also holds `message-house` (Component), `sales-value-narrative` (Component; hands the card to `battle-card-builder`) and `buying-journey-enablement` (Workflow). Debut is complete. **Discover gained two motions (Nov 13):** Dig (`survey-design-advisor`, `usage-data-investigation`, `discovery-habits-advisor`) and Decode (`research-synthesis`, `assumption-mapping`). **Develop gained a Drumbeat motion (Nov 13):** `backlog-refinement-advisor`, `sprint-planning`, `release-readiness`. **Drive gained a Delineate motion:** `decision-rights-matrix`, `pm-role-charter`. Other gap: post-launch growth. Source to adapt, not copy: `~/Code/PM-Star-Skills/pm-go-to-market` (Dean approved). Other gaps: execution rituals, governance/decision rights, post-launch growth
+- **New skill `pm-skills-navigator`** (Interactive, Core): "what's on my desk" → phase by evidence (validated vs assumed) → route. Library at **95**. Real install verified end to end (`/plugin install pm-define@pm-skills`)
+- **GTM gap-fill (Nov 13):** `launch-plan` (Workflow, Debut: tiers, four dates, go/no-go, scorecard, premortem) and `launch-metrics` (Component, Dashboard: leading/lagging, triggers, 30/90/180 reviews) adapted from PM-Star go-to-market. Debut now also holds `message-house` (Component), `sales-value-narrative` (Component; hands the card to `battle-card-builder`) and `buying-journey-enablement` (Workflow). Debut is complete. **Discover gained two motions (Nov 13):** Dig (`survey-design-advisor`, `usage-data-investigation`, `discovery-habits-advisor`) and Decode (`research-synthesis`, `assumption-mapping`). **Develop gained a Drumbeat motion (Nov 13):** `backlog-refinement-advisor`, `sprint-planning`, `release-readiness`. **Drive gained a Delineate motion:** `decision-rights-matrix`, `pm-role-charter`. **Deliver gained a Deepen motion:** `activation-design`, `retention-diagnostic-advisor`. Gaps closed (Nov 13); remaining ideas: PM-Star reconciliation, more Discover/Develop depth. Source to adapt, not copy: `~/Code/PM-Star-Skills/pm-go-to-market` (Dean approved). Other gaps: execution rituals, governance/decision rights, post-launch growth
 - Older themed packs `02`-`07` stay on the shelf one release, then retire. `LICENSING.md` added (answers issue #27); OpenCode install guide added (PR #20 closed with credit)
 
 
-**93 Skills**
-- 35 Component Skills (templates/artifacts + finance metrics + career frameworks + stakeholder tools + intelligence disciplines + EOL artifacts + lifecycle plays)
-- 33 Interactive Skills (guided discovery + finance advisors + career advisors + growth + stakeholder engagement + intel triage + EOL readiness + lifecycle play triage)
+**95 Skills**
+- 36 Component Skills (templates/artifacts + finance metrics + career frameworks + stakeholder tools + intelligence disciplines + EOL artifacts + lifecycle plays)
+- 34 Interactive Skills (guided discovery + finance advisors + career advisors + growth + stakeholder engagement + intel triage + EOL readiness + lifecycle play triage)
 - 25 Workflow Skills (end-to-end processes + meta skill-authoring + executive onboarding + company intel + market-intelligence investigations + EOL process)
 - License: CC BY-NC-SA 4.0
 - All skills restructured to Anthropic-compliant format (`skills/skill-name/SKILL.md`)

@@ -1,15 +1,16 @@
 # Skill Catalog
 
-All **93 skills** in this library. Each links to its individual download ZIP in this folder — click, download, unzip, and upload the `SKILL.md` to Claude. No terminal required.
+All **95 skills** in this library. Each links to its individual download ZIP in this folder — click, download, unzip, and upload the `SKILL.md` to Claude. No terminal required.
 
 > New here? Read [`README.md`](README.md) first — it explains how to pick a pack and install.
 
-## Component Skills (35)
+## Component Skills (36)
 
 _Self-contained artifacts and templates._
 
 | Skill | What it does |
 |---|---|
+| [`activation-design`](activation-design.zip) | Define the moment a new customer first gets real value, then design the shortest path to it. Use when trials stall, installs sit idle, or onboarding is a checklist nobody finishes. |
 | [`altitude-horizon-framework`](altitude-horizon-framework.zip) | Understand the PM-to-Director transition through altitude and horizon thinking. Use when diagnosing scope, time-horizon, or leadership-level gaps. |
 | [`assumption-mapping`](assumption-mapping.zip) | List the assumptions behind an idea and rank them by importance and evidence. Use when a plan feels solid and you need to find the beliefs it rests on before you commit. |
 | [`company-research`](company-research.zip) | Create a company research brief with executive quotes, product strategy, and org context. Use when preparing for interviews, competitive analysis, partnerships, or market-entry work. |
@@ -46,7 +47,7 @@ _Self-contained artifacts and templates._
 | [`user-story-mapping`](user-story-mapping.zip) | Create a user story map that lays out activities, steps, tasks, and release slices. Use when planning a workflow, backlog, or MVP around the user journey. |
 | [`user-story-splitting`](user-story-splitting.zip) | Break a large story or epic into smaller deliverable stories using proven split patterns. Use when backlog items are too big for estimation, sequencing, or independent release. |
 
-## Interactive Skills (33)
+## Interactive Skills (34)
 
 _Guided, multi-turn advisors that ask then recommend._
 
@@ -79,6 +80,7 @@ _Guided, multi-turn advisors that ask then recommend._
 | [`positioning-workshop`](positioning-workshop.zip) | Run a positioning workshop that surfaces target customer, unmet need, category, benefits, and differentiation. Use when your product messaging feels fuzzy, generic, or misaligned. |
 | [`prioritization-advisor`](prioritization-advisor.zip) | Choose a prioritization framework based on stage, team context, and stakeholder needs. Use when deciding between RICE, ICE, value/effort, or another scoring approach. |
 | [`problem-framing-canvas`](problem-framing-canvas.zip) | Guide teams through MITRE's Problem Framing Canvas. Use when you need a clearer problem statement before jumping to solutions. |
+| [`retention-diagnostic-advisor`](retention-diagnostic-advisor.zip) | Find why customers leave or go quiet, then pick the fix that fits. Use when churn or renewal numbers slipped and you need the cause before you launch a retention program. |
 | [`stakeholder-engagement-advisor`](stakeholder-engagement-advisor.zip) | Plan engagement for a specific stakeholder. Use when preparing an outreach, navigating resistance, or aligning a critical relationship before a key milestone. |
 | [`survey-design-advisor`](survey-design-advisor.zip) | Decide whether a survey is the right tool, then shape it. Use when you're about to send a survey and want to learn something real instead of collecting biased, unusable answers. |
 | [`tam-sam-som-calculator`](tam-sam-som-calculator.zip) | Calculate TAM, SAM, and SOM with explicit assumptions, methods, and caveats. Use when sizing a market for a product idea, business case, or executive review. |
@@ -264,6 +266,11 @@ Take it to market, measure it, and retire it well.
 **Dashboard**: Measure outcomes after launch
 
 - [`launch-metrics`](launch-metrics.zip): Define launch success metrics, decision triggers, and 30/90/180-day reviews before launch. Use when you need to know early whether a launch is working and what you will do if it isn't.
+
+**Deepen**: Keep customers and grow them: activation and retention
+
+- [`activation-design`](activation-design.zip): Define the moment a new customer first gets real value, then design the shortest path to it. Use when trials stall, installs sit idle, or onboarding is a checklist nobody finishes.
+- [`retention-diagnostic-advisor`](retention-diagnostic-advisor.zip): Find why customers leave or go quiet, then pick the fix that fits. Use when churn or renewal numbers slipped and you need the cause before you launch a retention program.
 
 **Decommission**: Lifecycle plays through end of life
 

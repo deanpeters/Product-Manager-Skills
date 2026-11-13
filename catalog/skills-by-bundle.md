@@ -183,6 +183,13 @@ Measure outcomes after launch
 
 - `launch-metrics` - Define launch success metrics, decision triggers, and 30/90/180-day reviews before launch. Use when you need to know early whether a launch is working and what you will do if it isn't.
 
+### Deepen
+
+Keep customers and grow them: activation and retention
+
+- `activation-design` - Define the moment a new customer first gets real value, then design the shortest path to it. Use when trials stall, installs sit idle, or onboarding is a checklist nobody finishes.
+- `retention-diagnostic-advisor` - Find why customers leave or go quiet, then pick the fix that fits. Use when churn or renewal numbers slipped and you need the cause before you launch a retention program.
+
 ### Decommission
 
 Lifecycle plays through end of life

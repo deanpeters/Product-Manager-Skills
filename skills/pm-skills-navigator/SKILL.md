@@ -152,6 +152,7 @@ This block is generated from `pm-skills.config.yaml`. Don't edit it here; run
 - **Dollars** (Pricing and packaging): [`finance-based-pricing-advisor`](../finance-based-pricing-advisor/SKILL.md), [`pricing-packaging-tracker`](../pricing-packaging-tracker/SKILL.md)
 - **Demand** (Channels and acquisition): [`acquisition-channel-advisor`](../acquisition-channel-advisor/SKILL.md)
 - **Dashboard** (Measure outcomes after launch): [`launch-metrics`](../launch-metrics/SKILL.md)
+- **Deepen** (Keep customers and grow them: activation and retention): [`activation-design`](../activation-design/SKILL.md), [`retention-diagnostic-advisor`](../retention-diagnostic-advisor/SKILL.md)
 - **Decommission** (Lifecycle plays through end of life): [`eol-checklist`](../eol-checklist/SKILL.md), [`eol-internal-enablement`](../eol-internal-enablement/SKILL.md), [`eol-message`](../eol-message/SKILL.md), [`eol-process`](../eol-process/SKILL.md), [`eol-readiness-advisor`](../eol-readiness-advisor/SKILL.md), [`eol-stakeholder-sequence`](../eol-stakeholder-sequence/SKILL.md), [`lifecycle-play-advisor`](../lifecycle-play-advisor/SKILL.md), [`product-lifecycle-plays`](../product-lifecycle-plays/SKILL.md)
 
 **Drive** (Runs under all five phases): Drive your career and your stakeholders.

@@ -114,6 +114,9 @@ bundles:
       dashboard:
         summary: "Measure outcomes after launch"
         skills: [launch-metrics]
+      deepen:
+        summary: "Keep customers and grow them: activation and retention"
+        skills: [activation-design, retention-diagnostic-advisor]
       decommission:
         summary: "Lifecycle plays through end of life"
         skills: [eol-checklist, eol-internal-enablement, eol-message, eol-process, eol-readiness-advisor, eol-stakeholder-sequence, lifecycle-play-advisor, product-lifecycle-plays]
